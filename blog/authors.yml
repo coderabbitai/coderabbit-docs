@@ -1,17 +1,40 @@
+gur:
+    name: Gur Singh
+    title: Co-Founder
+    url: https://www.linkedin.com/in/gur-singh-510175280/
+    image_url: "img/authors/gur.jpeg"
+
 endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+    name: Gur Singh
+    title: Co-Founder
+    url: https://www.linkedin.com/in/gur-singh-510175280/
+    image_url: "img/authors/gur.jpeg"
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+vishu:
+    name: Vishu Kaur
+    title: Co-Founder
+    url: https://www.linkedin.com/in/vishavjeet/
+    image_url: "img/authors/vishu.jpg"
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+simone:
+    name: Simone Cuomo
+    title: Software Architect and Mentor
+    url: https://www.linkedin.com/in/simone-cuomo-65582a68/?originalSubdomain=uk
+    image_url: https://media.licdn.com/dms/image/D4E03AQGnCY6ve8yozA/profile-displayphoto-shrink_400_400/0/1673905808955?e=1701907200&v=beta&t=tRqKsp-V6sHrf7wKUrw8YbLOZSF5DFXYbMsrRZW0Z2Y
+
+sumanvs:
+    name: Suman Kumar
+    title: Software Engineer
+    url: https://github.com/sumanvs
+    image_url: "img/authors/suman.png"
+
+nato:
+    name: Nato Boram
+    title: Software Engineer
+    url: https://github.com/NatoBoram
+    image_url: https://avatars.githubusercontent.com/u/10495562?v=4
+
+dotlabs:
+    name: This Dot Labs
+    url: https://www.linkedin.com/company/thisdot/
+    image_url: https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/og7xjpegm86zqz3mfo3s

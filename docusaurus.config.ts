@@ -54,14 +54,13 @@ const config: Config = {
             "classic",
             {
                 docs: {
-                    // sidebarPath: "./sidebars.ts",
+                    sidebarPath: "./sidebars.ts",
                     // path: "./docs",
-                    // routeBasePath: "/",
-                    sidebarPath: require.resolve("./sidebars.js"),
+                    routeBasePath: "/docs",
                     breadcrumbs: false,
                 },
                 blog: {
-                    // routeBasePath: "/",
+                    routeBasePath: "/blog",
                     showReadingTime: true,
                 },
                 theme: {
@@ -113,12 +112,13 @@ const config: Config = {
                 src: "img/coderabbit_nav_logo.svg",
             },
             items: [
-                // {
-                //     type: "docSidebar",
-                //     sidebarId: "tutorialSidebar",
-                //     position: "left",
-                //     label: "Tutorial",
-                // },
+                {
+                    // type: "docSidebar",
+                    // sidebarId: "blogsSidebar",
+                    position: "left",
+                    label: "Blog",
+                    to: "/blog",
+                },
                 {
                     type: "docSidebar",
                     sidebarId: "docsSidebar",
