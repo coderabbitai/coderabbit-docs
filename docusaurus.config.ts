@@ -136,11 +136,6 @@ const config: Config = {
         },
         footer: {
             style: "dark",
-            logo: {
-                alt: "CodeRabbit Logo",
-                src: "img/test.svg",
-                href: "https://coderabbit.ai/",
-            },
             links: [
                 {
                     title: "Docs",
