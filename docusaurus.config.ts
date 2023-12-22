@@ -46,12 +46,12 @@ const config: Config = {
                         from: "/docs/get-started",
                     },
                     {
-                        to: "https://docs.coderabbit.ai/",
-                        from: "/docs",
+                        from: "/blog/*",
+                        to: "https://blog.coderabbit.ai/blog/",
                     },
                     {
-                        to: "https://blog.coderabbit.ai/",
-                        from: "/blog",
+                        from: "/",
+                        to: "https://docs.coderabbit.ai/",
                     },
                 ],
             },
@@ -75,7 +75,7 @@ const config: Config = {
             {
                 docs: {
                     sidebarPath: "./sidebars.ts",
-                    routeBasePath: "/docs",
+                    routeBasePath: "/",
                     breadcrumbs: true,
                     showLastUpdateTime: true,
                 },
