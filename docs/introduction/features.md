@@ -58,4 +58,4 @@ Review status is generated for each review including a separate one for each inc
 
 ![](./images/ReviewStatus.png)
 
-For information on how to get started with CodeRabbit, visit the [Get Started page](/docs/get-started/signup)
+For information on how to get started with CodeRabbit, visit the [Get Started page](/get-started/signup)

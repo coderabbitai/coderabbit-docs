@@ -97,7 +97,7 @@ Yaml settings:
 
 Refer: [CodeRabbit Configuration Schema](https://coderabbit.ai/integrations/coderabbit-overrides.v2.json).
 
-#### version 1: `deprecated` (Please use version [version 2](/docs/get-started/customize-coderabbit#example-structure-for-version-2))
+#### version 1: `deprecated` (Please use version [version 2](/get-started/customize-coderabbit#example-structure-for-version-2))
 
 ```yaml
 settings:
@@ -160,7 +160,7 @@ Reviews can also be customized through the UI under repository settings:
 
 **Path based instructions :** Provide additional review guidelines based on the file paths using glob patterns.
 
-For further guidance please refer this section [Prompt Customization](/docs/get-started/prompt-customization)
+For further guidance please refer this section [Prompt Customization](/get-started/prompt-customization)
 
 **Language Selection:** Select the natural language in which you want the review feedback. CodeRabbit supports most of the widely used languages. The default language is English.
 

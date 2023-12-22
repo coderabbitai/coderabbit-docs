@@ -42,4 +42,4 @@ Code reviews remain essential, whether the code is written by a human or a bot. 
 
 **CodeRabbit** does not utilize data collected during code reviews to train, refine, or influence our models, or any third-party models. The collected data is immediately discarded after the review is complete. We maintain no copies or backups of this review data, and it is purged from our systems without delay. Queries to the Large Language Model (LLM) are ephemeral. Neither we nor the LLM we use share any data collected during the code review process with other third parties.
 
-For information on how to get started with **CodeRabbit**, please visit the [Get Started page](/docs/get-started/signup).
+For information on how to get started with **CodeRabbit**, please visit the [Get Started page](/get-started/signup).
