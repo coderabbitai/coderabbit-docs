@@ -47,7 +47,7 @@ const config: Config = {
                     },
                     {
                         to: "https://docs.coderabbit.ai/",
-                        from: "/docs/introduction",
+                        from: "/introduction",
                     },
                 ],
             },
