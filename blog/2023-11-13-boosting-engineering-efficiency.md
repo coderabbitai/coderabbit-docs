@@ -79,7 +79,7 @@ In a world where data is king, we enjoy hearing success stories (especially when
 
 Navigating the intricate maze of code reviewing can be daunting. But fret not! There are some practical steps and considerations to help steer the ship. And speaking of guiding lights, let's first mention a noteworthy tool that's caught the industry's attention.
 
-### \*CodeRabbit – An AI Code Reviewer
+### CodeRabbit – An AI Code Reviewer
 
 Heard of CodeRabbit? It's this nifty AI tool that's gaining traction. Without all the bells and whistles – it simply reviews your code once pull requests are made. It's a straightforward, no-fuss tool designed to streamline the review process, especially for remote teams.
 
