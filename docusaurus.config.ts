@@ -49,10 +49,6 @@ const config: Config = {
                         from: "/blog/*",
                         to: "https://blog.coderabbit.ai/blog/",
                     },
-                    {
-                        from: "/",
-                        to: "https://docs.coderabbit.ai/",
-                    },
                 ],
             },
         ],
@@ -147,10 +143,11 @@ const config: Config = {
             items: [
                 {
                     type: "docSidebar",
+                    docId: "docs",
                     sidebarId: "docsSidebar",
                     position: "left",
                     label: "Docs",
-                    href: baseUrl,
+                    to: "/",
                 },
                 {
                     // type: "docSidebar",
