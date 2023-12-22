@@ -99,3 +99,10 @@ a[docid="docs"] > svg {
   width: 100%;
   height: 100%;
 }
+
+.navbar .navbar__item {
+    align-items: center;
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 700;
+}

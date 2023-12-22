@@ -15,27 +15,27 @@ type FeatureItem = {
 };
 
 const FeatureList: FeatureItem[] = [
-    {
-        title: "Boosting Engineering Efficiency Using AI Code Reviews for Remote Teams",
-        img: "img/blogs/blog4.jpeg",
-        description: (
-            <>
-                In a world where the office is just a step away from your bed,
-                we dive into the challenges and triumphs of maintaining code
-                quality across continents.
-            </>
-        ),
-        redirectTo: "/blog/boosting-engineering-efficiency",
-        chips: ["AI", "Remote teams", "Code Reviews"],
-        date: "Nov 13, 2023",
-        author: [
-            {
-                name: "This Dot Labs",
-                img: "https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/og7xjpegm86zqz3mfo3s",
-            },
-        ],
-        authorImg: "img/blogs/blog4.jpeg",
-    },
+    // {
+    //     title: "Boosting Engineering Efficiency Using AI Code Reviews for Remote Teams",
+    //     img: "img/blogs/blog4.jpeg",
+    //     description: (
+    //         <>
+    //             In a world where the office is just a step away from your bed,
+    //             we dive into the challenges and triumphs of maintaining code
+    //             quality across continents.
+    //         </>
+    //     ),
+    //     redirectTo: "/blog/boosting-engineering-efficiency",
+    //     chips: ["AI", "Remote teams", "Code Reviews"],
+    //     date: "Nov 13, 2023",
+    //     author: [
+    //         {
+    //             name: "This Dot Labs",
+    //             img: "https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/og7xjpegm86zqz3mfo3s",
+    //         },
+    //     ],
+    //     authorImg: "img/blogs/blog4.jpeg",
+    // },
     // {
     //     title: "Squeezing Water from Stone: Managing OpenAI Rate Limits with Request Prioritization",
     //     img: headImg3,
