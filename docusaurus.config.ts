@@ -72,7 +72,7 @@ const config: Config = {
                     sidebarPath: "./sidebars.ts",
                     // path: "./docs",
                     routeBasePath: "/",
-                    breadcrumbs: false,
+                    breadcrumbs: true,
                 },
                 blog: {
                     routeBasePath: "/blog",
