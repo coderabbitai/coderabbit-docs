@@ -23,7 +23,7 @@ image: https://coderabbit.uw.r.appspot.com/blog/assets/images/BlogImage2-5d93441
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://coderabbit.ai/blog/ai-code-reviews-reclaims" />
   <meta property="og:title" content="How AI Code Review Reclaims Your Team's Time" />
-<meta property="og:image" content="https://coderabbit.uw.r.appspot.com/blog/assets/images/BlogImage2-5d9344142d7354ac5b8c9928e8ee6208.png" />
+<meta property="og:image" content="img/blogs/BlogImage2.png" />
 
   <meta name="twitter:image" content="https://coderabbit.uw.r.appspot.com/blog/assets/images/BlogImage2-5d9344142d7354ac5b8c9928e8ee6208.png" />
   <meta name="twitter:card" content="summary_large_image" />

@@ -39,7 +39,6 @@ const sidebars: SidebarsConfig = {
                 "get-started/coderabbit-commands",
             ],
         },
-        "changelog/changelog",
         "faq/faq",
     ],
 
