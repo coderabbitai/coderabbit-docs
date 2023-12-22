@@ -4,8 +4,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 import { EnumChangefreq } from "sitemap";
 
 // const baseUrl = "/docs";
-// const baseUrl = "/blog";
 const baseUrl = "/";
+// const baseUrl = "https://docs.coderabbit.ai/";
 
 const config: Config = {
     title: "CodeRabbit",
@@ -47,7 +47,11 @@ const config: Config = {
                     },
                     {
                         to: "https://docs.coderabbit.ai/",
-                        from: "/",
+                        from: "/docs",
+                    },
+                    {
+                        to: "https://blog.coderabbit.ai/",
+                        from: "/blog",
                     },
                 ],
             },
@@ -71,7 +75,7 @@ const config: Config = {
             {
                 docs: {
                     sidebarPath: "./sidebars.ts",
-                    routeBasePath: "/",
+                    routeBasePath: "/docs",
                     breadcrumbs: true,
                     showLastUpdateTime: true,
                 },
@@ -146,7 +150,7 @@ const config: Config = {
                     sidebarId: "docsSidebar",
                     position: "left",
                     label: "Docs",
-                    to: "/",
+                    href: baseUrl,
                 },
                 {
                     // type: "docSidebar",
