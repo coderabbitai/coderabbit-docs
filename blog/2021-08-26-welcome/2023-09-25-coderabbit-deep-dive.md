@@ -3,6 +3,7 @@ slug: coderabbit-deep-dive
 title: AI and the Future of Code Reviews - A Deep Dive into CodeRabbit
 description: AI and the Future of Code Reviews - A Deep Dive into CodeRabbit
 authors: [gur, vishu]
+tags: ["Rate limits", "Openai", "Prioritization"]
 image: https://coderabbit.ai/founder_blog_meta.jpeg
 ---
 
@@ -39,6 +40,8 @@ import Layout from '../../src/pages/page'; -->
 We are witnessing an inflection point in the software development industry. Developers around the world have been realizing the incredible possibilities that AI can bring. The introduction of [GitHub Copilot](https://github.com/features/copilot) and [ChatGPT](https://chat.openai.com/auth/login) have revolutionized software development. They have been the [fastest-growing tools](https://aibusiness.com/companies/one-year-on-github-copilot-adoption-soars) in the history of software development.
 
 While on the code generation side, many tools have emerged, the code review process has remained largely unchanged. We continue to use the same tools and processes that were used 10 years ago. The code is still manually reviewed, which is slow, error-prone, and expensive. To address this, we are building [CodeRabbit](https://coderabbit.ai/), an AI-powered code reviewer that is part of the code merge and CI/CD process. With CodeRabbit our vision is to speed up the code merge process by an order of magnitude, while also improving the quality of the code that goes beyond what is possible with human reviewers alone and existing linting tools.
+
+<!--truncate-->
 
 ## Impediments to shipping quality software @Speed
 

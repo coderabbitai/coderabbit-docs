@@ -2,7 +2,7 @@
 slug: coderabbit-openai-rate-limits
 title: Squeezing Water from Stone - Managing OpenAI Rate Limits with Request Prioritization
 description: How CodeRabbit uses Aperture to manage OpenAI rate limits with request prioritization
-authors: [endi, sumanvs, nato]
+authors: [gur, sumanvs, nato]
 image: https://coderabbit.ai/blog/assets/images/Blog3-4188b2a6acf85932803da8983b14607c.png
 tags: [rate-limits, quota-management, prioritization, aperture, openai]
 hide_table_of_contents: false

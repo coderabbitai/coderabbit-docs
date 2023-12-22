@@ -4,6 +4,7 @@ title: Boosting Engineering Efficiency Using AI Code Reviews for Remote Teams
 description: In a world where the office is just a step away from your bed, we dive into the challenges and triumphs of maintaining code quality across continents.
 authors: [dotlabs]
 image: https://coderabbit.uw.r.appspot.com/blog/assets/images/blog4-568a2e78ef284966039a9ca8d2c48d21.jpeg
+tags: ["Rate limits", "Openai", "Prioritization"]
 hide_table_of_contents: false
 aiDisclaimer: true
 ---
@@ -38,6 +39,13 @@ aiDisclaimer: true
 Welcome to the future, where morning commutes involve going from bed to home office. The dress code is "business on top, pajamas down below." In this new world of remote work, tech teams worldwide are getting good at video calls and wishing for strong Wi-Fi like strong coffee. But here's the question: How do we maintain engineering efficiency when Joe from frontend is in Mexico, and DevOps Dave just started his day in Dublin?
 This setup presents a unique challenge: ensuring that code reviews, which are essential for code quality, are consistent, timely, and efficient. Have you ever missed a code review because it was late at night? We've all been there. Are you waiting for days to get feedback because your reviewer is in a different time zone? Oh, the frustration!
 Introducing the helpful algorithm: AI-driven code reviews. They're like a reliable friend who never sleeps (because they're code) and knows all the coding rules. This article explores how these intelligent bots fill the gaps in our fast-paced, sometimes slow, new world.
+
+```mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+```
+
+<!--truncate-->
 
 ## Direct Correlation: Remote Engineering Challenges & AI Solutions
 

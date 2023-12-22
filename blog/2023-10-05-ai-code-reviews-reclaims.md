@@ -3,6 +3,7 @@ slug: ai-code-reviews-reclaims
 title: How AI Code Review Reclaims Your Team's Time
 description: How AI Code Review Reclaims Your Team's Time
 authors: [simone]
+tags: ["Rate limits", "Openai", "Prioritization"]
 image: https://coderabbit.uw.r.appspot.com/blog/assets/images/BlogImage2-5d9344142d7354ac5b8c9928e8ee6208.png
 ---
 
@@ -40,6 +41,8 @@ One of the most time-intensive tasks involves conducting code reviews – these 
 Introducing AI-powered code reviews! Picture your team's pull requests getting reviewed as soon as they're made. That's the magic of AI code review tools. For teams, this means you don't have to wait for hours to get feedback. Reviewers can still offer more feedback later. It also means your teams can stay on track, creating and releasing features without the usual delays of waiting for code reviews.
 
 We'll discuss the regular stages of software projects and the impact of AI code reviewers like [CodeRabbit](https://coderabbit.ai) in this digital era. You'll gain a detailed insight into how these tools are changing the game, making code reviews faster, smarter, and surprisingly, more human-like.
+
+<!--truncate-->
 
 ### The Typical Software Lifecycle Process
 
