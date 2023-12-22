@@ -4,6 +4,7 @@ title: What is CodeRabbit?
 sidebar_label: What is CodeRabbit?
 description: Accelerate Code Reviews with AI
 image: "/preview_meta.jpg"
+slug: "/"
 ---
 
 <head>
