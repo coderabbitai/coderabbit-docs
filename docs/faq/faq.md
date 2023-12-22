@@ -40,7 +40,7 @@ CodeRabbit currently utilizes Open AI's GPT 4 and GPT 3.5. We're researching and
 
 #### **5. Can I customize CodeRabbit?**
 
-Reviews are customizable. For information, check out our [Get Started page](/docs/get-started/signup).
+Reviews are customizable. For information, check out our [Get Started page](/get-started/signup).
 
 #### **6. Can I choose a language other than English for the reviews?**
 
