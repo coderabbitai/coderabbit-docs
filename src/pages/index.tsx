@@ -1,6 +1,10 @@
-import { Redirect } from "@docusaurus/router";
+import { useEffect } from "react";
 
 export default function Home(): JSX.Element {
     // const { siteConfig } = useDocusaurusContext();
-    return <Redirect to="/docs/introduction" />;
+    useEffect(() => {
+        // Redirect to external URL when the component mounts
+        window.location.href = "https://docs.coderabbit.ai";
+    }, []);
+    return <></>;
 }

@@ -45,6 +45,10 @@ const config: Config = {
                         to: "/docs/get-started/signup",
                         from: "/docs/get-started",
                     },
+                    {
+                        to: "https://docs.coderabbit.ai/",
+                        from: "/docs/introduction",
+                    },
                 ],
             },
         ],
@@ -67,7 +71,7 @@ const config: Config = {
             {
                 docs: {
                     sidebarPath: "./sidebars.ts",
-                    routeBasePath: "/docs",
+                    routeBasePath: "/",
                     breadcrumbs: true,
                     showLastUpdateTime: true,
                 },
@@ -142,14 +146,14 @@ const config: Config = {
                     sidebarId: "docsSidebar",
                     position: "left",
                     label: "Docs",
-                    to: "/docs/introduction",
+                    to: "/",
                 },
                 {
                     // type: "docSidebar",
                     // sidebarId: "blogsSidebar",
                     position: "left",
                     label: "Blog",
-                    to: "/blog",
+                    href: "https://blog.coderabbit.ai/blog",
                 },
                 {
                     href: "https://discord.gg/CVtemB5c",
