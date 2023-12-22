@@ -122,6 +122,7 @@ const config: Config = {
             logo: {
                 alt: "",
                 src: "img/coderabbit_nav_logo.svg",
+                href: "https://coderabbit.ai",
             },
             items: [
                 {
