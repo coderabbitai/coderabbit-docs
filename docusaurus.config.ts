@@ -41,8 +41,8 @@ const config: Config = {
             {
                 redirects: [
                     {
-                        to: "/get-started/signup",
-                        from: "/get-started/",
+                        to: "/docs/get-started/signup",
+                        from: "/docs/get-started",
                     },
                 ],
             },
