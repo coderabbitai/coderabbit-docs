@@ -69,6 +69,7 @@ const config: Config = {
                     sidebarPath: "./sidebars.ts",
                     routeBasePath: "/docs",
                     breadcrumbs: true,
+                    showLastUpdateTime: true,
                 },
                 blog: {
                     routeBasePath: "/blog",
@@ -105,6 +106,11 @@ const config: Config = {
             defaultMode: "light",
             disableSwitch: false,
             respectPrefersColorScheme: false,
+        },
+        docs: {
+            sidebar: {
+                hideable: true,
+            },
         },
         metadata: [
             { name: "keywords", content: "ai, blog" },
