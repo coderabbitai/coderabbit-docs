@@ -41,6 +41,10 @@ const config: Config = {
             {
                 redirects: [
                     {
+                        to: "docs/introduction",
+                        from: "/",
+                    },
+                    {
                         to: "/docs/get-started/signup",
                         from: "/docs/get-started",
                     },
@@ -98,7 +102,7 @@ const config: Config = {
         colorMode: {
             defaultMode: "light",
             disableSwitch: false,
-            respectPrefersColorScheme: true,
+            respectPrefersColorScheme: false,
         },
         metadata: [
             { name: "keywords", content: "ai, blog" },
@@ -142,8 +146,10 @@ const config: Config = {
 
                 {
                     href: "https://discord.gg/CVtemB5c",
-                    label: "Discord",
+                    className: "header-discord-link",
+                    "aria-label": "Discord",
                     position: "right",
+                    label: "Discord",
                 },
             ],
         },
