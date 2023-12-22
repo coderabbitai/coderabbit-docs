@@ -1,11 +1,11 @@
-# Redirect from / to docs.coderabbit.ai
+# Redirect blog.coderabbit.ai to docs.coderabbit.ai
 
 / https://docs.coderabbit.ai/ 301!
 
-# Allow access to /blogs/\* without redirection
+# Redirect blog.coderabbit.ai/docs to docs.coderabbit.ai
 
-/blogs/\* https://blog.coderabbit.ai/blogs/:splat 200
+/docs https://docs.coderabbit.ai/ 301!
 
-# Redirect any other path to docs.coderabbit.ai
+# Exclude docs.coderabbit.ai/ from redirection
 
-/\* https://docs.coderabbit.ai/:splat 301!
+/docs/ https://docs.coderabbit.ai/ 200
