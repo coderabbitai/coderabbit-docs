@@ -4,6 +4,7 @@ sidebar_label: Sign Up
 description: Accelerate Code Reviews with AI
 image: "/preview_meta.jpg"
 ---
+
 <head>
  <meta charSet="utf-8" />
   <meta name="title" content="CodeRabbit: AI-powered Code Reviews" />
