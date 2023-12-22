@@ -4,6 +4,7 @@ sidebar_label: CodeRabbit in Action
 description: Accelerate Code Reviews with AI
 image: "/preview_meta.jpg"
 ---
+
 <head>
  <meta charSet="utf-8" />
   <meta name="title" content="CodeRabbit: AI-powered Code Reviews" />
@@ -35,17 +36,15 @@ Walkthrough: A detailed code walkthrough to understand the changes in each file 
 
 ### 2. Code Review feedback[](https://coderabbit.ai/docs/coderabbit-in-action#code-review-feedback)
 
-Review comments: Review feedback posts as pull request review comments on the lines of the code that changed under each file. Any code suggestions are given in a Diff format which either be copied or committed within the pull request with a single click. 
+Review comments: Review feedback posts as pull request review comments on the lines of the code that changed under each file. Any code suggestions are given in a Diff format which either be copied or committed within the pull request with a single click.
 
 ![](./images/ReviewFeedback.png)
 
-
 ### 3. Chat with CodeRabbit[](https://coderabbit.ai/docs/coderabbit-in-action#chat-with-coderabbit)
 
-CodeRabbit provides conversational capability that allows developers and the reviewers to ask questions, generate code, and get feedback in the context of changes. Just comment on the CodeRabbit review to start the conversation. CodeRabbit learns from your interactions and gets smarter over time. The more you chat, the better it gets. 
+CodeRabbit provides conversational capability that allows developers and the reviewers to ask questions, generate code, and get feedback in the context of changes. Just comment on the CodeRabbit review to start the conversation. CodeRabbit learns from your interactions and gets smarter over time. The more you chat, the better it gets.
 
 ![](./images/chat.png)
-
 
 ### 4. Issue Validation[](https://coderabbit.ai/docs/coderabbit-in-action#issue-validation)
 
@@ -53,11 +52,10 @@ Pull request changes are validated against the linked GitHub or GitLab issue and
 
 ![](./images/issue-validation.png)
 
-
-### 5.  Pull Request review status[](https://coderabbit.ai/docs/coderabbit-in-action#pull-request-summary-1)
+### 5. Pull Request review status[](https://coderabbit.ai/docs/coderabbit-in-action#pull-request-summary-1)
 
 Review status is generated for each review including a separate one for each incremental commit. Displays the commit IDs that were reviewed, the files examined and ignored, as well as the actionable feedback and additional comments generated for each review.
 
 ![](./images/ReviewStatus.png)
 
-For information on how to get started with CodeRabbit, visit the [Get Started page](https://coderabbit.ai/docs/get-started/signup)
+For information on how to get started with CodeRabbit, visit the [Get Started page](/docs/get-started/signup)

@@ -4,6 +4,7 @@ sidebar_label: FAQs
 description: Accelerate Code Reviews with AI
 image: "/preview_meta.jpg"
 ---
+
 <head>
  <meta charSet="utf-8" />
   <meta name="title" content="CodeRabbit: AI-powered Code Reviews" />
@@ -35,11 +36,11 @@ We train our system using open source projects. For private repositories, neithe
 
 #### **4. What Large Language Models does CodeRabbit use?**
 
-CodeRabbit currently utilizes Open AI's GPT 4 and GPT 3.5. We're researching and testing upcoming LLMs to ensure we're offering the most precise reviews possible. 
+CodeRabbit currently utilizes Open AI's GPT 4 and GPT 3.5. We're researching and testing upcoming LLMs to ensure we're offering the most precise reviews possible.
 
 #### **5. Can I customize CodeRabbit?**
 
-Reviews are customizable. For information, check out our [Get Started page](https://coderabbit.ai/docs/get-started/customize-coderabbit).
+Reviews are customizable. For information, check out our [Get Started page](/docs/get-started/signup).
 
 #### **6. Can I choose a language other than English for the reviews?**
 
@@ -55,24 +56,27 @@ To manage users, log in to CodeRabbit and navigate to subscriptions. You can add
 
 #### **9. How can I interact with the CodeRabbit bot?**
 
-To interact with CodeRabbit's bot, reply to the CodeRabbit Comment. If there are team members collaborating on pull requests, the bot stays silent by default but can be engaged by tagging **@Coderabbitai**. This feature allows you to provide context, generate test cases, or ask for specific code suggestions, all within the context of your code lines or entire files. 
+To interact with CodeRabbit's bot, reply to the CodeRabbit Comment. If there are team members collaborating on pull requests, the bot stays silent by default but can be engaged by tagging **@Coderabbitai**. This feature allows you to provide context, generate test cases, or ask for specific code suggestions, all within the context of your code lines or entire files.
 
 #### **10. Can individual developers use CodeRabbit?**
 
 Absolutely! Whether you're an individual developer or part of an organization, CodeRabbit can be your coding assistant, providing you with invaluable suggestions.
 
 #### **11. Which branches are the pull requests reviewed on?**
+
 CodeRabbit reviews pull requests on the default branch.
 
 #### **12. Is it possible for CodeRabbit to include additional branches for review?**
+
 Yes, you can change it under the repository settings.
 
 #### **13. CodeRabbit Usage Limits**
 
 There are hourly rate limits for each developer per repository:
-- Number of files reviewed per hour: 100 Files
-- Number of reviews per hour (includes incremental reviews): 9
-- Number of conversations per hour: 50
+
+-   Number of files reviewed per hour: 100 Files
+-   Number of reviews per hour (includes incremental reviews): 9
+-   Number of conversations per hour: 50
 
 In-trial and open-source plans have lower rate limits than the paid plan. In all cases, we re-allow further reviews/conversations after a brief timeout.
 

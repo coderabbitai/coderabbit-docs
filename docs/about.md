@@ -49,4 +49,4 @@ Code reviews remain essential, whether the code is written by a human or a bot. 
 
 Existing code review tools are good at linting and static code analysis; however, they lack context-aware, human-like review feedback.
 
-For information on how to get started with **CodeRabbit**, please visit the [Get Started page](https://coderabbit.ai/docs/get-started/signup).
+For information on how to get started with **CodeRabbit**, please visit the [Get Started page](/docs/get-started/signup).
