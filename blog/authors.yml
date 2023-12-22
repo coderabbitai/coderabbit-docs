@@ -2,19 +2,19 @@ gur:
     name: Gur Singh
     title: Co-Founder
     url: https://www.linkedin.com/in/gur-singh-510175280/
-    image_url: "img/authors/gur.jpeg"
+    image_url: "/img/authors/gur.jpeg"
 
 endi:
     name: Gur Singh
     title: Co-Founder
     url: https://www.linkedin.com/in/gur-singh-510175280/
-    image_url: "img/authors/gur.jpeg"
+    image_url: "/img/authors/gur.jpeg"
 
 vishu:
     name: Vishu Kaur
     title: Co-Founder
     url: https://www.linkedin.com/in/vishavjeet/
-    image_url: "img/authors/vishu.jpg"
+    image_url: "/img/authors/vishu.jpg"
 
 simone:
     name: Simone Cuomo
@@ -26,7 +26,7 @@ sumanvs:
     name: Suman Kumar
     title: Software Engineer
     url: https://github.com/sumanvs
-    image_url: "img/authors/suman.png"
+    image_url: "/img/authors/suman.png"
 
 nato:
     name: Nato Boram
