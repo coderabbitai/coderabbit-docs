@@ -31,7 +31,7 @@ made using one of the below options :
 
 Customization defined in the YAML file overrides the settings in the UI.
 
-#### 1. Customize CodeRabbit using a YAML File[](https://coderabbit.ai/docs/get-started/customize-coderabbit#1-customize-coderabbit-using-a-yaml-file)
+#### 1. Customize CodeRabbit using a YAML File[](https://coderabbit.ai/docs/get-started/customize-coderabbit)
 
 You can add a `.coderabbit.yaml` configuration file to your repositories.
 Below is a sample YAML file that can be used as a starting point and change as needed:
@@ -97,7 +97,7 @@ Yaml settings:
 
 Refer: [CodeRabbit Configuration Schema](https://coderabbit.ai/integrations/coderabbit-overrides.v2.json).
 
-#### version 1: `deprecated` (Please use version [version 2](/get-started/customize-coderabbit#example-structure-for-version-2))
+#### version 1: `deprecated` (Please use version [version 2](/guides/customize-coderabbit))
 
 ```yaml
 settings:
@@ -156,11 +156,11 @@ Reviews can also be customized through the UI under repository settings:
 
 ### Review Customization[](https://coderabbit.ai/docs/get-started#review-customization)
 
-[](./images/tailor2.png)
+[](../get-started/images/tailor2.png)
 
 **Path based instructions :** Provide additional review guidelines based on the file paths using glob patterns.
 
-For further guidance please refer this section [Prompt Customization](/get-started/prompt-customization)
+For further guidance please refer this section [Prompt Customization](/guides/prompt-customization)
 
 **Language Selection:** Select the natural language in which you want the review feedback. CodeRabbit supports most of the widely used languages. The default language is English.
 
@@ -168,7 +168,7 @@ For further guidance please refer this section [Prompt Customization](/get-star
 
 ### Review Filters [](https://coderabbit.ai/docs/get-started#review-filters)
 
-[](./images/tailor3.png)
+[](../get-started/images/tailor3.png)
 
 **Disable Reviews:** Disables automatic code reviews for the repository. Reviews can be initiated on-demand using CodeRabbit commands.
 
