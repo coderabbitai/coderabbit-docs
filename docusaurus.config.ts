@@ -1,6 +1,7 @@
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
+import { EnumChangefreq } from "sitemap";
 
 // const baseUrl = "/docs";
 // const baseUrl = "/blog";
@@ -41,10 +42,6 @@ const config: Config = {
             {
                 redirects: [
                     {
-                        to: "docs/introduction",
-                        from: "/",
-                    },
-                    {
                         to: "/docs/get-started/signup",
                         from: "/docs/get-started",
                     },
@@ -70,8 +67,7 @@ const config: Config = {
             {
                 docs: {
                     sidebarPath: "./sidebars.ts",
-                    // path: "./docs",
-                    routeBasePath: "/",
+                    routeBasePath: "/docs",
                     breadcrumbs: true,
                 },
                 blog: {
@@ -80,6 +76,12 @@ const config: Config = {
                 },
                 theme: {
                     customCss: "./src/css/custom.css",
+                },
+                sitemap: {
+                    changefreq: "weekly" as EnumChangefreq,
+                    priority: 0.5,
+                    ignorePatterns: ["/tags/**"],
+                    filename: "sitemap.xml",
                 },
             } satisfies Preset.Options,
         ],
@@ -130,20 +132,19 @@ const config: Config = {
             },
             items: [
                 {
-                    // type: "docSidebar",
-                    // sidebarId: "blogsSidebar",
-                    position: "left",
-                    label: "Blog",
-                    to: "/blog",
-                },
-                {
                     type: "docSidebar",
                     sidebarId: "docsSidebar",
                     position: "left",
                     label: "Docs",
                     to: "/docs/introduction",
                 },
-
+                {
+                    // type: "docSidebar",
+                    // sidebarId: "blogsSidebar",
+                    position: "left",
+                    label: "Blog",
+                    to: "/blog",
+                },
                 {
                     href: "https://discord.gg/CVtemB5c",
                     className: "header-discord-link",
