@@ -118,6 +118,7 @@ const config: Config = {
         image: "img/docusaurus-social-card.jpg",
         navbar: {
             title: "",
+            hideOnScroll: true,
             logo: {
                 alt: "",
                 src: "img/coderabbit_nav_logo.svg",
