@@ -6,4 +6,4 @@
 
 /docs/\* https://docs.coderabbit.ai/:splat 200
 
-/blog https://blogs.coderabbit.ai/blogs 301!
+/blog https://blog.coderabbit.ai/blogs 301!
