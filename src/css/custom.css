@@ -107,6 +107,10 @@ a[docid="docs"] > svg {
     font-weight: 700;
 }
 
+a[docid="docs"] > svg {
+    display: none;
+}
+
 /* Light mode Discord icon */
 /* .header-discord-link:before {
     -webkit-filter: invert(100%);
