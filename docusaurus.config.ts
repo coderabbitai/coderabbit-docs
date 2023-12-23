@@ -146,7 +146,7 @@ const config: Config = {
                     sidebarId: "docsSidebar",
                     position: "left",
                     label: "Docs",
-                    to: "/docs",
+                    href: "/docs",
                 },
                 {
                     // type: "docSidebar",
