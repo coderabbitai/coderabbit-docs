@@ -44,10 +44,6 @@ const config: Config = {
                         to: "https://docs.coderabbit.ai/docs/get-started/signup",
                         from: "/docs/get-started",
                     },
-                    {
-                        from: "/blog/*",
-                        to: "https://blog.coderabbit.ai/blog/",
-                    },
                 ],
             },
         ],
@@ -146,7 +142,7 @@ const config: Config = {
                     sidebarId: "docsSidebar",
                     position: "left",
                     label: "Docs",
-                    href: "/docs",
+                    href: "/",
                 },
                 {
                     // type: "docSidebar",

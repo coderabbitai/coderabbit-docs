@@ -1,6 +1,6 @@
 # Redirect blog.coderabbit.ai/docs to docs.coderabbit.ai
 
-/docs https://docs.coderabbit.ai/ 301!
+/blog.coderabbit.ai/ https://docs.coderabbit.ai/ 301!
 
 # Exclude docs.coderabbit.ai/ (except /) from redirection
 
