@@ -142,7 +142,8 @@ const config: Config = {
                     sidebarId: "docsSidebar",
                     position: "left",
                     label: "Docs",
-                    href: "/",
+                    href: "https://docs.coderabbit.ai",
+                    target: "_self",
                 },
                 {
                     // type: "docSidebar",
