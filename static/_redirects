@@ -5,3 +5,5 @@
 # Exclude docs.coderabbit.ai/ (except /) from redirection
 
 /docs/\* https://docs.coderabbit.ai/:splat 200
+
+/blogs https://blogs.coderabbit.ai/blogs 301!
