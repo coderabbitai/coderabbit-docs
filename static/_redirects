@@ -2,10 +2,10 @@
 
 /docs/\* https://docs.coderabbit.ai/:splat 200
 
-# Exclude blog.coderabbit.ai/blog/\* from redirection
-
-/blog.coderabbit.ai/blog/\* https://blog.coderabbit.ai/blog/:splat 200
-
 # Redirect blog.coderabbit.ai/ to docs.coderabbit.ai/
 
 /blog.coderabbit.ai/ https://docs.coderabbit.ai/ 301!
+
+# Exclude blog.coderabbit.ai/blog/\* from redirection
+
+/blog.coderabbit.ai/blog/\* https://blog.coderabbit.ai/blog/:splat 200
