@@ -11,8 +11,7 @@ const config: Config = {
     title: "CodeRabbit",
     staticDirectories: ["public", "static"],
     tagline: "AI-powered Code Reviews",
-    favicon:
-        "https://images.saasworthy.com/coderabbit_44328_logo_1689061503_adc8g.jpg",
+    favicon: "img/favIcon.svg",
 
     // Set the production url of your site here
     url: "https://coderabbit.ai/",
