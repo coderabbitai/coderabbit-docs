@@ -4,7 +4,7 @@
 
 # Redirect blog.coderabbit.ai/ to docs.coderabbit.ai/
 
-/blog.coderabbit.ai/ https://docs.coderabbit.ai/ 301!
+/blog.coderabbit.ai/\* https://blog.coderabbit.ai/:splat 301!
 
 # Exclude blog.coderabbit.ai/blog/\* from redirection
 
