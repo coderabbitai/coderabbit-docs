@@ -44,6 +44,19 @@ a[docid="docs"] > svg {
     display: none;
 }
 
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    /* Reduce the logo size for smaller screens */
+    .navbar__logo img {
+        height: 16px; /* Adjust the height for smaller screens */
+    }
+
+    /* Reduce the padding around the logo for smaller screens */
+    .navbar__logo {
+        padding: 6px; /* Adjust the padding for smaller screens */
+    }
+}
+
 /* Light mode Discord icon */
 /* .header-discord-link:before {
     -webkit-filter: invert(100%);
