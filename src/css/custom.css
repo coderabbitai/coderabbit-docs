@@ -48,12 +48,33 @@ a[docid="docs"] > svg {
 @media (max-width: 768px) {
     /* Reduce the logo size for smaller screens */
     .navbar__logo img {
-        height: 16px; /* Adjust the height for smaller screens */
+        height: 32px;
+        align-items: center;
     }
 
     /* Reduce the padding around the logo for smaller screens */
     .navbar__logo {
-        padding: 6px; /* Adjust the padding for smaller screens */
+        padding: 2px; /* Adjust the padding for smaller screens */
+    }
+}
+
+/* Center the Discord link within its parent */
+.navbar__items.navbar__items--right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    a.navbar__item.navbar__link[docid="docs"] {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    a.navbar__item.navbar__link[href="https://blog.coderabbit.ai/blog"]
+    {
+        display: none;
     }
 }
 
