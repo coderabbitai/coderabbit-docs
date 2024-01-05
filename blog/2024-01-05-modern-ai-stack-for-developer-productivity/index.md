@@ -49,7 +49,7 @@ Code generation through AI marks a significant leap in software development. AI 
 * AI models like OpenAI’s GPT-4 Code Interpreter are leading this segment.
 * They aid in writing code, offering suggestions, and even generating entire code blocks based on user input.
 * They are particularly beneficial in increasing development speed and making coding more accessible to non-experts.
-* [GitHub Copilot](https://github.com/features/copilot) introduces this experience in the IDE (such as VS Code) where you code. It uses an older OpenAI model for this job - Codex. But they have improved its speed in suggesting entire code blocks and functions right inside the editor. This helps developers generate boilerplate code, complete repetitive tasks and implement common patterns much faster.
+* [GitHub Copilot](https://github.com/features/copilot) introduces this experience in the IDE (such as VS Code) where you code. It [uses an older OpenAI model for this job - Codex](https://www.google.com/url?q=https://github.blog/2023-07-28-smarter-more-efficient-coding-github-copilot-goes-beyond-codex-with-improved-ai-model/). But they have improved its speed in suggesting entire code blocks and functions right inside the editor. This helps developers generate boilerplate code, complete repetitive tasks and implement common patterns much faster.
 
 
 #### Challenges
