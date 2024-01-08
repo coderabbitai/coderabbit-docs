@@ -44,13 +44,13 @@ function CustomFooter(props) {
                                 Docs
                             </a>
                             <a
-                                href="https://blog.coderabbit.ai/"
+                                href="https://blog.coderabbit.ai/blog"
                                 className="justify-center text-white text-base font-medium whitespace-nowrap mt-1"
                             >
                                 Blog
                             </a>
                             <a
-                                href="https://coderabbit.ai/pricing"
+                                href="https://coderabbit.ai/#pricing"
                                 className="justify-center text-white text-base font-medium whitespace-nowrap mt-1"
                             >
                                 Pricing
@@ -64,7 +64,7 @@ function CustomFooter(props) {
                         </div>
                         <div className="justify-center items-stretch flex flex-col gap-3 pl-16">
                             <a
-                                href="#"
+                                href="https://coderabbit.ai/compliance"
                                 className="justify-center text-white text-base font-medium whitespace-nowrap"
                             >
                                 Compliance{" "}
