@@ -36,7 +36,7 @@ Code reviews remain essential, whether the code is written by a human or a bot. 
 
 **CodeRabbit** seamlessly integrates into code repositories using GitHub or GitLab webhooks and monitors events related to Pull Request (PR) and Merge Request (MR) changes. A comprehensive review is performed when a PR or MR is created, and for incremental commits and comments addressed to the bot. The feedback is then sent directly back to the PR or MR.
 
-![](../about/./images/chat.png)
+![](../about/./images/CodeRabbitFlow.png)
 
 ## Data, Privacy, and Security.
 
