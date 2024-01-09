@@ -49,7 +49,8 @@ Additionally, we implemented triage logic to skip trivial changes from the revie
 
 By using this dual-model approach for summarization and filtering out trivial changes, we save almost 50% on costs.
 
-## Rate-limiting: Enforcing Fair Usage
+
+## 2. Rate-limiting: Enforcing Fair Usage
 
 Upon launching our free service for open source projects, we noticed individual developers using it as a coding co-pilot by making hundreds of incremental commits for continuous feedback. CodeRabbit, designed for thorough code reviews unlike tools such as GitHub Copilot, incurs high costs when used in this manner. Therefore, we implemented hourly rate-limits on the number of files and commits reviewed per user, to control excessive usage without compromising user experience. These limits vary across different product tiers. For example, we set more aggressive limits for open source users compared to trial and paid users.
 
@@ -70,7 +71,7 @@ Given the high cost and capacity constraints of state-of-the-art models such as 
 ![Rate limit metrics for open source users](rate-limits-metrics-screenshot.png "image_tRate limit metrics for open source usersooltip")
 Rate limit metrics for open source users
 
-## Caching: Avoid Re-generating Similar Review Comments
+## 3. Caching: Avoid Re-generating Similar Review Comments
 
 We believe that building user habits around AI involves seamlessly augmenting existing workflows. Therefore, AI code reviews must be continuous: they should trigger as soon as a PR is opened and incrementally update the summary and generate review comments as more commits are added.
 
