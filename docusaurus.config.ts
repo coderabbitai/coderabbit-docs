@@ -4,15 +4,14 @@ import { themes as prismThemes } from "prism-react-renderer";
 import { EnumChangefreq } from "sitemap";
 
 // const baseUrl = "/docs";
-// const baseUrl = "/blog";
 const baseUrl = "/";
+// const baseUrl = "https://docs.coderabbit.ai/";
 
 const config: Config = {
     title: "CodeRabbit",
     staticDirectories: ["public", "static"],
     tagline: "AI-powered Code Reviews",
-    favicon:
-        "https://images.saasworthy.com/coderabbit_44328_logo_1689061503_adc8g.jpg",
+    favicon: "img/favIcon.png",
 
     // Set the production url of your site here
     url: "https://coderabbit.ai/",
@@ -42,7 +41,7 @@ const config: Config = {
             {
                 redirects: [
                     {
-                        to: "/docs/get-started/signup",
+                        to: "https://docs.coderabbit.ai/docs/get-started/signup",
                         from: "/docs/get-started",
                     },
                 ],
@@ -67,8 +66,9 @@ const config: Config = {
             {
                 docs: {
                     sidebarPath: "./sidebars.ts",
-                    routeBasePath: "/docs",
+                    routeBasePath: "/",
                     breadcrumbs: true,
+                    showLastUpdateTime: true,
                 },
                 blog: {
                     routeBasePath: "/blog",
@@ -106,6 +106,11 @@ const config: Config = {
             disableSwitch: false,
             respectPrefersColorScheme: false,
         },
+        docs: {
+            sidebar: {
+                hideable: true,
+            },
+        },
         metadata: [
             { name: "keywords", content: "ai, blog" },
             { name: "twitter:card", content: "summary_large_image" },
@@ -133,17 +138,19 @@ const config: Config = {
             items: [
                 {
                     type: "docSidebar",
+                    docId: "docs",
                     sidebarId: "docsSidebar",
                     position: "left",
                     label: "Docs",
-                    to: "/docs/introduction",
+                    href: "https://docs.coderabbit.ai",
+                    target: "_self",
                 },
                 {
                     // type: "docSidebar",
                     // sidebarId: "blogsSidebar",
                     position: "left",
                     label: "Blog",
-                    to: "/blog",
+                    href: "https://blog.coderabbit.ai/blog",
                 },
                 {
                     href: "https://discord.gg/CVtemB5c",

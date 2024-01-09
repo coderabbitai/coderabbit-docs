@@ -9,10 +9,14 @@ module.exports = {
     theme: {
         fontFamily: {
             figtree: ["Figtree", "sans-serif"],
-            // You can replace 'figtree' with any name you want to use for the font family
-            // 'Figtree' should match the name specified in the Google Fonts link
+            satoshi: ["Satoshi", "Satoshi Placeholder", "sans-serif"],
         },
-        extend: {},
+        extend: {
+            colors: {
+                customGray: "rgb(189, 189, 189)",
+                customWhite: "rgb(255, 255, 255)",
+            },
+        },
     },
     plugins: [],
 };

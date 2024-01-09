@@ -10,41 +10,40 @@ aiDisclaimer: true
 
 # How we built a cost-effective Generative AI application
 
-Since its inception, CodeRabbit has experienced steady growth in its user base, comprising developers and organizations. Installed on thousands of repositories, CodeRabbit reviews several thousand pull requests (PRs) daily. We have [previously discussed](coderabbit-openai-rate-limits) our use of an innovative client-side request prioritization technique to navigate OpenAI rate limits. In this blog post, we will explore how we manage to deliver continuous, in-depth code analysis cost-effectively, while also providing a robust, free plan to open source projects.
+Since its inception, CodeRabbit has experienced steady growth in its user base, comprising developers and organizations. Installed on thousands of repositories, CodeRabbit reviews several thousand pull requests (PRs) daily. We have [previously discussed](/blog/coderabbit-openai-rate-limits) our use of an innovative client-side request prioritization technique to navigate OpenAI rate limits. In this blog post, we will explore how we manage to deliver continuous, in-depth code analysis cost-effectively, while also providing a robust, free plan to open source projects.
 
+<!--truncate-->
 
 ## CodeRabbit's Product Offering and LLM Consumption
 
 CodeRabbit is an AI-first PR Review tool that uses GPT APIs for various functionalities. CodeRabbit offers the following tiers of service:
 
-* CodeRabbit Pro: A paid service providing in-depth code reviews for private repositories. It's priced according to the number of developers, starting with a full-featured 7-day free trial.
-* CodeRabbit for Open Source: A free service offering in-depth code reviews for open source (public) repositories.
-* CodeRabbit Free: A free plan for private repositories, providing summarization of code changes in a PR.
+-   CodeRabbit Pro: A paid service providing in-depth code reviews for private repositories. It's priced according to the number of developers, starting with a full-featured 7-day free trial.
+-   CodeRabbit for Open Source: A free service offering in-depth code reviews for open source (public) repositories.
+-   CodeRabbit Free: A free plan for private repositories, providing summarization of code changes in a PR.
 
 Our vision is to offer an affordable, AI-driven code review service to developers and organizations of all sizes while supporting the open source community. We are particularly mindful of open source projects, understanding the challenges in reviewing community contributions. Our goal is to reduce the burden of code reviews for open source maintainers by improving submission quality before the review process begins.
 
 CodeRabbit's review process is automatically triggered when a PR is opened in GitHub or GitLab. Each review involves a complex workflow that builds context and reviews each file using large language models (LLMs). Code review is a complex task that requires an in-depth understanding of the changes and the existing codebase. High-quality review comments necessitate state-of-the-art language models such as gpt-4. However, these models are significantly more expensive than simpler models, as shown by the [10x-30x price difference](https://openai.com/pricing) between gpt-3.5-turbo and gpt-4 models.
 
-| Model   | Context Size | Cost per 1k Input Tokens | Cost per 1k Output Tokens |
-|---------|--------------|-----------------------------|------------------------------|
-| GPT-4   | Up to 32k    | $0.06                       | $0.12                        |
-| GPT-4   | Up to 8k     | $0.03                       | $0.06                        |
-| GPT-3.5 Turbo | Up to 16k    | $0.003                      | $0.004                       |
-| GPT-3.5 Turbo | Up to 4k     | $0.0015                     | $0.002                       |
-
+| Model         | Context Size | Cost per 1k Input Tokens | Cost per 1k Output Tokens |
+| ------------- | ------------ | ------------------------ | ------------------------- |
+| GPT-4         | Up to 32k    | $0.06                    | $0.12                     |
+| GPT-4         | Up to 8k     | $0.03                    | $0.06                     |
+| GPT-3.5 Turbo | Up to 16k    | $0.003                   | $0.004                    |
+| GPT-3.5 Turbo | Up to 4k     | $0.0015                  | $0.002                    |
 
 > gpt-4 model is 10-30x more expensive than gpt-3.5-turbo model
-
 
 Our primary cost driver is using OpenAI's API to generate code review comments. We will share our cost optimization strategies in the following sections. Without these optimizations, our free offering to open source projects would not be feasible.
 
 Let's take a look at the strategies that helped us optimize the cost and improve user experience.
 
-----
+---
 
 ## 1. Dual-models: Summarize & Triage Using Simpler Models
 
-For less complex tasks such as summarizing code diffs, simpler models such as gpt-3.5-turbo are adequate. As an initial optimization, we use a mix of models, as detailed in [our earlier blog post](coderabbit-deep-dive). We use gpt-3.5-turbo to compress large code diffs into concise summaries, which are then processed by gpt-4 for reviewing each file. This dual-model approach significantly reduces costs and enhances review quality, enabling us to manage PRs with numerous files and extensive code differences.
+For less complex tasks such as summarizing code diffs, simpler models such as gpt-3.5-turbo are adequate. As an initial optimization, we use a mix of models, as detailed in [our earlier blog post](/blog/coderabbit-deep-dive). We use gpt-3.5-turbo to compress large code diffs into concise summaries, which are then processed by gpt-4 for reviewing each file. This dual-model approach significantly reduces costs and enhances review quality, enabling us to manage PRs with numerous files and extensive code differences.
 
 Additionally, we implemented triage logic to skip trivial changes from the review process. We use the simpler model to classify each diff as either trivial or complex, as part of the same prompt used for code diff summarization. Low-risk changes such as documentation updates, variable renames, and so on, are thus excluded from the thorough review process. This strategy has proven effective, as simpler models can accurately identify trivial changes.
 
@@ -61,25 +60,16 @@ In FluxNinja Aperture, policies are decoupled from application logic through lab
 
 Integration with FluxNinja Aperture SDK
 
-
-
 ![Rate limiting commits per hour for open source users](generative-ai-request-flow-cost-saving.png "Rate limiting commits per hour for open source users")
- Rate limiting commits per hour for open source users
-
-
-
+Rate limiting commits per hour for open source users
 
 ![Wait time feedback to the user in a comment](rate-limit-message-screenshot.png "Wait time feedback to the user in a comment")
- Wait time feedback to the user in a comment
+Wait time feedback to the user in a comment
 
 Given the high cost and capacity constraints of state-of-the-art models such as gpt-4, rate-limiting is an essential requirement for any AI application. By implementing fair-usage rate limits, we are saving almost 20% on our costs.
 
-
-
-
 ![Rate limit metrics for open source users](rate-limits-metrics-screenshot.png "image_tRate limit metrics for open source usersooltip")
- Rate limit metrics for open source users
-
+Rate limit metrics for open source users
 
 ## 3. Caching: Avoid Re-generating Similar Review Comments
 
@@ -91,7 +81,7 @@ Fortunately, Aperture also provides a simple caching mechanism for summaries fro
 
 By using the more cost-effective gpt-3.5-turbo model as an advanced similarity filter before invoking the more expensive gpt-4 model for the same file, we have saved almost 20% of our costs by avoiding the generation of similar review comments.
 
-----
+---
 
 ## Conclusion
 

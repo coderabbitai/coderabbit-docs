@@ -1,7 +1,7 @@
 ---
 id: introduction
 title: What is CodeRabbit?
-sidebar_label: What is CodeRabbit?
+sidebar_label: Introduction
 description: Accelerate Code Reviews with AI
 image: "/preview_meta.jpg"
 slug: "/"
@@ -36,10 +36,10 @@ Code reviews remain essential, whether the code is written by a human or a bot. 
 
 **CodeRabbit** seamlessly integrates into code repositories using GitHub or GitLab webhooks and monitors events related to Pull Request (PR) and Merge Request (MR) changes. A comprehensive review is performed when a PR or MR is created, and for incremental commits and comments addressed to the bot. The feedback is then sent directly back to the PR or MR.
 
-![](./images/chat.png)
+![](../about/./images/CodeRabbitFlow.png)
 
 ## Data, Privacy, and Security.
 
 **CodeRabbit** does not utilize data collected during code reviews to train, refine, or influence our models, or any third-party models. The collected data is immediately discarded after the review is complete. We maintain no copies or backups of this review data, and it is purged from our systems without delay. Queries to the Large Language Model (LLM) are ephemeral. Neither we nor the LLM we use share any data collected during the code review process with other third parties.
 
-For information on how to get started with **CodeRabbit**, please visit the [Get Started page](https://coderabbit.ai/docs/get-started/signup).
+For information on how to get started with **CodeRabbit**, please visit the [Get Started page](/get-started/signup).
