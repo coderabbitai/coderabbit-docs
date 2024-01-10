@@ -4,7 +4,7 @@ title: AI and the Future of Code Reviews - A Deep Dive into CodeRabbit
 description: AI and the Future of Code Reviews - A Deep Dive into CodeRabbit
 authors: [gur, vishu]
 tags: ["Rate limits", "Openai", "Prioritization"]
-image: https://coderabbit.ai/founder_blog_meta.jpeg
+image: /img/blogs/founder_blog_meta.jpeg
 ---
 
 <head>
