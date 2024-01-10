@@ -23,7 +23,7 @@ image: /img/blogs/founder_blog_meta.jpeg
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://blog.coderabbit.ai/blog/coderabbit-deep-dive" />
   <meta property="og:title" content="AI and the Future of Code Reviews: A Deep Dive into CodeRabbit" />
-  <meta property="og:image" content="https://blog.coderabbit.ai/img/blogs/founder_blog_meta.jpeg" />
+  <meta property="og:image" content="https://docs.coderabbit.ai/img/blogs/founder_blog_meta.jpeg" />
 
   <meta name="twitter:image" content="https://blog.coderabbit.ai/img/blogs/founder_blog_meta.jpeg" />
   <meta name="twitter:card" content="summary_large_image" />
