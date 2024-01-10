@@ -23,11 +23,11 @@ aiDisclaimer: true
   <meta name="title" content="Boosting Engineering Efficiency Using AI Code Reviews for Remote Teams" />
 
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://coderabbit.ai/blog/boosting-engineering-efficiency" />
+  <meta property="og:url" content="https://blog.coderabbit.ai/blog/boosting-engineering-efficiency" />
   <meta property="og:title" content="Boosting Engineering Efficiency Using AI Code Reviews for Remote Teams" />
-<meta property="og:image" content='https://coderabbit.uw.r.appspot.com/blog/assets/images/blog4-568a2e78ef284966039a9ca8d2c48d21.jpeg' />
+<meta property="og:image" content='https://docs.coderabbit.ai/img/blogs/blog4.jpeg' />
 
-  <meta name="twitter:image" content='https://coderabbit.uw.r.appspot.com/blog/assets/images/blog4-568a2e78ef284966039a9ca8d2c48d21.jpeg' />
+  <meta name="twitter:image" content='https://docs.coderabbit.ai/img/blogs/blog4.jpeg' />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Boosting Engineering Efficiency Using AI Code Reviews for Remote Teams" />
 </head>
