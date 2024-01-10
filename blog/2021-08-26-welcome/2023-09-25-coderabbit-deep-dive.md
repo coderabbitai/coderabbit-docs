@@ -10,8 +10,8 @@ image: /img/blogs/founder_blog_meta.jpeg
 <head>
  <meta charSet="utf-8" />
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favIcon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favIcon.png"/>
   <meta content="/icons/apple-touch-icon.png" itemprop="image" />
   <link rel="icon" href="/icons/favicon-32x32.ico"></link>
 
@@ -21,11 +21,11 @@ image: /img/blogs/founder_blog_meta.jpeg
   <meta name="title" content="CodeRabbit: Bringing AI to Code Reviews" />
 
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://coderabbit.ai/blog/coderabbit-deep-dive" />
+  <meta property="og:url" content="https://blog.coderabbit.ai/blog/coderabbit-deep-dive" />
   <meta property="og:title" content="AI and the Future of Code Reviews: A Deep Dive into CodeRabbit" />
   <meta property="og:image" content="https://coderabbit.ai/founder_blog_meta.jpeg" />
 
-  <meta name="twitter:image" content="https://coderabbit.ai/founder_blog_meta.jpeg" />
+  <meta name="twitter:image" content="https://blog.coderabbit.ai/img/blogs/founder_blog_meta.jpeg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AI and the Future of Code Reviews: A Deep Dive into CodeRabbit" />
 </head>
