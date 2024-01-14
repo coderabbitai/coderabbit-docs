@@ -40,7 +40,7 @@ On this page, you need to enter the URL of your self managed GitLab instance and
 
 ### **Step 3: Enter Admin Personal Access Token (First time only)**
 
-If this is the first time you are signing up with your instance, then we need the admin access token for setup.
+If this is the first time you are signing up with your instance, then we will need a admin access token for setting up the CodeRabbit bot.
 
 #### **Generating Admin Personal Access token**
 
