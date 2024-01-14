@@ -44,18 +44,18 @@ If this is the first time you are signing up with your instance, then we will ne
 
 #### **Generating Admin Personal Access token**
 
-Gitlab provide an option to generate the personal access token to add a new user and setup application in the self managed instance. To generate the token, please follow the below process
+GitLab offers an option to generate a personal access token for adding a new user and setting up the application in the self-managed instance. To generate the token, please follow the process outlined below:
 
-1. Login to the instance. Make sure you have admin rights.
+1. Login to your self-hosted instance. Ensure sure you have admin rights.
 2. On the left sidebar, select your avatar.
 3. Select Edit profile.
 4. On the left sidebar, select Access Tokens.
 5. Select Add new token.
-6. Enter a name and expiry date for the token. We need this for One time, so you can set the minimum expiry time
+6. Enter a name and expiry date for the token. We need this for the initial setup, so the minimum expiry time is sufficient. 
 7. If you do not enter an expiry date, the expiry date is automatically set to 365 days later than the current date.
-8. Make sure, you select scope `api`
+8. Make sure, you select the scope: `api`
 9. Select Create personal access token.
-10. Please copy this token, this will be visible at one time only
+10. Please note down this token as this will be visible one time only
 
 ![Untitled](./images/admin-access-token.png)
 
