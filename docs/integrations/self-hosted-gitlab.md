@@ -61,9 +61,9 @@ GitLab offers an option to generate a personal access token for adding a new use
 
 ### **Step 3: Paste the token and click submit**
 
-- Once you submit the access token.
-- Sit, Relax. We will setup everything
-- And next time, when you visit. This will auto detect and you will be able to directly login.
+- Submit the access token.
+- We will handle the setup process for you.
+- On subsequent visits, your setup will be automatically detected, allowing for direct login.
 
 ![Untitled](./images/self-hosted-page.png)
 
