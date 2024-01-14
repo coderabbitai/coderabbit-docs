@@ -22,9 +22,9 @@ image: "/preview_meta.jpg"
   <meta name="twitter:description" content="CodeRabbit: AI-powered Code Reviews" />
 </head>
 
-This page walks you through integrating your own Self Managed GitLab with CodeRabbit.
+This page guides you through the process of integrating your Self-Managed GitLab with CodeRabbit.
 
-To start the integration we need some information, this is required for first time to setup our CodeRabbit user and to create CodeRabbit application in your domain. Once this is set next time, You can directly login using Oauth2 flow
+To initiate the integration, we require specific information. This is essential for the initial setup of our CodeRabbit user and the creation of the CodeRabbit application within your domain. Once this setup is complete, you can log in directly using the OAuth2 flow.
 
 ### **Step 1: Getting Started**
 
