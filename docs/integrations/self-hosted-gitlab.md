@@ -67,4 +67,4 @@ GitLab offers an option to generate a personal access token for adding a new use
 
 ![Untitled](./images/self-hosted-page.png)
 
-- Further, Please refer to our Get Started Guide on how to use best of the CodeRabbit [here](../get-started/add-repo.md)
+- Furthermore, please refer to our Get Started Guide to make the most of CodeRabbit. [here](../get-started/add-repo.md)
