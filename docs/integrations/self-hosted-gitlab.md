@@ -28,7 +28,7 @@ To initiate the integration, we require specific information. This is essential 
 
 ### **Step 1: Getting Started**
 
-**Visit CodeRabbit:** land on to our login page https://coderabbit.ai/login and select Self-Hosted Gitlab
+**Visit CodeRabbit:** Land on to our login page https://coderabbit.ai/login and select Self-Hosted Gitlab
 
 ![login-page](./images/login-page.png)
 
