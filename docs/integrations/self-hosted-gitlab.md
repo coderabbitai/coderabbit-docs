@@ -34,7 +34,7 @@ To initiate the integration, we require specific information. This is essential 
 
 ### Step 2: Enter your Self Managed Gitlab URL
 
-On this page, you need to enter the URL of your self managed GitLab instance and click submit. Once, you submit, we will check for your organization record in our database.
+On this page, you need to enter the URL of your self managed GitLab instance and click submit. Once, you submit, we will check our database for a record of your organization.
 
 ![Untitled](./images/enter-url.png)
 
