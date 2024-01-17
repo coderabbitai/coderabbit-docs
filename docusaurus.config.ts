@@ -4,7 +4,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 import { EnumChangefreq } from "sitemap";
 
 // const baseUrl = "/docs";
-const baseUrl = "/";
+const baseUrl = "/docs";
 // const baseUrl = "https://docs.coderabbit.ai/";
 
 const config: Config = {
