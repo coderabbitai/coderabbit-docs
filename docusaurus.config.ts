@@ -153,7 +153,7 @@ const config: Config = {
                     href: "https://blog.coderabbit.ai/blog",
                 },
                 {
-                    href: "https://discord.gg/CVtemB5c",
+                    href: "https://discord.gg/GsXnASn26c",
                     className: "header-discord-link",
                     "aria-label": "Discord",
                     position: "right",
