@@ -38,9 +38,9 @@ slug: "/"
 
 **CodeRabbit** does not use data collected during code reviews to train or influence the models. Queries to the Large Language Model (LLM) are ephemeral. Neither we nor the LLM we use share any data collected during the code review process with other third parties.
 
-Does CodeRabbit store my Data? We store embeddings of your conversations, which are used to improve future reviews.
+Does CodeRabbit store my Data? We store embeddings of your conversations, which are used to improve future reviews for your organization.
 
-Compliance and Data Privacy: Your data is kept confidential, isolated, and used only to improve your reviews. Data storage complies with SOC2 Type II, GDPR, and HIPAA standards.
+Compliance and Data Privacy: Your data is kept confidential, isolated by organization, and used only to improve your organization reviews. Data storage complies with SOC2 Type II, GDPR, and HIPAA standards.
 
 Opting Out: You can choose to opt out of data storage at any time. Opting out won't affect your access but will limit the personalization of the reviews.
 
