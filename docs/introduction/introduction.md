@@ -24,22 +24,32 @@ slug: "/"
   <meta name="twitter:description" content="Accelerate Code Reviews with AI" />
 </head>
 
-**CodeRabbit** is an innovative, AI-driven platform that revolutionizes the way pull requests are reviewed. It enhances code quality while significantly reducing the time and effort associated with manual code reviews. The platform provides detailed, line-by-line feedback on code changes, offering suggestions for improvements and corrections to enhance code efficiency and robustness. This analysis includes a comprehensive review of logic, syntax, and coding style, along with potential optimizations and corrections.
+**CodeRabbit** is an innovative, AI-first code reviewer. It provides context aware review feedback on a pull request within minutes, thereby significantly reducing the time and effort associated with manual code reviews. Secondly, it brings a different perspective to the reviews and finds issues often missed by the human eye. Developers can chat with the bot within the code, which allows them to provide additional context, ask questions, or have the bot generate code. It learns from your suggestions and gets better overtime.
 
-Moreover, **CodeRabbit** can triage changes and flag pull requests that require more careful scrutiny. Our bot offers conversational capabilities within the context of the code, allowing developers to provide additional context, ask questions, or even generate code. **CodeRabbit** seamlessly integrates with GitHub and GitLab repositories, performing continuous, incremental reviews for each commit within a pull request. Review feedback is sent back to the pull requests and can be directly committed.
+**CodeRabbit** seamlessly integrates with GitHub and GitLab repositories, performing continuous, incremental reviews for each commit within a pull request. Review feedback is sent back to the pull requests and can be directly committed.
 
-## Do you need CodeRabbit with the AI code generators or co-pilot?
+### How does CodeRabbit work?
+
+**CodeRabbit** integrates into code repositories using GitHub or GitLab webhooks and monitors events related to Pull Request (PR) and Merge Request (MR) changes. A comprehensive review is performed when a PR or MR is created, and for incremental commits and comments addressed to the bot. The feedback is then sent directly back to the PR or MR.
+
+![](../about/images/CodeRabbitFlow.png)
+
+### Data, Privacy, and Security
+
+**CodeRabbit** does not use data collected during code reviews to train or influence the models. Queries to the Large Language Model (LLM) are ephemeral. Neither we nor the LLM we use share any data collected during the code review process with other third parties.
+
+Does CodeRabbit store my Data? We store embeddings of your conversations, which are used to improve future reviews.
+
+Compliance and Data Privacy: Your data is kept confidential, isolated, and used only to improve your reviews. Data storage complies with SOC2 Type II, GDPR, and HIPAA standards.
+
+Opting Out: You can choose to opt out of data storage at any time. Opting out won't affect your access but will limit the personalization of the reviews.
+
+### Do you need CodeRabbit with the AI code generators or co-pilot?
 
 Code reviews remain essential, whether the code is written by a human or a bot. This is mainly because the perspective of the reviewer differs from that of the code generator, whether human or machine. This distinction is precisely why human peer reviews have been effective for so long. While AI-powered code-generation tools hold immense potential, it's important to recognize that these generators are still in their early stages and may not be equipped to auto-generate meaningful code for moderately complex applications.
 
-## How does CodeRabbit work?
+### How is CodeRabbit different from existing code review tools?
 
-**CodeRabbit** seamlessly integrates into code repositories using GitHub or GitLab webhooks and monitors events related to Pull Request (PR) and Merge Request (MR) changes. A comprehensive review is performed when a PR or MR is created, and for incremental commits and comments addressed to the bot. The feedback is then sent directly back to the PR or MR.
+Existing code review tools are good at linting and static code analysis; however, they lack context-aware, human-like review feedback.
 
-![](../about/./images/CodeRabbitFlow.png)
-
-## Data, Privacy, and Security.
-
-**CodeRabbit** does not utilize data collected during code reviews to train, refine, or influence our models, or any third-party models. The collected data is immediately discarded after the review is complete. We maintain no copies or backups of this review data, and it is purged from our systems without delay. Queries to the Large Language Model (LLM) are ephemeral. Neither we nor the LLM we use share any data collected during the code review process with other third parties.
-
-For information on how to get started with **CodeRabbit**, please visit the [Get Started page](/get-started/signup).
+For information on how to get started with **CodeRabbit**, please visit the [Get Started page](https://coderabbit.ai/docs/get-started/signup).
