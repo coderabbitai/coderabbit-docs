@@ -46,7 +46,7 @@ We'll discuss the regular stages of software projects and the impact of AI code 
 
 ### The Typical Software Lifecycle Process
 
-![](./2021-08-26-welcome/software-lifecycle.png)
+![](software-lifecycle.png)
 
 Ah, the software lifecycle—the process where we turn ideas into lines of code that build our products. If you're an engineering manager, you're already well-versed in the dogma: planning, coding, testing, deploying, and maintaining. It's a continuous cycle with its own set of challenges.
 
@@ -58,19 +58,19 @@ In the upcoming sections, we'll dive deeper into how the traditional and often c
 
 ### The Traditional Code Review Method
 
-![](./2021-08-26-welcome/engineer.png)
+![](engineer.png)
 
 In the conventional approach, code reviews followed this pattern: one developer wrote the code and then passed it on to another person for evaluation. The reviewer took their time to meticulously inspect the code submitted by the developer. This involved examining lines of code and making notes, comments, questions, and identifying any problems. This process typically unfolded as follows:
 
--   A developer creates a Pull Request (PR) and outlines the changes made, requesting a review.
--   The reviewer, who might be another developer or an engineering manager, assesses the code, looking for specific aspects such as:
-    -   Ensuring that the PR changes align with the scope of the associated ticket(s).
-    -   Confirming the accuracy of business logic implementation.
-    -   Maintaining or improving code quality by reverting unnecessary changes and upholding code quality standards.
-    -   Verifying that the changes do not introduce security vulnerabilities.
--   The reviewer either approves or rejects the PR.
--   If approved, the PR can be merged.
--   If rejected, the reviewer provides feedback on the required updates for approval.
+- A developer creates a Pull Request (PR) and outlines the changes made, requesting a review.
+- The reviewer, who might be another developer or an engineering manager, assesses the code, looking for specific aspects such as:
+  - Ensuring that the PR changes align with the scope of the associated ticket(s).
+  - Confirming the accuracy of business logic implementation.
+  - Maintaining or improving code quality by reverting unnecessary changes and upholding code quality standards.
+  - Verifying that the changes do not introduce security vulnerabilities.
+- The reviewer either approves or rejects the PR.
+- If approved, the PR can be merged.
+- If rejected, the reviewer provides feedback on the required updates for approval.
 
 This process has been a fundamental part of modern coding. It relies on the availability of both the reviewer to provide feedback and the developer to make changes based on that feedback.
 
@@ -90,7 +90,7 @@ The following sections will delve into how these AI platforms streamline code re
 
 In code reviews, problems can happen even when everyone works in the same place. Sometimes, teams just agree without really checking. People might not get along, causing delays and making things tense. Plus, even if we try really hard, some issues can slip by us and turn into big, expensive problems like bugs or system crashes. So, we need better ways to catch these problems early.
 
-Let's look at some numbers because engineering managers really like facts and figures. Studies tell us that developers spend around 20-30% of their time [doing code reviews](https://about.gitlab.com/blog/2021/09/03/the-code-review-struggle-is-real-heres-what-you-need-to-know/). There's even a study [here](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/#:~:text=Review%20fewer%20than%20400%20lines%20of%20code%20at%20a%20time,-A%20SmartBear%20study&text=The%20brain%20can%20only%20effectively,70%2D90%25%20defect%20discovery) that shows our brains struggle to review more than about 400 lines of code at once, making it harder to spot mistakes.
+Let's look at some numbers because engineering managers really like facts and figures. Studies tell us that developers spend around 20-30% of their time [doing code reviews](https://about.gitlab.com/blog/2023/09/03/the-code-review-struggle-is-real-heres-what-you-need-to-know/). There's even a study [here](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/#:~:text=Review%20fewer%20than%20400%20lines%20of%20code%20at%20a%20time,-A%20SmartBear%20study&text=The%20brain%20can%20only%20effectively,70%2D90%25%20defect%20discovery) that shows our brains struggle to review more than about 400 lines of code at once, making it harder to spot mistakes.
 
 We all know time is super important. It doesn't just impact how much money the project makes, but it also affects how much your team gets paid and, in the big picture, how well the company does overall. When a big chunk of your developers' time is used up reviewing code, it's not just a tech thing anymore – it's a big deal for the whole business.
 
@@ -102,7 +102,7 @@ In the next section, we'll understand how AI-powered code reviewers offer a more
 
 ### AI-Powered Code Reviews: This Changes Everything
 
-![](./2021-08-26-welcome/ai-powered.png)
+![](ai-powered.png)
 AI, or Artificial Intelligence, might sound like a trendy word, but in the world of reviewing computer code, it's not just a passing trend – it's a real game-changer. When we talk about AI in code review tools, we're not just talking about existing linters or static code analysis tools. Instead, we're referring to smart feedback that understands the context of your team's coding rules and the particular project you're working on.
 
 But there's more to it. These AI-powered systems can chat with you, making the review process feel like a collaboration rather than a machine. This means you can ask questions, seek clarifications, and even discuss the best approaches, all in real time. It's like having your most experienced developer, who knows your code inside and out, ready for reviews 24/7.
