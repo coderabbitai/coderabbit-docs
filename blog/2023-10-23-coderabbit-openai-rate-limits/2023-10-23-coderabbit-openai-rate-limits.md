@@ -74,13 +74,13 @@ In our account, for example, we are allocated the following rate limits:
 We believe that the rate limits are in place for several reasons and are
 unlikely to change in the near future:
 
--   Advanced models such as `gpt-4` are computationally intensive. Each request
-    can take several seconds or even minutes to process. For example, 30s response
-    time is fairly typical for complex tasks. OpenAI sets these limits to manage
-    aggregate load on their infrastructure and provide fair access to users.
--   The demand for AI has outstripped the supply of available hardware,
-    particularly the GPUs required to run these models. It will take some time for
-    the industry to meet this exploding demand.
+- Advanced models such as `gpt-4` are computationally intensive. Each request
+  can take several seconds or even minutes to process. For example, 30s response
+  time is fairly typical for complex tasks. OpenAI sets these limits to manage
+  aggregate load on their infrastructure and provide fair access to users.
+- The demand for AI has outstripped the supply of available hardware,
+  particularly the GPUs required to run these models. It will take some time for
+  the industry to meet this exploding demand.
 
 ## CodeRabbit's OpenAI usage pattern and challenges
 
@@ -90,7 +90,7 @@ developers on the quality of their code. The feedback is provided in the form of
 comments on the pull request, allowing the developers to enhance the code based
 on the provided suggestions in the follow-up commits.
 
-![CodeRabbit Pull Request Review Workflow](./2021-08-26-welcome/CodeRabbitDesign.jpg "CodeRabbit Pull Request Review Workflow")
+![CodeRabbit Pull Request Review Workflow](../img/CodeRabbitDesign.jpg "CodeRabbit Pull Request Review Workflow")
 
 CodeRabbit employs a combination of the `gpt-3.5-turbo` and `gpt-4` family of
 models. For simpler tasks such as summarization, we use the more economical
@@ -108,18 +108,18 @@ rate limits were met with no success.
 To mitigate these challenges, we cobbled together a makeshift solution for our
 API client:
 
--   We set up four separate OpenAI accounts to distribute the load.
--   Implemented an API concurrency limit on each reviewer instance to cap the
-    number of in-flight requests to OpenAI.
--   Increased the back-off time for each retry and increased the number of
-    retries. OpenAI's rate limit headers were not helpful in determining the
-    optimal back-off times, as the
-    [headers](https://platform.openai.com/docs/guides/rate-limits/rate-limits-in-headers)
-    were outdated by tens of seconds and do not consider the in-flight requests.
--   Transitioned from function-based serverless framework to a containerized
-    environment to benefit from extended timeout capabilities to ensure that
-    instances would not be terminated while requests were in the retry-back-off
-    loop.
+- We set up four separate OpenAI accounts to distribute the load.
+- Implemented an API concurrency limit on each reviewer instance to cap the
+  number of in-flight requests to OpenAI.
+- Increased the back-off time for each retry and increased the number of
+  retries. OpenAI's rate limit headers were not helpful in determining the
+  optimal back-off times, as the
+  [headers](https://platform.openai.com/docs/guides/rate-limits/rate-limits-in-headers)
+  were outdated by tens of seconds and do not consider the in-flight requests.
+- Transitioned from function-based serverless framework to a containerized
+  environment to benefit from extended timeout capabilities to ensure that
+  instances would not be terminated while requests were in the retry-back-off
+  loop.
 
 Although these adjustments provided temporary relief, the challenges resurfaced
 as the load increased within a few days. We were doing much guesswork to figure
@@ -154,94 +154,94 @@ Agents, we employ Aperture's TypeScript SDK. Before calling OpenAI, we rely on
 Aperture Agent to gate the request using the `StartFlow` method. To provide more
 context to Aperture, we also attach the following labels to each request:
 
--   `model_variant`: This specifies the model variant being used (`gpt-4`,
-    `gpt-3.5-turbo`, or `gpt-3.5-turbo-16k`). Requests and tokens per minute rate
-    limit policies are set individually for each model variant.
--   `api_key` - This is a cryptographic hash of the OpenAI API key, and rate
-    limits are enforced on a per-key basis.
--   `estimated_tokens`: As the tokens per minute quota limit is enforced based on
-    the
-    [estimated tokens for the completion request](https://platform.openai.com/docs/guides/rate-limits/reduce-the-max_tokens-to-match-the-size-of-your-completions),
-    we need to provide this number for each request to Aperture for metering.
-    Following OpenAI's
-    [guidance](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them),
-    we calculate `estimated_tokens` as `(character_count / 4) + max_tokens`. Note
-    that OpenAI's rate limiter doesn't tokenize the request using the model's
-    specific tokenizer but relies on a character count-based heuristic.
--   `product_tier`: CodeRabbit offers both `pro` and `free` tiers. The `pro` tier
-    provides comprehensive code reviews, whereas the `free` tier offers only the
-    summary of the pull request.
--   `product_reason`: We also label why a review was initiated under the `pro`
-    tier. For example, the reasoning could that the user is a `paid_user`,
-    `trial_user` or a `open_source_user`. Requests to OpenAI are prioritized based
-    on these labels.
--   `priority`: Requests are ranked according a priority number provided in this
-    label. For instance, requests from `paid_user` are given precedence over those
-    from `trial_user` and `open_source_user`. The base priority is incremented for
-    each file reviewed, enabling pull requests that are further along in the
-    review process to complete more quickly than newly submitted ones.
-    Additionally, chat messages are assigned a much higher priority compared to
-    review tasks.
+- `model_variant`: This specifies the model variant being used (`gpt-4`,
+  `gpt-3.5-turbo`, or `gpt-3.5-turbo-16k`). Requests and tokens per minute rate
+  limit policies are set individually for each model variant.
+- `api_key` - This is a cryptographic hash of the OpenAI API key, and rate
+  limits are enforced on a per-key basis.
+- `estimated_tokens`: As the tokens per minute quota limit is enforced based on
+  the
+  [estimated tokens for the completion request](https://platform.openai.com/docs/guides/rate-limits/reduce-the-max_tokens-to-match-the-size-of-your-completions),
+  we need to provide this number for each request to Aperture for metering.
+  Following OpenAI's
+  [guidance](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them),
+  we calculate `estimated_tokens` as `(character_count / 4) + max_tokens`. Note
+  that OpenAI's rate limiter doesn't tokenize the request using the model's
+  specific tokenizer but relies on a character count-based heuristic.
+- `product_tier`: CodeRabbit offers both `pro` and `free` tiers. The `pro` tier
+  provides comprehensive code reviews, whereas the `free` tier offers only the
+  summary of the pull request.
+- `product_reason`: We also label why a review was initiated under the `pro`
+  tier. For example, the reasoning could that the user is a `paid_user`,
+  `trial_user` or a `open_source_user`. Requests to OpenAI are prioritized based
+  on these labels.
+- `priority`: Requests are ranked according a priority number provided in this
+  label. For instance, requests from `paid_user` are given precedence over those
+  from `trial_user` and `open_source_user`. The base priority is incremented for
+  each file reviewed, enabling pull requests that are further along in the
+  review process to complete more quickly than newly submitted ones.
+  Additionally, chat messages are assigned a much higher priority compared to
+  review tasks.
 
-![Request Flow](./2021-08-26-welcome/request-flow.svg)
+![Request Flow](request-flow.svg)
 
 <details>
 <summary>Integration with Aperture TypeScript SDK</summary>
 <p>
 
 ```typescript
-		let flow: Flow | undefined = undefined
+  let flow: Flow | undefined = undefined
 
-    	if (this.apertureClient) {
-    		const charCount =
-    			this.systemMessage.length +
-    			message.length +
-    			String("system" + "user").length
-    		const labels: Record<string, string> = {
-    			api_key: CryptoES.SHA256(api.apiKey).toString(),
-    			estimated_tokens: (
-    				Math.ceil(charCount / 4) + responseTokens
-    			).toString(),
-    			model_variant: modelVariant,
-    			product_tier: this.settings.product_tier,
-    			product_reason: this.settings.product_reason,
-    			priority: String(
-    				PRIORITIES[this.settings.product_reason] + priorityBump,
-    			),
-    			prompt_type: promptType,
-    		}
+     if (this.apertureClient) {
+      const charCount =
+       this.systemMessage.length +
+       message.length +
+       String("system" + "user").length
+      const labels: Record<string, string> = {
+       api_key: CryptoES.SHA256(api.apiKey).toString(),
+       estimated_tokens: (
+        Math.ceil(charCount / 4) + responseTokens
+       ).toString(),
+       model_variant: modelVariant,
+       product_tier: this.settings.product_tier,
+       product_reason: this.settings.product_reason,
+       priority: String(
+        PRIORITIES[this.settings.product_reason] + priorityBump,
+       ),
+       prompt_type: promptType,
+      }
 
-    		flow = await this.apertureClient.StartFlow("openai", {
-    			labels: labels,
-    			grpcCallOptions: {
-    				deadline: Date.now() + 1200000,
-    			},
-    		})
-    	}
+      flow = await this.apertureClient.StartFlow("openai", {
+       labels: labels,
+       grpcCallOptions: {
+        deadline: Date.now() + 1200000,
+       },
+      })
+     }
 
-    	// As we use Aperture as a queue, send the message regardless of whether it was accepted or rejected
-    	try {
-    		const { data: chatCompletion, response: raw } = await api.chat.completions
-    			.create({
-    				model: modelVariant,
-    				temperature: temperature,
-    				top_p: topP,
-    				max_tokens: responseTokens,
-    				messages: messages,
-    			})
-    			.withResponse()
-    			.catch(err => {
-    				logger.error(`openai chat error: ${JSON.stringify(err)}`)
-    				throw err
-    			})
-    		)
-    		return chatCompletion.choices[0]?.message?.content ?? ""
-    	} catch (e) {
-    		flow?.SetStatus(FlowStatusEnum.Error)
-    		throw e // throw the error to be caught by the chat function
-    	} finally {
-    		flow?.End()
-    	}
+     // As we use Aperture as a queue, send the message regardless of whether it was accepted or rejected
+     try {
+      const { data: chatCompletion, response: raw } = await api.chat.completions
+       .create({
+        model: modelVariant,
+        temperature: temperature,
+        top_p: topP,
+        max_tokens: responseTokens,
+        messages: messages,
+       })
+       .withResponse()
+       .catch(err => {
+        logger.error(`openai chat error: ${JSON.stringify(err)}`)
+        throw err
+       })
+      )
+      return chatCompletion.choices[0]?.message?.content ?? ""
+     } catch (e) {
+      flow?.SetStatus(FlowStatusEnum.Error)
+      throw e // throw the error to be caught by the chat function
+     } finally {
+      flow?.End()
+     }
 
 ```
 
@@ -254,17 +254,17 @@ Aperture offers a foundational "blueprint" for
 [managing quotas](https://docs.fluxninja.com/reference/blueprints/quota-scheduling/base),
 comprising of two main components:
 
--   Rate limiter: OpenAI employs a token bucket algorithm to impose rate limits,
-    and that is directly compatible with Aperture's rate limiter. For example, in
-    the tokens per minute policy for `gpt-4`, we have allocated a burst capacity
-    of `40000 tokens`, and a refill rate of `40000 tokens per minute`. The bucket
-    begins to refill the moment the tokens are withdrawn, aligning with OpenAI's
-    rate limiting mechanism. This ensures our outbound request and token rate
-    remains synchronized with OpenAI's enforced limits.
--   Scheduler: Aperture has a
-    [weighted fair queuing](https://docs.fluxninja.com/concepts/scheduler/)
-    scheduler that prioritizes the requests based on multiple factors such as the
-    number of tokens, priority levels and workload labels.
+- Rate limiter: OpenAI employs a token bucket algorithm to impose rate limits,
+  and that is directly compatible with Aperture's rate limiter. For example, in
+  the tokens per minute policy for `gpt-4`, we have allocated a burst capacity
+  of `40000 tokens`, and a refill rate of `40000 tokens per minute`. The bucket
+  begins to refill the moment the tokens are withdrawn, aligning with OpenAI's
+  rate limiting mechanism. This ensures our outbound request and token rate
+  remains synchronized with OpenAI's enforced limits.
+- Scheduler: Aperture has a
+  [weighted fair queuing](https://docs.fluxninja.com/concepts/scheduler/)
+  scheduler that prioritizes the requests based on multiple factors such as the
+  number of tokens, priority levels and workload labels.
 
 By fine-tuning these two components in Aperture, we are able to go as fast as we
 can, with optimal user experience, while ensuring that we don't exceed the rate
@@ -288,37 +288,37 @@ limits.
 blueprint: quota-scheduling/base
 uri: github.com/fluxninja/aperture/blueprints@latest
 policy:
-    # Name of the policy.
-    # Type: string
+  # Name of the policy.
+  # Type: string
+  # Required: True
+  policy_name: gpt-4-tpm
+  quota_scheduler:
+    # Bucket capacity.
+    # Type: float64
     # Required: True
-    policy_name: gpt-4-tpm
-    quota_scheduler:
-        # Bucket capacity.
-        # Type: float64
-        # Required: True
-        bucket_capacity: 40000
-        # Fill amount.
-        # Type: float64
-        # Required: True
-        fill_amount: 40000
-        # Rate Limiter Parameters
-        # Type: aperture.spec.v1.RateLimiterParameters
-        # Required: True
-        rate_limiter:
-            interval: 60s
-            label_key: api_key
-        scheduler:
-            priority_label_key: priority
-            tokens_label_key: estimated_tokens
-        # Flow selectors to match requests against
-        # Type: []aperture.spec.v1.Selector
-        # Required: True
-        selectors:
-            - control_point: openai
-              agent_group: coderabbit-prod
-              label_matcher:
-                  match_labels:
-                      model_variant: gpt-4
+    bucket_capacity: 40000
+    # Fill amount.
+    # Type: float64
+    # Required: True
+    fill_amount: 40000
+    # Rate Limiter Parameters
+    # Type: aperture.spec.v1.RateLimiterParameters
+    # Required: True
+    rate_limiter:
+      interval: 60s
+      label_key: api_key
+    scheduler:
+      priority_label_key: priority
+      tokens_label_key: estimated_tokens
+    # Flow selectors to match requests against
+    # Type: []aperture.spec.v1.Selector
+    # Required: True
+    selectors:
+      - control_point: openai
+        agent_group: coderabbit-prod
+        label_matcher:
+          match_labels:
+            model_variant: gpt-4
 ```
 
 ```mdx-code-block
@@ -335,36 +335,36 @@ policy:
 blueprint: quota-scheduling/base
 uri: github.com/fluxninja/aperture/blueprints@latest
 policy:
-    # Name of the policy.
-    # Type: string
+  # Name of the policy.
+  # Type: string
+  # Required: True
+  policy_name: gpt-4-rpm
+  quota_scheduler:
+    # Bucket capacity.
+    # Type: float64
     # Required: True
-    policy_name: gpt-4-rpm
-    quota_scheduler:
-        # Bucket capacity.
-        # Type: float64
-        # Required: True
-        bucket_capacity: 200
-        # Fill amount.
-        # Type: float64
-        # Required: True
-        fill_amount: 200
-        # Rate Limiter Parameters.
-        # Type: aperture.spec.v1.RateLimiterParameters
-        # Required: True
-        rate_limiter:
-            interval: 60s
-            label_key: api_key
-        scheduler:
-            priority_label_key: priority
-        # Flow selectors to match requests against
-        # Type: []aperture.spec.v1.Selector
-        # Required: True
-        selectors:
-            - control_point: openai
-              agent_group: coderabbit-prod
-              label_matcher:
-                  match_labels:
-                      model_variant: gpt-4
+    bucket_capacity: 200
+    # Fill amount.
+    # Type: float64
+    # Required: True
+    fill_amount: 200
+    # Rate Limiter Parameters.
+    # Type: aperture.spec.v1.RateLimiterParameters
+    # Required: True
+    rate_limiter:
+      interval: 60s
+      label_key: api_key
+    scheduler:
+      priority_label_key: priority
+    # Flow selectors to match requests against
+    # Type: []aperture.spec.v1.Selector
+    # Required: True
+    selectors:
+      - control_point: openai
+        agent_group: coderabbit-prod
+        label_matcher:
+          match_labels:
+            model_variant: gpt-4
 ```
 
 ```mdx-code-block
@@ -385,12 +385,12 @@ remains smooth and hovers around `666 tokens per second`. This roughly
 translates to `40,000 tokens per minute`. Essentially, Aperture is smoothing out
 the fluctuating incoming token rate to align it with OpenAI's rate limits.
 
-![Token Rate in Light Mode](./2021-08-26-welcome/token-rate-light.png#gh-light-mode-only)
+![Token Rate in Light Mode](token-rate-light.png#gh-light-mode-only)
 
 The below image shows request prioritization metrics from the Aperture Cloud
 console during the same peak load period:
 
-![Prioritization Metrics in Light Mode](./2021-08-26-welcome/priorities-light.png#gh-light-mode-only)
+![Prioritization Metrics in Light Mode](priorities-light.png#gh-light-mode-only)
 
 In the upper left panel of the metrics, noticeable peaks indicate that some
 requests got queued for several minutes in Aperture. We can verify that the
@@ -414,7 +414,7 @@ family of models. This is quite insightful, as it hints at why OpenAI's
 infrastructure struggles to meet demand - these APIs are not just simple
 database or analytics queries; they are computationally expensive to run.
 
-![Flow Analytics](./2021-08-26-welcome/flow-analytics-light.png#gh-light-mode-only)
+![Flow Analytics](flow-analytics-light.png#gh-light-mode-only)
 
 ## Conclusion
 

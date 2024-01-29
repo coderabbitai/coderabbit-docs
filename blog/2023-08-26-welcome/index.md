@@ -5,6 +5,7 @@ description: AI and the Future of Code Reviews - A Deep Dive into CodeRabbit
 authors: [gur, vishu]
 tags: ["Rate limits", "Openai", "Prioritization"]
 image: /img/blogs/founder_blog_meta.jpeg
+hide_table_of_contents: false
 ---
 
 <head>
@@ -81,7 +82,7 @@ CodeRabbit is built on top of the generative AI to provide the following key cap
 
 The review process is multi-stage and shown in the figure below. CodeRabbit's workflow is triggered when a developer opens a pull request or commits code to an existing pull request. This is followed by various summarization and review stages.
 
-![](./CodeRabbitDesign.jpg)
+![](../img/CodeRabbitDesign.jpg)
 
 CodeRabbit is not just a simple wrapper that does pass-through to the LLM models. To circumvent context size limits, CodeRabbit uses an innovative, multi-LLM and multi-stage approach to scale reviews for larger change sets. Unlike AI-based code completion tools, code reviews are a much more complex problem. The reviewer context is much broader than the developer context, as the reviewer needs to uncover not just obvious issues but also understand the larger context of the pull request and changes across multiple files. Below is a glimpse into the challenges we faced and the solutions we came up with:
 
