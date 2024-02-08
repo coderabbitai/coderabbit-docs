@@ -39,7 +39,7 @@ Below is a sample YAML file that can be used as a starting point and change as n
 #### version 2: `Current`
 
 ```yaml
-language: "jp"
+language: "ja"
 early_access: false
 reviews:
     request_changes_workflow: false
