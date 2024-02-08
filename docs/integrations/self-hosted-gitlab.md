@@ -1,24 +1,24 @@
 ---
-title: CodeRabbit in Self Managed Gitlab
-description: Integrate CodeRabbit with your Self Managed Gitlab instance.
-sidebar_label: Self Managed Gitlab
+title: CodeRabbit in Self Managed GitLab
+description: Integrate CodeRabbit with your Self Managed GitLab instance.
+sidebar_label: Self Managed GitLab
 image: "/preview_meta.jpg"
 ---
 
 <head>
  <meta charSet="utf-8" />
-  <meta name="title" content="CodeRabbit in Self Managed Gitlab" />
-  <meta name="description" content="Integrate CodeRabbit in your own hosted Gitlab instance." />
+  <meta name="title" content="CodeRabbit in Self Managed GitLab" />
+  <meta name="description" content="Integrate CodeRabbit in your own hosted GitLab instance." />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://coderabbit.ai/" />
-  <meta property="og:title" content="CodeRabbit in Self Managed Gitlab" />
+  <meta property="og:title" content="CodeRabbit in Self Managed GitLab" />
   <meta property="og:description" content="CodeRabbit: AI-powered Code Reviews" />
   <meta property="og:image" content="/preview_meta.jpg" />
 
   <meta name="twitter:image" content="https://coderabbit.ai/preview_meta.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CodeRabbit in Self Managed Gitlab" />
+  <meta name="twitter:title" content="CodeRabbit in Self Managed GitLab" />
   <meta name="twitter:description" content="CodeRabbit: AI-powered Code Reviews" />
 </head>
 
@@ -28,11 +28,11 @@ To initiate the integration, we require specific information. This is essential 
 
 ### **Step 1: Getting Started**
 
-**Visit CodeRabbit:** Land on to our login page https://coderabbit.ai/login and select Self-Hosted Gitlab
+**Visit CodeRabbit:** Land on to our login page https://coderabbit.ai/login and select Self-Hosted GitLab
 
 ![login-page](./images/login-page.png)
 
-### Step 2: Enter your Self Managed Gitlab URL
+### Step 2: Enter your Self Managed GitLab URL
 
 On this page, enter the URL of your self managed GitLab instance and click submit. Once, you submit, we check our database for a record of your organization.
 
