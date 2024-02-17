@@ -65,7 +65,7 @@ reviews:
         drafts: false
         base_branches:
             - "develop"
-            - "feat/*"
+            - "feat/.*"
 chat:
     auto_reply: true
 ```
