@@ -27,7 +27,7 @@ But the question remains: How does one improve their code review skills? Is it b
 
 Given the specificity of PRs to individual projects, generic feedback often falls short of being genuinely helpful. While coworkers can offer valuable insights, their availability to provide immediate feedback—when the context of the PR code changes is still fresh in your mind—can be limited.
 
-The solution is “Self-Assessment”. Assess your Code Review skills and then improve your weaknesses.
+The solution is **Self-Assessment**. Assess your Code Review skills and then improve your weaknesses.
 
 
 ## How to Assess Code Review Skills and Improve
