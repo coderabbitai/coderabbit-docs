@@ -10,7 +10,7 @@ tags:
     "developer tools",
     "ai tools",
     "career",
-    "code reviw skill",
+    "code review skill",
     "tech lead"
   ]
 hide_table_of_contents: false
