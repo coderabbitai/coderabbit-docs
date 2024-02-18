@@ -17,7 +17,7 @@ hide_table_of_contents: false
 aiDisclaimer: true
 ---
 
-The skill of conducting effective code reviews is an important skill for developers. Code reviews ensure high-quality code, facilitate knowledge sharing, and foster a collaborative team environment. Despite its importance, many tech leads and developers find themselves either spending an excessive amount of time on code reviews or struggling to provide constructive feedback to pull request (PR) authors. 
+The skill of conducting effective code reviews is an important skill for developers. Code reviews ensure high-quality code. They facilitate knowledge sharing and foster a collaborative team environment. Despite its importance, many tech leads and developers find themselves either spending an excessive amount of time on code reviews or struggling to provide constructive feedback to pull request (PR) authors. 
 
 <!--truncate-->
 
