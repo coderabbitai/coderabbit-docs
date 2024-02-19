@@ -12,3 +12,4 @@
 
 # Redirect requests for pages to the /dev suffix
 /coderabbit.ai/* /coderabbit.ai/doc1/:splat 301
+# redirect other rule
