@@ -9,3 +9,6 @@
 # Exclude blog.coderabbit.ai/blog/\* from redirection
 
 /blog.coderabbit.ai/blog/\* https://blog.coderabbit.ai/blog/:splat 200
+
+# Redirect requests for pages to the /dev suffix
+/coderabbit.ai/* /coderabbit.ai/doc1/:splat 301
