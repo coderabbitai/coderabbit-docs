@@ -3,7 +3,7 @@ id: introduction
 title: What is CodeRabbit?
 sidebar_label: Introduction
 description: Accelerate Code Reviews with AI
-image: "/preview_meta.jpg"
+image: "../img/preview_meta.jpg"
 slug: "/"
 ---
 
@@ -16,9 +16,9 @@ slug: "/"
   <meta property="og:url" content="https://coderabbit.ai/" />
   <meta property="og:title" content="CodeRabbit: AI-powered Code Reviews" />
   <meta property="og:description" content="Accelerate Code Reviews with AI" />
-  <meta property="og:image" content="/preview_meta.jpg" />
+  <meta property="og:image" content="../img/preview_meta.jpg"/>
 
-  <meta name="twitter:image" content="https://coderabbit.ai/preview_meta.jpg" />
+  <meta name="twitter:image" content="https://docs.coderabbit.ai/img/preview_meta.jpg"/>
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="CodeRabbit: AI-powered Code Reviews" />
   <meta name="twitter:description" content="Accelerate Code Reviews with AI" />
