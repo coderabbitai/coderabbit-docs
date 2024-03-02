@@ -1,7 +1,11 @@
 ---
 slug: coderabbit-openai-rate-limits
-title: Squeezing Water from Stone - Managing OpenAI Rate Limits with Request Prioritization
-description: How CodeRabbit uses Aperture to manage OpenAI rate limits with request prioritization
+title:
+  Squeezing Water from Stone - Managing OpenAI Rate Limits with Request
+  Prioritization
+description:
+  How CodeRabbit uses Aperture to manage OpenAI rate limits with request
+  prioritization
 authors: [gur, sumanvs, nato]
 image: https://coderabbit.ai/blog/assets/images/Blog3-4188b2a6acf85932803da8983b14607c.png
 tags: [rate-limits, quota-management, prioritization, aperture, openai]
@@ -44,10 +48,10 @@ import TabItem from '@theme/TabItem';
 ```
 
 Since CodeRabbit launched a couple of months ago, it has received an
-enthusiastic response and hundreds of sign-ups. CodeRabbit has been
-installed in over 1300 GitHub organizations and typically reviews more than 2000
-pull requests per day. Furthermore, the usage continues to flourish; we
-are experiencing a healthy week-over-week growth.
+enthusiastic response and hundreds of sign-ups. CodeRabbit has been installed in
+over 1300 GitHub organizations and typically reviews more than 2000 pull
+requests per day. Furthermore, the usage continues to flourish; we are
+experiencing a healthy week-over-week growth.
 
 While this rapid growth is encouraging, we've encountered challenges with
 OpenAI's stringent rate limits, particularly for the newer `gpt-4` model that
@@ -94,8 +98,8 @@ on the provided suggestions in the follow-up commits.
 
 CodeRabbit employs a combination of the `gpt-3.5-turbo` and `gpt-4` family of
 models. For simpler tasks such as summarization, we use the more economical
-`gpt-3.5-turbo` model, whereas intricate tasks such as in-depth code
-reviews are performed by the slow and expensive `gpt-4` model.
+`gpt-3.5-turbo` model, whereas intricate tasks such as in-depth code reviews are
+performed by the slow and expensive `gpt-4` model.
 
 Our usage pattern is such that each file in a
 [pull request is summarized and reviewed concurrently](https://coderabbit.ai/blog/coderabbit-deep-dive).
