@@ -40,7 +40,7 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Integrations",
-      items: ["integrations/self-hosted-gitlab"],
+      items: ["integrations/self-hosted-gitlab", "integrations/ast-grep"],
     },
     "faq/faq",
   ],
