@@ -27,10 +27,20 @@ This documentation provides guidance on integrating AST-Grep rules within the Co
 ### **Setting up AST-Grep rules**
 By default, users can add AST-Grep rules by following these steps:
 
-1. Create a folder named `rules` in your project directory.
-2. Add individual `.yaml` files for each AST-Grep rule within the `rules` folder.
+1. Create a folder that keeps all the `custom-name` in your project directory.
+2. Add individual `.yaml` files for each AST-Grep rule within the `custom-name` folder.
 3. Ensure each `.yaml` file contains the necessary AST-Grep rule configurations.
 4. Ensure that all rules contains a `message` property, that is going to be used on the review process.
+5. Add the `custom-name` folder to the `.code-rabbit.yml` file under `tools.ast_grep` configuration.
+```yaml
+#...
+reviews:
+  #...
+  tools:
+    ast_grep:
+      rules_folder: "custom-name"
+  #...
+```
 
 ### **The rule object**
 
@@ -157,6 +167,19 @@ my-awesome-project   # project root
   | |- my-rule.yml
   |- utils           # utils directory
   | |- is-literal.yml
+```
+
+>Also, you need to add the `rules` and `utils` folders to the `.code-rabbit.yml` file under `tools.ast_grep` configuration.
+
+```yaml
+#...
+reviews:
+  #...
+  tools:
+    ast_grep:
+      rules_folder: "rules"
+      utils_folder: "utils"
+  #...
 ```
 
 ```yaml
