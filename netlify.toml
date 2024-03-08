@@ -2,3 +2,8 @@
   from = "/"
   to = "https://coderabbit.ai/blog/"
   force = true
+
+[[redirects]]
+  from = "/"
+  to = "https://coderabbit.ai/docs/"
+  force = true
