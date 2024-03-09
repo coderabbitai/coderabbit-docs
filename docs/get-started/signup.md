@@ -28,9 +28,10 @@ Signing up for CodeRabbit is quick and easy, allowing you to get started in just
 
 ### **Step 1: Getting Started**
 
-**Login with GitHub or GitLab**: Log in with your GitHub or GitLab account at https://coderabbit.ai/login
+**Login with GitHub or GitLab**: Log in with your GitHub or GitLab account at [https://coderabbit.ai/login](https://coderabbit.ai/login)
 
-![Untitled](./images/signup.png)
+![Login](./images/cr_login2.png#gh-light-mode-only)
+![Login](./images/cr_login_dark.png#gh-dark-mode-only)
 
 ### **Step 2: Select Organization**
 

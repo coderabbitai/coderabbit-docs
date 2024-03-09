@@ -90,10 +90,12 @@ These are the hourly usage limits for each developer per repository:
 - You can choose to manually purchase seats and assign them to developers, or have them assigned automatically as developers create pull requests.
 - During the trial period, seat assignment is automatic, but the number of seats can be adjusted when purchasing the subscription.
 
-![Untitled](./images/pricing.png)
+![Untitled](./images/cr_seat_manage_dark.png#gh-dark-mode-only)
+![Untitled](./images/cr_seat_manage_light.png#gh-light-mode-only)
 
 ### Free Plan
 
 - Seats are assigned to new developers immediately
 
-![Untitled](./images/pricing2.png)
+![Untitled](./images/cr_seat_free_dark.png#gh-dark-mode-only)
+![Untitled](./images/cr_seat_free_light.png#gh-light-mode-only)
