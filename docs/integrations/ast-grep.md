@@ -30,7 +30,7 @@ By default, users can add AST-Grep rules by following these steps:
 1. Create a folder that keeps all the `custom-name` in your project directory.
 2. Add individual `.yaml` files for each AST-Grep rule within the `custom-name` folder.
 3. Ensure each `.yaml` file contains the necessary AST-Grep rule configurations.
-4. Ensure that all rules contains a `message` property, that is going to be used on the review process.
+4. Ensure that all rules contains a `message` property, that will be used in the review process.
 5. Add the `custom-name` folder to the `.code-rabbit.yml` file under `tools.ast_grep` configuration.
 ```yaml
 #...
@@ -86,7 +86,7 @@ Atomic rule defines the most basic matching rule that determines whether one syn
 #### **Relational rule**
 Relational rule defines the relationship between two syntax nodes. There are four kinds of relational rule: `inside`, `has`, `follows` and `precedes`.
 
-All four relational rules accept a sub rule object as their value. The sub rule will match the surrounding node while the relational rule itself will match the target node.
+All four relational rules accept a sub-rule object as their value. The sub-rule will match the surrounding node while the relational rule itself will match the target node.
 
 > Official documentation guide on [Relational Rule](https://ast-grep.github.io/guide/rule-config/relational-rule.html)
 
@@ -99,11 +99,11 @@ rule:
 ```
 
 #### **Composite rule**
-Composite rule defines the logical relationship between multiple sub rules. There are three kinds of composite rule: `all`, `any` and `not`.
+Composite rule defines the logical relationship between multiple sub-rules. There are three kinds of composite rule: `all`, `any` and `not`.
 
 **all**
 
-The `all` rule matches if all sub rules match.
+The `all` rule matches if all sub-rules match.
 ```yaml
 rule:
   all:
@@ -113,7 +113,7 @@ rule:
 
 **any**
 
-`any` rule matches if any sub rule matches.
+`any` rule matches if any sub-rule matches.
 ```yaml
 rule:
   any:
@@ -124,7 +124,7 @@ rule:
 
 **not**
 
-`not` applies negation to a sub rule. It matches if the sub rule does not match.
+`not` applies negation to a sub-rule. It matches if the sub-rule does not match.
 
 ```yaml
 rule:
@@ -203,7 +203,7 @@ rule:
 
 CodeRabbit supports multiple programming languages for defining AST-Grep rules.
 
-- Javascript
+- JavaScript
 - Typescript
 - C#
 - Golang
@@ -215,7 +215,7 @@ CodeRabbit supports multiple programming languages for defining AST-Grep rules.
 
 Below are examples of AST-Grep rules in different languages:
 
-### **Javascript**
+### **JavaScript**
 #### Importing files without an extension is not allowed
 ```yaml
 id: find-import-file
