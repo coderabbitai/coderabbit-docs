@@ -33,7 +33,7 @@ Dashboard displays the following information:
 ![Untitled](./images/cr_dash_dark.png#gh-dark-mode-only)
 ![Untitled](./images/cr_dash_light.png#gh-light-mode-only)
 
-Access the list of recent pull request reviewed.
+Access the list of recent pull requests reviewed.
 
 ![Untitled](./images/cr_history_dark.png#gh-dark-mode-only)
 ![Untitled](./images/cr_history_light.png#gh-light-mode-only)

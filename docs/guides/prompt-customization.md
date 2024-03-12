@@ -22,7 +22,7 @@ image: "/preview_meta.jpg"
   <meta name="twitter:description" content="Accelerate Code Reviews with AI" />
 </head>
 
-### Path based instructions[](https://coderabbit.ai/docs/prompt-customization#path-based-instructions)
+### Path-based instructions[](https://coderabbit.ai/docs/prompt-customization#path-based-instructions)
 
 This section explains how to add custom code review instructions for the entire project or specific file paths in your project using glob patterns. Developers can provide tailored review guidelines based on the file paths. These instructions are needed only if you want the reviewer to follow specific instructions besides the standard review.
 
@@ -32,7 +32,7 @@ Adding file path prompts allows developers to specify custom instructions for di
 
 **path:** `**/*.js`
 
-**instructions:** Review the javascript code against the Google Javascript style guide and point out any mismatches
+**instructions:** Review the JavaScript code against the Google JavaScript style guide and point out any mismatches
 
 **path:** `tests/**.*`
 

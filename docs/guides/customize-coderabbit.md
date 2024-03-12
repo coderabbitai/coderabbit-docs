@@ -138,7 +138,7 @@ settings:
   path_based_instructions:
     - path: "**/*.js"
       instructions:
-        "Review the javascript code against the Google Javascript style guide
+        "Review the JavaScript code against the Google JavaScript style guide
         and point out any mismatches"
     - path: "tests/**/*"
       instructions:
@@ -205,7 +205,7 @@ Reviews can also be customized through the UI under repository settings:
 
 [](../get-started/images/tailor2.png)
 
-**Path based instructions :** Provide additional review guidelines based on the
+**Path-based instructions :** Provide additional review guidelines based on the
 file paths using glob patterns.
 
 For further guidance, please refer this
