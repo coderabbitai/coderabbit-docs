@@ -1,4 +1,4 @@
-# Exclude docs.coderabbit.ai/ (except /) from redirection
+<!-- # Exclude docs.coderabbit.ai/ (except /) from redirection
 
 /docs/\* https://docs.coderabbit.ai/:splat 200
 
@@ -12,4 +12,4 @@
 
 # Redirect requests for pages to the /dev suffix
 /coderabbit.ai/* /coderabbit.ai/doc1/:splat 301
-# redirect other rule
+# redirect other rule -->
