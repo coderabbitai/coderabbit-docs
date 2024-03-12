@@ -32,7 +32,7 @@ specific requirements. Customizations can be made using one of the below options
 
 Customization defined in the YAML file overrides the settings in the UI.
 
-#### 1. Customize CodeRabbit using a YAML File[](https://coderabbit.ai/docs/get-started/customize-coderabbit)
+### 1. Customize CodeRabbit using a YAML File[](https://coderabbit.ai/docs/get-started/customize-coderabbit)
 
 You can add a `.coderabbit.yaml` configuration file to your repositories. Below
 is a sample YAML file that can be used as a starting point and change as needed:
@@ -73,10 +73,12 @@ chat:
   auto_reply: true
 ```
 
-**Note**: `.coderabbit.yaml` file should be placed at the root directory of the
+:::note
+`.coderabbit.yaml` file should be placed at the root directory of the
 repository.
+:::
 
-Yaml settings:
+YAML settings:
 
 1. **language**: Set the language for reviews using the ISO language code. For
    example, `"fr"` stands for French (default:`en`).
@@ -136,7 +138,7 @@ settings:
   path_based_instructions:
     - path: "**/*.js"
       instructions:
-        "Review the javascript code against the google javascript style guide
+        "Review the JavaScript code against the Google JavaScript style guide
         and point out any mismatches"
     - path: "tests/**/*"
       instructions:
@@ -193,18 +195,20 @@ Refer:
 
 </details>
 
-#### 2. Customize CodeRabbit through the UI [](https://coderabbit.ai/docs/get-started#2-customize-coderabbit-through-the-ui-dashboard)
+### 2. Customize CodeRabbit through the UI [](https://coderabbit.ai/docs/get-started#2-customize-coderabbit-through-the-ui-dashboard)
 
 Reviews can also be customized through the UI under repository settings:
+
+---
 
 ### Review Customization[](https://coderabbit.ai/docs/get-started#review-customization)
 
 [](../get-started/images/tailor2.png)
 
-**Path based instructions :** Provide additional review guidelines based on the
+**Path-based instructions :** Provide additional review guidelines based on the
 file paths using glob patterns.
 
-For further guidance please refer this
+For further guidance, please refer this
 section [Prompt Customization](/guides/prompt-customization)
 
 **Language Selection:** Select the natural language in which you want the review
@@ -213,6 +217,8 @@ language is English.
 
 **Disable High Level Summary:** This allows disabling high level summary added
 with the pull request description.
+
+---
 
 ### Review Filters [](https://coderabbit.ai/docs/get-started#review-filters)
 

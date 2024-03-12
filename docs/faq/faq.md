@@ -74,13 +74,14 @@ Yes, you can change it under the repository settings.
 
 There are hourly rate limits for each developer per repository:
 
--   Number of files reviewed per hour: 200
--   Number of reviews : 3 back to back reviews followed by 4 reviews/hour
--   Number of conversations: 25 back to back messages followed by 50 messages/hr
-
+- Number of files reviewed per hour: 200
+- Number of reviews : 3 back to back reviews followed by 4 reviews/hour
+- Number of conversations: 25 back to back messages followed by 50 messages/hr
 
 In-trial and open-source plans have lower rate limits than the paid plan. In all cases, we re-allow further reviews/conversations after a brief timeout.
 
-Please note that we're continually innovating and enhancing our application with new capabilities. Stay tuned and follow us for updates as new exciting features are built. We're committed to making your experience with CodeRabbit even better.
+:::note
+We are continually innovating and enhancing our application with new capabilities. Stay tuned and follow us for updates as new exciting features are built. We're committed to making your experience with CodeRabbit even better.
+:::
 
 If you have further questions or need additional information, don't hesitate to reach out to us at [contact@coderabbit.ai](mailto:contact@coderabbit.ai).
