@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/blog/"
+  to = "https://coderabbit.ai/blog/"
+  force = true
+  status = 200   
