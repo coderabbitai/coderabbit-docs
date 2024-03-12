@@ -5,6 +5,7 @@ slug: /dashboard
 description: Accelerate Code Reviews with AI
 image: "/preview_meta.jpg"
 ---
+
 <head>
  <meta charSet="utf-8" />
   <meta name="title" content="CodeRabbit: AI-powered Code Reviews" />
@@ -22,18 +23,20 @@ image: "/preview_meta.jpg"
   <meta name="twitter:description" content="Accelerate Code Reviews with AI" />
 </head>
 
-CodeRabbit Dashboard displays organization's pull request activity and value provided by CodeRabbit reviews. This includes the number of pull requests reviewed, actionable items,optional comments and more. 
+CodeRabbit Dashboard displays organization's pull request activity and value provided by CodeRabbit reviews. This includes the number of pull requests reviewed, actionable items, optional comments and more.
 
 Dashboard displays the following information:
 
 - **Pull Requests Overview:** View the number of pull requests reviewed by CodeRabbit per week, month, and year.
 - **CodeRabbit's Activity:** Understand the metrics related to the number of reviews conducted by CodeRabbit, actionable items, and optional suggestions.
 
-![Untitled](./images/analytic2.png)
+![Untitled](./images/cr_dash_dark.png#gh-dark-mode-only)
+![Untitled](./images/cr_dash_light.png#gh-light-mode-only)
 
-Access the list of recent pull request reviewed.
+Access the list of recent pull requests reviewed.
 
-![Untitled](./images/analytic3.png)
+![Untitled](./images/cr_history_dark.png#gh-dark-mode-only)
+![Untitled](./images/cr_history_light.png#gh-light-mode-only)
 
 ### **Need help?**
 
