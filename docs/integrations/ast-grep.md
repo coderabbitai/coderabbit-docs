@@ -31,13 +31,13 @@ By default, users can add AST-Grep rules by following these steps:
 2. Add individual `.yaml` files for each AST-Grep rule within the `custom-name` folder.
 3. Ensure each `.yaml` file contains the necessary AST-Grep rule configurations.
 4. Ensure that all rules contains a `message` property, that will be used in the review process.
-5. Add the `custom-name` folder to the `.code-rabbit.yml` file under `tools.ast_grep` configuration.
+5. Add the `custom-name` folder to the `.code-rabbit.yml` file under `tools.ast-grep` configuration.
 ```yaml
 #...
 reviews:
   #...
   tools:
-    ast_grep:
+    ast-grep:
       rules_folder: "custom-name"
   #...
 ```
@@ -169,14 +169,14 @@ my-awesome-project   # project root
   | |- is-literal.yml
 ```
 
->Also, you need to add the `rules` and `utils` folders to the `.code-rabbit.yml` file under `tools.ast_grep` configuration.
+>Also, you need to add the `rules` and `utils` folders to the `.code-rabbit.yml` file under `tools.ast-grep` configuration.
 
 ```yaml
 #...
 reviews:
   #...
   tools:
-    ast_grep:
+    ast-grep:
       rules_folder: "rules"
       utils_folder: "utils"
   #...
