@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/blog/"
-  to = "https://google.com/"
+  to = "https://coderabbit.ai/docs"
   force = true
   status = 200 
