@@ -10,6 +10,6 @@
 
 [[redirects]]
   from = "/blog1/"
-  to = "https://coderabbit.ai/blog1/"
+  to = "https://coderabbit.ai/blog/"
   force = true
   status = 200
