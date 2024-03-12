@@ -1,1 +1,5 @@
-
+[[redirects]]
+  from = "/blog/"
+  to = "https://google.com/"
+  force = true
+  status = 200 
