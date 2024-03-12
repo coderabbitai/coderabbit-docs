@@ -69,6 +69,10 @@ reviews:
     base_branches:
       - "develop"
       - "feat/.*"
+  tools:
+    ast-grep:
+      rules_folder: "custom-rules-folder-name"
+      utils_folder: "custom-utils-folder-name"
 chat:
   auto_reply: true
 ```
@@ -112,6 +116,12 @@ YAML settings:
        `true`).
      - **base_branches**: A list of base branches where the reviews will occur
        apart from the default branch. Accepts regex pattern.
+    - **tools**: Configurations for the tools used in the review.
+      - **ast-grep**: Configurations for the ast-grep tool.
+        - **rules_folder**: The folder name where the custom ast-grep rules are
+          stored.
+        - **utils_folder**: The folder name where the custom ast-grep utils are
+          stored.
 4. **chat**: Defines the behavior of CodeRabbit's bot in conversations.
    - **auto_reply**: The bot automatically replies without the need of the user
      tagging it ( default: `true` ).
@@ -156,6 +166,12 @@ settings:
   collapse_walkthrough_comment: true
   # Disable automatic code reviews for this repository.
   disable_review: false
+  # External tools configurations
+  tools:
+    # tools configuration for ast-grep
+    ast-grep:
+      rules_folder: "custom-rules-folder-name"
+      utils_folder: "custom-utils-folder-name"
 ```
 
 <!-- ![code](./images/ymlrabbit.png) -->
@@ -189,6 +205,12 @@ This configuration file consists of the following settings:
     be posted.
 13. **collapse_walkthrough_comment**: Specifies whether to collapse walkthrough
     comments on the review.
+14. **tools**: Configurations for the tools used in the review.
+    - **ast-grep**: Configurations for the ast-grep tool.
+      - **rules_folder**: The folder name where the custom ast-grep rules are
+        stored.
+      - **utils_folder**: The folder name where the custom ast-grep utils are
+        stored.
 
 Refer:
 [CodeRabbit configuration schema](https://coderabbit.ai/integrations/coderabbit-overrides.json).
