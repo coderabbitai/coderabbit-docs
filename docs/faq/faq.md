@@ -80,6 +80,10 @@ There are hourly rate limits for each developer per repository:
 
 In-trial and open-source plans have lower rate limits than the paid plan. In all cases, we re-allow further reviews/conversations after a brief timeout.
 
+#### **14. I can't add CodeRabbit to my GitLab Repositories?**
+
+If there are any access restrictions by domain, then you will need to add `coderabbit.ai` as an allowed domain.
+
 :::note
 We are continually innovating and enhancing our application with new capabilities. Stay tuned and follow us for updates as new exciting features are built. We're committed to making your experience with CodeRabbit even better.
 :::
