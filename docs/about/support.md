@@ -72,9 +72,9 @@ Complete the support ticket by providing your name, email, a description of your
 ![Open a Ticket](./images/cr_support_help_light.png#gh-light-mode-only)
 ![Open a Ticket](./images/cr_support_help_dark.png#gh-dark-mode-only)
 
-### Explore More
-
+:::tip
 To see more common issues faced by CodeRabbit users, visit our FAQ section for detailed answers and solutions to frequently encountered problems.
+:::
 
 ### **Community Collaboration**
 
