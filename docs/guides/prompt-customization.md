@@ -32,7 +32,7 @@ Adding file path prompts allows developers to specify custom instructions for di
 
 **path:** `**/*.js`
 
-**instructions:** Review the javascript code against the google javascript style guide and point out any mismatches
+**instructions:** Review the javascript code against the Google Javascript style guide and point out any mismatches
 
 **path:** `tests/**.*`
 

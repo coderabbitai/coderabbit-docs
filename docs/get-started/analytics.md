@@ -23,7 +23,7 @@ image: "/preview_meta.jpg"
   <meta name="twitter:description" content="Accelerate Code Reviews with AI" />
 </head>
 
-CodeRabbit Dashboard displays organization's pull request activity and value provided by CodeRabbit reviews. This includes the number of pull requests reviewed, actionable items,optional comments and more.
+CodeRabbit Dashboard displays organization's pull request activity and value provided by CodeRabbit reviews. This includes the number of pull requests reviewed, actionable items, optional comments and more.
 
 Dashboard displays the following information:
 

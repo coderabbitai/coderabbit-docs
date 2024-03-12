@@ -138,7 +138,7 @@ settings:
   path_based_instructions:
     - path: "**/*.js"
       instructions:
-        "Review the javascript code against the google javascript style guide
+        "Review the javascript code against the Google Javascript style guide
         and point out any mismatches"
     - path: "tests/**/*"
       instructions:
@@ -208,7 +208,7 @@ Reviews can also be customized through the UI under repository settings:
 **Path based instructions :** Provide additional review guidelines based on the
 file paths using glob patterns.
 
-For further guidance please refer this
+For further guidance, please refer this
 section [Prompt Customization](/guides/prompt-customization)
 
 **Language Selection:** Select the natural language in which you want the review
