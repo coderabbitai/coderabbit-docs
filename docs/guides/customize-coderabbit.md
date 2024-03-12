@@ -78,7 +78,7 @@ chat:
 repository.
 :::
 
-Yaml settings:
+YAML settings:
 
 1. **language**: Set the language for reviews using the ISO language code. For
    example, `"fr"` stands for French (default:`en`).
