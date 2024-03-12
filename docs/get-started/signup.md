@@ -45,9 +45,11 @@ After selecting the organization, you will be directed to a GitHub repositories 
 
 ![Untitled](./images/add3.png)
 
-After you have installed the CodeRabbit app, the reviews will start automatically with the new pull requests or incremental commits to existing pull requests. To trigger reviews on existing pull requests, post @coderabbitai review as a comment on the pull request.
+After you have installed the CodeRabbit app, the reviews will start automatically with the new pull requests or incremental commits to existing pull requests. To trigger reviews on existing pull requests, post "@coderabbitai review" as a comment on the pull request.
 
-Note that the automatic code review behavior can be changed to "On-Demand". To make this change, go to the repository settings in the UI or modify the appropriate setting in the YAML file to disable reviews.
+:::tip
+The automatic code review behavior can be changed to "On-Demand". To make this change, go to the repository settings in the UI or modify the appropriate setting in the YAML file to disable reviews.
+:::
 
 ### **Need help?**
 
