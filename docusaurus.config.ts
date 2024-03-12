@@ -159,7 +159,7 @@ const config: Config = {
           // sidebarId: "blogsSidebar",
           position: "left",
           label: "Blog",
-          href: "https://blog.coderabbit.ai/blog",
+          href: "https://coderabbit.ai/blog",
         },
         {
           href: "https://discord.gg/GsXnASn26c",

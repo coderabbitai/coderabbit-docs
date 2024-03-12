@@ -23,7 +23,7 @@ aiDisclaimer: true
   <meta name="title" content="Boosting Engineering Efficiency Using AI Code Reviews for Remote Teams" />
 
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://blog.coderabbit.ai/blog/boosting-engineering-efficiency" />
+  <meta property="og:url" content="https://coderabbit.ai/blog/boosting-engineering-efficiency" />
   <meta property="og:title" content="Boosting Engineering Efficiency Using AI Code Reviews for Remote Teams" />
   <meta property="og:image" content='https://docs.coderabbit.ai/img/blogs/blog4.jpeg' />
 

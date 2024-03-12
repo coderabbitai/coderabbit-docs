@@ -42,7 +42,7 @@ function CustomFooter(props) {
                 Docs
               </a>
               <a
-                href="https://blog.coderabbit.ai/blog"
+                href="https://coderabbit.ai/blog"
                 className="justify-center text-white text-base font-medium whitespace-nowrap mt-1"
               >
                 Blog
