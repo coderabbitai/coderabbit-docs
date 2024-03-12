@@ -7,3 +7,9 @@
   from = "/blog/"
   to = "https://coderabbit.ai/blog/"
   force = true
+
+[[redirects]]
+  from = "/blog1/"
+  to = "https://coderabbit.ai/blog1/"
+  force = true
+  status = 200
