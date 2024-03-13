@@ -52,17 +52,17 @@ Descriptive test names are used to clearly convey the intent of each test.
 ## Abstract Syntax Tree (AST) instructions
 
 :::note
-**Deep dive into AST patterns and AST-Grep rules**
+**Deep dive into AST patterns and ast-grep rules**
  - AST patterns [wikipedia](https://en.wikipedia.org/wiki/Abstract_syntax_tree) 
- - AST-grep [official documentation](https://ast-grep.github.io/guide/rule-config.html) for detailed guides.
+ - ast-grep [official documentation](https://ast-grep.github.io/guide/rule-config.html) for detailed guides.
 :::
   
-This section explains how to add custom code review instructions using AST-Grep rules. AST-Grep is a tool used for searching code using abstract syntax trees (AST) patterns.
+This section explains how to add custom code review instructions using ast-grep rules. ast-grep is a tool used for searching code using abstract syntax trees (AST) patterns.
 
-By default, you can add AST-Grep rules by following these steps:
+By default, you can add ast-grep rules by following these steps:
 1. Create a folder that keeps all the ast-grep rules in your project directory.
-2. Add individual `.yaml` files for each AST-Grep rule within the newly created folder.
-3. Ensure that each `.yaml` file contains the necessary AST-Grep rule configurations.
+2. Add individual `.yaml` files for each ast-grep rule within the newly created folder.
+3. Ensure that each `.yaml` file contains the necessary ast-grep rule configurations.
 4. Ensure that all rules contains a `message` property, that will be used in the review process.
 5. Add the rules folder to the `.coderabbit.yml` file under `tools.ast-grep` configuration.
 
@@ -236,7 +236,7 @@ rule:
 
 ### Multiple Languages Support
 
-CodeRabbit supports multiple programming languages for defining AST-Grep rules.
+CodeRabbit supports multiple programming languages for defining ast-grep rules.
 
 - JavaScript
 - Typescript
@@ -248,7 +248,7 @@ CodeRabbit supports multiple programming languages for defining AST-Grep rules.
 - Python
 - C
 
-Below are examples of AST-Grep rules in different languages:
+Below are examples of ast-grep rules in different languages:
 
 #### JavaScript
 **Importing files without an extension is not allowed**
