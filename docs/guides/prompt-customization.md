@@ -78,7 +78,7 @@ reviews:
 
 ### The rule object
 
-Rule object is the core concept of ast-grep's rule system and every other features are built on top of it.
+Rule object is the core concept of ast-grep's rule system and every other feature is built on top of it.
 
 Below is the full list of fields in a rule object. Every rule field is optional and can be omitted but at least one field should be present in a rule. A node will match a rule if and only if it satisfies all fields in the rule object.
 ```yaml
