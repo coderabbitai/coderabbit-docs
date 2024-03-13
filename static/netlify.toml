@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/blog"
-  to = "https://coderabbit.ai/blog/*"
+  to = "https://coderabbit.ai/blog/"
   force = true
