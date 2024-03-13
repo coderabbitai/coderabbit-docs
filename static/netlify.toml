@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/"
-  to = "https://coderabbit.ai/blog/"
+  to = "https://coderabbit.ai/blog/*"
   force = true
   status = 200 
