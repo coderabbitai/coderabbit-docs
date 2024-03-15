@@ -33,16 +33,22 @@ As your team works on resolving Linear issues, CodeRabbit automatically assesses
 ### Connect CodeRabbit with Linear
 
 ![Integrations Page](../images/cr-integrations-light.png#gh-light-mode-only)
+![Integrations Page](../images/cr-integrations-dark.png#gh-dark-mode-only)
 
 On this page, toggle the button for the Linear Integration.
 
-![Integrations Page](../images/linear-login.png#gh-light-mode-only)
+![Integrations Page](../images/Linear/linear-login-light.png#gh-light-mode-only)
+![Integrations Page](../images/Linear/linear-login.png#gh-dark-mode-only)
 
 Once toggling, you will be redirected over to Linear's authorization page. If you are not signed in, please sign in with your Linear credentials.
 
-![Integrations Page](../images/linear-auth.png#gh-light-mode-only)
+![Integrations Page](../images/Linear/linear-auth-light.png#gh-light-mode-only)
+![Integrations Page](../images/Linear/linear-auth.png#gh-dark-mode-only)
 
 Lastly, Linear will ask you to authorize CodeRabbit for read access.
+
+![Integrations Page](../images/Linear/linear-connected-dark.png#gh-dark-mode-only)
+![Integrations Page](../images/Linear/linear-connected-light.png#gh-light-mode-only)
 
 **That's It!** Linear will redirect you back to the CodeRabbit integrations page where you should see the toggle enabled for the Linear Integration.
 

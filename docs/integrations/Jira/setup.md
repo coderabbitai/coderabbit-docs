@@ -30,19 +30,25 @@ Visit [Jira](https://www.atlassian.com/software/jira) if you're unfamiliar and w
 
 As your team works on resolving Jira issues, CodeRabbit automatically assesses the changes made in the associated pull requests, helping you meet project objectives and maintain code quality standards.
 
-## Connect CodeRabbit with Jira
+### Connect CodeRabbit with Jira
 
 ![Integrations Page](../images/cr-integrations-light.png#gh-light-mode-only)
+![Integrations Page](../images/cr-integrations-dark.png#gh-dark-mode-only)
 
 Visit the integrations page by selecting Integrations on the left sidebar on the webapp. On this page, toggle the button for the Jira Integration.
 
-![Integrations Page](../images/jira-login-light.png#gh-light-mode-only)
+![Integrations Page](../images/Jira/jira-login-light.png#gh-light-mode-only)
+![Integrations Page](../images/Jira/jira-login-dark.png#gh-dark-mode-only)
 
 Once toggling, you will be redirected over to Jira's authorization page. If you are not signed in, please sign in with your Jira credentials.
 
-![Integrations Page](../images/jira-auth-light.png#gh-light-mode-only)
+![Integrations Page](../images/Jira/jira-auth-light.png#gh-light-mode-only)
+![Integrations Page](../images/Jira/jira-auth-dark.png#gh-dark-mode-only)
 
 Lastly, Jira will ask you to authorize CodeRabbit for read access to Jira Issues and read/write access to manage webhooks.
+
+![Integrations Page](../images/Jira/jira-connected-dark.png#gh-dark-mode-only)
+![Integrations Page](../images/Jira/jira-connected-light.png#gh-light-mode-only)
 
 **That's It!** Jira will redirect you back to the CodeRabbit integrations page where you should see the toggle enabled for the Jira Integration.
 
@@ -52,4 +58,4 @@ Disconnecting the integration is seamless. Just toggle the button off for the Li
 
 ---
 
-Next we will look at how we can link Jira issues with pull requests and see how CodeRabbit assess them within the Pull Request.
+Next we will look at how we can link Jira issues and see how CodeRabbit assess them within the Pull Request.

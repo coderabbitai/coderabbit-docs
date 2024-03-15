@@ -16,7 +16,7 @@ complete, you can log in directly using the OAuth2 flow.
 **Visit CodeRabbit:** Land on to our [Login](https://coderabbit.ai/login) page
 and select Self-Hosted GitLab
 
-![login-page](./images/login-page.png)
+![login-page](./images/SelfHosted/login-page.png)
 
 ### 2. Enter your Self Managed GitLab URL
 
@@ -24,7 +24,7 @@ On this page, enter the URL of your self managed GitLab instance and click
 submit. Once, you submit, we check our database for a record of your
 organization.
 
-![Untitled](./images/enter-url.png)
+![Untitled](./images/SelfHosted/enter-url.png)
 
 ### 3. Enter Admin Personal Access Token (First time only)
 
@@ -50,14 +50,14 @@ the token, please follow the process outlined below:
 9. Select Create personal access token.
 10. Please note down this token as this will be visible one time only
 
-![Untitled](./images/admin-access-token.png)
+![Untitled](./images/SelfHosted/admin-access-token.png)
 
 ### 4. Paste the Token and Submit
 
 - Submit the access token.
 - We will handle the setup process for you.
 
-![Untitled](./images/self-hosted-page.png)
+![Untitled](./images/SelfHosted/self-hosted-page.png)
 :::note
 For future visits, your setup will be automatically recognized, enabling seamless login.
 :::
