@@ -117,7 +117,7 @@ function CustomFooter(props) {
               />
             </a>
             <a
-              href="https://discord.gg/CVtemB5c"
+              href="https://discord.gg/GsXnASn26c"
               target="_blank"
               rel="noopener noreferrer"
             >
