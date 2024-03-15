@@ -11,14 +11,14 @@ To initiate the integration, we require specific information. This is essential
 for the initial setup of CodeRabbit within your domain. Once this setup is
 complete, you can log in directly using the OAuth2 flow.
 
-### **Step 1: Getting Started**
+### 1. Getting Started
 
 **Visit CodeRabbit:** Land on to our [Login](https://coderabbit.ai/login) page
 and select Self-Hosted GitLab
 
 ![login-page](./images/login-page.png)
 
-### Step 2: Enter your Self Managed GitLab URL
+### 2. Enter your Self Managed GitLab URL
 
 On this page, enter the URL of your self managed GitLab instance and click
 submit. Once, you submit, we check our database for a record of your
@@ -26,7 +26,7 @@ organization.
 
 ![Untitled](./images/enter-url.png)
 
-### **Step 3: Enter Admin Personal Access Token (First time only)**
+### 3. Enter Admin Personal Access Token (First time only)
 
 If this is the first time you are signing up with your instance, we need an
 admin access token for setting up the CodeRabbit.
@@ -52,17 +52,21 @@ the token, please follow the process outlined below:
 
 ![Untitled](./images/admin-access-token.png)
 
-### **Step 4: Paste the token and click submit**
+### 4. Paste the Token and Submit
 
 - Submit the access token.
 - We will handle the setup process for you.
-- On subsequent visits, your setup will be automatically detected, allowing for
-  direct login. ![Untitled](./images/self-hosted-page.png)
 
-### **Step 5: Whitelist CodeRabbit IP address**
+![Untitled](./images/self-hosted-page.png)
+:::note
+For future visits, your setup will be automatically recognized, enabling seamless login.
+:::
+
+### 5. Whitelist CodeRabbit IP Address
 
 Use this CodeRabbit IP if your instance requires IP whitelisting
 `35.222.179.152/32`
 
-- Furthermore, please refer to our Get Started Guide to make the most of
-  CodeRabbit [here](../get-started/add-repo.md).
+:::tip
+Refer to our [Get Started Guide](../get-started/add-repo.md) to make the most of CodeRabbit.
+:::
