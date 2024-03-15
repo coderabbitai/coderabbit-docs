@@ -40,7 +40,11 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Integrations",
-      items: ["integrations/self-hosted-gitlab"],
+      items: [
+        "integrations/jira",
+        "integrations/linear",
+        "integrations/self-hosted-gitlab",
+      ],
     },
     "faq/faq",
   ],
