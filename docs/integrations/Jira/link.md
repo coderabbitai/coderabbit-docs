@@ -1,5 +1,5 @@
 ---
-title: Utilize CodeRabbit with Jira
+title: Jira Integration
 description: Integrate CodeRabbit with Jira.
 sidebar_label: Linked and Related Issues
 image: "/preview_meta.jpg"
@@ -26,7 +26,6 @@ image: "/preview_meta.jpg"
 
 After successfully integrating CodeRabbit with Jira, you gain the ability to link Jira issues directly to your pull requests.
 
-Linking Issues with Pull Requests
 To link a Jira issue to a pull request, simply include the Jira Issue ID in the pull request description. For instance:
 
 Jira issue: TEK-01
@@ -34,14 +33,14 @@ Jira issue: TEK-01
 This indicates that the pull request addresses a specific issue, such as fixing a bug. When the pull request is submitted with the associated Jira Issue ID, CodeRabbit automatically retrieves the corresponding issue and evaluates whether the pull request fulfills its objectives.
 
 :::info
-You can view the assessment outcome in the Walkthrough section.
+You can view the assessment outcome in the Walkthrough section of CodeRabbit's Review
 :::
 
 Upon posting the review findings, CodeRabbit provides details about the issue's objectives, confirms whether they were met, and offers additional explanations if needed.
 
 ### Finding Related Issues
 
-One of the key features of CodeRabbit's Jira integration is its ability to discover related issues. Leveraging RAG (Retrieval-Augmented Generation), CodeRabbit enhances its AI capabilities. RAG empowers AI models to incorporate external data sources beyond their training sets or predefined parameters, thereby enhancing their responses to given prompts.
+One of the key features of CodeRabbit's Jira integration is its ability to discover existing related jira issues addressed in the pull request. Leveraging RAG (Retrieval-Augmented Generation), CodeRabbit enhances its AI capabilities. RAG empowers AI models to incorporate external data sources beyond their training sets or predefined parameters, thereby enhancing their responses to given prompts.
 
 After integrating with Jira, CodeRabbit scans through open issues, indexing them for future reference. This means that pre-existing issues are retrieved, indexed into a Vector database, and subsequently searched for each new pull request.
 
