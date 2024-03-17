@@ -223,8 +223,8 @@ section [Prompt Customization](/guides/prompt-customization)
 feedback. CodeRabbit supports most of the widely used languages. The default
 language is English.
 
-**Disable High-Level Summary:** This allows disabling high-level summary added
-with the pull request description.
+**Disable High-Level Summary:** This allows disabling the high-level summary
+added with the pull request description.
 
 ---
 
