@@ -21,25 +21,30 @@ image: ./preview.png
 
 ![FluxNinja joins CodeRabbit](./preview.png)
 
-We are excited to announce that CodeRabbit has acquired FluxNinja, a startup
-that provides a platform for building scalable generative AI applications. This
-acquisition will allow us to ship new use cases at an industrial scale while
-sustaining our rapidly growing user base. FluxNinja's Aperture product provides
-advanced rate-limiting, caching, and request prioritization capabilities for
-building reliable and cost-effective AI workflows.
+We are excited to announce that CodeRabbit has acquired
+[FluxNinja](https://fluxninja.com), a startup that provides a platform for
+building scalable generative AI applications. This acquisition will allow us to
+ship new use cases at an industrial scale while sustaining our rapidly growing
+user base. FluxNinja's Aperture product provides advanced rate-limiting,
+caching, and request prioritization capabilities for building reliable and
+cost-effective AI workflows.
 
 <!--truncate-->
 
-Since our launch, Aperture's open-source core engine has been critical to our
-infrastructure. Our initial use case centered around mitigating aggressive rate
-limits imposed by OpenAI, allowing us to prioritize paid and real-time chat
-users during peak load hours while queuing requests from the free users.
-Further, we used Aperture's caching and rate-limiting capabilities to offer
-open-source developers a fully featured free tier while minimizing abuse. These
-capabilities allowed us to scale our user base without ever putting up a
-waitlist and at a price point that is sustainable for us. With Aperture's help,
-CodeRabbit has scaled to over 100K repositories and several thousand
-organizations under its review in a short period.
+Since our launch,
+[Aperture's open-source](https://github.com/fluxninja/aperture) core engine has
+been critical to our infrastructure. Our initial use case centered around
+[mitigating aggressive rate limits](../openai-rate-limits-2023-10-23/blog.md)
+imposed by OpenAI, allowing us to prioritize paid and real-time chat users
+during peak load hours while queuing requests from the free users. Further, we
+used Aperture's
+[caching and rate-limiting capabilities](../how-we-built-cost-effective-generative-ai-application-2023-12-23/blog.md)
+to manage costs that in turn allowed us to offer open-source developers a fully
+featured free tier by minimizing abuse. These capabilities allowed us to scale
+our user base without ever putting up a waitlist and at a price point that is
+sustainable for us. With Aperture's help, CodeRabbit has scaled to over 100K
+repositories and several thousand organizations under its review in a short
+period.
 
 We started CodeRabbit with a vision to build an AI-first developer tooling
 company from the ground up. Building enterprise-ready applied AI tech is unlike
