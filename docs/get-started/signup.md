@@ -43,9 +43,13 @@ automatically with the new pull requests or incremental commits to existing pull
 requests. To trigger reviews on existing pull requests, post "@coderabbitai
 review" as a comment on the pull request.
 
-:::tip The automatic code review behavior can be changed to "On-Demand". To make
-this change, go to the repository settings in the UI or modify the appropriate
-setting in the YAML file to disable reviews. :::
+:::tip
+
+The automatic code review behavior can be changed to "On-Demand". To make this
+change, go to the repository settings in the UI or modify the appropriate
+setting in the YAML file to disable reviews.
+
+:::
 
 ### **Need help?**
 
