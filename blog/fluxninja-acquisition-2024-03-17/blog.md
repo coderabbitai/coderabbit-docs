@@ -24,7 +24,7 @@ image: ./preview.png
 We are excited to announce that CodeRabbit has acquired
 [FluxNinja](https://fluxninja.com), a startup that provides a platform for
 building scalable generative AI applications. This acquisition will allow us to
-ship new use cases at an industrial scale while sustaining our rapidly growing
+ship new use cases at an industrial-scale while sustaining our rapidly growing
 user base. FluxNinja's Aperture product provides advanced rate-limiting,
 caching, and request prioritization capabilities for building reliable and
 cost-effective AI workflows.
