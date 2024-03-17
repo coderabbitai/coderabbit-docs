@@ -8,8 +8,7 @@ description:
 ---
 
 CodeRabbit offers various customization options to tailor the reviews to your
-specific requirements. Customizations can be made using one of the below options
-:
+requirements. Customizations can be made using one of the below options :
 
 1. **Customization via CodeRabbit YAML File** _(Recommended)_
 2. **Customization via CodeRabbit UI**
@@ -19,7 +18,8 @@ Customization defined in the YAML file overrides the settings in the UI.
 ### 1. Customize CodeRabbit using a YAML File[](https://coderabbit.ai/docs/get-started/customize-coderabbit)
 
 You can add a `.coderabbit.yaml` configuration file to your repositories. Below
-is a sample YAML file that can be used as a starting point and change as needed:
+is a sample YAML file that can be used as a starting point and changed as
+needed:
 
 #### version 2: `Current`
 
@@ -217,14 +217,14 @@ Reviews can also be customized through the UI under repository settings:
 **Path-based instructions :** Provide additional review guidelines based on the
 file paths using glob patterns.
 
-For further guidance, please refer this
+For further guidance, please refer to this
 section [Prompt Customization](/guides/prompt-customization)
 
 **Language Selection:** Select the natural language in which you want the review
 feedback. CodeRabbit supports most of the widely used languages. The default
 language is English.
 
-**Disable High Level Summary:** This allows disabling high level summary added
+**Disable High Level Summary:** This allows disabling high-level summary added
 with the pull request description.
 
 ---
@@ -236,7 +236,7 @@ with the pull request description.
 **Disable Reviews:** Disables automatic code reviews for the repository. Reviews
 can be initiated on-demand using CodeRabbit commands.
 
-**Enable Draft Pull request Reviews:** Select whether CodeRabbit should review
+**Enable draft pull request reviews:** Select whether CodeRabbit should review
 the draft pull requests.
 
 **Configure reviews using pull request labels:** Select specific pull request
