@@ -9,8 +9,6 @@ description:
 authors: [gur, sumanvs, nato]
 image: ./preview.png
 tags: ["AI", "OpenAI", "Rate Limits", "Aperture"]
-hide_table_of_contents: false
-aiDisclaimer: true
 ---
 
 ```mdx-code-block

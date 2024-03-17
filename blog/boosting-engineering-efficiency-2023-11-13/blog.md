@@ -7,8 +7,6 @@ description:
 authors: [dotlabs]
 image: ./preview.jpeg
 tags: ["AI", "Code Reviews", "Remote Work"]
-hide_table_of_contents: false
-aiDisclaimer: true
 ---
 
 ## Introduction

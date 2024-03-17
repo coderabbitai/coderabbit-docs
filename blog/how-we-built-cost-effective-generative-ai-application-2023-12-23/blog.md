@@ -6,8 +6,6 @@ description:
   effective and improve user experience.
 authors: [gur]
 tags: ["AI", "Cost Optimization", "Generative AI", "Code Review"]
-hide_table_of_contents: false
-aiDisclaimer: true
 ---
 
 # How we built a cost-effective Generative AI application

@@ -1,0 +1,61 @@
+.ai-disclaimer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ai-disclaimer-container {
+    display: flex;
+    max-width: 738px;
+    padding: 24px;
+    margin: 24px 0;
+    gap: 10px;
+    align-items: flex-start;
+    border-radius: 20px;
+    background: #F9F9F9;
+}
+
+[data-theme="dark"]:root .ai-disclaimer-container {
+    background: #5D5A59;
+}
+
+.ai-disclaimer-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.ai-disclaimer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+.ai-disclaimer-title {
+    align-self: stretch;
+    color: #2D333E;
+    margin-top: 2px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+[data-theme="dark"]:root .ai-disclaimer-title {
+    color: #DBD9D7;
+}
+
+.ai-disclaimer-description {
+    color: #2D333E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+[data-theme="dark"]:root .ai-disclaimer-description {
+    color: #DBD9D7;
+}

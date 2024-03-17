@@ -7,7 +7,7 @@ const baseUrl = "/";
 
 const config: Config = {
   title: "CodeRabbit",
-  staticDirectories: ["public", "static"],
+  staticDirectories: ["static"],
   tagline: "AI-powered Code Reviews",
   favicon: "img/favIcon.png",
 
@@ -19,11 +19,12 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "coderabbit", // Usually your GitHub org/user name.
+  projectName: "coderabbit-docs", // Usually your repo name.
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenMarkdownLinks: "throw",
+  onDuplicateRoutes: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you

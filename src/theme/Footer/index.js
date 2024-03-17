@@ -37,52 +37,44 @@ function CustomFooter(props) {
             <div className="justify-center items-stretch flex flex-col gap-3 pr-16">
               <a
                 href="https://docs.coderabbit.ai/"
-                className="justify-center text-white text-base font-medium whitespace-nowrap"
-              >
+                className="justify-center text-white text-base font-medium whitespace-nowrap">
                 Docs
               </a>
               <a
                 href="https://blog.coderabbit.ai/blog"
-                className="justify-center text-white text-base font-medium whitespace-nowrap mt-1"
-              >
+                className="justify-center text-white text-base font-medium whitespace-nowrap mt-1">
                 Blog
               </a>
               <a
                 href="https://coderabbit.ai/#pricing"
-                className="justify-center text-white text-base font-medium whitespace-nowrap mt-1"
-              >
+                className="justify-center text-white text-base font-medium whitespace-nowrap mt-1">
                 Pricing
               </a>
               <a
                 href="https://coderabbit.ai/changelog"
-                className="justify-center text-white text-base font-medium whitespace-nowrap mt-1"
-              >
+                className="justify-center text-white text-base font-medium whitespace-nowrap mt-1">
                 Changelog
               </a>
             </div>
             <div className="justify-center items-stretch flex flex-col gap-3 pl-16">
               <a
                 href="https://coderabbit.ai/compliance"
-                className="justify-center text-white text-base font-medium whitespace-nowrap"
-              >
+                className="justify-center text-white text-base font-medium whitespace-nowrap">
                 Compliance{" "}
               </a>
               <a
                 href="https://calendly.com/coderabbitai/30min"
-                className="justify-center text-white text-base font-medium whitespace-nowrap mt-1"
-              >
+                className="justify-center text-white text-base font-medium whitespace-nowrap mt-1">
                 Schedule a Demo
               </a>
               <a
                 href="https://coderabbit.ai/terms-of-service"
-                className="justify-center text-white text-base font-medium whitespace-nowrap mt-1"
-              >
+                className="justify-center text-white text-base font-medium whitespace-nowrap mt-1">
                 Terms of Service
               </a>
               <a
                 href="https://coderabbit.ai/privacy-policy"
-                className="justify-center text-white text-base font-medium whitespace-nowrap mt-1"
-              >
+                className="justify-center text-white text-base font-medium whitespace-nowrap mt-1">
                 Privacy Policy
               </a>
             </div>
@@ -97,8 +89,7 @@ function CustomFooter(props) {
             <a
               href="https://twitter.com/coderabbitai"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/0f1b48f4977dc728d0cea441017f89664834046c1ce8f3916564bb9a1538f58a?"
@@ -108,8 +99,7 @@ function CustomFooter(props) {
             <a
               href="https://www.linkedin.com/company/coderabbitai/"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ef98483828bc1c5e3349eb7c8da5c661ce0e7958e4dfe0e9c67db18e2019c65?"
@@ -119,8 +109,7 @@ function CustomFooter(props) {
             <a
               href="https://discord.gg/GsXnASn26c"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/54cf490c6e905acb0ac1e2d5b9946ca1adae440948393edc7a12ec1a68b7b95c?"

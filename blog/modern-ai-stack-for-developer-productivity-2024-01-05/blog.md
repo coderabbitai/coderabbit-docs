@@ -7,8 +7,6 @@ description:
 image: ./preview.jpg
 authors: [pradeep]
 tags: ["AI", "Developer Tools", "Code Generation", "Code Review", "Knowledge"]
-hide_table_of_contents: false
-aiDisclaimer: true
 ---
 
 The 'modern AI stack for developer productivity' refers to a comprehensive set
