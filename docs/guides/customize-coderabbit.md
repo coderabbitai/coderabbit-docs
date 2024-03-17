@@ -55,8 +55,8 @@ reviews:
       - "feat/.*"
   tools:
     ast-grep:
-      rules_folder: "custom-rules-folder-name"
-      utils_folder: "custom-utils-folder-name"
+      rules_directory: "custom-rules-directory-name"
+      utils_directory: "custom-utils-directory-name"
 chat:
   auto_reply: true
 ```
@@ -70,47 +70,48 @@ repository.
 
 YAML settings:
 
-1. **language**: Set the language for reviews using the ISO language code. For
+1. **`language`**: Set the language for reviews using the ISO language code. For
    example, `"fr"` stands for French (default:`en`).
 
-2. **early_access**: Enroll in the early access program to take advantage of
+2. **`early_access`**: Enroll in the early access program to take advantage of
    forthcoming features before their general release (default:`false`).
 
-3. **reviews**: Configurations for the code reviews.
-   - **request_changes_workflow**: Enable Request Changes review workflow for
+3. **`reviews`**: Configurations for the code reviews.
+   - **`request_changes_workflow`**: Enable request changes review workflow for
      CodeRabbit reviews. (default: `false`).
-   - **high_level_summary**: CodeRabbit generates a high level summary of the
+   - **`high_level_summary`**: CodeRabbit generates a high-level summary of the
      changes (default:`true`).
-   - **poem**: Indicates whether a creative poem should be included in the
+   - **`poem`**: Indicates whether a creative poem should be included in the
      review (default:`true`).
-   - **review_status**: Indicates the status of the review (default:`true`).
-   - **collapse_walkthrough**: Collapses the walkthrough comment
+   - **`review_status`**: Indicates the status of the review (default:`true`).
+   - **`collapse_walkthrough`**: Collapses the walkthrough comment
      (default:`false`).
-   - **path_filters**: Specifies file patterns to exclude or include for a
+   - **`path_filters`**: Specifies file patterns to exclude or include for a
      review, such as `!dist/**` and `src/**.tsx`, using glob notation.
-   - **path_instructions**: Provides specific additional guidelines for code
+   - **`path_instructions`**: Provides specific additional guidelines for code
      review based on file paths. In the given example, JavaScript files are
      singled out for checks against the Google JavaScript style guide. File path
      accepts glob pattern
-   - **auto_review**: Manages settings for automated code reviews, such as:
-     - **enabled**: Automated code review (default: `true`).
-     - **ignore_title_keywords**: Review will be ignored if a pull request title
-       contains one of the list of keywords (e.g., `"WIP"`, `"DO NOT MERGE"`).
-     - **labels**: Review will be triggered if a pull request contains one of
+   - **`auto_review`**: Manages settings for automated code reviews, such as:
+     - **`enabled`**: Automated code review (default: `true`).
+     - **`ignore_title_keywords`**: Review will be ignored if a pull request
+       title contains one of the list of keywords (e.g., `"WIP"`,
+       `"DO NOT MERGE"`).
+     - **`labels`**: Review will be triggered if a pull request contains one of
        the list of labels.
-     - **drafts**: Determines whether draft pull requests are reviewed (default:
-       `true`).
-     - **base_branches**: A list of base branches where the reviews will occur
+     - **`drafts`**: Determines whether draft pull requests are reviewed
+       (default: `true`).
+     - **`base_branches`**: A list of base branches where the reviews will occur
        apart from the default branch. Accepts regex pattern.
-   - **tools**: Configurations for the tools used in the review.
-     - **ast-grep**: Configurations for the ast-grep tool.
-       - **rules_folder**: The folder name where the custom ast-grep rules are
-         stored.
-       - **utils_folder**: The folder name where the custom ast-grep utils are
-         stored.
-4. **chat**: Defines the behavior of CodeRabbit's bot in conversations.
-   - **auto_reply**: The bot automatically replies without the need of the user
-     tagging it (default: `true`).
+   - **`tools`**: Configurations for the tools used in the review.
+     - **`ast-grep`**: Configurations for the `ast-grep` tool.
+       - **`rules_directory`**: The directory name where the custom `ast-grep`
+         rules are stored.
+       - **`utils_directory`**: The directory name where the custom `ast-grep`
+         utils are stored.
+4. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
+   - **`auto_reply`**: The bot automatically replies without the need of the
+     user tagging it (default: `true`).
 
 Refer:
 [CodeRabbit Configuration Schema](https://coderabbit.ai/integrations/coderabbit-overrides.v2.json).
@@ -157,47 +158,45 @@ settings:
   tools:
     # tools configuration for ast-grep
     ast-grep:
-      rules_folder: "custom-rules-folder-name"
-      utils_folder: "custom-utils-folder-name"
+      rules_directory: "custom-rules-directory-name"
+      utils_directory: "custom-utils-directory-name"
 ```
-
-<!-- ![code](./images/ymlrabbit.png) -->
 
 This configuration file consists of the following settings:
 
-1. **enable_draft_pr_reviews**: Set to **false** to disable draft pull
+1. **`enable_draft_pr_reviews`**: Set to **`false`** to disable draft pull
    request(PR) reviews.
-2. **additional_branches_to_be_reviewed**: Define additional branches to be
+2. **`additional_branches_to_be_reviewed`**: Define additional branches to be
    reviewed besides the default branch.
-3. **disable_high_level_summary**: If set to **true**, disables high-level
+3. **`disable_high_level_summary`**: If set to **`true`**, disables high-level
    summary generation.
-4. **path_based_instructions**: Allows you to specify instructions based on file
-   paths. In this example, instructions for Python and JavaScript files are
+4. **`path_based_instructions`**: Allows you to specify instructions based on
+   file paths. In this example, instructions for Python and JavaScript files are
    provided, encouraging adherence to the Google style guide.
-5. **ignored_pr_titles**: Specifies ignored PR titles, in this case, "WIP" (Work
-   in Progress).
-6. **review_language**: Sets the review language to French ("fr").
-7. **disable_poem**: If set to **false**, enables the "poem" feature.
-8. **early_access_program**: Determines whether to enable the early access
-   program (set to **false** in this case).
-9. **exclude_file_patterns**: Specifies patterns for excluding certain files
+5. **`ignored_pr_titles`**: Specifies ignored PR titles, in this case, "WIP"
+   (Work in Progress).
+6. **`review_language`**: Sets the review language to French (`fr`).
+7. **`disable_poem`**: If set to **`false`**, enables the "poem" feature.
+8. **`early_access_program`**: Determines whether to enable the early access
+   program (set to **`false`** in this case).
+9. **`exclude_file_patterns`**: Specifies patterns for excluding certain files
    from review, such as `!dist/**` and `!**.md`.
-10. **limit_reviews_by_label**: Limits reviews by label, targeting "first_bug"
+10. **`limit_reviews_by_label`**: Limits reviews by label, targeting "first_bug"
     label reviews.
-11. **disable_review**: Totally disables automatic code reviews for the
+11. **`disable_review`**: Totally disables automatic code reviews for the
     repository.
-12. **disable_review_status**: This is the comment posted for each incremental
+12. **`disable_review_status`**: This is the comment posted for each incremental
     review status. This removes the review status comment. Reviews will still
     take place. However, optional comments added to the review status will not
     be posted.
-13. **collapse_walkthrough_comment**: Specifies whether to collapse walkthrough
-    comments on the review.
-14. **tools**: Configurations for the tools used in the review.
-    - **ast-grep**: Configurations for the ast-grep tool.
-      - **rules_folder**: The folder name where the custom ast-grep rules are
-        stored.
-      - **utils_folder**: The folder name where the custom ast-grep utils are
-        stored.
+13. **`collapse_walkthrough_comment`**: Specifies whether to collapse
+    walkthrough comments on the review.
+14. **`tools`**: Configurations for the tools used in the review.
+    - **`ast-grep`**: Configurations for the `ast-grep` tool.
+      - **`rules_directory`**: The directory name where the custom `ast-grep`
+        rules are stored.
+      - **`utils_directory`**: The directory name where the custom `ast-grep`
+        utils are stored.
 
 Refer:
 [CodeRabbit configuration schema](https://coderabbit.ai/integrations/coderabbit-overrides.json).
@@ -224,7 +223,7 @@ section [Prompt Customization](/guides/prompt-customization)
 feedback. CodeRabbit supports most of the widely used languages. The default
 language is English.
 
-**Disable High Level Summary:** This allows disabling high-level summary added
+**Disable High-Level Summary:** This allows disabling high-level summary added
 with the pull request description.
 
 ---

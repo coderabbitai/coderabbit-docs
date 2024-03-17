@@ -7,7 +7,7 @@ description:
   options.
 ---
 
-### Path-based instructions[](https://coderabbit.ai/docs/prompt-customization#path-based-instructions)
+### Path-based instructions {#path-based-instructions}
 
 This section explains how to add custom code review instructions for the entire
 project or specific file paths in your project using glob patterns. Developers
@@ -16,22 +16,22 @@ instructions are needed only if you want the reviewer to follow specific
 instructions besides the standard review.
 
 Adding file path prompts allows developers to specify custom instructions for
-different parts of the codebase. For example, you may want to enforce style
+different parts of the codebase. For example, you may want to enforce a style
 guide by file types or directories.
 
-### Sample Usage[](https://coderabbit.ai/docs/prompt-customization#sample-usage)
+### Sample Usage {#sample-usage}
 
-**path:** `**/*.js`
+- **`path`**: `**/*.js`
 
-**instructions:** Review the JavaScript code against the Google JavaScript style
-guide and point out any mismatches
+  **`instructions`**: Review the JavaScript code against the Google JavaScript
+  style guide and point out any mismatches
 
-**path:** `tests/**.*`
+- **`path`**: `tests/**.*`
 
-**instructions:** Review the following unit test code written using the Mocha
-test library. Ensure that: The code adheres to best practices associated with
-Mocha. Descriptive test names are used to clearly convey the intent of each
-test.
+  **`instructions`**: Review the following unit test code written using the
+  Mocha test library. Ensure that: The code adheres to best practices associated
+  with Mocha. Descriptive test names are used to clearly convey the intent of
+  each test.
 
 :::note
 
@@ -45,27 +45,33 @@ test.
 
 ## Abstract Syntax Tree (AST) instructions
 
-:::note **Deep dive into AST patterns and ast-grep rules**
+:::note
 
-- AST patterns [wikipedia](https://en.wikipedia.org/wiki/Abstract_syntax_tree)
-- ast-grep
+**Deep dive into AST patterns and `ast-grep` rules**
+
+- Abstract Syntax Tree (AST)
+  [Wikipedia article](https://en.wikipedia.org/wiki/Abstract_syntax_tree)
+- `ast-grep`
   [official documentation](https://ast-grep.github.io/guide/rule-config.html)
-  for detailed guides. :::
+  for detailed guides.
 
-This section explains how to add custom code review instructions using ast-grep
-rules. ast-grep is a tool used for searching code using abstract syntax trees
-(AST) patterns.
+:::
 
-By default, you can add ast-grep rules by following these steps:
+This section explains how to add custom code review instructions using
+`ast-grep` rules. `ast-grep` is a tool used for searching code using abstract
+syntax trees (AST) patterns.
 
-1. Create a folder that keeps all the ast-grep rules in your project directory.
-2. Add individual `.yaml` files for each ast-grep rule within the newly created
-   folder.
-3. Ensure that each `.yaml` file contains the necessary ast-grep rule
+By default, you can add `ast-grep` rules by following these steps:
+
+1. Create a directory that keeps all the `ast-grep` rules in your project
+   directory.
+2. Add individual `.yaml` files for each `ast-grep` rule within the newly
+   created directory.
+3. Ensure that each `.yaml` file contains the necessary `ast-grep` rule
    configurations.
 4. Ensure that all rules contains a `message` property, that will be used in the
    review process.
-5. Add the rules folder to the `.coderabbit.yml` file under `tools.ast-grep`
+5. Add the rules' directory to the `.coderabbit.yml` file under `tools.ast-grep`
    configuration.
 
 ```yaml
@@ -74,17 +80,17 @@ reviews:
   #...
   tools:
     ast-grep:
-      rules_folder: "custom-name"
+      rules_directory: "custom-name"
   #...
 ```
 
 ### The rule object
 
-Rule object is the core concept of ast-grep's rule system and every other
+Rule object is the core concept of `ast-grep` rule system and every other
 feature is built on top of it.
 
 Below is the full list of fields in a rule object. Every rule field is optional
-and can be omitted but at least one field should be present in a rule. A node
+and can be omitted, but at least one field should be present in a rule. A node
 will match a rule if and only if it satisfies all fields in the rule object.
 
 ```yaml
@@ -121,7 +127,7 @@ The rule object is inspired by the CSS selectors but with more composability and
 expressiveness. Thinking about how selectors in CSS works can help you
 understand the rule object!
 
-> Read ast-grep
+> Read `ast-grep` >
 > [documentation](https://ast-grep.github.io/guide/rule-config.html) for
 > detailed guides.
 
@@ -140,7 +146,7 @@ Relational rule defines the relationship between two syntax nodes. There are
 four kinds of relational rule: `inside`, `has`, `follows` and `precedes`.
 
 All four relational rules accept a sub-rule object as their value. The sub-rule
-will match the surrounding node while the relational rule itself will match the
+will match the surrounding node, while the relational rule itself will match the
 target node.
 
 > Official documentation guide on
@@ -156,10 +162,10 @@ rule:
 
 #### Composite rule
 
-Composite rule defines the logical relationship between multiple sub-rules.
+A composite rule defines the logical relationship between multiple sub-rules.
 There are three kinds of composite rule: `all`, `any` and `not`.
 
-**all**
+**`all`**
 
 The `all` rule matches if all sub-rules match.
 
@@ -170,7 +176,7 @@ rule:
     - kind: expression_statement
 ```
 
-**any**
+**`any`**
 
 `any` rule matches if any sub-rule matches.
 
@@ -182,7 +188,7 @@ rule:
     - pattern: let a = $A
 ```
 
-**not**
+**`not`**
 
 `not` applies negation to a sub-rule. It matches if the sub-rule does not match.
 
@@ -198,13 +204,13 @@ rule:
 
 ### Reusing rule as utility
 
-ast-grep chooses to use YAML for rule representation. While this decision makes
-writing rules easier, it does impose some limitations on the rule authoring. One
-of the limitations is that rule objects cannot be reused.
+`ast-grep` chooses to use YAML for rule representation. While this decision
+makes writing rules easier, it does impose some limitations on the rule
+authoring. One of the limitations is that rule objects cannot be reused.
 
 #### Local utility rule
 
-Local utility rules are defined in the utils field of the config file. utils is
+Local utility rules are defined in the utils field of the config file. Utils is
 a string-keyed dictionary.
 
 For example, the following config file defines a local utility rule
@@ -226,9 +232,9 @@ rule:
 Global utility rules are defined in a separate file. But they are available
 across all rule configurations in the project.
 
-To create global utility rules, you need to have the `rules` folder created on
-the root of your project and another `utils` directory inside the root of your
-project.
+To create global utility rules, you need to have the `rules` directory created
+on the root of your project and another `utils` directory inside the root of
+your project.
 
 ```yaml
 my-awesome-project   # project root
@@ -238,8 +244,8 @@ my-awesome-project   # project root
   | |- is-literal.yml
 ```
 
-> Also, you need to add the `rules` and `utils` folders to the `.coderabbit.yml`
-> file under `tools.ast-grep` configuration.
+> Also, you need to add the `rules` and `utils` directories to the
+> `.coderabbit.yml` file under `tools.ast-grep` configuration.
 
 ```yaml
 #...
@@ -247,8 +253,8 @@ reviews:
   #...
   tools:
     ast-grep:
-      rules_folder: "rules"
-      utils_folder: "utils"
+      rules_directory: "rules"
+      utils_directory: "utils"
   #...
 ```
 
@@ -272,7 +278,8 @@ rule:
 
 ### Multiple Languages Support
 
-CodeRabbit supports multiple programming languages for defining ast-grep rules.
+CodeRabbit supports multiple programming languages for defining `ast-grep`
+rules.
 
 - JavaScript
 - Typescript
@@ -284,7 +291,7 @@ CodeRabbit supports multiple programming languages for defining ast-grep rules.
 - Python
 - C
 
-Below are examples of ast-grep rules in different languages:
+Below are examples of `ast-grep` rules in different languages:
 
 #### JavaScript
 
@@ -309,7 +316,7 @@ rule:
           regex: "^import$"
 ```
 
-**No console.log allowed except console.error on the catch block**
+**No console.log allowed except `console.error` on the catch block**
 
 ```yaml
 id: no-console-except-error
@@ -335,9 +342,9 @@ programmers use structs and function pointers to simulate classes and methods.
 
 However, this style can have some drawbacks, such as:
 
-- extra memory allocation and reallocation for the struct and the function
+- Extra memory allocation and reallocation for the struct and the function
   pointer.
-- indirection overhead when calling the function pointer.
+- Indirection overhead when calling the function pointer.
 
 A possible alternative is to use a plain function call with the struct pointer
 as the first argument.
