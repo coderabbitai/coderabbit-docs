@@ -66,8 +66,11 @@ provide the GitHub or GitLab organization name.
 ![Open a Ticket](./images/cr_support_help_light.png#gh-light-mode-only)
 ![Open a Ticket](./images/cr_support_help_dark.png#gh-dark-mode-only)
 
-:::tip To see more common issues faced by CodeRabbit users, visit our FAQ
-section for detailed answers and solutions to frequently encountered problems.
+:::tip
+
+To see more common issues faced by CodeRabbit users, visit our FAQ section for
+detailed answers and solutions to frequently encountered problems.
+
 :::
 
 ### **Community Collaboration**
