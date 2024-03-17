@@ -19,7 +19,7 @@ CodeRabbit reviews several thousand pull requests (PRs) daily. We have
 innovative client-side request prioritization technique to navigate OpenAI rate
 limits. In this blog post, we will explore how we manage to deliver continuous,
 in-depth code analysis cost-effectively, while also providing a robust, free
-plan to open source projects.
+plan to open-source projects.
 
 <!--truncate-->
 
@@ -37,10 +37,10 @@ functionalities. CodeRabbit offers the following tiers of service:
   of code changes in a PR.
 
 Our vision is to offer an affordable, AI-driven code review service to
-developers and organizations of all sizes while supporting the open source
-community. We are particularly mindful of open source projects, understanding
+developers and organizations of all sizes while supporting the open-source
+community. We are particularly mindful of open-source projects, understanding
 the challenges in reviewing community contributions. Our goal is to reduce the
-burden of code reviews for open source maintainers by improving submission
+burden of code reviews for open-source maintainers by improving submission
 quality before the review process begins.
 
 CodeRabbit's review process is automatically triggered when a PR is opened in
@@ -64,7 +64,7 @@ gpt-4 models.
 
 Our primary cost driver is using OpenAI's API to generate code review comments.
 We will share our cost optimization strategies in the following sections.
-Without these optimizations, our free offering to open source projects would not
+Without these optimizations, our free offering to open-source projects would not
 be feasible.
 
 Let's take a look at the strategies that helped us optimize the cost and improve
@@ -94,14 +94,14 @@ changes, we save almost 50% on costs.
 
 ## 2. Rate-limiting: Enforcing Fair Usage
 
-Upon launching our free service for open source projects, we noticed individual
+Upon launching our free service for open-source projects, we noticed individual
 developers using it as a coding co-pilot by making hundreds of incremental
 commits for continuous feedback. CodeRabbit, designed for thorough code reviews
 unlike tools such as GitHub Copilot, incurs high costs when used in this manner.
 Therefore, we implemented hourly rate-limits on the number of files and commits
 reviewed per user, to control excessive usage without compromising user
 experience. These limits vary across different product tiers. For example, we
-set more aggressive limits for open source users compared to trial and paid
+set more aggressive limits for open-source users compared to trial and paid
 users.
 
 To implement these rate-limits, we evaluated various options for Serverless
@@ -114,23 +114,23 @@ In FluxNinja Aperture, policies are decoupled from application logic through
 labels, enabling new policy additions without altering application code. We
 apply labels in FluxNinja Aperture, wrap the review workload with its SDK, and
 write policies that enforce limits on those labels. For example, we enforce a 3
-reviews per hour limit (1 review every 20 minutes) for open source users,
+reviews per hour limit (1 review every 20 minutes) for open-source users,
 allowing a burst of 2 back-to-back reviews, as shown in the screenshots below.
 
 Integration with FluxNinja Aperture SDK
 
-![Rate limiting commits per hour for open source users](generative-ai-request-flow-cost-saving.png "Rate limiting commits per hour for open source users")
-Rate limiting commits per hour for open source users
+![Rate-limiting commits per hour for open-source users](generative-ai-request-flow-cost-saving.png)
+_Rate-limiting commits per hour for open-source users_
 
-![Wait time feedback to the user in a comment](rate-limit-message-screenshot.png "Wait time feedback to the user in a comment")
-Wait time feedback to the user in a comment
+![Wait time feedback to the user in a comment](rate-limit-message-screenshot.png)
+_Wait time feedback to the user in a comment_
 
 Given the high cost and capacity constraints of state-of-the-art models such as
 gpt-4, rate-limiting is an essential requirement for any AI application. By
 implementing fair-usage rate limits, we are saving almost 20% on our costs.
 
-![Rate limit metrics for open source users](rate-limits-metrics-screenshot.png "image_tRate limit metrics for open source usersooltip")
-Rate limit metrics for open source users
+![Rate limit metrics for open source users](rate-limits-metrics-screenshot.png)
+_Rate limit metrics for open-source users_
 
 ## 3. Caching: Avoid Re-generating Similar Review Comments
 

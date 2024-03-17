@@ -161,9 +161,9 @@ elsewhere.
 
 This isn't just about shipping faster—although who doesn't want to do that? It's
 also about optimizing your team's time so they can focus on what they do best:
-create amazing software. If an AI code review tool can handle the initial pass,
-highlighting potential issues with the code, the developer can resolve initial
-feedback faster and your human experts can spend their time solving more
+create remarkable software. If an AI code review tool can handle the initial
+pass, highlighting potential issues with the code, the developer can resolve
+initial feedback faster and your human experts can spend their time solving more
 complex, higher-level problems.
 
 In the next section, we'll understand how AI-powered code reviewers offer a more

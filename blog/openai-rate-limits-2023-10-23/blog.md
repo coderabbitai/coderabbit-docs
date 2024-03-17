@@ -115,7 +115,7 @@ the nature of requests.
 
 We were introduced to the [FluxNinja Aperture](https://www.fluxninja.com/) load
 management platform by one of our advisors.
-[Aperture](https://github.com/fluxninja/aperture) is an open source load
+[Aperture](https://github.com/fluxninja/aperture) is an open-source load
 management platform that offers advanced rate-limiting, request prioritization,
 and quota management features. Essentially, Aperture serves as a global token
 bucket, facilitating client-side rate limits and business-attribute-based
@@ -150,13 +150,13 @@ context to Aperture, we also attach the following labels to each request:
   tier. For example, the reasoning could that the user is a `paid_user`,
   `trial_user` or a `open_source_user`. Requests to OpenAI are prioritized based
   on these labels.
-- `priority`: Requests are ranked according a priority number provided in this
-  label. For instance, requests from `paid_user` are given precedence over those
-  from `trial_user` and `open_source_user`. The base priority is incremented for
-  each file reviewed, enabling pull requests that are further along in the
-  review process to complete more quickly than newly submitted ones.
-  Additionally, chat messages are assigned a much higher priority compared to
-  review tasks.
+- `priority`: Requests are ranked according to a priority number provided in
+  this label. For instance, requests from `paid_user` are given precedence over
+  those from `trial_user` and `open_source_user`. The base priority is
+  incremented for each file reviewed, enabling pull requests that are further
+  along in the review process to complete more quickly than newly submitted
+  ones. Additionally, chat messages are assigned a much higher priority compared
+  to review tasks.
 
 ![Request Flow](request-flow.svg)
 
@@ -227,22 +227,22 @@ context to Aperture, we also attach the following labels to each request:
 
 Aperture offers a foundational "blueprint" for
 [managing quotas](https://docs.fluxninja.com/reference/blueprints/quota-scheduling/base),
-comprising of two main components:
+comprising two main components:
 
 - Rate limiter: OpenAI employs a token bucket algorithm to impose rate limits,
   and that is directly compatible with Aperture's rate limiter. For example, in
   the tokens per minute policy for `gpt-4`, we have allocated a burst capacity
   of `40000 tokens`, and a refill rate of `40000 tokens per minute`. The bucket
   begins to refill the moment the tokens are withdrawn, aligning with OpenAI's
-  rate limiting mechanism. This ensures our outbound request and token rate
+  rate-limiting mechanism. This ensures our outbound request and token rate
   remains synchronized with OpenAI's enforced limits.
 - Scheduler: Aperture has a
   [weighted fair queuing](https://docs.fluxninja.com/concepts/scheduler/)
   scheduler that prioritizes the requests based on multiple factors such as the
   number of tokens, priority levels and workload labels.
 
-By fine-tuning these two components in Aperture, we are able to go as fast as we
-can, with optimal user experience, while ensuring that we don't exceed the rate
+By fine-tuning these two components in Aperture, we can go as fast as we can,
+with optimal user experience, while ensuring that we don't exceed the rate
 limits.
 
 <details>

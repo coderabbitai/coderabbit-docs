@@ -29,8 +29,8 @@ which they are purchased and cannot be used under another organization.
 ### Can CodeRabbit review my existing PRs after integrating it?
 
 CodeRabbit would by default only review new PRs or existing PRs which have a new
-commit after the app is installed. You can, however, use `@coderabbitai review`
-command on the PR to trigger a review of existing PRs.
+commit after the app is installed. You can, however, use the
+`@coderabbitai review` command on the PR to trigger a review of existing PRs.
 
 ### Who can add the repositories on CodeRabbit?
 

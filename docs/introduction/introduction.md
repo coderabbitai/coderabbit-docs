@@ -3,19 +3,19 @@ id: introduction
 title: What is CodeRabbit?
 sidebar_label: Introduction
 description:
-  CodeRabbit is an innovative, AI-first code reviewer. It provides context aware
+  CodeRabbit is an innovative, AI-first code reviewer. It provides context-aware
   review feedback on a pull request within minutes, thereby significantly
   reducing the time and effort associated with manual code reviews.
 slug: "/"
 ---
 
-**CodeRabbit** is an innovative, AI-first code reviewer. It provides context
-aware review feedback on a pull request within minutes, thereby significantly
-reducing the time and effort associated with manual code reviews. Secondly, it
-brings a different perspective to the reviews and finds issues often missed by
-the human eye. Developers can chat with the bot within the code, which allows
-them to provide additional context, ask questions, or have the bot generate
-code. It learns from your suggestions and gets better overtime.
+**CodeRabbit** is an innovative, AI-first code reviewer. It provides
+context-aware review feedback on a pull request within minutes, thereby
+significantly reducing the time and effort associated with manual code reviews.
+Secondly, it brings a different perspective to the reviews and finds issues
+often missed by the human eye. Developers can chat with the bot within the code,
+which allows them to provide additional context, ask questions, or have the bot
+generate code. It learns from your suggestions and gets better overtime.
 
 **CodeRabbit** seamlessly integrates with GitHub and GitLab repositories,
 performing continuous, incremental reviews for each commit within a pull
@@ -42,7 +42,7 @@ process with other third parties.
 Does CodeRabbit store my Data? We store embeddings of your conversations, which
 are used to improve future reviews for your organization.
 
-Compliance and Data Privacy: Your data is kept confidential, isolated by
+Compliance and Data Privacy: Your data is kept confidential, isolated by the
 organization, and used only to improve your organization reviews. Data storage
 complies with SOC2 Type II, GDPR, and HIPAA standards.
 

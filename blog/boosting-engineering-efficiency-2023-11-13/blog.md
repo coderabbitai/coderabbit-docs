@@ -28,11 +28,6 @@ reliable friend who never sleeps (because they're code) and knows all the coding
 rules. This article explores how these intelligent bots fill the gaps in our
 fast-paced, sometimes slow, new world.
 
-```mdx-code-block
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-```
-
 <!--truncate-->
 
 ## Direct Correlation: Remote Engineering Challenges & AI Solutions

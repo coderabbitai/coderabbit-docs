@@ -92,7 +92,7 @@ reviewer to ensure code quality. It goes beyond existing linters and static code
 analysis tools in uncovering issues and suggesting improvements by providing a
 human-like understanding of the objective of the code.
 
-With CodeRabbit, developers get context aware feedback within minutes, which
+With CodeRabbit, developers get context-aware feedback within minutes, which
 enables them to make improvements based on best practices and get their code
 ready to be merged faster. CodeRabbit also helps reviewers by providing them
 with confidence and speed to approve the code faster. Reviewers can use
@@ -135,7 +135,7 @@ context of the pull request and changes across multiple files. Below is a
 glimpse into the challenges we faced and the solutions we came up with:
 
 **Context window size:** The LLM models have limited context windows, for
-instance,`gpt-3.5-turbo` has a context window of 4K or 16K tokens and `gpt-4`
+instance, `gpt-3.5-turbo` has a context window of 4K or 16K tokens and `gpt-4`
 has a context window of 8K tokens. This is often insufficient to pack larger
 change sets. To circumvent this, we provide various summaries while reviewing
 changes to each file and by smartly prioritizing context that is packed in each
@@ -155,15 +155,14 @@ the noise.
 
 **Costs:** While advanced models like `gpt-4` are great in performing complex
 tasks, they are several orders of magnitude more expensive than models like
-`gpt-3.5-turbo`. We had to design a multi-model approach that uses simpler
-models for summarizations, while complex models are used for tasks such as
-reviewing code. In addition, simpler models act as a triage filter that
-identifies the changes that need to be thoroughly reviewed by more complex
-models.
+`gpt-3.5-turbo`. We had to design a multimodel approach that uses simpler models
+for summarizations, while complex models are used for tasks such as reviewing
+code. In addition, simpler models act as a triage filter that identifies the
+changes that need to be thoroughly reviewed by more complex models.
 
 **Inaccuracies:** LLMs are not perfect and often return inaccurate results, and
 they sometimes even ignore instructions and completely fabricate a response.
-Rather than keep fighting the LLMs we wrote layers of sanity checks to fix or
+Rather than keep fighting the LLMs, we wrote layers of sanity checks to fix or
 hide the inaccuracies from the user.
 
 **Data privacy:** The biggest concern from our users is whether their code is
