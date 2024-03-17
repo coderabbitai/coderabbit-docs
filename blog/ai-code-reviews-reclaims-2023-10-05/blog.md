@@ -3,34 +3,9 @@ slug: ai-code-reviews-reclaims
 title: How AI Code Review Reclaims Your Team's Time
 description: How AI Code Review Reclaims Your Team's Time
 authors: [simone]
-tags: ["Rate limits", "Openai", "Prioritization"]
-image: https://coderabbit.uw.r.appspot.com/blog/assets/images/BlogImage2-5d9344142d7354ac5b8c9928e8ee6208.png
+tags: ["AI", "Code Review", "Productivity"]
+image: ./preview.png
 ---
-
-<head>
- <meta charSet="utf-8" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"/>
-  <meta content="/icons/apple-touch-icon.png" itemprop="image" />
-  <link rel="icon" href="/icons/favicon-32x32.ico"></link>
-
-  <link rel="manifest" href="/icons/site.webmanifest"></link>
-
-  <title>How AI Code Review Reclaims Your Team's Time</title>
-  <meta name="title" content="CodeRabbit: Bringing AI to Code Reviews" />
-
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://coderabbit.ai/blog/ai-code-reviews-reclaims" />
-  <meta property="og:title" content="How AI Code Review Reclaims Your Team's Time" />
-<meta property="og:image" content="img/blogs/BlogImage2.png" />
-
-  <meta name="twitter:image" content="https://coderabbit.uw.r.appspot.com/blog/assets/images/BlogImage2-5d9344142d7354ac5b8c9928e8ee6208.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="How AI Code Review Reclaims Your Team's Time" />
-</head>
-
-<!-- import ShareButton from '../src/components/ShareButton/ShareButton'; -->
 
 ### Introduction
 
@@ -38,10 +13,10 @@ In the era of building and improving products fast, engineering managers
 encounter fresh challenges that render traditional strategies outdated. The
 amount of time spent trying to make sure that teams not only build products
 fast, but also without breaking too much stuff or introducing security
-vulnerabilities is significant.
+vulnerabilities, is significant.
 
 One of the most time-intensive tasks involves conducting code reviews – these
-crucial checkpoints serve as guardians shielding your codebase from potential
+crucial checkpoints serve as guardians, shielding your codebase from potential
 chaos. Additionally, code reviews are an essential part of
 [compliance](https://mitratech.com/en_gb/governance-risk-compliance/what-is-enterprise-compliance/);
 which is often a requirement when working in an enterprise. Despite their
@@ -53,7 +28,7 @@ Introducing AI-powered code reviews! Picture your team's pull requests getting
 reviewed as soon as they're made. That's the magic of AI code review tools. For
 teams, this means you don't have to wait for hours to get feedback. Reviewers
 can still offer more feedback later. It also means your teams can stay on track,
-creating and releasing features without the usual delays of waiting for code
+creating and releasing features, without the usual delays of waiting for code
 reviews.
 
 We'll discuss the regular stages of software projects and the impact of AI code
@@ -65,7 +40,7 @@ reviews faster, smarter, and surprisingly, more human-like.
 
 ### The Typical Software Lifecycle Process
 
-![](software-lifecycle.png)
+![Software Lifecycle](software-lifecycle.png)
 
 Ah, the software lifecycle—the process where we turn ideas into lines of code
 that build our products. If you're an engineering manager, you're already
@@ -74,7 +49,7 @@ It's a continuous cycle with its own set of challenges.
 
 So, where do code reviews fit into this? They help us make sure that we know
 what we are shipping to our users by having different people cross-check each
-others’ work.You can't skip them; they serve as a critical validation point,
+other's work. You can't skip them; they serve as a critical validation point,
 ensuring that the code you're churning out works and is optimized and secure.
 Code reviews are the gatekeepers that scrutinize your code before it gets the
 VIP pass to merge into the main branch.
@@ -83,20 +58,20 @@ But let's be real. Traditionally, this process has been manual, slow (with
 delays between opening pull requests and having them reviewed), subjective, and,
 yes, prone to human error. But if there's anything the advent of AI code review
 tools shows us, there is an opportunity to reclaim some of the time we spend
-doing code reviews..
+doing code reviews.
 
 In the upcoming sections, we'll dive deeper into how the traditional and often
 cumbersome process of code reviews is changing with AI.
 
 ### The Traditional Code Review Method
 
-![](engineer.png)
+![Software Engineer](engineer.png)
 
 In the conventional approach, code reviews followed this pattern: one developer
 wrote the code and then passed it on to another person for evaluation. The
 reviewer took their time to meticulously inspect the code submitted by the
 developer. This involved examining lines of code and making notes, comments,
-questions, and identifying any problems. This process typically unfolded as
+questions, and identifying any problems. This process typically unfolds as
 follows:
 
 - A developer creates a Pull Request (PR) and outlines the changes made,
@@ -120,9 +95,9 @@ changes based on that feedback.
 
 However, manual code reviews can be likened to a risky game with your code's
 quality, somewhat resembling playing Russian Roulette. Even with a highly
-skilled team, personal opinions and fatigue can occasionally lead to overlooked
-mistakes. Additionally, the pressure of other tasks can make code reviews seem
-necessary but frustrating.
+skilled team, opinions and fatigue can occasionally lead to overlooked mistakes.
+Additionally, the pressure of other tasks can make code reviews seem necessary
+but frustrating.
 
 Yet, can we truly afford to skip or rush this step? No, not without inviting
 bugs and bottlenecks down the road. Thankfully, technological advancements, such
@@ -138,7 +113,7 @@ you put forth your best effort, some issues might go unnoticed. These issues can
 later evolve into significant problems, such as critical bugs, system crashes,
 or vulnerabilities. Now, imagine that this team member resides in a different
 time zone, perhaps asleep or preoccupied with other tasks. It's akin to
-attempting to share your smoothie at a party where everyone struggles to find
+attempting to share your smoothie at a party, where everyone struggles to find
 the right moment for a sip.
 
 So, what's the solution? You could attempt to enforce a strict schedule for
@@ -166,7 +141,7 @@ Let's look at some numbers because engineering managers really like facts and
 figures. Studies tell us that developers spend around 20-30% of their time
 [doing code reviews](https://about.gitlab.com/blog/2023/09/03/the-code-review-struggle-is-real-heres-what-you-need-to-know/).
 There's even a study
-[here](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/#:~:text=Review%20fewer%20than%20400%20lines%20of%20code%20at%20a%20time,-A%20SmartBear%20study&text=The%20brain%20can%20only%20effectively,70%2D90%25%20defect%20discovery)
+[here](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/)
 that shows our brains struggle to review more than about 400 lines of code at
 once, making it harder to spot mistakes.
 
@@ -177,7 +152,7 @@ time is used up reviewing code, it's not just a tech thing anymore – it's a bi
 deal for the whole business.
 
 Think about it this way: these hours aren't spent on making cool new stuff,
-fixing problems, or coming up with fresh ideas. Instead, they're used up
+resolving problems, or coming up with fresh ideas. Instead, they're used up
 carefully looking at code that's already there, trying to find mistakes, things
 that could work better, and stuff that doesn't fit. This is often where things
 slow down and work takes longer. While making sure the code is great is
@@ -186,24 +161,24 @@ elsewhere.
 
 This isn't just about shipping faster—although who doesn't want to do that? It's
 also about optimizing your team's time so they can focus on what they do best:
-creating amazing software. If an AI code review tool can handle the initial
-pass, highlighting potential issues with the code, the developer can resolve
-initial feedback faster and your human experts can spend their time solving more
+create amazing software. If an AI code review tool can handle the initial pass,
+highlighting potential issues with the code, the developer can resolve initial
+feedback faster and your human experts can spend their time solving more
 complex, higher-level problems.
 
 In the next section, we'll understand how AI-powered code reviewers offer a more
 efficient, context-aware, and timely alternative to the traditional approach.
-Because let's face it, it's high time our methods evolved to match the pace of
-modern development cycles of rapid development and iteration.
+Because let's face it, it's time our methods evolved to match the pace of modern
+development cycles of rapid development and iteration.
 
 ### AI-Powered Code Reviews: This Changes Everything
 
-![](ai-powered.png) AI, or Artificial Intelligence, might sound like a trendy
-word, but in the world of reviewing computer code, it's not just a passing trend
-– it's a real game-changer. When we talk about AI in code review tools, we're
-not just talking about existing linters or static code analysis tools. Instead,
-we're referring to smart feedback that understands the context of your team's
-coding rules and the particular project you're working on.
+![AI powered](ai-powered.png) AI, or Artificial Intelligence, might sound like a
+trendy word, but in the world of reviewing computer code, it's not just a
+passing trend – it's a real game-changer. When we talk about AI in code review
+tools, we're not just talking about existing linters or static code analysis
+tools. Instead, we're referring to smart feedback that understands the context
+of your team's coding rules and the particular project you're working on.
 
 But there's more to it. These AI-powered systems can chat with you, making the
 review process feel like a collaboration rather than a machine. This means you
@@ -221,7 +196,7 @@ In summary, AI-powered code reviews provide faster and reliable feedback without
 sacrificing quality or depth. This enhances your team's productivity and allows
 you to push the boundaries of what's possible in your development process. You
 can learn more by checking this out:
-[AI and the Future of Code Reviews: A Deep Dive into CodeRabbit.](https://coderabbit.ai/blog/coderabbit-deep-dive)
+[AI and the Future of Code Reviews: A Deep Dive into CodeRabbit.](../coderabbit-deep-dive-2023-08-26/blog.md)
 
 In the final part, we'll wrap up by explaining why using AI for code reviews
 could be a smart strategy you may not have realized you needed. Get ready to
@@ -245,20 +220,20 @@ heading towards a future where code reviews are faster, smarter, more detailed,
 and surprisingly, more like how humans do it.
 
 Second, don't underestimate how this change affects your whole process of making
-software. Quicker reviews mean you can make changes and improvements faster,
-making your team more flexible and ready to jump on opportunities.
+software. Quicker reviews mean you can speed up changes and improvements, making
+your team more flexible and ready to jump on opportunities.
 
 Lastly, remember that technology isn't just about using new tools; it's about
-using them right to make things better. AI-powered code reviews are super quick,
+using them right to improve things. AI-powered code reviews are super quick,
 super accurate, and super thorough, making them a great choice for any team.
 Additionally, AI review tools often see problems that people might miss or not
 notice.
 
-So, does AI fix all your code review problems? Well, not every single one, but
-it's a really good start. The future is here, and it's knocking at your door.
-Time to let it in. And with that, we're done with this journey. May your code
-stay clean, your reviews be speedy, and your software launches be smooth. Here's
-to building a smarter and more efficient future!
+So, does AI fix all your code review problems? Well, not each one, but it's an
+excellent start. The future is here, and it's knocking at your door. Time to let
+it in. And with that, we're done with this journey. May your code stay clean,
+your reviews be speedy, and your software launches be smooth. Here's to building
+a smarter and more efficient future!
 
 ### Next Steps: How to save time and improve code quality with AI-Powered Code Reviews
 
@@ -282,8 +257,8 @@ checklist to help you start your journey with AI-powered code reviews:
 5. **Expand Gradually**: Happy with the results? Excellent! Now, introduce
    AI-powered code reviews to the whole team and make it a regular practice.
 
-6. **Stay Updated**: AI keeps evolving, and so should your approach. Keep up
-   with new features and capabilities to keep improving your review process.
+6. **Stay Updated**: AI continues to evolve, and so should your approach. Keep
+   up with new features and capabilities to keep improving your review process.
 
 This isn't just a temporary trend; it's a significant shift in how we view code
 quality and team efficiency. So take that leap and discover how AI can take your
@@ -292,7 +267,3 @@ performance to the next level.
 With that, we conclude today's topic. If you have questions or thoughts, feel
 free to share them in the comments section. Let's continue the discussion there.
 Cheers!
-
-<!-- <ShareButton platform="twitter" text="Twitter" url='CodeRabbit: Bringing AI to Code Reviews&hashtags=CodeRabbitAI'/> -->
-
-<!-- <ShareButton platform="facebook" url="CodeRabbit: Bringing AI to Code Reviews" text="LinkedIn" /> -->

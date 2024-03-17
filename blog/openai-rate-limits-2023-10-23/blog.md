@@ -7,40 +7,11 @@ description:
   How CodeRabbit uses Aperture to manage OpenAI rate limits with request
   prioritization
 authors: [gur, sumanvs, nato]
-image: https://coderabbit.ai/blog/assets/images/Blog3-4188b2a6acf85932803da8983b14607c.png
-tags: [rate-limits, quota-management, prioritization, aperture, openai]
+image: ./preview.png
+tags: ["AI", "OpenAI", "Rate Limits", "Aperture"]
 hide_table_of_contents: false
 aiDisclaimer: true
 ---
-
-<head>
- <meta charSet="utf-8" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"/>
-  <meta content="/icons/apple-touch-icon.png" itemprop="image" />
-  <link rel="icon" href="/icons/favicon-32x32.ico"></link>
-
-  <link rel="manifest" href="/icons/site.webmanifest"></link>
-
-  <title>Squeezing Water from Stone: Managing OpenAI Rate Limits with Request
-  Prioritization</title>
-  <meta name="title" content="Squeezing Water from Stone: Managing OpenAI Rate Limits with Request
-  Prioritization" />
-
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://coderabbit.ai/blog/coderabbit-openai-rate-limits" />
-  <meta property="og:title" content="Squeezing Water from Stone: Managing OpenAI Rate Limits with Request
-  Prioritization" />
-<meta property="og:image" content="https://coderabbit.ai/blog/assets/images/Blog3-4188b2a6acf85932803da8983b14607c.png" />
-
-  <meta name="twitter:image" content="https://coderabbit.ai/blog/assets/images/Blog3-4188b2a6acf85932803da8983b14607c.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Squeezing Water from Stone: Managing OpenAI Rate Limits with Request
-  Prioritization" />
-</head>
-
-<!-- import ShareButton from '../src/components/ShareButton/ShareButton'; -->
 
 ```mdx-code-block
 import Tabs from '@theme/Tabs';
@@ -94,7 +65,7 @@ developers on the quality of their code. The feedback is provided in the form of
 comments on the pull request, allowing the developers to enhance the code based
 on the provided suggestions in the follow-up commits.
 
-![CodeRabbit Pull Request Review Workflow](../img/CodeRabbitDesign.jpg "CodeRabbit Pull Request Review Workflow")
+![CodeRabbit Pull Request Review Workflow](../img/coderabbit-design.jpg)
 
 CodeRabbit employs a combination of the `gpt-3.5-turbo` and `gpt-4` family of
 models. For simpler tasks such as summarization, we use the more economical
@@ -437,7 +408,3 @@ and with Aperture, FluxNinja is well positioned to be the leader in this space.
 As CodeRabbit continues to build and add additional components such as vector
 databases, which are also computationally expensive, we are confident that
 Aperture will continue to help us offer a reliable experience to our users.
-
-<!-- <ShareButton platform="twitter" text="Twitter" url='Squeezing Water from Stone: Managing OpenAI Rate Limits with Request Prioritization&hashtags=CodeRabbitAI'/>
-
-<ShareButton platform="facebook" url="Squeezing Water from Stone: Managing OpenAI Rate Limits with Request Prioritization" text="LinkedIn" /> -->

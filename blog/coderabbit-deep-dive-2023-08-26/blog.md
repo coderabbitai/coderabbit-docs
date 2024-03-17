@@ -3,40 +3,10 @@ slug: coderabbit-deep-dive
 title: AI and the Future of Code Reviews - A Deep Dive into CodeRabbit
 description: AI and the Future of Code Reviews - A Deep Dive into CodeRabbit
 authors: [gur, vishu]
-tags: ["Rate limits", "Openai", "Prioritization"]
-image: /img/blogs/founder_blog_meta.jpeg
+tags: ["CodeRabbit", "AI", "Code Reviews"]
+image: ./preview.jpeg
 hide_table_of_contents: false
 ---
-
-<head>
- <meta charSet="utf-8" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favIcon.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favIcon.png"/>
-  <meta content="/icons/apple-touch-icon.png" itemprop="image" />
-  <link rel="icon" href="/icons/favicon-32x32.ico"></link>
-
-  <link rel="manifest" href="/icons/site.webmanifest"></link>
-
-  <title>AI and the Future of Code Reviews - A Deep Dive into CodeRabbit</title>
-  <meta name="title" content="CodeRabbit: Bringing AI to Code Reviews" />
-
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://blog.coderabbit.ai/blog/coderabbit-deep-dive" />
-  <meta property="og:title" content="AI and the Future of Code Reviews: A Deep Dive into CodeRabbit" />
-  <meta property="og:image" content="https://docs.coderabbit.ai/img/blogs/founder_blog_meta.jpeg" />
-
-  <meta name="twitter:image" content="https://blog.coderabbit.ai/img/blogs/founder_blog_meta.jpeg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AI and the Future of Code Reviews: A Deep Dive into CodeRabbit" />
-</head>
-
-<!-- import ShareButton from '../../src/components/ShareButton/ShareButton';
-import Header from '../../src/components/Header/Header';
-import Layout from '../../src/pages/page'; -->
-
-<!-- <Header></Header>
-<Layout></Layout> -->
 
 We are witnessing an inflection point in the software development industry.
 Developers around the world have been realizing the incredible possibilities
@@ -71,7 +41,7 @@ extensions such as GitHub Copilot. Local development tools are just one part of
 the equation.
 
 Relying on local tools alone is not sufficient to prevent quality issues, as
-they are inconsistent across the developers which makes it hard to enforce
+they are inconsistent across the developers, which makes it difficult to enforce
 standards. To ensure quality, the code is merged collaboratively in the form of
 [pull requests (PR)](https://docs.github.com/en/pull-requests) in platforms such
 as GitHub/GitLab. As soon as the PR is opened, the CI/CD process kicks in. The
@@ -153,7 +123,7 @@ workflow is triggered when a developer opens a pull request or commits code to
 an existing pull request. This is followed by various summarization and review
 stages.
 
-![](../img/CodeRabbitDesign.jpg)
+![CodeRabbit Design](../img/coderabbit-design.jpg)
 
 CodeRabbit is not just a simple wrapper that does pass-through to the LLM
 models. To circumvent context size limits, CodeRabbit uses an innovative,
@@ -203,7 +173,7 @@ same time, it's challenging to provide stateful incremental reviews without
 storing the data. We had to design a system that stores all state within the
 pull request itself and not in our service for maximum privacy.
 
-![](./CodeRabbitSecurity.jpg)
+![CodeRabbit Security](./coderabbit-security.jpg)
 
 ## Conclusion
 

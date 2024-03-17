@@ -4,16 +4,9 @@ title: Modern AI stack for developer productivity
 description:
   Elevate your development workflow with three pillars of developer productivity
   tools powered by Artificial Intelligence
-image: banner.jpg
+image: ./preview.jpg
 authors: [pradeep]
-tags:
-  [
-    "developer productivity",
-    "developer tools",
-    "ai tools",
-    "ai developer tools",
-    "technology trend",
-  ]
+tags: ["AI", "Developer Tools", "Code Generation", "Code Review", "Knowledge"]
 hide_table_of_contents: false
 aiDisclaimer: true
 ---
@@ -24,11 +17,11 @@ software. In 2023, Large Language Models (LLMs) caused significant disruption,
 leading to a rapid increase in the adoption of artificial intelligence within
 the development lifecycle, particularly in the realm of 'developer productivity
 tools'. A significant majority of software development projects are now
-leveraging some form of AI, specifically Generative AI to transform traditional
+leveraging some form of AI, specifically Generative AI, to transform traditional
 development workflows into more intelligent, efficient, and automated processes.
 
 The modern AI stack for developer productivity is reshaping the landscape of
-software development, making tasks that were once time-consuming or complex more
+software development, making once time-consuming tasks or complex more
 manageable and automated. From helping with the research or code writing to
 reviewing code and ensuring quality, the modern AI stack is a testament to how
 AI is not just an add-on but an integral component in the software development
@@ -78,8 +71,8 @@ responses.
 
 Code generation through AI marks a significant leap in software development. AI
 models, trained on vast code repositories, can now assist in generating code
-snippets and at times the entire modules. This speeds up the coding process. The
-evolution of this pillar is a testament to AI's growing understanding of
+snippets and at times the entire modules. This accelerates the coding process.
+The evolution of this pillar is a testament to AI's growing understanding of
 programming languages and logic, offering a collaborative tool that augments the
 developer's capabilities rather than replacing them.
 

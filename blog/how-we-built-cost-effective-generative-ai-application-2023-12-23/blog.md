@@ -5,7 +5,7 @@ description:
   Building a Generative AI application is expensive. Here's how we make it cost
   effective and improve user experience.
 authors: [gur]
-tags: ["Rate limits", "Openai", "Prioritization"]
+tags: ["AI", "Cost Optimization", "Generative AI", "Code Review"]
 hide_table_of_contents: false
 aiDisclaimer: true
 ---
