@@ -135,7 +135,7 @@ const config: Config = {
       },
       // Declare some json-ld structured data
     ],
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/preview.png",
     navbar: {
       title: "",
       hideOnScroll: true,
