@@ -1,36 +1,25 @@
 ---
 title: Plans
 sidebar_label: Plans
-description: Accelerate Code Reviews with AI
-image: "/preview_meta.jpg"
+description:
+  Learn about the plans, pricing, and subscription management of CodeRabbit.
 ---
 
-<head>
- <meta charSet="utf-8" />
-  <meta name="title" content="CodeRabbit: AI-powered Code Reviews" />
-  <meta name="description" content="Accelerate Code Reviews with AI" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://coderabbit.ai/" />
-  <meta property="og:title" content="CodeRabbit: AI-powered Code Reviews" />
-  <meta property="og:description" content="Accelerate Code Reviews with AI" />
-  <meta property="og:image" content="/preview_meta.jpg" />
-
-  <meta name="twitter:image" content="https://coderabbit.ai/preview_meta.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CodeRabbit: AI-powered Code Reviews" />
-  <meta name="twitter:description" content="Accelerate Code Reviews with AI" />
-</head>
-
-This section covers the plans, pricing, and subscription management of CodeRabbit.
+This section covers the plans, pricing, and subscription management of
+CodeRabbit.
 
 ## **Understanding Your Options**
 
-- **Transparent Pricing**: CodeRabbit offers a per-seat pricing model that scales with your team size, ensuring you pay for what you need.
-- **7-Day Free Trial**: All plans start with a generous 7-day free trial for CodeRabbit Pro for the entire organization, ensuring a commitment-free experience
-- **No Credit Card Required**: You won't need a credit card to start your free trial.
-- **CodeRabbit Seats**
-  Every developer who submits a pull request is counted as a separate seat. Seats can be purchased for all or for a limited number of developers.
+- **Transparent Pricing**: CodeRabbit offers a per-seat pricing model that
+  scales with your team size, ensuring you pay for what you need.
+- **7-Day Free Trial**: All plans start with a generous 7-day free trial for
+  CodeRabbit Pro for the entire organization, ensuring a commitment-free
+  experience
+- **No Credit Card Required**: You won't need a credit card to start your free
+  trial.
+- **CodeRabbit Seats** Every developer who submits a pull request is counted as
+  a separate seat. Seats can be purchased for all or for a limited number of
+  developers.
 
 ---
 
@@ -68,7 +57,7 @@ These are the hourly usage limits for each developer per repository:
 ### Features
 
 - Starts with a 7-day free trial of the Pro plan.
-- unlimited access on both public and private repositories.
+- Unlimited access for both public and private repositories.
 - Summarization pull requests on private repositories.
 - Reviews pull requests on public repositories.
 
@@ -86,16 +75,19 @@ These are the hourly usage limits for each developer per repository:
 
 ### Pro Plan
 
-- GitHub/GitLab organization owners can purchase or make changes to the subscription.
-- You can choose to manually purchase seats and assign them to developers, or have them assigned automatically as developers create pull requests.
-- During the trial period, seat assignment is automatic, but the number of seats can be adjusted when purchasing the subscription.
+- GitHub/GitLab organization owners can purchase or introduce changes to the
+  subscription.
+- You can choose to manually purchase seats and assign them to developers, or
+  have them assigned automatically as developers create pull requests.
+- During the trial period, seat assignment is automatic, but the number of seats
+  can be adjusted when purchasing the subscription.
 
-![Untitled](./images/cr_seat_manage_dark.png#gh-dark-mode-only)
-![Untitled](./images/cr_seat_manage_light.png#gh-light-mode-only)
+![Seat Management](./images/cr_seat_manage_dark.png#gh-dark-mode-only)
+![Seat Management](./images/cr_seat_manage_light.png#gh-light-mode-only)
 
 ### Free Plan
 
 - Seats are assigned to new developers immediately
 
-![Untitled](./images/cr_seat_free_dark.png#gh-dark-mode-only)
-![Untitled](./images/cr_seat_free_light.png#gh-light-mode-only)
+![Free Seat Assignment](./images/cr_seat_free_dark.png#gh-dark-mode-only)
+![Free Seat Assignment](./images/cr_seat_free_light.png#gh-light-mode-only)
