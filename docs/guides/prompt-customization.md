@@ -142,7 +142,7 @@ syntax node matches the rule or not. There are three kinds of atomic rule:
 
 #### Relational rule
 
-Relational rule defines the relationship between two syntax nodes. There are
+A relational rule defines the relationship between two syntax nodes. There are
 four kinds of relational rule: `inside`, `has`, `follows` and `precedes`.
 
 All four relational rules accept a sub-rule object as their value. The sub-rule
