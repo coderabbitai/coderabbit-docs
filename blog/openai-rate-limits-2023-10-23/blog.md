@@ -1,42 +1,17 @@
 ---
 slug: coderabbit-openai-rate-limits
-title: Squeezing Water from Stone - Managing OpenAI Rate Limits with Request Prioritization
-description: How CodeRabbit uses Aperture to manage OpenAI rate limits with request prioritization
+title:
+  Squeezing Water from Stone - Managing OpenAI Rate Limits with Request
+  Prioritization
+description:
+  How CodeRabbit uses Aperture to manage OpenAI rate limits with request
+  prioritization
 authors: [gur, sumanvs, nato]
-image: https://coderabbit.ai/blog/assets/images/Blog3-4188b2a6acf85932803da8983b14607c.png
-tags: [rate-limits, quota-management, prioritization, aperture, openai]
+image: ./preview.png
+tags: ["AI", "OpenAI", "Rate Limits", "Aperture"]
 hide_table_of_contents: false
 aiDisclaimer: true
 ---
-
-<head>
- <meta charSet="utf-8" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"/>
-  <meta content="/icons/apple-touch-icon.png" itemprop="image" />
-  <link rel="icon" href="/icons/favicon-32x32.ico"></link>
-
-  <link rel="manifest" href="/icons/site.webmanifest"></link>
-
-  <title>Squeezing Water from Stone: Managing OpenAI Rate Limits with Request
-  Prioritization</title>
-  <meta name="title" content="Squeezing Water from Stone: Managing OpenAI Rate Limits with Request
-  Prioritization" />
-
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://coderabbit.ai/blog/coderabbit-openai-rate-limits" />
-  <meta property="og:title" content="Squeezing Water from Stone: Managing OpenAI Rate Limits with Request
-  Prioritization" />
-<meta property="og:image" content="https://coderabbit.ai/blog/assets/images/Blog3-4188b2a6acf85932803da8983b14607c.png" />
-
-  <meta name="twitter:image" content="https://coderabbit.ai/blog/assets/images/Blog3-4188b2a6acf85932803da8983b14607c.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Squeezing Water from Stone: Managing OpenAI Rate Limits with Request
-  Prioritization" />
-</head>
-
-<!-- import ShareButton from '../src/components/ShareButton/ShareButton'; -->
 
 ```mdx-code-block
 import Tabs from '@theme/Tabs';
@@ -44,10 +19,10 @@ import TabItem from '@theme/TabItem';
 ```
 
 Since CodeRabbit launched a couple of months ago, it has received an
-enthusiastic response and hundreds of sign-ups. CodeRabbit has been
-installed in over 1300 GitHub organizations and typically reviews more than 2000
-pull requests per day. Furthermore, the usage continues to flourish; we
-are experiencing a healthy week-over-week growth.
+enthusiastic response and hundreds of sign-ups. CodeRabbit has been installed in
+over 1300 GitHub organizations and typically reviews more than 2000 pull
+requests per day. Furthermore, the usage continues to flourish; we are
+experiencing a healthy week-over-week growth.
 
 While this rapid growth is encouraging, we've encountered challenges with
 OpenAI's stringent rate limits, particularly for the newer `gpt-4` model that
@@ -90,12 +65,12 @@ developers on the quality of their code. The feedback is provided in the form of
 comments on the pull request, allowing the developers to enhance the code based
 on the provided suggestions in the follow-up commits.
 
-![CodeRabbit Pull Request Review Workflow](../img/CodeRabbitDesign.jpg "CodeRabbit Pull Request Review Workflow")
+![CodeRabbit Pull Request Review Workflow](../img/coderabbit-design.jpg)
 
 CodeRabbit employs a combination of the `gpt-3.5-turbo` and `gpt-4` family of
 models. For simpler tasks such as summarization, we use the more economical
-`gpt-3.5-turbo` model, whereas intricate tasks such as in-depth code
-reviews are performed by the slow and expensive `gpt-4` model.
+`gpt-3.5-turbo` model, whereas intricate tasks such as in-depth code reviews are
+performed by the slow and expensive `gpt-4` model.
 
 Our usage pattern is such that each file in a
 [pull request is summarized and reviewed concurrently](https://coderabbit.ai/blog/coderabbit-deep-dive).
@@ -140,7 +115,7 @@ the nature of requests.
 
 We were introduced to the [FluxNinja Aperture](https://www.fluxninja.com/) load
 management platform by one of our advisors.
-[Aperture](https://github.com/fluxninja/aperture) is an open source load
+[Aperture](https://github.com/fluxninja/aperture) is an open-source load
 management platform that offers advanced rate-limiting, request prioritization,
 and quota management features. Essentially, Aperture serves as a global token
 bucket, facilitating client-side rate limits and business-attribute-based
@@ -175,13 +150,13 @@ context to Aperture, we also attach the following labels to each request:
   tier. For example, the reasoning could that the user is a `paid_user`,
   `trial_user` or a `open_source_user`. Requests to OpenAI are prioritized based
   on these labels.
-- `priority`: Requests are ranked according a priority number provided in this
-  label. For instance, requests from `paid_user` are given precedence over those
-  from `trial_user` and `open_source_user`. The base priority is incremented for
-  each file reviewed, enabling pull requests that are further along in the
-  review process to complete more quickly than newly submitted ones.
-  Additionally, chat messages are assigned a much higher priority compared to
-  review tasks.
+- `priority`: Requests are ranked according to a priority number provided in
+  this label. For instance, requests from `paid_user` are given precedence over
+  those from `trial_user` and `open_source_user`. The base priority is
+  incremented for each file reviewed, enabling pull requests that are further
+  along in the review process to complete more quickly than newly submitted
+  ones. Additionally, chat messages are assigned a much higher priority compared
+  to review tasks.
 
 ![Request Flow](request-flow.svg)
 
@@ -252,22 +227,22 @@ context to Aperture, we also attach the following labels to each request:
 
 Aperture offers a foundational "blueprint" for
 [managing quotas](https://docs.fluxninja.com/reference/blueprints/quota-scheduling/base),
-comprising of two main components:
+comprising two main components:
 
 - Rate limiter: OpenAI employs a token bucket algorithm to impose rate limits,
   and that is directly compatible with Aperture's rate limiter. For example, in
   the tokens per minute policy for `gpt-4`, we have allocated a burst capacity
   of `40000 tokens`, and a refill rate of `40000 tokens per minute`. The bucket
   begins to refill the moment the tokens are withdrawn, aligning with OpenAI's
-  rate limiting mechanism. This ensures our outbound request and token rate
+  rate-limiting mechanism. This ensures our outbound request and token rate
   remains synchronized with OpenAI's enforced limits.
 - Scheduler: Aperture has a
   [weighted fair queuing](https://docs.fluxninja.com/concepts/scheduler/)
   scheduler that prioritizes the requests based on multiple factors such as the
   number of tokens, priority levels and workload labels.
 
-By fine-tuning these two components in Aperture, we are able to go as fast as we
-can, with optimal user experience, while ensuring that we don't exceed the rate
+By fine-tuning these two components in Aperture, we can go as fast as we can,
+with optimal user experience, while ensuring that we don't exceed the rate
 limits.
 
 <details>
@@ -433,7 +408,3 @@ and with Aperture, FluxNinja is well positioned to be the leader in this space.
 As CodeRabbit continues to build and add additional components such as vector
 databases, which are also computationally expensive, we are confident that
 Aperture will continue to help us offer a reliable experience to our users.
-
-<!-- <ShareButton platform="twitter" text="Twitter" url='Squeezing Water from Stone: Managing OpenAI Rate Limits with Request Prioritization&hashtags=CodeRabbitAI'/>
-
-<ShareButton platform="facebook" url="Squeezing Water from Stone: Managing OpenAI Rate Limits with Request Prioritization" text="LinkedIn" /> -->
