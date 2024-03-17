@@ -1,27 +1,11 @@
 ---
 title: Customize CodeRabbit
 sidebar_label: Customize CodeRabbit
-description: Accelerate Code Reviews with AI
-image: "/preview_meta.jpg"
-show-title: false
+description:
+  CodeRabbit offers various customization options to tailor the reviews to your
+  specific requirements. Customizations can be made using one of the below
+  options.
 ---
-
-<head>
- <meta charSet="utf-8" />
-  <meta name="title" content="CodeRabbit: AI-powered Code Reviews" />
-  <meta name="description" content="Accelerate Code Reviews with AI" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://coderabbit.ai/" />
-  <meta property="og:title" content="CodeRabbit: AI-powered Code Reviews" />
-  <meta property="og:description" content="Accelerate Code Reviews with AI" />
-  <meta property="og:image" content="/preview_meta.jpg" />
-
-  <meta name="twitter:image" content="https://coderabbit.ai/preview_meta.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CodeRabbit: AI-powered Code Reviews" />
-  <meta name="twitter:description" content="Accelerate Code Reviews with AI" />
-</head>
 
 CodeRabbit offers various customization options to tailor the reviews to your
 specific requirements. Customizations can be made using one of the below options
@@ -78,8 +62,10 @@ chat:
 ```
 
 :::note
-`.coderabbit.yaml` file should be placed at the root directory of the
+
+`.coderabbit.yaml` file should be placed in the root directory of the
 repository.
+
 :::
 
 YAML settings:
@@ -116,20 +102,21 @@ YAML settings:
        `true`).
      - **base_branches**: A list of base branches where the reviews will occur
        apart from the default branch. Accepts regex pattern.
-    - **tools**: Configurations for the tools used in the review.
-      - **ast-grep**: Configurations for the ast-grep tool.
-        - **rules_folder**: The folder name where the custom ast-grep rules are
-          stored.
-        - **utils_folder**: The folder name where the custom ast-grep utils are
-          stored.
+   - **tools**: Configurations for the tools used in the review.
+     - **ast-grep**: Configurations for the ast-grep tool.
+       - **rules_folder**: The folder name where the custom ast-grep rules are
+         stored.
+       - **utils_folder**: The folder name where the custom ast-grep utils are
+         stored.
 4. **chat**: Defines the behavior of CodeRabbit's bot in conversations.
    - **auto_reply**: The bot automatically replies without the need of the user
-     tagging it ( default: `true` ).
+     tagging it (default: `true`).
 
 Refer:
 [CodeRabbit Configuration Schema](https://coderabbit.ai/integrations/coderabbit-overrides.v2.json).
 
 <details>
+
 <summary> version 1 (deprecated) </summary>
 
 #### version 1: `deprecated` (Please use version [version 2](/guides/customize-coderabbit))
