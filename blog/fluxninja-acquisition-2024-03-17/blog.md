@@ -52,31 +52,48 @@ any other software engineering challenge of the past. Based on our learnings
 while building complex workflows, it became apparent that we need to invest in a
 platform that can solve the following problems:
 
-- Prompt server: Prompt design and runtime rendering is akin to responsive web
-  design, in which a page has to be rendered differently based on the screen
-  size and other parameters. We need a platform that can render prompts based on
-  the context windows of underlying models and prioritize the context packing
-  based on business attributes. For instance, it's impossible to include the
-  entire repository and past conversations in a single prompt for code review.
-  Even if it were possible, LLM models exhibit poor recall when doing an
-  inference on a large context window. While it may be acceptable for use cases
-  like chat, it’s not for use cases like code reviews that require accurate and
-  precise outputs.
+- Prompt rendering: Prompt design and rendering is akin to responsive web
+  design. Web servers render pages based on the screen size and other
+  parameters, for example, on a mobile device, navigation bars are usually
+  rendered as hamburger menus, making it easier for human consumption.
+  Similarly, we need a prompt server that can render prompts based on the
+  context windows of underlying models and prioritize the packing of context
+  based on business attributes, making it easier for AI consumption. It's not
+  feasible to include the entire repository, past conversations, documentation,
+  learnings, etc. in a single code review prompt because of the context window
+  size limitations. Even if it was possible, AI models exhibit poor recall when
+  doing an inference on a completely packed context window. While tight packing
+  may be acceptable for use cases like chat, it’s not for use cases like code
+  reviews that require accurate inferences. Therefore, it's critical to render
+  prompts in such a way that the quality of inference is high for each use-case,
+  while being cost-effective and fast. In addition to packing logic, basic
+  guardrails are also needed, especially when rendering prompts based on inputs
+  from end-users. Since we provide a free service to public repositories, we
+  have to ensure that our product is not misused beyond its intended purpose or
+  tricked into divulging sensitive information, which could include our base
+  prompts.
 
-- Observability into LLM outputs: One key challenge with prompting is that it's
+- Validating quality of inference: Generative AI models consume text and output
+  text. On the other hand, traditional code and APIs required structured data.
+  Therefore, the prompt service needs to expose a RESTful or gRPC API that can
+  be consumed by the other services in the workflow. We touched upon the
+  rendering of prompts based on structured requests in the previous point, but
+  the prompt service also needs to parse and validate responses into structured
+  data. This is a non-trivial problem, and multiple tries are often required to
+  ensure that the response is thorough. For instance, we found that when we pack
+  multiple files in a single code review prompt, AI models often miss hunks
+  within a file or miss files altogether, leading to incomplete reviews.
+
+- Observability: One key challenge with generative AI and prompting is that it's
   inherently non-deterministic. The same prompt can result in vastly different
   outputs, which can be frustrating, but this is precisely what makes AI systems
   powerful in the first place. Even slight variations in the prompt can result
-  in vastly inferior or noisy outputs, leading to a decline in user conversion.
-  At the same time, the underlying AI models are ever-evolving, and the same
-  prompts drift over time as the models get regular updates. Traditional
-  observability is of little use here, and we need to rethink how we classify
-  and track different outputs and their quality. Again, this is a problem that
-  we have to solve in-house.
-
-- Guardrails: Since we provide a free service to public repositories, we must
-  ensure that our product is not misused beyond its intended purpose or tricked
-  into divulging sensitive information, which could include our base prompts.
+  in vastly inferior or noisy outputs, leading to a decline in user engagement.
+  At the same time, the underlying AI models are ever-evolving, and the
+  established prompts drift over time as the models get regular updates.
+  Traditional observability is of little use here, and we need to rethink how we
+  classify and track generated output and measure quality. Again, this is a
+  problem that we have to solve in-house.
 
 While FluxNinja's Aperture project was limited to solving a different problem
 around load management and reliability, we found that the underlying technology
@@ -87,15 +104,16 @@ controlling AI behavior. Packing the context window with relevant documents
 of providing proprietary data compared to fine-tuning the model. Most AI labs
 focus on increasing the context window rather than making fine-tuning easier or
 cheaper. Despite the emergence of these clear trends, applied AI systems are
-still in their infancy. None of the recent AI vendors are building the "right"
-platform, as most of their focus has been on background/durable execution
-platforms, model routing proxies/gateways, chaining RAG pipelines using reusable
-components, and so on. Most of these approaches fall short of what a real-world
-AI workflow requires. The right abstractions and best practices will still have
-to appear, and the practitioners themselves will have to build them. Creating
-the “right” AI platform will be a differentiator for AI-first companies, and we
-are excited to tackle this problem head-on with a systems engineering mindset.
+still in their infancy. None of the recent AI vendors seem to be building the
+"right" platform, as most of their focus has been on background/durable
+execution frameworks, model routing proxies/gateways, composable RAG pipelines,
+and so on. Most of these approaches fall short of what a real-world AI workflow
+requires. The right abstractions and best practices will still have to appear,
+and the practitioners themselves will have to build them. AI platforms will be a
+differentiator for AI-first companies, and we are excited to tackle this problem
+head-on with a systems engineering mindset.
 
 We are excited to have the FluxNinja team on board and to bring our users the
-best-in-class AI workflows. We are also happy to welcome Harjot Gill, the
-founder of FluxNinja, and the rest of the team to CodeRabbit.
+best-in-class AI workflows. We are also happy to welcome
+[Harjot Gill](https://www.linkedin.com/in/harjotsgill/), the founder of
+FluxNinja, and the rest of the team to CodeRabbit.
