@@ -24,10 +24,10 @@ image: ./preview.png
 We are excited to announce that CodeRabbit has acquired
 [FluxNinja](https://fluxninja.com), a startup that provides a platform for
 building scalable generative AI applications. This acquisition will allow us to
-ship new use cases at an industrial-scale while sustaining our rapidly growing
-user base. FluxNinja's Aperture product provides advanced rate-limiting,
-caching, and request prioritization capabilities for building reliable and
-cost-effective AI workflows.
+ship new use cases at an industrial-pace while sustaining our rapidly growing
+user base. FluxNinja's Aperture product provides advanced rate & concurrency
+limiting, caching, and request prioritization capabilities that are essential
+for reliable and cost-effective AI workflows.
 
 <!--truncate-->
 
@@ -73,16 +73,17 @@ platform that can solve the following problems:
   tricked into divulging sensitive information, which could include our base
   prompts.
 
-- Validating quality of inference: Generative AI models consume text and output
+- Validation & quality checks: Generative AI models consume text and output
   text. On the other hand, traditional code and APIs required structured data.
   Therefore, the prompt service needs to expose a RESTful or gRPC API that can
   be consumed by the other services in the workflow. We touched upon the
   rendering of prompts based on structured requests in the previous point, but
-  the prompt service also needs to parse and validate responses into structured
-  data. This is a non-trivial problem, and multiple tries are often required to
-  ensure that the response is thorough. For instance, we found that when we pack
-  multiple files in a single code review prompt, AI models often miss hunks
-  within a file or miss files altogether, leading to incomplete reviews.
+  the prompt service also needs to parse, validate responses into structured
+  data and measure the quality of the inference. This is a non-trivial problem,
+  and multiple tries are often required to ensure that the response is thorough
+  and meets the quality bar. For instance, we found that when we pack multiple
+  files in a single code review prompt, AI models often miss hunks within a file
+  or miss files altogether, leading to incomplete reviews.
 
 - Observability: One key challenge with generative AI and prompting is that it's
   inherently non-deterministic. The same prompt can result in vastly different
