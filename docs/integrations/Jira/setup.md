@@ -52,9 +52,9 @@ Lastly, Jira will ask you to authorize CodeRabbit for read access to Jira Issues
 
 **That's It!** Jira will redirect you back to the CodeRabbit integrations page where you should see the toggle enabled for the Jira Integration.
 
-### Disconnect CodeRabbit with Linear
+### Disconnect CodeRabbit with Jira
 
-Disconnecting the integration is seamless. Just toggle the button off for the Linear Integration and CodeRabbit will automatically disconnect.
+Disconnecting the integration is seamless. Just toggle the button off for the Jira Integration and CodeRabbit will automatically disconnect.
 
 ---
 

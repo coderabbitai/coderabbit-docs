@@ -40,10 +40,9 @@ Upon posting the review findings, CodeRabbit provides details about the issue's 
 
 ### Finding Related Issues
 
-One of the key features of CodeRabbit's Jira integration is its ability to discover existing related jira issues addressed in the pull request. Leveraging RAG (Retrieval-Augmented Generation), CodeRabbit enhances its AI capabilities. RAG empowers AI models to incorporate external data sources beyond their training sets or predefined parameters, thereby enhancing their responses to given prompts.
+One of the key features of CodeRabbit's Jira integration is its ability to discover existing related Jira issues addressed in the pull request. Leveraging RAG (Retrieval-Augmented Generation), CodeRabbit enhances its AI capabilities. RAG empowers AI models to incorporate external data sources beyond their training sets or predefined parameters, thereby enhancing their responses to given prompts.
 
 After integrating with Jira, CodeRabbit scans through open issues, indexing them for future reference. This means that pre-existing issues are retrieved, indexed into a Vector database, and subsequently searched for each new pull request.
-
 :::info
 Indexing occurs periodically on a scheduled basis. As a result, newly created issues or those not yet scheduled for indexing may not be immediately detected by CodeRabbit.
 :::

@@ -42,7 +42,7 @@ When the pull request is submitted with the associated Linear Issue ID, CodeRabb
 You can view the assessment outcome in the Walkthrough section of CodeRabbit's Review.
 :::
 
-Upon posting the review findings, CodeRabbit provides details about the issue's objectives, confirms whether they were met, and offers additional explanations if needed. For example here the developer added the division functionality for the simple calculator in the pull request. CodeRabbit was able to find that issue, assess whether the pull request did indeed resolve the issue, and provided the assessment as seen below.
+Upon posting the review findings, CodeRabbit provides details about the issue's objectives, confirms whether they were met, and offers additional explanations if needed. For example, here, the developer added the division functionality for the simple calculator in the pull request. CodeRabbit was able to find that issue, assess whether the pull request did indeed resolve the issue, and provided the assessment as seen below.
 
 ![Linear Issue Response](../images/Linear/link/linear-assessment.png)
 
