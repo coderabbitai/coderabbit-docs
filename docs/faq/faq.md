@@ -25,14 +25,14 @@ neither CodeRabbit nor OpenAI LLMs use your code for training purposes.
 
 #### **4. What Large Language Models does CodeRabbit use?**
 
-CodeRabbit currently utilizes Open AI's GPT 4 and GPT 3.5. We're researching and
-testing upcoming LLMs to ensure we're offering the most precise reviews
-possible.
+CodeRabbit currently utilizes OpenAI's `gpt-4-turbo` and `gpt-3.5-turbo`. We're
+researching and testing upcoming LLMs to ensure we're offering the most precise
+reviews possible.
 
 #### **5. Can I customize CodeRabbit?**
 
 Reviews are customizable. For information, check out our
-[Get Started page](/get-started/signup).
+[Get Started page](../get-started/signup.md).
 
 #### **6. Can I choose a language other than English for the reviews?**
 
