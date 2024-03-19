@@ -35,6 +35,7 @@ const sidebars: SidebarsConfig = {
         "guides/customize-coderabbit",
         "guides/prompt-customization",
         "guides/coderabbit-commands",
+        "guides/daily-standup-report"
       ],
     },
     {
