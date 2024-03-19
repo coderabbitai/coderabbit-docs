@@ -5,10 +5,10 @@ description:
   Coderabbit allows users to setup daily standup reporting in their slack workspace
 ---
 
-Coderabbit allows you to setup daily standup reports in your slack workspace.
+Coderabbit allows you to set up daily standup reports in your slack workspace.
 It summarizes the activities of developers based on the pull requests they have made.
 
-Follow the steps below to setup reports:
+Follow the steps below to set up reports:
 
 ### **Step 1: Navigate to the Reports page**
 
@@ -36,7 +36,7 @@ If the report is scheduled on all days, every report will have the PRs/MRs made 
 ### **Step 3: Connect Slack**
 
 Click on the 'Connect' button to connect your Slack workspace.
-You will be redirected to Slack integration page.
+You will be redirected to the Slack integration page.
 Click on 'Allow' to allow CodeRabbit access to your Slack workspace so that it can post the report
 
 ![Slack Access](./images/slack-access.png)
