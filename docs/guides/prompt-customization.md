@@ -291,7 +291,7 @@ rule:
 > [Utility Rule](https://ast-grep.github.io/guide/rule-config/utility-rule.html)
 
 ### Packages
-A package is what allows you to share rules across multiple projects. Essentially a package is a collection of ast-grep rules.
+A package is what allows you to share rules across multiple projects. Essentially, a package is a collection of ast-grep rules.
 
 Coderabbit provides a set of packages that you can use out of the box. You can also create your own packages and share them with the community or just
 use them within your organization.
@@ -317,7 +317,7 @@ Let's say that you have a public repository that contains ast-grep rules. You ca
 
 Requirements for a package:
 - should be a public repository
-- contains rules that follows the ast-grep rule format
+- contains rules that follow the ast-grep rule format
 - package name should be in the format `organization/repository`
 
 ```yaml
