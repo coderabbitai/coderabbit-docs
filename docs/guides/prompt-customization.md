@@ -73,6 +73,8 @@ By default, you can add `ast-grep` rules by following these steps:
    review process.
 5. Add the rules' directory to the `.coderabbit.yml` file under `tools.ast-grep`
    configuration.
+6. Optionally, you can add `packages` property to the configuration to specify
+   the packages that should be installed before running the `ast-grep` tool. Please read the `packages` section for detailed information.
 
 ```yaml
 #...
@@ -80,7 +82,10 @@ reviews:
   #...
   tools:
     ast-grep:
-      rules_directory: "custom-name"
+      rule_dirs: 
+        - "custom-name"
+      packages: 
+        - "ast-grep-essentials" # default package installed
   #...
 ```
 
@@ -247,14 +252,23 @@ my-awesome-project   # project root
 > Also, you need to add the `rules` and `utils` directories to the
 > `.coderabbit.yml` file under `tools.ast-grep` configuration.
 
+> The rules can also be inside a package. If you have a package that contains
+  rules, you can add the package name to the `packages` field in the
+  `.coderabbit.yml` file.
+
 ```yaml
 #...
 reviews:
   #...
   tools:
     ast-grep:
-      rules_directory: "rules"
-      utils_directory: "utils"
+      rule_dirs: 
+        - "rules"
+      util_dirs: 
+        - "utils"
+      packages:
+        - "ast-grep-essentials"
+        - "my-awesome-org/my-awesome-package" # public repository that contains ast-grep rules
   #...
 ```
 
@@ -275,6 +289,47 @@ rule:
 
 > Official documentation guide on
 > [Utility Rule](https://ast-grep.github.io/guide/rule-config/utility-rule.html)
+
+### Packages
+A package is what allows you to share rules across multiple projects. Essentially, a package is a collection of ast-grep rules.
+
+Coderabbit provides a set of packages that you can use out of the box. You can also create your own packages and share them with the community or just
+use them within your organization.
+
+Packages provided by Coderabbit are:
+- `ast-grep-essentials`: A set of essential security rules
+
+To use a package, you need to add the package name to the `packages` field in the `.coderabbit.yml` file.
+
+```yaml
+#...
+reviews:
+  #...
+  tools:
+    ast-grep:
+      packages:
+        - "ast-grep-essentials"
+  #...
+```
+
+#### Using custom package
+Let's say that you have a public repository that contains ast-grep rules. You can add the package name to the `packages` field in the `.coderabbit.yml` file.
+
+Requirements for a package:
+- should be a public repository
+- contains rules that follow the ast-grep rule format
+- package name should be in the format `organization/repository`
+
+```yaml
+#...
+reviews:
+  #...
+  tools:
+    ast-grep:
+      packages:
+        - "my-awesome-org/my-awesome-package"
+  #...
+```
 
 ### Multiple Languages Support
 
