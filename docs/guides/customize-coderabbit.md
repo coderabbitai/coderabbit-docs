@@ -55,8 +55,13 @@ reviews:
       - "feat/.*"
   tools:
     ast-grep:
-      rules_directory: "custom-rules-directory-name"
-      utils_directory: "custom-utils-directory-name"
+      rule_dirs: 
+        - "rules"
+      util_dirs: 
+        - "utils"
+      packages:
+        - "ast-grep-essentials"
+        - "my-awesome-org/my-awesome-package" # public repository that contains ast-grep 
 chat:
   auto_reply: true
 ```
@@ -105,10 +110,11 @@ YAML settings:
        apart from the default branch. Accepts regex pattern.
    - **`tools`**: Configurations for the tools used in the review.
      - **`ast-grep`**: Configurations for the `ast-grep` tool.
-       - **`rules_directory`**: The directory name where the custom `ast-grep`
+       - **`rule_dirs`**: The directory name where the custom `ast-grep`
          rules are stored.
-       - **`utils_directory`**: The directory name where the custom `ast-grep`
+       - **`util_dirs`**: The directory name where the custom `ast-grep`
          utils are stored.
+       - **`packages`**: A package allows you to share rules across multiple projects. Essentially, a package is a collection of `ast-grep` rules.
 4. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
    - **`auto_reply`**: The bot automatically replies without the need of the
      user tagging it (default: `true`).
@@ -155,11 +161,7 @@ settings:
   # Disable automatic code reviews for this repository.
   disable_review: false
   # External tools configurations
-  tools:
-    # tools configuration for ast-grep
-    ast-grep:
-      rules_directory: "custom-rules-directory-name"
-      utils_directory: "custom-utils-directory-name"
+
 ```
 
 This configuration file consists of the following settings:
@@ -191,12 +193,7 @@ This configuration file consists of the following settings:
     be posted.
 13. **`collapse_walkthrough_comment`**: Specifies whether to collapse
     walkthrough comments on the review.
-14. **`tools`**: Configurations for the tools used in the review.
-    - **`ast-grep`**: Configurations for the `ast-grep` tool.
-      - **`rules_directory`**: The directory name where the custom `ast-grep`
-        rules are stored.
-      - **`utils_directory`**: The directory name where the custom `ast-grep`
-        utils are stored.
+
 
 Refer:
 [CodeRabbit configuration schema](https://coderabbit.ai/integrations/coderabbit-overrides.json).
