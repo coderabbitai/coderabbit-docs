@@ -35,12 +35,12 @@ directly back to the PR or MR.
 ### Data, Privacy, and Security
 
 **CodeRabbit** does not use data collected during code reviews to train or
-influence the models. Queries to the Large Language Model (LLM) are ephemeral.
+influence the models. Queries to the Large Language Model (LLM) are ephemeral and there is zero data retention on LLMs.
 Neither we nor the LLM we use share any data collected during the code review
 process with other third parties.
 
-Does CodeRabbit store my Data? We store embeddings of your conversations, which
-are used to improve future reviews for your organization.
+Does CodeRabbit store my Data? 
+CodeRabbit enhances future reviews for your organization by storing the embeddings of the learnings generated from chat conversations. Additionally, it integrates embeddings from issues in workflow systems (Liner, Jira, GitHub/GitLab issues) to assess the impact of code changes on existing issues
 
 Compliance and Data Privacy: Your data is kept confidential, isolated by the
 organization, and used only to improve your organization reviews. Data storage
@@ -49,7 +49,7 @@ complies with SOC2 Type II, GDPR, and HIPAA standards.
 Opting Out: You can choose to opt out of data storage at any time. Opting out
 won't affect your access but will limit the personalization of the reviews.
 
-### Do you need CodeRabbit with the AI code generators or co-pilot?
+### Do you need CodeRabbit with the AI code generators like GitHub Copilot?
 
 Code reviews remain essential, whether the code is written by a human or a bot.
 This is mainly because the perspective of the reviewer differs from that of the
@@ -61,8 +61,7 @@ auto-generate meaningful code for moderately complex applications.
 
 ### How is CodeRabbit different from existing code review tools?
 
-Existing code review tools are good at linting and static code analysis;
-however, they lack context-aware, human-like review feedback.
+Traditional code review tools excel in linting and static analysis, but they fall short in providing context-aware, conversational feedback with actionable suggestions for changes that can be directly committed.
 
 For information on how to get started with **CodeRabbit**, please visit the
 [Get Started page](./get-started/signup).
