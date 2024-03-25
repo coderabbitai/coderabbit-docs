@@ -114,7 +114,7 @@ YAML settings:
          rules are stored.
        - **`util_dirs`**: The directory name where the custom `ast-grep`
          utils are stored.
-       - **`packages`**: A package allows you to share rules across multiple projects. Essentially, a package is a collection of ast-grep rules.
+       - **`packages`**: A package allows you to share rules across multiple projects. Essentially, a package is a collection of `ast-grep` rules.
 4. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
    - **`auto_reply`**: The bot automatically replies without the need of the
      user tagging it (default: `true`).
