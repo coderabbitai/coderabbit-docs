@@ -1,6 +1,6 @@
 ---
-title: Plans
-sidebar_label: Plans
+title: Pricing Plans
+sidebar_label: Pricing Plans
 description:
   Learn about the plans, pricing, and subscription management of CodeRabbit.
 ---
@@ -92,5 +92,6 @@ These are the hourly usage limits for each developer per repository:
 ![Free Seat Assignment](./images/cr_seat_free_dark.png#gh-dark-mode-only)
 ![Free Seat Assignment](./images/cr_seat_free_light.png#gh-light-mode-only)
 
-
-**Note:** The subscription is limited to human users; bot users are not supported. Thus, pull requests or merge requests created by bots will not be reviewed.
+**Note:** The subscription is limited to human users; bot users are not
+supported. Thus, pull requests or merge requests created by bots will not be
+reviewed.

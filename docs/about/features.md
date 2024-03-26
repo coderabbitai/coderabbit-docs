@@ -1,6 +1,6 @@
 ---
-title: CodeRabbit in Action
-sidebar_label: CodeRabbit in Action
+title: High-level Features
+sidebar_label: High-level Features
 description: Learn how CodeRabbit works in a pull request review.
 ---
 
@@ -23,12 +23,18 @@ changes.
 
 ### 2. Code Review feedback {#code-review-feedback}
 
-Review comments: Review feedback posts as pull request, review comments on the
-lines of the code that changed under each file. Any code suggestions are given
-in a Diff format, which either be copied or committed within the pull request
-with a single click.
+Review feedback is posted as review comments on the lines of the code that
+changed for each file. Code suggestions are given in a Diff format, which either
+be copied or committed within the pull request with a single click.
 
 ![Review Feedback](./images/ReviewFeedback.png)
+
+A review status is generated for each commit that is reviewed. It displays the
+commit IDs that were reviewed, the files examined and ignored, as well as the
+additional comments generated for each review, and so on. Review status is
+useful for understanding the auxiliary context of the review.
+
+![Review Status](./images/ReviewStatus.png)
 
 ### 3. Chat with CodeRabbit {#chat-with-coderabbit}
 
@@ -46,15 +52,6 @@ Pull request changes are validated against the linked GitHub or GitLab issue and
 identifies all other issues which might be affected by this change.
 
 ![Issue Validation](./images/issue-validation.png)
-
-### 5. Pull Request review status {#pull-request-review-status}
-
-Review status is generated for each review, including a separate one for each
-incremental commit. Displays the commit IDs that were reviewed, the files
-examined and ignored, as well as the actionable feedback and additional comments
-generated for each review.
-
-![Review Status](./images/ReviewStatus.png)
 
 For information on how to get started with CodeRabbit, visit
 the [Get Started page](/get-started/signup)
