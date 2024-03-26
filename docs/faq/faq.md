@@ -67,7 +67,7 @@ reviews possible.
 #### Can I customize CodeRabbit?
 
 Reviews are customizable. For information, check out our
-[Get Started page](../get-started/signup.md).
+[Customization](../guides/review-instructions.md) guide.
 
 #### Can I choose a language other than English for the reviews?
 

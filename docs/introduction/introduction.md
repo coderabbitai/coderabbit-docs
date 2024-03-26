@@ -2,6 +2,7 @@
 id: introduction
 title: What is CodeRabbit?
 sidebar_label: Introduction
+sidebar_position: 1
 description:
   CodeRabbit is an innovative, AI-first code reviewer. It provides context-aware
   review feedback on a pull request within minutes, thereby significantly

@@ -1,25 +1,25 @@
 ---
-title: Customize CodeRabbit
-sidebar_label: Customize CodeRabbit
+title: Configure CodeRabbit
+sidebar_label: Configure CodeRabbit
 description:
-  CodeRabbit offers various customization options to tailor the reviews to your
-  specific requirements. Customizations can be made using one of the below
+  CodeRabbit offers various configuration options to tailor the reviews to your
+  specific requirements. Configuration can be made using one of the below
   options.
 ---
 
-CodeRabbit offers various customization options to tailor the reviews to your
-requirements. Customizations can be made using one of the below options :
+CodeRabbit offers various configuration options to tailor the reviews to your
+requirements. Configuration can be made using one of the below options :
 
-1. **Customization via CodeRabbit YAML File** _(Recommended)_
-2. **Customization via CodeRabbit UI**
+1. **Configure using CodeRabbit YAML File** _(Recommended)_
+2. **Configure using CodeRabbit UI**
 
-Customization defined in the YAML file overrides the settings in the UI.
+Configuration defined in the YAML file overrides the settings in the UI.
 
-### 1. Customize CodeRabbit using a YAML File[](https://coderabbit.ai/docs/get-started/customize-coderabbit)
+### 1. Configure CodeRabbit using a YAML File {#yaml}
 
-You can add a `.coderabbit.yaml` configuration file to your repositories. Below
-is a sample YAML file that can be used as a starting point and changed as
-needed:
+You can add a `.coderabbit.yaml` configuration file to root of your
+repositories. Below is a sample YAML file that can be used as a starting point
+and changed as needed:
 
 #### version 2: `Current`
 
@@ -55,23 +55,16 @@ reviews:
       - "feat/.*"
   tools:
     ast-grep:
-      rule_dirs: 
+      rule_dirs:
         - "rules"
-      util_dirs: 
+      util_dirs:
         - "utils"
       packages:
         - "ast-grep-essentials"
-        - "my-awesome-org/my-awesome-package" # public repository that contains ast-grep 
+        - "my-awesome-org/my-awesome-package" # public GitHub repository that contains ast-grep rules
 chat:
   auto_reply: true
 ```
-
-:::note
-
-`.coderabbit.yaml` file should be placed in the root directory of the
-repository.
-
-:::
 
 YAML settings:
 
@@ -110,11 +103,12 @@ YAML settings:
        apart from the default branch. Accepts regex pattern.
    - **`tools`**: Configurations for the tools used in the review.
      - **`ast-grep`**: Configurations for the `ast-grep` tool.
-       - **`rule_dirs`**: The directory name where the custom `ast-grep`
-         rules are stored.
-       - **`util_dirs`**: The directory name where the custom `ast-grep`
-         utils are stored.
-       - **`packages`**: A package allows you to share rules across multiple projects. Essentially, a package is a collection of `ast-grep` rules.
+       - **`rule_dirs`**: The directory name where the custom `ast-grep` rules
+         are stored.
+       - **`util_dirs`**: The directory name where the custom `ast-grep` utils
+         are stored.
+       - **`packages`**: A package allows you to share rules across multiple
+         projects. Essentially, a package is a collection of `ast-grep` rules.
 4. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
    - **`auto_reply`**: The bot automatically replies without the need of the
      user tagging it (default: `true`).
@@ -126,7 +120,7 @@ Refer:
 
 <summary> version 1 (deprecated) </summary>
 
-#### version 1: `deprecated` (Please use version [version 2](/guides/customize-coderabbit))
+#### version 1: `deprecated` (Please use version [version 2](#yaml))
 
 ```yaml
 settings:
@@ -161,7 +155,6 @@ settings:
   # Disable automatic code reviews for this repository.
   disable_review: false
   # External tools configurations
-
 ```
 
 This configuration file consists of the following settings:
@@ -194,19 +187,18 @@ This configuration file consists of the following settings:
 13. **`collapse_walkthrough_comment`**: Specifies whether to collapse
     walkthrough comments on the review.
 
-
 Refer:
 [CodeRabbit configuration schema](https://coderabbit.ai/integrations/coderabbit-overrides.json).
 
 </details>
 
-### 2. Customize CodeRabbit through the UI [](https://coderabbit.ai/docs/get-started#2-customize-coderabbit-through-the-ui-dashboard)
+### 2. Configure CodeRabbit through the UI
 
-Reviews can also be customized through the UI under repository settings:
+Reviews can also be configured through the UI under repository settings:
 
 ---
 
-### Review Customization[](https://coderabbit.ai/docs/get-started#review-customization)
+### Review Configuration
 
 [](../get-started/images/tailor2.png)
 
@@ -214,7 +206,7 @@ Reviews can also be customized through the UI under repository settings:
 file paths using glob patterns.
 
 For further guidance, please refer to this
-section [Prompt Customization](/guides/prompt-customization)
+section [Prompt Configuration](/guides/prompt-configuration)
 
 **Language Selection:** Select the natural language in which you want the review
 feedback. CodeRabbit supports most of the widely used languages. The default
@@ -225,7 +217,7 @@ added with the pull request description.
 
 ---
 
-### Review Filters [](https://coderabbit.ai/docs/get-started#review-filters)
+### Review Filters
 
 [](../get-started/images/tailor3.png)
 
