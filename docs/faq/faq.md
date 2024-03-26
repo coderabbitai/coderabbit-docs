@@ -18,10 +18,14 @@ CodeRabbit is designed to work with all programming languages. However, the
 proficiency of our AI models might vary between languages, which could slightly
 affect the accuracy of the review.
 
-#### **3. Does CodeRabbit store my code or use it for training language models?**
+#### **3. Does CodeRabbit store my code ?**
 
-We train our system using open source projects. For private repositories,
-neither CodeRabbit nor OpenAI LLMs use your code for training purposes.
+We do not store any source code. The code collected at the time of the review is disposed of as soon as the review is complete. During the review, there is complete data isolation for the code being reviewed, and no one from CodeRabbit or outside has access to the code.
+
+#### **3. Does CodeRabbit use my proprietary code for training language models?**
+
+We train our system only using open source projects. CodeRabbit never uses the proprietary 
+code on private repositories for training purposes.
 
 #### **4. What Large Language Models does CodeRabbit use?**
 
