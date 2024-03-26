@@ -120,7 +120,7 @@ Refer:
 
 <summary> version 1 (deprecated) </summary>
 
-#### version 1: `deprecated` (Please use version [version 2](#yaml))
+#### Version 1: `deprecated` (Please use version [version 2](#yaml))
 
 ```yaml
 settings:
