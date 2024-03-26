@@ -2,6 +2,7 @@
 id: introduction
 title: What is CodeRabbit?
 sidebar_label: Introduction
+sidebar_position: 1
 description:
   CodeRabbit is an innovative, AI-first code reviewer. It provides context-aware
   review feedback on a pull request within minutes, thereby significantly
@@ -12,10 +13,10 @@ slug: "/"
 **CodeRabbit** is an innovative, AI-first code reviewer. It provides
 context-aware review feedback on a pull request within minutes, thereby
 significantly reducing the time and effort associated with manual code reviews.
-Secondly, it brings a different perspective to the reviews and finds issues
+Additionally, it brings a different perspective to the reviews and finds issues
 often missed by the human eye. Developers can chat with the bot within the code,
 which allows them to provide additional context, ask questions, or have the bot
-generate code. It learns from your suggestions and gets better overtime.
+generate code. It learns from your suggestions and gets better over time.
 
 **CodeRabbit** seamlessly integrates with GitHub and GitLab repositories,
 performing continuous, incremental reviews for each commit within a pull
@@ -30,17 +31,22 @@ A comprehensive review is performed when a PR or MR is created, and for
 incremental commits and comments addressed to the bot. The feedback is then sent
 directly back to the PR or MR.
 
-![](../about/images/CodeRabbitFlow.png)
+![CodeRabbit Flow](../about/images/CodeRabbitFlow.png)
 
 ### Data, Privacy, and Security
 
 **CodeRabbit** does not use data collected during code reviews to train or
-influence the models. Queries to the Large Language Model (LLM) are ephemeral and there is zero data retention on LLMs.
-Neither we nor the LLM we use share any data collected during the code review
-process with other third parties.
+influence the models. Queries to the Large Language Models (LLMs) are ephemeral
+and there is zero retention on LLMs. Neither we nor the LLMs provider(s) share
+any data collected during the code review process with third parties.
 
-Does CodeRabbit store my Data? 
-CodeRabbit enhances future reviews for your organization by storing the embeddings of the learnings generated from chat conversations. Additionally, it integrates embeddings from issues in workflow systems (Liner, Jira, GitHub/GitLab issues) to assess the impact of code changes on existing issues
+Data storage: Code downloaded during the review process is stored temporarily
+and is deleted after the review processing is complete. The code is not stored
+or used for any other purpose. However, CodeRabbit enhances future reviews for
+your organization by storing the embeddings of the learnings generated from chat
+conversations. Additionally, it integrates embeddings from issues in workflow
+systems (Liner, Jira, GitHub/GitLab issues) to assess the impact of code changes
+on existing issues
 
 Compliance and Data Privacy: Your data is kept confidential, isolated by the
 organization, and used only to improve your organization reviews. Data storage
@@ -61,7 +67,8 @@ auto-generate meaningful code for moderately complex applications.
 
 ### How is CodeRabbit different from existing code review tools?
 
-Traditional code review tools excel in linting and static analysis, but they fall short in providing context-aware, conversational feedback with actionable suggestions for changes that can be directly committed.
-
-For information on how to get started with **CodeRabbit**, please visit the
-[Get Started page](./get-started/signup).
+Traditional code review tools excel in linting and static analysis, but they
+fall short in providing context-aware, conversational feedback with actionable
+suggestions for changes that can be directly committed. On the other hand,
+**CodeRabbit** leverages AI to understand the intent behind the code changes and
+provide human-like feedback for applying the best practices.
