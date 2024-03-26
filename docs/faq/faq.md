@@ -22,28 +22,28 @@ affect the accuracy of the review.
 
 We do not store any source code. The code collected at the time of the review is disposed of as soon as the review is complete. During the review, there is complete data isolation for the code being reviewed, and no one from CodeRabbit or outside has access to the code.
 
-#### **3. Does CodeRabbit use my proprietary code for training language models?**
+#### **4. Does CodeRabbit use my proprietary code for training language models?**
 
 We train our system only using open source projects. CodeRabbit never uses the proprietary 
 code on private repositories for training purposes.
 
-#### **4. What Large Language Models does CodeRabbit use?**
+#### **5. What Large Language Models does CodeRabbit use?**
 
 CodeRabbit currently utilizes OpenAI's `gpt-4-turbo` and `gpt-3.5-turbo`. We're
 researching and testing upcoming LLMs to ensure we're offering the most precise
 reviews possible.
 
-#### **5. Can I customize CodeRabbit?**
+#### **6. Can I customize CodeRabbit?**
 
 Reviews are customizable. For information, check out our
 [Get Started page](../get-started/signup.md).
 
-#### **6. Can I choose a language other than English for the reviews?**
+#### **7. Can I choose a language other than English for the reviews?**
 
 CodeRabbit supports most widely used languages. You can configure this in the
 repository settings.
 
-#### **7. What access does CodeRabbit need to my repositories?**
+#### **8. What access does CodeRabbit need to my repositories?**
 
 CodeRabbit requests minimal access to perform code reviews and post comments on
 Pull Requests. On GitHub, it requires read access to metadata, code,
@@ -51,12 +51,12 @@ discussions, issues, and read/write access to the pull requests. On GitLab, it
 requires read access to the repository, and the CodeRabbit Bot user requires a
 developer role.
 
-#### **8. How can I add or remove users for my subscription?**
+#### **9. How can I add or remove users for my subscription?**
 
 To manage users, log in to CodeRabbit and navigate to subscriptions. You can add
 or remove users as needed.
 
-#### **9. How can I interact with the CodeRabbit bot?**
+#### **10. How can I interact with the CodeRabbit bot?**
 
 To interact with CodeRabbit's bot, reply to the CodeRabbit Comment. If there are
 team members collaborating on pull requests, the bot stays silent by default but
@@ -64,21 +64,21 @@ can be engaged by tagging **@Coderabbitai**. This feature allows you to provide
 context, generate test cases, or ask for specific code suggestions, all within
 the context of your code lines or entire files.
 
-#### **10. Can individual developers use CodeRabbit?**
+#### **11. Can individual developers use CodeRabbit?**
 
 Absolutely! Whether you're an individual developer or part of an organization,
 CodeRabbit can be your coding assistant, providing you with invaluable
 suggestions.
 
-#### **11. Which branches are the pull requests reviewed on?**
+#### **12. Which branches are the pull requests reviewed on?**
 
 CodeRabbit reviews pull requests on the default branch.
 
-#### **12. Is it possible for CodeRabbit to include additional branches for review?**
+#### **13. Is it possible for CodeRabbit to include additional branches for review?**
 
 Yes, you can change it under the repository settings.
 
-#### **13. CodeRabbit Usage Limits**
+#### **14. CodeRabbit Usage Limits**
 
 There are hourly rate limits for each developer per repository:
 
@@ -89,7 +89,7 @@ There are hourly rate limits for each developer per repository:
 In-trial and open-source plans have lower rate limits than the paid plan. In all
 cases, we re-allow further reviews/conversations after a brief timeout.
 
-#### **14. I can't add CodeRabbit to my GitLab Repositories?**
+#### **15. I can't add CodeRabbit to my GitLab Repositories?**
 
 If there are any access restrictions by domain, then you will need to add
 `coderabbit.ai` as an allowed domain.
