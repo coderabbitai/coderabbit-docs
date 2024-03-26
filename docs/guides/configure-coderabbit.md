@@ -17,7 +17,7 @@ Configuration defined in the YAML file overrides the settings in the UI.
 
 ### 1. Configure CodeRabbit using a YAML File {#yaml}
 
-You can add a `.coderabbit.yaml` configuration file to root of your
+You can add a `.coderabbit.yaml` configuration file to the root of your
 repositories. Below is a sample YAML file that can be used as a starting point
 and changed as needed:
 
