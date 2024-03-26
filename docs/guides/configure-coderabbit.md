@@ -200,13 +200,11 @@ Reviews can also be configured through the UI under repository settings:
 
 ### Review Configuration
 
-[](../get-started/images/tailor2.png)
-
 **Path-based instructions :** Provide additional review guidelines based on the
 file paths using glob patterns.
 
 For further guidance, please refer to this
-section [Prompt Configuration](/guides/prompt-configuration)
+section [Review Instructions](./review-instructions.md).
 
 **Language Selection:** Select the natural language in which you want the review
 feedback. CodeRabbit supports most of the widely used languages. The default
@@ -218,8 +216,6 @@ added with the pull request description.
 ---
 
 ### Review Filters
-
-[](../get-started/images/tailor3.png)
 
 **Disable Reviews:** Disables automatic code reviews for the repository. Reviews
 can be initiated on-demand using CodeRabbit commands.

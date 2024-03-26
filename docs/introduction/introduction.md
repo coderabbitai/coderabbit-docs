@@ -72,6 +72,3 @@ fall short in providing context-aware, conversational feedback with actionable
 suggestions for changes that can be directly committed. On the other hand,
 **CodeRabbit** leverages AI to understand the intent behind the code changes and
 provide human-like feedback for applying the best practices.
-
-For information on how to get started with **CodeRabbit**, please visit the
-[Get Started page](./get-started/signup).

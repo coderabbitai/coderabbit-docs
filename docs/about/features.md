@@ -52,6 +52,3 @@ Pull request changes are validated against the linked GitHub or GitLab issue and
 identifies all other issues which might be affected by this change.
 
 ![Issue Validation](./images/issue-validation.png)
-
-For information on how to get started with CodeRabbit, visit
-the [Get Started page](/get-started/signup)
