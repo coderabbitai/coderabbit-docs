@@ -13,14 +13,14 @@ complete, you can log in directly using the OAuth2 flow.
 
 ### **Step 1: Getting Started**
 
-**Visit CodeRabbit:** Land on to our [Login](https://coderabbit.ai/login) page
-and select Self-Hosted GitLab
+**Visit CodeRabbit:** Visit our [Login](https://coderabbit.ai/login) page and
+select Self-Hosted GitLab
 
 ![login-page](./images/login-page.png)
 
-### Step 2: Enter your Self Managed GitLab URL
+### Step 2: Enter your Self-Managed GitLab URL
 
-On this page, enter the URL of your self managed GitLab instance and click
+On this page, enter the URL of your self-managed GitLab instance and click
 submit. Once, you submit, we check our database for a record of your
 organization.
 
@@ -64,7 +64,5 @@ the token, please follow the process outlined below:
 Use this CodeRabbit IP if your instance requires IP whitelisting
 `35.222.179.152/32`
 
-VPN tunneling is available as an add-on package. Please reach out to us at contact@coderabbit.ai if you are interested.
-
-- Furthermore, please refer to our Get Started Guide to make the most of
-  CodeRabbit [here](../get-started/add-repo.md).
+VPN tunneling is available as an add-on package. Please reach out to us at
+[contact@coderabbit.ai](mailto:contact@coderabbit.ai) if you are interested.

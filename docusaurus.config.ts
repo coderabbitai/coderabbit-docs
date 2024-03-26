@@ -40,8 +40,16 @@ const config: Config = {
       {
         redirects: [
           {
-            to: "https://docs.coderabbit.ai/docs/get-started/signup",
-            from: "/docs/get-started",
+            from: "/get-started",
+            to: "/guides/configure-coderabbit",
+          },
+          {
+            from: "/guides/customize-coderabbit",
+            to: "/guides/configure-coderabbit",
+          },
+          {
+            from: "/guides/prompt-customization",
+            to: "/guides/review-instructions",
           },
         ],
       },

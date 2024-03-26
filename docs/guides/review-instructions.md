@@ -1,13 +1,13 @@
 ---
-title: Prompt Customization
-sidebar_label: Prompt Customization
+title: Review Instructions
+sidebar_label: Review Instructions
 description:
   CodeRabbit offers various customization options to tailor the reviews to your
   specific requirements. Customizations can be made using one of the below
   options.
 ---
 
-### Path-based instructions {#path-based-instructions}
+### Path-based instructions {#path-based}
 
 This section explains how to add custom code review instructions for the entire
 project or specific file paths in your project using glob patterns. Developers
@@ -19,7 +19,7 @@ Adding file path prompts allows developers to specify custom instructions for
 different parts of the codebase. For example, you may want to enforce a style
 guide by file types or directories.
 
-### Sample Usage {#sample-usage}
+### Sample Usage
 
 - **`path`**: `**/*.js`
 
@@ -43,7 +43,7 @@ guide by file types or directories.
 
 :::
 
-## Abstract Syntax Tree (AST) instructions
+## Abstract Syntax Tree (AST) based instructions {#ast-based}
 
 :::note
 
@@ -74,7 +74,8 @@ By default, you can add `ast-grep` rules by following these steps:
 5. Add the rules' directory to the `.coderabbit.yml` file under `tools.ast-grep`
    configuration.
 6. Optionally, you can add `packages` property to the configuration to specify
-   the packages that should be installed before running the `ast-grep` tool. Please read the `packages` section for detailed information.
+   the packages that should be installed before running the `ast-grep` tool.
+   Please read the `packages` section for detailed information.
 
 ```yaml
 #...
@@ -82,9 +83,9 @@ reviews:
   #...
   tools:
     ast-grep:
-      rule_dirs: 
+      rule_dirs:
         - "custom-name"
-      packages: 
+      packages:
         - "ast-grep-essentials" # default package installed
   #...
 ```
@@ -253,8 +254,8 @@ my-awesome-project   # project root
 > `.coderabbit.yml` file under `tools.ast-grep` configuration.
 
 > The rules can also be inside a package. If you have a package that contains
-  rules, you can add the package name to the `packages` field in the
-  `.coderabbit.yml` file.
+> rules, you can add the package name to the `packages` field in the
+> `.coderabbit.yml` file.
 
 ```yaml
 #...
@@ -262,9 +263,9 @@ reviews:
   #...
   tools:
     ast-grep:
-      rule_dirs: 
+      rule_dirs:
         - "rules"
-      util_dirs: 
+      util_dirs:
         - "utils"
       packages:
         - "ast-grep-essentials"
@@ -291,15 +292,20 @@ rule:
 > [Utility Rule](https://ast-grep.github.io/guide/rule-config/utility-rule.html)
 
 ### Packages
-A package is what allows you to share rules across multiple projects. Essentially, a package is a collection of ast-grep rules.
 
-Coderabbit provides a set of packages that you can use out of the box. You can also create your own packages and share them with the community or just
-use them within your organization.
+A package is what allows you to share rules across multiple projects.
+Essentially, a package is a collection of ast-grep rules.
+
+Coderabbit provides a set of packages that you can use out of the box. You can
+also create your own packages and share them with the community or just use them
+within your organization.
 
 Packages provided by Coderabbit are:
+
 - `ast-grep-essentials`: A set of essential security rules
 
-To use a package, you need to add the package name to the `packages` field in the `.coderabbit.yml` file.
+To use a package, you need to add the package name to the `packages` field in
+the `.coderabbit.yml` file.
 
 ```yaml
 #...
@@ -313,9 +319,12 @@ reviews:
 ```
 
 #### Using custom package
-Let's say that you have a public repository that contains ast-grep rules. You can add the package name to the `packages` field in the `.coderabbit.yml` file.
+
+Let's say that you have a public repository that contains ast-grep rules. You
+can add the package name to the `packages` field in the `.coderabbit.yml` file.
 
 Requirements for a package:
+
 - should be a public repository
 - contains rules that follow the ast-grep rule format
 - package name should be in the format `organization/repository`
