@@ -12,12 +12,9 @@ description:
 This section explains how to add custom code review instructions for the entire
 project or specific file paths in your project using glob patterns. Developers
 can provide tailored review guidelines based on the file paths. These
-instructions are needed only if you want the reviewer to follow specific
-instructions besides the standard review.
-
-Adding file path prompts allows developers to specify custom instructions for
-different parts of the codebase. For example, you may want to enforce a style
-guide by file types or directories.
+instructions are needed only if you want CodeRabbit to follow specific
+instructions besides the standard review. For example, you may want to enforce a
+style guide by file types or directories.
 
 ### Sample Usage
 
@@ -35,15 +32,20 @@ guide by file types or directories.
 
 :::note
 
-- Paths accept glob patterns.
-- Instructions generally work well for specific additional instructions.
-  However, they are not that effective if you are instructing AI not to do
-  something.
-- Test the review feedback on pull requests and tailor as necessary.
+Paths accept glob patterns. See the
+[minimatch](https://github.com/isaacs/minimatch) documentation for more
+information.
 
 :::
 
 ## Abstract Syntax Tree (AST) based instructions {#ast-based}
+
+CodeRabbit offers review instructions based on Abstract Syntax Tree (AST)
+patterns. Under the hood, CodeRabbit uses
+[`ast-grep`](https://ast-grep.github.io) to power this feature. `ast-grep` is
+written in Rust and uses the tree-sitter parser to generate the AST for popular
+languages. `ast-grep` is written and maintained by
+[Herrington Darkholme](https://twitter.com/hd_nvim).
 
 :::note
 
@@ -117,7 +119,7 @@ rule:
   matches: "utility-rule"
 ```
 
-### Three Rule Categories
+### Rule Categories
 
 To summarize the rule object fields above, we have three categories of rules:
 
