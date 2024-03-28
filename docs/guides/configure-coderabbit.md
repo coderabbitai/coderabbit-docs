@@ -24,7 +24,8 @@ and changed as needed:
 #### version 2: `Current`
 
 ```yaml
-language: "ja"
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/coderabbit-overrides.v2.json
+language: "en-US"
 early_access: false
 reviews:
   request_changes_workflow: false
@@ -32,36 +33,12 @@ reviews:
   poem: true
   review_status: true
   collapse_walkthrough: false
-  path_filters:
-    - "!**/*.xml"
-  path_instructions:
-    - path: "**/*.js"
-      instructions:
-        "Review the JavaScript code for conformity with the Google JavaScript
-        style guide, highlighting any deviations."
-    - path: "tests/**/*"
-      instructions: |
-        "Assess the unit test code employing the Mocha testing framework. Confirm that:
-        - The tests adhere to Mocha's established best practices.
-        - Test descriptions are sufficiently detailed to clarify the purpose of each test."
   auto_review:
     enabled: true
     ignore_title_keywords:
       - "WIP"
       - "DO NOT MERGE"
     drafts: false
-    base_branches:
-      - "develop"
-      - "feat/.*"
-  tools:
-    ast-grep:
-      rule_dirs:
-        - "rules"
-      util_dirs:
-        - "utils"
-      packages:
-        - "ast-grep-essentials"
-        - "my-awesome-org/my-awesome-package" # public GitHub repository that contains ast-grep rules
 chat:
   auto_reply: true
 ```
@@ -69,12 +46,11 @@ chat:
 YAML settings:
 
 1. **`language`**: Set the language for reviews using the ISO language code. For
-   example, `"fr"` stands for French (default:`en`).
-
+   example, `"ja"` configures reviews in Japanese.
 2. **`early_access`**: Enroll in the early access program to take advantage of
    forthcoming features before their general release (default:`false`).
-
 3. **`reviews`**: Configurations for the code reviews.
+
    - **`request_changes_workflow`**: Enable request changes review workflow for
      CodeRabbit reviews. (default: `false`).
    - **`high_level_summary`**: CodeRabbit generates a high-level summary of the
@@ -85,11 +61,29 @@ YAML settings:
    - **`collapse_walkthrough`**: Collapses the walkthrough comment
      (default:`false`).
    - **`path_filters`**: Specifies file patterns to exclude or include for a
-     review, such as `!dist/**` and `src/**.tsx`, using glob notation.
+     review, such as `!dist/**` and `src/**.tsx`, using glob notation. Example:
+     ```yaml
+     path_filters:
+       - "!**/*.xml"
+     ```
    - **`path_instructions`**: Provides specific additional guidelines for code
      review based on file paths. In the given example, JavaScript files are
      singled out for checks against the Google JavaScript style guide. File path
-     accepts glob pattern
+     accepts glob pattern. Example:
+
+     ```yaml
+     path_instructions:
+       - path: "**/*.js"
+         instructions:
+           "Review the JavaScript code for conformity with the Google JavaScript
+           style guide, highlighting any deviations."
+       - path: "tests/**/*"
+         instructions:
+           "Assess the unit test code employing the Mocha testing framework.
+           Test descriptions must be sufficiently detailed to clarify the
+           purpose of each test."
+     ```
+
    - **`auto_review`**: Manages settings for automated code reviews, such as:
      - **`enabled`**: Automated code review (default: `true`).
      - **`ignore_title_keywords`**: Review will be ignored if a pull request
@@ -100,7 +94,12 @@ YAML settings:
      - **`drafts`**: Determines whether draft pull requests are reviewed
        (default: `true`).
      - **`base_branches`**: A list of base branches where the reviews will occur
-       apart from the default branch. Accepts regex pattern.
+       apart from the default branch. Accepts regex pattern. Example:
+       ```yaml
+       base_branches:
+         - "develop"
+         - "feat/.*"
+       ```
    - **`tools`**: Configurations for the tools used in the review.
      - **`ast-grep`**: Configurations for the `ast-grep` tool.
        - **`rule_dirs`**: The directory name where the custom `ast-grep` rules
@@ -109,6 +108,18 @@ YAML settings:
          are stored.
        - **`packages`**: A package allows you to share rules across multiple
          projects. Essentially, a package is a collection of `ast-grep` rules.
+         Example:
+       ```yaml
+       ast-grep:
+         rule_dirs:
+           - "rules"
+         util_dirs:
+           - "utils"
+         packages:
+           - "ast-grep-essentials"
+           - "my-awesome-org/my-awesome-package" # public GitHub repository that contains ast-grep rules
+       ```
+
 4. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
    - **`auto_reply`**: The bot automatically replies without the need of the
      user tagging it (default: `true`).
