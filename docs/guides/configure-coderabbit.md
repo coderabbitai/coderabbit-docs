@@ -33,7 +33,7 @@ reviews:
   review_status: true
   collapse_walkthrough: false
   path_filters:
-    - "!**/.xml"
+    - "!**/*.xml"
   path_instructions:
     - path: "**/*.js"
       instructions:
