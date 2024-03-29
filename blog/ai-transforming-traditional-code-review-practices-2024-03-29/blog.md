@@ -2,7 +2,7 @@
 slug: ai-transforming-traditional-code-review-practices
 title: How AI is Transforming Traditional Code Review Practices
 description:
-Explore how AI is reshaping code reviews, offering speed, consistency, and advanced defect detection, while complementing human expertise for higher quality software development.
+  Explore how AI is reshaping code reviews, offering speed, consistency, and advanced defect detection, while complementing human expertise for higher quality software development.
 authors: [vishu]
 tags:
   [
