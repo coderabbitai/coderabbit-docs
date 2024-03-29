@@ -25,7 +25,7 @@ They’re also one of the only practices left that are entirely manual. Engineer
 
 ## Code review conundrums
 
-Even after years of practice, code reviews are difficult, slow, and inefficient. Roughly [45% of developers](https://blog.codacy.com/10-facts-about-code-reviews-and-quality)  cite 'Lack of Time' as the primary obstacle to reviewing code, while 34% attribute it to the 'Pressure to Ship'. Everyone involved in software development, from the CEO to the project manager, has to put faith in the process in hopes that code changes don’t introduce any new problems. This is why they're time-consuming, prone to lack of oversight, and can sometimes turn into a subjective critique session rather than a constructive feedback loop.  
+Even after years of practice, code reviews are difficult, slow, and inefficient. Roughly [45% of developers](https://blog.codacy.com/10-facts-about-code-reviews-and-quality) cite 'Lack of Time' as the primary obstacle to reviewing code, while 34% attribute it to the 'Pressure to Ship'. Everyone involved in software development, from the CEO to the project manager, has to put faith in the process in hopes that code changes don’t introduce any new problems. This is why they're time-consuming, prone to lack of oversight, and can sometimes turn into a subjective critique session rather than a constructive feedback loop.  
 
 Here are a few pain points:
 
@@ -34,7 +34,7 @@ Here are a few pain points:
 - Error Prone: Subtle bugs and dependency issues can be missed, especially in complex or large codebases. This can lead to vulnerabilities, and technical debt released into the wild.
 - Knowledge Silos: Technical knowledge tends to get siloed, especially in large teams. This silo effect can prevent a thorough understanding of the codebase, reducing the effectiveness of code reviews.
 
-Where there are humans doing work, there are imperfections and risks of blind spots. To make matters worse, developers that spend [more than a day a week](https://blog.codacy.com/10-facts-about-code-reviews-and-quality#)reviewing code don’t have any correlation to improvements in perceived code quality. There is also no correlation in terms of more time shipping new features (as opposed to fixing bugs or paying back tech debt).
+Where there are humans doing work, there are imperfections and risks of blind spots. To make matters worse, developers that spend [more than a day a week](https://blog.codacy.com/10-facts-about-code-reviews-and-quality#) reviewing code don’t have any correlation to improvements in perceived code quality. There is also no correlation in terms of more time shipping new features (as opposed to fixing bugs or paying back tech debt).
 
 ## The AI revolution in software development
 
