@@ -64,7 +64,8 @@ YAML settings:
      review, such as `!dist/**` and `src/**.tsx`, using glob notation. Example:
      ```yaml
      path_filters:
-       - "!**/*.xml"
+       - !**/*.xml
+       - !**/generated/**
      ```
    - **`path_instructions`**: Provides specific additional guidelines for code
      review based on file paths. In the given example, JavaScript files are
