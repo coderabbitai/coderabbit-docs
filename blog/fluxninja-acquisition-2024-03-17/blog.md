@@ -16,10 +16,10 @@ tags:
     "Caching",
     "Scheduler",
   ]
-image: ./preview.png
+image: /img/blog-previews/fluxninja-acquisition.png
 ---
 
-![FluxNinja joins CodeRabbit](./preview.png)
+![FluxNinja joins CodeRabbit](/img/blog-previews/fluxninja-acquisition.png)
 
 We are excited to announce that CodeRabbit has acquired
 [FluxNinja](https://fluxninja.com), a startup that provides a platform for

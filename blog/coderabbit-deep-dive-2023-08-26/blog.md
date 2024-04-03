@@ -4,7 +4,7 @@ title: AI and the Future of Code Reviews - A Deep Dive into CodeRabbit
 description: AI and the Future of Code Reviews - A Deep Dive into CodeRabbit
 authors: [gur, vishu]
 tags: ["CodeRabbit", "AI", "Code Reviews"]
-image: ./preview.jpeg
+image: /img/blog-previews/coderabbit-deep-dive.jpeg
 ---
 
 We are witnessing an inflection point in the software development industry.

@@ -5,7 +5,7 @@ description:
   In a world where the office is just a step away from your bed, we dive into
   the challenges and triumphs of maintaining code quality across continents.
 authors: [dotlabs]
-image: ./preview.jpeg
+image: /img/blog-previews/boosting-engineering-efficiency.jpeg
 tags: ["AI", "Code Reviews", "Remote Work"]
 ---
 

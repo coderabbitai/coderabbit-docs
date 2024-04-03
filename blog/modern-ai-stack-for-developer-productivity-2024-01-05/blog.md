@@ -4,7 +4,7 @@ title: Modern AI stack for developer productivity
 description:
   Elevate your development workflow with three pillars of developer productivity
   tools powered by Artificial Intelligence
-image: ./preview.jpg
+image: /img/blog-previews/modern-ai-stack-for-developer-productivity.jpg
 authors: [pradeep]
 tags: ["AI", "Developer Tools", "Code Generation", "Code Review", "Knowledge"]
 ---

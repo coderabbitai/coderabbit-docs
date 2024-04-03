@@ -7,7 +7,7 @@ description:
   How CodeRabbit uses Aperture to manage OpenAI rate limits with request
   prioritization
 authors: [gur, sumanvs, nato]
-image: ./preview.png
+image: /img/blog-previews/openai-rate-limits.png
 tags: ["AI", "OpenAI", "Rate Limits", "Aperture"]
 ---
 

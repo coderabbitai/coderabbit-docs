@@ -36,6 +36,23 @@ const config: Config = {
 
   plugins: [
     [
+      "./plugins/blog-plugin",
+      {
+        id: "blog",
+        routeBasePath: "blog",
+        path: "./blog",
+        blogTitle: "CodeRabbit Blog",
+        blogDescription: "Blog",
+        tagsBasePath: "/tags",
+        editLocalizedFiles: false,
+        showReadingTime: true,
+        blogSidebarCount: "ALL",
+        blogSidebarTitle: "All our posts",
+        blogListComponent: "@theme/BlogListPage",
+        blogPostComponent: "@theme/BlogPostPage",
+      },
+    ],
+    [
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
@@ -77,18 +94,7 @@ const config: Config = {
           breadcrumbs: true,
           showLastUpdateTime: true,
         },
-        blog: {
-          blogTitle: "CodeRabbit Blog",
-          blogDescription: "Blog",
-          tagsBasePath: "/tags",
-          editLocalizedFiles: false,
-          routeBasePath: "/blog",
-          showReadingTime: true,
-          blogSidebarCount: "ALL",
-          blogSidebarTitle: "All our posts",
-          blogListComponent: "@theme/BlogListPage",
-          blogPostComponent: "@theme/BlogPostPage",
-        },
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
