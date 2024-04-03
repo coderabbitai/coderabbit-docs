@@ -5,6 +5,7 @@ description: How AI Code Review Reclaims Your Team's Time
 authors: [simone]
 tags: ["AI", "Code Review", "Productivity"]
 image: ./preview.png
+unlisted: true
 ---
 
 ### Introduction
