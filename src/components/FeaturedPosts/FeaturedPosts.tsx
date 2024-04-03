@@ -1,14 +1,14 @@
 import React from "react";
-import styles from "./Home.module.css";
+import styles from "./FeaturedPosts.module.css";
 import Layout from "@theme/Layout";
 import { Content } from "@theme/BlogPostPage";
 import clsx from "clsx";
 
-interface HomeProps {
+interface FeaturedPostsProps {
   readonly blogPosts: readonly { readonly Preview: Content; metadata: any }[];
 }
 
-function Home({ blogPosts }: HomeProps): JSX.Element {
+function FeaturedPosts({ blogPosts }: FeaturedPostsProps): JSX.Element {
   return (
     <Layout>
       <div className="container margin-top--lg margin-bottom--lg">
@@ -19,11 +19,11 @@ function Home({ blogPosts }: HomeProps): JSX.Element {
         </div>
         <div className="row">
           {blogPosts.map(({ metadata }, index) => (
-            <HomeCard
-              key={`${metadata.date}-${index}-home`}
+            <FeaturedPostsCard
+              key={`${metadata.date}-${index}-featured-posts`}
               index={index}
               metadata={metadata}
-              context={"home"}
+              context={"featured-posts"}
             />
           ))}
         </div>
@@ -32,9 +32,9 @@ function Home({ blogPosts }: HomeProps): JSX.Element {
   );
 }
 
-export default Home;
+export default FeaturedPosts;
 
-export function HomeCard({ index, metadata, context }): JSX.Element {
+export function FeaturedPostsCard({ index, metadata, context }): JSX.Element {
   return (
     <div className={`${clsx("col col--3 col--offset-1")} ${styles.card}`}>
       <div className="text--center">

@@ -44,15 +44,11 @@ async function blogPluginExtended(...pluginOptions) {
         };
       }
 
-      // Create the gallery page
       data.actions.addRoute({
-        // Add route for the home page
-        path: "/home",
+        path: "/featured-posts",
         exact: true,
 
-        // The component to use for the "Home" page route
-        component: "@site/src/components/Home/Home.tsx",
-        // These are the props that will be passed to our "Home" page component
+        component: "@site/src/components/FeaturedPosts/FeaturedPosts.tsx",
         modules: {
           blogPosts: await Promise.all(
             allBlogPosts.map(createRecentPostModule),
