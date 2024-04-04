@@ -32,7 +32,7 @@ If this is the first time you are signing up with your instance, we need an
 admin access token for setting up the CodeRabbit.
 
 
-#### **Why do we need the admin access token?**
+#### **Why do we need the Admin Access Token?**
 
 Admin access token is required to set up a new CodeRabbit bot user within your self-managed instance. 
 The token is needed only once during the initial setup process and is not stored in our database. Once the token is generated, you can set its minimum expiration period. This is the standard approach used by other products in this category. 
