@@ -31,6 +31,13 @@ organization.
 If this is the first time you are signing up with your instance, we need an
 admin access token for setting up the CodeRabbit.
 
+
+#### **Why do we need the Admin access token?**
+
+Admin access token is required to set up a new CodeRabbit bot user within your self-managed instance. 
+The token is needed only once during the initial setup process and is not stored in our database. Once the token is generated, you can set its minimum expiration period. This is the standard approach used by other products in this category. 
+This is not automatically installing the CodeRabbit app across all projects. You will add CodeRabbit manually on the projects you wish, as the next step.
+
 #### **Generating Admin Personal Access token**
 
 GitLab offers an option to generate a personal access token for adding a new
