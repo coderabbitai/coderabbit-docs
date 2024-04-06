@@ -247,10 +247,10 @@ your project.
 
 ```yaml
 my-awesome-project   # project root
-|- rules           # rule directory
-| |- my-rule.yml
-|- utils           # utils directory
-| |- is-literal.yml
+  |- rules           # rule directory
+  | |- my-rule.yml
+  |- utils           # utils directory
+  | |- is-literal.yml
 ```
 
 > Also, you need to add the `rules` and `utils` directories to the
@@ -305,8 +305,8 @@ within your organization.
 
 Packages provided by Coderabbit are:
 
-- `ast-grep-essentials`: A set of essential security rules, because we value security, this package gets
-  it's own property in the `.coderabbit.yml` file, to make it easier to install and not overwrite. Check
+- `ast-grep-essentials`: A set of essential security rules. Because we value security, this package gets
+  its own property in the `.coderabbit.yml` file, to make it easier to install and not overwrite. Check
   the [package repository](https://github.com/coderabbitai/ast-grep-essentials)
   for more information.
 
@@ -344,7 +344,7 @@ my-awesome-project   # project root
   | |- is-literal.yml
 ```
 
-**rules** and **utils** directories are keywords and it should be the same. Inside each directory, the structure is up
+**rules** and **utils** directories are keywords, and it should be the same. Inside each directory, the structure is up
 to you. You can also have any other root directories or files beside the two shown above.
 
 - package name should be in the format `organization/repository`
