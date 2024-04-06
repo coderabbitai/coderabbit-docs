@@ -20,7 +20,7 @@ style guide by file types or directories.
 
 - **`path`**: `**/*.js`
 
-  **`instructions`**: Review the JavaScript code against the Google JavaScript
+  **`instructions`**:Review the JavaScript code against the Google JavaScript
   style guide and point out any mismatches
 
 - **`path`**: `tests/**.*`
@@ -85,10 +85,11 @@ reviews:
   #...
   tools:
     ast-grep:
+      essential_rules: true # option to enable essential security rules
       rule_dirs:
         - "custom-name"
       packages:
-        - "ast-grep-essentials" # default package installed
+        - "myorg/myawesomepackage" # custom package name following the format organization/repository
   #...
 ```
 
@@ -113,8 +114,8 @@ rule:
   follows: { regex: "can|use|any" }
   precedes: { kind: "multi_keys", pattern: "in.sub" }
   # composite rule
-  all: [{ pattern: "match.all" }, { kind: "match_all" }]
-  any: [{ pattern: "match.any" }, { kind: "match_any" }]
+  all: [ { pattern: "match.all" }, { kind: "match_all" } ]
+  any: [ { pattern: "match.any" }, { kind: "match_any" } ]
   not: { pattern: "not.this" }
   matches: "utility-rule"
 ```
@@ -246,10 +247,10 @@ your project.
 
 ```yaml
 my-awesome-project   # project root
-  |- rules           # rule directory
-  | |- my-rule.yml
-  |- utils           # utils directory
-  | |- is-literal.yml
+|- rules           # rule directory
+| |- my-rule.yml
+|- utils           # utils directory
+| |- is-literal.yml
 ```
 
 > Also, you need to add the `rules` and `utils` directories to the
@@ -265,12 +266,12 @@ reviews:
   #...
   tools:
     ast-grep:
+      essential_rules: true
       rule_dirs:
         - "rules"
       util_dirs:
         - "utils"
       packages:
-        - "ast-grep-essentials"
         - "my-awesome-org/my-awesome-package" # public repository that contains ast-grep rules
   #...
 ```
@@ -304,7 +305,10 @@ within your organization.
 
 Packages provided by Coderabbit are:
 
-- `ast-grep-essentials`: A set of essential security rules
+- `ast-grep-essentials`: A set of essential security rules, because we value security, this package gets
+  it's own property in the `.coderabbit.yml` file, to make it easier to install and not overwrite. Check
+  the [package repository](https://github.com/coderabbitai/ast-grep-essentials)
+  for more information.
 
 To use a package, you need to add the package name to the `packages` field in
 the `.coderabbit.yml` file.
@@ -315,8 +319,9 @@ reviews:
   #...
   tools:
     ast-grep:
-      packages:
-        - "ast-grep-essentials"
+      essential_rules: true
+      packages: # list of packages to install, in future coderabbit will provide a set of packages, beside the essentials one.
+        - "my-awesome-org/my-awesome-package" # custom package name following the format organization/repository
   #...
 ```
 
@@ -329,6 +334,19 @@ Requirements for a package:
 
 - should be a public repository
 - contains rules that follow the ast-grep rule format
+- has the following folder structure:
+
+```text
+my-awesome-project   # project root
+  |- rules           # rule directory
+  | |- my-rule.yml
+  |- utils           # utils directory
+  | |- is-literal.yml
+```
+
+**rules** and **utils** directories are keywords and it should be the same. Inside each directory, the structure is up
+to you. You can also have any other root directories or files beside the two shown above.
+
 - package name should be in the format `organization/repository`
 
 ```yaml
