@@ -20,7 +20,7 @@ style guide by file types or directories.
 
 - **`path`**: `**/*.js`
 
-  **`instructions`**:Review the JavaScript code against the Google JavaScript
+  **`instructions`**: Review the JavaScript code against the Google JavaScript
   style guide and point out any mismatches
 
 - **`path`**: `tests/**.*`
