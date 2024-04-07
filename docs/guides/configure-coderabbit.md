@@ -47,9 +47,11 @@ YAML settings:
 
 1. **`language`**: Set the language for reviews using the ISO language code. For
    example, `"ja"` configures reviews in Japanese.
-2. **`early_access`**: Enroll in the early access program to take advantage of
+2. **`tone_instructions`**: Set the tone for the reviews and the chat. Example:
+   'You must use talk like Mr. T. I pity the fool who doesn't!'
+3. **`early_access`**: Enroll in the early access program to take advantage of
    forthcoming features before their general release (default:`false`).
-3. **`reviews`**: Configurations for the code reviews.
+4. **`reviews`**: Configurations for the code reviews.
 
    - **`request_changes_workflow`**: Enable request changes review workflow for
      CodeRabbit reviews. (default: `false`).
@@ -88,14 +90,14 @@ YAML settings:
    - **`auto_review`**: Manages settings for automated code reviews, such as:
      - **`enabled`**: Automated code review (default: `true`).
      - **`ignore_title_keywords`**: Review will be ignored if a pull request
-       title contains one of the list of keywords (e.g., `"WIP"`,
-       `"DO NOT MERGE"`).
-     - **`labels`**: Review will be triggered if a pull request contains one of
-       the list of labels.
+       title contains one of the list of keywords (case-insensitive). Example:
+       `"WIP"`, `"DO NOT MERGE"`.
+     - **`labels`**: Review will be triggered if a pull request matches one of
+       the list of labels (case-insensitive).
      - **`drafts`**: Determines whether draft pull requests are reviewed
        (default: `true`).
-     - **`base_branches`**: A list of base branches where the reviews will occur
-       apart from the default branch. Accepts regex pattern. Example:
+     - **`base_branches`**: A list of base branches for which the reviews will
+       trigger, apart from the default branch. Accepts regex pattern. Example:
        ```yaml
        base_branches:
          - "develop"
@@ -121,7 +123,7 @@ YAML settings:
            - "my-awesome-org/my-awesome-package" # public GitHub repository that contains ast-grep rules
        ```
 
-4. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
+5. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
    - **`auto_reply`**: The bot automatically replies without the need of the
      user tagging it (default: `true`).
 
