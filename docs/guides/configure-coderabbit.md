@@ -24,7 +24,7 @@ and changed as needed:
 #### version 2: `Current`
 
 ```yaml
-# yaml-language-server: $schema=https://coderabbit.ai/integrations/coderabbit-overrides.v2.json
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
 language: "en-US"
 early_access: false
 reviews:
@@ -128,7 +128,7 @@ YAML settings:
      user tagging it (default: `true`).
 
 Refer:
-[CodeRabbit Configuration Schema](https://coderabbit.ai/integrations/coderabbit-overrides.v2.json).
+[CodeRabbit Configuration Schema](https://coderabbit.ai/integrations/schema.v2.json).
 
 <details>
 
@@ -200,9 +200,6 @@ This configuration file consists of the following settings:
     be posted.
 13. **`collapse_walkthrough_comment`**: Specifies whether to collapse
     walkthrough comments on the review.
-
-Refer:
-[CodeRabbit configuration schema](https://coderabbit.ai/integrations/coderabbit-overrides.json).
 
 </details>
 
