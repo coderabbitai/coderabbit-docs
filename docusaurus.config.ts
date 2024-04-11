@@ -160,15 +160,6 @@ const config: Config = {
       },
       items: [
         {
-          type: "docSidebar",
-          docId: "docs",
-          sidebarId: "docsSidebar",
-          position: "left",
-          label: "Docs",
-          href: "https://docs.coderabbit.ai",
-          target: "_self",
-        },
-        {
           href: "https://discord.gg/GsXnASn26c",
           className: "header-discord-link",
           "aria-label": "Discord",
