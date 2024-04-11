@@ -169,13 +169,6 @@ const config: Config = {
           target: "_self",
         },
         {
-          // type: "docSidebar",
-          // sidebarId: "blogsSidebar",
-          position: "left",
-          label: "Blog",
-          href: "https://blog.coderabbit.ai/blog",
-        },
-        {
           href: "https://discord.gg/GsXnASn26c",
           className: "header-discord-link",
           "aria-label": "Discord",
