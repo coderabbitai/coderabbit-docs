@@ -19,7 +19,7 @@ const sidebars: SidebarsConfig = {
     {
       type: "link",
       label: "Blog",
-      href: "https://blog.coderabbit.ai/",
+      href: "https://blog.coderabbit.ai/blog",
     },
   ],
 };
