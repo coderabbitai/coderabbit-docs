@@ -5,6 +5,7 @@ description:
   CodeRabbit offers various configuration options to tailor the reviews to your
   specific requirements. Configuration can be made using one of the below
   options.
+sidebar_position: 2
 ---
 
 CodeRabbit offers various configuration options to tailor the reviews to your

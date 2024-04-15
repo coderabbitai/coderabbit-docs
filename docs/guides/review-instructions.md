@@ -5,6 +5,7 @@ description:
   CodeRabbit offers various customization options to tailor the reviews to your
   specific requirements. Customizations can be made using one of the below
   options.
+sidebar_position: 3
 ---
 
 ### Path-based instructions {#path-based}
@@ -114,8 +115,8 @@ rule:
   follows: { regex: "can|use|any" }
   precedes: { kind: "multi_keys", pattern: "in.sub" }
   # composite rule
-  all: [ { pattern: "match.all" }, { kind: "match_all" } ]
-  any: [ { pattern: "match.any" }, { kind: "match_any" } ]
+  all: [{ pattern: "match.all" }, { kind: "match_all" }]
+  any: [{ pattern: "match.any" }, { kind: "match_any" }]
   not: { pattern: "not.this" }
   matches: "utility-rule"
 ```
@@ -297,18 +298,19 @@ rule:
 ### Packages
 
 A package is what allows you to share rules across multiple projects.
-Essentially, a package is a collection of ast-grep rules.
+Essentially, a package is a collection of `ast-grep` rules.
 
-Coderabbit provides a set of packages that you can use out of the box. You can
+CodeRabbit provides a set of packages that you can use out of the box. You can
 also create your own packages and share them with the community or just use them
 within your organization.
 
-Packages provided by Coderabbit are:
+Packages provided by CodeRabbit are:
 
-- `ast-grep-essentials`: A set of essential security rules. Because we value security, this package gets
-  its own property in the `.coderabbit.yml` file, to make it easier to install and not overwrite. Check
-  the [package repository](https://github.com/coderabbitai/ast-grep-essentials)
-  for more information.
+- `ast-grep-essentials`: A set of essential security rules. Because we value
+  security, this package gets its own property in the `.coderabbit.yml` file, to
+  make it easier to install and not overwrite. Check the
+  [package repository](https://github.com/coderabbitai/ast-grep-essentials) for
+  more information.
 
 To use a package, you need to add the package name to the `packages` field in
 the `.coderabbit.yml` file.
@@ -344,8 +346,9 @@ my-awesome-project   # project root
   | |- is-literal.yml
 ```
 
-**rules** and **utils** directories are keywords, and it should be the same. Inside each directory, the structure is up
-to you. You can also have any other root directories or files beside the two shown above.
+**rules** and **utils** directories are keywords, and it should be the same.
+Inside each directory, the structure is up to you. You can also have any other
+root directories or files beside the two shown above.
 
 - package name should be in the format `organization/repository`
 
