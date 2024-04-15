@@ -2,6 +2,7 @@
 title: CodeRabbit Commands
 sidebar_label: CodeRabbit Commands
 description: Learn how to manage your PR reviews with CodeRabbit commands.
+sidebar_position: 1
 ---
 
 Manage your PR reviews with the following commands:
