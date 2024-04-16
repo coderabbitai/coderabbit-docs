@@ -65,11 +65,13 @@ YAML settings:
      (default:`false`).
    - **`path_filters`**: Specifies file patterns to exclude or include for a
      review, such as `!dist/**` and `src/**.tsx`, using glob notation. Example:
+
      ```yaml
      path_filters:
        - !**/*.xml
        - !**/generated/**
      ```
+
    - **`path_instructions`**: Provides specific additional guidelines for code
      review based on file paths. In the given example, JavaScript files are
      singled out for checks against the Google JavaScript style guide. File path
@@ -99,11 +101,13 @@ YAML settings:
        (default: `true`).
      - **`base_branches`**: A list of base branches for which the reviews will
        trigger, apart from the default branch. Accepts regex pattern. Example:
-       ```yaml
-       base_branches:
-         - "develop"
-         - "feat/.*"
-       ```
+
+      ```yaml
+      base_branches:
+        - "develop"
+        - "feat/.*"
+      ```
+
    - **`tools`**: Configurations for the tools used in the review.
      - **`ast-grep`**: Configurations for the `ast-grep` tool.
        - **`rule_dirs`**: The directory name where the custom `ast-grep` rules
@@ -112,16 +116,34 @@ YAML settings:
          are stored.
        - **`packages`**: A package allows you to share rules across multiple
          projects. Essentially, a package is a collection of `ast-grep` rules.
-         Example:
+     - **`github-checks`**: Configuration for GitHub Checks integration.
+       - **`enabled`**: Enable integration, defaults to true.
+       - **`timeout_ms`**: Time in milliseconds to wait for all GitHub Checks to conclude, defaults to 90000 (1.5 minutes), maximum is 300000 (5 minutes), minimum is 0 (no timeout).
+     - **`markdownlint`**: Configuration for `markdownlint` integration.
+       - **`enabled`**: Enable integration, defaults to true.
+     - **`ruff`**: Configuration for `ruff` integration.
+       - **`enabled`**: Enable integration, defaults to true.
+     - **`shellcheck`**: Configuration for `shellcheck` integration.
+       - **`enabled`**: Enable integration, defaults to true.
+
        ```yaml
-       ast-grep:
-         rule_dirs:
-           - "rules"
-         util_dirs:
-           - "utils"
-         packages:
-           - "ast-grep-essentials"
-           - "my-awesome-org/my-awesome-package" # public GitHub repository that contains ast-grep rules
+        ast-grep:
+          rule_dirs:
+            - "rules"
+          util_dirs:
+            - "utils"
+          packages:
+            - "ast-grep-essentials"
+            - "my-awesome-org/my-awesome-package" # public GitHub repository that contains ast-grep rules
+        github-checks:
+          enabled: true
+          timeout_ms: 90000
+        markdownlint:
+          enabled: true
+        ruff:
+          enabled: true
+        shellcheck:
+          enabled: true
        ```
 
 5. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
