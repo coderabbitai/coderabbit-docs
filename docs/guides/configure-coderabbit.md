@@ -125,6 +125,14 @@ YAML settings:
        - **`enabled`**: Enable integration, defaults to true.
      - **`shellcheck`**: Configuration for `shellcheck` integration.
        - **`enabled`**: Enable integration, defaults to true.
+     - **`languagetool`**: Configuration for `languagetool` integration.
+       - **`enabled`**: Enable integration, defaults to true.
+       - **`level`**: The level of the rule. Can be one `default` or `picky`. If set to `picky`, additional rules will be activated, i.e. rules that you might only find useful when checking formal text.
+       - **`enabled_rules`**: IDs of rules to be enabled. The rule won't run unless 'level' is set to a level that activates the rule.
+       - **`disabled_rules`**: IDs of rules to be disabled.
+       - **`enabled_categories`**: IDs of categories to be enabled.
+       - **`disabled_categories`**: IDs of categories to be disabled.
+       - **`enabled_only`**: Only the rules and categories whose IDs are specified with `enabled_rules` or `enabled_categories` are enabled.
 
        ```yaml
         ast-grep:
@@ -144,6 +152,13 @@ YAML settings:
           enabled: true
         shellcheck:
           enabled: true
+        languagetool:
+          enabled: true
+          enabled_only: false
+          level: default
+          enabled_categories:
+            - "TON_ACADEMIC"
+            - "CASING"
        ```
 
 5. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
