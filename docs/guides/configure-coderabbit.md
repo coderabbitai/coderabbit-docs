@@ -91,6 +91,7 @@ YAML settings:
      ```
 
    - **`auto_review`**: Manages settings for automated code reviews, such as:
+
      - **`enabled`**: Automated code review (default: `true`).
      - **`ignore_title_keywords`**: Review will be ignored if a pull request
        title contains one of the list of keywords (case-insensitive). Example:
@@ -102,13 +103,14 @@ YAML settings:
      - **`base_branches`**: A list of base branches for which the reviews will
        trigger, apart from the default branch. Accepts regex pattern. Example:
 
-      ```yaml
-      base_branches:
-        - "develop"
-        - "feat/.*"
-      ```
+     ```yaml
+     base_branches:
+       - "develop"
+       - "feat/.*"
+     ```
 
    - **`tools`**: Configurations for the tools used in the review.
+
      - **`ast-grep`**: Configurations for the `ast-grep` tool.
        - **`rule_dirs`**: The directory name where the custom `ast-grep` rules
          are stored.
@@ -118,7 +120,9 @@ YAML settings:
          projects. Essentially, a package is a collection of `ast-grep` rules.
      - **`github-checks`**: Configuration for GitHub Checks integration.
        - **`enabled`**: Enable integration, defaults to true.
-       - **`timeout_ms`**: Time in milliseconds to wait for all GitHub Checks to conclude, defaults to 90000 (1.5 minutes), maximum is 300000 (5 minutes), minimum is 0 (no timeout).
+       - **`timeout_ms`**: Time in milliseconds to wait for all GitHub Checks to
+         conclude, defaults to 90000 (1.5 minutes), maximum is 300000 (5
+         minutes), minimum is 0 (no timeout).
      - **`markdownlint`**: Configuration for `markdownlint` integration.
        - **`enabled`**: Enable integration, defaults to true.
      - **`ruff`**: Configuration for `ruff` integration.
@@ -126,39 +130,43 @@ YAML settings:
      - **`shellcheck`**: Configuration for `shellcheck` integration.
        - **`enabled`**: Enable integration, defaults to true.
      - **`languagetool`**: Configuration for `languagetool` integration.
+
        - **`enabled`**: Enable integration, defaults to true.
-       - **`level`**: The level of the rule. Can be one `default` or `picky`. If set to `picky`, additional rules will be activated, i.e. rules that you might only find useful when checking formal text.
-       - **`enabled_rules`**: IDs of rules to be enabled. The rule won't run unless 'level' is set to a level that activates the rule.
+       - **`level`**: The level of the rule. Can be one `default` or `picky`. If
+         set to `picky`, additional rules will be activated, i.e. rules that you
+         might only find useful when checking formal text.
+       - **`enabled_rules`**: IDs of rules to be enabled. The rule won't run
+         unless 'level' is set to a level that activates the rule.
        - **`disabled_rules`**: IDs of rules to be disabled.
        - **`enabled_categories`**: IDs of categories to be enabled.
        - **`disabled_categories`**: IDs of categories to be disabled.
-       - **`enabled_only`**: Only the rules and categories whose IDs are specified with `enabled_rules` or `enabled_categories` are enabled.
+       - **`enabled_only`**: Only the rules and categories whose IDs are
+         specified with `enabled_rules` or `enabled_categories` are enabled.
 
        ```yaml
-        ast-grep:
-          rule_dirs:
-            - "rules"
-          util_dirs:
-            - "utils"
-          packages:
-            - "ast-grep-essentials"
-            - "my-awesome-org/my-awesome-package" # public GitHub repository that contains ast-grep rules
-        github-checks:
-          enabled: true
-          timeout_ms: 90000
-        markdownlint:
-          enabled: true
-        ruff:
-          enabled: true
-        shellcheck:
-          enabled: true
-        languagetool:
-          enabled: true
-          enabled_only: false
-          level: default
-          enabled_categories:
-            - "TON_ACADEMIC"
-            - "CASING"
+       ast-grep:
+         rule_dirs:
+           - "rules"
+         util_dirs:
+           - "utils"
+         packages:
+           - "my-awesome-org/my-awesome-package" # public GitHub repository that contains ast-grep rules
+       github-checks:
+         enabled: true
+         timeout_ms: 90000
+       markdownlint:
+         enabled: true
+       ruff:
+         enabled: true
+       shellcheck:
+         enabled: true
+       languagetool:
+         enabled: true
+         enabled_only: false
+         level: default
+         enabled_categories:
+           - "TON_ACADEMIC"
+           - "CASING"
        ```
 
 5. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
