@@ -1,6 +1,6 @@
 ---
-title: Pricing Plans
-sidebar_label: Pricing Plans
+title: Pricing
+sidebar_label: Pricing
 description:
   Learn about the plans, pricing, and subscription management of CodeRabbit.
 ---
@@ -8,14 +8,14 @@ description:
 This section covers the plans, pricing, and subscription management of
 CodeRabbit.
 
-## **Understanding Your Options**
+## Overview
 
 - **Transparent Pricing**: CodeRabbit offers a per-seat pricing model that
   scales with your team size, ensuring you pay for what you need.
 - **7-Day Free Trial**: All plans start with a generous 7-day free trial for
   CodeRabbit Pro for the entire organization, ensuring a commitment-free
   experience
-- **No Credit Card Required**: You won't need a credit card to start your free
+- **No Credit Card Required**: You don't need a credit card to start your free
   trial.
 - **CodeRabbit Seats** Every developer who submits a pull request is counted as
   a separate seat. Seats can be purchased for all or for a limited number of
@@ -23,7 +23,7 @@ CodeRabbit.
 
 ---
 
-## **Pro Plan**
+## Pro Plan
 
 ### Features
 
@@ -35,12 +35,8 @@ CodeRabbit.
 
 ### Pricing
 
-- Monthly: $15 per month.
-- Annual: $12 per month billed annually, with a 20% discount.
-
-### Billing
-
-- Billed per participating developer.
+- Monthly: $15 per month per contributing developer.
+- Annual: $12 per month, billed annually per contributing developer.
 
 ### Usage Limits
 
@@ -52,7 +48,7 @@ These are the hourly usage limits for each developer per repository:
 
 ---
 
-## **Free Plan**
+## Free Plan
 
 ### Features
 
@@ -63,15 +59,11 @@ These are the hourly usage limits for each developer per repository:
 
 ### Pricing
 
-- $0 per month.
-
-### Billing
-
 - Free forever, no credit card required.
 
 ---
 
-## **Subscription Management**
+## Subscription Management
 
 ### Pro Plan
 
