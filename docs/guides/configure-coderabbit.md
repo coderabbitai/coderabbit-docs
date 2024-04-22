@@ -116,6 +116,10 @@ YAML settings:
          are stored.
        - **`util_dirs`**: The directory name where the custom `ast-grep` utils
          are stored.
+       - **`essential_rules`**: Enable the
+         [`ast-grep-essentials`](https://github.com/coderabbitai/ast-grep-essentials)
+         package, which contains community-driven security and best practice
+         rules.
        - **`packages`**: A package allows you to share rules across multiple
          projects. Essentially, a package is a collection of `ast-grep` rules.
      - **`github-checks`**: Configuration for GitHub Checks integration.
@@ -149,6 +153,7 @@ YAML settings:
            - "rules"
          util_dirs:
            - "utils"
+         essential_rules: true
          packages:
            - "my-awesome-org/my-awesome-package" # public GitHub repository that contains ast-grep rules
        github-checks:
