@@ -52,7 +52,7 @@ YAML settings:
    'You must use talk like Mr. T. I pity the fool who doesn't!'
 3. **`early_access`**: Enroll in the early access program to take advantage of
    forthcoming features before their general release (default:`false`).
-4. **`reviews`**: Configurations for the code reviews.
+4. **`reviews`**: Configures review settings.
 
    - **`request_changes_workflow`**: Enable request changes review workflow for
      CodeRabbit reviews. (default: `false`).
@@ -90,7 +90,7 @@ YAML settings:
            purpose of each test."
      ```
 
-   - **`auto_review`**: Manages settings for automated code reviews, such as:
+   - **`auto_review`**: Manages settings for automated code reviews.
 
      - **`enabled`**: Automated code review (default: `true`).
      - **`ignore_title_keywords`**: Review will be ignored if a pull request
@@ -109,9 +109,9 @@ YAML settings:
        - "feat/.*"
      ```
 
-   - **`tools`**: Configurations for the tools used in the review.
+   - **`tools`**: Configures external tools integration settings.
 
-     - **`ast-grep`**: Configurations for the `ast-grep` tool.
+     - **`ast-grep`**: Configuration for `ast-grep` integration.
        - **`rule_dirs`**: The directory name where the custom `ast-grep` rules
          are stored.
        - **`util_dirs`**: The directory name where the custom `ast-grep` utils
@@ -132,9 +132,9 @@ YAML settings:
      - **`languagetool`**: Configuration for `languagetool` integration.
 
        - **`enabled`**: Enable integration, defaults to true.
-       - **`level`**: The level of the rule. Can be one `default` or `picky`. If
-         set to `picky`, additional rules will be activated, i.e. rules that you
-         might only find useful when checking formal text.
+       - **`level`**: The level of the rule. It can be one `default` or `picky`.
+         If set to `picky`, additional rules will be activated, i.e. rules that
+         you might only find useful when checking formal text.
        - **`enabled_rules`**: IDs of rules to be enabled. The rule won't run
          unless 'level' is set to a level that activates the rule.
        - **`disabled_rules`**: IDs of rules to be disabled.
@@ -169,7 +169,28 @@ YAML settings:
            - "CASING"
        ```
 
-5. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
+5. **`knowledge_base`**: Configures knowledge base settings.
+
+   - **`learnings`**: Configures learnings settings.
+     - **`scope`**: Specify the scope of learnings to use for the knowledge
+       base. `local` uses the repository's learnings, `global` uses the
+       organization's learnings, and `auto` uses repository's learnings for
+       public repositories and organization's learnings for private
+       repositories.
+   - **`issues`**: Configures issues settings.
+     - **`scope`**: Specify the scope of git platform (GitHub/GitLab) issues to
+       use for the knowledge base. `local` uses the repository's issues,
+       `global` uses the organization's issues, and `auto` uses repository's
+       issues for public repositories and organization's issues for private
+       repositories.
+   - **`jira`**: Configures Jira settings.
+     - **`project_keys`**: A list of Jira project keys to use for the knowledge
+       base. If not provided, all projects will be used.
+   - **`linear`**: Configures Linear settings.
+     - **`team_keys`**: A list of Linear team keys to use for the knowledge
+       base. If not provided, all teams will be used.
+
+6. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
    - **`auto_reply`**: The bot automatically replies without the need of the
      user tagging it (default: `true`).
 
@@ -180,7 +201,7 @@ Refer:
 
 <summary> version 1 (deprecated) </summary>
 
-#### Version 1: `deprecated` (Please use version [version 2](#yaml))
+#### Version 1: `deprecated` (Please use [version 2](#yaml))
 
 ```yaml
 settings:
@@ -214,7 +235,6 @@ settings:
   collapse_walkthrough_comment: true
   # Disable automatic code reviews for this repository.
   disable_review: false
-  # External tools configurations
 ```
 
 This configuration file consists of the following settings:
