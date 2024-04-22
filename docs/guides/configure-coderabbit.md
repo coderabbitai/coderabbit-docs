@@ -29,6 +29,7 @@ and changed as needed:
 language: "en-US"
 early_access: false
 reviews:
+  profile: "chill"
   request_changes_workflow: false
   high_level_summary: true
   poem: true
@@ -54,6 +55,10 @@ YAML settings:
    forthcoming features before their general release (default:`false`).
 4. **`reviews`**: Configures review settings.
 
+   - **`profile`**: Select the reviewer profile between `assertive` and `chill`.
+     The `assertive` profile posts more comments and nitpicks the code more
+     aggressively, while the `chill` profile is more relaxed and posts fewer
+     comments. (default: `chill`).
    - **`request_changes_workflow`**: Enable request changes review workflow for
      CodeRabbit reviews. (default: `false`).
    - **`high_level_summary`**: CodeRabbit generates a high-level summary of the
@@ -119,7 +124,7 @@ YAML settings:
        - **`essential_rules`**: Enable the
          [`ast-grep-essentials`](https://github.com/coderabbitai/ast-grep-essentials)
          package, which contains community-driven security and best practice
-         rules.
+         rules. Defaults to `true`.
        - **`packages`**: A package allows you to share rules across multiple
          projects. Essentially, a package is a collection of `ast-grep` rules.
      - **`github-checks`**: Configuration for GitHub Checks integration.
@@ -181,13 +186,13 @@ YAML settings:
        base. `local` uses the repository's learnings, `global` uses the
        organization's learnings, and `auto` uses repository's learnings for
        public repositories and organization's learnings for private
-       repositories.
+       repositories. Default is `auto`.
    - **`issues`**: Configures issues settings.
      - **`scope`**: Specify the scope of git platform (GitHub/GitLab) issues to
        use for the knowledge base. `local` uses the repository's issues,
        `global` uses the organization's issues, and `auto` uses repository's
        issues for public repositories and organization's issues for private
-       repositories.
+       repositories. Default is `auto`.
    - **`jira`**: Configures Jira settings.
      - **`project_keys`**: A list of Jira project keys to use for the knowledge
        base. If not provided, all projects will be used.
