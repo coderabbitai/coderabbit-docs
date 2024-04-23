@@ -33,7 +33,7 @@ reviews:
   request_changes_workflow: false
   high_level_summary: true
   poem: true
-  review_status: true
+  review_status: false
   collapse_walkthrough: false
   auto_review:
     enabled: true
@@ -65,7 +65,8 @@ YAML settings:
      changes (default:`true`).
    - **`poem`**: Indicates whether a creative poem should be included in the
      review (default:`true`).
-   - **`review_status`**: Indicates the status of the review (default:`true`).
+   - **`review_status`**: Include a review status when a review is skipped in
+     certain cases. (default:`false`).
    - **`collapse_walkthrough`**: Collapses the walkthrough comment
      (default:`false`).
    - **`path_filters`**: Specifies file patterns to exclude or include for a
@@ -240,7 +241,7 @@ settings:
   # ISO Code for the review language.
   review_language: "en"
   # Disables review and other status comments.
-  disable_review_status: false
+  disable_review_status: true
   # Add walkthrough comment in a collapsible section.
   collapse_walkthrough_comment: true
   # Disable automatic code reviews for this repository.
@@ -270,10 +271,7 @@ This configuration file consists of the following settings:
     label reviews.
 11. **`disable_review`**: Totally disables automatic code reviews for the
     repository.
-12. **`disable_review_status`**: This is the comment posted for each incremental
-    review status. This removes the review status comment. Reviews will still
-    take place. However, optional comments added to the review status will not
-    be posted.
+12. **`disable_review_status`**: Disables review and other status comments.
 13. **`collapse_walkthrough_comment`**: Specifies whether to collapse
     walkthrough comments on the review.
 
