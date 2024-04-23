@@ -33,7 +33,7 @@ reviews:
   request_changes_workflow: false
   high_level_summary: true
   poem: true
-  review_status: false
+  review_status: true
   collapse_walkthrough: false
   auto_review:
     enabled: true
@@ -66,7 +66,7 @@ YAML settings:
    - **`poem`**: Indicates whether a creative poem should be included in the
      review (default:`true`).
    - **`review_status`**: Include a review status when a review is skipped in
-     certain cases. (default:`false`).
+     certain cases. (default:`true`).
    - **`collapse_walkthrough`**: Collapses the walkthrough comment
      (default:`false`).
    - **`path_filters`**: Specifies file patterns to exclude or include for a
@@ -241,7 +241,7 @@ settings:
   # ISO Code for the review language.
   review_language: "en"
   # Disables review and other status comments.
-  disable_review_status: true
+  disable_review_status: false
   # Add walkthrough comment in a collapsible section.
   collapse_walkthrough_comment: true
   # Disable automatic code reviews for this repository.
