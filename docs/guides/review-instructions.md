@@ -255,11 +255,9 @@ my-awesome-project   # project root
 ```
 
 > Also, you need to add the `rules` and `utils` directories to the
-> `.coderabbit.yml` file under `tools.ast-grep` configuration.
-
-> The rules can also be inside a package. If you have a package that contains
-> rules, you can add the package name to the `packages` field in the
-> `.coderabbit.yml` file.
+> `.coderabbit.yml` file under `tools.ast-grep` configuration. The rules can
+> also be inside a package. If you have a package that contains rules, you can
+> add the package name to the `packages` field in the `.coderabbit.yml` file.
 
 ```yaml
 #...
@@ -329,28 +327,28 @@ reviews:
 
 #### Using custom package
 
-Let's say that you have a public repository that contains ast-grep rules. You
+Let's say that you have a public repository that contains `ast-grep` rules. You
 can add the package name to the `packages` field in the `.coderabbit.yml` file.
 
 Requirements for a package:
 
-- should be a public repository
-- contains rules that follow the ast-grep rule format
-- has the following folder structure:
+- It should be a public repository
+- It contains rules that follow the `ast-grep` rule format
+- It has the following folder structure:
 
-```text
-my-awesome-project   # project root
-  |- rules           # rule directory
-  | |- my-rule.yml
-  |- utils           # utils directory
-  | |- is-literal.yml
-```
+  ```text
+  my-awesome-project   # project root
+    |- rules           # rule directory
+    | |- my-rule.yml
+    |- utils           # utils directory
+    | |- is-literal.yml
+  ```
 
-**rules** and **utils** directories are keywords, and it should be the same.
-Inside each directory, the structure is up to you. You can also have any other
-root directories or files beside the two shown above.
+  `rules` and `utils` directories are keywords, and it should be the same.
+  Inside each directory, the structure is up to you. You can also have any other
+  root directories or files beside the two shown above.
 
-- package name should be in the format `organization/repository`
+- Name should be in the format `organization/repository`
 
 ```yaml
 #...
@@ -382,7 +380,7 @@ Below are examples of `ast-grep` rules in different languages:
 
 #### JavaScript
 
-**Importing files without an extension is not allowed**
+##### Importing files without an extension is not allowed
 
 ```yaml
 id: find-import-file
@@ -403,7 +401,7 @@ rule:
           regex: "^import$"
 ```
 
-**No console.log allowed except `console.error` on the catch block**
+##### No console.log allowed except `console.error` on the catch block
 
 ```yaml
 id: no-console-except-error
