@@ -74,8 +74,8 @@ YAML settings:
 
      ```yaml
      path_filters:
-       - !**/*.xml
-       - !**/generated/**
+       - "!**/*.xml"
+       - "!**/generated/**"
      ```
 
    - **`path_instructions`**: Provides specific additional guidelines for code
