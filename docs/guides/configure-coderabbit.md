@@ -111,8 +111,8 @@ YAML settings:
 
      ```yaml
      base_branches:
-       - "develop"
-       - "feat/.*"
+       - develop
+       - feat/.*
      ```
 
    - **`tools`**: Configures external tools integration settings.
