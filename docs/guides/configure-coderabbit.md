@@ -73,9 +73,10 @@ YAML settings:
      review, such as `!dist/**` and `src/**.tsx`, using glob notation. Example:
 
      ```yaml
-     path_filters:
-       - "!**/*.xml"
-       - "!**/generated/**"
+     reviews:
+       path_filters:
+         - "!**/*.xml"
+         - "!**/generated/**"
      ```
 
    - **`path_instructions`**: Provides specific additional guidelines for code
@@ -84,16 +85,17 @@ YAML settings:
      accepts glob pattern. Example:
 
      ```yaml
-     path_instructions:
-       - path: "**/*.js"
-         instructions:
-           "Review the JavaScript code for conformity with the Google JavaScript
-           style guide, highlighting any deviations."
-       - path: "tests/**/*"
-         instructions:
-           "Assess the unit test code employing the Mocha testing framework.
-           Test descriptions must be sufficiently detailed to clarify the
-           purpose of each test."
+     reviews:
+       path_instructions:
+         - path: "**/*.js"
+           instructions:
+             "Review the JavaScript code for conformity with the Google
+             JavaScript style guide, highlighting any deviations."
+         - path: "tests/**/*"
+           instructions:
+             "Assess the unit test code employing the Mocha testing framework.
+             Test descriptions must be sufficiently detailed to clarify the
+             purpose of each test."
      ```
 
    - **`auto_review`**: Manages settings for automated code reviews.
@@ -110,9 +112,11 @@ YAML settings:
        trigger, apart from the default branch. Accepts regex pattern. Example:
 
      ```yaml
-     base_branches:
-       - develop
-       - feat/.*
+     reviews:
+       auto_review:
+         base_branches:
+           - develop
+           - feat/.*
      ```
 
    - **`tools`**: Configures external tools integration settings.
@@ -154,30 +158,32 @@ YAML settings:
          specified with `enabled_rules` or `enabled_categories` are enabled.
 
        ```yaml
-       ast-grep:
-         rule_dirs:
-           - "rules"
-         util_dirs:
-           - "utils"
-         essential_rules: true
-         packages:
-           - "my-awesome-org/my-awesome-package" # public GitHub repository that contains ast-grep rules
-       github-checks:
-         enabled: true
-         timeout_ms: 90000
-       markdownlint:
-         enabled: true
-       ruff:
-         enabled: true
-       shellcheck:
-         enabled: true
-       languagetool:
-         enabled: true
-         enabled_only: false
-         level: default
-         enabled_categories:
-           - "TON_ACADEMIC"
-           - "CASING"
+       reviews:
+         tools:
+           ast-grep:
+             rule_dirs:
+               - "rules"
+             util_dirs:
+               - "utils"
+             essential_rules: true
+             packages:
+               - "my-awesome-org/my-awesome-package" # public GitHub repository that contains ast-grep rules
+           github-checks:
+             enabled: true
+             timeout_ms: 90000
+           markdownlint:
+             enabled: true
+           ruff:
+             enabled: true
+           shellcheck:
+             enabled: true
+           languagetool:
+             enabled: true
+             enabled_only: false
+             level: default
+             enabled_categories:
+               - "TON_ACADEMIC"
+               - "CASING"
        ```
 
 5. **`knowledge_base`**: Configures knowledge base settings.
