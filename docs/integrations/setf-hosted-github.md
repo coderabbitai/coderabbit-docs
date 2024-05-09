@@ -39,7 +39,7 @@ This page guides you through the process of integrating your CodeRabbit with you
     - Client Secret
     - Webhook Secret
 
-3. Prepare `.env` file with the following information:
+3. Prepare a `.env` file with the following information:
 
     ```bash
     OPENAI_API_KEYS=<openai-key>
@@ -58,7 +58,7 @@ This page guides you through the process of integrating your CodeRabbit with you
 
     > Note: For the `GITHUB_APP_PEM_FILE`, you need to flatten the PEM file by replacing newlines with `\n`.
 
-4. Pull the CodeRabbit Docker image. The CodeRabbit Docker image is not available for public use. Please contact us at <contact@coderabbit.ai> for access.
+4. Pull the CodeRabbit Docker image. The CodeRabbit Docker image is not available for public use. Please contact us at [contact@coderabbit.ai](mailto:contact@coderabbit.ai) for access.
 
 5. Host the image on a server, serverless function, or a container environment and expose the port `8080`.
 
