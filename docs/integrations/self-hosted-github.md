@@ -60,6 +60,13 @@ This page guides you through the process of integrating your CodeRabbit with you
 
 4. Pull the CodeRabbit Docker image. The CodeRabbit Docker image is not available for public use. Please contact us at [contact@coderabbit.ai](mailto:contact@coderabbit.ai) for access.
 
+    ```bash
+    cat coderabbit.json | docker login -u _json_key --password-stdin https://gcr.io
+    docker pull gcr.io/coderabbitprod/coderabbit-agent:latest
+    ```
+
+    > Note: The `coderabbit.json` file is a service account key file that will be shared with you.
+
 5. Host the image on a server, serverless function, or a container environment and expose the port `8080`.
 
-6. Install the GitHub App on your GitHub organization or user account and point the Webhook URL to the hosted CodeRabbit instance, for example, `127.0.0.1:8080/github_webhooks`. GitHub will send events to the CodeRabbit instance.
+6. Install the GitHub App on your GitHub organization or user account and point the Webhook URL to the hosted CodeRabbit instance, for example, `http://127.0.0.1:8080/github_webhooks`. GitHub will send events to the CodeRabbit instance.
