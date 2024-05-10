@@ -48,6 +48,14 @@ written in Rust and uses the tree-sitter parser to generate the AST for popular
 languages. `ast-grep` is written and maintained by
 [Herrington Darkholme](https://twitter.com/hd_nvim).
 
+:::tip
+
+`ast-grep` Playground is quite effective in designing and testing AST rules on
+source code snippets. You can access the playground
+[here](https://ast-grep.github.io/playground.html).
+
+:::
+
 :::note
 
 **Deep dive into AST patterns and `ast-grep` rules**
