@@ -62,7 +62,10 @@ YAML settings:
    - **`request_changes_workflow`**: Enable request changes review workflow for
      CodeRabbit reviews. (default: `false`).
    - **`high_level_summary`**: CodeRabbit generates a high-level summary of the
-     changes (default:`true`).
+     changes in the PR/MR description. (default:`true`).
+   - **`high_level_summary_placeholder`**: Placeholder in the PR/MR description
+     that gets replaced with the high-level summary.
+     (default:`@coderabbitai summary`).
    - **`poem`**: Indicates whether a creative poem should be included in the
      review (default:`true`).
    - **`review_status`**: Include a review status when a review is skipped in
