@@ -37,9 +37,6 @@ reviews:
   collapse_walkthrough: false
   auto_review:
     enabled: true
-    ignore_title_keywords:
-      - "WIP"
-      - "DO NOT MERGE"
     drafts: false
 chat:
   auto_reply: true
