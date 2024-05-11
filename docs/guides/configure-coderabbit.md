@@ -102,8 +102,7 @@ YAML settings:
 
      - **`enabled`**: Automated code review (default: `true`).
      - **`ignore_title_keywords`**: Review will be ignored if a pull request
-       title contains one of the list of keywords (case-insensitive). Example:
-       `"WIP"`, `"DO NOT MERGE"`.
+       title contains one of the list of keywords (case-insensitive).
      - **`labels`**: Review will be triggered if a pull request matches one of
        the list of labels (case-insensitive).
      - **`drafts`**: Determines whether draft pull requests are reviewed
