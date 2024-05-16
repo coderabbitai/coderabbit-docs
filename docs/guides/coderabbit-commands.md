@@ -12,7 +12,7 @@ for each pull request, it will review all incremental commits. However, this
 behavior can be overridden using the following commands:
 
 - **Pause Reviews**:
-  - Use `@coderabbitai pause` in a PR comment to halt ongoing reviews.
+  - Use `@coderabbitai pause` in a PR comment to pause the review of incremental commits.
 - **Resume Reviews**:
   - Enter `@coderabbitai resume` in a PR comment to continue paused reviews.
 - **On-Demand Reviews**:
