@@ -50,7 +50,9 @@ YAML settings:
    'You must use talk like Mr. T. I pity the fool who doesn't!'
 3. **`early_access`**: Enroll in the early access program to take advantage of
    forthcoming features before their general release (default:`false`).
-4. **`reviews`**: Configures review settings.
+4. **`enable_free_tier`**: Enable the free tier features for users who are not
+   subscribed to a paid plan (default:`true`).
+5. **`reviews`**: Configures review settings.
 
    - **`profile`**: Select the reviewer profile between `assertive` and `chill`.
      The `assertive` profile posts more comments and nitpicks the code more
@@ -185,7 +187,7 @@ YAML settings:
                - "CASING"
        ```
 
-5. **`knowledge_base`**: Configures knowledge base settings.
+6. **`knowledge_base`**: Configures knowledge base settings.
 
    - **`learnings`**: Configures learnings settings.
      - **`scope`**: Specify the scope of learnings to use for the knowledge
@@ -206,7 +208,7 @@ YAML settings:
      - **`team_keys`**: A list of Linear team keys to use for the knowledge
        base. If not provided, all teams will be used.
 
-6. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
+7. **`chat`**: Defines the behavior of CodeRabbit's bot in conversations.
    - **`auto_reply`**: The bot automatically replies without the need of the
      user tagging it (default: `true`).
 
