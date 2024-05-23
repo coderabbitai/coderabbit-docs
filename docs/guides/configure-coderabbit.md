@@ -144,8 +144,11 @@ YAML settings:
        - **`enabled`**: Enable integration, defaults to true.
      - **`shellcheck`**: Configuration for `shellcheck` integration.
        - **`enabled`**: Enable integration, defaults to true.
+     - **`biome`**: Configuration for `biome` integration.
+       - **`enabled`**: Enable integration, defaults to true.
+     - **`hadolint`**: Configuration for `hadolint` integration.
+       - **`enabled`**: Enable integration, defaults to true.
      - **`languagetool`**: Configuration for `languagetool` integration.
-
        - **`enabled`**: Enable integration, defaults to true.
        - **`level`**: The level of the rule. It can be one `default` or `picky`.
          If set to `picky`, additional rules will be activated, i.e. rules that
@@ -177,6 +180,10 @@ YAML settings:
            ruff:
              enabled: true
            shellcheck:
+             enabled: true
+           biome:
+             enabled: true
+           hadolint:
              enabled: true
            languagetool:
              enabled: true
