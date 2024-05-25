@@ -100,9 +100,11 @@ YAML settings:
              purpose of each test."
      ```
 
-   - **`auto_review`**: Manages settings for automated code reviews.
+   - **`auto_review`**: Manages settings for automatic code reviews.
 
-     - **`enabled`**: Automated code review (default: `true`).
+     - **`enabled`**: Automatic code review (default: `true`).
+     - **`auto_incremental_review`**: Automatic incremental code review(s) on
+       each push (default: `true`).
      - **`ignore_title_keywords`**: Review will be ignored if a pull request
        title contains one of the list of keywords (case-insensitive).
      - **`labels`**: Review will be triggered if a pull request matches one of
