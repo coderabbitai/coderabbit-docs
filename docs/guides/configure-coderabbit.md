@@ -59,20 +59,19 @@ YAML settings:
    - **`profile`**: Select the reviewer profile between `assertive` and `chill`.
      The `assertive` profile posts more comments and nitpicks the code more
      aggressively, while the `chill` profile is more relaxed and posts fewer
-     comments. (default: `chill`).
+     comments (default: `chill`).
    - **`request_changes_workflow`**: Enable request changes review workflow for
-     CodeRabbit reviews. (default: `false`).
+     CodeRabbit reviews (default: `false`).
    - **`high_level_summary`**: CodeRabbit generates a high-level summary of the
-     changes in the PR/MR description. (default:`true`).
+     changes in the PR/MR description (default:`true`).
    - **`high_level_summary_placeholder`**: Placeholder in the PR/MR description
-     that gets replaced with the high-level summary.
-     (default:`@coderabbitai summary`).
+     that gets replaced with the high-level summary (default:`@coderabbitai summary`).
+   - **`auto_title_placeholder`**: Placeholder in the PR/MR title that gets replaced with an auto-generated title (default:`@coderabbitai title`).
    - **`poem`**: Indicates whether a creative poem should be included in the
      review (default:`true`).
    - **`review_status`**: Include a review status when a review is skipped in
-     certain cases. (default:`true`).
-   - **`collapse_walkthrough`**: Collapses the walkthrough comment
-     (default:`false`).
+     certain cases (default:`true`).
+   - **`collapse_walkthrough`**: Collapses the walkthrough comment (default:`false`).
    - **`path_filters`**: Specifies file patterns to exclude or include for a
      review, such as `!dist/**` and `src/**.tsx`, using glob notation. Example:
 
