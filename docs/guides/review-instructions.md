@@ -49,7 +49,11 @@ reviews:
 
 :::note
 
-This feature is only for advanced users as there is a learning curve involved.
+The additional context provided by this feature is only available during the
+automated code review process, and it's not available in the chat.
+
+Moreover, this feature is only recommended for advanced users as there is a
+learning curve involved.
 
 :::
 
