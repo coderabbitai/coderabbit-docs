@@ -163,12 +163,12 @@ const config: Config = {
       appId: "4MKM4DJT5D",
 
       // Public API key: it is safe to commit it
-      apiKey: "5573f324708f03a3bed6c15115e87941",
+      apiKey: "b1d63b99cbda8ec3668777e644ecefa2",
 
       indexName: "coderabbit",
 
       // Optional: see doc section below
-      contextualSearch: true,
+      contextualSearch: false,
 
       // Optional: Algolia search parameters
       searchParameters: {},
