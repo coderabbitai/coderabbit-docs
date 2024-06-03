@@ -21,6 +21,11 @@ const sidebars: SidebarsConfig = {
       label: "Blog",
       href: "https://blog.coderabbit.ai/blog",
     },
+    {
+      type: "link",
+      label: "Discord",
+      href: "https://discord.gg/GsXnASn26c",
+    },
   ],
 };
 

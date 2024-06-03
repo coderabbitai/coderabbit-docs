@@ -144,15 +144,7 @@ const config: Config = {
         src: "img/coderabbit_nav_logo.svg",
         href: "https://coderabbit.ai",
       },
-      items: [
-        {
-          href: "https://discord.gg/GsXnASn26c",
-          className: "header-discord-link",
-          "aria-label": "Discord",
-          position: "right",
-          label: "Discord",
-        },
-      ],
+      items: [],
     },
     prism: {
       theme: prismThemes.github,
