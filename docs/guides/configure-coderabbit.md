@@ -151,8 +151,14 @@ YAML settings:
        - **`enabled`**: Enable integration, defaults to true.
      - **`hadolint`**: Configuration for `hadolint` integration.
        - **`enabled`**: Enable integration, defaults to true.
+     - **`golangci-lint`**: Configuration for `golangci-lint` integration.
+       - **`enabled`**: Enable integration, defaults to true.
+     - **`swiftlint`**: Configuration for `swiftlint` integration.
+       - **`enabled`**: Enable integration, defaults to true.
+     - **`phpstan`**: Configuration for `phpstan` integration.
+       - **`enabled`**: Enable integration, defaults to true.
+       - **`level`**: The [rule level](https://phpstan.org/user-guide/rule-levels) to run. Default is "1".
      - **`languagetool`**: Configuration for `languagetool` integration.
-
        - **`enabled`**: Enable integration, defaults to true.
        - **`level`**: The level of the rule. It can be one `default` or `picky`.
          If set to `picky`, additional rules will be activated, i.e. rules that
@@ -189,6 +195,13 @@ YAML settings:
              enabled: true
            hadolint:
              enabled: true
+           golangci-lint:
+             enabled: true
+           swiftlint:
+             enabled: true
+           phpstan:
+             enabled: true
+             level: "1"
            languagetool:
              enabled: true
              enabled_only: false
