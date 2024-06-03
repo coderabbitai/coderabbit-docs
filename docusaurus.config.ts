@@ -163,7 +163,7 @@ const config: Config = {
       appId: "4MKM4DJT5D",
 
       // Public API key: it is safe to commit it
-      apiKey: "506abdefe85f2dc642b70e28b5026d77",
+      apiKey: "5573f324708f03a3bed6c15115e87941",
 
       indexName: "coderabbit",
 
