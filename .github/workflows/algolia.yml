@@ -1,0 +1,25 @@
+# generate a workflow that triggers in push to main
+name: Algolia Re-crawler
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  algolia_recrawl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep for 120s
+        run: sleep 120
+      - name: Algolia crawler creation and crawl
+        uses: algolia/algoliasearch-crawler-github-actions@v1.0.10
+        id: algolia_crawler
+        with: # mandatory parameters
+          crawler-user-id: ${{ secrets.CRAWLER_USER_ID }}
+          crawler-api-key: ${{ secrets.CRAWLER_API_KEY }}
+          algolia-app-id: ${{ secrets.ALGOLIA_APP_ID }}
+          algolia-api-key: ${{ secrets.ALGOLIA_API_KEY }}
+          crawler-name: coderabbit
+          site-url: "https://docs.coderabbit.ai"
