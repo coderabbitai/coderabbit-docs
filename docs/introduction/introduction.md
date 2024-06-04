@@ -49,7 +49,7 @@ to assess the impact of code changes on existing issues.
 
 Compliance and Data Privacy: Your data is kept confidential, isolated by the
 organization, and used only to improve your organization reviews. Data storage
-complies with SOC2 Type II, GDPR, and HIPAA standards.
+complies with SOC2 Type II and GDPR standards.
 
 Opting Out: You can choose to opt out of data storage at any time. Opting out
 won't affect your access but will limit the personalization of the reviews.
