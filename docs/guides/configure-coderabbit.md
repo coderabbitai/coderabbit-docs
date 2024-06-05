@@ -155,6 +155,7 @@ YAML settings:
        - **`enabled`**: Enable integration, defaults to true.
      - **`swiftlint`**: Configuration for `swiftlint` integration.
        - **`enabled`**: Enable integration, defaults to true.
+       - **`config_file`**: Path to the `swiftlint` configuration file relative to the repository. This is useful when the configuration file is named differently than the default `.swiftlint.yml` or `.swiftlint.yaml`.
      - **`phpstan`**: Configuration for `phpstan` integration.
        - **`enabled`**: Enable integration, defaults to true.
        - **`level`**: The [rule level](https://phpstan.org/user-guide/rule-levels) to run. Default is "1".
@@ -199,6 +200,7 @@ YAML settings:
              enabled: true
            swiftlint:
              enabled: true
+             config_file: ".custom-swiftlint.yaml"
            phpstan:
              enabled: true
              level: "1"
