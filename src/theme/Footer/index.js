@@ -83,7 +83,7 @@ function CustomFooter(props) {
         <div className="bg-neutral-700 shrink-0 h-px mt-6 max-md:max-w-full" />
         <div className="justify-between flex w-full gap-5 mt-7 items-start max-md:max-w-full max-md:flex-wrap">
           <div className="text-sm font-medium font-satoshi text-customWhite">
-            CodeRabbit © 2023.
+            CodeRabbit © {new Date().getFullYear()}
           </div>
           <div className="justify-end items-stretch self-stretch flex gap-4 pl-20 max-md:max-w-full max-md:flex-wrap max-md:pl-5">
             <a

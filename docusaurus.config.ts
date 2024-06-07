@@ -35,23 +35,23 @@ const config: Config = {
   },
 
   plugins: [
-    [
-      "./plugins/blog-plugin",
-      {
-        id: "blog",
-        routeBasePath: "blog",
-        path: "./blog",
-        blogTitle: "CodeRabbit Blog",
-        blogDescription: "Blog",
-        tagsBasePath: "/tags",
-        editLocalizedFiles: false,
-        showReadingTime: true,
-        blogSidebarCount: "ALL",
-        blogSidebarTitle: "All our posts",
-        blogListComponent: "@theme/BlogListPage",
-        blogPostComponent: "@theme/BlogPostPage",
-      },
-    ],
+    //[
+    //  "./plugins/blog-plugin",
+    //  {
+    //    id: "blog",
+    //    routeBasePath: "blog",
+    //    path: "./blog",
+    //    blogTitle: "CodeRabbit Blog",
+    //    blogDescription: "Blog",
+    //    tagsBasePath: "/tags",
+    //    editLocalizedFiles: false,
+    //    showReadingTime: true,
+    //    blogSidebarCount: "ALL",
+    //    blogSidebarTitle: "All our posts",
+    //    blogListComponent: "@theme/BlogListPage",
+    //    blogPostComponent: "@theme/BlogPostPage",
+    //  },
+    //],
     [
       "@docusaurus/plugin-client-redirects",
       {
@@ -135,21 +135,7 @@ const config: Config = {
         hideable: true,
       },
     },
-    metadata: [
-      { name: "keywords", content: "ai, blog" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-    headTags: [
-      // Declare a <link> preconnect tag
-      {
-        tagName: "link",
-        attributes: {
-          rel: "preconnect",
-          href: "https://coderabbit.ai/blog/coderabbit-deep-dive",
-        },
-      },
-      // Declare some json-ld structured data
-    ],
+    metadata: [{ name: "twitter:card", content: "summary_large_image" }],
     navbar: {
       title: "",
       hideOnScroll: true,
@@ -158,19 +144,32 @@ const config: Config = {
         src: "img/coderabbit_nav_logo.svg",
         href: "https://coderabbit.ai",
       },
-      items: [
-        {
-          href: "https://discord.gg/GsXnASn26c",
-          className: "header-discord-link",
-          "aria-label": "Discord",
-          position: "right",
-          label: "Discord",
-        },
-      ],
+      items: [],
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    algolia: {
+      // The application ID provided by Algolia
+      appId: "4MKM4DJT5D",
+
+      // Public API key: it is safe to commit it
+      apiKey: "b1d63b99cbda8ec3668777e644ecefa2",
+
+      indexName: "coderabbit",
+
+      // Optional: see doc section below
+      contextualSearch: false,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: "search",
+
+      // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
+      insights: false,
     },
   } satisfies Preset.ThemeConfig,
 };

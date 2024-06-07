@@ -40,13 +40,12 @@ influence the models. Queries to the Large Language Models (LLMs) are ephemeral
 and there is zero retention on LLMs. Neither we nor the LLMs provider(s) share
 any data collected during the code review process with third parties.
 
-Data storage: Code downloaded during the review process is stored temporarily
-and is deleted after the review processing is complete. The code is not stored
-or used for any other purpose. However, CodeRabbit enhances future reviews for
-your organization by storing the embeddings of the learnings generated from chat
-conversations. Additionally, it integrates embeddings from issues in workflow
-systems (Liner, Jira, GitHub/GitLab issues) to assess the impact of code changes
-on existing issues
+Data storage: Code downloaded during the review process is temporarily stored in 
+memory and deleted once the review is completed. The code is not stored or used for 
+any other purpose. However, CodeRabbit enhances future reviews for your organization by 
+storing the embeddings of the learnings generated from chat conversations. Additionally, 
+it integrates embeddings from issues in workflow systems (Liner, Jira, GitHub/GitLab issues) 
+to assess the impact of code changes on existing issues.
 
 Compliance and Data Privacy: Your data is kept confidential, isolated by the
 organization, and used only to improve your organization reviews. Data storage

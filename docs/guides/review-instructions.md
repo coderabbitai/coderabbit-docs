@@ -8,6 +8,9 @@ description:
 sidebar_position: 3
 ---
 
+The guide explains how to add custom review instructions for the entire project.
+Also, see the guide on how to [configure CodeRabbit](./configure-coderabbit.md).
+
 ### Path-based instructions {#path-based}
 
 This section explains how to add custom code review instructions for the entire
@@ -19,18 +22,6 @@ style guide by file types or directories.
 
 ### Sample Usage
 
-- **`path`**: `**/*.js`
-
-  **`instructions`**: Review the JavaScript code against the Google JavaScript
-  style guide and point out any mismatches
-
-- **`path`**: `tests/**.*`
-
-  **`instructions`**: Review the following unit test code written using the
-  Mocha test library. Ensure that: The code adheres to best practices associated
-  with Mocha. Descriptive test names are used to clearly convey the intent of
-  each test.
-
 :::note
 
 Paths accept glob patterns. See the
@@ -39,7 +30,32 @@ information.
 
 :::
 
+```yaml
+#...
+reviews:
+  #...
+  path_instructions:
+    - path: "**/*.js"
+      instructions: |
+        Review the JavaScript code against the Google JavaScript style guide and point out any mismatches
+    - path: "tests/**.*"
+      instructions: |
+        Review the following unit test code written using the Mocha test library. Ensure that:
+        - The code adheres to best practices associated with Mocha.
+        - Descriptive test names are used to clearly convey the intent of each test.
+```
+
 ## Abstract Syntax Tree (AST) based instructions {#ast-based}
+
+:::note
+
+The additional context provided by this feature is only available during the
+automated code review process, and it's not available in the chat.
+
+Moreover, this feature is only recommended for advanced users as there is a
+learning curve involved.
+
+:::
 
 CodeRabbit offers review instructions based on Abstract Syntax Tree (AST)
 patterns. Under the hood, CodeRabbit uses
