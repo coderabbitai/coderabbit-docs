@@ -22,32 +22,57 @@ select Self-Hosted GitLab
 
 On this page, enter the URL of your self-managed GitLab instance and click
 submit. Once, you submit, we check our database for a record of your
-organization.
+organization and if we find an existing one, we are starting the login process.
 
-![Untitled](./images/enter-url.png)
+![Untitled](./images/self-hosted-gitlab-host-url.png)
 
-### **Step 3: Enter Admin Personal Access Token (First time only)**
+If the self-managed GitLab instance is not found, we initiate the onboarding process, which can be either manual or automated.
 
-If this is the first time you are signing up with your instance, we need an
-admin access token for setting up the CodeRabbit.
+### **Step 3: Onboarding Manual or Automated**
+
+#### 1. Automated onboarding
+![Untitled](./images/automated-onboarding.png)
 
 #### **Why do we need the Admin Access Token?**
 
 Admin access token is required to set up a new CodeRabbit bot user within your
 self-managed instance. The token is needed only once during the initial setup
-process and is not stored in our database. Once the token is generated, you can
-set its minimum expiration period. This is the standard approach used by other
-products in this category. This is not automatically installing the CodeRabbit
+process. Once the token is generated, you can set its minimum expiration period.
+This is the standard approach used by other products in this category. 
+This is not automatically installing the CodeRabbit
 app across all projects. You will add CodeRabbit manually on the projects you
 wish, as the next step.
 
-#### **Generating Admin Personal Access token**
+#### 2. Manual onboarding
+
+For the manual onboarding process we need to create the [CodeRabbit user](#creating-coderabbit-user) and the [OAuth2 GitLab application](#creating-oauth2-application).
+![Untitled](./images/manual-onboarding.png)
+
+#### **Creating CodeRabbit user**
+This feature will work with any user from your organization, but we strongly suggest creating a
+dedicated user called **CodeRabbitAI**. This ensures clarify about which user is used for our
+application and allows for better fine-grained access control.
+
+To create users in GitLab, log in with an instance admin account and follow the steps provided in the [GitLab documentation](https://docs.gitlab.com/ee/user/profile/account/create_accounts.html#create-users-in-admin-area).
+After the user is created, you can retrieve the **User ID** from that user's profile and generate an [**access token**](#generating-personal-access-token).
+The access token is used to post reviews on merge requests.
+
+#### **Creating OAuth2 application**
+For self-managed GitLab, we recommend creating an instance-wide application unless you want the reviews to be limited to a single group or user.
+
+Please follow the steps outlined in the [GitLab documentation](https://docs.gitlab.com/ee/integration/oauth_provider.html#create-an-instance-wide-application) for creating the application.
+
+Requirements:
+1. Scopes: `api read_user email`
+2. Callback URL: `https://app.coderabbit.ai/login`
+
+#### **Generating Personal Access token**
 
 GitLab offers an option to generate a personal access token for adding a new
 user and setting up the application in the self-managed instance. To generate
 the token, please follow the process outlined below:
 
-1. Login to your self-hosted instance. Ensure sure you have admin rights.
+1. Login to your self-hosted instance. For [automated onboarding](#1-automated-onboarding) ensure you have admin rights.
 2. On the left sidebar, select your avatar.
 3. Select Edit profile.
 4. On the left sidebar, select Access Tokens.
@@ -56,15 +81,15 @@ the token, please follow the process outlined below:
    setup, so the minimum expiry time is sufficient.
 7. If you do not enter an expiry date, the expiry date is automatically set to
    365 days later than the current date.
-8. Make sure, you select the scope: `api`
+8. Make sure, you select the scopes: `api user email`
 9. Select Create personal access token.
 10. Please note down this token as this will be visible one time only
 
 ![Untitled](./images/admin-access-token.png)
 
-### **Step 4: Paste the token and click submit**
+### **Step 4: Paste the details and click submit**
 
-- Submit the access token.
+- Submit the form.
 - We will handle the setup process for you.
 - On subsequent visits, your setup will be automatically detected, allowing for
   direct login. ![Untitled](./images/self-hosted-page.png)
