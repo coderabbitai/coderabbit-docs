@@ -65,13 +65,16 @@ YAML settings:
    - **`high_level_summary`**: CodeRabbit generates a high-level summary of the
      changes in the PR/MR description (default:`true`).
    - **`high_level_summary_placeholder`**: Placeholder in the PR/MR description
-     that gets replaced with the high-level summary (default:`@coderabbitai summary`).
-   - **`auto_title_placeholder`**: Placeholder in the PR/MR title that gets replaced with an auto-generated title (default:`@coderabbitai title`).
+     that gets replaced with the high-level summary
+     (default:`@coderabbitai summary`).
+   - **`auto_title_placeholder`**: Add this keyword in the PR/MR title to
+     auto-generate the title. (default:`@coderabbitai`).
    - **`poem`**: Indicates whether a creative poem should be included in the
      review (default:`true`).
    - **`review_status`**: Include a review status when a review is skipped in
      certain cases (default:`true`).
-   - **`collapse_walkthrough`**: Collapses the walkthrough comment (default:`false`).
+   - **`collapse_walkthrough`**: Collapses the walkthrough comment
+     (default:`false`).
    - **`path_filters`**: Specifies file patterns to exclude or include for a
      review, such as `!dist/**` and `src/**.tsx`, using glob notation. Example:
 
@@ -155,11 +158,16 @@ YAML settings:
        - **`enabled`**: Enable integration, defaults to true.
      - **`swiftlint`**: Configuration for `swiftlint` integration.
        - **`enabled`**: Enable integration, defaults to true.
-       - **`config_file`**: Path to the `swiftlint` configuration file relative to the repository. This is useful when the configuration file is named differently than the default `.swiftlint.yml` or `.swiftlint.yaml`.
+       - **`config_file`**: Path to the `swiftlint` configuration file relative
+         to the repository. This is useful when the configuration file is named
+         differently than the default `.swiftlint.yml` or `.swiftlint.yaml`.
      - **`phpstan`**: Configuration for `phpstan` integration.
        - **`enabled`**: Enable integration, defaults to true.
-       - **`level`**: The [rule level](https://phpstan.org/user-guide/rule-levels) to run. Default is "1".
+       - **`level`**: The
+         [rule level](https://phpstan.org/user-guide/rule-levels) to run.
+         Default is "1".
      - **`languagetool`**: Configuration for `languagetool` integration.
+
        - **`enabled`**: Enable integration, defaults to true.
        - **`level`**: The level of the rule. It can be one `default` or `picky`.
          If set to `picky`, additional rules will be activated, i.e. rules that
