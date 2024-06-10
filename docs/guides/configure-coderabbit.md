@@ -162,7 +162,9 @@ YAML settings:
          to the repository. This is useful when the configuration file is named
          differently than the default `.swiftlint.yml` or `.swiftlint.yaml`.
      - **`phpstan`**: Configuration for `phpstan` integration.
-       - **`enabled`**: Enable integration, defaults to true.
+       - **`enabled`**: Enable integration, defaults to true. PHPStan requires
+         [config file](https://phpstan.org/config-reference#config-file) in your
+         repository root.
        - **`level`**: The
          [rule level](https://phpstan.org/user-guide/rule-levels) to run.
          Default is "1".
