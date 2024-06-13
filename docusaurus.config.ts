@@ -111,6 +111,8 @@ const config: Config = {
     ],
   ],
 
+  themes: ["docusaurus-json-schema-plugin"],
+
   scripts: [
     "https://buttons.github.io/buttons.js",
     "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
@@ -167,9 +169,6 @@ const config: Config = {
 
       // Optional: path for search page that enabled by default (`false` to disable it)
       searchPagePath: "search",
-
-      // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
-      insights: false,
     },
   } satisfies Preset.ThemeConfig,
 };

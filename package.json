@@ -23,6 +23,7 @@
         "autoprefixer": "^10.4.16",
         "clsx": "^2.0.0",
         "disqus-react": "^1.1.5",
+        "docusaurus-json-schema-plugin": "^1.12.1",
         "postcss": "^8.4.32",
         "prism-react-renderer": "^2.3.0",
         "react": "^18.0.0",
