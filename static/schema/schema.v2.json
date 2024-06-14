@@ -1,0 +1,584 @@
+{
+  "$ref": "#/definitions/schema",
+  "definitions": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "language": {
+          "type": "string",
+          "enum": [
+            "de",
+            "de-DE",
+            "de-AT",
+            "de-CH",
+            "en",
+            "en-US",
+            "en-AU",
+            "en-GB",
+            "en-CA",
+            "en-NZ",
+            "en-ZA",
+            "es",
+            "es-AR",
+            "fr",
+            "fr-CA",
+            "fr-CH",
+            "fr-BE",
+            "nl",
+            "nl-BE",
+            "pt-AO",
+            "pt",
+            "pt-BR",
+            "pt-MZ",
+            "pt-PT",
+            "ar",
+            "ast-ES",
+            "ast",
+            "be-BY",
+            "be",
+            "br-FR",
+            "br",
+            "ca-ES",
+            "ca",
+            "ca-ES-valencia",
+            "ca-ES-balear",
+            "da-DK",
+            "da",
+            "de-DE-x-simple-language",
+            "el-GR",
+            "el",
+            "eo",
+            "fa",
+            "ga-IE",
+            "ga",
+            "gl-ES",
+            "gl",
+            "it",
+            "ja-JP",
+            "ja",
+            "km-KH",
+            "km",
+            "ko-KR",
+            "ko",
+            "pl-PL",
+            "pl",
+            "ro-RO",
+            "ro",
+            "ru-RU",
+            "ru",
+            "sk-SK",
+            "sk",
+            "sl-SI",
+            "sl",
+            "sv",
+            "ta-IN",
+            "ta",
+            "tl-PH",
+            "tl",
+            "tr",
+            "uk-UA",
+            "uk",
+            "zh-CN",
+            "zh",
+            "crh-UA",
+            "crh",
+            "nb",
+            "no",
+            "nl-NL",
+            "de-DE-x-simple-language-DE",
+            "es-ES",
+            "it-IT",
+            "fa-IR",
+            "sv-SE",
+            "de-LU",
+            "fr-FR"
+          ],
+          "default": "en-US",
+          "description": "Set the language for reviews by using the corresponding ISO language code."
+        },
+        "tone_instructions": {
+          "type": "string",
+          "maxLength": 250,
+          "default": "",
+          "description": "Set the tone of reviews and chat. Example: 'You must use talk like Mr. T. I pity the fool who doesn't!'"
+        },
+        "early_access": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable early-access features."
+        },
+        "enable_free_tier": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable free tier features for users not on a paid plan."
+        },
+        "reviews": {
+          "type": "object",
+          "properties": {
+            "profile": {
+              "type": "string",
+              "enum": ["chill", "assertive"],
+              "default": "chill",
+              "description": "Set the profile for reviews."
+            },
+            "request_changes_workflow": {
+              "type": "boolean",
+              "default": false,
+              "description": "Approve the review once CodeRabbit's comments are resolved. Note: In GitLab, all discussions must be resolved."
+            },
+            "high_level_summary": {
+              "type": "boolean",
+              "default": true,
+              "description": "Generate a high level summary of the changes in the PR/MR description."
+            },
+            "high_level_summary_placeholder": {
+              "type": "string",
+              "default": "@coderabbitai summary",
+              "description": "Placeholder in the PR/MR description that gets replaced with the high level summary."
+            },
+            "auto_title_placeholder": {
+              "type": "string",
+              "default": "@coderabbitai",
+              "description": "Add this keyword in the PR/MR title to auto-generate the title."
+            },
+            "poem": {
+              "type": "boolean",
+              "default": true,
+              "description": "Generate a poem in the walkthrough comment."
+            },
+            "review_status": {
+              "type": "boolean",
+              "default": true,
+              "description": "Post review details on each review. Additionally, post a review status when a review is skipped in certain cases."
+            },
+            "collapse_walkthrough": {
+              "type": "boolean",
+              "default": false,
+              "description": "Generate walkthrough in a markdown collapsible section."
+            },
+            "path_filters": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "default": [],
+              "description": "Specify file patterns to exclude or include for a review. Accepts glob patterns. Example: !dist/**, src/**"
+            },
+            "path_instructions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "description": "File path glob pattern. Example: **/*.js"
+                  },
+                  "instructions": {
+                    "type": "string",
+                    "maxLength": 3000,
+                    "description": "Provides specific additional guidelines for code review based on file paths."
+                  }
+                },
+                "required": ["path", "instructions"],
+                "additionalProperties": false
+              },
+              "default": [],
+              "description": "Path Instructions | Provide specific additional guidelines for code review based on file paths."
+            },
+            "abort_on_close": {
+              "type": "boolean",
+              "default": true,
+              "description": "Abort the in-progress review if the pull request is closed or merged."
+            },
+            "auto_review": {
+              "type": "object",
+              "properties": {
+                "enabled": {
+                  "type": "boolean",
+                  "default": true,
+                  "description": "Enable Automatic Review | Automatic code review"
+                },
+                "auto_incremental_review": {
+                  "type": "boolean",
+                  "default": true,
+                  "description": "Enable Automatic Incremental Review | Automatic incremental code review on each push"
+                },
+                "ignore_title_keywords": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": [],
+                  "description": "Ignore reviewing if the title of the pull request contains any of these keywords (case-insensitive)."
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": [],
+                  "description": "Restrict automatic reviews to only those pull requests that match one of the specified labels."
+                },
+                "drafts": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Review draft PRs/MRs."
+                },
+                "base_branches": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": [],
+                  "description": "Base branches (other than the default branch) to review. Accepts regex patterns."
+                }
+              },
+              "additionalProperties": false,
+              "default": {}
+            },
+            "tools": {
+              "type": "object",
+              "properties": {
+                "ast-grep": {
+                  "type": "object",
+                  "properties": {
+                    "rule_dirs": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "List of rules directories."
+                    },
+                    "util_dirs": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "List of utils directories."
+                    },
+                    "essential_rules": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Use ast-grep essentials package."
+                    },
+                    "packages": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "default": [],
+                      "description": "Predefined packages to be used."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "description": "ast-grep is a code analysis tool that helps you to find patterns in your codebase using abstract syntax trees patterns."
+                },
+                "shellcheck": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable ShellCheck | ShellCheck is a static analysis tool that finds bugs in your shell. | Enable shellcheck integration."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "default": {},
+                  "description": "Shellcheck is a static analysis tool that finds bugs in your shell scripts."
+                },
+                "ruff": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable ruff integration."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "default": {},
+                  "description": "Ruff is a Python linter and code formatter."
+                },
+                "markdownlint": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable Markdownlint\n\t\t\t\t| Markdownlint is a static analysis tool for Node.js with a library of rules to enforce standards and consistency for Markdown files.\n\t\t\t\t| Enable markdownlint integration."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "default": {},
+                  "description": "Markdownlint is a static analysis tool to enforce standards and consistency for Markdown files."
+                },
+                "github-checks": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable GitHub Checks\n\t\t\t| Enable integration, defaults to true\n\t\t\t| Enable GitHub Checks integration."
+                    },
+                    "timeout_ms": {
+                      "type": "number",
+                      "maximum": 300000,
+                      "minimum": 0,
+                      "default": 90000,
+                      "description": "Time in milliseconds to wait for all GitHub Checks to conclude."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "default": {},
+                  "description": "GitHub Checks integration configuration."
+                },
+                "languagetool": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable LanguageTool | Enable LanguageTool integration."
+                    },
+                    "enabled_rules": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "IDs of rules to be enabled. The rule won't run unless 'level' is set to a level that activates the rule."
+                    },
+                    "disabled_rules": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "default": ["EN_UNPAIRED_BRACKETS", "EN_UNPAIRED_QUOTES"],
+                      "description": "IDs of rules to be disabled."
+                    },
+                    "enabled_categories": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "IDs of categories to be enabled."
+                    },
+                    "disabled_categories": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "default": ["TYPOS", "TYPOGRAPHY", "CASING"],
+                      "description": "IDs of categories to be disabled."
+                    },
+                    "enabled_only": {
+                      "type": "boolean",
+                      "default": false,
+                      "description": "Only the rules and categories whose IDs are specified with 'enabledRules' or 'enabledCategories' are enabled."
+                    },
+                    "level": {
+                      "type": "string",
+                      "enum": ["default", "picky"],
+                      "default": "default",
+                      "description": "If set to 'picky', additional rules will be activated, i.e. rules that you might only find useful when checking formal text."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "default": {},
+                  "description": "LanguageTool is a style and grammar checker for 30+ languages."
+                },
+                "biome": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable Biome | Biome is a fast formatter, linter, and analyzer for web projects. | Enable Biome integration."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "default": {},
+                  "description": "Biome is a fast formatter, linter, and analyzer for web projects."
+                },
+                "hadolint": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable Hadolint | Hadolint is a Dockerfile linter. | Enable Hadolint integration."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "default": {},
+                  "description": "Hadolint is a Dockerfile linter."
+                },
+                "swiftlint": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable SwiftLint | SwiftLint is a Swift linter. | Enable SwiftLint integration."
+                    },
+                    "config_file": {
+                      "type": "string",
+                      "description": "Optional path to the SwiftLint configuration file relative to the repository. This is useful when the configuration file is named differently than the default '.swiftlint.yml' or '.swiftlint.yaml'."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "default": {},
+                  "description": "SwiftLint integration configuration object."
+                },
+                "phpstan": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root."
+                    },
+                    "level": {
+                      "type": "string",
+                      "enum": [
+                        "default",
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "max"
+                      ],
+                      "default": "default",
+                      "description": "Level | Specify the [rule level](https://phpstan.org/user-guide/rule-levels) to run."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "default": {},
+                  "description": "PHPStan is a tool to analyze PHP code."
+                },
+                "golangci-lint": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration."
+                    },
+                    "config_file": {
+                      "type": "string",
+                      "description": "Optional path to the golangci-lint configuration file relative to the repository. Useful when the configuration file is named differently than the default '.golangci.yml', '.golangci.yaml', '.golangci.toml', '.golangci.json'."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "default": {},
+                  "description": "golangci-lint is a fast linters runner for Go."
+                },
+                "gitleaks": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "default": {},
+                  "description": "Gitleaks is a secret scanner."
+                }
+              },
+              "additionalProperties": false,
+              "description": "Tools that provide additional context to code reviews.",
+              "default": {}
+            }
+          },
+          "additionalProperties": false,
+          "description": "Settings related to reviews.",
+          "default": {}
+        },
+        "chat": {
+          "type": "object",
+          "properties": {
+            "auto_reply": {
+              "type": "boolean",
+              "default": true,
+              "description": "Enable the bot to reply automatically without requiring the user to tag it."
+            }
+          },
+          "additionalProperties": false,
+          "default": {}
+        },
+        "knowledge_base": {
+          "type": "object",
+          "properties": {
+            "learnings": {
+              "type": "object",
+              "properties": {
+                "scope": {
+                  "type": "string",
+                  "enum": ["local", "global", "auto"],
+                  "default": "auto",
+                  "description": "Learnings | Specify the scope of learnings to use for the knowledge base. 'local' uses the repository's learnings, 'global' uses the organization's learnings, and 'auto' uses repository's learnings for public repositories and organization's learnings for private repositories."
+                }
+              },
+              "additionalProperties": false,
+              "default": {}
+            },
+            "issues": {
+              "type": "object",
+              "properties": {
+                "scope": {
+                  "type": "string",
+                  "enum": ["local", "global", "auto"],
+                  "default": "auto",
+                  "description": "Issues | Specify the scope of git platform (GitHub/GitLab) issues to use for the knowledge base. 'local' uses the repository's issues, 'global' uses the organization's issues, and 'auto' uses repository's issues for public repositories and organization's issues for private repositories."
+                }
+              },
+              "additionalProperties": false,
+              "default": {}
+            },
+            "jira": {
+              "type": "object",
+              "properties": {
+                "project_keys": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": [],
+                  "description": "Jira Project Keys | Specify the Jira project keys to use for the knowledge base."
+                }
+              },
+              "additionalProperties": false,
+              "default": {}
+            },
+            "linear": {
+              "type": "object",
+              "properties": {
+                "team_keys": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": [],
+                  "description": "Linear Team Keys | Specify the Linear project keys to use for the knowledge base."
+                }
+              },
+              "additionalProperties": false,
+              "default": {}
+            }
+          },
+          "additionalProperties": false,
+          "default": {}
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
