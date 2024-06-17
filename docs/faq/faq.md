@@ -33,7 +33,7 @@ uses proprietary code from private repositories for training purposes.
 #### Can I switch between different organizations on CodeRabbit?
 
 Yes, you can switch between different organizations on CodeRabbit. To do so,
-click on the organization name in the top-right corner of the CodeRabbit UI.
+click on the organization name in the top-left corner of the CodeRabbit UI.
 
 ![Switch Organizations](./images/cr_support_orgs_light.png#gh-light-mode-only)
 ![Switch Organizations](./images/cr_support_orgs_dark.png#gh-dark-mode-only)
