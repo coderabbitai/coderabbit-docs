@@ -484,12 +484,12 @@
                     "enabled": {
                       "type": "boolean",
                       "default": true,
-                      "description": "Enable Yamllint | yamllint is a fast linters runner for yaml. | Enable yamllint integration."
+                      "description": "Enable Yamllint | yamllint is a linter for YAML files. | Enable yamllint integration."
                     }
                   },
                   "additionalProperties": false,
                   "default": {},
-                  "description": "Yamllint is a fast linters runner for yaml."
+                  "description": "yamllint is a linter for YAML files."
                 },
                 "gitleaks": {
                   "type": "object",
