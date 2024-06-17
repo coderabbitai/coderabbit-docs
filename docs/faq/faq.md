@@ -21,35 +21,35 @@ popularity and the public availability of training data.
 #### Does CodeRabbit store my code?
 
 We do not store your code. The code collected at the time of the review is
-disposed off as soon as the review is complete. During the review, there is
+disposed of as soon as the review is complete. During the review, there is
 complete data isolation of the code being reviewed, and no one from CodeRabbit
 or outside has access to the code.
 
 #### Does CodeRabbit use my proprietary code for training language models?
 
 We train our system only using publicly available datasets. CodeRabbit never
-uses the proprietary code from private repositories for training purposes.
+uses proprietary code from private repositories for training purposes.
 
 #### Can I switch between different organizations on CodeRabbit?
 
 Yes, you can switch between different organizations on CodeRabbit. To do so,
-click on the organization name in the top-right corner of the CodeRabbit UI.
+click on the organization name in the top-left corner of the CodeRabbit UI.
 
 ![Switch Organizations](./images/cr_support_orgs_light.png#gh-light-mode-only)
 ![Switch Organizations](./images/cr_support_orgs_dark.png#gh-dark-mode-only)
 
-#### Can CodeRabbit subscription be used across multiple organizations?
+#### Can a CodeRabbit subscription be used across multiple organizations?
 
 Subscription seats are tied to the specific GitHub/GitLab organization under
 which they are purchased and cannot be used under another organization.
 
 #### Can CodeRabbit review my existing PRs after integrating it?
 
-CodeRabbit would by default only review new PRs or existing PRs which have a new
+CodeRabbit will by default only review new PRs or existing PRs which have a new
 commit after the app is installed. You can, however, use the
-`@coderabbitai review` command on the PR to trigger a review of existing PRs.
+`@coderabbitai review` command on the PR to trigger a review for existing PRs.
 
-#### Who can add the repositories on CodeRabbit?
+#### Who can install CodeRabbit on the repositories?
 
 You need to be a GitHub/GitLab admin to add the repositories.
 
@@ -78,9 +78,9 @@ repository settings.
 
 CodeRabbit requests minimal access to perform code reviews and post comments on
 Pull Requests. On GitHub, it requires read access to metadata, code,
-discussions, issues, and read/write access to the pull requests. On GitLab, it
-requires read access to the repository, and the CodeRabbit Bot user requires a
-developer role.
+discussions, and issues, as well as read/write access to pull requests. On
+GitLab, it requires read access to the repository, and the CodeRabbit Bot user
+requires a developer role.
 
 #### How can I add or remove users for my subscription?
 
@@ -111,8 +111,8 @@ change this in the repository settings.
 There are hourly rate limits for each developer per repository:
 
 - Number of files reviewed per hour: 200
-- Number of reviews : 3 back to back reviews followed by 4 reviews/hour
-- Number of conversations: 25 back to back messages followed by 50 messages/hr
+- Number of reviews : 3 back-to-back reviews followed by 4 reviews/hour
+- Number of conversations: 25 back-to-back messages followed by 50 messages/hour
 
 In-trial and open-source plans have lower rate limits than the paid plan. In all
 cases, we re-allow further reviews/conversations after a brief timeout.
