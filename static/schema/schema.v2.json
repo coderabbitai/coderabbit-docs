@@ -478,6 +478,19 @@
                   "default": {},
                   "description": "golangci-lint is a fast linters runner for Go."
                 },
+                "yamllint": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable Yamllint | yamllint is a fast linters runner for yaml. | Enable yamllint integration."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "default": {},
+                  "description": "Yamllint is a fast linters runner for yaml."
+                },
                 "gitleaks": {
                   "type": "object",
                   "properties": {
