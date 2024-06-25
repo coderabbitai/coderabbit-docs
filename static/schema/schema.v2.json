@@ -503,6 +503,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Gitleaks is a secret scanner."
+								},
+								"checkov": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Checkov | Checkov is a static code analysis tool for infrastructure-as-code files."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Checkov is a static code analysis tool for infrastructure-as-code files."
 								}
 							},
 							"additionalProperties": false,
