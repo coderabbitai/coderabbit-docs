@@ -24,6 +24,16 @@ In this guide, we will cover the configuration using a YAML file.
 
 ## Configure CodeRabbit using a YAML File
 
+:::tip
+
+Move existing UI configuration to a YAML file?
+
+Use the `@coderabbitai configuration` command on any PR to get the current
+configuration in a YAML format. You can then copy the configuration to a
+`.coderabbit.yaml` file in the root of your repository.
+
+:::
+
 You can add a `.coderabbit.yaml` configuration file to the root of your
 repositories. Below is a sample YAML file that can be used as a starting point
 and changed as needed:
