@@ -107,22 +107,3 @@ Signing back in without completing the above steps will re-introduce a minimal
 set of data being stored as a part of the sign in process.
 
 :::
-
-## Conclusion
-
-If you've reached here and decided to delete your CodeRabbit account, we're sad
-to see you go 😢.
-
-If you have any pending questions or need assistance, please feel free to reach
-out to our support team.
-
-We appreciate your time and feedback. Happy coding! 🚀
-
-:::note
-
-We welcome all types of feedback and suggestions to help us improve our product.
-Please feel free to leave us a message telling us what you did or did not like
-about CodeRabbit on our [Discord](https://discord.gg/8Q5ZJj6) or via
-[Email](mailto:support@coderabbit.ai).
-
-:::
