@@ -111,7 +111,7 @@ change this in the repository settings.
 There are hourly rate limits for each developer per repository:
 
 - Number of files reviewed per hour: 200
-- Number of reviews : 3 back-to-back reviews followed by 4 reviews/hour
+- Number of reviews : 3 back-to-back reviews followed by 3 reviews/hour
 - Number of conversations: 25 back-to-back messages followed by 50 messages/hour
 
 In-trial and open-source plans have lower rate limits than the paid plan. In all
