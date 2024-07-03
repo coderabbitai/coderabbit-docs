@@ -434,8 +434,8 @@
 									"properties": {
 										"enabled": {
 											"type": "boolean",
-											"default": true,
-											"description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root."
+											"default": false,
+											"description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root. Please ensure that this file contains the `paths:` parameter."
 										},
 										"level": {
 											"type": "string",
