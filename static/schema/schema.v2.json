@@ -119,7 +119,7 @@
 							"type": "string",
 							"enum": ["chill", "assertive"],
 							"default": "chill",
-							"description": "Set the profile for reviews."
+							"description": "Set the profile for reviews. Assertive profile yields more feedback, that may be considered nitpicky."
 						},
 						"request_changes_workflow": {
 							"type": "boolean",
