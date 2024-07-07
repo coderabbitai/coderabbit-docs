@@ -454,7 +454,7 @@
 												"max"
 											],
 											"default": "default",
-											"description": "Level | Specify the [rule level](https://phpstan.org/user-guide/rule-levels) to run."
+											"description": "Level | Specify the [rule level](https://phpstan.org/user-guide/rule-levels) to run. This setting is ignored if your configuration file already has a `level:` parameter."
 										}
 									},
 									"additionalProperties": false,
