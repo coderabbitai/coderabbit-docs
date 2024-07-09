@@ -21,9 +21,9 @@ You will need an API Key to access the CodeRabbit API and generate an on-demand 
 
 ## Create an API key
 
-Sign into your CodeRabbit account and navigate to the the [**API Keys**](https://app.coderabbit.ai/settings/api-keys) page under 'Organization Settings' in the left sidebar.  
+Sign in to your CodeRabbit account and navigate to the the [**API Keys**](https://app.coderabbit.ai/settings/api-keys) page under 'Organization Settings' in the left sidebar.  
 Click on the **Create API Key** button and enter a name for the API Key.  
-Copy the API key and keep it safe as it won't be visible again.
+Copy the API key, and keep it safe as it won't be visible again.
 
 ![API Keys](./images/api_keys.png)
 
