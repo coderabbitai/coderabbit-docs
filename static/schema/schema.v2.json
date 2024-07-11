@@ -156,10 +156,10 @@
 							"default": false,
 							"description": "Generate walkthrough in a markdown collapsible section."
 						},
-						"disable_sequence_diagrams": {
+						"sequence_diagrams": {
 							"type": "boolean",
-							"default": false,
-							"description": "Disable sequence diagrams in the walkthrough."
+							"default": true,
+							"description": "Generate sequence diagrams in the walkthrough."
 						},
 						"path_filters": {
 							"type": "array",
