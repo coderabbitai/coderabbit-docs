@@ -201,12 +201,12 @@
 								"enabled": {
 									"type": "boolean",
 									"default": true,
-									"description": "Enable Automatic Review | Automatic code review"
+									"description": "Automatic Review | Automatic code review"
 								},
 								"auto_incremental_review": {
 									"type": "boolean",
 									"default": true,
-									"description": "Enable Automatic Incremental Review | Automatic incremental code review on each push"
+									"description": "Automatic Incremental Review | Automatic incremental code review on each push"
 								},
 								"ignore_title_keywords": {
 									"type": "array",
