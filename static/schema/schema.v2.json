@@ -141,20 +141,25 @@
 							"default": "@coderabbitai",
 							"description": "Add this keyword in the PR/MR title to auto-generate the title."
 						},
-						"poem": {
-							"type": "boolean",
-							"default": true,
-							"description": "Generate a poem in the walkthrough comment."
-						},
 						"review_status": {
 							"type": "boolean",
 							"default": true,
 							"description": "Post review details on each review. Additionally, post a review status when a review is skipped in certain cases."
 						},
+						"poem": {
+							"type": "boolean",
+							"default": true,
+							"description": "Generate a poem in the walkthrough comment."
+						},
 						"collapse_walkthrough": {
 							"type": "boolean",
 							"default": false,
 							"description": "Generate walkthrough in a markdown collapsible section."
+						},
+						"disable_sequence_diagrams": {
+							"type": "boolean",
+							"default": false,
+							"description": "Disable sequence diagrams in the walkthrough."
 						},
 						"path_filters": {
 							"type": "array",
