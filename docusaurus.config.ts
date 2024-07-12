@@ -117,7 +117,12 @@ const config: Config = {
     "https://buttons.github.io/buttons.js",
     "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
     "/docs/js/code-block-buttons.js",
-    `https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js`,
+    "https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js",
+    {
+      src: "https://js.hs-scripts.com/43613284.js",
+      async: true,
+      defer: true,
+    },
     {
       src: "https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js",
       async: true,
