@@ -141,25 +141,20 @@
 							"default": "@coderabbitai",
 							"description": "Add this keyword in the PR/MR title to auto-generate the title."
 						},
-						"review_status": {
-							"type": "boolean",
-							"default": true,
-							"description": "Post review details on each review. Additionally, post a review status when a review is skipped in certain cases."
-						},
 						"poem": {
 							"type": "boolean",
 							"default": true,
 							"description": "Generate a poem in the walkthrough comment."
 						},
+						"review_status": {
+							"type": "boolean",
+							"default": true,
+							"description": "Post review details on each review. Additionally, post a review status when a review is skipped in certain cases."
+						},
 						"collapse_walkthrough": {
 							"type": "boolean",
 							"default": false,
 							"description": "Generate walkthrough in a markdown collapsible section."
-						},
-						"sequence_diagrams": {
-							"type": "boolean",
-							"default": true,
-							"description": "Generate sequence diagrams in the walkthrough."
 						},
 						"path_filters": {
 							"type": "array",
@@ -201,12 +196,12 @@
 								"enabled": {
 									"type": "boolean",
 									"default": true,
-									"description": "Automatic Review | Automatic code review"
+									"description": "Enable Automatic Review | Automatic code review"
 								},
 								"auto_incremental_review": {
 									"type": "boolean",
 									"default": true,
-									"description": "Automatic Incremental Review | Automatic incremental code review on each push"
+									"description": "Enable Automatic Incremental Review | Automatic incremental code review on each push"
 								},
 								"ignore_title_keywords": {
 									"type": "array",
