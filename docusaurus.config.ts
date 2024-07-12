@@ -120,6 +120,8 @@ const config: Config = {
     "https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js",
     {
       src: "https://js.hs-scripts.com/43613284.js",
+      type: "text/javascript",
+      id: "hs-script-loader",
       async: true,
       defer: true,
     },
