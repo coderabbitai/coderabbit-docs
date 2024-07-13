@@ -2,7 +2,7 @@
 title: Delete CodeRabbit Account
 sidebar_label: Delete CodeRabbit Account
 # description:
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 The guide explains how to delete your CodeRabbit account and all the data

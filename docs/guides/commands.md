@@ -4,7 +4,7 @@ sidebar_label: CodeRabbit Commands
 description:
   CodeRabbit offers various commands that can be invoked as PR comments to
   control the review process.
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 The following commands are available (invoked as PR comments):
