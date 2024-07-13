@@ -357,8 +357,7 @@
 											"items": {
 												"type": "string"
 											},
-											"default": ["EN_UNPAIRED_BRACKETS", "EN_UNPAIRED_QUOTES"],
-											"description": "IDs of rules to be disabled."
+											"description": "IDs of rules to be disabled. Note: EN_UNPAIRED_BRACKETS, and EN_UNPAIRED_QUOTES are always disabled."
 										},
 										"enabled_categories": {
 											"type": "array",
@@ -372,8 +371,7 @@
 											"items": {
 												"type": "string"
 											},
-											"default": ["TYPOS", "TYPOGRAPHY", "CASING"],
-											"description": "IDs of categories to be disabled."
+											"description": "IDs of categories to be disabled. Note: TYPOS, TYPOGRAPHY, and CASING are always disabled."
 										},
 										"enabled_only": {
 											"type": "boolean",
