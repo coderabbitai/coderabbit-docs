@@ -1,7 +1,7 @@
 ---
 title: Ruff
 sidebar_label: Ruff
-description: Overview of CodeRabbit's supported linters and security analysis tools.
+description: CodeRabbit's guide to Ruff.
 sidebar_position: 1
 ---
 
