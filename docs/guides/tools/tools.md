@@ -42,3 +42,5 @@ Remove extraneous f prefix
 - [LanguageTool](./languagetool.md)
 - [Biome](./biome.md)
 - [Hadolint](./hadolint.md)
+- [SwiftLint](./swiftlint.md)
+- [PHPStan](./phpstan.md)
