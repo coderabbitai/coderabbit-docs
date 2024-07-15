@@ -44,3 +44,5 @@ Remove extraneous f prefix
 - [Hadolint](./hadolint.md)
 - [SwiftLint](./swiftlint.md)
 - [PHPStan](./phpstan.md)
+- [golangci-lint](./golangci-lint.md)
+- [YamlLint](./yamllint.md)
