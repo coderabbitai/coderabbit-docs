@@ -2,10 +2,16 @@
 title: Ruff
 sidebar_label: Ruff
 description: CodeRabbit's guide to Ruff.
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-Ruff is a linter and code formatter for Python.
+[Ruff](https://docs.astral.sh/ruff/) is a linter and code formatter for Python.
+
+## Files
+
+Ruff will run on files with the following extensions:
+
+- `.py`
 
 ## Settings
 
@@ -15,7 +21,7 @@ Ruff supports the following config files:
 - `ruff.toml`
 - `.ruff.toml`
 
-CodeRabbit will use the following settings if no config file is found:
+CodeRabbit will use the following settings based on the profile selected if no config file is found:
 
 ### Chill
 
@@ -117,6 +123,6 @@ select = [
 "**/{test,tests}/**/*.py" = ["S101"]
 ```
 
-Links:
+## Links
 
-- [Ruff](https://docs.astral.sh/ruff/configuration/)
+- [Ruff Configuration](https://docs.astral.sh/ruff/configuration/)
