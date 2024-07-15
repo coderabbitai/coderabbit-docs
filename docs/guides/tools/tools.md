@@ -9,7 +9,7 @@ CodeRabbit supports various linters and security analysis tools to improve the c
 
 ## Enabling/Disabling Tools
 
-You can enable or disable tools by setting `reviews.tools.<linter>.enabled` in your project's `.coderabbit.yaml` file or setting the "Review → Tools → Linter → Enabled" field in CodeRabbit's settings page.
+You can enable or disable tools by setting `reviews.tools.<tool>.enabled` in your project's `.coderabbit.yaml` file or setting the "Review → Tools → Tool → Enabled" field in CodeRabbit's settings page.
 
 ## Customizing Tools
 
