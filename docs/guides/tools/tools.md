@@ -46,3 +46,5 @@ Remove extraneous f prefix
 - [PHPStan](./phpstan.md)
 - [golangci-lint](./golangci-lint.md)
 - [YamlLint](./yamllint.md)
+- [Gitleaks](./gitleaks.md)
+- [Checkov](./checkov.md)
