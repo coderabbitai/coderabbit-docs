@@ -2,7 +2,7 @@
 title: LanguageTool
 sidebar_label: LanguageTool
 description: CodeRabbit's guide to LanguageTool.
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 [LanguageTool](https://github.com/languagetool-org/languagetool) is a style and grammar checker.
