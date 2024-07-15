@@ -5,7 +5,7 @@ description: CodeRabbit's guide to Ruff.
 sidebar_position: 2
 ---
 
-[Ruff](https://docs.astral.sh/ruff/) is a linter and code formatter for Python.
+[Ruff](https://docs.astral.sh/ruff/) is a linter for Python.
 
 ## Files
 

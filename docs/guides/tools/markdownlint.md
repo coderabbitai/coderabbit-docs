@@ -5,7 +5,7 @@ description: CodeRabbit's guide to Markdownlint.
 sidebar_position: 3
 ---
 
-[Markdownlint](https://github.com/DavidAnson/markdownlint) is a linter for Markdown files.
+[Markdownlint](https://github.com/DavidAnson/markdownlint) is a linter for Markdown.
 
 ## Files
 
