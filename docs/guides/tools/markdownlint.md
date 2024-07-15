@@ -14,7 +14,7 @@ Markdownlint will run on files with the following extensions:
 - `.md`
 - `.markdown`
 
-## Settings
+## Configuration
 
 Markdownlint supports the following config files:
 

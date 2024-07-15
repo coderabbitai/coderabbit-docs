@@ -13,7 +13,7 @@ Ruff will run on files with the following extensions:
 
 - `.py`
 
-## Settings
+## Configuration
 
 Ruff supports the following config files:
 

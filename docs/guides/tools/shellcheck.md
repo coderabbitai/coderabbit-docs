@@ -16,7 +16,7 @@ ShellCheck will run on files with the following extensions:
 - `.ksh`
 - `.dash`
 
-## Settings
+## Configuration
 
 CodeRabbit will use the following settings based on the profile selected:
 
