@@ -5,7 +5,7 @@ description: CodeRabbit's guide to Biome.
 sidebar_position: 5
 ---
 
-[Biome](https://biomejs.dev/) is linter for JavaScript, TypeScript, JSX, TSX, JSON, JSONC, CSS.
+[Biome](https://biomejs.dev/) is a linter for JavaScript, TypeScript, JSX, TSX, JSON, JSONC, CSS.
 
 ## Files
 
@@ -156,7 +156,7 @@ CodeRabbit will use the following settings based on the profile selected if no c
       "complexity": {
         "noForEach": "off",
         "noExcessiveCognitiveComplexity": {
-          "level": ,
+          "level": "warn",
           "options": {
             "maxAllowedComplexity": 25
           }
