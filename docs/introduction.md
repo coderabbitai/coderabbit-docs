@@ -23,6 +23,8 @@ performing continuous, incremental reviews for each commit within a pull
 request. Review feedback is sent back to the pull requests and can be directly
 committed.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### How does CodeRabbit work?
 
 **CodeRabbit** integrates into code repositories using GitHub or GitLab webhooks
@@ -31,7 +33,7 @@ A comprehensive review is performed when a PR or MR is created, and for
 incremental commits and comments addressed to the bot. The feedback is then sent
 directly back to the PR or MR.
 
-![CodeRabbit Flow](../about/images/CodeRabbitFlow.png)
+![CodeRabbit Flow](about/images/CodeRabbitFlow.png)
 
 ### Data, Privacy, and Security
 
@@ -40,11 +42,11 @@ influence the models. Queries to the Large Language Models (LLMs) are ephemeral
 and there is zero retention on LLMs. Neither we nor the LLMs provider(s) share
 any data collected during the code review process with third parties.
 
-Data storage: Code downloaded during the review process is temporarily stored in 
-memory and deleted once the review is completed. The code is not stored or used for 
-any other purpose. However, CodeRabbit enhances future reviews for your organization by 
-storing the embeddings of the learnings generated from chat conversations. Additionally, 
-it integrates embeddings from issues in workflow systems (Liner, Jira, GitHub/GitLab issues) 
+Data storage: Code downloaded during the review process is temporarily stored in
+memory and deleted once the review is completed. The code is not stored or used for
+any other purpose. However, CodeRabbit enhances future reviews for your organization by
+storing the embeddings of the learnings generated from chat conversations. Additionally,
+it integrates embeddings from issues in workflow systems (Liner, Jira, GitHub/GitLab issues)
 to assess the impact of code changes on existing issues.
 
 Compliance and Data Privacy: Your data is kept confidential, isolated by the
