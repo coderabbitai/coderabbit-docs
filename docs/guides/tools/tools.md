@@ -37,3 +37,7 @@ Remove extraneous f prefix
 ## Supported Tools
 
 - [Ruff](./ruff.md)
+- [ShellCheck](./shellcheck.md)
+- [Biome](./biome.md)
+- [Hadolint](./hadolint.md)
+- [LanguageTool](./languagetool.md)
