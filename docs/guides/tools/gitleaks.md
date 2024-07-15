@@ -9,7 +9,7 @@ sidebar_position: 11
 
 ## Files
 
-Gitleaks will run on all files with the following extensions.
+Gitleaks will run on all files.
 
 ## Configuration
 
