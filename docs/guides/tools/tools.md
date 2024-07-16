@@ -36,25 +36,29 @@ Remove extraneous f prefix
 
 ## Supported Tools
 
-| Language       | Tool           |
-|----------------|----------------|
-| All            |  [Gitleaks][Gitleaks] |
-| Text            |  [LanguageTool][LanguageTool] |
-| Bash          | [ShellCheck][ShellCheck] |
-| Python         | [Ruff][Ruff] |
-| Markdown       | [Markdownlint][Markdownlint], [LanguageTool][LanguageTool] |
-| Javascript        | [Biome][[Biome]] |
-| Typescript        | [Biome][[Biome]] |
-| JSX        | [Biome][[Biome]] |
-| TSX        | [Biome][[Biome]] |
-| CSS        | [Biome][[Biome]] |
-| JSON, JSONC        | [Biome][Biome] |
-| Docker         | [Hadolint][Hadolint] |
-| Swift          | [SwiftLint][SwiftLint] |
-| PHP            | [PHPStan][PHPStan] |
-| Go             | [golangci-lint][golangci-lint] |
-| YAML           | [YamlLint][YamlLint] |
-| Infrastructure as Code (IaC) | [Checkov][Checkov] |
+| Technology                  | Tools                                                      |
+|:----------------------------|:-----------------------------------------------------------|
+| All                         | [Gitleaks][Gitleaks]                                       |
+| CloudFormation              | [Checkov][Checkov]                                         |
+| CSS                         | [Biome][Biome]                                             |
+| Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                   |
+| Go                          | [golangci-lint][golangci-lint]                             |
+| Helm                        | [Checkov][Checkov]                                         |
+| Javascript                  | [Biome][Biome]                                             |
+| JSON, JSONC                 | [Biome][Biome]                                             |
+| JSX                         | [Biome][Biome]                                             |
+| Kotlin                      | [Detekt][Detekt]                                           |
+| Kubernetes                  | [Checkov][Checkov]                                         |
+| Markdown                    | [Markdownlint][Markdownlint], [LanguageTool][LanguageTool] |
+| PHP                         | [PHPStan][PHPStan]                                         |
+| Plaintext                   | [LanguageTool][LanguageTool]                               |
+| Python                      | [Ruff][Ruff]                                               |
+| Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   |
+| Swift                       | [SwiftLint][SwiftLint]                                     |
+| Terraform                   | [Checkov][Checkov]                                         |
+| TSX                         | [Biome][Biome]                                             |
+| Typescript                  | [Biome][Biome]                                             |
+| YAML                        | [YamlLint][YamlLint]                                       |
 
 [ShellCheck]: ./shellcheck.md
 [Ruff]: ./ruff.md
@@ -68,3 +72,4 @@ Remove extraneous f prefix
 [YamlLint]: ./yamllint.md
 [Gitleaks]: ./gitleaks.md
 [Checkov]: ./checkov.md
+[Detekt]: ./detekt.md

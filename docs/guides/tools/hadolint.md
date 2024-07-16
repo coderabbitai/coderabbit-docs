@@ -2,7 +2,6 @@
 title: Hadolint
 sidebar_label: Hadolint
 description: CodeRabbit's guide to Hadolint.
-sidebar_position: 6
 ---
 
 [Hadolint](https://github.com/hadolint/hadolint) is a Dockerfile linter.
