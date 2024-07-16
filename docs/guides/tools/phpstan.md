@@ -2,7 +2,6 @@
 title: PHPStan
 sidebar_label: PHPStan
 description: CodeRabbit's guide to PHPStan.
-sidebar_position: 8
 ---
 
 [PHPStan](https://phpstan.org/) is a static analysis tool for PHP.

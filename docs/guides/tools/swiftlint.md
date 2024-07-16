@@ -2,7 +2,6 @@
 title: SwiftLint
 sidebar_label: SwiftLint
 description: CodeRabbit's guide to SwiftLint.
-sidebar_position: 7
 ---
 
 [SwiftLint](https://realm.github.io/SwiftLint/) is a linter for Swift.

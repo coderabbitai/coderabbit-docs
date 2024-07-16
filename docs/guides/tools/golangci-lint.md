@@ -2,7 +2,6 @@
 title: golangci-lint
 sidebar_label: golangci-lint
 description: CodeRabbit's guide to golangci-lint.
-sidebar_position: 9
 ---
 
 [golangci-lint](https://golangci-lint.run/) is a fast Go linters runner.
