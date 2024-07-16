@@ -18,7 +18,7 @@ CodeRabbit supports customizing the strictness of tools by setting `reviews.prof
 - `Chill` - Yields less feedback, that may be considered lenient.
 - `Assertive` - Yields more feedback, that may be considered nit-picky.
 
-Apart from the overall profile, you can also configure each tool by providing a path to configuration file (specific to the tool) in your project. This would allow you to further customize the tool's behavior, by enabling/disabling specific rules, setting rule severity, etc.
+Apart from the overall profile, you can also configure each tool by providing a path to a configuration file (specific to the tool) in your project. This would allow you to further customize the tool's behavior, by enabling/disabling specific rules, setting rule severity, etc.
 
 ## Checking Tool Output
 
