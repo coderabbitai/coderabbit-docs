@@ -18,7 +18,7 @@ CodeRabbit supports customizing the strictness of tools by setting `reviews.prof
 - `Chill` - Yields less feedback, that may be considered lenient.
 - `Assertive` - Yields more feedback, that may be considered nit-picky.
 
-Apart from the overall profile, you can also configure each tool by providing a configuration file (specific to the tool) in your project. This would allow you to further customize the tool's behavior, by enabling/disabling specific rules, setting rule severity, etc.
+Apart from the overall profile, you can also configure each tool by providing a path to configuration file (specific to the tool) in your project. This would allow you to further customize the tool's behavior, by enabling/disabling specific rules, setting rule severity, etc.
 
 ## Checking Tool Output
 
@@ -36,15 +36,35 @@ Remove extraneous f prefix
 
 ## Supported Tools
 
-- [ShellCheck](./shellcheck.md)
-- [Ruff](./ruff.md)
-- [Markdownlint](./markdownlint.md)
-- [LanguageTool](./languagetool.md)
-- [Biome](./biome.md)
-- [Hadolint](./hadolint.md)
-- [SwiftLint](./swiftlint.md)
-- [PHPStan](./phpstan.md)
-- [golangci-lint](./golangci-lint.md)
-- [YamlLint](./yamllint.md)
-- [Gitleaks](./gitleaks.md)
-- [Checkov](./checkov.md)
+| Language       | Tool           |
+|----------------|----------------|
+| All            |  [Gitleaks][Gitleaks] |
+| Text            |  [LanguageTool][LanguageTool] |
+| Bash          | [ShellCheck][ShellCheck] |
+| Python         | [Ruff][Ruff] |
+| Markdown       | [Markdownlint][Markdownlint], [LanguageTool][LanguageTool] |
+| Javascript        | [Biome][[Biome]] |
+| Typescript        | [Biome][[Biome]] |
+| JSX        | [Biome][[Biome]] |
+| TSX        | [Biome][[Biome]] |
+| CSS        | [Biome][[Biome]] |
+| JSON, JSONC        | [Biome][Biome] |
+| Docker         | [Hadolint][Hadolint] |
+| Swift          | [SwiftLint][SwiftLint] |
+| PHP            | [PHPStan][PHPStan] |
+| Go             | [golangci-lint][golangci-lint] |
+| YAML           | [YamlLint][YamlLint] |
+| Infrastructure as Code (IaC) | [Checkov][Checkov] |
+
+[ShellCheck]: ./shellcheck.md
+[Ruff]: ./ruff.md
+[Markdownlint]: ./markdownlint.md
+[LanguageTool]: ./languagetool.md
+[Biome]: ./biome.md
+[Hadolint]: ./hadolint.md
+[SwiftLint]: ./swiftlint.md
+[PHPStan]: ./phpstan.md
+[golangci-lint]: ./golangci-lint.md
+[YamlLint]: ./yamllint.md
+[Gitleaks]: ./gitleaks.md
+[Checkov]: ./checkov.md
