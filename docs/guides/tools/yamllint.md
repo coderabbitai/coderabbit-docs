@@ -2,7 +2,6 @@
 title: Yamllint
 sidebar_label: Yamllint
 description: CodeRabbit's guide to Yamllint.
-sidebar_position: 10
 ---
 
 [Yamllint](https://yamllint.readthedocs.io/en/stable/) is a linter for YAML.

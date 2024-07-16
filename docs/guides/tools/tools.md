@@ -18,7 +18,7 @@ CodeRabbit supports customizing the strictness of tools by setting `reviews.prof
 - `Chill` - Yields less feedback, that may be considered lenient.
 - `Assertive` - Yields more feedback, that may be considered nit-picky.
 
-Apart from the overall profile, you can also configure each tool by providing a configuration file (specific to the tool) in your project. This would allow you to further customize the tool's behavior, by enabling/disabling specific rules, setting rule severity, etc.
+Apart from the overall profile, you can also configure each tool by providing a path to a configuration file (specific to the tool) in your project. This would allow you to further customize the tool's behavior, by enabling/disabling specific rules, setting rule severity, etc.
 
 ## Checking Tool Output
 
@@ -36,15 +36,40 @@ Remove extraneous f prefix
 
 ## Supported Tools
 
-- [ShellCheck](./shellcheck.md)
-- [Ruff](./ruff.md)
-- [Markdownlint](./markdownlint.md)
-- [LanguageTool](./languagetool.md)
-- [Biome](./biome.md)
-- [Hadolint](./hadolint.md)
-- [SwiftLint](./swiftlint.md)
-- [PHPStan](./phpstan.md)
-- [golangci-lint](./golangci-lint.md)
-- [YamlLint](./yamllint.md)
-- [Gitleaks](./gitleaks.md)
-- [Checkov](./checkov.md)
+| Technology                  | Tools                                                      |
+|:----------------------------|:-----------------------------------------------------------|
+| All                         | [Gitleaks][Gitleaks]                                       |
+| CloudFormation              | [Checkov][Checkov]                                         |
+| CSS                         | [Biome][Biome]                                             |
+| Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                   |
+| Go                          | [golangci-lint][golangci-lint]                             |
+| Helm                        | [Checkov][Checkov]                                         |
+| Javascript                  | [Biome][Biome]                                             |
+| JSON, JSONC                 | [Biome][Biome]                                             |
+| JSX                         | [Biome][Biome]                                             |
+| Kotlin                      | [Detekt][Detekt]                                           |
+| Kubernetes                  | [Checkov][Checkov]                                         |
+| Markdown                    | [Markdownlint][Markdownlint], [LanguageTool][LanguageTool] |
+| PHP                         | [PHPStan][PHPStan]                                         |
+| Plaintext                   | [LanguageTool][LanguageTool]                               |
+| Python                      | [Ruff][Ruff]                                               |
+| Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   |
+| Swift                       | [SwiftLint][SwiftLint]                                     |
+| Terraform                   | [Checkov][Checkov]                                         |
+| TSX                         | [Biome][Biome]                                             |
+| Typescript                  | [Biome][Biome]                                             |
+| YAML                        | [YamlLint][YamlLint]                                       |
+
+[ShellCheck]: ./shellcheck.md
+[Ruff]: ./ruff.md
+[Markdownlint]: ./markdownlint.md
+[LanguageTool]: ./languagetool.md
+[Biome]: ./biome.md
+[Hadolint]: ./hadolint.md
+[SwiftLint]: ./swiftlint.md
+[PHPStan]: ./phpstan.md
+[golangci-lint]: ./golangci-lint.md
+[YamlLint]: ./yamllint.md
+[Gitleaks]: ./gitleaks.md
+[Checkov]: ./checkov.md
+[Detekt]: ./detekt.md

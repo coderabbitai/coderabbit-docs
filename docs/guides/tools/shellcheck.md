@@ -2,7 +2,6 @@
 title: ShellCheck
 sidebar_label: ShellCheck
 description: CodeRabbit's guide to ShellCheck.
-sidebar_position: 1
 ---
 
 [ShellCheck](https://www.shellcheck.net/) is a linter for shell scripts.

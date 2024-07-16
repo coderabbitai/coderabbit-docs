@@ -2,7 +2,6 @@
 title: Biome
 sidebar_label: Biome
 description: CodeRabbit's guide to Biome.
-sidebar_position: 5
 ---
 
 [Biome](https://biomejs.dev/) is a linter for JavaScript, TypeScript, JSX, TSX, JSON, JSONC, CSS.
