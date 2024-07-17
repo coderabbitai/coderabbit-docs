@@ -21,24 +21,7 @@ Yamllint supports the following config files:
 - `.yamllint.yaml`
 - `.yamllint.yml`
 
-CodeRabbit will use the following settings based on the profile selected if no config file is found:
-
-### Chill
-
-```yaml
-extends: relaxed
-rules:
-  line-length: disable
-```
-
-### Assertive
-
-```yaml
-extends: default
-rules:
-  line-length: disable
-  document-start: disable
-```
+CodeRabbit will use the default settings based on the profile selected if no config file is found.
 
 ## Links
 
