@@ -54,17 +54,17 @@ complies with SOC2 Type II and GDPR standards.
 Opting Out: You can choose to opt out of data storage at any time. Opting out
 won't affect your access but will limit the personalization of the reviews.
 
-## CodeRabbit with other AI code generators like GitHub Copilot?
+## CodeRabbit with other AI code generators
 
 Code reviews remain essential, whether the code is written by a human or a bot.
 This is mainly because the perspective of the reviewer differs from that of the
 code generator, whether human or machine. This distinction is precisely why
 human peer reviews have been effective for so long. While AI-powered
-code-generation tools hold immense potential, it's important to recognize that
+code-generation like GitHub Copilot hold immense potential, it's important to recognize that
 these generators are still in their early stages and may not be equipped to
 auto-generate meaningful code for moderately complex applications.
 
-## CodeRabbit is different from existing code review tools
+## CodeRabbit is different
 
 Traditional code review tools excel in linting and static analysis, but they
 fall short in providing context-aware, conversational feedback with actionable
