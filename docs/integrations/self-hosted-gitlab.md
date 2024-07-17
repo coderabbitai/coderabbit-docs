@@ -31,6 +31,7 @@ If the self-managed GitLab instance is not found, we initiate the onboarding pro
 ### **Step 3: Onboarding Manual or Automated**
 
 #### 1. Automated onboarding
+
 ![Untitled](./images/automated-onboarding.png)
 
 #### **Why do we need the Admin Access Token?**
@@ -38,7 +39,7 @@ If the self-managed GitLab instance is not found, we initiate the onboarding pro
 Admin access token is required to set up a new CodeRabbit bot user within your
 self-managed instance. The token is needed only once during the initial setup
 process. Once the token is generated, you can set its minimum expiration period.
-This is the standard approach used by other products in this category. 
+This is the standard approach used by other products in this category.
 This is not automatically installing the CodeRabbit
 app across all projects. You will add CodeRabbit manually on the projects you
 wish, as the next step.
@@ -49,6 +50,7 @@ For the manual onboarding process we need to create the [CodeRabbit user](#creat
 ![Untitled](./images/manual-onboarding.png)
 
 #### **Creating CodeRabbit user**
+
 This feature will work with any user from your organization, but we strongly suggest creating a
 dedicated user called **CodeRabbitAI**. This ensures clarify about which user is used for our
 application and allows for better fine-grained access control.
@@ -58,11 +60,13 @@ After the user is created, you can retrieve the **User ID** from that user's pro
 The access token is used to post reviews on merge requests.
 
 #### **Creating OAuth2 application**
+
 For self-managed GitLab, we recommend creating an instance-wide application unless you want the reviews to be limited to a single group or user.
 
 Please follow the steps outlined in the [GitLab documentation](https://docs.gitlab.com/ee/integration/oauth_provider.html#create-an-instance-wide-application) for creating the application.
 
 Requirements:
+
 1. Scopes: `api read_user email`
 2. Callback URL: `https://app.coderabbit.ai/login`
 

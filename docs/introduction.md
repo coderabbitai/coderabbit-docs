@@ -25,8 +25,6 @@ committed.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### How does CodeRabbit work?
-
 **CodeRabbit** integrates into code repositories using GitHub or GitLab webhooks
 and monitors events related to Pull Request (PR) and Merge Request (MR) changes.
 A comprehensive review is performed when a PR or MR is created, and for
@@ -35,7 +33,7 @@ directly back to the PR or MR.
 
 ![CodeRabbit Flow](about/images/CodeRabbitFlow.png)
 
-### Data, Privacy, and Security
+## Data, Privacy, and Security
 
 **CodeRabbit** does not use data collected during code reviews to train or
 influence the models. Queries to the Large Language Models (LLMs) are ephemeral
@@ -56,17 +54,17 @@ complies with SOC2 Type II and GDPR standards.
 Opting Out: You can choose to opt out of data storage at any time. Opting out
 won't affect your access but will limit the personalization of the reviews.
 
-### Do you need CodeRabbit with the AI code generators like GitHub Copilot?
+## CodeRabbit with other AI code generators
 
 Code reviews remain essential, whether the code is written by a human or a bot.
 This is mainly because the perspective of the reviewer differs from that of the
 code generator, whether human or machine. This distinction is precisely why
 human peer reviews have been effective for so long. While AI-powered
-code-generation tools hold immense potential, it's important to recognize that
+code-generation tools like GitHub Copilot hold immense potential, it's important to recognize that
 these generators are still in their early stages and may not be equipped to
 auto-generate meaningful code for moderately complex applications.
 
-### How is CodeRabbit different from existing code review tools?
+## CodeRabbit is different
 
 Traditional code review tools excel in linting and static analysis, but they
 fall short in providing context-aware, conversational feedback with actionable

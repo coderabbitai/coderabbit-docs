@@ -4,6 +4,8 @@ sidebar_label: FAQs
 description: Frequently asked questions about CodeRabbit.
 ---
 
+### General
+
 #### How accurate is CodeRabbit's review?
 
 Early adoption results for CodeRabbit have been highly promising, demonstrating
@@ -14,13 +16,13 @@ in reviews.
 
 #### Which programming languages does CodeRabbit support?
 
-CodeRabbit is designed to work with all programming languages. However, the
+CodeRabbit is designed to work with all programming languages. The
 proficiency of our AI models might vary between languages based on their
 popularity and the public availability of training data.
 
 #### Does CodeRabbit store my code?
 
-We do not store your code. The code collected at the time of the review is
+We do not store your code. The code repository that is cloned at the time of the review is
 disposed of as soon as the review is complete. During the review, there is
 complete data isolation of the code being reviewed, and no one from CodeRabbit
 or outside has access to the code.
@@ -38,31 +40,36 @@ click on the organization name in the top-left corner of the CodeRabbit UI.
 ![Switch Organizations](./images/cr_support_orgs_light.png#gh-light-mode-only)
 ![Switch Organizations](./images/cr_support_orgs_dark.png#gh-dark-mode-only)
 
+#### What Large Language Models does CodeRabbit use?
+
+CodeRabbit currently utilizes OpenAI's `gpt-4-turbo` and `gpt-3.5-turbo`. We're
+researching and testing upcoming LLMs to ensure we're offering the most precise
+reviews possible.
+
+### Subscription
+
 #### Can a CodeRabbit subscription be used across multiple organizations?
 
 Subscription seats are tied to the specific GitHub/GitLab organization under
 which they are purchased and cannot be used under another organization.
-
-#### Can CodeRabbit review my existing PRs after integrating it?
-
-CodeRabbit will by default only review new PRs or existing PRs which have a new
-commit after the app is installed. You can, however, use the
-`@coderabbitai review` command on the PR to trigger a review for existing PRs.
-
-#### Who can install CodeRabbit on the repositories?
-
-You need to be a GitHub/GitLab admin to add the repositories.
 
 #### Do I need my own OpenAI key with CodeRabbit Pro?
 
 OpenAI cost is included as part of the subscription. You don't need to have your
 own OpenAI key.
 
-#### What Large Language Models does CodeRabbit use?
+#### How can I add or remove users for my subscription?
 
-CodeRabbit currently utilizes OpenAI's `gpt-4-turbo` and `gpt-3.5-turbo`. We're
-researching and testing upcoming LLMs to ensure we're offering the most precise
-reviews possible.
+To manage users, log in to CodeRabbit and navigate to subscriptions. You can add
+or remove users as needed.
+
+### Usage and Configuration
+
+#### Can CodeRabbit review my existing PRs after integrating it?
+
+CodeRabbit will by default only review new PRs or existing PRs which have a new
+commit after the app is installed. You can, however, use the
+`@coderabbitai review` command on the PR to trigger a review for existing PRs.
 
 #### Can I customize CodeRabbit?
 
@@ -81,11 +88,6 @@ Pull Requests. On GitHub, it requires read access to metadata, code,
 discussions, and issues, as well as read/write access to pull requests. On
 GitLab, it requires read access to the repository, and the CodeRabbit Bot user
 requires a developer role.
-
-#### How can I add or remove users for my subscription?
-
-To manage users, log in to CodeRabbit and navigate to subscriptions. You can add
-or remove users as needed.
 
 #### How can I interact with the CodeRabbit bot?
 
@@ -116,6 +118,12 @@ There are hourly rate limits for each developer per repository:
 
 In-trial and open-source plans have lower rate limits than the paid plan. In all
 cases, we re-allow further reviews/conversations after a brief timeout.
+
+### Integration
+
+#### Who can install CodeRabbit on the repositories?
+
+You need to be an admin of the orgnizaation to add the repositories.
 
 #### I can't add CodeRabbit to my GitLab Repositories. What should I do?
 
