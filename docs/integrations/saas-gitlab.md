@@ -16,8 +16,7 @@ If your organization prefers to use an organization user, you can create a new u
 
 :::note
 
-Keep in mind that if you want to change the review user, you can either disable the organization user or add a new user via the CodeRabbit UI. However, this will require manually removing the previous user from the projects and associated webhooks.
-Afterward, you will need to reinstall the CodeRabbit app for each project.
+Keep in mind that if you want to change the review user, you can either disable the organization user or add a new user via the CodeRabbit UI. However, this will require manually removing the previous user from the projects and associated webhooks. Afterward, you will need to reinstall the CodeRabbit app for each project.
 
 :::
 
