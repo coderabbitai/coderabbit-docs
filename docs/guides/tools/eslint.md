@@ -15,7 +15,6 @@ ESLint will run on files with the following extensions:
 - `.ts`
 - `.tsx`
 
-
 ## Configuration
 
 ESLint supports the following config files:
