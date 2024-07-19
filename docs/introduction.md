@@ -23,7 +23,7 @@ performing continuous, incremental reviews for each commit within a pull
 request. Review feedback is sent back to the pull requests and can be directly
 committed.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
 **CodeRabbit** integrates into code repositories using GitHub or GitLab webhooks
 and monitors events related to Pull Request (PR) and Merge Request (MR) changes.
