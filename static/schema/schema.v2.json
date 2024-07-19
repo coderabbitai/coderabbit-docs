@@ -536,6 +536,23 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Detekt is a static code analysis tool for Kotlin files."
+								},
+								"eslint": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable ESLint | ESLint is a static code analysis tool for JavaScript files."
+										},
+										"config_file": {
+											"type": "string",
+											"description": "Optional path to the ESLint configuration file relative to the repository."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "ESLint is a static code analysis tool for JavaScript files."
 								}
 							},
 							"additionalProperties": false,
