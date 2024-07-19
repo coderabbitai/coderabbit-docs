@@ -544,10 +544,6 @@
 											"type": "boolean",
 											"default": true,
 											"description": "Enable ESLint | ESLint is a static code analysis tool for JavaScript files."
-										},
-										"config_file": {
-											"type": "string",
-											"description": "Optional path to the ESLint configuration file relative to the repository."
 										}
 									},
 									"additionalProperties": false,
