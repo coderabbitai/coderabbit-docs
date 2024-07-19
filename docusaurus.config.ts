@@ -165,6 +165,10 @@ const config: Config = {
     "/docs/js/code-block-buttons.js",
     "https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js",
     {
+      src: "/js/segment.js",
+      async: false,
+    },
+    {
       src: "https://js.hs-scripts.com/43613284.js",
       type: "text/javascript",
       id: "hs-script-loader",
