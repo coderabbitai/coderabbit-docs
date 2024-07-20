@@ -29,7 +29,7 @@ Upon first login to the application (immediately after the onboarding screen), y
 
 ![gitlab user modal choice](/img/integrations/gitlab_user_choice.png)
 
-**We recommend using the default CodeRabbit user** for most organizations as it is pre-configured. However, we understand that some organizations may prefer more control over the user or have restrictions regarding user inclusion within their organization.
+**We recommend using the default CodeRabbit user** for most organizations, as it is pre-configured. However, we understand that some organizations may prefer more control over the user or have restrictions regarding user inclusion within their organization.
 
 ### Personal Access Tokens
 
