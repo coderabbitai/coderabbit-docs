@@ -26,7 +26,7 @@ To interact with the GitLab API, a **Personal Access Token** is required. This t
 
 Upon first login to the application (immediately after the onboarding screen), you will need to choose based on your organization's requirements.
 
-![gitlab user modal choice](./images/gitlab_user_choice.png)
+![gitlab user modal choice](/img/integrations/gitlab_user_choice.png)
 
 **We recommend using the default CodeRabbit user** for most organizations as it is pre-configured. However, we understand that some organizations may prefer more control over the user or have restrictions regarding user inclusion within their organization.
 
@@ -34,14 +34,14 @@ Upon first login to the application (immediately after the onboarding screen), y
 
 If your organization opts to use another user within the organization, you can do so by [generating a personal access token](#generating-a-personal-access-token).
 
-![gitlab organization user modal choice](./images/gitlab_organization_user.png)
+![gitlab organization user modal choice](/img/integrations/gitlab_organization_user.png)
 
 #### Recommendations
 
 * **Create a dedicated user for CodeRabbit** - This ensures the user is exclusively for CodeRabbit, allowing better access control.
 * **Use "CodeRabbit" as the username** - This makes the user easily recognizable for future reference.
 * **Use a dedicated email address** - This helps in easy identification and management.
-* **Use the CodeRabbit logo as the profile picture** - This further ensures easy recognition. You can download our logo from [here](./images/logo.svg "download").
+* **Use the CodeRabbit logo as the profile picture** - This further ensures easy recognition. You can download our logo from [here](/img/integrations/logo.svg "download").
 
 #### Key Points to Remember
 
@@ -66,4 +66,4 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 9. Click "Create Personal Access Token."
 10. Note down the token as it will only be displayed once.
 
-![Untitled](./images/admin-access-token.png)
+![Untitled](/img/integrations/admin-access-token.png)

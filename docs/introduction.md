@@ -31,7 +31,7 @@ A comprehensive review is performed when a PR or MR is created, and for
 incremental commits and comments addressed to the bot. The feedback is then sent
 directly back to the PR or MR.
 
-![CodeRabbit Flow](about/images/CodeRabbitFlow.png)
+![CodeRabbit Flow](/img/about/CodeRabbitFlow.png)
 
 ## Data, Privacy, and Security
 

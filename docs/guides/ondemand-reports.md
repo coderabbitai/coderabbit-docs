@@ -25,7 +25,7 @@ Sign in to your CodeRabbit account and navigate to the [**API Keys**](https://ap
 Click on the **Create API Key** button and enter a name for the API Key.  
 Copy the API key, and keep it safe as it won't be visible again.
 
-![API Keys](./images/api_keys.png)
+![API Keys](/img/guides/api_keys.png)
 
 ## Generate an On-demand report
 
