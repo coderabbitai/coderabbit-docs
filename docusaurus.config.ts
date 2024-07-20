@@ -58,11 +58,11 @@ const config: Config = {
         redirects: [
           {
             from: "/get-started",
-            to: "/guides/configure-coderabbit",
+            to: "/configure-coderabbit",
           },
           {
             from: "/guides/customize-coderabbit",
-            to: "/guides/configure-coderabbit",
+            to: "/configure-coderabbit",
           },
           {
             from: "/guides/prompt-customization",
