@@ -2,6 +2,7 @@
 title: CodeRabbit for Self-Managed GitLab
 description: Integrate CodeRabbit with your Self-Managed GitLab instance.
 sidebar_label: Self-Managed GitLab
+sidebar_position: 2
 ---
 
 This page guides you through the process of integrating your Self-Managed GitLab

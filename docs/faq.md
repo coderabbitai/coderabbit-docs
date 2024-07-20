@@ -2,7 +2,7 @@
 title: FAQs
 sidebar_label: FAQs
 description: Frequently asked questions about CodeRabbit.
-position: 7
+sidebar_position: 7
 ---
 
 ### General
