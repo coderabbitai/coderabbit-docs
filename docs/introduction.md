@@ -1,6 +1,6 @@
 ---
 id: introduction
-title: What is CodeRabbit?
+title: Introduction
 sidebar_label: Introduction
 sidebar_position: 1
 description:
@@ -9,6 +9,8 @@ description:
   reducing the time and effort associated with manual code reviews.
 slug: "/"
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
 **CodeRabbit** is an innovative, AI-first code reviewer. It provides
 context-aware review feedback on a pull request within minutes, thereby
@@ -22,8 +24,6 @@ generate code. It learns from your suggestions and gets better over time.
 performing continuous, incremental reviews for each commit within a pull
 request. Review feedback is sent back to the pull requests and can be directly
 committed.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
 **CodeRabbit** integrates into code repositories using GitHub or GitLab webhooks
 and monitors events related to Pull Request (PR) and Merge Request (MR) changes.
@@ -53,21 +53,3 @@ complies with SOC2 Type II and GDPR standards.
 
 Opting Out: You can choose to opt out of data storage at any time. Opting out
 won't affect your access but will limit the personalization of the reviews.
-
-## CodeRabbit with other AI code generators
-
-Code reviews remain essential, whether the code is written by a human or a bot.
-This is mainly because the perspective of the reviewer differs from that of the
-code generator, whether human or machine. This distinction is precisely why
-human peer reviews have been effective for so long. While AI-powered
-code-generation tools like GitHub Copilot hold immense potential, it's important to recognize that
-these generators are still in their early stages and may not be equipped to
-auto-generate meaningful code for moderately complex applications.
-
-## CodeRabbit is different
-
-Traditional code review tools excel in linting and static analysis, but they
-fall short in providing context-aware, conversational feedback with actionable
-suggestions for changes that can be directly committed. On the other hand,
-**CodeRabbit** leverages AI to understand the intent behind the code changes and
-provide human-like feedback for applying the best practices.

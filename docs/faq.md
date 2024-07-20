@@ -47,6 +47,24 @@ CodeRabbit currently utilizes OpenAI's `gpt-4-turbo` and `gpt-3.5-turbo`. We're
 researching and testing upcoming LLMs to ensure we're offering the most precise
 reviews possible.
 
+#### How does CodeRabbit compare to other AI code generators?
+
+Code reviews remain essential, whether the code is written by a human or a bot.
+This is mainly because the perspective of the reviewer differs from that of the
+code generator, whether human or machine. This distinction is precisely why
+human peer reviews have been effective for so long. While AI-powered
+code-generation tools like GitHub Copilot hold immense potential, it's important to recognize that
+these generators are still in their early stages and may not be equipped to
+auto-generate meaningful code for moderately complex applications.
+
+#### How is CodeRabbit different from other code review tools?
+
+Traditional code review tools excel in linting and static analysis, but they
+fall short in providing context-aware, conversational feedback with actionable
+suggestions for changes that can be directly committed. On the other hand,
+**CodeRabbit** leverages AI to understand the intent behind the code changes and
+provide human-like feedback for applying the best practices.
+
 ### Subscription
 
 #### Can a CodeRabbit subscription be used across multiple organizations?
