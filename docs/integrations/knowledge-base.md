@@ -18,7 +18,7 @@ Upon enabling the Jira integration, CodeRabbit will redirect you to the Jira log
 
 ### CodeRabbit Configuration
 
-1. Add Jira's Project Keys to `knowledge_base.jira.project_keys` field in your project's CodeRabbit configuration file at `.coderabbit.yaml`.
+1. Add Jira's Project Keys to the `knowledge_base.jira.project_keys` field in your project's CodeRabbit configuration file at `.coderabbit.yaml`.
 
 ## Linear {#Linear}
 
@@ -31,6 +31,6 @@ Upon enabling the Linear integration, CodeRabbit will redirect you to the Linear
 
 ### CodeRabbit Configuration
 
-1. Add Linear's Team Keys to `knowledge_base.linear.team_keys` field in your project's CodeRabbit configuration file at `.coderabbit.yaml`.
+1. Add Linear's Team Keys to the `knowledge_base.linear.team_keys` field in your project's CodeRabbit configuration file at `.coderabbit.yaml`.
 
 [integrations]: https://app.coderabbit.ai/integrations
