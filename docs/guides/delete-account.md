@@ -43,8 +43,8 @@ upon selecting **Delete Account**. You can open the dropdowns for more
 information.
 
 <div align="center">
-![Delete Account](./images/delete_account_light.png#gh-light-mode-only)
-![Delete Account](./images/delete_account_dark.png#gh-dark-mode-only)
+![Delete Account](/img/guides/delete_account_light.png#gh-light-mode-only)
+![Delete Account](/img/guides/delete_account_dark.png#gh-dark-mode-only)
 </div>
 
 Deletion will only occur once the admin specifically types in "delete" in the

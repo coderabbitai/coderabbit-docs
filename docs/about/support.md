@@ -22,8 +22,8 @@ Complete the support ticket by providing your name, email, a description of your
 issue, and attaching any necessary files. If you are reporting a bug, please
 provide the GitHub or GitLab organization name.
 
-![Open a Ticket](./images/cr_support_help_light.png#gh-light-mode-only)
-![Open a Ticket](./images/cr_support_help_dark.png#gh-dark-mode-only)
+![Open a Ticket](/img/about/cr_support_help_light.png#gh-light-mode-only)
+![Open a Ticket](/img/about/cr_support_help_dark.png#gh-dark-mode-only)
 
 ## Email Support
 
@@ -33,7 +33,7 @@ You can also reach out to us at
 :::tip
 
 To see more common issues faced by CodeRabbit users, visit our
-[FAQ section](../faq/faq.md) for detailed answers and solutions to frequently
+[FAQ section](../faq.md) for detailed answers and solutions to frequently
 encountered problems.
 
 :::

@@ -2,6 +2,7 @@
 title: FAQs
 sidebar_label: FAQs
 description: Frequently asked questions about CodeRabbit.
+sidebar_position: 7
 ---
 
 ### General
@@ -37,14 +38,32 @@ uses proprietary code from private repositories for training purposes.
 Yes, you can switch between different organizations on CodeRabbit. To do so,
 click on the organization name in the top-left corner of the CodeRabbit UI.
 
-![Switch Organizations](./images/cr_support_orgs_light.png#gh-light-mode-only)
-![Switch Organizations](./images/cr_support_orgs_dark.png#gh-dark-mode-only)
+![Switch Organizations](/img/faq/cr_support_orgs_light.png#gh-light-mode-only)
+![Switch Organizations](/img/faq/cr_support_orgs_dark.png#gh-dark-mode-only)
 
 #### What Large Language Models does CodeRabbit use?
 
 CodeRabbit currently utilizes OpenAI's `gpt-4-turbo` and `gpt-3.5-turbo`. We're
 researching and testing upcoming LLMs to ensure we're offering the most precise
 reviews possible.
+
+#### How does CodeRabbit compare to other AI code generators?
+
+Code reviews remain essential, whether the code is written by a human or a bot.
+This is mainly because the perspective of the reviewer differs from that of the
+code generator, whether human or machine. This distinction is precisely why
+human peer reviews have been effective for so long. While AI-powered
+code-generation tools like GitHub Copilot hold immense potential, it's important to recognize that
+these generators are still in their early stages and may not be equipped to
+auto-generate meaningful code for moderately complex applications.
+
+#### How is CodeRabbit different from other code review tools?
+
+Traditional code review tools excel in linting and static analysis, but they
+fall short in providing context-aware, conversational feedback with actionable
+suggestions for changes that can be directly committed. On the other hand,
+**CodeRabbit** leverages AI to understand the intent behind the code changes and
+provide human-like feedback for applying the best practices.
 
 ### Subscription
 
@@ -74,7 +93,7 @@ commit after the app is installed. You can, however, use the
 #### Can I customize CodeRabbit?
 
 Reviews are customizable. For information, check out our
-[Customization](../guides/review-instructions.md) guide.
+[Customization](./guides/review-instructions.md) guide.
 
 #### Can I choose a language other than English for the reviews?
 
@@ -123,7 +142,7 @@ cases, we re-allow further reviews/conversations after a brief timeout.
 
 #### Who can install CodeRabbit on the repositories?
 
-You need to be an admin of the orgnizaation to add the repositories.
+You need to be an admin of the organization to add the repositories.
 
 #### I can't add CodeRabbit to my GitLab Repositories. What should I do?
 
@@ -133,6 +152,6 @@ If there are any access restrictions by domain, then you will need to add
 :::tip
 
 If you have further questions or need additional information, please check out
-our [Support](../about/support.md) page for more details.
+our [Support](./about/support.md) page for more details.
 
 :::

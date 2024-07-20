@@ -2,6 +2,7 @@
 title: CodeRabbit for Self-Managed GitLab
 description: Integrate CodeRabbit with your Self-Managed GitLab instance.
 sidebar_label: Self-Managed GitLab
+sidebar_position: 2
 ---
 
 This page guides you through the process of integrating your Self-Managed GitLab
@@ -16,7 +17,7 @@ complete, you can log in directly using the OAuth2 flow.
 **Visit CodeRabbit:** Visit our [Login](https://coderabbit.ai/login) page and
 select Self-Hosted GitLab
 
-![login-page](./images/login-page.png)
+![login-page](/img/integrations/login-page.png)
 
 ### Step 2: Enter your Self-Managed GitLab URL
 
@@ -24,7 +25,7 @@ On this page, enter the URL of your self-managed GitLab instance and click
 submit. Once, you submit, we check our database for a record of your
 organization and if we find an existing one, we are starting the login process.
 
-![Untitled](./images/self-hosted-gitlab-host-url.png)
+![Untitled](/img/integrations/self-hosted-gitlab-host-url.png)
 
 If the self-managed GitLab instance is not found, we initiate the onboarding process, which can be either manual or automated.
 
@@ -32,7 +33,7 @@ If the self-managed GitLab instance is not found, we initiate the onboarding pro
 
 #### 1. Automated onboarding
 
-![Untitled](./images/automated-onboarding.png)
+![Untitled](/img/integrations/automated-onboarding.png)
 
 #### **Why do we need the Admin Access Token?**
 
@@ -47,7 +48,7 @@ wish, as the next step.
 #### 2. Manual onboarding
 
 For the manual onboarding process we need to create the [CodeRabbit user](#creating-coderabbit-user) and the [OAuth2 GitLab application](#creating-oauth2-application).
-![Untitled](./images/manual-onboarding.png)
+![Untitled](/img/integrations/manual-onboarding.png)
 
 #### **Creating CodeRabbit user**
 
@@ -89,14 +90,14 @@ the token, please follow the process outlined below:
 9. Select Create personal access token.
 10. Please note down this token as this will be visible one time only
 
-![Untitled](./images/admin-access-token.png)
+![Untitled](/img/integrations/admin-access-token.png)
 
 ### **Step 4: Paste the details and click submit**
 
 - Submit the form.
 - We will handle the setup process for you.
 - On subsequent visits, your setup will be automatically detected, allowing for
-  direct login. ![Untitled](./images/self-hosted-page.png)
+  direct login. ![Untitled](/img/integrations/self-hosted-page.png)
 
 ### **Step 5: Whitelist CodeRabbit IP address**
 

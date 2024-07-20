@@ -1,6 +1,6 @@
 ---
-title: Tools
-sidebar_label: Tools
+title: Supported Tools
+sidebar_label: Supported Tools
 description: Overview of CodeRabbit's supported linters and security analysis tools.
 sidebar_position: 1
 ---

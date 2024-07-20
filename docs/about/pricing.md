@@ -74,15 +74,15 @@ These are the hourly usage limits for each developer per repository:
 - During the trial period, seat assignment is automatic, but the number of seats
   can be adjusted when purchasing the subscription.
 
-![Seat Management](./images/cr_seat_manage_dark.png#gh-dark-mode-only)
-![Seat Management](./images/cr_seat_manage_light.png#gh-light-mode-only)
+![Seat Management](/img/about/cr_seat_manage_dark.png#gh-dark-mode-only)
+![Seat Management](/img/about/cr_seat_manage_light.png#gh-light-mode-only)
 
 ### Free Plan
 
 - Seats are assigned to new developers immediately
 
-![Free Seat Assignment](./images/cr_seat_free_dark.png#gh-dark-mode-only)
-![Free Seat Assignment](./images/cr_seat_free_light.png#gh-light-mode-only)
+![Free Seat Assignment](/img/about/cr_seat_free_dark.png#gh-dark-mode-only)
+![Free Seat Assignment](/img/about/cr_seat_free_light.png#gh-light-mode-only)
 
 **Note:** The subscription is limited to human users; bot users are not
 supported. Thus, pull requests or merge requests created by bots will not be
