@@ -5,7 +5,7 @@ sidebar_label: Knowledge Base
 sidebar_position: 3
 ---
 
-CodeRabbit integrates with external knowledge bases to provide a seamless experience for issue tracking. This guide will assist you in effectively integrating CodeRabbit with the following supported issue tracking tools.
+CodeRabbit integrates with external knowledge bases to provide a seamless experience for issue tracking. This will allow CodeRabbit to use the context from the linked issues while reviewing the code.
 
 ## Jira {#jira}
 
