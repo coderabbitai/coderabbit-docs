@@ -2,7 +2,7 @@
 title: External Knowledge Base
 description: Integrate CodeRabbit with an external knowledge base for issue tracking.
 sidebar_label: Knowledge Base
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 CodeRabbit integrates with external knowledge bases to provide a seamless experience for issue tracking. This will allow CodeRabbit to use the context from the linked issues while reviewing the code.
