@@ -15,13 +15,13 @@ complete, you can log in directly.
 **Visit CodeRabbit:** Visit our [Login](https://coderabbit.ai/login) page and 
 select Self-Hosted GitHub
 
-![login-page](./images/login-self-hosted-github.png)
+![login-page](/img/integrations/login-self-hosted-github.png)
 
 On this page, enter the URL of your self-managed GitHub instance and click
 submit. Once, you submit, we check our database for a record of your
 organization and if we find an existing one, we will start the login process.
 
-![Untitled](./images/self-hosted-github-host-url.png)
+![Untitled](/img/integrations/self-hosted-github-host-url.png)
 
 If the self-managed GitHub instance is not found, you will be required to enter more details for the onboarding.
 
@@ -40,7 +40,7 @@ Navigate to your GitHub Self-Hosted Instance and follow the steps below to [crea
    - **Authorization callback URL**: `https://app.coderabbit.ai/login`
 6. Click **Register application**.
 
-![GitHub Create OAuth App](./images/github-create-oauth-app.png)
+![GitHub Create OAuth App](/img/integrations/github-create-oauth-app.png)
 
 Once the OAuth App has been created, click on **Generate a new client secret** under the 'Client secrets' section and copy the secret as it will be visible once only
 
@@ -49,7 +49,7 @@ Keep the following details handy:
 - Client ID
 - Client secret
 
-![GitHub OAuth Client ID & Secret](./images/github-oauth-client-id-secret.png)
+![GitHub OAuth Client ID & Secret](/img/integrations/github-oauth-client-id-secret.png)
 
 ### **Step 3: GitHub App**
 
@@ -106,7 +106,7 @@ Keep the following details handy:
 - Webhook secret
 - Private key
 
-![GitHub App Client ID & Secret](./images/github-app-client-id-secret.png)
+![GitHub App Client ID & Secret](/img/integrations/github-app-client-id-secret.png)
 
 ### **Step 4: CodeRabbit UI Onboarding**
 
