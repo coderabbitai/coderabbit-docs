@@ -2,6 +2,7 @@
 title: CodeRabbit for Self-Managed GitHub
 description: Integrate CodeRabbit with your Self-Managed GitHub instance.
 sidebar_label: Self-Managed GitHub
+sidebar_position: 3
 ---
 
 This page guides you through the process of integrating your Self-Managed GitHub with CodeRabbit.
