@@ -17,7 +17,7 @@ complete, you can log in directly using the OAuth2 flow.
 **Visit CodeRabbit:** Visit our [Login](https://coderabbit.ai/login) page and
 select Self-Hosted GitLab
 
-![login-page](/img/integrations/login-page.png)
+![login-page](/img/integrations/login-self-hosted-gitlab.png)
 
 ### Step 2: Enter your Self-Managed GitLab URL
 
