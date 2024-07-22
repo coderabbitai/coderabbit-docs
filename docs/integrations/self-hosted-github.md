@@ -8,16 +8,14 @@ This page guides you through the process of integrating your Self-Managed GitHub
 
 To initiate the integration, we require specific information. This is essential
 for the initial setup of CodeRabbit within your domain. Once this setup is
-complete, you can log in directly using the OAuth2 flow.
+complete, you can log in directly.
 
 ### **Step 1: Getting Started**
 
 **Visit CodeRabbit:** Visit our [Login](https://coderabbit.ai/login) page and 
 select Self-Hosted GitHub
 
-![login-page](./images/login-page.png)![alt text](image.png)
-
-### Step 2: Enter your Self-Managed GitHub URL
+![login-page](./images/login-self-hosted-github.png)
 
 On this page, enter the URL of your self-managed GitHub instance and click
 submit. Once, you submit, we check our database for a record of your
@@ -25,11 +23,9 @@ organization and if we find an existing one, we will start the login process.
 
 ![Untitled](./images/self-hosted-github-host-url.png)
 
-If the self-managed GitHub instance is not found, we initiate the onboarding process, which can be either manual or automated.
+If the self-managed GitHub instance is not found, you will be required to enter more details for the onboarding.
 
-### **Step 3: Onboarding**
-
-#### Creating an OAuth App
+### **Step 2: GitHub OAuth App**
 
 Navigate to your GitHub Self-Hosted Instance and follow the steps below to [create an OAuth App](https://docs.github.com/en/enterprise-server@latest/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app):
 
@@ -55,7 +51,7 @@ Keep the following details handy:
 
 ![GitHub OAuth Client ID & Secret](./images/github-oauth-client-id-secret.png)
 
-#### Creating a GitHub App**
+### **Step 3: GitHub App**
 
 Navigate to your GitHub Self-Hosted Instance and follow the steps below to [create a GitHub App](https://docs.github.com/en/enterprise-server@latest/apps/creating-github-apps/registering-a-github-app/registering-a-github-app):
 
@@ -81,7 +77,7 @@ Navigate to your GitHub Self-Hosted Instance and follow the steps below to [crea
        - **Metadata**: Read-only
        - **Pull requests**: Read and write
      - **Organization permissions**:
-       **Members**: Read-only
+       - **Members**: Read-only
      - **Events**:
        - Meta
        - Issue comment
@@ -100,6 +96,8 @@ Once the GitHub App has been created, click on **Generate a new client secret** 
 
 Scroll down and click on **Generate a private key** under the 'Private keys' section and download the PEM file.
 
+Also, from the **Install App** tab, install the GitHub App to your organizations.
+
 Keep the following details handy:
 
 - App ID
@@ -112,7 +110,7 @@ Keep the following details handy:
 
 ### **Step 4: CodeRabbit UI Onboarding**
 
-Submit the details that were accumulated:
+Submit the details that were accumulated in previous steps:
 
 - Host URL of your GitHub instance
 - OAuth Client ID
