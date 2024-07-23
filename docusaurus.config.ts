@@ -68,6 +68,10 @@ const config: Config = {
             from: "/guides/prompt-customization",
             to: "/guides/review-instructions",
           },
+          {
+            from: "/guides/configure-coderabbit",
+            to: "/configure-coderabbit",
+          },
         ],
       },
     ],
