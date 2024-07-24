@@ -61,7 +61,7 @@ Navigate to your GitHub Self-Hosted Instance and follow the steps below to [crea
 3. In the left sidebar, click **Developer settings** > **GitHub Apps**
 4. Click **New GitHub App**.
 5. Set the following fields:
-   - **GitHub App name**: `CodeRabbit GitHub App`
+   - **GitHub App name**: `CodeRabbit`
    - **Description**: `GitHub App for CodeRabbit`
    - **Homepage URL**: `https://coderabbit.ai`
    - **Callback URL**: `https://app.coderabbit.ai/login`
@@ -97,8 +97,6 @@ Once the GitHub App has been created, click on **Generate a new client secret** 
 
 Scroll down and click on **Generate a private key** under the 'Private keys' section and download the PEM file.
 
-Also, from the **Install App** tab, install the GitHub App to your organizations.
-
 Keep the following details handy:
 
 - App ID
@@ -122,10 +120,22 @@ Submit the details that were accumulated in previous steps:
 - GitHub App Webhook Secret
 - GitHub App Private Key
 
-Click on Submit and the login process will be initiated. 
+Click on Submit and the login process will be initiated.
 On subsequent visits, your setup will be automatically detected, allowing for direct login.
 
-### **Step 5: Whitelist CodeRabbit IP address**
+### **Step 5: Install the GitHub App**
+
+Navigate to the GitHub App that was created from your self-hosted instance and click on the **Install App** tab.
+Then, install the GitHub App to your organization(s).
+
+:::warning
+
+If you performed this step before Step 4, the install event likely will have failed and you will need to re-send the installation event.  
+Navigate to the **Advanced** tab in the GitHub App and click on the **Redeliver** button for the failed `installation.created` event.
+
+:::
+
+### **Step 6: Whitelist CodeRabbit IP address**
 
 Use this CodeRabbit IP if your instance requires IP whitelisting
 `35.222.179.152/32`
