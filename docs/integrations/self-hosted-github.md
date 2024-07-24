@@ -8,7 +8,7 @@ sidebar_position: 3
 :::info
 
 This page is for GitHub Enterprise Self-Hosted users only.  
-If you're using github.com, [login to CodeRabbit](https://app.coderabbit.ai) and add your repositories from there
+If you're using github.com, [log in to CodeRabbit](https://app.coderabbit.ai) and add your repositories from there
 
 :::
 
@@ -137,7 +137,7 @@ Then, install the GitHub App to your organization(s).
 
 :::warning
 
-If you performed this step before Step 4, the installation event likely will have failed and you will need to re-send the installation event.  
+If you performed this step before Step 4, the installation event likely will have failed, and you will need to re-send the installation event.  
 Navigate to the **Advanced** tab in the GitHub App and click on the **Redeliver** button for the failed `installation.created` event.
 
 :::
