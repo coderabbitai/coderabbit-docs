@@ -5,6 +5,13 @@ sidebar_label: Self-Managed GitHub
 sidebar_position: 3
 ---
 
+:::info
+
+This page is for GitHub Enterprise Self-Hosted users only.  
+If you're using github.com, [login to CodeRabbit](https://app.coderabbit.ai) and add your repositories from there
+
+:::
+
 This page guides you through the process of integrating your Self-Managed GitHub with CodeRabbit.
 
 To initiate the integration, we require specific information. This is essential
