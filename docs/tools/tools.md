@@ -44,9 +44,9 @@ Remove extraneous f prefix
 | Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                   |
 | Go                          | [golangci-lint][golangci-lint]                             |
 | Helm                        | [Checkov][Checkov]                                         |
-| Javascript                  | [Biome][Biome], [ESLint][ESLint]                            |
+| Javascript                  | [Biome][Biome]                                             |
 | JSON, JSONC                 | [Biome][Biome]                                             |
-| JSX                         | [Biome][Biome], [ESLint][ESLint]                            |
+| JSX                         | [Biome][Biome]                                             |
 | Kotlin                      | [Detekt][Detekt]                                           |
 | Kubernetes                  | [Checkov][Checkov]                                         |
 | Markdown                    | [Markdownlint][Markdownlint], [LanguageTool][LanguageTool] |
@@ -56,8 +56,8 @@ Remove extraneous f prefix
 | Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   |
 | Swift                       | [SwiftLint][SwiftLint]                                     |
 | Terraform                   | [Checkov][Checkov]                                         |
-| TSX                         | [Biome][Biome], [ESLint][ESLint]                            |
-| Typescript                  | [Biome][Biome], [ESLint][ESLint]                            |
+| TSX                         | [Biome][Biome]                                             |
+| Typescript                  | [Biome][Biome]                                             |
 | YAML                        | [YamlLint][YamlLint]                                       |
 
 [ShellCheck]: ./shellcheck.md
@@ -73,4 +73,3 @@ Remove extraneous f prefix
 [Gitleaks]: ./gitleaks.md
 [Checkov]: ./checkov.md
 [Detekt]: ./detekt.md
-[ESLint]:./eslint.md
