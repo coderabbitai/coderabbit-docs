@@ -5,7 +5,7 @@ description: Overview of CodeRabbit's supported Git platforms.
 sidebar_position: 1
 ---
 
-CodeRabbit supports various Git platforms to provide code review for your repositories. For the cloud-hosted Git platforms, you can [login][login] to CodeRabbit and adding your repositories. The following platforms are supported:
+CodeRabbit supports various Git platforms to provide code review for your repositories. For the cloud-hosted Git platforms, you can [login][login] to CodeRabbit and add your repositories. The following platforms are supported:
 
 ## GitHub
 
