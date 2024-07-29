@@ -72,6 +72,18 @@ const config: Config = {
             from: "/guides/configure-coderabbit",
             to: "/configure-coderabbit",
           },
+          {
+            from: "/integrations/saas-gitlab",
+            to: "/platforms/saas-gitlab",
+          },
+          {
+            from: "/integrations/self-hosted-gitlab",
+            to: "/platforms/self-hosted-gitlab",
+          },
+          {
+            from: "/integrations/self-hosted-github",
+            to: "/platforms/self-hosted-github",
+          },
         ],
       },
     ],
