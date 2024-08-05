@@ -29,7 +29,7 @@ functionalities. CodeRabbit offers the following tiers of service:
 
 - CodeRabbit Pro: A paid service providing in-depth code reviews for private
   repositories. It's priced according to the number of developers, starting with
-  a full-featured 7-day free trial.
+  a full-featured 14-day free trial.
 - CodeRabbit for Open Source: A free service offering in-depth code reviews for
   open source (public) repositories.
 - CodeRabbit Free: A free plan for private repositories, providing summarization

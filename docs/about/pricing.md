@@ -12,7 +12,7 @@ CodeRabbit.
 
 - **Transparent Pricing**: CodeRabbit offers a per-seat pricing model that
   scales with your team size, ensuring you pay for what you need.
-- **7-Day Free Trial**: All plans start with a generous 7-day free trial for
+- **14-Day Free Trial**: All plans start with a generous 14-day free trial for
   CodeRabbit Pro for the entire organization, ensuring a commitment-free
   experience
 - **No Credit Card Required**: You don't need a credit card to start your free
@@ -27,7 +27,7 @@ CodeRabbit.
 
 ### Features
 
-- This plan begins with a 7-day free trial, with no credit card required.
+- This plan begins with a 14-day free trial, with no credit card required.
 - Summarization of pull requests.
 - Includes line-by-line reviews of all changes in the Pull Request
 - Ability to have conversations with CodeRabbit bot.
@@ -52,7 +52,7 @@ These are the hourly usage limits for each developer per repository:
 
 ### Features
 
-- Starts with a 7-day free trial of the Pro plan.
+- Starts with a 14-day free trial of the Pro plan.
 - Unlimited access for both public and private repositories.
 - Summarization pull requests on private repositories.
 - Reviews pull requests on public repositories.
