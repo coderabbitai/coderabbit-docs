@@ -549,6 +549,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "ESLint is a static code analysis tool for JavaScript files."
+								},
+								"rubocop": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Rubocop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter."
 								}
 							},
 							"additionalProperties": false,
