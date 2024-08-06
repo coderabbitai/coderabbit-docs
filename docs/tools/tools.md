@@ -59,6 +59,7 @@ Remove extraneous f prefix
 | TSX                         | [Biome][Biome]                                             |
 | Typescript                  | [Biome][Biome]                                             |
 | YAML                        | [YamlLint][YamlLint]                                       |
+| Ruby                        | [Rubocop][Rubocop]                                         |
 
 [ShellCheck]: ./shellcheck.md
 [Ruff]: ./ruff.md
@@ -73,3 +74,4 @@ Remove extraneous f prefix
 [Gitleaks]: ./gitleaks.md
 [Checkov]: ./checkov.md
 [Detekt]: ./detekt.md
+[Rubocop]: ./rubocop.md
