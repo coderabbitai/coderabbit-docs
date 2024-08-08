@@ -96,7 +96,7 @@ export default function YamlEditor() {
       theme="github"
       onChange={onChange}
       value={value}
-      name="UNIQUE_ID_OF_DIV"
+      name="yaml-editor"
       editorProps={{ $blockScrolling: true }}
       setOptions={{
         useWorker: false,
