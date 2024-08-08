@@ -12,6 +12,10 @@ sidebar_position: 3
 import SchemaViewer from "@site/src/components/SchemaViewer";
 ```
 
+```mdx-code-block
+import YamlEditor from "/src/components/YamlEditor/YamlEditor";
+```
+
 CodeRabbit offers various configuration options to tailor the reviews to your
 requirements. Configuration can be made using one of the below options, in order
 of precedence:
@@ -54,6 +58,12 @@ reviews:
     drafts: false
 chat:
   auto_reply: true
+```
+
+Write your configuration file in the below editor to validate:
+
+```mdx-code-block
+<YamlEditor />
 ```
 
 The configuration file can be used to set the following options:
