@@ -31,7 +31,6 @@ Rubocop will run on the following files and extensions:
 - `.rbx`
 - `.ru`
 - `.ruby`
-
 - `.schema`
 - `.spec`
 - `.thor`
@@ -51,14 +50,12 @@ Rubocop will run on the following files and extensions:
 - `Fastfile`
 - `Fastfile`
 - `Gemfile`
-
 - `Guardfile`
 - `Jarfile`
 - `Mavenfile`
 - `Podfile`
 - `Puppetfile`
 - `Rakefile`
-
 - `rakefile`
 - `Schemafile`
 - `Snapfile`
@@ -69,9 +66,10 @@ Rubocop will run on the following files and extensions:
 
 ## Configuration
 
-Rubocop uses a YAML style configuration file.
+Rubocop uses a YAML style configuration file. We look for the following files anywhere in the repository:
 
 - `.rubocop.yml`
+- `.rubocop.yaml`
 
 CodeRabbit will use the default settings based on the profile selected if no config file is found.
 
