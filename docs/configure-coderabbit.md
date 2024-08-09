@@ -10,9 +10,6 @@ sidebar_position: 3
 
 ```mdx-code-block
 import SchemaViewer from "@site/src/components/SchemaViewer";
-```
-
-```mdx-code-block
 import YamlEditor from "/src/components/YamlEditor/YamlEditor";
 ```
 
