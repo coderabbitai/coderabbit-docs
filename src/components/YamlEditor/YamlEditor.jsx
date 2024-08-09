@@ -47,8 +47,6 @@ export default function YamlEditor() {
     try {
       const doc = jsYaml.load(newValue, { strict: true });
       const valid = validate(doc);
-      console.log("Validation result:", valid);
-      console.log("Validation errors:", validate.errors);
 
       if (!valid && validate.errors) {
         setAnnotations(
@@ -69,12 +67,6 @@ export default function YamlEditor() {
         setAnnotations([]);
       }
     } catch (err) {
-      console.error("Error:", err);
-      console.log({
-        errorMessage: err.reason,
-        column: err.mark?.column,
-        line: err.mark?.line,
-      });
       setAnnotations([
         {
           row: err.instancePath ? getLineNumber(newValue, err.instancePath) : 0,
