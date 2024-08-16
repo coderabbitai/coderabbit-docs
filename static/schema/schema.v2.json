@@ -284,7 +284,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable ShellCheck | ShellCheck is a static analysis tool that finds bugs in your shell. | Enable shellcheck integration."
+											"description": "Enable ShellCheck | ShellCheck is a static analysis tool that finds bugs in your shell. | Enable shellcheck integration. | v0.9.0"
 										}
 									},
 									"additionalProperties": false,
@@ -297,7 +297,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable ruff integration."
+											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable ruff integration. | v0.5.7"
 										}
 									},
 									"additionalProperties": false,
@@ -310,7 +310,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Markdownlint\n\t\t\t\t| Markdownlint is a static analysis tool for Node.js with a library of rules to enforce standards and consistency for Markdown files.\n\t\t\t\t| Enable markdownlint integration."
+											"description": "Enable Markdownlint\n\t\t\t\t| Markdownlint is a static analysis tool for Node.js with a library of rules to enforce standards and consistency for Markdown files.\n\t\t\t\t| Enable markdownlint integration.\n\t\t\t\t| v0.34.0"
 										}
 									},
 									"additionalProperties": false,
@@ -395,7 +395,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Biome | Biome is a fast formatter, linter, and analyzer for web projects. | Enable Biome integration."
+											"description": "Enable Biome | Biome is a fast formatter, linter, and analyzer for web projects. | Enable Biome integration. | v1.8.3"
 										}
 									},
 									"additionalProperties": false,
@@ -408,7 +408,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Hadolint | Hadolint is a Dockerfile linter. | Enable Hadolint integration."
+											"description": "Enable Hadolint | Hadolint is a Dockerfile linter. | Enable Hadolint integration. | v2.12.0"
 										}
 									},
 									"additionalProperties": false,
@@ -421,7 +421,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable SwiftLint | SwiftLint is a Swift linter. | Enable SwiftLint integration."
+											"description": "Enable SwiftLint | SwiftLint is a Swift linter. | Enable SwiftLint integration. | v0.55.1"
 										},
 										"config_file": {
 											"type": "string",
@@ -438,7 +438,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root. Please ensure that this file contains the `paths:` parameter."
+											"description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root. Please ensure that this file contains the `paths:` parameter. | v1.11.7"
 										},
 										"level": {
 											"type": "string",
@@ -470,7 +470,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration."
+											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v1.59.1"
 										},
 										"config_file": {
 											"type": "string",
@@ -487,7 +487,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Yamllint | yamllint is a linter for YAML files. | Enable yamllint integration."
+											"description": "Enable Yamllint | yamllint is a linter for YAML files. | Enable yamllint integration. | v1.29.0"
 										}
 									},
 									"additionalProperties": false,
@@ -500,7 +500,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration."
+											"description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration. | v8.18.4"
 										}
 									},
 									"additionalProperties": false,
@@ -513,7 +513,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Checkov | Checkov is a static code analysis tool for infrastructure-as-code files."
+											"description": "Enable Checkov | Checkov is a static code analysis tool for infrastructure-as-code files. | v3.2.219"
 										}
 									},
 									"additionalProperties": false,
@@ -526,7 +526,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Detekt | Detekt is a static code analysis tool for Kotlin files."
+											"description": "Enable Detekt | Detekt is a static code analysis tool for Kotlin files. | v1.23.6"
 										},
 										"config_file": {
 											"type": "string",
@@ -556,7 +556,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Rubocop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter."
+											"description": "Enable Rubocop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.65.0"
 										}
 									},
 									"additionalProperties": false,

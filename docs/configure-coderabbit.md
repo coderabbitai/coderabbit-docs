@@ -45,6 +45,12 @@ Write your configuration file in the below editor to validate:
 <YamlEditor />
 ```
 
+Write your configuration file in the below editor to validate:
+
+```mdx-code-block
+<YamlEditor />
+```
+
 The configuration file can be used to set the following options:
 
 ```mdx-code-block
