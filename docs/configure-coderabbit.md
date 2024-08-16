@@ -39,24 +39,6 @@ You can add a `.coderabbit.yaml` configuration file to the root of your
 repositories. Below is a sample YAML file that can be used as a starting point
 and changed as needed:
 
-```yaml
-# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
-language: "en-US"
-early_access: false
-reviews:
-  profile: "chill"
-  request_changes_workflow: false
-  high_level_summary: true
-  poem: true
-  review_status: true
-  collapse_walkthrough: false
-  auto_review:
-    enabled: true
-    drafts: false
-chat:
-  auto_reply: true
-```
-
 Write your configuration file in the below editor to validate:
 
 ```mdx-code-block
