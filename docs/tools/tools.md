@@ -60,6 +60,7 @@ Remove extraneous f prefix
 | Typescript                  | [Biome][Biome]                                             |
 | YAML                        | [YamlLint][YamlLint]                                       |
 | Ruby                        | [Rubocop][Rubocop]                                         |
+| Buf                         | [Buf][Buf]                                                 |
 
 [ShellCheck]: ./shellcheck.md
 [Ruff]: ./ruff.md
@@ -75,3 +76,4 @@ Remove extraneous f prefix
 [Checkov]: ./checkov.md
 [Detekt]: ./detekt.md
 [Rubocop]: ./rubocop.md
+[Buf]: ./buf.md
