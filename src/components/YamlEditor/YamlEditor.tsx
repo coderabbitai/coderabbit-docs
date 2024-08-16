@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/theme-github";
@@ -15,13 +15,7 @@ const ajv = new Ajv({ allErrors: true });
 import Schema from "../../../static/schema/schema.v2.json";
 
 const validate = ajv.compile(Schema.definitions.schema);
-
-export default function YamlEditor() {
-  const [value, setValue] = useState("");
-  const [annotations, setAnnotations] = useState([]);
-
-  useEffect(() => {
-    const initialValue = `# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+const initialValue = `# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
 language: "en-US"
 early_access: false
 reviews:
@@ -38,6 +32,11 @@ chat:
   auto_reply: true
 
 `;
+export default function YamlEditor() {
+  const [value, setValue] = useState(initialValue);
+  const [annotations, setAnnotations] = useState([]);
+
+  useEffect(() => {
     setValue(initialValue);
     validateAndSetAnnotations(initialValue);
   }, []);
@@ -135,21 +134,24 @@ chat:
   }
 
   return (
-    <AceEditor
-      mode="yaml"
-      theme="github"
-      onChange={onChange}
-      value={value}
-      name="yaml-editor"
-      editorProps={{ $blockScrolling: true }}
-      setOptions={{
-        useWorker: false,
-        showPrintMargin: false,
-        showGutter: true,
-      }}
-      annotations={annotations}
-      width="100%"
-      height="400px"
-    />
+    <div className="m4">
+      <AceEditor
+        mode="yaml"
+        theme="github"
+        onChange={onChange}
+        value={value}
+        name="yaml-editor"
+        editorProps={{ $blockScrolling: true }}
+        setOptions={{
+          useWorker: false,
+          showPrintMargin: false,
+          showGutter: true,
+        }}
+        annotations={annotations}
+        width="100%"
+        height="400px"
+      />
+      <br />
+    </div>
   );
 }
