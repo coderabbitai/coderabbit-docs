@@ -40,6 +40,7 @@ export default function YamlEditor() {
     setValue(initialValue);
     validateAndSetAnnotations(initialValue);
   }, []);
+
   function validateAndSetAnnotations(yaml) {
     try {
       const doc = jsYaml.load(yaml, { strict: true });
@@ -86,6 +87,7 @@ export default function YamlEditor() {
       ]);
     }
   }
+
   function getLineNumber(yaml, instancePath) {
     const lines = yaml.split("\n");
     const pathParts = instancePath.split("/").filter(Boolean);
@@ -128,6 +130,7 @@ export default function YamlEditor() {
 
     return lineNumber;
   }
+  
   function onChange(newValue) {
     setValue(newValue);
     validateAndSetAnnotations(newValue);
