@@ -28,7 +28,7 @@ provide the GitHub or GitLab organization name.
 ## Email Support
 
 You can also reach out to us at
-[contact@coderabbit.ai](mailto:contact@coderabbit.ai).
+[support@coderabbit.ai](mailto:support@coderabbit.ai).
 
 :::tip
 
