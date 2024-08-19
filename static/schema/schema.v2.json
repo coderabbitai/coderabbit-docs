@@ -562,6 +562,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter."
+								},
+								"buf": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Buf | Buf offers linting for Protobuf files. | v1.36.0"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Buf offers linting for Protobuf files."
 								}
 							},
 							"additionalProperties": false,
