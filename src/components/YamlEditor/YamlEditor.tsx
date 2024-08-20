@@ -30,7 +30,6 @@ reviews:
     drafts: false
 chat:
   auto_reply: true
-
 `;
 export default function YamlEditor() {
   const [value, setValue] = useState(initialValue);
