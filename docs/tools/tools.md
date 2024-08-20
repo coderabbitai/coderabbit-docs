@@ -39,6 +39,8 @@ Remove extraneous f prefix
 | Technology                  | Tools                                                      |
 |:----------------------------|:-----------------------------------------------------------|
 | All                         | [Gitleaks][Gitleaks]                                       |
+| GitHub Actions              | [Actionlint][Actionlint]                                   |
+| Protobuf                    | [Buf][Buf]                                                 |
 | CloudFormation              | [Checkov][Checkov]                                         |
 | CSS                         | [Biome][Biome]                                             |
 | Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                   |
@@ -53,15 +55,13 @@ Remove extraneous f prefix
 | PHP                         | [PHPStan][PHPStan]                                         |
 | Plaintext                   | [LanguageTool][LanguageTool]                               |
 | Python                      | [Ruff][Ruff]                                               |
+| Ruby                        | [Rubocop][Rubocop]                                         |
 | Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   |
 | Swift                       | [SwiftLint][SwiftLint]                                     |
 | Terraform                   | [Checkov][Checkov]                                         |
 | TSX                         | [Biome][Biome]                                             |
 | Typescript                  | [Biome][Biome]                                             |
 | YAML                        | [YamlLint][YamlLint]                                       |
-| Ruby                        | [Rubocop][Rubocop]                                         |
-| Buf                         | [Buf][Buf]                                                 |
-| Actionlint                  | [Actionlint][Actionlint]                                   |
 
 
 [ShellCheck]: ./shellcheck.md
