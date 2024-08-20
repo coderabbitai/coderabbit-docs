@@ -61,6 +61,8 @@ Remove extraneous f prefix
 | YAML                        | [YamlLint][YamlLint]                                       |
 | Ruby                        | [Rubocop][Rubocop]                                         |
 | Buf                         | [Buf][Buf]                                                 |
+| Actionlint                  | [Actionlint][Actionlint]                                   |
+
 
 [ShellCheck]: ./shellcheck.md
 [Ruff]: ./ruff.md
@@ -77,3 +79,4 @@ Remove extraneous f prefix
 [Detekt]: ./detekt.md
 [Rubocop]: ./rubocop.md
 [Buf]: ./buf.md
+[Actionlint]: ./actionlint.md
