@@ -8,7 +8,7 @@ description: CodeRabbit's guide to Actionlint.
 
 ## Files
 
-We look for `.yaml` / `.yml` files specifically in the following directory:
+We look for `Github Action` files specifically in the following directory:
 
 - `.github/workflows/**/*.yml`
 - `.github/workflows/**/*.yaml"`
