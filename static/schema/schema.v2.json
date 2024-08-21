@@ -575,6 +575,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Buf offers linting for Protobuf files."
+								},
+								"actionlint": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Actionlint | is a static checker for GitHub Actions workflow files. | v1.7.1"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "actionlint is a static checker for GitHub Actions workflow files."
 								}
 							},
 							"additionalProperties": false,
