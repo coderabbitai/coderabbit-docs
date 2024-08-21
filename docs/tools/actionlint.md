@@ -8,11 +8,6 @@ description: CodeRabbit's guide to Actionlint.
 
 ## Files
 
-Actionlint will run on files with the following extensions:
-
-- `.yml`
-- `.yaml`
-
 We look for `.yaml` / `.yml` files specifically in the following directory:
 
 - `.github/workflows/**/*.yml`
