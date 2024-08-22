@@ -55,6 +55,7 @@ Remove extraneous f prefix
 | Plaintext                   | [LanguageTool][LanguageTool]                               |
 | Protobuf                    | [Buf][Buf]                                                 |
 | Python                      | [Ruff][Ruff]                                               |
+| Regal                       | [Regal][Regal]                                             |
 | Ruby                        | [Rubocop][Rubocop]                                         |
 | Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   |
 | Swift                       | [SwiftLint][SwiftLint]                                     |
@@ -80,3 +81,4 @@ Remove extraneous f prefix
 [Rubocop]: ./rubocop.md
 [Buf]: ./buf.md
 [Actionlint]: ./actionlint.md
+[Regal]: ./regal.md
