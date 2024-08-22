@@ -40,7 +40,6 @@ Remove extraneous f prefix
 |:----------------------------|:-----------------------------------------------------------|
 | All                         | [Gitleaks][Gitleaks]                                       |
 | GitHub Actions              | [Actionlint][Actionlint]                                   |
-| Protobuf                    | [Buf][Buf]                                                 |
 | CloudFormation              | [Checkov][Checkov]                                         |
 | CSS                         | [Biome][Biome]                                             |
 | Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                   |
@@ -54,6 +53,7 @@ Remove extraneous f prefix
 | Markdown                    | [Markdownlint][Markdownlint], [LanguageTool][LanguageTool] |
 | PHP                         | [PHPStan][PHPStan]                                         |
 | Plaintext                   | [LanguageTool][LanguageTool]                               |
+| Protobuf                    | [Buf][Buf]                                                 |
 | Python                      | [Ruff][Ruff]                                               |
 | Ruby                        | [Rubocop][Rubocop]                                         |
 | Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   |
