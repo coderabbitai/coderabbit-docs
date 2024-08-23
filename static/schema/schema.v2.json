@@ -576,6 +576,19 @@
 									"default": {},
 									"description": "Buf offers linting for Protobuf files."
 								},
+								"regal": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Regal | Regal is a linter and language server for Rego. | v0.25.0"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Regal is a linter and language server for Rego."
+								},
 								"actionlint": {
 									"type": "object",
 									"properties": {
