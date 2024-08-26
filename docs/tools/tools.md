@@ -39,10 +39,10 @@ Remove extraneous f prefix
 | Technology                  | Tools                                                      |
 |:----------------------------|:-----------------------------------------------------------|
 | All                         | [Gitleaks][Gitleaks]                                       |
-| GitHub Actions              | [Actionlint][Actionlint]                                   |
 | CloudFormation              | [Checkov][Checkov]                                         |
 | CSS                         | [Biome][Biome]                                             |
 | Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                   |
+| GitHub Actions              | [Actionlint][Actionlint]                                   |
 | Go                          | [golangci-lint][golangci-lint]                             |
 | Helm                        | [Checkov][Checkov]                                         |
 | Javascript                  | [Biome][Biome]                                             |
