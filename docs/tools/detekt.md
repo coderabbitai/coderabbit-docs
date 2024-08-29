@@ -15,7 +15,7 @@ Detekt will run on files with the following extensions:
 
 ## Configuration
 
-Detekt uses a YAML style configuration file.  
+Detekt uses a YAML style configuration file.
 
 Detekt supports the following config files:
 
