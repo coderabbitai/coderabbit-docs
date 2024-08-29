@@ -786,6 +786,19 @@
 							},
 							"additionalProperties": false,
 							"default": {}
+						},
+						"pull_requests": {
+							"type": "object",
+							"properties": {
+								"scope": {
+									"type": "string",
+									"enum": ["local", "global", "auto"],
+									"default": "auto",
+									"description": "Pull Requests | Specify the scope of pull requests to use for the knowledge base. 'local' uses the repository's pull requests, 'global' uses the organization's pull requests, and 'auto' uses repository's pull requests for public repositories and organization's pull requests for private repositories."
+								}
+							},
+							"additionalProperties": false,
+							"default": {}
 						}
 					},
 					"additionalProperties": false,
