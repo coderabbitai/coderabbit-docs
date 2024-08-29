@@ -37,7 +37,7 @@ Remove extraneous f prefix
 ## Supported Tools
 
 | Technology                  | Tools                                                      |
-|:----------------------------|:-----------------------------------------------------------|
+| :-------------------------- | :--------------------------------------------------------- |
 | All                         | [Gitleaks][Gitleaks]                                       |
 | CloudFormation              | [Checkov][Checkov]                                         |
 | CSS                         | [Biome][Biome]                                             |
@@ -63,7 +63,6 @@ Remove extraneous f prefix
 | TSX                         | [Biome][Biome]                                             |
 | Typescript                  | [Biome][Biome]                                             |
 | YAML                        | [YamlLint][YamlLint]                                       |
-
 
 [ShellCheck]: ./shellcheck.md
 [Ruff]: ./ruff.md

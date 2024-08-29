@@ -1,8 +1,7 @@
 ---
 title: Pricing
 sidebar_label: Pricing
-description:
-  Learn about the plans, pricing, and subscription management of CodeRabbit.
+description: Learn about the plans, pricing, and subscription management of CodeRabbit.
 ---
 
 This section covers the plans, pricing, and subscription management of

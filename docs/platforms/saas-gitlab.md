@@ -39,18 +39,18 @@ If your organization opts to use another user within the organization, you can d
 
 #### Recommendations
 
-* **Create a dedicated user for CodeRabbit** - This ensures the user is exclusively for CodeRabbit, allowing better access control.
-* **Use "CodeRabbit" as the username** - This makes the user easily recognizable for future reference.
-* **Use a dedicated email address** - This helps in easy identification and management.
-* **Use the CodeRabbit logo as the profile picture** - This further ensures easy recognition. You can download our logo from [here](/img/integrations/logo.svg "download").
+- **Create a dedicated user for CodeRabbit** - This ensures the user is exclusively for CodeRabbit, allowing better access control.
+- **Use "CodeRabbit" as the username** - This makes the user easily recognizable for future reference.
+- **Use a dedicated email address** - This helps in easy identification and management.
+- **Use the CodeRabbit logo as the profile picture** - This further ensures easy recognition. You can download our logo from [here](/img/integrations/logo.svg "download").
 
 #### Key Points to Remember
 
-* Personal access tokens have expiration dates. Ensure the expiration date covers the duration of your intended use of the CodeRabbit app.
-* Code reviews will be attributed to the owner of the personal access token.
-* If the personal access token expires, you can add a new one via the CodeRabbit UI:
-  * Navigate to the "GitLab User" page in the sidebar.
-  * Click the "Update" button on the displayed card to see the same modal as the initial login.
+- Personal access tokens have expiration dates. Ensure the expiration date covers the duration of your intended use of the CodeRabbit app.
+- Code reviews will be attributed to the owner of the personal access token.
+- If the personal access token expires, you can add a new one via the CodeRabbit UI:
+  - Navigate to the "GitLab User" page in the sidebar.
+  - Click the "Update" button on the displayed card to see the same modal as the initial login.
 
 ### Generating a Personal Access Token
 
