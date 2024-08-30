@@ -1,11 +1,30 @@
 ---
 title: Integrating CodeRabbit with SaaS Azure DevOps
 description: Integrate CodeRabbit with SaaS Azure DevOps.
-sidebar_label: SaaS Azure DevOps
+sidebar_label: SaaS Azure DevOps BETA
 sidebar_position: 4
 ---
 
 This guide will assist you in effectively integrating CodeRabbit with SaaS Azure DevOps.
+
+## Prerequisites
+* An active Azure DevOps account.
+* Use of organizational email addresses is required; personal email addresses are not supported for this integration.
+
+## Integration Instructions
+1. Log in to the CodeRabbitAI application.
+2. After logging in, you will be redirected to a page displaying Microsoft Apps consent requests. Please forward these requests to your administrator for approval.
+:::warning
+
+If you are an administrator, you may approve the applications directly. If not, please contact your administrator to request approval for the applications.
+
+:::
+![azure devops apps consent](/img/integrations/azure_apps_consent_page.png)
+3. Once your administrator has approved the applications, click "Continue."
+4. You will be redirected to the "Onboarding" page, where you can select the organization you wish to integrate with.
+5. On the "Azure DevOps User" page, enter your Personal Access Token for Azure DevOps.
+![azure devops user page](/img/integrations/azure_devops_user_page.png)
+6. To install CodeRabbit on a repository, toggle the switch on the "Repositories" page.
 
 ## How it works
 
