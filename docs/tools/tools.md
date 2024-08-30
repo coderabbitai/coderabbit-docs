@@ -53,6 +53,7 @@ Remove extraneous f prefix
 | Markdown                    | [Markdownlint][Markdownlint], [LanguageTool][LanguageTool] |
 | PHP                         | [PHPStan][PHPStan]                                         |
 | Plaintext                   | [LanguageTool][LanguageTool]                               |
+| PMD                         | [PMD][PMD]                               |
 | Protobuf                    | [Buf][Buf]                                                 |
 | Python                      | [Ruff][Ruff]                                               |
 | Regal                       | [Regal][Regal]                                             |
@@ -81,3 +82,4 @@ Remove extraneous f prefix
 [Buf]: ./buf.md
 [Actionlint]: ./actionlint.md
 [Regal]: ./regal.md
+[PMD]: ./pmd.md
