@@ -8,18 +8,22 @@ sidebar_position: 4
 This guide will assist you in effectively integrating CodeRabbit with SaaS Azure DevOps.
 
 ## Prerequisites
+
 * An active Azure DevOps account.
 * Use of organizational email addresses is required; personal email addresses are not supported for this integration.
 
 ## Integration Instructions
 1. Log in to the CodeRabbitAI application.
 2. After logging in, you will be redirected to a page displaying Microsoft Apps consent requests. Please forward these requests to your administrator for approval.
+
 :::warning
 
 If you are an administrator, you may approve the applications directly. If not, please contact your administrator to request approval for the applications.
 
 :::
+
 ![azure devops apps consent](/img/integrations/azure_apps_consent_page.png)
+
 3. Once your administrator has approved the applications, click "Continue."
 4. You will be redirected to the "Onboarding" page, where you can select the organization you wish to integrate with.
 5. On the "Azure DevOps User" page, enter your Personal Access Token for Azure DevOps.
@@ -40,14 +44,14 @@ Upon first login to the application (immediately after the onboarding screen), y
 
 ![azure devops user modal](/img/integrations/azure_personal_access_token_add.png)
 
-#### Recommendations
+### Recommendations
 
 * **Create a dedicated user for CodeRabbit** - This ensures the user is exclusively for CodeRabbit, allowing better access control.
 * **Use "CodeRabbit" as the username** - This makes the user easily recognizable for future reference.
 * **Use a dedicated email address** - This helps in easy identification and management.
 * **Use the CodeRabbit logo as the profile picture** - This further ensures easy recognition. You can download our logo from [here](/img/integrations/logo.svg "download").
 
-#### Key Points to Remember
+### Key Points to Remember
 
 * Personal access tokens have expiration dates. Ensure the expiration date covers the duration of your intended use of the CodeRabbit app.
 * Code reviews will be attributed to the owner of the personal access token.
@@ -65,7 +69,7 @@ Azure DevOps provides an option to generate a personal access token for a user. 
 4. Click "New Token"
 5. Select the organization you want to use the token with or select "All accessible organizations."
 6. Enter a name and an expiry date for the token.
-7. We need read & write access to "Work Items" & "Code" to post reviews on pull requests.
+7. We need to have read & write access to "Work Items" & "Code" to post reviews on pull requests.
 8. Click "Create"
 
 ![Generate Personal Access Token](/img/integrations/azure-access-token.png)
