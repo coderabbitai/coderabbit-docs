@@ -14,7 +14,6 @@ slug: "/"
   <iframe src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 </div>
 
-
 **CodeRabbit** is an innovative, AI-first code reviewer. It provides
 context-aware review feedback on a pull request within minutes, thereby
 significantly reducing the time and effort associated with manual code reviews.

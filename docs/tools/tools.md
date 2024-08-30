@@ -37,12 +37,12 @@ Remove extraneous f prefix
 ## Supported Tools
 
 | Technology                  | Tools                                                      |
-|:----------------------------|:-----------------------------------------------------------|
+| :-------------------------- | :--------------------------------------------------------- |
 | All                         | [Gitleaks][Gitleaks]                                       |
-| GitHub Actions              | [Actionlint][Actionlint]                                   |
 | CloudFormation              | [Checkov][Checkov]                                         |
 | CSS                         | [Biome][Biome]                                             |
 | Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                   |
+| GitHub Actions              | [Actionlint][Actionlint]                                   |
 | Go                          | [golangci-lint][golangci-lint]                             |
 | Helm                        | [Checkov][Checkov]                                         |
 | Javascript                  | [Biome][Biome]                                             |
@@ -55,6 +55,7 @@ Remove extraneous f prefix
 | Plaintext                   | [LanguageTool][LanguageTool]                               |
 | Protobuf                    | [Buf][Buf]                                                 |
 | Python                      | [Ruff][Ruff]                                               |
+| Regal                       | [Regal][Regal]                                             |
 | Ruby                        | [Rubocop][Rubocop]                                         |
 | Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   |
 | Swift                       | [SwiftLint][SwiftLint]                                     |
@@ -62,7 +63,6 @@ Remove extraneous f prefix
 | TSX                         | [Biome][Biome]                                             |
 | Typescript                  | [Biome][Biome]                                             |
 | YAML                        | [YamlLint][YamlLint]                                       |
-
 
 [ShellCheck]: ./shellcheck.md
 [Ruff]: ./ruff.md
@@ -80,3 +80,4 @@ Remove extraneous f prefix
 [Rubocop]: ./rubocop.md
 [Buf]: ./buf.md
 [Actionlint]: ./actionlint.md
+[Regal]: ./regal.md

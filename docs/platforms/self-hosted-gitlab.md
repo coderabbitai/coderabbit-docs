@@ -12,6 +12,8 @@ To initiate the integration, we require specific information. This is essential
 for the initial setup of CodeRabbit within your domain. Once this setup is
 complete, you can log in directly using the OAuth2 flow.
 
+CodeRabbit supports GitLab `16.x` and above. Version `15.x` may experience unexpected issues such as review comments not being posted or the sign up process not working at all. While we won't block the integration, we recommend upgrading your GitLab instance to obtain the intended experience.
+
 ### **Step 1: Getting Started**
 
 **Visit CodeRabbit:** Visit our [Login](https://coderabbit.ai/login) page and
