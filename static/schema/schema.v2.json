@@ -601,23 +601,6 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "actionlint is a static checker for GitHub Actions workflow files."
-								},
-								"pmd": {
-									"type": "object",
-									"properties": {
-										"enabled": {
-											"type": "boolean",
-											"default": true,
-											"description": "Enable Pmd | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.4.0"
-										},
-										"config_file": {
-											"type": "string",
-											"description": "Optional path to the Pmd configuration file relative to the repository."
-										}
-									},
-									"additionalProperties": false,
-									"default": {},
-									"description": "PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java."
 								}
 							},
 							"additionalProperties": false,
