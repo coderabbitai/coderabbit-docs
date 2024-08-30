@@ -63,7 +63,7 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 5. Click "Add New Token."
 6. Enter a name and an expiry date for the token.
 7. If no expiry date is entered, it defaults to 365 days from the current date.
-8. Ensure the following scopes are selected: `api`, `user`, `email`.
+8. Ensure the following scopes are selected: `api`, `read_api`, `read_user`.
 9. Click "Create Personal Access Token."
 10. Note down the token as it will only be displayed once.
 
