@@ -1,11 +1,11 @@
 ---
-title: Integrating CodeRabbit with SaaS Azure DevOps
-description: Integrate CodeRabbit with SaaS Azure DevOps.
-sidebar_label: SaaS Azure DevOps BETA
+title: Integrating CodeRabbit with Azure DevOps
+description: Integrate CodeRabbit with Azure DevOps.
+sidebar_label: Azure DevOps (Beta)
 sidebar_position: 4
 ---
 
-This guide will assist you in effectively integrating CodeRabbit with SaaS Azure DevOps.
+This guide will assist you in effectively integrating CodeRabbit with Azure DevOps.
 
 ## Prerequisites
 
