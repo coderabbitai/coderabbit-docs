@@ -25,7 +25,7 @@ CodeRabbit supports various Git platforms to provide code review for your reposi
 
 | Host                | Support                            |
 | ------------------- | ---------------------------------- |
-| Azure DevOps        | [Supported](saas-azure-devops.md)  |
+| Azure DevOps        | [Supported](azure-devops.md)  |
 | Azure DevOps Server | Coming soon                        |
 
 ## Bitbucket
