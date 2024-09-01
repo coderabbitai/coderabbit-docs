@@ -84,6 +84,11 @@ const config: Config = {
             from: "/integrations/self-hosted-github",
             to: "/platforms/self-hosted-github",
           },
+          {
+            from: "/platforms/saas-azure-devops",
+            to: "/platforms/azure-devops",
+          },
+          
         ],
       },
     ],
