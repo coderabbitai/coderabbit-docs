@@ -40,6 +40,7 @@ Remove extraneous f prefix
 | :-------------------------- | :--------------------------------------------------------- |
 | All                         | [Gitleaks][Gitleaks]                                       |
 | CloudFormation              | [Checkov][Checkov]                                         |
+| Cppcheck                    | [Cppcheck][Cppcheck]                                       |
 | CSS                         | [Biome][Biome]                                             |
 | Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                   |
 | GitHub Actions              | [Actionlint][Actionlint]                                   |
@@ -83,3 +84,4 @@ Remove extraneous f prefix
 [Actionlint]: ./actionlint.md
 [Regal]: ./regal.md
 [PMD]: ./pmd.md
+[Cppcheck]: ./cppcheck.md
