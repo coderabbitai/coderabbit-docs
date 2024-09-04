@@ -618,6 +618,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java."
+								},
+								"cppcheck": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Cppcheck | Cppcheck is a static code analysis tool for the C and C++ programming languages. | v2.10.2"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Cppcheck is a static code analysis tool for the C and C++ programming languages."
 								}
 							},
 							"additionalProperties": false,
