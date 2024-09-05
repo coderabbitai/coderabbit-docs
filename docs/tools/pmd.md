@@ -20,6 +20,9 @@ PMD supports the following config files:
 
 - User-defined config file set at `reviews.tools.pmd.config_file` in your project's `.coderabbit.yaml` file or setting the "Review → Tools → PMD → Config File" field in CodeRabbit's settings page.
 
+- If no user-defined config file is found, we look for the following config file in the repo:
+  - `ruleset.xml`
+
 ## Links
 
 - [PMD Configuring rules](https://pmd.github.io/pmd/pmd_userdocs_configuring_rules.html)
