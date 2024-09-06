@@ -88,7 +88,7 @@ the token, please follow the process outlined below:
    setup, so the minimum expiry time is sufficient.
 7. If you do not enter an expiry date, the expiry date is automatically set to
    365 days later than the current date.
-8. Make sure, you select the scopes: `api user email`
+8. Make sure, you select the scopes: `api read_api read_user`
 9. Select Create personal access token.
 10. Please note down this token as this will be visible one time only
 
