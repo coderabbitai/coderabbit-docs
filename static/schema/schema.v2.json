@@ -161,6 +161,27 @@
 							"default": true,
 							"description": "Generate sequence diagrams in the walkthrough."
 						},
+						"labeling_instructions": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"label": {
+										"type": "string",
+										"description": "Label to suggest for the PR/MR. Example: frontend"
+									},
+									"instructions": {
+										"type": "string",
+										"maxLength": 3000,
+										"description": "Instructions for the label. Example: Apply when the PR/MR contains changes to the react components."
+									}
+								},
+								"required": ["label", "instructions"],
+								"additionalProperties": false
+							},
+							"default": [],
+							"description": "Labeling Instructions | Provide guidelines for suggesting labels for the PR/MR. When specific labels or instructions are provided, only those labels are considered, though previous examples are still used to inform the suggestions. If no such labels are provided, suggestions are based solely on previous PR/MRs."
+						},
 						"path_filters": {
 							"type": "array",
 							"items": {
