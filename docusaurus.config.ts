@@ -83,7 +83,7 @@ const config: Config = {
           },
           {
             from: "/integrations/self-hosted-github",
-            to: "/platforms/self-hosted-github",
+            to: "/platforms/github-enterprise-server",
           },
           {
             from: "/platforms/saas-azure-devops",
@@ -92,6 +92,10 @@ const config: Config = {
           {
             from: "/platforms/saas-gitlab",
             to: "/platforms/gitlab-com",
+          },
+          {
+            from: "/platforms/self-hosted-github",
+            to: "/platforms/github-enterprise-server",
           },
           
         ],

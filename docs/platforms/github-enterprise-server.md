@@ -1,7 +1,7 @@
 ---
 title: CodeRabbit for Self-Managed GitHub
 description: Integrate CodeRabbit with your Self-Managed GitHub instance.
-sidebar_label: Self-Managed GitHub
+sidebar_label: Github Enteprise Server
 sidebar_position: 3
 ---
 
