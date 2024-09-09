@@ -12,13 +12,13 @@ CodeRabbit supports various Git platforms to provide code review for your reposi
 | Host                     | Support                            |
 | ------------------------ | ---------------------------------- |
 | GitHub.com               | [Supported][login]                 |
-| GitHub Enterprise Server | [Supported](self-hosted-github.md) |
+| GitHub Enterprise Server | [Supported](github-enterprise-server.md) |
 
 ## GitLab
 
 | Host                | Support                            |
 | ------------------- | ---------------------------------- |
-| GitLab.com          | [Supported](saas-gitlab.md)        |
+| GitLab.com          | [Supported](gitlab-com.md)        |
 | GitLab Self Managed | [Supported](self-hosted-gitlab.md) |
 
 ## Azure DevOps
