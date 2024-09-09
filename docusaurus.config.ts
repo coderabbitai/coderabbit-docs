@@ -1,7 +1,8 @@
-import type * as Preset from "@docusaurus/preset-classic";
-import type { Config } from "@docusaurus/types";
-import { themes as prismThemes } from "prism-react-renderer";
-import { EnumChangefreq } from "sitemap";
+import { themes as prismThemes } from 'prism-react-renderer';
+import { EnumChangefreq } from 'sitemap';
+
+import type * as Preset from '@docusaurus/preset-classic';
+import type { Config } from '@docusaurus/types';
 
 const baseUrl = "/";
 
@@ -74,7 +75,7 @@ const config: Config = {
           },
           {
             from: "/integrations/saas-gitlab",
-            to: "/platforms/saas-gitlab",
+            to: "/platforms/gitlab-com",
           },
           {
             from: "/integrations/self-hosted-gitlab",
@@ -87,6 +88,10 @@ const config: Config = {
           {
             from: "/platforms/saas-azure-devops",
             to: "/platforms/azure-devops",
+          },
+          {
+            from: "/platforms/saas-gitlab",
+            to: "/platforms/gitlab-com",
           },
           
         ],

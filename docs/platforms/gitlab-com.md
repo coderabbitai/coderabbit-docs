@@ -1,7 +1,7 @@
 ---
 title: Integrating CodeRabbit with SaaS GitLab
 description: Integrate CodeRabbit with SaaS GitLab.
-sidebar_label: SaaS GitLab
+sidebar_label: GitLab.com
 sidebar_position: 1
 ---
 
