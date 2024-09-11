@@ -1,13 +1,13 @@
 ---
-title: CodeRabbit for Self-Managed GitHub
-description: Integrate CodeRabbit with your Self-Managed GitHub instance.
+title: CodeRabbit for GitHub Enterprise Server
+description: Integrate CodeRabbit with your GitHub Enterprise Server.
 sidebar_label: Github Enteprise Server
 sidebar_position: 3
 ---
 
 :::info
 
-This page is for GitHub Enterprise Self-Hosted users only.  
+This page is for GitHub Enterprise Server (Self-Hosted) users only.  
 If you're using github.com, [log in to CodeRabbit](https://app.coderabbit.ai) and add your repositories from there
 
 :::
@@ -35,7 +35,7 @@ If the self-managed GitHub instance is not found, you will be required to enter 
 
 ### **Step 2: GitHub OAuth App**
 
-Navigate to your GitHub Self-Hosted Instance and follow the steps below to [create an OAuth App](https://docs.github.com/en/enterprise-server@latest/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app):
+Navigate to your GitHub Enterprise Server (Self-Hosted) Instance and follow the steps below to [create an OAuth App](https://docs.github.com/en/enterprise-server@latest/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app):
 
 1. Sign in to your GitHub Enterprise account.
 2. In the upper-right corner of any page, click your profile photo, then click **Settings**.
@@ -61,7 +61,7 @@ Keep the following details handy:
 
 ### **Step 3: GitHub App**
 
-Navigate to your GitHub Self-Hosted Instance and follow the steps below to [create a GitHub App](https://docs.github.com/en/enterprise-server@latest/apps/creating-github-apps/registering-a-github-app/registering-a-github-app):
+Navigate to your GitHub Enterprise Server (Self-Hosted) Instance and follow the steps below to [create a GitHub App](https://docs.github.com/en/enterprise-server@latest/apps/creating-github-apps/registering-a-github-app/registering-a-github-app):
 
 1. Sign in to your GitHub Enterprise account.
 2. In the upper-right corner of any page, click your profile photo, then click **Settings**.
@@ -132,7 +132,7 @@ On subsequent visits, your setup will be automatically detected, allowing for di
 
 ### **Step 5: Install the GitHub App**
 
-Navigate to the GitHub App that was created from your self-hosted instance and click on the **Install App** tab.
+Navigate to the GitHub App that was created from your Github Enterprise Server (self-hosted) instance and click on the **Install App** tab.
 Then, install the GitHub App to your organization(s).
 
 :::warning
