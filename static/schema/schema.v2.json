@@ -161,6 +161,11 @@
 							"default": true,
 							"description": "Generate sequence diagrams in the walkthrough."
 						},
+						"changed_files_summary": {
+							"type": "boolean",
+							"default": true,
+							"description": "Generate a summary of the changed files in the walkthrough."
+						},
 						"labeling_instructions": {
 							"type": "array",
 							"items": {
