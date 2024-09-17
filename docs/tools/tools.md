@@ -39,6 +39,7 @@ Remove extraneous f prefix
 | Technology                  | Tools                                                      |
 | :-------------------------- | :--------------------------------------------------------- |
 | All                         | [Gitleaks][Gitleaks]                                       |
+| CircleCi                    | [CircleCi][CircleCi]                                         |
 | CloudFormation              | [Checkov][Checkov]                                         |
 | Cppcheck                    | [Cppcheck][Cppcheck]                                       |
 | CSS                         | [Biome][Biome]                                             |
@@ -85,3 +86,5 @@ Remove extraneous f prefix
 [Regal]: ./regal.md
 [PMD]: ./pmd.md
 [Cppcheck]: ./cppcheck.md
+[CircleCi]: ./circleci.md
+
