@@ -657,6 +657,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Cppcheck is a static code analysis tool for the C and C++ programming languages."
+								},
+								"circleci": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable CircleCi | CircleCi tool is a static checker for CircleCi config files. | v0.1.30995"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "CircleCi tool is a static checker for CircleCi config files."
 								}
 							},
 							"additionalProperties": false,
