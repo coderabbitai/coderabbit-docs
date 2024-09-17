@@ -738,7 +738,7 @@
 										"type": "string"
 									},
 									"default": [],
-									"description": "Linear Team Keys | Specify the Linear project keys to use for the knowledge base."
+									"description": "Linear Team Keys | Specify the Linear team keys (identifiers) to use for the knowledge base. E.g. 'ENG'"
 								}
 							},
 							"additionalProperties": false,
