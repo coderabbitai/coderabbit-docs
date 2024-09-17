@@ -103,10 +103,7 @@ repository settings.
 #### What access does CodeRabbit need to my repositories?
 
 CodeRabbit requests minimal access to perform code reviews and post comments on
-Pull Requests. On GitHub, it requires read access to metadata, code,
-discussions, and issues, as well as read/write access to pull requests. On
-GitLab, it requires read access to the repository, and the CodeRabbit Bot user
-requires a developer role.
+Pull Requests. You can review the permissions requested during the installation process.
 
 #### How can I interact with the CodeRabbit bot?
 
