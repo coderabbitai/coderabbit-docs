@@ -60,6 +60,7 @@ Remove extraneous f prefix
 | Python                      | [Ruff][Ruff]                                               |
 | Regal                       | [Regal][Regal]                                             |
 | Ruby                        | [Rubocop][Rubocop]                                         |
+| Semgrep                     | [Semgrep][Semgrep]                                         |
 | Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   |
 | Swift                       | [SwiftLint][SwiftLint]                                     |
 | Terraform                   | [Checkov][Checkov]                                         |
@@ -87,4 +88,5 @@ Remove extraneous f prefix
 [PMD]: ./pmd.md
 [Cppcheck]: ./cppcheck.md
 [CircleCi]: ./circleci.md
+[Semgrep]: ./semgrep.md
 
