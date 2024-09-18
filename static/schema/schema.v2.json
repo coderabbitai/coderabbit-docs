@@ -664,7 +664,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Semgrep | Semgrep is a static anaylysis tool for various languages. | Enable Semgrep integration. | v1.29.0"
+											"description": "Enable Semgrep | Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues. | Enable Semgrep integration. | v1.29.0"
 										},
 										"config_file": {
 											"type": "string",
@@ -673,7 +673,7 @@
 									},
 									"additionalProperties": false,
 									"default": {},
-									"description": "Semgrep is a static anaylysis tool for various languages."
+									"description": "Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues."
 								},
 								"circleci": {
 									"type": "object",
