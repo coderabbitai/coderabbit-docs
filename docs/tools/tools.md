@@ -55,7 +55,7 @@ Remove extraneous f prefix
 | Markdown                    | [Markdownlint][Markdownlint], [LanguageTool][LanguageTool] |
 | PHP                         | [PHPStan][PHPStan]                                         |
 | Plaintext                   | [LanguageTool][LanguageTool]                               |
-| PMD                         | [PMD][PMD]                               |
+| Java                        | [PMD][PMD]                               |
 | Protobuf                    | [Buf][Buf]                                                 |
 | Python                      | [Ruff][Ruff]                                               |
 | Regal                       | [Regal][Regal]                                             |
