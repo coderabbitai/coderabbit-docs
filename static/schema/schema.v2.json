@@ -323,7 +323,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable ruff integration. | v0.5.7"
+											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable ruff integration. | v0.6.5"
 										}
 									},
 									"additionalProperties": false,
@@ -447,7 +447,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable SwiftLint | SwiftLint is a Swift linter. | Enable SwiftLint integration. | v0.55.1"
+											"description": "Enable SwiftLint | SwiftLint is a Swift linter. | Enable SwiftLint integration. | v0.57.0"
 										},
 										"config_file": {
 											"type": "string",
@@ -526,7 +526,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration. | v8.18.4"
+											"description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration. | v8.19.2"
 										}
 									},
 									"additionalProperties": false,
@@ -539,7 +539,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Checkov | Checkov is a static code analysis tool for infrastructure-as-code files. | v3.2.219"
+											"description": "Enable Checkov | Checkov is a static code analysis tool for infrastructure-as-code files. | v3.2.254"
 										}
 									},
 									"additionalProperties": false,
@@ -552,7 +552,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Detekt | Detekt is a static code analysis tool for Kotlin files. | v1.23.6"
+											"description": "Enable Detekt | Detekt is a static code analysis tool for Kotlin files. | v1.23.7"
 										},
 										"config_file": {
 											"type": "string",
@@ -595,7 +595,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Buf | Buf offers linting for Protobuf files. | v1.36.0"
+											"description": "Enable Buf | Buf offers linting for Protobuf files. | v1.42.0"
 										}
 									},
 									"additionalProperties": false,
@@ -634,7 +634,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Pmd | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.4.0"
+											"description": "Enable Pmd | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.5.0"
 										},
 										"config_file": {
 											"type": "string",
