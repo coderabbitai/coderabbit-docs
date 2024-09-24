@@ -33,6 +33,6 @@ CodeRabbit supports various Git platforms to provide code review for your reposi
 | Host                  | Support     |
 | --------------------- | ----------- |
 | Cloud                 | Coming soon |
-| Bitbucket Data Center | Coming soon |
+| Bitbucket Data Center | [Supported] |
 
 [login]: https://app.coderabbit.ai/login
