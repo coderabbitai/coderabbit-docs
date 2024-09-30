@@ -97,6 +97,16 @@ look at the next section for additional steps required by the user.
 3. Select <strong>Remove Member</strong> and confirm to remove the CodeRabbit
    from your project
 
+### Azure DevOps
+
+#### Uninstalling CodeRabbit from your Azure DevOps project
+
+1. Navigate to your <strong>Project Settings</strong> in the Azure DevOps UI where CodeRabbit is installed.
+2. Under <strong>Project Settings</strong>, go to <strong>Service Hooks</strong>.
+3. Select the webhooks that are added by CodeRabbit.
+4. Click the <strong>Delete</strong> icon at the top of the page.
+5. Remove the CodeRabbit user or delete the <strong>Personal Access Token</strong> associated with the user used for reviews.
+
 :::warning
 
 The steps are necessary to completely off-board CodeRabbit from your
