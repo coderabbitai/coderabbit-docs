@@ -4,11 +4,12 @@ sidebar_label: Actionlint
 description: CodeRabbit's guide to Actionlint.
 ---
 
-[Actionlint](https://github.com/rhysd/actionlint/) is a static checker for GitHub Actions workflow files.
+[Actionlint](https://github.com/rhysd/actionlint/) is a static checker for
+GitHub Actions workflow files.
 
 ## Files
 
-We look for `Github Action` files specifically in the following directory:
+We look for `GitHub Action` files specifically in the following directory:
 
 - `.github/workflows/**/*.yml`
 - `.github/workflows/**/*.yaml"`
