@@ -1,18 +1,20 @@
 ---
 title: CodeRabbit for GitHub Enterprise Server
 description: Integrate CodeRabbit with your GitHub Enterprise Server.
-sidebar_label: Github Enteprise Server
+sidebar_label: GitHub Enterprise Server
 sidebar_position: 3
 ---
 
 :::info
 
 This page is for GitHub Enterprise Server (Self-Hosted) users only.  
-If you're using github.com, [log in to CodeRabbit](https://app.coderabbit.ai) and add your repositories from there
+If you're using github.com, [log in to CodeRabbit](https://app.coderabbit.ai)
+and add your repositories from there
 
 :::
 
-This page guides you through the process of integrating your Self-Managed GitHub with CodeRabbit.
+This page guides you through the process of integrating your Self-Managed GitHub
+with CodeRabbit.
 
 To initiate the integration, we require specific information. This is essential
 for the initial setup of CodeRabbit within your domain. Once this setup is
@@ -31,26 +33,33 @@ organization and if we find an existing one, we will start the login process.
 
 ![Untitled](/img/integrations/self-hosted-github-host-url.png)
 
-If the self-managed GitHub instance is not found, you will be required to enter more details for the onboarding.
+If the self-managed GitHub instance is not found, you will be required to enter
+more details for the onboarding.
 
 ### **Step 2: GitHub OAuth App**
 
-Navigate to your GitHub Enterprise Server (Self-Hosted) Instance and follow the steps below to [create an OAuth App](https://docs.github.com/en/enterprise-server@latest/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app):
+Navigate to your GitHub Enterprise Server (Self-Hosted) Instance and follow the
+steps below to
+[create an OAuth App](https://docs.github.com/en/enterprise-server@latest/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app):
 
 1. Sign in to your GitHub Enterprise account.
-2. In the upper-right corner of any page, click your profile photo, then click **Settings**.
+2. In the upper-right corner of any page, click your profile photo, then click
+   **Settings**.
 3. In the left sidebar, click **Developer settings** > **OAuth Apps**.
 4. Click **New OAuth App**.
 5. Set the following fields:
    - **Application name**: `CodeRabbit OAuth`
    - **Homepage URL**: `https://coderabbit.ai`
-   - **Application description**: `OAuth application for signing into CodeRabbit`
+   - **Application description**:
+     `OAuth application for signing into CodeRabbit`
    - **Authorization callback URL**: `https://app.coderabbit.ai/login`
 6. Click **Register application**.
 
 ![GitHub Create OAuth App](/img/integrations/github-create-oauth-app.png)
 
-Once the OAuth App has been created, click on **Generate a new client secret** under the 'Client secrets' section and copy the secret as it will be visible once only
+Once the OAuth App has been created, click on **Generate a new client secret**
+under the 'Client secrets' section and copy the secret as it will be visible
+once only
 
 Keep the following details handy:
 
@@ -61,10 +70,13 @@ Keep the following details handy:
 
 ### **Step 3: GitHub App**
 
-Navigate to your GitHub Enterprise Server (Self-Hosted) Instance and follow the steps below to [create a GitHub App](https://docs.github.com/en/enterprise-server@latest/apps/creating-github-apps/registering-a-github-app/registering-a-github-app):
+Navigate to your GitHub Enterprise Server (Self-Hosted) Instance and follow the
+steps below to
+[create a GitHub App](https://docs.github.com/en/enterprise-server@latest/apps/creating-github-apps/registering-a-github-app/registering-a-github-app):
 
 1. Sign in to your GitHub Enterprise account.
-2. In the upper-right corner of any page, click your profile photo, then click **Settings**.
+2. In the upper-right corner of any page, click your profile photo, then click
+   **Settings**.
 3. In the left sidebar, click **Developer settings** > **GitHub Apps**
 4. Click **New GitHub App**.
 5. Set the following fields:
@@ -100,9 +112,12 @@ Navigate to your GitHub Enterprise Server (Self-Hosted) Instance and follow the 
        - Release
 6. Click **Create GitHub App**.
 
-Once the GitHub App has been created, click on **Generate a new client secret** under the 'Client secrets' section and copy the secret as it will be visible once only.
+Once the GitHub App has been created, click on **Generate a new client secret**
+under the 'Client secrets' section and copy the secret as it will be visible
+once only.
 
-Scroll down and click on **Generate a private key** under the 'Private keys' section and download the PEM file.
+Scroll down and click on **Generate a private key** under the 'Private keys'
+section and download the PEM file.
 
 Keep the following details handy:
 
@@ -127,18 +142,21 @@ Submit the details that were accumulated in previous steps:
 - GitHub App Webhook Secret
 - GitHub App Private Key
 
-Click on Submit and the login process will be initiated.
-On subsequent visits, your setup will be automatically detected, allowing for direct login.
+Click on Submit and the login process will be initiated. On subsequent visits,
+your setup will be automatically detected, allowing for direct login.
 
 ### **Step 5: Install the GitHub App**
 
-Navigate to the GitHub App that was created from your Github Enterprise Server (self-hosted) instance and click on the **Install App** tab.
-Then, install the GitHub App to your organization(s).
+Navigate to the GitHub App that was created from your GitHub Enterprise Server
+(self-hosted) instance and click on the **Install App** tab. Then, install the
+GitHub App to your organization(s).
 
 :::warning
 
-If you performed this step before Step 4, the installation event likely will have failed, and you will need to re-send the installation event.  
-Navigate to the **Advanced** tab in the GitHub App and click on the **Redeliver** button for the failed `installation.created` event.
+If you performed this step before Step 4, the installation event likely will
+have failed, and you will need to re-send the installation event.  
+Navigate to the **Advanced** tab in the GitHub App and click on the
+**Redeliver** button for the failed `installation.created` event.
 
 :::
 

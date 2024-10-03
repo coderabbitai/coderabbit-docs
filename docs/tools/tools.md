@@ -55,11 +55,12 @@ Remove extraneous f prefix
 | Markdown                    | [Markdownlint][Markdownlint], [LanguageTool][LanguageTool] |
 | PHP                         | [PHPStan][PHPStan]                                         |
 | Plaintext                   | [LanguageTool][LanguageTool]                               |
-| PMD                         | [PMD][PMD]                               |
+| Java                        | [PMD][PMD]                               |
 | Protobuf                    | [Buf][Buf]                                                 |
 | Python                      | [Ruff][Ruff]                                               |
 | Regal                       | [Regal][Regal]                                             |
 | Ruby                        | [Rubocop][Rubocop]                                         |
+| Semgrep                     | [Semgrep][Semgrep]                                         |
 | Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   |
 | Swift                       | [SwiftLint][SwiftLint]                                     |
 | Terraform                   | [Checkov][Checkov]                                         |
@@ -87,4 +88,5 @@ Remove extraneous f prefix
 [PMD]: ./pmd.md
 [Cppcheck]: ./cppcheck.md
 [CircleCi]: ./circleci.md
+[Semgrep]: ./semgrep.md
 

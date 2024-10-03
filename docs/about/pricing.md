@@ -41,7 +41,7 @@ CodeRabbit.
 
 These are the hourly usage limits for each developer per repository:
 
-- Number of files reviewed per hour: 100 Files
+- Number of files reviewed per hour: 150 Files
 - Number of reviews per hour (includes incremental reviews): 9
 - Number of conversations per hour: 50
 

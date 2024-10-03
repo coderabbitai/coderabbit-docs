@@ -4,7 +4,7 @@ title: Introduction
 sidebar_label: Introduction
 sidebar_position: 1
 description:
-  CodeRabbit is an innovative, AI-first code reviewer. It provides context-aware
+  CodeRabbit is an innovative, AI-powered code reviewer. It provides context-aware
   review feedback on a pull request within minutes, thereby significantly
   reducing the time and effort associated with manual code reviews.
 slug: "/"
@@ -14,7 +14,7 @@ slug: "/"
   <iframe src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 </div>
 
-**CodeRabbit** is an innovative, AI-first code reviewer. It provides
+**CodeRabbit** is an innovative, AI-powered code reviewer. It provides
 context-aware review feedback on a pull request within minutes, thereby
 significantly reducing the time and effort associated with manual code reviews.
 Additionally, it brings a different perspective to the reviews and finds issues
@@ -46,7 +46,7 @@ Data storage: Code downloaded during the review process is temporarily stored in
 memory and deleted once the review is completed. The code is not stored or used for
 any other purpose. However, CodeRabbit enhances future reviews for your organization by
 storing the embeddings of the learnings generated from chat conversations. Additionally,
-it integrates embeddings from issues in workflow systems (Liner, Jira, GitHub/GitLab issues)
+it integrates embeddings from issues in workflow systems (Linear, Jira, GitHub/GitLab issues)
 to assess the impact of code changes on existing issues.
 
 Compliance and Data Privacy: Your data is kept confidential, isolated by the
