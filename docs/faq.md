@@ -41,12 +41,6 @@ click on the organization name in the top-left corner of the CodeRabbit UI.
 ![Switch Organizations](/img/faq/cr_support_orgs_light.png#gh-light-mode-only)
 ![Switch Organizations](/img/faq/cr_support_orgs_dark.png#gh-dark-mode-only)
 
-#### What Large Language Models does CodeRabbit use?
-
-CodeRabbit currently utilizes OpenAI's `gpt-4-turbo` and `gpt-3.5-turbo`. We're
-researching and testing upcoming LLMs to ensure we're offering the most precise
-reviews possible.
-
 #### How does CodeRabbit compare to other AI code generators?
 
 Code reviews remain essential, whether the code is written by a human or a bot.
