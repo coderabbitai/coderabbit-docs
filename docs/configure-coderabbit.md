@@ -45,6 +45,12 @@ Write your configuration file in the below editor to validate:
 <YamlEditor />
 ```
 
+:::note
+
+`.coderabit.yaml` configuration file should exist in the feature branch for CodeRabbit review. 
+
+:::
+
 The configuration file can be used to set the following options:
 
 ```mdx-code-block
