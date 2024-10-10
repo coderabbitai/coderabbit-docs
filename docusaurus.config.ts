@@ -1,8 +1,8 @@
-import { themes as prismThemes } from 'prism-react-renderer';
-import { EnumChangefreq } from 'sitemap';
+import { themes as prismThemes } from "prism-react-renderer";
+import { EnumChangefreq } from "sitemap";
 
-import type * as Preset from '@docusaurus/preset-classic';
-import type { Config } from '@docusaurus/types';
+import type * as Preset from "@docusaurus/preset-classic";
+import type { Config } from "@docusaurus/types";
 
 const baseUrl = "/";
 
@@ -97,7 +97,6 @@ const config: Config = {
             from: "/platforms/self-hosted-github",
             to: "/platforms/github-enterprise-server",
           },
-          
         ],
       },
     ],
@@ -148,10 +147,6 @@ const config: Config = {
     "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
     "/docs/js/code-block-buttons.js",
     "https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js",
-    {
-      src: "/js/segment.js",
-      async: false,
-    },
     {
       src: "https://js.hs-scripts.com/43613284.js",
       type: "text/javascript",
