@@ -9,7 +9,12 @@ for security vulnerabilities and code quality issues.
 
 ## Configuration
 
-Semgrep uses a YAML style configuration file.
+Semgrep uses a YAML style configuration file. By default we will automatically
+use the following files if any are set in the root directory of your
+repostitory.
+
+- `semgrep.yml` or `semgrep.yaml`
+- `semgrep.config.yml` or `semgrep.config.yaml`
 
 Semgrep supports the following config files:
 
@@ -22,8 +27,8 @@ Semgrep supports the following config files:
 > but you're free to use these in your own `semgrep.yml` config file.
 
 > **NOTE: CodeRabbit will only run Semgrep if your repository contains a Semgrep
-> config file. In addition you must also define the path to this file in
-> `.coderabbit.yaml` or config UI.**
+> config file. This config must use the default file names or you must define
+> the path to this file in the `.coderabbit.yaml` or config UI.**
 
 ## Links
 
