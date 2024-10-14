@@ -17,7 +17,7 @@ Semgrep supports the following config files:
   project's `.coderabbit.yaml` file or setting the "Review → Tools → Semgrep →
   Config File" field in CodeRabbit's settings page.
 
-> Due to licensing it doesn't ship with the
+> Due to licensing CodeRabbit does not ship with the
 > [community-created Semgrep rules](https://github.com/returntocorp/semgrep-rules),
 > but you're free to use these in your own `semgrep.yml` config file.
 
