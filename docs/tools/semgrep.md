@@ -11,18 +11,19 @@ for security vulnerabilities and code quality issues.
 
 Semgrep uses a YAML style configuration file.
 
-> Due to licensing it doesn't ship with the
-> [community-created Semgrep rules](https://github.com/returntocorp/semgrep-rules),
-> but you're free to use these in your own project.
-
 Semgrep supports the following config files:
 
 - User-defined config file set at `reviews.tools.semgrep.config_file` in your
   project's `.coderabbit.yaml` file or setting the "Review → Tools → Semgrep →
   Config File" field in CodeRabbit's settings page.
 
-> **NOTE: If you do not set a config file in your `.coderabbit.yaml` or config
-> UI then semgrep will not be run.**
+> Due to licensing it doesn't ship with the
+> [community-created Semgrep rules](https://github.com/returntocorp/semgrep-rules),
+> but you're free to use these in your own project.
+
+> **NOTE: CodeRabbit will only run Semgrep if your repository contains a Semgrep
+> config file. In addition you must also define the path to this file in
+> `.coderabbit.yaml` or config UI.**
 
 ## Links
 
