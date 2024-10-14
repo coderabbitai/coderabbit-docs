@@ -19,7 +19,7 @@ Semgrep supports the following config files:
 
 > Due to licensing it doesn't ship with the
 > [community-created Semgrep rules](https://github.com/returntocorp/semgrep-rules),
-> but you're free to use these in your own project.
+> but you're free to use these in your own `semgrep.yml` config file.
 
 > **NOTE: CodeRabbit will only run Semgrep if your repository contains a Semgrep
 > config file. In addition you must also define the path to this file in
@@ -27,7 +27,8 @@ Semgrep supports the following config files:
 
 ## Links
 
-- [Semgrep Cli Reference](https://semgrep.dev/docs/cli-reference)
+- [Semgrep CLI Reference](https://semgrep.dev/docs/cli-reference)
+- [Writing Semgrep Rules for Config Files](https://semgrep.dev/docs/running-rules)
 
 ## Files
 
