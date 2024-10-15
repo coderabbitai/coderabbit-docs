@@ -68,9 +68,9 @@ CodeRabbit visualizes the changes occuring in any pull request using
 
 ![Advanced Diagram](/img/about/advanced-diagram.png)
 
-### 6. Commitable Suguestions {#commitable-suguestions}
+### 6. Commitable Suggestions {#commitable-suggestions}
 
-For quick fixes CodeRabbit offers one button solution to commit AI recommended
+For quick fixes, CodeRabbit offers one button solution to commit AI recommended
 changes!
 
 ![Commitable Suguestion](/img/about/committable-suggestion.png)
