@@ -75,6 +75,8 @@ changes!
 
 ![Commitable Suguestion](/img/about/committable-suggestion.png)
 
+![Irony](/img/about/ironic-committable.png)
+
 ### 7. Learnings {#learnings}
 
 CodeRabbit learns from user chat interactions to gain tribal knowledge on your
