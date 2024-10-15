@@ -44,6 +44,12 @@ changes. Just comment on the CodeRabbit review to start the conversation.
 CodeRabbit learns from your interactions and gets smarter over time. The more
 you chat, the better it gets.
 
+We support:
+
+- Inline Comments in Pull Request File Diffs
+- Comments in Pull Requests
+- Comments in Git Issues
+
 ![Chat](/img/about/chat.png)
 
 ### 4. Issue Validation {#issue-validation}
@@ -52,3 +58,27 @@ Pull request changes are validated against the linked GitHub or GitLab issue and
 identifies all other issues which might be affected by this change.
 
 ![Issue Validation](/img/about/issue-validation.png)
+
+### 5. Sequence Diagrams {#sequence-diagrams}
+
+CodeRabbit visualizes the changes occuring in any pull request using
+[Mermaid Diagrams](https://mermaid.live/).
+
+![Diagram](/img/about/diagram.png)
+
+![Advanced Diagram](/img/about/advanced-diagram.png)
+
+### 6. Commitable Suguestions {#commitable-suguestions}
+
+For quick fixes CodeRabbit offers one button solution to commit AI recommended
+changes!
+
+![Commitable Suguestion](/img/about/committable-suggestion.png)
+
+### 7. Learnings {#learnings}
+
+CodeRabbit learns from user chat interactions to gain tribal knowledge on your
+repositories and organization. CodeRabbit will apply and update these learnings
+in future reviews
+
+![Learnings](/img/about/learnings.png)
