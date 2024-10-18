@@ -36,7 +36,6 @@ Follow these steps to and start using CodeRabbit:
    Link your repository from one of the supported platforms:
    - GitHub
    - GitLab
-   - Bitbucket
    - Azure DevOps
 
 3. **Configure Settings**
