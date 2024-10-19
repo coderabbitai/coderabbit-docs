@@ -106,7 +106,7 @@ Authenticate and pull the Docker image using the provided credentials file:
 
 ```bash
 cat coderabbit.json | docker login -u _json_key --password-stdin us-docker.pkg.dev
-docker pull us-docker.pkg.dev/coderabbitprod/self-hosted/coderabbit-agent:latest
+docker pull <docker-registry>/coderabbit-agent:latest
 ```
 
 ### Verify the image is up
@@ -122,5 +122,5 @@ curl 127.0.0.1:8080/health
 You can host the image on a server, serverless function, or container environment and expose port `8080`. Run the Docker image with the equivalent command on your chosen platform, ensuring you replace the `.env` file path with the path to your actual `.env` file:
 
 ```bash
-docker run --env-file .env --publish 127.0.0.1:8080:8080 us-docker.pkg.dev/coderabbitprod/self-hosted/coderabbit-agent:latest
+docker run --env-file .env --publish 127.0.0.1:8080:8080 <docker-registry>/coderabbit-agent:latest
 ```
