@@ -5,7 +5,7 @@ description:
   CodeRabbit offers various configuration options to tailor the reviews to your
   specific requirements. Configuration can be made using one of the below
   options.
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 ```mdx-code-block
@@ -47,7 +47,7 @@ Write your configuration file in the below editor to validate:
 
 :::note
 
-`.coderabit.yaml` configuration file should exist in the feature branch for CodeRabbit review. 
+`.coderabit.yaml` configuration file should exist in the feature branch for CodeRabbit review.
 
 :::
 
