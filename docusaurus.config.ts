@@ -36,40 +36,6 @@ const config: Config = {
   },
 
   plugins: [
-    //[
-    //  "./plugins/blog-plugin",
-    //  {
-    //    id: "blog",
-    //    routeBasePath: "blog",
-    //    path: "./blog",
-    //    blogTitle: "CodeRabbit Blog",
-    //    blogDescription: "Blog",
-    //    tagsBasePath: "/tags",
-    //    editLocalizedFiles: false,
-    //    showReadingTime: true,
-    //    blogSidebarCount: "ALL",
-    //    blogSidebarTitle: "All our posts",
-    //    blogListComponent: "@theme/BlogListPage",
-    //    blogPostComponent: "@theme/BlogPostPage",
-    //  },
-    //],
-    [
-      "./plugins/blog-plugin",
-      {
-        id: "blog",
-        routeBasePath: "blog",
-        path: "./blog",
-        blogTitle: "CodeRabbit Blog",
-        blogDescription: "Blog",
-        tagsBasePath: "/tags",
-        editLocalizedFiles: false,
-        showReadingTime: true,
-        blogSidebarCount: "ALL",
-        blogSidebarTitle: "All our posts",
-        blogListComponent: "@theme/BlogListPage",
-        blogPostComponent: "@theme/BlogPostPage",
-      },
-    ],
     [
       "@docusaurus/plugin-client-redirects",
       {
@@ -114,11 +80,6 @@ const config: Config = {
             from: "/platforms/self-hosted-github",
             to: "/platforms/github-enterprise-server",
           },
-          {
-            from: "/platforms/saas-azure-devops",
-            to: "/platforms/azure-devops",
-          },
-          
         ],
       },
     ],
@@ -140,6 +101,7 @@ const config: Config = {
       "classic",
       {
         docs: {
+          editUrl: "https://github.com/coderabbitai/coderabbit-docs/edit/main/",
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
           breadcrumbs: true,
@@ -188,7 +150,6 @@ const config: Config = {
 
   themeConfig: {
     image: "img/preview.png",
-    editUrl: null,
     colorMode: {
       defaultMode: "light",
       disableSwitch: false,
