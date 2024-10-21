@@ -146,6 +146,11 @@
 							"default": true,
 							"description": "Post review details on each review. Additionally, post a review status when a review is skipped in certain cases."
 						},
+						"commit_status": {
+							"type": "boolean",
+							"default": true,
+							"description": "Set the commit status to 'pending' when the review is in progress and 'success' when it is complete."
+						},
 						"poem": {
 							"type": "boolean",
 							"default": true,

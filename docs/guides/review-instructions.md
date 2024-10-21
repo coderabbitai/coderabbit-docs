@@ -17,8 +17,9 @@ This section explains how to add custom code review instructions for the entire
 project or specific file paths in your project using glob patterns. Developers
 can provide tailored review guidelines based on the file paths. These
 instructions are needed only if you want CodeRabbit to follow specific
-instructions besides the standard review. For example, you may want to enforce a
-style guide by file types or directories.
+instructions besides the standard review. 
+
+>For example, you may want to enforce a style guide by file types or directories.
 
 ### Sample Usage
 
@@ -69,21 +70,6 @@ automated code review process, and it's not available in the chat.
 
 Moreover, this feature is only recommended for advanced users as there is a
 learning curve involved.
-
-:::
-
-CodeRabbit offers review instructions based on Abstract Syntax Tree (AST)
-patterns. Under the hood, CodeRabbit uses
-[`ast-grep`](https://ast-grep.github.io) to power this feature. `ast-grep` is
-written in Rust and uses the tree-sitter parser to generate the AST for popular
-languages. `ast-grep` is written and maintained by
-[Herrington Darkholme](https://twitter.com/hd_nvim).
-
-:::tip
-
-`ast-grep` Playground is quite effective in designing and testing AST rules on
-source code snippets. You can access the playground
-[here](https://ast-grep.github.io/playground.html).
 
 :::
 
