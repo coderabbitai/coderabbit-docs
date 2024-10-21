@@ -105,7 +105,7 @@ OAUTH2_CLIENT_SECRET=[<client-secret>]
 
 :::note
 
-* Verify that 3 LLM models 4o-mini, 4o, and 4-turbo are available. If you are using Azure OpenAI, also verify their deployment names in the .env file.
+* If you are using Azure OpenAI, verify that the model deployment names are in the .env file.
 * Values marked with [] are optional to provide.
 * For `GITHUB_APP_PEM_FILE`, flatten the PEM file by replacing newlines with `\n`.
 * For `GITHUB_HOSTNAME`, use GitHub Enterprise server's hostname, for example, “github.acme-inc.com”

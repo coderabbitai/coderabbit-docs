@@ -92,7 +92,7 @@ LINEAR_PAT=[<linear-personal-access-token>]
 
 :::note
 
-* Verify that 3 LLM models 4o-mini, 4o, and 4-turbo are available. If you are using Azure OpenAI, also verify their deployment names in the .env file.
+* If you are using Azure OpenAI, verify that the model deployment names are in the .env file.
 * Values marked with [] are not optional to provide.
 * You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
 

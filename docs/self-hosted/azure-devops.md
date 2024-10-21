@@ -27,7 +27,7 @@ Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.
 
 ## Add the necessary webhooks to each project
 
-1. **Navigate to projects Service Hooks Page**: Go to the service hooks configuration page in the desired Azure DevOps project.
+1. **Navigate to project's Service Hooks Page**: Go to the service hooks configuration page in the desired Azure DevOps project.
 
 2. **Add the following webhooks:**
     1. Pull request created
@@ -86,7 +86,7 @@ LINEAR_PAT=[<linear-personal-access-token>]
 
 :::note
 
-* Verify that 3 LLM models 4o-mini, 4o, and 4-turbo are available. If you are using Azure OpenAI, also verify their deployment names in the .env file.
+* If you are using Azure OpenAI, verify that the model deployment names are in the .env file.
 * Values marked with [] are not optional to provide.
 * You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
 
