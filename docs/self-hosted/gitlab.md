@@ -24,7 +24,7 @@ Generate a personal access token for the CodeRabbit user to be added in the `.en
 
 Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.coderabbit.ai/integrations/self-hosted-gitlab#generating-personal-access-token) on creating personal access tokens.
 
-Add a webhook to each project
+## Add a webhook to each project
 
 1. **Navigate to Add Webhook Page**: Go to the webhook configuration page in the desired GitLab project.
 2. **Add Webhook URL**: Enter the URL pointing to the CodeRabbit service, followed by `/gitlab_webhooks` (e.g., `http://127.0.0.1:8080/gitlab_webhooks`).
@@ -35,8 +35,6 @@ Add a webhook to each project
     * Comments
     * Issues events
     * Merge request events
-
-Ensure the CodeRabbit user has at least “Developer”access to the current project.
 
 ## Prepare an `.env` file
 

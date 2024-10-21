@@ -34,7 +34,7 @@ Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.
     2. Pull request updated
     3. Pull request commented on
 
-3. **Add Webhook URL**: Enter the URL pointing to the CodeRabbit service, followed by `/azure_webhooks` (e.g., [`http://127.0.0.1:8080/azure_webhooks`](http://127.0.0.1:8080/azure_webhooks)) for each webhook.
+3. **Add Webhook URL**: Enter the URL pointing to the CodeRabbit service, followed by `/azure_webhooks` (e.g., `http://127.0.0.1:8080/azure_webhooks`) for each webhook.
 
 ## Prepare an `.env` file
 
