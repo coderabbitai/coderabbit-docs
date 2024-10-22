@@ -5,6 +5,14 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 9
 ---
 
+##  Security and SAST Remediation Improvements
+#### Oct 22, 2024
+- CodeRabbit now seamlessly integrates with top SAST tools that create github check annotation comments like Codacy, SonarCloud, Code Climate, GitHub Advanced Security, Palo Alto Prisma Cloud, and more, enabling comprehensive security analysis directly within GitHub checks.
+- We have added a [YouTube Tutorial](https://www.youtube.com/watch?v=tfy3FdsoUtU) for a step-by-step guide on using CodeRabbit with Codacy and SonarCloud during pull requests.
+- Improved the [Semgrep Documentation](https://docs.coderabbit.ai/tools/semgrep).
+- CodeRabbit now automatically detects Semgrep rulesets from default `semgrep.yml` or `semgrep.config.yml` files, eliminating the need for manual configuration.
+
+
 ##  Related PRs and Label suggestions
 #### Sep 9, 2024
 - Possibly related PRs: The walkthrough comment now includes a list of potentially related PRs to help you recall the past context.
