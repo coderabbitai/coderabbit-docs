@@ -47,7 +47,7 @@ Write your configuration file in the below editor to validate:
 
 :::note
 
-`.coderabit.yaml` configuration file should exist in the feature branch for CodeRabbit review.
+`.coderabbit.yaml` configuration file should exist in the feature branch for CodeRabbit review.
 
 :::
 
