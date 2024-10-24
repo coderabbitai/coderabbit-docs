@@ -10,7 +10,7 @@ possible.
 
 ## Discord Server 
 
-All CodeRabbit users have access to the [CodeRabbit Discord Server](http://discord.gg/GsXnASn26c), where you can ask questions or see what others are doing with CodeRabbit. You will find CodeRabbit users and members of the CodeRabbit team actively engaged.
+All CodeRabbit users have access to the [CodeRabbit Discord Server](http://discord.gg/coderabbit), where you can ask questions or see what others are doing with CodeRabbit. You will find CodeRabbit users and members of the CodeRabbit team actively engaged.
 
 ## Support Tickets
 
