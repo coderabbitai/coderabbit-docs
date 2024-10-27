@@ -11,7 +11,7 @@ This guide will assist you in effectively integrating CodeRabbit with SaaS GitLa
 
 For the CodeRabbit app to post reviews on merge requests, it needs to interact with the GitLab API, which requires a Personal Access Token. This token can be generated either by using our default CodeRabbit user or by creating a Personal Access Token from one of your existing users.
 
-The CodeRabbit default user is already set up in GitLab SaaS and will be added to your project when you install the CodeRabbit app. During installation, the necessary webhook for the project will also be created.
+The CodeRabbit default user, named "coderabbitai", is already set up in GitLab SaaS and will be added to your project when you install the CodeRabbit app. During installation, the necessary webhook for the project will also be created.
 
 If your organization prefers to use an organization user, you can create a new user in GitLab and generate a Personal Access Token for that user, following [our recommendations](#recommendations).
 
