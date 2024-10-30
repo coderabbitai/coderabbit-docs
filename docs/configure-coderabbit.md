@@ -58,7 +58,7 @@ The configuration file can be used to set the following options:
 ```
 
 Refer:
-[CodeRabbit Configuration Schema](https://coderabbit.ai/integrations/schema.v2.json).
+[CodeRabbit Configuration Schema](https://storage.googleapis.com/coderabbit_public_assets/schema.v2.json).
 
 Please note that code reviews commence with new pull requests or incremental
 commits to existing pull requests once the CodeRabbit app is installed. Should
