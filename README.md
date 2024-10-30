@@ -34,6 +34,7 @@ Follow these steps to and start using CodeRabbit:
 
 2. **Connect Your Repository**
    Link your repository from one of the supported platforms:
+
    - GitHub
    - GitLab
    - Azure DevOps
@@ -55,30 +56,36 @@ CodeRabbit offers flexible configuration options. There are two primary methods 
 
 When you create an account and add repositories through the CodeRabbit web interface, you can configure settings for your organization and individual repositories.
 
-### Steps:
+### Steps
+
 1. Sign up or log in at [coderabbit.ai](https://coderabbit.ai)
 2. Navigate to the "Organization Settings" section or "Repositories" section
 3. Click "Add Repositories" to connect your Git repositories
 4. Use the UI to configure settings for each repository or at the organization level
 
-### Available UI Configuration Options:
+### Available UI Configuration Options
 
-#### General Settings:
+#### General Settings
+
 - Review Language: Choose the natural language for CodeRabbit to write reviews (e.g., English (US))
 - Tone Instructions: Set the tone for reviews and chat
 - Early Access: Enable or disable early-access features
 - Fine-tune Your Reviews: Allow CodeRabbit to learn from your usage and improve over time
 
-#### Review Settings:
+#### Review Settings
+
 - Customize review profile, summary options, and automated review preferences
 
-#### Chat Settings:
+#### Chat Settings
+
 - Configure chat-related options
 
-#### Knowledge Base:
+#### Knowledge Base
+
 - Set up and manage your organization's knowledge base
 
-#### API Keys:
+#### API Keys
+
 - Create and manage API keys for accessing the CodeRabbit API
 
 > **Note:** Settings configured at the repository level will override organization-level settings.
@@ -87,32 +94,33 @@ When you create an account and add repositories through the CodeRabbit web inter
 
 For more advanced and version-controlled configuration, you can use a YAML file in your repository.
 
-### Steps:
+### Steps
+
 1. Create a file named `.coderabbit.yaml` in the root of your repository
 2. Add your configuration options to the file
 3. Commit and push the file to your repository
 
-### Sample `.coderabbit.yaml`:
+### Sample `.coderabbit.yaml`
 
 ```yaml
 # yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
 language: "en-US"
 early_access: false
 reviews:
-   profile: "chill"
-   request_changes_workflow: false
-   high_level_summary: true
-   poem: true
-   review_status: true
-   collapse_walkthrough: false
-   auto_review:
-      enabled: true
-      drafts: false
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: true
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
 chat:
-   auto_reply: true
+  auto_reply: true
 ```
 
-### Key Configuration Options:
+### Key Configuration Options
 
 - `language`: Set the language for CodeRabbit's responses
 - `early_access`: Enable/disable early access features
@@ -155,13 +163,13 @@ cd coderabbit-docs
 2. Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 3. Start the development server:
 
 ```bash
-docusaurus start  
+pnpm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -197,7 +205,6 @@ docusaurus build
 ```
 
 This command generates static content into the `build` directory.
-
 
 ## Contributing
 
