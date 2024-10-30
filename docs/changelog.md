@@ -8,9 +8,7 @@ sidebar_position: 9
 ## Microsoft Teams Stand Up Reporting
 #### Oct 30, 2024
 
-- Added support for Standup Up scheduled reporting features for Microsoft Teams over webhooks
-
-
+- Added support for Stand-up scheduled reporting features for Microsoft Teams over webhooks
 ##  Security and SAST Remediation Improvements
 #### Oct 22, 2024
 - Enabling comprehensive security analysis directly from context within GitHub Checks.
