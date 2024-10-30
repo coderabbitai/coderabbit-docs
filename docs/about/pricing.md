@@ -4,8 +4,7 @@ sidebar_label: Pricing
 description: Learn about the plans, pricing, and subscription management of CodeRabbit.
 ---
 
-This section covers the plans, pricing, and subscription management of
-CodeRabbit.
+Find all the information you need about CodeRabbit's plans and how to manage your monthly bill.
 
 ## Overview
 
@@ -22,6 +21,18 @@ CodeRabbit.
 
 ---
 
+## Open Source
+:::note
+CodeRabbit Pro is free for all Open Source projects.
+:::
+
+- **Price**: $0/month
+- Free forever
+- No credit card required
+- Unlimited public repositories
+
+---
+
 ## Pro Plan
 
 ### Features
@@ -34,16 +45,16 @@ CodeRabbit.
 
 ### Pricing
 
-- Monthly: $15 per month per contributing developer.
-- Annual: $12 per month, billed annually per contributing developer.
+- **Monthly**: $15 per month per contributing developer.
+- **Annual**: $12 per month, billed annually per contributing developer.
 
 ### Usage Limits
 
 These are the hourly usage limits for each developer per repository:
 
-- Number of files reviewed per hour: 150 Files
-- Number of reviews per hour (includes incremental reviews): 9
-- Number of conversations per hour: 50
+- Number of files reviewed per hour: **150 Files**
+- Number of reviews per hour (includes incremental reviews): **8**
+- Number of conversations per hour: **50**
 
 ---
 
@@ -62,27 +73,44 @@ These are the hourly usage limits for each developer per repository:
 
 ---
 
+## Plan Comparison
+
+| Feature                       | Free Plan        | Pro Plan        |
+| ----------------------------- | ---------------- | --------------- |
+| **Free Trial**                | 14-day free trial| 14-day free trial|
+| **Private Repos**             | Limited access   | Unlimited access|
+| **Public Repos**              | Unlimited access  | Unlimited access|
+| **Pull Request Summarization** | Included         | Included        |
+| **Line-by-Line Reviews**      | Public repos only | All repos       |
+| **Conversational Bot**        | No               | Yes             |
+| **Hourly Usage Limits**       | Limited          | 150 files/hour, 9 reviews/hour, 50 conversations/hour |
+| **Price**                     | Free forever     | $15 per seat/mo |
+
+---
+
 ## Subscription Management
 
 ### Pro Plan
 
-- GitHub/GitLab organization owners can purchase or introduce changes to the
+- [GitHub/GitLab](docs/tools/tools.md) organization owners can purchase or introduce changes to the
   subscription.
 - You can choose to manually purchase seats and assign them to developers, or
   have them assigned automatically as developers create pull requests.
 - During the trial period, seat assignment is automatic, but the number of seats
   can be adjusted when purchasing the subscription.
 
-![Seat Management](/img/about/cr_seat_manage_dark.png#gh-dark-mode-only)
-![Seat Management](/img/about/cr_seat_manage_light.png#gh-light-mode-only)
+![Seat Management for CodeRabbit Subscription](/img/about/cr_seat_manage_dark.png#gh-dark-mode-only)
+![Seat Management for CodeRabbit Subscription](/img/about/cr_seat_manage_light.png#gh-light-mode-only)
 
 ### Free Plan
 
 - Seats are assigned to new developers immediately
 
-![Free Seat Assignment](/img/about/cr_seat_free_dark.png#gh-dark-mode-only)
-![Free Seat Assignment](/img/about/cr_seat_free_light.png#gh-light-mode-only)
+![Free Plan Seat Assignment - CodeRabbit](/img/about/cr_seat_free_dark.png#gh-dark-mode-only)
+![Free Plan Seat Assignment - CodeRabbit](/img/about/cr_seat_free_light.png#gh-light-mode-only)
 
-**Note:** The subscription is limited to human users; bot users are not
+:::note
+The subscription is limited to human users; bot users are not
 supported. Thus, pull requests or merge requests created by bots will not be
 reviewed.
+:::

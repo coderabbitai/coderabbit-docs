@@ -8,7 +8,7 @@ sidebar_position: 3
 :::info
 
 This page is for GitHub Enterprise Server (Self-Hosted) users only.  
-If you're using github.com, [log in to CodeRabbit](https://app.coderabbit.ai)
+If you're using `github.com`, [log in to CodeRabbit](https://app.coderabbit.ai)
 and add your repositories from there
 
 :::
@@ -163,7 +163,7 @@ Navigate to the **Advanced** tab in the GitHub App and click on the
 ### **Step 6: Whitelist CodeRabbit IP address**
 
 Use this CodeRabbit IP if your instance requires IP whitelisting
-`35.222.179.152/32`
+`35.222.179.152/32` and `34.170.211.100/32`.
 
 VPN tunneling is available as an add-on package. Please reach out to us at
 [contact@coderabbit.ai](mailto:contact@coderabbit.ai) if you are interested.

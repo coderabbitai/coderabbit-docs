@@ -307,7 +307,7 @@
 										}
 									},
 									"additionalProperties": false,
-									"description": "ast-grep is a code analysis tool that helps you to find patterns in your codebase using abstract syntax trees patterns."
+									"description": "Enable ast-grep | ast-grep is a code analysis tool that helps you to find patterns in your codebase using abstract syntax trees patterns. | v0.28.1"
 								},
 								"shellcheck": {
 									"type": "object",
@@ -328,7 +328,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable ruff integration. | v0.6.5"
+											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable ruff integration. | v0.7.0"
 										}
 									},
 									"additionalProperties": false,
@@ -341,7 +341,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Markdownlint\n\t\t\t\t| Markdownlint is a static analysis tool for Node.js with a library of rules to enforce standards and consistency for Markdown files.\n\t\t\t\t| Enable markdownlint integration.\n\t\t\t\t| v0.34.0"
+											"description": "Enable Markdownlint | Markdownlint is a static analysis tool for Node.js with a library of rules to enforce standards and consistency for Markdown files. | Enable markdownlint integration. | v0.35.0"
 										}
 									},
 									"additionalProperties": false,
@@ -426,7 +426,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Biome | Biome is a fast formatter, linter, and analyzer for web projects. | Enable Biome integration. | v1.8.3"
+											"description": "Enable Biome | Biome is a fast formatter, linter, and analyzer for web projects. | Enable Biome integration. | v1.9.4"
 										}
 									},
 									"additionalProperties": false,
@@ -469,7 +469,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root. Please ensure that this file contains the `paths:` parameter. | v1.11.7"
+											"description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root. Please ensure that this file contains the `paths:` parameter. | v1.12.7"
 										},
 										"level": {
 											"type": "string",
@@ -501,7 +501,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v1.59.1"
+											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v1.61.0"
 										},
 										"config_file": {
 											"type": "string",
@@ -531,7 +531,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration. | v8.19.2"
+											"description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration. | v8.21.1"
 										}
 									},
 									"additionalProperties": false,
@@ -544,7 +544,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Checkov | Checkov is a static code analysis tool for infrastructure-as-code files. | v3.2.254"
+											"description": "Enable Checkov | Checkov is a static code analysis tool for infrastructure-as-code files. | v3.2.268"
 										}
 									},
 									"additionalProperties": false,
@@ -574,7 +574,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable ESLint | ESLint is a static code analysis tool for JavaScript files."
+											"description": "Enable ESLint (Under Development) | ESLint is a static code analysis tool for JavaScript files."
 										}
 									},
 									"additionalProperties": false,
@@ -587,7 +587,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Rubocop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.65.0"
+											"description": "Enable Rubocop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.67.0"
 										}
 									},
 									"additionalProperties": false,
@@ -600,7 +600,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Buf | Buf offers linting for Protobuf files. | v1.42.0"
+											"description": "Enable Buf | Buf offers linting for Protobuf files. | v1.45.0"
 										}
 									},
 									"additionalProperties": false,
@@ -613,7 +613,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Regal | Regal is a linter and language server for Rego. | v0.25.0"
+											"description": "Enable Regal | Regal is a linter and language server for Rego. | v0.28.0"
 										}
 									},
 									"additionalProperties": false,
@@ -639,7 +639,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Pmd | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.5.0"
+											"description": "Enable Pmd | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.6.0"
 										},
 										"config_file": {
 											"type": "string",
@@ -669,7 +669,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Semgrep | Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues. | Enable Semgrep integration. | v1.29.0"
+											"description": "Enable Semgrep | Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues. | Enable Semgrep integration. | v1.92.0"
 										},
 										"config_file": {
 											"type": "string",
