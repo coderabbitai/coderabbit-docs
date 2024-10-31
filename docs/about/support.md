@@ -24,7 +24,7 @@ Complete the support ticket by providing your name, email, a description of your
 ![How to Open a Support Ticket-CodeRabbit ](/img/about/cr_support_help_dark.png#gh-dark-mode-only)
 
 :::note
-If you are a paying user and cannot access the support ticket form in the CodeRabbit UI for some reason, you can contact CodeRabbit support at the following email address: <support@coderabbit.ai>.
+If you are a paying user and cannot access the support ticket form in the CodeRabbit UI for some reason, you can contact CodeRabbit support at the following email address: [support@coderabbit.ai](mailto:support@coderabbit.ai).
 :::
 
 ## Customer Responsibilities
