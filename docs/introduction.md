@@ -16,9 +16,8 @@ slug: "/"
 Developers can interact directly with the bot within the code, offering additional context, asking questions, or even having the bot generate code. Over time, **CodeRabbit** learns from user input and improves its suggestions.
 
 :::tip
-
-> See CodeRabbit in action and watch the demo video below to see how it delivers real-time, context-aware feedback on your pull requests in just a few minutes.
-> :::
+See CodeRabbit in action and watch the demo video below to see how it delivers real-time, context-aware feedback on your pull requests in just a few minutes.
+:::
 
 <div class="video-container">
   <iframe src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>

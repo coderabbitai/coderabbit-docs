@@ -38,6 +38,7 @@ additional comments generated for each review, and so on.
 :::info
 Review status is useful for understanding the auxiliary context of the review.
 :::
+
 ![CodeRabbit- Review Status](/img/about/ReviewStatus.png)
 
 ### 3. Chat with CodeRabbit {#chat-with-coderabbit}

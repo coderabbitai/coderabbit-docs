@@ -26,9 +26,7 @@ will permanently erase all data associated with your account, including:
 ### Deleting the CodeRabbit Account via the UI
 
 :::info
-
 Only accounts where the user has admin access will be deleted.
-
 :::
 
 Sign into your CodeRabbit account and navigate to the **Subscription** page.
