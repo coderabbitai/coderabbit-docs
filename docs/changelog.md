@@ -161,7 +161,7 @@ CodeRabbit now offers fixes for GitHub Check failures on pull requests. With thi
 
 ### SOC 2 Type II Compliance
 
-Excited to announce that CodeRabbit is now GDPR compliant in accordance with EU regulations!
+CodeRabbit is now SOC 2 Type II compliant to ensure top-tier security, availability, integrity, and privacy for our users.
 
 ## March 2, 2024
 
