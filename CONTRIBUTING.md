@@ -24,25 +24,30 @@ There are various ways you can contribute:
 
 1. **Fork** the repository to your GitHub account by visiting [CodeRabbit Docs GitHub repo](https://github.com/coderabbitai/coderabbit-docs).
 2. **Clone** your fork locally:
+
    ```shell
    git clone git@github.com:YOUR_USERNAME/coderabbit-docs.git
 
+   ```
+
 3. Create a new branch:
-```shell
-git checkout -b your_username/feature_description
-```
+
+   ```shell
+   git checkout -b your_username/feature_description
+   ```
 
 4. Implement the changes then commit and push the changes from your working branch:
-```shell
-git commit -m "docs: add explanation about [section]"
-git push origin your_username/feature_description
-```
+
+   ```shell
+   git commit -m "docs: add explanation about [section]"
+   git push origin your_username/feature_description
+   ```
 
 ## Commit Message Format 💬
 
 We require all commits in this repository to adhere to the following commit message format.
 
-```
+```txt
 <type>: <description> (#<issue number>)
 
 [optional body]
@@ -52,7 +57,9 @@ This format is based on [Conventional Commits](https://www.conventionalcommits.o
 Please refer to the Conventional Commits specification for more details.
 
 ## Keeping your Fork Up-to-Date 🆕
+
 To keep your fork updated with the latest changes from the upstream repository:
+
 ```shell
 git remote add upstream https://github.com/coderabbitai/coderabbit-docs.git
 git fetch upstream
@@ -64,4 +71,4 @@ git rebase upstream/main
 - Work on **one issue at a time** to avoid confusion.
 - If you need help, post in the `#support` channel on Discord.
 - Test your changes locally before submitting a PR.
-- While AI is cool, minimize its use for `direct team communication`. We value concise, genuine exchanges over scripted messages.
+- While AI is cool, minimize its use for _direct team communication_. We value concise, genuine exchanges over scripted messages.

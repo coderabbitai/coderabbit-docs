@@ -89,4 +89,3 @@ Remove extraneous f prefix
 [Cppcheck]: ./cppcheck.md
 [CircleCi]: ./circleci.md
 [Semgrep]: ./semgrep.md
-

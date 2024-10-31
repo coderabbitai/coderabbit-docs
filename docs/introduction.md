@@ -52,12 +52,12 @@ However, opting out may reduce the level of personalized review feedback.
 
 :::tip
 For open source projects CodeRabbit Pro is **_FREE_**, forever.
+
 - No credit card required
 - Unlimited public repositories
+
 :::
 
 <div style={{textAlign: 'left', marginTop: '20px'}}>
   <a href="https://app.coderabbit.ai/login" className="button button--primary button--lg">Start reviewing PR Now</a>
 </div>
-
-

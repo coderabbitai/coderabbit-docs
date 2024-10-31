@@ -24,7 +24,7 @@ changes.
 ### 2. Code Review feedback {#code-review-feedback}
 
 **Code review** feedback is posted as review comments on the lines of the code that
-changed for each file. 
+changed for each file.
 
 > Code suggestions are given in a Diff format, which either
 be copied or committed within the pull request with a single click.
@@ -85,7 +85,7 @@ changes.
 ### 7. Learnings {#learnings}
 
 - **CodeRabbit** learns from user chat interactions to gain tribal knowledge on your
-repositories and organization. 
+repositories and organization.
 - **CodeRabbit** will apply and update these learnings
 in future reviews.
 

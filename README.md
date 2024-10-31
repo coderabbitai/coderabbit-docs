@@ -12,6 +12,7 @@ Welcome to the official docs for [**CodeRabbit**](https://coderabbit.ai), the co
 [![Twitter Follow](https://img.shields.io/twitter/follow/coderabbitai?style=social)](https://twitter.com/coderabbitai)
 [![Discord](https://img.shields.io/discord/invite-code?color=7289DA&label=Discord&logo=discord&logoColor=green)](https://discord.com/invite/GsXnASn26c)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/coderabbitai/coderabbit-docs/pulls)
+[![Node.js CI](https://github.com/coderabbitai/coderabbit-docs/actions/workflows/node.js.yaml/badge.svg)](https://github.com/coderabbitai/coderabbit-docs/actions/workflows/node.js.yaml)
 
 ## About CodeRabbit
 
@@ -155,28 +156,28 @@ CodeRabbit uses the following order of precedence for configuration:
 
 1. Clone this repository:
 
-```bash
-git clone https://github.com/coderabbit-ai/coderabbit-docs.git
-cd coderabbit-docs
-```
+   ```sh
+   git clone https://github.com/coderabbit-ai/coderabbit-docs.git
+   cd coderabbit-docs
+   ```
 
 2. Install dependencies:
 
-```bash
-pnpm install
-```
+   ```sh
+   pnpm install
+   ```
 
 3. Start the development server:
 
-```bash
-pnpm start
-```
+   ```sh
+   pnpm start
+   ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+   This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ## Project Structure
 
-```
+```sh
 coderabbit-docs/
   ├── blog/
   ├── docs/
@@ -192,7 +193,7 @@ coderabbit-docs/
 
 ## Local Development
 
-```
+```sh
 docusaurus start
 ```
 
@@ -200,7 +201,7 @@ This command starts a local development server and opens up a browser window.
 
 ## Building for Production
 
-```
+```sh
 docusaurus build
 ```
 

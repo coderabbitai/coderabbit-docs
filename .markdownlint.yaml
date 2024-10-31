@@ -1,6 +1,8 @@
 default: true
+first-line-heading: false
 line-length: false
 link-fragments: false
 no-duplicate-heading:
   siblings_only: true
 no-inline-html: false
+single-title: false

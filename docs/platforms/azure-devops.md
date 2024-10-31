@@ -21,14 +21,14 @@ DevOps.
    consent requests. Please forward these requests to your administrator for
    approval.
 
-:::warning
+   :::warning
 
-If you are an administrator, you may approve the applications directly. If not,
-please contact your administrator to request approval for the applications.
+   If you are an administrator, you may approve the applications directly. If not,
+   please contact your administrator to request approval for the applications.
 
-:::
+   :::
 
-![azure devops apps consent](/img/integrations/azure_apps_consent_page.png)
+   ![azure devops apps consent](/img/integrations/azure_apps_consent_page.png)
 
 3. Once your administrator has approved the applications, click "Continue."
 4. You will be redirected to the "Onboarding" page, where you can select the

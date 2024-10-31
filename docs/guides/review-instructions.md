@@ -17,7 +17,7 @@ This section explains how to add custom code review instructions for the entire
 project or specific file paths in your project using glob patterns. Developers
 can provide tailored review guidelines based on the file paths. These
 instructions are needed only if you want CodeRabbit to follow specific
-instructions besides the standard review. 
+instructions besides the standard review.
 
 >For example, you may want to enforce a style guide by file types or directories.
 

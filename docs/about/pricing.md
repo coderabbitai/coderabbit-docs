@@ -22,6 +22,7 @@ Find all the information you need about CodeRabbit's plans and how to manage you
 ---
 
 ## Open Source
+
 :::note
 CodeRabbit Pro is free for all Open Source projects.
 :::
