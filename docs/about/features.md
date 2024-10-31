@@ -27,7 +27,7 @@ changes.
 changed for each file.
 
 > Code suggestions are given in a Diff format, which either
-be copied or committed within the pull request with a single click.
+> be copied or committed within the pull request with a single click.
 
 ![CodeRabbit- Code Review Feedback](/img/about/ReviewFeedback.png)
 
@@ -43,11 +43,11 @@ Review status is useful for understanding the auxiliary context of the review.
 ### 3. Chat with CodeRabbit {#chat-with-coderabbit}
 
 - **CodeRabbit** provides conversational capability that allows developers and the
-reviewers to ask questions, generate code, and get feedback in the context of
-changes. Just comment on the CodeRabbit review to start the conversation.
+  reviewers to ask questions, generate code, and get feedback in the context of
+  changes. Just comment on the CodeRabbit review to start the conversation.
 
 - **CodeRabbit** learns from your interactions and gets smarter over time. The more
-you chat, the better it gets.
+  you chat, the better it gets.
 
 We support:
 
@@ -85,8 +85,8 @@ changes.
 ### 7. Learnings {#learnings}
 
 - **CodeRabbit** learns from user chat interactions to gain tribal knowledge on your
-repositories and organization.
+  repositories and organization.
 - **CodeRabbit** will apply and update these learnings
-in future reviews.
+  in future reviews.
 
 ![Learnings from Interactions - CodeRabbit AI](/img/about/learnings.png)

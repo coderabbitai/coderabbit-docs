@@ -39,7 +39,7 @@ Remove extraneous f prefix
 | Technology                  | Tools                                                      |
 | :-------------------------- | :--------------------------------------------------------- |
 | All                         | [Gitleaks][Gitleaks]                                       |
-| CircleCi                    | [CircleCi][CircleCi]                                         |
+| CircleCi                    | [CircleCi][CircleCi]                                       |
 | CloudFormation              | [Checkov][Checkov]                                         |
 | Cppcheck                    | [Cppcheck][Cppcheck]                                       |
 | CSS                         | [Biome][Biome]                                             |
@@ -55,7 +55,7 @@ Remove extraneous f prefix
 | Markdown                    | [Markdownlint][Markdownlint], [LanguageTool][LanguageTool] |
 | PHP                         | [PHPStan][PHPStan]                                         |
 | Plaintext                   | [LanguageTool][LanguageTool]                               |
-| Java                        | [PMD][PMD]                               |
+| Java                        | [PMD][PMD]                                                 |
 | Protobuf                    | [Buf][Buf]                                                 |
 | Python                      | [Ruff][Ruff]                                               |
 | Regal                       | [Regal][Regal]                                             |

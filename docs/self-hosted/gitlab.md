@@ -1,14 +1,14 @@
 ---
 title: Use Self-Hosted CodeRabbit With GitLab
-sidebar_label: GitLab   
+sidebar_label: GitLab
 description: Instructions to self-host CodeRabbit and integrate it with GitLab.
 sidebar_position: 2
 ---
 
 ## Create a GitLab User
 
-* **Username**: Set the username to "CodeRabbit" for easier identification (optional).
-* **Profile Image**: Use the CodeRabbitAI logo for the user image (optional).
+- **Username**: Set the username to "CodeRabbit" for easier identification (optional).
+- **Profile Image**: Use the CodeRabbitAI logo for the user image (optional).
 
 ## Add User to Projects
 
@@ -20,7 +20,7 @@ Generate a personal access token for the CodeRabbit user to be added in the `.en
 
 **Necessary Scopes**:
 
-* `api`
+- `api`
 
 Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.coderabbit.ai/integrations/self-hosted-gitlab#generating-personal-access-token) on creating personal access tokens.
 
@@ -31,10 +31,10 @@ Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.
 3. **Generate and Save Secret Token**: Generate a secret token, add it to the webhook, and store it securely. This will be needed for the `.env` file as `GITLAB_WEBHOOK_SECRET` (you can use a single secret token for all projects).
 4. Select triggers:
 
-    * Push events
-    * Comments
-    * Issues events
-    * Merge request events
+   - Push events
+   - Comments
+   - Issues events
+   - Merge request events
 
 ## Prepare an `.env` file
 
@@ -92,9 +92,9 @@ LINEAR_PAT=[<linear-personal-access-token>]
 
 :::note
 
-* If you are using Azure OpenAI, verify that the model deployment names are in the .env file.
-* Values marked with [] are not optional to provide.
-* You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
+- If you are using Azure OpenAI, verify that the model deployment names are in the .env file.
+- Values marked with [] are not optional to provide.
+- You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
 
 :::
 

@@ -1,14 +1,14 @@
 ---
 title: Use Self-Hosted CodeRabbit With Azure DevOps
-sidebar_label: Azure DevOps 
+sidebar_label: Azure DevOps
 description: Instructions to self-host CodeRabbit and integrate it with Azure DevOps.
 sidebar_position: 3
 ---
 
 ## Create a Azure DevOps User
 
-* **Username**: Set the username to "CodeRabbit" for easier identification (optional).
-* **Profile Image**: Use the CodeRabbitAI logo for the user image (optional).
+- **Username**: Set the username to "CodeRabbit" for easier identification (optional).
+- **Profile Image**: Use the CodeRabbitAI logo for the user image (optional).
 
 ## Add User to Projects
 
@@ -20,8 +20,8 @@ Generate a personal access token for the CodeRabbit user to be added in the `.en
 
 **Necessary Scopes**:
 
-* `Code` - Full
-* `Work Items` - Read, write, and manage
+- `Code` - Full
+- `Work Items` - Read, write, and manage
 
 Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.coderabbit.ai/platforms/azure-devops#generating-a-personal-access-token) on creating personal access tokens.
 
@@ -30,9 +30,10 @@ Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.
 1. **Navigate to project's Service Hooks Page**: Go to the service hooks configuration page in the desired Azure DevOps project.
 
 2. **Add the following webhooks:**
-    1. Pull request created
-    2. Pull request updated
-    3. Pull request commented on
+
+   1. Pull request created
+   2. Pull request updated
+   3. Pull request commented on
 
 3. **Add Webhook URL**: Enter the URL pointing to the CodeRabbit service, followed by `/azure_webhooks` (e.g., `http://127.0.0.1:8080/azure_webhooks`) for each webhook.
 
@@ -86,9 +87,9 @@ LINEAR_PAT=[<linear-personal-access-token>]
 
 :::note
 
-* If you are using Azure OpenAI, verify that the model deployment names are in the .env file.
-* Values marked with [] are not optional to provide.
-* You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
+- If you are using Azure OpenAI, verify that the model deployment names are in the .env file.
+- Values marked with [] are not optional to provide.
+- You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
 
 :::
 

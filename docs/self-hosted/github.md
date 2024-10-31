@@ -1,6 +1,6 @@
 ---
 title: Use Self-Hosted CodeRabbit With GitHub
-sidebar_label: GitHub   
+sidebar_label: GitHub
 description: Instructions to self-host CodeRabbit and integrate it with GitHub.
 sidebar_position: 1
 ---
@@ -9,38 +9,38 @@ sidebar_position: 1
 
 Set the following Repository permissions:
 
-* Checks: Read-only
-* Contents: Read and write
-* Commit statuses: Read and write
-* Discussions: Read-only
-* Issues: Read & write
-* Metadata: Read-only
-* Pull requests: Read & write
+- Checks: Read-only
+- Contents: Read and write
+- Commit statuses: Read and write
+- Discussions: Read-only
+- Issues: Read & write
+- Metadata: Read-only
+- Pull requests: Read & write
 
 Set the following Organization permissions:
 
-* Members: Read-only
+- Members: Read-only
 
 Set the following events:
 
-* Meta
-* Issue comment
-* Issues
-* Label
-* Public
-* Pull request
-* Pull request review
-* Pull request review comment
-* Pull request review thread
-* Push
-* Release
+- Meta
+- Issue comment
+- Issues
+- Label
+- Public
+- Pull request
+- Pull request review
+- Pull request review comment
+- Pull request review thread
+- Push
+- Release
 
 ## Gather information from the GitHub App
 
-* App ID
-* Client ID
-* Client Secret
-* Webhook Secret
+- App ID
+- Client ID
+- Client Secret
+- Webhook Secret
 
 ## Prepare an `.env` file
 
@@ -98,18 +98,18 @@ JIRA_PAT=[<jira-personal-access-token>]
 
 LINEAR_PAT=[<linear-personal-access-token>]
 
-OAUTH2_ENDPOINT=[<endpoint>] 
+OAUTH2_ENDPOINT=[<endpoint>]
 OAUTH2_CLIENT_ID=[<client-id>]
 OAUTH2_CLIENT_SECRET=[<client-secret>]
 ```
 
 :::note
 
-* If you are using Azure OpenAI, verify that the model deployment names are in the .env file.
-* Values marked with [] are optional to provide.
-* For `GITHUB_APP_PEM_FILE`, flatten the PEM file by replacing newlines with `\n`.
-* For `GITHUB_HOSTNAME`, use GitHub Enterprise server's hostname, for example, “github.acme-inc.com”
-* You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
+- If you are using Azure OpenAI, verify that the model deployment names are in the .env file.
+- Values marked with [] are optional to provide.
+- For `GITHUB_APP_PEM_FILE`, flatten the PEM file by replacing newlines with `\n`.
+- For `GITHUB_HOSTNAME`, use GitHub Enterprise server's hostname, for example, “github.acme-inc.com”
+- You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
 
 :::
 
@@ -117,7 +117,7 @@ OAUTH2_CLIENT_SECRET=[<client-secret>]
 
 Using the credentials file shared with you, first authenticate and then pull the image.
 
-```bash  
+```bash
 cat coderabbit.json | docker login -u _json_key --password-stdin us-docker.pkg.dev
 docker pull <docker-registry>/coderabbit-agent:latest
 ```
@@ -126,7 +126,7 @@ docker pull <docker-registry>/coderabbit-agent:latest
 
 You can choose to host it on a server, serverless function, or a container environment and expose the port “8080”. Run the Docker image with the equivalent of the following command on the platform of your choice, replacing the “.env” file with the path to your “.env” file:
 
-```bash  
+```bash
 docker run --env-file .env --publish 127.0.0.1:8080:8080 <docker-registry>/coderabbit-agent:latest
 ```
 
@@ -134,7 +134,7 @@ docker run --env-file .env --publish 127.0.0.1:8080:8080 <docker-registry>/coder
 
 You can query `/health` endpoint to verify that the coderabbit-agent service is up and running.
 
-```bash  
+```bash
 curl 127.0.0.1:8080/health
 ```
 

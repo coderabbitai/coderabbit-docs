@@ -9,9 +9,9 @@ CodeRabbit supports various Git platforms to provide code review for your reposi
 
 ## GitHub
 
-| Host                     | Support                            |
-| ------------------------ | ---------------------------------- |
-| GitHub.com               | [Supported][login]                 |
+| Host                     | Support                                  |
+| ------------------------ | ---------------------------------------- |
+| GitHub.com               | [Supported][login]                       |
 | GitHub Enterprise Server | [Supported](github-enterprise-server.md) |
 
 ## GitLab
@@ -23,10 +23,10 @@ CodeRabbit supports various Git platforms to provide code review for your reposi
 
 ## Azure DevOps
 
-| Host                | Support                            |
-| ------------------- | ---------------------------------- |
-| Azure DevOps        | [Supported](azure-devops.md)       |
-| Azure DevOps Server | [Supported]                        |
+| Host                | Support                      |
+| ------------------- | ---------------------------- |
+| Azure DevOps        | [Supported](azure-devops.md) |
+| Azure DevOps Server | [Supported]                  |
 
 ## Bitbucket
 

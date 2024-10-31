@@ -1,1 +1,1 @@
-export * from "./AiDisclaimer";
+export * from "./AiDisclaimer"

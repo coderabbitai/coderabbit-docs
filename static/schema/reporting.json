@@ -3,9 +3,7 @@
 	"properties": {
 		"scheduleRange": {
 			"type": "string",
-			"enum": [
-				"Dates"
-			]
+			"enum": ["Dates"]
 		},
 		"from": {
 			"type": "string",
@@ -34,19 +32,11 @@
 				"properties": {
 					"parameter": {
 						"type": "string",
-						"enum": [
-							"REPOSITORY",
-							"LABEL",
-							"TEAM",
-							"USER"
-						]
+						"enum": ["REPOSITORY", "LABEL", "TEAM", "USER"]
 					},
 					"operator": {
 						"type": "string",
-						"enum": [
-							"IN",
-							"ALL"
-						]
+						"enum": ["IN", "ALL"]
 					},
 					"values": {
 						"type": "array",
@@ -55,39 +45,20 @@
 						}
 					}
 				},
-				"required": [
-					"parameter",
-					"operator",
-					"values"
-				],
+				"required": ["parameter", "operator", "values"],
 				"additionalProperties": false
 			}
 		},
 		"groupBy": {
 			"type": "string",
-			"enum": [
-				"NONE",
-				"REPOSITORY",
-				"LABEL",
-				"TEAM",
-				"USER"
-			]
+			"enum": ["NONE", "REPOSITORY", "LABEL", "TEAM", "USER"]
 		},
 		"subgroupBy": {
 			"type": "string",
-			"enum": [
-				"NONE",
-				"REPOSITORY",
-				"LABEL",
-				"TEAM",
-				"USER"
-			]
+			"enum": ["NONE", "REPOSITORY", "LABEL", "TEAM", "USER"]
 		}
 	},
-	"required": [
-		"from",
-		"to"
-	],
+	"required": ["from", "to"],
 	"additionalProperties": false,
 	"$schema": "http://json-schema.org/draft-07/schema#"
 }

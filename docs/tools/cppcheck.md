@@ -4,7 +4,7 @@ sidebar_label: Cppcheck
 description: CodeRabbit's guide to Cppcheck.
 ---
 
-[Cppcheck](https://cppcheck.sourceforge.io/)  is a static code analysis tool for the C and C++ programming languages.
+[Cppcheck](https://cppcheck.sourceforge.io/) is a static code analysis tool for the C and C++ programming languages.
 
 ## Files
 

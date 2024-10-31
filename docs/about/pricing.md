@@ -76,16 +76,16 @@ These are the hourly usage limits for each developer per repository:
 
 ## Plan Comparison
 
-| Feature                       | Free Plan        | Pro Plan        |
-| ----------------------------- | ---------------- | --------------- |
-| **Free Trial**                | 14-day free trial| 14-day free trial|
-| **Private Repos**             | Limited access   | Unlimited access|
-| **Public Repos**              | Unlimited access  | Unlimited access|
-| **Pull Request Summarization** | Included         | Included        |
-| **Line-by-Line Reviews**      | Public repos only | All repos       |
-| **Conversational Bot**        | No               | Yes             |
-| **Hourly Usage Limits**       | Limited          | 150 files/hour, 9 reviews/hour, 50 conversations/hour |
-| **Price**                     | Free forever     | $15 per seat/mo |
+| Feature                        | Free Plan         | Pro Plan                                              |
+| ------------------------------ | ----------------- | ----------------------------------------------------- |
+| **Free Trial**                 | 14-day free trial | 14-day free trial                                     |
+| **Private Repos**              | Limited access    | Unlimited access                                      |
+| **Public Repos**               | Unlimited access  | Unlimited access                                      |
+| **Pull Request Summarization** | Included          | Included                                              |
+| **Line-by-Line Reviews**       | Public repos only | All repos                                             |
+| **Conversational Bot**         | No                | Yes                                                   |
+| **Hourly Usage Limits**        | Limited           | 150 files/hour, 9 reviews/hour, 50 conversations/hour |
+| **Price**                      | Free forever      | $15 per seat/mo                                       |
 
 ---
 
