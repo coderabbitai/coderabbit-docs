@@ -1,0 +1,13 @@
+{
+	"[css][github-actions-workflow][html][javascript][javascriptreact][json][jsonc][markdown][postcss][scss][typescript][typescriptreact][yaml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.minimap.maxColumn": 80,
+		"editor.rulers": [80]
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "always",
+		"source.fixAll.markdownlint": "always",
+		"source.organizeImports": "always"
+	},
+	"editor.formatOnSave": true
+}
