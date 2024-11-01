@@ -12,11 +12,11 @@ sidebar_position: 9
 We've improved our Learnings and Metrics accessibility for Self-Hosted CodeRabbit customers to provide a more seamless experience. Track learning patterns and insights more easily, with API key generation now available directly from the interface.
 
 **Setup:**
+
 - Generate an API key in the CodeRabbit UI
 - Enable Learnings and Metrics by:
- - Configuring your .env file, or
- - Contacting CodeRabbit support for assistance
-
+- Configuring your .env file, or
+- Contacting CodeRabbit support for assistance
 
 ## October 30, 2024
 
