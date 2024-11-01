@@ -36,4 +36,6 @@ jobs:
           skip-empty: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: git push origin '${{ github.head_ref }}'
+      - run: |
+          git remote add upstream '${{ github.repositoryUrl }}'
+          git push upstream '${{ github.head_ref }}'
