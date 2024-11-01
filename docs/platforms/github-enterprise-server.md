@@ -25,13 +25,13 @@ complete, you can log in directly.
 **Visit CodeRabbit:** Visit our [Login](https://coderabbit.ai/login) page and
 select Self-Hosted GitHub
 
-![login-page](/img/integrations/login-self-hosted-github.png)
+![CodeRabbit login page displaying multiple sign-in options - Login with GitHub, Login with GitLab, Self-Hosted GitHub and GitLab](/img/integrations/login-self-hosted-github.png)
 
 On this page, enter the URL of your self-managed GitHub instance and click
 submit. Once, you submit, we check our database for a record of your
 organization and if we find an existing one, we will start the login process.
 
-![Untitled](/img/integrations/self-hosted-github-host-url.png)
+![Self-hosted GitHub Enterprise connection page for CodeRabbit showing URL input field for GitHub instance domain](/img/integrations/self-hosted-github-host-url.png)
 
 If the self-managed GitHub instance is not found, you will be required to enter
 more details for the onboarding.
@@ -66,7 +66,7 @@ Keep the following details handy:
 - Client ID
 - Client secret
 
-![GitHub OAuth Client ID & Secret](/img/integrations/github-oauth-client-id-secret.png)
+![GitHub Developer Settings page showing CodeRabbit OAuth application configuration with client ID display, client secret management](/img/integrations/github-oauth-client-id-secret.png)
 
 ### **Step 3: GitHub App**
 

@@ -27,7 +27,7 @@ To interact with the GitLab API, a **Personal Access Token** is required. This t
 
 Upon first login to the application (immediately after the onboarding screen), you will need to choose based on your organization's requirements.
 
-![gitlab user modal choice](/img/integrations/gitlab_user_choice.png)
+![GitLab repository access configuration modal showing how to choose between default CodeRabbit user or organization user token](/img/integrations/gitlab_user_choice.png)
 
 **We recommend using the default CodeRabbit user** for most organizations, as it is pre-configured. However, we understand that some organizations may prefer more control over the user or have restrictions regarding user inclusion within their organization.
 
@@ -35,7 +35,7 @@ Upon first login to the application (immediately after the onboarding screen), y
 
 If your organization opts to use another user within the organization, you can do so by [generating a personal access token](#generating-a-personal-access-token).
 
-![gitlab organization user modal choice](/img/integrations/gitlab_organization_user.png)
+![GitLab integration configuration modal showing personal access token input field and organization user setup with detailed instructions for token integration](/img/integrations/gitlab_organization_user.png)
 
 #### Recommendations
 
@@ -67,4 +67,4 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 9. Click "Create Personal Access Token."
 10. Note down the token as it will only be displayed once.
 
-![Untitled](/img/integrations/admin-access-token.png)
+![GitLab personal access token configuration page showing token name input, expiration date selector, and API permission scopes including read/write access options](/img/integrations/gitlab-personal-access-token-scopes-setup.png)
