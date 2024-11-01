@@ -37,5 +37,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - run: |
+          git status
           git remote add upstream '${{ github.repositoryUrl }}'
           git push upstream '${{ github.head_ref }}'
