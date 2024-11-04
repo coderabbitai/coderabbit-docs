@@ -11,6 +11,7 @@ The following commands are available (invoked as PR comments):
 
 - `@coderabbitai pause` to pause the reviews on a PR.
 - `@coderabbitai resume` to resume the paused reviews.
+- `@coderabbitai ignore` to ignore the reviews on a PR.
 - `@coderabbitai review` to trigger an incremental review. This is useful when
   automatic reviews are disabled for the repository.
 - `@coderabbitai full review` to do a full review from scratch and review all
