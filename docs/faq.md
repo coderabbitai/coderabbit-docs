@@ -78,10 +78,8 @@ or remove users as needed.
 
 #### How can I skip the trial and move to Pro
 
-To move to Pro, login to CodeRabbit and navigate to subscriptions. 
+To move to Pro, login to CodeRabbit and navigate to subscriptions.
 Click on **End Trial and Start Pro Plan** to end the trial and move to the Pro plan.
-
-
 
 ### Usage and Configuration
 
