@@ -50,13 +50,8 @@ These are additional capabilities that can also be reviewed in the same PR to ac
 
 ### Finishing Touches
 
-Finishing touches are about experience that often take developers time away from what they like doing best - coding. But adding finishing touches is crucial and should follow the ontology and taxonomy. We will start by looking into Docstring and expand to various areas to solve pain points for coders and reviewers.
+Finishing touches are about experience that often take developers time away from what they like doing best - coding. But adding finishing touches is crucial and should follow the ontology and taxonomy. We will start by looking into specefic areas such as documentation of code as an example .
 
-#### 1. DocString Review
-
-- Automated checks for docstring presence and quality
-- AI-powered suggestions for improving documentation
-- Resolving Doc-string conflicts in a following PR
 
 > Disclaimer: any product roadmap features mentioned below are only meant to outline
 > our general product direction. This documentation is for informational purposes
