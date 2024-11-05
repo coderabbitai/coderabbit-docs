@@ -1,6 +1,6 @@
 ---
-title: CodeRabbit for GitHub Enterprise Server
-description: Integrate CodeRabbit with your GitHub Enterprise Server.
+title: Integrating CodeRabbit with GitHub Enterprise Server
+description: Learn how to integrate CodeRabbit with your GitHub Enterprise Server.
 sidebar_label: GitHub Enterprise Server
 sidebar_position: 3
 ---

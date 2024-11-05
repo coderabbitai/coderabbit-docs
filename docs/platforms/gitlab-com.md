@@ -1,6 +1,6 @@
 ---
 title: Integrating CodeRabbit with GitLab.com
-description: Integrate CodeRabbit with GitLab.com
+description: Learn how to integrate CodeRabbit and add to your GitLab workflow.
 sidebar_label: GitLab.com
 sidebar_position: 2
 ---

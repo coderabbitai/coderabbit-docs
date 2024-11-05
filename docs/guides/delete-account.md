@@ -41,8 +41,8 @@ upon selecting **Delete Account**. You can open the dropdowns for more
 information.
 
 <div align="center">
-![Delete Account](/img/guides/delete_account_light.png#gh-light-mode-only)
-![Delete Account](/img/guides/delete_account_dark.png#gh-dark-mode-only)
+![How-to-Delete-CodeRabbit-Account](/img/guides/delete_account_light.png#gh-light-mode-only)
+![How-to-Delete-CodeRabbit-Account](/img/guides/delete_account_dark.png#gh-dark-mode-only)
 </div>
 
 Deletion will only occur once the admin specifically types in "delete" in the
