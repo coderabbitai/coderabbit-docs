@@ -76,6 +76,11 @@ own OpenAI key.
 To manage users, log in to CodeRabbit and navigate to subscriptions. You can add
 or remove users as needed.
 
+#### How can I skip the trial and move to Pro
+
+To move to Pro, login to CodeRabbit and navigate to the Subscription page.
+Click on **End Trial and Start Pro Plan** to end the trial and move to the Pro plan.
+
 ### Usage and Configuration
 
 #### Can CodeRabbit review my existing PRs after integrating it?
