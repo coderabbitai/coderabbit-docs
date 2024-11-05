@@ -50,7 +50,7 @@ These are additional capabilities that can also be reviewed in the same PR to ac
 
 ### Finishing Touches
 
-Finishing touches are about experience that often take developers time away from what they like doing best - coding. But adding finishing touches is crucial and should follow the ontology and taxonomy. We will start by looking into specefic areas such as documentation of code as an example .
+Finishing touches are about experience that often take developers time away from what they like doing best - coding. But adding finishing touches is crucial and should follow the ontology and taxonomy. We will start by looking into specific areas such as documentation of code as an example.
 
 > Disclaimer: any product roadmap features mentioned below are only meant to outline
 > our general product direction. This documentation is for informational purposes
