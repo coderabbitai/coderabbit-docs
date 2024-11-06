@@ -68,4 +68,3 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 10. Note down the token as it will only be displayed once.
 
 ![GitLab personal access token configuration page showing token name input, expiration date selector, and API permission scopes including read/write access options](/img/integrations/gitlab-personal-access-token-scopes-setup.png)
-
