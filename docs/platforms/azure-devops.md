@@ -1,6 +1,6 @@
 ---
 title: Integrating CodeRabbit with Azure DevOps
-description: Integrate CodeRabbit with Azure DevOps.
+description: Learn how to integrate CodeRabbit with Azure DevOps.
 sidebar_label: Azure DevOps
 sidebar_position: 5
 ---

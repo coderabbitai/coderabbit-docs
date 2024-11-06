@@ -1,13 +1,13 @@
 ---
-title: CodeRabbit for GitHub Enterprise Server
-description: Integrate CodeRabbit with your GitHub Enterprise Server.
+title: Integrating CodeRabbit with GitHub Enterprise Server
+description: Learn how to integrate CodeRabbit with your GitHub Enterprise Server.
 sidebar_label: GitHub Enterprise Server
 sidebar_position: 3
 ---
 
 :::info
 
-This page is for GitHub Enterprise Server (Self-Hosted) users only.  
+This page is for GitHub Enterprise Server (Self-Hosted) users only.
 If you're using `github.com`, [log in to CodeRabbit](https://app.coderabbit.ai)
 and add your repositories from there
 
@@ -154,7 +154,7 @@ GitHub App to your organization(s).
 :::warning
 
 If you performed this step before Step 4, the installation event likely will
-have failed, and you will need to re-send the installation event.  
+have failed, and you will need to re-send the installation event.
 Navigate to the **Advanced** tab in the GitHub App and click on the
 **Redeliver** button for the failed `installation.created` event.
 
