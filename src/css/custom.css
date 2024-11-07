@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,28 +14,32 @@
 
 /* You can override the default Infima variables here. */
 :root {
-	--ifm-color-primary: #ff4702;
-	--ifm-color-primary-dark: #29784c;
-	--ifm-color-primary-darker: #277148;
-	--ifm-color-primary-darkest: #205d3b;
-	--ifm-color-primary-light: #33925d;
-	--ifm-color-primary-lighter: #359962;
-	--ifm-color-primary-lightest: #3cad6e;
-	--ifm-code-font-size: 95%;
-	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-	--ifm-navbar-height: 5rem;
+  --ifm-color-primary: #ff570acc;
+  --ifm-color-primary-dark: #ff570ae5;
+  --ifm-color-primary-darker: #ff570a;
+  --ifm-color-primary-darkest: #ff570a;
+  --ifm-color-primary-light: #ff570a1a;
+  --ifm-color-primary-lighter: #ff570a33;
+  --ifm-color-primary-lightest: #ff570a1a;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-height: 5rem;
+  --ifm-font-family-base: "Poppins", "Work Sans", sans-serif;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-	--ifm-color-primary: #ff4702;
-	--ifm-color-primary-dark: #21af90;
-	--ifm-color-primary-darker: #1fa588;
-	--ifm-color-primary-darkest: #1a8870;
-	--ifm-color-primary-light: #29d5b0;
-	--ifm-color-primary-lighter: #32d8b4;
-	--ifm-color-primary-lightest: #4fddbf;
-	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #ff865b80;
+  --ifm-color-primary-dark: #ff865bcc;
+  --ifm-color-primary-darker: #ff865be5;
+  --ifm-color-primary-darkest: #ff865b;
+  --ifm-color-primary-light: #ff865b33;
+  --ifm-color-primary-lighter: #ff865b1a;
+  --ifm-color-primary-lightest: #171717;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: var(--ifm-font-family-base);
 }
 
 .navbar .navbar__item {
