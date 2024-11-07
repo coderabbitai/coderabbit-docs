@@ -161,11 +161,11 @@ our [Support](./about/support.md) page for more details.
 #### Unable to View Repositories in GitLab
 
 If you cannot view repositories in the CodeRabbit UI, please ensure that you
-are added as a Developer in the main group for GitLab Cloud or in the primary
-group for Self-Hosted GitLab.
+are added as a Developer in the primary group for GitLab Cloud or in the first
+level group for Self-Hosted GitLab.
 
 #### Unable to Enable Repositories in GitLab
 
 If you’re having trouble enabling the GitLab Repositories toggle, confirm that
-you have Maintainer access in the main group for GitLab Cloud or in the 
-primary group for Self-Hosted GitLab.
+you have Maintainer access in the primary group for GitLab Cloud or in the first
+level group for Self-Hosted GitLab.
