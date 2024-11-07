@@ -14,12 +14,12 @@ function CustomFooter(props) {
 						<div className="flex gap-1 pr-2 py-px items-start">
 							<img
 								loading="lazy"
-								src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2b003ad3b20290b59f3b08f614c5151ce5af2538be8ff145c1aae4ecfa170f8?"
-								className="aspect-[1.17] object-contain object-center w-7 fill-white overflow-hidden shrink-0 max-w-full"
+								src="img/logo/white_coderabbit.svg"
+								style={{
+									maxWidth: "200px",
+									height: "auto",
+								}}
 							/>
-							<div className="text-center text-xl font-extrabold leading-7 tracking-tighter self-stretch grow whitespace-nowrap text-customWhite">
-								CodeRabbit
-							</div>
 						</div>
 						<div className="flex items-stretch max-w-md text-xs font-medium mt-10 max-md:mt-10 font-satoshi leading-5 text-customGray">
 							CodeRabbit is an innovative, AI-driven platform that transforms
