@@ -167,7 +167,7 @@ const config: Config = {
 			logo: {
 				alt: "",
 				src: "img/logo/bw_coderabbit.svg",
-        srcDark: "img/logo/white_coderabbit.svg",
+				srcDark: "img/logo/white_coderabbit.svg",
 				href: "https://coderabbit.ai",
 			},
 			items: [],
