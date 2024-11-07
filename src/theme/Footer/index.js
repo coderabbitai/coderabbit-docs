@@ -21,7 +21,7 @@ function CustomFooter(props) {
 								}}
 							/>
 						</div>
-						<div className="flex items-stretch max-w-md text-xs font-medium mt-10 max-md:mt-10 font-satoshi leading-5 text-customGray">
+						<div className="flex items-stretch max-w-md text-xs font-medium mt-10 max-md:mt-10 leading-5 text-customGray">
 							CodeRabbit is an innovative, AI-driven platform that transforms
 							the way code reviews are done. Its automated reviews elevate the
 							code quality while significantly reducing the time and effort tied
@@ -90,7 +90,7 @@ function CustomFooter(props) {
 				</div>
 				<div className="bg-neutral-700 shrink-0 h-px mt-6 max-md:max-w-full" />
 				<div className="justify-between flex w-full gap-5 mt-7 items-start max-md:max-w-full max-md:flex-wrap">
-					<div className="text-sm font-medium font-satoshi text-customWhite">
+					<div className="text-sm font-medium text-customWhite">
 						CodeRabbit © {new Date().getFullYear()}
 					</div>
 					<div className="justify-end items-stretch self-stretch flex gap-4 pl-20 max-md:max-w-full max-md:flex-wrap max-md:pl-5">

@@ -37,12 +37,9 @@
 	--ifm-background-color-primary: #171717;
 }
 
-body {
-	font-family: var(--ifm-font-family-base);
-}
-
 #__docusaurus {
 	background-color: var(--ifm-background-color-primary);
+	font-family: var(--ifm-font-family-base);
 }
 
 .navbar .navbar__item {
