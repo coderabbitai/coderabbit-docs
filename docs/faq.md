@@ -83,10 +83,10 @@ Click on **End Trial and Start Pro Plan** to end the trial and move to the Pro p
 
 #### How to Add or Update Your Billing Email
 
-To add or update your billing email, navigate to the Subscription page and 
-select Manage Subscription > **Billing Address**. Enter your email address in the 
+To add or update your billing email, navigate to the Subscription page and
+select Manage Subscription > **Billing Address**. Enter your email address in the
 Email field and click Update to save your changes.
- 
+
 ### Usage and Configuration
 
 #### Can CodeRabbit review my existing PRs after integrating it?
