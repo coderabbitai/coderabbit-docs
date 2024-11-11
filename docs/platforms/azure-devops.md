@@ -28,14 +28,14 @@ DevOps.
 
    :::
 
-   ![azure devops apps consent](/img/integrations/azure_apps_consent_page.png)
+   ![CodeRabbit admin consent page for Azure DevOps integration](/img/integrations/azure_apps_consent_page.png)
 
 3. Once your administrator has approved the applications, click "Continue."
 4. You will be redirected to the "Onboarding" page, where you can select the
    organization you wish to integrate with.
 5. On the "Azure DevOps User" page, enter your Personal Access Token for Azure
    DevOps.
-   ![azure devops user page](/img/integrations/azure_devops_user_page.png)
+   ![CodeRabbit azure devOps integration settings page](/img/integrations/azure_devops_user_page.png)
 6. To install CodeRabbit on a repository, toggle the switch on the
    "Repositories" page.
 
@@ -58,7 +58,7 @@ your existing users.
 Upon first login to the application (immediately after the onboarding screen),
 you will need to add the Personal Access Token.
 
-![azure devops user modal](/img/integrations/azure_personal_access_token_add.png)
+![CodeRabbit azure devOps integration modal](/img/integrations/azure_personal_access_token_add.png)
 
 ### Recommendations
 
@@ -98,4 +98,4 @@ Follow these steps to generate the token:
    on pull requests.
 8. Click "Create"
 
-![Generate Personal Access Token](/img/integrations/azure-access-token.png)
+![CodeRabbit azure devOps personal access token creation form](/img/integrations/azure-access-token.png)

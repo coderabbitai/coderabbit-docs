@@ -5,6 +5,12 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 9
 ---
 
+## November 8, 2024
+
+### ESLint Support
+
+We've introducded support for ES Lint, including .vue, .svelte, and .astro, alongside traditional .js, .ts, and .jsx extensions. We've worked on monorepo compatibility with improved Yarn and PNPM workspace support, ensuring seamless integration across your projects. While maintaining your existing ESLint configurations, we simply require all dependencies to be properly defined in your package.json. Note that private plugins aren't currently supported, but we're committed to making code quality maintenance as efficient as possible across all your web development needs
+
 ## October 31, 2024
 
 ### Learnings and Metrics Iteration for CodeRabbit Self-Hosted Customers

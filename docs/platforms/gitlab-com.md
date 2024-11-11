@@ -67,4 +67,4 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 9. Click "Create Personal Access Token."
 10. Note down the token as it will only be displayed once.
 
-![Untitled](/img/integrations/admin-access-token.png)
+![GitLab personal access token configuration page](/img/integrations/admin-access-token.png)

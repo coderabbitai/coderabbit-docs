@@ -1,5 +1,6 @@
 import OriginalFooter from "@theme-original/Footer"
 import React from "react"
+import { CRLogoBase64 } from "./cr-logo"
 
 // Create your custom Footer component by extending the original Footer
 function CustomFooter(props) {
@@ -14,7 +15,7 @@ function CustomFooter(props) {
 						<div className="flex gap-1 pr-2 py-px items-start">
 							<img
 								loading="lazy"
-								src="img/logo/white_coderabbit.svg"
+								src={CRLogoBase64}
 								style={{
 									maxWidth: "200px",
 									height: "auto",

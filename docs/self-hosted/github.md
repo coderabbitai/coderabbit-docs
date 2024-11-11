@@ -5,6 +5,12 @@ description: Instructions to self-host CodeRabbit and integrate it with GitHub.
 sidebar_position: 1
 ---
 
+:::note
+
+The self-hosted option is only available for CodeRabbit Enterprise customers with 500 user seats or more. Please contact [CodeRabbit Sales](mailto:sales@coderabbit.ai) to learn more about the CodeRabbit Enterprise plan.
+
+:::
+
 ## Create a GitHub App
 
 Set the following Repository permissions:
