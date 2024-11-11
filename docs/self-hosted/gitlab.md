@@ -5,6 +5,12 @@ description: Instructions to self-host CodeRabbit and integrate it with GitLab.
 sidebar_position: 2
 ---
 
+:::note
+
+The self-hosted option is only available for CodeRabbit Enterprise customers with 500 user seats or more. Please contact [CodeRabbit Sales](mailto:sales@coderabbit.ai) to learn more about the CodeRabbit Enterprise plan.
+
+:::
+
 ## Create a GitLab User
 
 - **Username**: Set the username to "CodeRabbit" for easier identification (optional).

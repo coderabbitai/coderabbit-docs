@@ -166,7 +166,8 @@ const config: Config = {
 			hideOnScroll: true,
 			logo: {
 				alt: "",
-				src: "img/coderabbit_nav_logo.svg",
+				src: "img/logo/bw_coderabbit.svg",
+				srcDark: "img/logo/white_coderabbit.svg",
 				href: "https://coderabbit.ai",
 			},
 			items: [],
