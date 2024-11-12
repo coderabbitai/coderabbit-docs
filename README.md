@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# CodeRabbit Documentation
+ # CodeRabbit Documentation
 
 Welcome to the official docs for [**CodeRabbit**](https://coderabbit.ai), the code review dev tool that helps you ship quality code faster.
 
