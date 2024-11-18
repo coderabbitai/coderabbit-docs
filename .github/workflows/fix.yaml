@@ -31,7 +31,8 @@ jobs:
         with:
           message: |
             🎨 pnpm run lint:fix
-            github-actions[bot]
+
+            [dependabot skip]
           skip-empty: true
 
       - if: ${{ steps.actions--create-commit.outputs.commit }}
