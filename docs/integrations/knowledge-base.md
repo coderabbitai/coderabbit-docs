@@ -20,6 +20,15 @@ Upon enabling the Jira integration, CodeRabbit will redirect you to the Jira log
 
 1. Add Jira's Project Keys to the `knowledge_base.jira.project_keys` field in your project's CodeRabbit configuration file at `.coderabbit.yaml`.
 
+### Creating Issues with Jira Integration
+
+1. If you had already enabled Jira integration, you will need to disable and re-enable it in order to get the newly updated required permissions.
+2. This feature will use the first project key found in the repository settings from `knowledge_base.jira.project_keys` field.
+
+CodeRabbit is able to create issues from a PR comment if the message is clear that you want to create a new **jira issue**.
+
+Example: `Create a new jira issue to remind me about this refactor.`
+
 ## Linear {#Linear}
 
 ### CodeRabbit App
