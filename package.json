@@ -6,7 +6,7 @@
 		"clean": "rm -rf build node_modules .docusaurus",
 		"docusaurus": "docusaurus",
 		"start": "docusaurus start",
-		"build": "docusaurus build --no-minify",
+		"build": "docusaurus build",
 		"swizzle": "docusaurus swizzle",
 		"deploy": "docusaurus deploy",
 		"clear": "docusaurus clear",
