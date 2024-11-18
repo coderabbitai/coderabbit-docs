@@ -3,9 +3,10 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
+		"clean": "rm -rf build node_modules .docusaurus",
 		"docusaurus": "docusaurus",
 		"start": "docusaurus start",
-		"build": "docusaurus build",
+		"build": "docusaurus build --no-minify",
 		"swizzle": "docusaurus swizzle",
 		"deploy": "docusaurus deploy",
 		"clear": "docusaurus clear",
