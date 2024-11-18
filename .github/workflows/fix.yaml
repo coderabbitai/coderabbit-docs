@@ -24,6 +24,7 @@ jobs:
           cache: pnpm
       - run: pnpm install
       - run: pnpm run lint:fix
+      - run: git add .
 
       - uses: qoomon/actions--create-commit@v1
         id: actions--create-commit
