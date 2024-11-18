@@ -11,6 +11,8 @@ jobs:
     permissions:
       contents: write
 
+    if: github.actor != 'github-actions[bot]'
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,18 +26,16 @@ jobs:
           cache: pnpm
       - run: pnpm install
       - run: pnpm run lint:fix
+      - run: git add .
 
-      - id: diff
-        run: |
-          if [[ -n $(git status --porcelain) ]]; then
-            echo 'changes=true' >>"$GITHUB_OUTPUT"
-          fi
+      - uses: qoomon/actions--create-commit@v1
+        id: actions--create-commit
+        with:
+          message: |
+            🎨 pnpm run lint:fix
 
-      - if: steps.diff.outputs.changes == 'true'
-        name: Commit and push
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            [dependabot skip]
+          skip-empty: true
 
-          git commit --all --message '🎨 pnpm run lint:fix' --message '[dependabot skip]'
-          git push
+      - if: ${{ steps.actions--create-commit.outputs.commit }}
+        run: git push
