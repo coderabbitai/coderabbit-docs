@@ -107,6 +107,11 @@ LINEAR_PAT=[<linear-personal-access-token>]
 OAUTH2_ENDPOINT=[<endpoint>]
 OAUTH2_CLIENT_ID=[<client-id>]
 OAUTH2_CLIENT_SECRET=[<client-secret>]
+
+# Set to true to use the knowledge base features.
+ON_PREM_KNOWLEDGE_BASE=[true]
+# The branch which CodeRabbit will store the knowledge base json files in.
+ON_PREM_KNOWLEDGE_BASE_BRANCH=[coderabbitai/data]
 ```
 
 :::note
