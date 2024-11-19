@@ -1,6 +1,6 @@
 ---
 title: Knowledge Base
-description: Integrate CodeRabbit with an external knowledge base for issue tracking.
+description: Learn about CodeRabbit's internal knowledge base and its integrations with external services.
 sidebar_label: Knowledge Base
 sidebar_position: 4
 ---
