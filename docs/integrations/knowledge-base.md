@@ -5,7 +5,7 @@ sidebar_label: Knowledge Base
 sidebar_position: 4
 ---
 
-CodeRabbit utilizes an internal knowledge base that integrates with several external services to provide a seamless review and issue management experience. 
+CodeRabbit utilizes an internal knowledge base that integrates with several external services to provide a seamless review and issue management experience.
 
 ## Issues
 
