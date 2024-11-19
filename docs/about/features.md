@@ -83,7 +83,7 @@ changes.
 
 ![Irony in Committable Suggestions - CodeRabbit](/img/about/ironic-committable.png)
 
-### 7. Learnings {#learnings}
+### 7. [Learnings](/integrations/knowledge-base#learnings) {#learnings}
 
 - **CodeRabbit** learns from user chat interactions to gain tribal knowledge on your
   repositories and organization.
