@@ -39,9 +39,13 @@ Upon enabling the Linear integration, CodeRabbit will redirect you to the Linear
 
 [integrations]: https://app.coderabbit.ai/integrations
 
-## Learnings
+## Learnings {#learnings}
 
 You can tell the bot to remember things about either specific lines in files, or generally about the entire repository, or even across repositories.
+
+For example you can add a comment in a PR to chat directly with CodeRabbit. `@coderabbitai always remember to enforce camelCase`.
+
+Or you can comment directly on some lines of code in the PR. `@coderabbitai do not complain about lack of error handling here, it is handled higher up the execution stack.`
 
 ## On-premises
 
