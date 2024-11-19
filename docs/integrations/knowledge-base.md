@@ -45,6 +45,6 @@ You can tell the bot to remember things about either specific lines in files, or
 
 ## On-premises
 
-For self-hosted / on-premises deployments, you can enabled the knowledge base features by setting `ON_PREM_KNOWLEDGE_BASE` to true in the environment variables for your self-hosted docker image.
+For self-hosted / on-premises deployments, you can enable the knowledge base features by setting `ON_PREM_KNOWLEDGE_BASE=true` in the environment variables for your self-hosted docker image.
 
-By default CodeRabbit will store it's data in the `coderabbitai/data` branch unless you set `ON_PREM_KNOWLEDGE_BASE_BRANCH` with a different value.
+By default, CodeRabbit will store its data in the `coderabbitai/data` branch unless you set `ON_PREM_KNOWLEDGE_BASE_BRANCH=<branch_name>` with a different value.
