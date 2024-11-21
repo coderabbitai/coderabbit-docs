@@ -315,7 +315,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable ShellCheck | ShellCheck is a static analysis tool that finds bugs in your shell. | Enable shellcheck integration. | v0.9.0"
+											"description": "Enable ShellCheck | ShellCheck is a static analysis tool that finds bugs in your shell. | Enable shellcheck integration. | v0.9.0-1"
 										}
 									},
 									"additionalProperties": false,
@@ -518,7 +518,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Yamllint | yamllint is a linter for YAML files. | Enable yamllint integration. | v1.29.0"
+											"description": "Enable Yamllint | yamllint is a linter for YAML files. | Enable yamllint integration. | v1.29.0-1"
 										}
 									},
 									"additionalProperties": false,
@@ -574,7 +574,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable ESLint | ESLint is a static code analysis tool for JavaScript files."
+											"description": "Enable ESLint | ESLint is a static code analysis tool for JavaScript files. | v1.23.1"
 										}
 									},
 									"additionalProperties": false,
