@@ -112,6 +112,8 @@ OAUTH2_CLIENT_SECRET=[<client-secret>]
 ON_PREM_KNOWLEDGE_BASE=[true]
 # The branch which CodeRabbit will store the knowledge base json files in.
 ON_PREM_KNOWLEDGE_BASE_BRANCH=[coderabbitai/data]
+# URL to the host running ChromaDB 0.5.20.
+CHROMADB_URL=[http://chromadb:8000]
 ```
 
 :::note
