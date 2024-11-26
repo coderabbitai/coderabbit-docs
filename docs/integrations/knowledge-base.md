@@ -53,7 +53,7 @@ For self-hosted / on-premises deployments, you can enable the knowledge base fea
 
 You must also be running ChromaDB. Use image `chromadb/chroma:0.5.20`. In your CodeRabbit docker image environment variables, set `CHROMADB_URL` to point to the hostname where ChromaDB can be reached. For persistance of your ChromaDB data, mount `/chroma/chroma` in the container to a volume mount. For more information on ChromaDB docker deployment, including how to set up authentication, refer to the [official documentation](https://docs.trychroma.com/deployment/docker). CodeRabbit will use `CHROMA_CLIENT_AUTH_CREDENTIALS` if it is set.
 
-By default, CodeRabbit will store its data in the `coderabbitai/data` branch unless you set `ON_PREM_KNOWLEDGE_BASE_BRANCH=<branch_name>` with a value.
+By default, CodeRabbit will store its data in the `coderabbitai/data` branch, unless you set a value for `ON_PREM_KNOWLEDGE_BASE_BRANCH=<branch_name>`.
 
 ### Walkthrough
 
