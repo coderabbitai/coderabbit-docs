@@ -63,9 +63,7 @@ By default, CodeRabbit will store its data in the `coderabbitai/data` branch unl
 - Create a new PR in your SCM platform.
 - Add a comment to the PR to tell CodeRabbit to remember something.
 
-```
-@coderabbitai always make sure to enforce camelCase
-```
+`@coderabbitai always make sure to enforce camelCase`
 
 - CodeRabbit should respond that it has added a learning.
 - Check out the branch called `coderabbit/data` in the repository (or whatever branch name you have set for `ON_PREM_KNOWLEDGE_BASE_BRANCH`). It should contain a file called learnings.json with an entry containing what you told it to remember.
