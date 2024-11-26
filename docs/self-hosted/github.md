@@ -123,6 +123,7 @@ CHROMADB_URL=[http://chromadb:8000]
 - For `GITHUB_APP_PEM_FILE`, flatten the PEM file by replacing newlines with `\n`.
 - For `GITHUB_HOSTNAME`, use GitHub Enterprise server's hostname, for example, “github.acme-inc.com”
 - You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
+- Refer to the [Self-hosted knowledge base](/integrations/knowledge-base#self-hosted) section for details on the `ON_PREM_KNOWLEDGE_BASE`.
 
 :::
 
