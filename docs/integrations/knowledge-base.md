@@ -49,11 +49,11 @@ Or you can comment directly on some lines of code in the PR. `@coderabbitai do n
 
 ## Self-hosted knowledge base {#self-hosted}
 
-For self-hosted / on-premises deployments, you can enable the knowledge base features by setting `ON_PREM_KNOWLEDGE_BASE=true` in the environment variables for your self-hosted docker image.
+For self-hosted / on-premises deployments, you can enable the knowledge base features by setting `SELF_HOSTED_KNOWLEDGE_BASE=true` in the environment variables for your self-hosted docker image.
 
 You must also be running ChromaDB. Use image `chromadb/chroma:0.5.20`. In your CodeRabbit docker image environment variables, set `CHROMADB_URL` to point to the hostname where ChromaDB can be reached. For persistance of your ChromaDB data, mount `/chroma/chroma` in the container to a volume mount. For more information on ChromaDB docker deployment, including how to set up authentication, refer to the [official documentation](https://docs.trychroma.com/deployment/docker). CodeRabbit will use `CHROMA_CLIENT_AUTH_CREDENTIALS` if it is set.
 
-By default, CodeRabbit will store its data in the `coderabbitai/data` branch, unless you set a value for `ON_PREM_KNOWLEDGE_BASE_BRANCH=<branch_name>`.
+By default, CodeRabbit will store its data in the `coderabbitai/data` branch, unless you set a value for `SELF_HOSTED_KNOWLEDGE_BASE_BRANCH=<branch_name>`.
 
 ### Walkthrough
 
@@ -66,5 +66,5 @@ By default, CodeRabbit will store its data in the `coderabbitai/data` branch, un
 `@coderabbitai always make sure to enforce camelCase`
 
 - CodeRabbit should respond that it has added a learning.
-- Check out the branch called `coderabbit/data` in the repository (or whatever branch name you have set for `ON_PREM_KNOWLEDGE_BASE_BRANCH`). It should contain a file called learnings.json with an entry containing what you told it to remember.
+- Check out the branch called `coderabbit/data` in the repository (or whatever branch name you have set for `SELF_HOSTED_KNOWLEDGE_BASE_BRANCH`). It should contain a file called learnings.json with an entry containing what you told it to remember.
 - Future PRs should utilize the contents of this learnings file. Congratulations! You have configured the CodeRabbit Self-hosted knowledge base.
