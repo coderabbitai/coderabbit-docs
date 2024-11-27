@@ -58,7 +58,7 @@ By default, CodeRabbit will store its data in the `coderabbitai/data` branch, un
 ### Walkthrough
 
 - Set up a ChromaDB service on your cloud provider of choice. There is extensive documentation for generic Docker deploys, as well as cloud native deployments, in the [official Chroma documentation](https://docs.trychroma.com/deployment)
-- Configure your environment variables for your CodeRabbit self-hosted deploy to be able to access Chroma.
+- Configure your environment variables for your CodeRabbit self-hosted deploy to be able to access Chroma. Documentation is available for [GitHub](/self-hosted/github#prepare-an-env-file).
 - Restart your CodeRabbit service so it has access to the new environment variable settings.
 - Create a new PR in your SCM platform.
 - Add a comment to the PR to tell CodeRabbit to remember something.
