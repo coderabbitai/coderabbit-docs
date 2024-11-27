@@ -96,6 +96,7 @@ GITHUB_APP_PEM_FILE=<flattened-pem-file>
 CODERABBIT_LICENSE_KEY=<license-key>
 
 CODERABBIT_API_KEY=[<coderabbitai-api-key>]
+# This will use your CodeRabbit API key to store learnings on our servers.
 ENABLE_LEARNINGS=[true]
 ENABLE_METRICS=[true]
 
@@ -108,10 +109,10 @@ OAUTH2_ENDPOINT=[<endpoint>]
 OAUTH2_CLIENT_ID=[<client-id>]
 OAUTH2_CLIENT_SECRET=[<client-secret>]
 
-# Set to true to use the knowledge base features.
-ON_PREM_KNOWLEDGE_BASE=[true]
+# Set to true to use the on-prem knowledge base features. This will take precedence over the ENABLE_LEARNINGS flag above.
+SELF_HOSTED_KNOWLEDGE_BASE=[true]
 # The branch which CodeRabbit will store the knowledge base json files in.
-ON_PREM_KNOWLEDGE_BASE_BRANCH=[coderabbitai/data]
+SELF_HOSTED_KNOWLEDGE_BASE_BRANCH=[coderabbitai/data]
 # URL to the host running ChromaDB 0.5.20.
 CHROMADB_URL=[http://chromadb:8000]
 ```
