@@ -1,6 +1,6 @@
 ---
-id: Get Started
-title: Get Started
+id: introduction
+title: Introduction
 sidebar_label: Introduction
 sidebar_position: 1
 description:

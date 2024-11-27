@@ -9,7 +9,7 @@ sidebar_position: 3
 ---
 
 The guide explains how to add custom review instructions for the entire project.
-Also, see the guide on how to [configure CodeRabbit](../configure-coderabbit.md).
+Also, see the guide on how to [configure CodeRabbit](/getting-started/configure-coderabbit).
 
 ### Path-based instructions {#path-based}
 

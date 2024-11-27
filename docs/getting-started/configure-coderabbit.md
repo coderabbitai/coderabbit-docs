@@ -1,6 +1,6 @@
 ---
 title: Configure CodeRabbit
-sidebar_label: Configure CodeRabbit
+sidebar_label: Configure
 description:
   CodeRabbit offers various configuration options to tailor the reviews to your
   specific requirements. Configuration can be made using one of the below

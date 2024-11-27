@@ -42,11 +42,11 @@ const config: Config = {
 				redirects: [
 					{
 						from: "/get-started",
-						to: "/configure-coderabbit",
+						to: "/getting-started/configure-coderabbit",
 					},
 					{
 						from: "/guides/customize-coderabbit",
-						to: "/configure-coderabbit",
+						to: "/getting-started/configure-coderabbit",
 					},
 					{
 						from: "/guides/prompt-customization",
@@ -54,7 +54,7 @@ const config: Config = {
 					},
 					{
 						from: "/guides/configure-coderabbit",
-						to: "/configure-coderabbit",
+						to: "/getting-started/configure-coderabbit",
 					},
 					{
 						from: "/integrations/saas-gitlab",
@@ -103,6 +103,7 @@ const config: Config = {
 				docs: {
 					editUrl: "https://github.com/coderabbitai/coderabbit-docs/edit/main/",
 					sidebarPath: "./sidebars.ts",
+					path: "docs",
 					routeBasePath: "/",
 					breadcrumbs: true,
 					showLastUpdateTime: true,
@@ -165,12 +166,43 @@ const config: Config = {
 			title: "",
 			hideOnScroll: true,
 			logo: {
-				alt: "",
+				alt: "CodeRabbit",
 				src: "img/logo/bw_coderabbit.svg",
 				srcDark: "img/logo/white_coderabbit.svg",
 				href: "https://coderabbit.ai",
+				target: "_self",
 			},
-			items: [],
+			items: [
+				// Direct links to main sections
+				{
+					label: "Docs",
+					position: "left",
+					to: "/", // Root of documentation
+					className: "navbar-link-active", // Highlight current section
+				},
+				{
+					href: "https://api.coderabbit.ai/api/swagger/",
+					label: "API Reference",
+					position: "left",
+				},
+				{
+					href: "https://blog.coderabbit.ai/blog",
+					label: "Blog",
+					position: "left",
+				},
+				{
+					href: "https://discord.gg/coderabbit",
+					className: "navbar-icon-link discord-link",
+					"aria-label": "Discord",
+					position: "right",
+				},
+				{
+					href: "https://github.com/coderabbitai",
+					className: "github-link",
+					"aria-label": "GitHub",
+					position: "right",
+				},
+			],
 		},
 		prism: {
 			theme: prismThemes.github,
