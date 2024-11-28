@@ -19,7 +19,7 @@ upgrading your GitLab instance to obtain the intended experience.
 
 ### **Step 1: Getting Started**
 
-**Visit CodeRabbit:** Visit our [Login](https://coderabbit.ai/login) page and
+**Visit CodeRabbit:** Visit our [Login](https://app.coderabbit.ai/login?free-trial) page and
 select Self-Hosted GitLab
 
 ![CodeRabbit login](/img/integrations/login-self-hosted-gitlab.png)

@@ -22,7 +22,7 @@ complete, you can log in directly.
 
 ### **Step 1: Getting Started**
 
-**Visit CodeRabbit:** Visit our [Login](https://coderabbit.ai/login) page and
+**Visit CodeRabbit:** Visit our [Login](https://app.coderabbit.ai/login?free-trial) page and
 select Self-Hosted GitHub
 
 ![CodeRabbit login page](/img/integrations/login-self-hosted-github.png)
