@@ -101,19 +101,19 @@ These are the hourly usage limits for each developer per repository:
 
 ## Plan Comparison
 
-| Feature                        | Free Plan         | Pro Plan          | Lite Plan        |
-| ------------------------------ | ----------------- | ----------------- | ---------------- |
-| **Free Trial**                 | 14-day free trial | 14-day free trial | No               |
-| **Private Repos**              | Limited access    | Unlimited access  | Limited access   |
-| **Public Repos**               | Unlimited access  | Unlimited access  | Unlimited access |
-| **Pull Request Summarization** | Included          | Included          | Included         |
-| **Line-by-Line Reviews**       | Public repos only | All repos         | All repos        |
-| **Conversational Bot**         | No                | Yes               | Yes              |
-| **Linters and SAST tools**     | No                | No                | Yes              |
-| **Jira & Linear Integration**  | No                | No                | Yes              |
-| **ROI dashboards**             | No                | No                | Yes              |
-| **Customizable reports**       | No                | No                | Yes              |
-| **Price**                      | Free forever      | $15 per seat/mo   | $30 per seat/mo  |
+| Feature                        | Free Plan                              | Lite Plan          | Pro Plan           |
+| ------------------------------ | -------------------------------------- | ------------------ | ------------------ |
+| **Free Trial**                 | Starts with 14-day free trial to Pro   | 14-day free trial  | 14-day free trial  |
+| **Public Repos**               | Unlimited access                       | Unlimited access   | Unlimited access   |
+| **Pull Request Summarization** | Included                               | Included           | Included           |
+| **Private Repos**              | Limited access                         | Limited access     | Unlimited access   |
+| **Line-by-Line Reviews**       | Public repos only                      | All repos          | All repos          |
+| **Conversational Bot**         | No                                     | Yes                | Yes                |
+| **Linters and SAST tools**     | No                                     | No                 | Yes                |
+| **Jira & Linear Integration**  | No                                     | No                 | Yes                |
+| **ROI Dashboards**             | No                                     | No                 | Yes                |
+| **Customizable Reports**       | No                                     | No                 | Yes                |
+| **Price**                      | Free forever                           | $15 per seat/mo    | $30 per seat/mo    |
 
 ---
 
