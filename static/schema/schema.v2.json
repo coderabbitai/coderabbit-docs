@@ -226,6 +226,16 @@
 							"default": true,
 							"description": "Abort the in-progress review if the pull request is closed or merged."
 						},
+						"suggested_reviewers": {
+							"type": "boolean",
+							"default": true,
+							"description": "Suggest reviewers based on the changes in the pull request."
+						},
+						"related_prs": {
+							"type": "boolean",
+							"default": true,
+							"description": "Include possibly related pull requests in the review summary."
+						},
 						"auto_review": {
 							"type": "object",
 							"properties": {
