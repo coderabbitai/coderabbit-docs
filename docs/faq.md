@@ -80,7 +80,7 @@ Switch between organizations easily:
 - ⚡ **Older PRs**: Use `@coderabbitai review` to trigger manually
 
 :::tip Pro Tip
-Just created a PR right before installing CodeRabbit? or drop a `@coderabbitai full review` comment in old PR to get it reviewed.
+Just created a PR right before installing CodeRabbit? Drop a `@coderabbitai full review` comment in old PR to get it reviewed.
 :::
 
 ![CodeRabbit- Full-Review](/img/faq/full-review.png)
@@ -88,7 +88,7 @@ Just created a PR right before installing CodeRabbit? or drop a `@coderabbitai f
 ### Customization Options
 
 - **Language Settings**: Configure review language in repository settings
-- **Review Rules**: Customize via [Review Instructions](./guides/review-instructions.md)
+- **Review Rules**: Customize via [Review Instructions](/guides/review-instructions)
 - **Branch Selection**: Default branch reviews enabled by default (configurable)
 
 ### Access & Permissions
@@ -104,7 +104,7 @@ Interact with CodeRabbit by:
 1. Replying directly to CodeRabbit comments
 2. Tagging `@coderabbitai` in PR discussions
 3. Adding review comments for specific lines
-4. Customize via [Review Instructions](./guides/review-instructions.md)
+4. Customize via [Review Instructions](/guides/review-instructions)
 
 :::tip Collaboration Mode
 When team members are active in PRs, use `@coderabbitai` to engage the bot.
@@ -137,5 +137,79 @@ In-trial and open-source plans have lower rate limits than the paid plan. In all
 3. That's it. CodeRabbit will automatically start reviewing your PRs
 
 :::tip Need Help?
-Visit our [Support](./about/support.md) page for additional assistance or reach out to our team on [discord](http://discord.gg/coderabbit).
+Visit our [Support](/about/support) page for additional assistance or reach out to our team on [Discord](http://discord.gg/coderabbit).
 :::
+
+## Account Management {#account-management}
+
+### How do I delete my CodeRabbit account?
+
+:::danger Irreversible Account Deletion
+Deleting your CodeRabbit account is permanent and cannot be undone. This action will permanently erase:
+
+- Organization and Repository data
+- AI Bot learnings and insights
+- Subscriptions and billing information
+- All settings and configurations
+- Reports and recurring reports
+- Third-party service integrations
+  :::
+
+<Tabs>
+  <TabItem value="deletion" label="Account Deletion Steps" default>
+    1. Sign into your CodeRabbit account
+    2. Navigate to the **Subscription** page
+    3. Click the orange **Delete Account** button
+    4. Review the deletion confirmation modal
+    5. Type "delete" to confirm
+    6. Complete platform-specific cleanup steps below
+
+    :::info
+    The Delete Account button is only visible to admin users.
+    :::
+
+A confirmation modal will appear explaining the consequences of account deletion. You can expand each section for detailed information:
+
+    <div align="center">
+    ![Delete Account](/img/guides/delete_account_light.png#gh-light-mode-only)
+    ![Delete Account](/img/guides/delete_account_dark.png#gh-dark-mode-only)
+    </div>
+
+  </TabItem>
+  <TabItem value="github" label="GitHub Cleanup">
+    After account deletion, you must:
+
+    **Remove OAuth App:**
+    1. Go to Organization settings
+    2. Click **OAuth Application Policy**
+    3. Find **coderabbitai** and click the pencil icon
+    4. Click **Revoke**
+
+    **Uninstall GitHub App:**
+    1. Go to Organization settings
+    2. Click **GitHub Apps**
+    3. Select **Configure**
+    4. Click **Uninstall**
+
+  </TabItem>
+  <TabItem value="gitlab" label="GitLab Cleanup">
+    Complete these steps:
+
+    1. Remove OAuth App from User Settings > Applications
+    2. Remove Webhook from Group > Project Settings > Webhooks
+    3. Remove Bot User from Group > Manage > Members
+
+  </TabItem>
+  <TabItem value="azure" label="Azure DevOps Cleanup">
+    1. Go to Project Settings > Service Hooks
+    2. Delete CodeRabbit webhooks
+    3. Remove CodeRabbit user or delete associated Personal Access Token
+  </TabItem>
+</Tabs>
+
+:::warning Post-Deletion Steps
+The platform-specific cleanup steps are necessary to completely remove CodeRabbit access. Without completing these steps:
+
+- CodeRabbit may retain some platform permissions
+- Signing back in will recreate minimal account data
+  :::

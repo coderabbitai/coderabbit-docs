@@ -173,17 +173,11 @@ const config: Config = {
 				target: "_self",
 			},
 			items: [
-				// Direct links to main sections
 				{
 					label: "Docs",
 					position: "left",
-					to: "/", // Root of documentation
-					className: "navbar-link-active", // Highlight current section
-				},
-				{
-					href: "https://api.coderabbit.ai/api/swagger/",
-					label: "API Reference",
-					position: "left",
+					to: "/",
+					className: "navbar-link-active",
 				},
 				{
 					href: "https://blog.coderabbit.ai/blog",

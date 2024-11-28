@@ -19,7 +19,7 @@ Get started with CodeRabbit in three simple steps. No complex configuration need
 - Click "Sign in with GitHub"
 - Authorize CodeRabbit
 
-![Login with GitHub - CodeRabbit](/img/getting-started/login-with-github.png)
+![CodeRabbit Login](/img/integrations/login-self-hosted-github.png)
 
 2. **Add Your Repository**
 
@@ -27,7 +27,7 @@ Get started with CodeRabbit in three simple steps. No complex configuration need
 - Click "Add Repositories"
 - Select the repositories you want to enable
 
-![CodeRabbit Dashboard](/img/getting-started/coderabbit-dashboard.png)
+![CodeRabbit Dashboard](/img/getting-started/dashboard-coderabbit.png)
 
 3. **You're Done 🎉**
 
@@ -41,7 +41,7 @@ Get started with CodeRabbit in three simple steps. No complex configuration need
 
 Here's an example of CodeRabbit in action:
 
-![CodeRabbit PR Review Example](/img/getting-started/pr-example.png)
+![CodeRabbit PR Review Example](/img/getting-started/pr-examples.png)
 
 [View live example PR](https://github.com/tyaga001/devtoolsacademy/pull/39)
 
