@@ -13,7 +13,7 @@ Get started with CodeRabbit in three simple steps. No complex configuration need
 
 ## Steps to Enable CodeRabbit
 
-1. **Sign In with GitHub**
+### Sign In with GitHub
 
 - Visit [coderabbit.ai](https://coderabbit.ai)
 - Click "Sign in with GitHub"
@@ -21,7 +21,7 @@ Get started with CodeRabbit in three simple steps. No complex configuration need
 
 ![CodeRabbit Login](/img/integrations/login-self-hosted-github.png)
 
-2. **Add Your Repository**
+### Add Your Repository
 
 - Go to your [Dashboard](https://app.coderabbit.ai/dashboard)
 - Click "Add Repositories"
@@ -29,7 +29,7 @@ Get started with CodeRabbit in three simple steps. No complex configuration need
 
 ![CodeRabbit Dashboard](/img/getting-started/dashboard-coderabbit.png)
 
-3. **You're Done 🎉**
+### You're Done 🎉
 
 - CodeRabbit will automatically start reviewing your Pull Requests
 - Default configuration works out of the box
