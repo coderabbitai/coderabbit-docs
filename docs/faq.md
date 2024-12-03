@@ -79,10 +79,6 @@ Switch between organizations easily:
 - ✅ **New Commits**: Automatic review when pushed to any PR
 - ⚡ **Older PRs**: Use `@coderabbitai review` to trigger manually
 
-:::tip Pro Tip
-Just created a PR right before installing CodeRabbit? Drop a `@coderabbitai full review` comment in old PR to get it reviewed.
-:::
-
 ![CodeRabbit- Full-Review](/img/faq/full-review.png)
 
 ### Customization Options
