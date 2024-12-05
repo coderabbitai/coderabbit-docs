@@ -6,152 +6,57 @@ sidebar_position: 2
 description: CodeRabbit is AI-powered code reviews built for modern development teams
 ---
 
-# Why CodeRabbit?
+As developers, we understand the critical value of code reviews - they're the backbone of maintaining code quality and knowledge sharing across teams. But let's be honest about the growing challenges: as codebases expand and development velocity increases, traditional code reviews often become a bottleneck. This is where CodeRabbit comes in, not to replace human reviewers, but to make their work more impactful and helpful.
 
-Looking back at CodeRabbit's journey, our fundamental mission remains unchanged:
+### Deep Understanding, Immediate Insights
 
-> To build the best code review experience in the cloud
+Think about how you approach reviewing a complex pull request. You first try to understand the context, examine potential edge cases, and consider architectural implications. CodeRabbit performs this same thoughtful analysis, but delivers insights within minutes of PR submission.
 
-This is our core mission today. It's clear to us that as development teams grow and codebases become more complex, manual code reviews become increasingly challenging and time-consuming. No one wants to spend hours reviewing code when they could be building features.
+For example, when examining a change to your authentication system, CodeRabbit doesn't just flag syntax issues - it analyzes the entire authentication flow, identifying potential security vulnerabilities in token handling or session management specific to your implementation:
 
-## Real-World Code Reviews
+![CodeRabbit Review comment on a Auth Flow](/img/about/why-cr-auth-flow-cors.png "CodeRabbit Code Review Comment")
 
-> CodeRabbit currently processes [Over 470,000 pull requests](https://github.com/search?q=coderabbitai&type=pullrequests) across multiple languages including TypeScript, Go, Python, JavaScript, Java, Rust, C#, and PHP.
+### Intelligence Through Integration
 
-:::tip See it in action
-Browse through real-world examples of CodeRabbit's reviews on GitHub to see how it helps developers write better code every day.
-:::
+CodeRabbit combines the specialized insights of over 20 analysis tools (ESLint, Semgrep, Checkov, and more) with AI understanding to provide meaningful, actionable feedback. But instead of drowning you in alerts, it provides curated, context-aware suggestions.
 
-## The Problem With Traditional Code Reviews
+### Learning Your Team's DNA
 
-As engineering teams scale, several critical issues emerge:
+What makes CodeRabbit truly valuable is its ability to learn and adapt to your team's codebase, practices, and standards. It doesn't just pattern match - it builds a deep understanding through direct interactions with your team. For example, when a reviewer indicates a preference:
 
-1. **Review Latency** - PRs often sit for days waiting for review, blocking feature delivery
-2. **Inconsistent Quality** - Different code reviewers focus on different aspects
-3. **Knowledge Silos** - Critical insights stay trapped with individual code reviewers
-4. **Context Switching** - Developers lose focus when reviewing large PRs
-5. **Scale Limitations** - Senior developers become review bottlenecks
+![CodeRabbit Learnings](/img/about/why-cr-learnings.png "How CodeRabbit learns and remembers org standards")
 
-## CodeRabbit is AI-Powered
+CodeRabbit will then:
 
-CodeRabbit leverages advanced AI to provide intelligent, context-aware code reviews.
+- Remember this preference for future reviews
+- Apply this knowledge across the entire codebase
+- Share this learning with the whole team through its review comments
+- Maintain consistency with your established standards
 
-Our AI engine understands not just the syntax, but the intent and context of code changes. This enables reviews that go beyond simple style checks to provide meaningful insights about:
+### Practical Impact on Your Workflow
 
-- Security vulnerabilities
-- Performance optimizations
-- Design patterns
-- Best practices
-- Documentation completeness
+When a developer opens a pull request, CodeRabbit:
 
-:::tip Did you know?
-CodeRabbit's AI model is trained on millions of code reviews and continuously learns from user feedback to improve its suggestions.
-:::
+- Analyzes changes across the entire codebase context
+- Generates a clear, actionable summary
+- Creates visual sequence diagrams for complex changes
+- Provides specific feedback and suggestions
 
-## CodeRabbit is Context-Aware
+This means human reviewers can focus on architectural decisions and knowledge sharing, rather than catching basic issues.
 
-A review system that understands your codebase and team preferences.
+### Built for Production Teams
 
-Unlike traditional automated review tools that apply generic rules, CodeRabbit:
+For teams building production software, CodeRabbit provides:
 
-- Learns from your team's coding patterns
-- Understands your project's architecture
-- Considers the full context of changes
-- Adapts to your team's preferences
-- Provides relevant, actionable feedback
+- SOC 2 Type II and GDPR compliance for enterprise security requirements
+- Self-hosted deployment options for complete control
+- Zero data retention policy - code is analyzed in memory and immediately discarded
 
-## CodeRabbit is Fully Managed
+Want to see the impact yourself? Try CodeRabbit on your next complex refactoring PR - you might be surprised at the subtle implications it catches that could easily be missed in manual review.
 
-Leave the infrastructure management to us.
+## Not convinced? Read more
 
-Being fully managed means CodeRabbit:
-
-- Automatically scales with your needs
-- Requires zero maintenance
-- Provides enterprise-grade security
-- Ensures high availability
-- Handles updates seamlessly
-
-## CodeRabbit is Platform Agnostic
-
-Supporting all major Git platforms and development workflows.
-
-CodeRabbit integrates seamlessly with:
-
-- GitHub
-- GitLab
-- Azure DevOps
-
-And supports all major programming languages and frameworks without requiring any special configuration.
-
-## Who should use CodeRabbit?
-
-### Individual Developers
-
-- Get expert-level code reviews instantly
-- Learn best practices through AI suggestions
-- Improve code quality before team review
-
-### Development Teams
-
-- Standardize review processes
-- Reduce review bottlenecks
-- Share knowledge across the team
-- Maintain consistent code quality
-
-### Enterprises
-
-- Scale code review processes efficiently
-- Enforce security and compliance standards
-- Reduce technical debt
-- Accelerate development cycles
-
-:::tip Free for Open Source
-CodeRabbit is completely **FREE** for open-source projects. Our architecture enables us to provide a sustainable free tier that includes:
-
-- Unlimited public repositories
-- Full feature access
-- No credit card required
-  :::
-
-## CodeRabbit Doesn't Lock You In
-
-Built on open standards, easy to integrate and customize.
-
-CodeRabbit:
-
-- Works with your existing Git workflow
-- Requires minimal configuration
-- Supports standard code review protocols
-- Allows easy export of review data
-- Integrates with popular development tools
-
-## CodeRabbit Makes Code Reviews Easy
-
-Set up automated code reviews in minutes.
-
-1. Log in with GitHub, GitLab, or Azure DevOps
-2. Select repositories to review
-3. Create a pull request
-4. Watch CodeRabbit provide instant feedback
-
-```bash
-# Example review feedback time
-Traditional Review: 24-48 hours
-CodeRabbit Review: < 5 minutes
-```
-
-## Data Privacy and Security
-
-Your code's security is our top priority.
-
-- **SOC2 Type II Certified**
-- **GDPR Compliant**
-- **Zero Data Retention**: Reviews are ephemeral
-- **Isolated Environments**: Your code stays private
-- **No Training**: Your code is never used to train models
-
-## Are you ready?
+You can read more about our custom [code review instructions](/guides/review-instructions) or how we verify issues using [knowledge bases](/integrations/knowledge-base) like Linear and Jira.
 
 Join thousands of developers who are already benefiting from AI-powered code reviews.
 
