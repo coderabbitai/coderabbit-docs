@@ -44,7 +44,7 @@ Regardless of the method or location through which CodeRabbit provides Support, 
 :::tip
 
 To see more common issues faced by CodeRabbit users, visit our
-[FAQ section](/faq)) for detailed answers and solutions to frequently
+[FAQ section](/faq) for detailed answers and solutions to frequently
 encountered problems.
 
 :::
