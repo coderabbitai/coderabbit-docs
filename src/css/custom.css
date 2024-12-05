@@ -81,7 +81,7 @@ a[docid="docs"] > svg {
 }
 
 @media screen and (max-width: 480px) {
-	a.navbar__item.navbar__link[href="https://blog.coderabbit.ai/blog"]
+	a.navbar__item.navbar__link[href="https://coderabbit.ai/blog"]
 	{
 		display: none;
 	}
@@ -148,7 +148,7 @@ a[docid="docs"] > svg {
 }
 
 @media screen and (max-width: 480px) {
-	a.navbar__item.navbar__link[href="https://blog.coderabbit.ai/blog"]
+	a.navbar__item.navbar__link[href="https://coderabbit.ai/blog"]
 	{
 		display: none;
 	}
