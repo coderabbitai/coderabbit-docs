@@ -180,7 +180,7 @@ const config: Config = {
 					className: "navbar-link-active",
 				},
 				{
-					href: "https://blog.coderabbit.ai/blog",
+					href: "https://coderabbit.ai/blog",
 					label: "Blog",
 					position: "left",
 				},
