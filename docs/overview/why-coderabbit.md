@@ -16,7 +16,7 @@ This is our core mission today. It's clear to us that as development teams grow 
 
 ## Real-World Code Reviews
 
-> CodeRabbit currently processes [Over 470,000 pull requests](https://github.com/search?q=coderabbitai&type=pullrequests) have been reviewed by CodeRabbit across multiple languages including TypeScript, Go, Python, JavaScript, Java, Rust, C#, and PHP.
+> CodeRabbit currently processes [Over 470,000 pull requests](https://github.com/search?q=coderabbitai&type=pullrequests) across multiple languages including TypeScript, Go, Python, JavaScript, Java, Rust, C#, and PHP.
 
 :::tip See it in action
 Browse through real-world examples of CodeRabbit's reviews on GitHub to see how it helps developers write better code every day.
