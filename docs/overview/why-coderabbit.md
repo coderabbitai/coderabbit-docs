@@ -50,7 +50,7 @@ Want to see the impact yourself? Try CodeRabbit on your next complex refactoring
 
 ## Not convinced? Read more
 
-You can read more about our custom [code review instructions](/guides/review-instructions) or how we verify issues using [knowledge bases](integrations/knowledge-base) like Linear and Jira.
+You can read more about our custom [code review instructions](/guides/review-instructions) or how we verify issues using [knowledge bases](/integrations/knowledge-base) like Linear and Jira.
 
 Join thousands of developers who are already benefiting from AI-powered code reviews.
 
