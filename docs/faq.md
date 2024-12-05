@@ -208,4 +208,4 @@ The platform-specific cleanup steps are necessary to completely remove CodeRabbi
 
 - CodeRabbit may retain some platform permissions
 - Signing back in will recreate minimal account data
-  :::
+:::
