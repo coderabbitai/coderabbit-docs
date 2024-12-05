@@ -149,7 +149,7 @@ Deleting your CodeRabbit account is permanent and cannot be undone. This action 
 - All settings and configurations
 - Reports and recurring reports
 - Third-party service integrations
-:::
+  :::
 
 <Tabs>
   <TabItem value="deletion" label="Account Deletion Steps" default>
@@ -208,4 +208,4 @@ The platform-specific cleanup steps are necessary to completely remove CodeRabbi
 
 - CodeRabbit may retain some platform permissions
 - Signing back in will recreate minimal account data
-:::
+  :::

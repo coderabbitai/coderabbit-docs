@@ -39,7 +39,7 @@ Get started with CodeRabbit in three simple steps. No complex configuration need
 
 - Watch CodeRabbit
 - Here's an example of CodeRabbit in action:
-	![CodeRabbit PR Review Example](/img/getting-started/pr-examples.png)
+  ![CodeRabbit PR Review Example](/img/getting-started/pr-examples.png)
 - [View live example PR](https://github.com/tyaga001/devtoolsacademy/pull/39)
 - [Configure CodeRabbit](/getting-started/configure-coderabbit) (optional)
 - [Add custom review instructions](/guides/review-instructions) (optional)
