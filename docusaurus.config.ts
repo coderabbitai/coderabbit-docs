@@ -220,9 +220,6 @@ const config: Config = {
 			// Optional: path for search page that enabled by default (`false` to disable it)
 			searchPagePath: "search",
 		},
-		footer: {
-			copyright: "Copyright 2024 CodeRabbit",
-		},
 	} satisfies Preset.ThemeConfig,
 }
 

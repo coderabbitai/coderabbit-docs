@@ -223,4 +223,4 @@ For more detailed contributing guidelines, please see our [CONTRIBUTING.md](./CO
 
 For more information on using Docusaurus, please refer to the [official Docusaurus documentation](https://docusaurus.io/docs).
 
-Built with ❤️ by the CodeRabbit team | Copyright 2024 CodeRabbit
+Built with ❤️ by the CodeRabbit team | CodeRabbit © 2024
