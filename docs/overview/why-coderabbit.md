@@ -48,7 +48,6 @@ This means human reviewers can focus on architectural decisions and knowledge sh
 
 For teams building production software, CodeRabbit provides:
 
--
 - SOC 2 Type II and GDPR compliance for enterprise security requirements
 - Self-hosted deployment options for complete control
 - Zero data retention policy - code is analyzed in memory and immediately discarded
