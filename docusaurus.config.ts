@@ -41,7 +41,7 @@ const config: Config = {
 			{
 				redirects: [
 					{
-						from: "/get-started/",
+						from: "/get-started",
 						to: "/getting-started/quickstart/",
 					},
 					{
@@ -81,13 +81,8 @@ const config: Config = {
 						to: "/platforms/github-enterprise-server",
 					},
 					{
-						to: '/getting-started/configure-coderabbit',
-						from: [
-							'/configure-coderabbit',
-							'/configure-coderabbit/',
-							'/guides/configure-coderabbit',
-							'/guides/configure-coderabbit/',
-						],
+						from: "/configure-coderabbit",
+						to: "/getting-started/configure-coderabbit",
 					},
 				],
 			},
@@ -233,3 +228,4 @@ const config: Config = {
 }
 
 export default config
+
