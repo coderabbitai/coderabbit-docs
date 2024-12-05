@@ -22,9 +22,16 @@ CodeRabbit combines the specialized insights of over 20 analysis tools (ESLint, 
 
 ### Learning Your Team's DNA
 
-What makes CodeRabbit truly valuable is its ability to become an extension of your team's knowledge:
+What makes CodeRabbit truly valuable is its ability to learn and adapt to your team's codebase, practices, and standards. It doesn't just pattern match - it builds a deep understanding through direct interactions with your team. For example, when a reviewer indicates a preference:
 
-// learnings screenshot
+![CodeRabbit Learnings](/img/about/why-cr-learnings.png "How CodeRabbit learns and remembers org standards")
+
+CodeRabbit will then:
+
+1. Remember this preference for future reviews
+2. Apply this knowledge across the entire codebase
+3. Share this learning with the whole team through its review comments
+4. Maintain consistency with your established standards
 
 ### Practical Impact on Your Workflow
 
