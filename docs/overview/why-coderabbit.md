@@ -28,19 +28,19 @@ What makes CodeRabbit truly valuable is its ability to learn and adapt to your t
 
 CodeRabbit will then:
 
-1. Remember this preference for future reviews
-2. Apply this knowledge across the entire codebase
-3. Share this learning with the whole team through its review comments
-4. Maintain consistency with your established standards
+- Remember this preference for future reviews
+- Apply this knowledge across the entire codebase
+- Share this learning with the whole team through its review comments
+- Maintain consistency with your established standards
 
 ### Practical Impact on Your Workflow
 
 When a developer opens a pull request, CodeRabbit:
 
-1. Analyzes changes across the entire codebase context
-2. Generates a clear, actionable summary
-3. Creates visual sequence diagrams for complex changes
-4. Provides specific feedback and suggestions
+- Analyzes changes across the entire codebase context
+- Generates a clear, actionable summary
+- Creates visual sequence diagrams for complex changes
+- Provides specific feedback and suggestions
 
 This means human reviewers can focus on architectural decisions and knowledge sharing, rather than catching basic issues.
 
@@ -48,10 +48,10 @@ This means human reviewers can focus on architectural decisions and knowledge sh
 
 For teams building production software, CodeRabbit provides:
 
+-
 - SOC 2 Type II and GDPR compliance for enterprise security requirements
 - Self-hosted deployment options for complete control
 - Zero data retention policy - code is analyzed in memory and immediately discarded
-- Fine-grained access controls for repository and organization management
 
 Want to see the impact yourself? Try CodeRabbit on your next complex refactoring PR - you might be surprised at the subtle implications it catches that could easily be missed in manual review.
 
