@@ -71,7 +71,7 @@ function CustomFooter(props) {
 								Pricing
 							</a>
 							<a
-								href="https://coderabbit.ai/changelog"
+								href="https://docs.coderabbit.ai/changelog"
 								className="justify-center text-white text-base font-medium whitespace-nowrap mt-1"
 							>
 								Changelog
