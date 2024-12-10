@@ -1,6 +1,6 @@
 ---
 title: Docstrings generation with CodeRabbit
-sidebar_label: Docstrings (Experiment)
+sidebar_label: Docstrings (Beta)
 description: Automated docstrings pull requests with CodeRabbit
 ---
 
@@ -9,7 +9,7 @@ description: Automated docstrings pull requests with CodeRabbit
 Docstrings generation is part of the [finishing touches](/future-developments#finishing-touches) initiative.
 
 :::warning
-The [docstrings](/finishing-touches/docstrings) feature is [experimental](/early-access#experiments).
+The [docstrings](/finishing-touches/docstrings) feature is in [beta](/early-access#beta).
 :::
 
 ## Usage
@@ -40,7 +40,7 @@ The checked software forges are supported:
 - [x] GitHub
 - [ ] GitLab
 
-The presence of an unsupported software forge in this list does not constitute a commitment to support it in the future. Remember that the docstrings feature is [experimental](/early-access#experiments).
+The presence of an unsupported software forge in this list does not constitute a commitment to support it in the future. Remember that the docstrings feature is in [beta](/early-access#beta).
 
 ## Supported languages
 
@@ -66,7 +66,7 @@ The checked languages are supported:
 - [ ] Swift
 - [x] TypeScript
 
-The presence of an unsupported language in this list does not constitute a commitment to support it in the future. Remember that the docstrings feature is [experimental](/early-access#experiments).
+The presence of an unsupported language in this list does not constitute a commitment to support it in the future. Remember that the docstrings feature is in [beta](/early-access#beta).
 
 :::note
 In the case of JavaScript and TypeScript, there are tons of ways to declare functions. At the moment, we only support the keyword `function` at the top level.
