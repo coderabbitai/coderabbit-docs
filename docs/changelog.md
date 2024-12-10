@@ -2,7 +2,7 @@
 title: Changelog
 sidebar_label: Changelog
 description: The latest updates and changes to CodeRabbit.
-sidebar_position: 9
+sidebar_position: 13
 ---
 
 ## November 25, 2024
