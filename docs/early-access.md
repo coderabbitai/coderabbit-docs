@@ -15,9 +15,10 @@ Beta features are ready for public testing.
 
 - The documentation may be incomplete or outdated.
 - The changelog may be missing.
-- The feature may not be fully stable, but it should give a general idea of the final user experience.
+- The feature may not be fully stable.
 - Edge cases may not be fully covered.
-- Some parts of the feature may not be implemented. For example, the GitHub integration may be prioritized over others.
+- Some parts of the feature may not be implemented.
+- They may not represent the end result of the planned feature and may not have a satisfactory user experience.
 
 Whenever you use a beta feature, you may see a warning like this:
 
@@ -32,7 +33,6 @@ Experiments are ways for CodeRabbit's development team to gather more experience
 - They are highly unstable and may not work at all.
 - There is no guarantee that they will reach the beta stage and they may be cancelled at any time without any prior notice.
 - They are not ready for public use and may not be sufficiently documented.
-- They do not represent the end result of the planned feature and do not have a satisfactory user experience.
 - We are not gathering feedback for experiments - the direction they take can vary widely.
 
 Whenever you use an experiment, you may see a warning like this:
