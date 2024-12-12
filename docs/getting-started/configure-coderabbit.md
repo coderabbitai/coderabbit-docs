@@ -21,7 +21,7 @@ of precedence:
 2. Configure using CodeRabbit UI for each repository
 3. Configure using CodeRabbit UI for the organization
 
-In this guide, we will cover the configuration using a YAML file.  We also recommend you view examples of yaml files we have collected in our [awesome-coderabbit](https://github.com/coderabbitai/awesome-coderabbit) repository].
+In this guide, we will cover the configuration using a YAML file. We also recommend you view examples of yaml files we have collected in our [awesome-coderabbit](https://github.com/coderabbitai/awesome-coderabbit) repository].
 
 ## Configure CodeRabbit using a YAML File
 
