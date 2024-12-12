@@ -1,6 +1,6 @@
 ---
 title: On-demand Reports
-sidebar_label: On-demand Reports (Beta)
+sidebar_label: On-demand Reports
 description: CodeRabbit offers a way to generate on-demand reports using a simple API request
 sidebar_position: 6
 ---
@@ -9,19 +9,17 @@ sidebar_position: 6
 import ReportSchema from "@site/src/components/ReportSchema";
 ```
 
-:::info
-
-This feature is in beta
-
-:::
-
-CodeRabbit offers a way to generate on-demand reports using the [CodeRabbit API](https://api.coderabbit.ai/api/swagger/).  
+CodeRabbit offers a way to generate on-demand reports using the [CodeRabbit API](https://api.coderabbit.ai/api/swagger/).
 You will need an API Key to access the CodeRabbit API and generate an on-demand report.
+
+:::note
+Reports are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
 
 ## Create an API key
 
-Sign in to your CodeRabbit account and navigate to the [**API Keys**](https://app.coderabbit.ai/settings/api-keys) page under 'Organization Settings' in the left sidebar.  
-Click on the **Create API Key** button and enter a name for the API Key.  
+Sign in to your CodeRabbit account and navigate to the [**API Keys**](https://app.coderabbit.ai/settings/api-keys) page under 'Organization Settings' in the left sidebar.
+Click on the **Create API Key** button and enter a name for the API Key.
 Copy the API key, and keep it safe as it won't be visible again.
 
 ![API Keys](/img/guides/api_keys.png)
