@@ -7,6 +7,10 @@ sidebar_position: 4
 
 CodeRabbit utilizes an internal knowledge base that integrates with several external services to provide a seamless review and issue management experience.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Issues
 
 The issues knowledge base allows CodeRabbit to use the context from linked and related issues while reviewing the code.
