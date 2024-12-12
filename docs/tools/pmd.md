@@ -6,6 +6,10 @@ description: CodeRabbit's guide to PMD.
 
 [PMD](https://pmd.github.io/) is an extensible multilanguage static code analyzer. It’s mainly concerned with Java.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 PMD will run on files with the following extensions:

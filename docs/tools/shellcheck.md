@@ -6,6 +6,10 @@ description: CodeRabbit's guide to ShellCheck.
 
 [ShellCheck](https://www.shellcheck.net/) is a linter for shell scripts.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 ShellCheck will run on files with the following extensions:

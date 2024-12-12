@@ -6,6 +6,10 @@ description: CodeRabbit's guide to PHPStan.
 
 [PHPStan](https://phpstan.org/) is a static analysis tool for PHP.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 PHPStan will run on files with the following extensions:

@@ -6,6 +6,10 @@ description: CodeRabbit's guide to LanguageTool.
 
 [LanguageTool](https://github.com/languagetool-org/languagetool) is a style and grammar checker.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 LanguageTool will run on files with the following extensions:

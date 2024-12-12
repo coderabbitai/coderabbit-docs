@@ -6,6 +6,10 @@ description: CodeRabbit's guide to Cppcheck.
 
 [Cppcheck](https://cppcheck.sourceforge.io/) is a static code analysis tool for the C and C++ programming languages.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 Cppcheck will run on files with the following extensions:

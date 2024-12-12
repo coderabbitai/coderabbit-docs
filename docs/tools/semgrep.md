@@ -7,6 +7,10 @@ description: CodeRabbit's guide to Semgrep.
 [Semgrep](https://semgrep.dev/) is a static analysis tool designed to scan code
 for security vulnerabilities and code quality issues.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Configuration
 
 Semgrep uses a YAML style configuration file. By default we will automatically

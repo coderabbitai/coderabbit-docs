@@ -6,6 +6,10 @@ description: CodeRabbit's guide to Buf.
 
 [Buf](https://buf.build/) offers linting for Protobuf files.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 Buf will run on files with the following extensions:

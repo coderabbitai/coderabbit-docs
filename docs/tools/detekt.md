@@ -6,6 +6,10 @@ description: CodeRabbit's guide to Detekt.
 
 [Detekt](https://detekt.dev/) is a static code analysis tool specifically designed for Kotlin projects
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 Detekt will run on files with the following extensions:

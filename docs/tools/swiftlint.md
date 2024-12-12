@@ -6,6 +6,10 @@ description: CodeRabbit's guide to SwiftLint.
 
 [SwiftLint](https://realm.github.io/SwiftLint/) is a linter for Swift.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 SwiftLint will run on files with the following extensions:

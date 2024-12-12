@@ -6,6 +6,10 @@ description: CodeRabbit's guide to Rubocop.
 
 [Rubocop](https://rubocop.org/) A Ruby static code analyzer and formatter, based on the community Ruby style guide.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 Rubocop will run on the following files and extensions:

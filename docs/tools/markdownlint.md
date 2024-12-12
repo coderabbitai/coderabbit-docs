@@ -6,6 +6,10 @@ description: CodeRabbit's guide to Markdownlint.
 
 [Markdownlint](https://github.com/DavidAnson/markdownlint) is a linter for Markdown.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 Markdownlint will run on files with the following extensions:

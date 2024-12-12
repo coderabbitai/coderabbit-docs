@@ -6,6 +6,10 @@ description: CodeRabbit's guide to CircleCi.
 
 [CircleCi](https://circleci.com/) is a static checker and validator for circleci config files.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 We look for `CircleCi Configuration` files specifically in the following directory:

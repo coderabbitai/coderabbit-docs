@@ -6,6 +6,10 @@ description: CodeRabbit's guide to Ruff.
 
 [Ruff](https://docs.astral.sh/ruff/) is a linter for Python.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 Ruff will run on files with the following extensions:

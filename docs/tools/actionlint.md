@@ -7,6 +7,10 @@ description: CodeRabbit's guide to Actionlint.
 [Actionlint](https://github.com/rhysd/actionlint/) is a static checker for
 GitHub Actions workflow files.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 We look for `GitHub Action` files specifically in the following directory:

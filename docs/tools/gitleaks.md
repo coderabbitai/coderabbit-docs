@@ -6,6 +6,10 @@ description: CodeRabbit's guide to Gitleaks.
 
 [Gitleaks](https://gitleaks.io/) is a secret-scanner.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 Gitleaks will run on all files.

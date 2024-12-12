@@ -6,6 +6,10 @@ description: CodeRabbit's guide to Yamllint.
 
 [Yamllint](https://yamllint.readthedocs.io/en/stable/) is a linter for YAML.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 Yamllint will run on files with the following extensions:

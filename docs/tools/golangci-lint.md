@@ -6,6 +6,10 @@ description: CodeRabbit's guide to golangci-lint.
 
 [golangci-lint](https://golangci-lint.run/) is a fast Go linters runner.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 golangci-lint will run on files with the following extensions:

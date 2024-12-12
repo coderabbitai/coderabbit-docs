@@ -6,6 +6,10 @@ description: CodeRabbit's guide to Biome.
 
 [Biome](https://biomejs.dev/) is a linter for JavaScript, TypeScript, JSX, TSX, JSON, JSONC, CSS.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 Biome will run on files with the following extensions:

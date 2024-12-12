@@ -6,6 +6,10 @@ description: CodeRabbit's guide to Hadolint.
 
 [Hadolint](https://github.com/hadolint/hadolint) is a Dockerfile linter.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 Hadolint will run on files with the following file names:

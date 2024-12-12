@@ -6,6 +6,10 @@ description: CodeRabbit's guide to Checkov.
 
 [Checkov](https://www.checkov.io/) is a static code analysis tool for scanning Infrastructure as Code (IaC) files for misconfigurations.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 Checkov will run on files with the following files and extensions:

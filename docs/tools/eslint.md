@@ -6,6 +6,10 @@ description: CodeRabbit's guide to ESLint.
 
 [ESLint](https://eslint.org/) is a linter for JavaScript, TypeScript, JSX, TSX, CSS, etc.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 ESLint will run on files with the following extensions:

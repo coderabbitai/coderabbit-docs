@@ -6,6 +6,10 @@ description: CodeRabbit's guide to Regal.
 
 [Regal](https://docs.styra.com/regal/) is a linter and language server for Rego.
 
+:::note
+Tools are available under [Pro-tier](https://coderabbit.ai/pricing).
+:::
+
 ## Files
 
 Regal will run on files with the following extensions:
