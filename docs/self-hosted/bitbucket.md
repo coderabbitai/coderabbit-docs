@@ -83,7 +83,7 @@ LINEAR_PAT=[<linear-personal-access-token>]
 :::note
 
 - If you are using Azure OpenAI, verify that the model deployment names are in the .env file.
-Values marked with [] are optional and can be omitted if the feature is not needed.
+  Values marked with [] are optional and can be omitted if the feature is not needed.
 - You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
 
 :::
