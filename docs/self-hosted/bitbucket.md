@@ -1,7 +1,7 @@
 ---
-title: Use Self-Hosted CodeRabbit With Bitbucket Server
-sidebar_label: Bitbucket Server
-description: Instructions to self-host CodeRabbit and integrate it with Bitbucket Server.
+title: Use Self-Hosted CodeRabbit With  Bitbucket Datacenter
+sidebar_label:  Bitbucket Datacenter
+description: Instructions to self-host CodeRabbit and integrate it with  Bitbucket Datacenter.
 sidebar_position: 4
 ---
 
