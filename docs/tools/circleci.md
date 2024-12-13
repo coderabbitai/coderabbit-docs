@@ -16,8 +16,8 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
 We look for `CircleCi Configuration` files specifically in the following directory:
 
-- `.circleci/config.yml"`
-- `.circleci/config.yaml"`
+- `.circleci/config.yml`
+- `.circleci/config.yaml`
 
 ## Configuration
 

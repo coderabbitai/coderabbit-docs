@@ -20,7 +20,7 @@ SwiftLint will run on files with the following extensions:
 
 ## Configuration
 
-Ruff supports the following config files:
+SwiftLint supports the following config files:
 
 - User-defined config file set at `reviews.tools.swiftlint.config_file` in your project's `.coderabbit.yaml` file or setting the "Review → Tools → SwiftLint → Config File" field in CodeRabbit's settings page.
 - `.swiftlint.yaml`
