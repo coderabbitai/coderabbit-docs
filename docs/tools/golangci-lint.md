@@ -4,6 +4,12 @@ sidebar_label: golangci-lint
 description: CodeRabbit's guide to golangci-lint.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [golangci-lint](https://golangci-lint.run/) is a fast Go linters runner.
 
 ## Files

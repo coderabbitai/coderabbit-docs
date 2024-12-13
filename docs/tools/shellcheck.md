@@ -4,6 +4,12 @@ sidebar_label: ShellCheck
 description: CodeRabbit's guide to ShellCheck.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [ShellCheck](https://www.shellcheck.net/) is a linter for shell scripts.
 
 ## Files

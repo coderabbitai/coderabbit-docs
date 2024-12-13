@@ -4,6 +4,12 @@ sidebar_label: SwiftLint
 description: CodeRabbit's guide to SwiftLint.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [SwiftLint](https://realm.github.io/SwiftLint/) is a linter for Swift.
 
 ## Files

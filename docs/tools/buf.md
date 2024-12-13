@@ -4,6 +4,12 @@ sidebar_label: Buf
 description: CodeRabbit's guide to Buf.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Buf](https://buf.build/) offers linting for Protobuf files.
 
 ## Files

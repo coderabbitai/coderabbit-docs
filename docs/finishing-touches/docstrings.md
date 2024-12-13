@@ -4,12 +4,20 @@ sidebar_label: Docstrings (Beta)
 description: Automated docstrings pull requests with CodeRabbit
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 # Docstrings
 
 Docstrings generation is part of the [finishing touches](/future-developments#finishing-touches) initiative.
 
-:::warning
-The [docstrings](/finishing-touches/docstrings) feature is in [beta](/early-access#beta).
+:::info
+
+This feature is in [beta](/early-access#beta).
+
 :::
 
 ## Usage

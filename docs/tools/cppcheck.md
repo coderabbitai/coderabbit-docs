@@ -4,6 +4,12 @@ sidebar_label: Cppcheck
 description: CodeRabbit's guide to Cppcheck.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Cppcheck](https://cppcheck.sourceforge.io/) is a static code analysis tool for the C and C++ programming languages.
 
 ## Files

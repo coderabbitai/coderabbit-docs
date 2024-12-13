@@ -48,6 +48,12 @@ reviews:
 
 ## Abstract Syntax Tree (AST) based instructions {#ast-based}
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 CodeRabbit offers review instructions based on Abstract Syntax Tree (AST)
 patterns. Under the hood, CodeRabbit uses
 [`ast-grep`](https://ast-grep.github.io) to power this feature. `ast-grep` is

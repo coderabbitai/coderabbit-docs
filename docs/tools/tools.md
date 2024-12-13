@@ -5,6 +5,12 @@ description: Overview of CodeRabbit's supported linters and security analysis to
 sidebar_position: 1
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 CodeRabbit supports various linters and security analysis tools to improve the code review process. The output of these tools is used to enhance the feedback provided by CodeRabbit, making it possible to provide 1-click fixes for common issues.
 
 ## Enabling/Disabling Tools

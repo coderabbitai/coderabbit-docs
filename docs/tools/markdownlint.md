@@ -4,6 +4,12 @@ sidebar_label: Markdownlint
 description: CodeRabbit's guide to Markdownlint.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Markdownlint](https://github.com/DavidAnson/markdownlint) is a linter for Markdown.
 
 ## Files

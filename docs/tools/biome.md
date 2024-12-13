@@ -4,6 +4,12 @@ sidebar_label: Biome
 description: CodeRabbit's guide to Biome.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Biome](https://biomejs.dev/) is a linter for JavaScript, TypeScript, JSX, TSX, JSON, JSONC, CSS.
 
 ## Files

@@ -4,6 +4,12 @@ sidebar_label: ESLint
 description: CodeRabbit's guide to ESLint.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [ESLint](https://eslint.org/) is a linter for JavaScript, TypeScript, JSX, TSX, CSS, etc.
 
 ## Files

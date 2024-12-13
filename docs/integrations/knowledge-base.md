@@ -13,6 +13,12 @@ The issues knowledge base allows CodeRabbit to use the context from linked and r
 
 ### Jira {#jira}
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 #### CodeRabbit App
 
 1. Navigate to [integrations][integrations] in the CodeRabbit app.
@@ -25,6 +31,10 @@ Upon enabling the Jira integration, CodeRabbit will redirect you to the Jira log
 1. Add Jira's Project Keys to the `knowledge_base.jira.project_keys` field in your project's CodeRabbit configuration file at `.coderabbit.yaml`.
 
 ### Linear {#Linear}
+
+```mdx-code-block
+<ProPlanNotice />
+```
 
 #### CodeRabbit App
 

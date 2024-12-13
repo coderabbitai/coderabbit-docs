@@ -4,6 +4,12 @@ sidebar_label: Semgrep
 description: CodeRabbit's guide to Semgrep.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Semgrep](https://semgrep.dev/) is a static analysis tool designed to scan code
 for security vulnerabilities and code quality issues.
 

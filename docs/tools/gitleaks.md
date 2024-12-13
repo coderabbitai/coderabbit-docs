@@ -4,6 +4,12 @@ sidebar_label: Gitleaks
 description: CodeRabbit's guide to Gitleaks.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Gitleaks](https://gitleaks.io/) is a secret-scanner.
 
 ## Files

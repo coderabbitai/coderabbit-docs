@@ -4,6 +4,12 @@ sidebar_label: CircleCi
 description: CodeRabbit's guide to CircleCi.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [CircleCi](https://circleci.com/) is a static checker and validator for circleci config files.
 
 ## Files

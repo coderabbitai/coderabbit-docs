@@ -4,6 +4,12 @@ sidebar_label: PHPStan
 description: CodeRabbit's guide to PHPStan.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [PHPStan](https://phpstan.org/) is a static analysis tool for PHP.
 
 ## Files
