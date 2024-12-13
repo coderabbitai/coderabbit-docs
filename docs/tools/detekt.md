@@ -4,6 +4,12 @@ sidebar_label: Detekt
 description: CodeRabbit's guide to Detekt.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Detekt](https://detekt.dev/) is a static code analysis tool specifically designed for Kotlin projects
 
 ## Files

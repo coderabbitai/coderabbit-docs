@@ -4,6 +4,12 @@ sidebar_label: Checkov
 description: CodeRabbit's guide to Checkov.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Checkov](https://www.checkov.io/) is a static code analysis tool for scanning Infrastructure as Code (IaC) files for misconfigurations.
 
 ## Files

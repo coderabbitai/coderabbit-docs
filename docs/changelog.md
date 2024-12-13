@@ -5,6 +5,12 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## December 12, 2024
+
+### Docstrings(Beta)
+
+We have launched a new functionality as part of our finishing touches initiative to allow developers to generate docstrings on a pull request. This feature lets you generate docstrings by commenting `@coderabbitai generate docstrings` on any pull request. This works for both new and existing documentation. See [our documentation](https://docs.coderabbit.ai/finishing-touches/docstrings) for details.
+
 ## November 25, 2024
 
 ### Code Review Performance Enhancements with Improved Comment Resolution Logic

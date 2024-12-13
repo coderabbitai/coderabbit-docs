@@ -4,7 +4,13 @@ sidebar_label: PMD
 description: CodeRabbit's guide to PMD.
 ---
 
-[PMD](https://pmd.github.io/) is an extensible multilanguage static code analyzer. It’s mainly concerned with Java.
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
+[PMD](https://pmd.github.io/) is an extensible multilanguage static code analyzer. It's mainly concerned with Java.
 
 ## Files
 

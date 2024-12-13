@@ -133,7 +133,7 @@ In-trial and open-source plans have lower rate limits than the paid plan. In all
 3. That's it. CodeRabbit will automatically start reviewing your PRs
 
 :::tip Need Help?
-Visit our [Support](/about/support) page for additional assistance or reach out to our team on [Discord](http://discord.gg/coderabbit).
+Visit our [Support](/getting-started/support) page for additional assistance or reach out to our team on [Discord](http://discord.gg/coderabbit).
 :::
 
 ## Account Management {#account-management}

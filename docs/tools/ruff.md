@@ -4,6 +4,12 @@ sidebar_label: Ruff
 description: CodeRabbit's guide to Ruff.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Ruff](https://docs.astral.sh/ruff/) is a linter for Python.
 
 ## Files
