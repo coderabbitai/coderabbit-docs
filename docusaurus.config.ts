@@ -211,7 +211,7 @@ const config: Config = {
 					position: "right",
 				},
 				{
-					href: "https://github.com/coderabbitai",
+					href: "https://github.com/coderabbitai/coderabbit-docs",
 					className: "github-link",
 					"aria-label": "GitHub",
 					position: "right",
