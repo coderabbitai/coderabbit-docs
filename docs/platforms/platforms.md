@@ -30,9 +30,9 @@ CodeRabbit supports various Git platforms to provide code review for your reposi
 
 ## Bitbucket
 
-| Host                  | Support     |
-| --------------------- | ----------- |
-| Cloud                 | Coming soon |
-| Bitbucket Data Center | [Supported] |
+| Host                  | Support                                    |
+| --------------------- | ------------------------------------------ |
+| Bitbucket Datacenter  | [Supported](../self-hosted/bitbucket.md)   |
+| Bitbucket Cloud       | Coming soon                                |
 
 [login]: https://app.coderabbit.ai/login
