@@ -57,6 +57,10 @@ For example you can add a comment in a PR to chat directly with CodeRabbit. `@co
 
 Or you can comment directly on some lines of code in the PR. `@coderabbitai do not complain about lack of error handling here, it is handled higher up the execution stack.`
 
+:::tip Video Tutorial
+Watch our [video walkthrough on learnings](https://www.youtube.com/watch?v=Yu0cmmOYA-U) for more information.
+:::
+
 ## Self-hosted knowledge base {#self-hosted}
 
 For self-hosted / on-premises deployments, you can enable the knowledge base features by setting `SELF_HOSTED_KNOWLEDGE_BASE=true` in the environment variables for your self-hosted docker image.
