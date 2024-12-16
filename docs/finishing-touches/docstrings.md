@@ -37,7 +37,7 @@ Here's an example of what a pull request may look like:
 
 CodeRabbit cannot perform further modifications to opened pull requests. From there, it's your turn to checkout the branch and improve it to satisfaction. We believe that this workflow provides a significant headstart to documenting code.
 
-We are testing this workflow internally to adjust the prompts, add more supported software forges, add more supported languages and craft an excellent user experience. However, you can use this preview and enjoy a sneak peek at the future of CodeRabbit.
+We are testing this workflow internally to adjust the prompts, add more supported software forges, add more supported languages and craft an excellent user experience. However, you can use this preview and enjoy a sneak peek at the future of CodeRabbit. Additionally, you can provide feedback about this feature on [Discord](https://discord.com/channels/1134356397673414807/1317286905557287022).
 
 ## Supported software forges
 
