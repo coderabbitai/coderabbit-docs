@@ -61,6 +61,18 @@ const config: Config = {
 						to: "/getting-started/quickstart/",
 					},
 					{
+						from: "/about/features",
+						to: "/",
+					},
+					{
+						from: "/about/pricing",
+						to: "/",
+					},
+					{
+						from: "/about/support",
+						to: "/getting-started/support",
+					},
+					{
 						from: "/guides/customize-coderabbit",
 						to: "/getting-started/configure-coderabbit",
 					},
