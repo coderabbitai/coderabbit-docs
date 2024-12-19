@@ -10,7 +10,7 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-[Regal](https://docs.styra.com/regal/) is a linter and language server for Rego.
+[Regal](https://docs.styra.com/regal/) is a linter and language server for Rego, the language of [Open Policy Agent](http://openpolicyagent.org) (OPA).
 
 ## Files
 
@@ -20,12 +20,10 @@ Regal will run on files with the following extensions:
 
 ## Configuration
 
-Regal uses a YAML style configuration file. We look for the following config file:
+Regal uses a YAML configuration file located at `.regal/config.yaml`.
 
-- `.regal/config.yaml`
-
-CodeRabbit will use the default settings based on the profile selected if no config file is found.
+CodeRabbit will use the default settings based on the profile selected if no configuration file is found.
 
 ## Links
 
-- [Regal Configuration](https://docs.styra.com/regal#configuration/)
+- [Regal Configuration](https://docs.styra.com/regal#configuration)
