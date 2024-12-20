@@ -13,15 +13,15 @@ import TabItem from '@theme/TabItem';
 
 Looking back at CodeRabbit's journey, our fundamental reasons remain unchanged:
 
-1. **To build the best code review experience in the tech**
+- **To build the best code review experience in the tech**
 
 > This continues to be our core mission. It was clear to us then, as it is now, that development workflows are becoming increasingly complex — and teams need intelligent automation to maintain quality while moving fast.
 
-2. **In an ever-evolving tech space, we believe AI-powered code review is the future**
+- **In an ever-evolving tech space, we believe AI-powered code review is the future**
 
 > Just like Git revolutionized version control and CI/CD transformed deployments, we believe AI-assisted code review will become the standard for quality assurance.
 
-3. **An insight that modern code review can be reimagined**
+- **An insight that modern code review can be reimagined**
 
 We call this approach _contextual analysis_, which allows us to understand not just the code changes, but their implications across your entire codebase. This enables us to provide insights about:
 
@@ -31,7 +31,7 @@ We call this approach _contextual analysis_, which allows us to understand not j
 - Best practices
 - Knowledge sharing
 
-4. **The conviction that our AI can provide a better Developer Experience (DevX)**
+- **The conviction that our AI can provide a better Developer Experience (DevX)**
 
 Features such as:
 
