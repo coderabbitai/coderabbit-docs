@@ -59,9 +59,9 @@ We've improved our Learnings and Metrics accessibility for Self-Hosted CodeRabbi
 **Setup:**
 
 - Generate an API key in the CodeRabbit UI
-- Enable Learnings and Metrics by:
-- Configuring your .env file, or
-- Contacting CodeRabbit support for assistance
+- Enable Learnings and Metrics by either:
+  - Configuring your .env file
+  - Contacting CodeRabbit support for assistance
 
 ---
 
@@ -132,16 +132,18 @@ You can now promote members in your organization to admins within CodeRabbit. Ad
 
 #### Learnings Page
 
-We're thrilled to announce the new "Learnings" page! Users can now interact with learnings captured in PR comments, enhancing future reviews. Log into CodeRabbit to see the page, where you can filter learnings by Repository, File Path, and User. You can also edit or delete learnings that are no longer relevant to your project.
+We're thrilled to announce the new **Learnings** page! Users can now interact with learnings captured in PR comments, enhancing future reviews. Log into CodeRabbit to see the page, where you can filter learnings by Repository, File Path, and User. You can also edit or delete learnings that are no longer relevant to your project.
 
 #### Reports (Beta) Page
 
-Introducing the beta release of "Reports"! Generate recurring summaries of team performance and PR reviews with features like:
+Introducing the beta release of **Reports**!
+
+Generate recurring summaries of team performance and latest PR reviews with features like:
 
 - Scheduling regular report generation
 - Specifying parameters such as repository, team, user, or label
-- Selecting report types (Daily Stand-Up, Sprint Report, Release Notes, Custom)
-- Enabling delivery channels like Email, Slack, and Discord
+- Selecting report styles (Daily Stand-Up, Sprint Report, Release Notes, Custom)
+- Enabling your choice of delivery channel (Email, Slack, or Discord)
 
 #### Sequence Diagrams Configuration
 
@@ -259,7 +261,7 @@ CodeRabbit now offers a more comprehensive review of the markdown changes. In ad
 
 ### Self-hosted GitLab Integration
 
-CodeRabbit now offers integration for self-hosted GitLab. Refer to the [setup instructions](https://docs.coderabbit.ai/integrations/self-hosted-gitlab).
+CodeRabbit now supports integration with Self-Hosted GitLab instances. Check out our [setup instructions](https://docs.coderabbit.ai/integrations/self-hosted-gitlab) for detailed instructions.
 
 ---
 
@@ -294,7 +296,7 @@ Enable Request Changes review workflow for CodeRabbit reviews via .coderabbit.ya
 
 #### Learnings
 
-CodeRabbit can now learn from your conversations to fine-tune your reviews. If you encounter inaccurate feedback or something not relevant to your codebase, just let the bot know, and it will remember the context for the future. We understand that coding practices and standards evolve over time. Using the chat, you can inform the bot, and it will remove any existing learnings that are no longer relevant. This feature does not work, if you have opted out of data storage.
+CodeRabbit can now learn from your conversations to fine-tune your reviews. If you encounter inaccurate feedback or something not relevant to your codebase, just let the bot know, and it will remember the context for the future. We understand that coding practices and standards evolve over time. Using the chat, you can inform the bot, and it will remove any existing learnings that are no longer relevant. This feature does not work if you have opted out of data storage.
 
 #### Codebase Verification
 
@@ -302,11 +304,11 @@ Verifies the reference of the changes on the overall codebase and identifies mis
 
 #### Jira and Linear Integrations
 
-You can now integrate Jira and Linear into CodeRabbit. This would be used for additional context while reviewing pull requests. If you use any of these systems, we recommend you integrate CodeRabbit. We will be adding more integrations over time.
+You can now integrate Jira and Linear with CodeRabbit to provide additional context when reviewing pull requests. If you use either of these systems, we highly recommend enabling this integration for a more seamless experience. Stay tuned—more integrations are coming soon!
 
 #### Related Issues
 
-Identifies all issues affected by the code changes. This helps understand the impact on the overall product. It also assists in identifying duplicate issues or the impact on any other existing issues. This feature does not work, if you have opted out of data.
+Identifies all issues affected by the code changes. This helps understand the impact on the overall product. It also assists in identifying duplicate issues or the impact on any other existing issues. This feature is unavailable for users who have opted out of data collection.
 
 ---
 
