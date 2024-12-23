@@ -87,7 +87,7 @@ Our integration capabilities just got a major upgrade with **Microsoft Teams** a
 - CodeRabbit now seamlessly integrates with top SAST tools that create github check annotation comments like Codacy, SonarCloud, Code Climate, GitHub Advanced Security, Palo Alto Prisma Cloud, and more!
 - We have added a [YouTube Tutorial](https://www.youtube.com/watch?v=tfy3FdsoUtU) for a step-by-step guide on using CodeRabbit with Codacy and SonarCloud during pull requests.
 - Improved the [Semgrep Documentation](https://docs.coderabbit.ai/tools/semgrep).
-- CodeRabbit now automatically detects Semgrep rulesets from default `semgrep.yml` or `semgrep.config.yml` files, eliminating the need for manual configuration
+- CodeRabbit now automatically detects Semgrep rulesets from default `semgrep.yml` or `semgrep.config.yml` files, eliminating the need for manual configuration.
 
 ---
 
