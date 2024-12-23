@@ -153,9 +153,9 @@ You can now choose whether to auto-generate sequence diagrams in PR Walkthroughs
 
 We've refined the default settings to be less noisy and more actionable. Additionally, we've added new static analysis and security tools:
 
-- Yamllint A linter for YAML files
-- Gitleaks A lightweight, open-source secret scanner to prevent security breaches
-- Checkov Scans infrastructure as code for misconfigurations before they become security issues
+- **Yamllint**: A linter for YAML files
+- **Gitleaks**: A lightweight, open-source secret scanner to prevent security breaches
+- **Checkov**: Scans infrastructure as code for misconfigurations before they become security issues
 
 #### GitLab Integration Update
 
