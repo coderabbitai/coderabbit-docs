@@ -5,6 +5,16 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## December 23, 2024
+
+### Simplify Your Workflow: Install CodeRabbit on Multiple Repositories for GitLab and Azure DevOps in One Step!
+
+We’re thrilled to announce an exciting new feature designed to make your life easier! You can now install CodeRabbit on multiple repositories at once for GitLab and Azure DevOps—eliminating the need to activate each repository individually.
+
+With this enhancement, all it takes is one simple step:
+• Select the repositories you want to activate by checking the boxes next to them.
+• Click the “Install Repositories” button to integrate CodeRabbit across multiple projects instantly.
+
 ## December 12, 2024
 
 ### Docstrings(Beta)
