@@ -38,7 +38,7 @@ We have implemented several performance improvements that will enhance the speed
 
 ### Support for On-premises Learning and GitLab Follow-up Issue Creation
 
-Learning is a method for developers to interact with the bot to tune AI specifically for their files, repositories, and codebase for future reviews. We now extend this learning support to our on-premises customers. Additionally, we have enhanced our automated workflow to create follow-up issues based on Merge Request Reviews in GitLab.
+Learnings enable developers to fine-tune the AI for their specific files, repositories, and codebase, enhancing future reviews. We’re excited to extend this feature to our on-premises customers. Additionally, we’ve improved our automated workflow to create follow-up issues directly from Merge Request reviews in GitLab.
 
 ---
 
@@ -46,7 +46,9 @@ Learning is a method for developers to interact with the bot to tune AI specific
 
 ### ESLint Support
 
-We've introduced support for ES Lint, including .vue, .svelte, and .astro, alongside traditional .js, .ts, and .jsx extensions. We've worked on monorepo compatibility with improved Yarn and PNPM workspace support, ensuring seamless integration across your projects. While maintaining your existing ESLint configurations, we simply require all dependencies to be properly defined in your package.json. Note that private plugins aren't currently supported, but we're committed to making code quality maintenance as efficient as possible across all your web development needs
+We’re excited to announce support for **ESLint**, now extending to .vue, .svelte, and .astro files, in addition to the traditional .js, .ts, and .jsx extensions. We’ve enhanced compatibility for monorepos, offering improved integration with Yarn and Pnpm workspaces for seamless project management.
+
+Our solution respects your existing ESLint configurations, requiring only that all dependencies are properly defined in your package.json. Please note that private plugins are not yet supported. We’re dedicated to streamlining code quality maintenance and making it as efficient as possible across your web development projects.
 
 ---
 
@@ -54,7 +56,7 @@ We've introduced support for ES Lint, including .vue, .svelte, and .astro, along
 
 ### Learnings and Metrics Iteration for CodeRabbit Self-Hosted Customers
 
-We've improved our Learnings and Metrics accessibility for Self-Hosted CodeRabbit customers to provide a more seamless experience. Track learning patterns and insights more easily, with API key generation now available directly from the interface.
+We’ve enhanced the accessibility of Learnings and Metrics for self-hosted CodeRabbit customers, delivering a more seamless experience. Easily track learning patterns and insights, with the added convenience of generating API keys directly within the interface.
 
 **Setup:**
 
@@ -69,11 +71,11 @@ We've improved our Learnings and Metrics accessibility for Self-Hosted CodeRabbi
 
 ### Microsoft Teams Integration & Bitbucket Support
 
-Our integration capabilities just got a major upgrade with Microsoft Teams and Bitbucket support.
+Our integration capabilities just got a major upgrade with **Microsoft Teams** and **Bitbucket** support.
 
-- Microsoft Teams integration is with scheduled reporting system and direct notification pipeline to keep your team informed.
+- Microsoft Teams integration is now available as part of the Reporting feature, providing a direct notification pipeline to keep your team informed and up-to-date.
 
-- We've also launched Bitbucket Data Center support with Pull Request integration, offering core review functionality, Pull Request summaries, and direct inline comments for applying review suggestions
+- We've also launched Bitbucket Data Center support including Pull Request integration with essential review functionalities, detailed summaries, and inline comments to seamlessly apply review suggestions.
 
 ---
 
