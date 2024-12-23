@@ -83,10 +83,10 @@ Our integration capabilities just got a major upgrade with **Microsoft Teams** a
 
 ### Security and SAST Remediation Improvements
 
-- Enabling comprehensive security analysis directly from context within GitHub Checks
+- Enabling comprehensive security analysis directly from context within GitHub Checks.
 - CodeRabbit now seamlessly integrates with top SAST tools that create github check annotation comments like Codacy, SonarCloud, Code Climate, GitHub Advanced Security, Palo Alto Prisma Cloud, and more!
-- We have added a [YouTube Tutorial](https://www.youtube.com/watch?v=tfy3FdsoUtU) for a step-by-step guide on using CodeRabbit with Codacy and SonarCloud during pull requests
-- Improved the [Semgrep Documentation](https://docs.coderabbit.ai/tools/semgrep)
+- We have added a [YouTube Tutorial](https://www.youtube.com/watch?v=tfy3FdsoUtU) for a step-by-step guide on using CodeRabbit with Codacy and SonarCloud during pull requests.
+- Improved the [Semgrep Documentation](https://docs.coderabbit.ai/tools/semgrep).
 - CodeRabbit now automatically detects Semgrep rulesets from default `semgrep.yml` or `semgrep.config.yml` files, eliminating the need for manual configuration
 
 ---
@@ -95,8 +95,8 @@ Our integration capabilities just got a major upgrade with **Microsoft Teams** a
 
 ### Related PRs and Label suggestions
 
-- Possibly related PRs: The walkthrough comment now includes a list of potentially related PRs to help you recall the past context
-- Suggested labels: CodeRabbit can now suggest labels by learning from your past PRs in the walkthrough comment. You can also provide custom labeling instructions in the UI or configuration file
+- **Possibly Related PRs**: The walkthrough comment now provides a list of potentially related PRs, helping you quickly recall relevant context from past work.
+- **Suggested labels**: CodeRabbit can now suggest labels by learning from your past PRs in the walkthrough comment. You can also provide custom labeling instructions in the UI or via configuration file.
 
 > Note: Possibly related PRs, automatic label suggestions based on past PRs, learnings, and possibly related issues require data opt-in (enabled by default).
 
