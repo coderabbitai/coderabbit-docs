@@ -7,13 +7,16 @@ sidebar_position: 13
 
 ## December 23, 2024
 
-### Simplify Your Workflow: Install CodeRabbit on Multiple Repositories for GitLab and Azure DevOps in One Step!
+### Streamlined Multi-Repository Installation for GitLab and Azure DevOps
 
-We’re thrilled to announce an exciting new feature designed to make your life easier! You can now install CodeRabbit on multiple repositories at once for GitLab and Azure DevOps—eliminating the need to activate each repository individually.
+We’re thrilled to announce a significant enhancement to CodeRabbit that simplifies your workflow! You can now install CodeRabbit on multiple repositories simultaneously for GitLab and Azure DevOps, eliminating the need to activate each repository individually.
 
-With this enhancement, all it takes is one simple step:
-• Select the repositories you want to activate by checking the boxes next to them.
-• Click the “Install Repositories” button to integrate CodeRabbit across multiple projects instantly.
+With this update, you can:
+
+- ✅ Select Multiple Repositories: Check the boxes next to the repositories you wish to activate.
+- 🖱️ One-Click Installation: Select the **Install Repositories** button on the top right to integrate CodeRabbit across all selected projects instantly.
+
+---
 
 ## December 12, 2024
 
@@ -21,11 +24,15 @@ With this enhancement, all it takes is one simple step:
 
 We have launched a new functionality as part of our finishing touches initiative to allow developers to generate docstrings on a pull request. This feature lets you generate docstrings by commenting `@coderabbitai generate docstrings` on any pull request. This works for both new and existing documentation. See [our documentation](https://docs.coderabbit.ai/finishing-touches/docstrings) for details.
 
+---
+
 ## November 25, 2024
 
 ### Code Review Performance Enhancements with Improved Comment Resolution Logic
 
 We have implemented several performance improvements that will enhance the speed of code review and are committed to making code review as efficient as possible across all your web development needs. We have also further refined the logic to reduce duplicate comments once a comment is resolved.
+
+---
 
 ## November 20, 2024
 
@@ -33,11 +40,15 @@ We have implemented several performance improvements that will enhance the speed
 
 Learning is a method for developers to interact with the bot to tune AI specifically for their files, repositories, and codebase for future reviews. We now extend this learning support to our on-premises customers. Additionally, we have enhanced our automated workflow to create follow-up issues based on Merge Request Reviews in GitLab.
 
+---
+
 ## November 8, 2024
 
 ### ESLint Support
 
 We've introduced support for ES Lint, including .vue, .svelte, and .astro, alongside traditional .js, .ts, and .jsx extensions. We've worked on monorepo compatibility with improved Yarn and PNPM workspace support, ensuring seamless integration across your projects. While maintaining your existing ESLint configurations, we simply require all dependencies to be properly defined in your package.json. Note that private plugins aren't currently supported, but we're committed to making code quality maintenance as efficient as possible across all your web development needs
+
+---
 
 ## October 31, 2024
 
@@ -52,6 +63,8 @@ We've improved our Learnings and Metrics accessibility for Self-Hosted CodeRabbi
 - Configuring your .env file, or
 - Contacting CodeRabbit support for assistance
 
+---
+
 ## October 30, 2024
 
 ### Microsoft Teams Integration & Bitbucket Support
@@ -61,6 +74,8 @@ Our integration capabilities just got a major upgrade with Microsoft Teams and B
 - Microsoft Teams integration is with scheduled reporting system and direct notification pipeline to keep your team informed.
 
 - We've also launched Bitbucket Data Center support with Pull Request integration, offering core review functionality, Pull Request summaries, and direct inline comments for applying review suggestions
+
+---
 
 ## October 22, 2024
 
@@ -72,6 +87,8 @@ Our integration capabilities just got a major upgrade with Microsoft Teams and B
 - Improved the [Semgrep Documentation](https://docs.coderabbit.ai/tools/semgrep)
 - CodeRabbit now automatically detects Semgrep rulesets from default `semgrep.yml` or `semgrep.config.yml` files, eliminating the need for manual configuration
 
+---
+
 ## September 9, 2024
 
 ### Related PRs and Label suggestions
@@ -80,6 +97,8 @@ Our integration capabilities just got a major upgrade with Microsoft Teams and B
 - Suggested labels: CodeRabbit can now suggest labels by learning from your past PRs in the walkthrough comment. You can also provide custom labeling instructions in the UI or configuration file
 
 > Note: Possibly related PRs, automatic label suggestions based on past PRs, learnings, and possibly related issues require data opt-in (enabled by default).
+
+---
 
 ## August 15, 2024
 
@@ -97,11 +116,15 @@ What's new:
 
 These updates are here to help you get more from the dashboard. Take a look today!
 
+---
+
 ## July 31, 2024
 
 ### Promote members to admin
 
 You can now promote members in your organization to admins within CodeRabbit. Admins will be able to manage the subscription and the seats for that organization.
+
+---
 
 ## July 16, 2024
 
@@ -136,6 +159,8 @@ We've refined the default settings to be less noisy and more actionable. Additio
 
 The GitLab integration now offers more flexibility and security. Users can use Personal Access Tokens (PATs) from within their organization to post reviews. This enhancement ensures reviews are posted with appropriate organizational context and permissions, improving traceability and security.
 
+---
+
 ## May 28, 2024
 
 ### New Features and Improvements
@@ -159,6 +184,8 @@ We have introduced new commands for interacting with CodeRabbit, detailed under 
 #### Improved Handling of Closed PRs
 
 We have been observing that many PRs get closed quickly and CodeRabbit continues to review them. PRs get closed quickly for various reasons - changes are too small, the author is confident (perhaps, overly?), or the changes were unnecessary. With this improvement, we now stop the review process midway if we detect that the PR has been closed.
+
+---
 
 ## May 23, 2024
 
@@ -184,6 +211,8 @@ Users can now customize CodeRabbit to review code in the style of their favorite
 
 We have redesigned the settings page for a more intuitive layout, enabling users to find and adjust settings quickly. This change was long-time coming; it not only improves the user experience but also allows our development team to add more settings in the future with ease. Going forward, the changes to .coderabbit.yaml will be reflected in the settings page, and vice versa.
 
+---
+
 ## April 18, 2024
 
 ### Static Analyzers and Linters Integration
@@ -192,11 +221,15 @@ CodeRabbit now runs static analyzers, linters and provides one-click fixes for t
 
 Are there any specific tools you'd like us to add? Let us know. We'd love to hear your suggestions!
 
+---
+
 ## April 1, 2024
 
 ### GDPR Compliance
 
 Excited to announce that CodeRabbit is now GDPR compliant in accordance with EU regulations!
+
+---
 
 ## March 12, 2024
 
@@ -204,11 +237,15 @@ Excited to announce that CodeRabbit is now GDPR compliant in accordance with EU 
 
 CodeRabbit now offers fixes for GitHub Check failures on pull requests. With this change, Check Runs on GitHub that add Annotations to Pull Requests will be used. For example, popular GitHub Actions published by reviewdog (action-golangci-lint, action-staticcheck, action-eslint) and super-linter among many others have the ability to report issues on Pull Requests as annotations. Checks that output logs will be supported shortly. CodeRabbit GitHub App requires permission to read Checks for this feature to work. To enable this, please grant the necessary permissions by visiting the CodeRabbit GitHub app settings under [installation](https://github.com/settings/installations). Support for GitLab will follow.
 
+---
+
 ## March 11, 2024
 
 ### SOC 2 Type II Compliance
 
 CodeRabbit is now SOC 2 Type II compliant to ensure top-tier security, availability, integrity, and privacy for our users.
+
+---
 
 ## March 2, 2024
 
@@ -216,11 +253,15 @@ CodeRabbit is now SOC 2 Type II compliant to ensure top-tier security, availabil
 
 CodeRabbit now offers a more comprehensive review of the markdown changes. In addition to the AI suggestions, we do a thorough check for spelling, grammar, word choice, language style, as well as improvements in paraphrasing and punctuation.
 
+---
+
 ## January 17, 2024
 
 ### Self-hosted GitLab Integration
 
 CodeRabbit now offers integration for self-hosted GitLab. Refer to the [setup instructions](https://docs.coderabbit.ai/integrations/self-hosted-gitlab).
+
+---
 
 ## January 2, 2024
 
@@ -237,11 +278,15 @@ Here are some uses cases:
 
 Really excited to see how this feature gets used, especially with access to the CLI commands. There are some suggestions in the pull request tips but we are looking forward to seeing additional use cases of how developers use this feature. Please consider sharing your experiences.
 
+---
+
 ## December 18, 2023
 
 ### Request Changes Workflow
 
 Enable Request Changes review workflow for CodeRabbit reviews via .coderabbit.yaml Yaml field request_changes_workflow (default: false). When enabled, review comments are posted as request changes and CodeRabbit review will be marked approved once all the review comments are resolved.
+
+---
 
 ## December 5, 2023
 
@@ -263,11 +308,15 @@ You can now integrate Jira and Linear into CodeRabbit. This would be used for ad
 
 Identifies all issues affected by the code changes. This helps understand the impact on the overall product. It also assists in identifying duplicate issues or the impact on any other existing issues. This feature does not work, if you have opted out of data.
 
+---
+
 ## November 5, 2023
 
 ### Issue Validation
 
 CodeRabbit review can now assess the pull request changes against the linked GitHub or GitLab issue. Integration with other workflow systems including Jira and Linear is under development.
+
+---
 
 ## November 1, 2023
 
@@ -275,11 +324,15 @@ CodeRabbit review can now assess the pull request changes against the linked Git
 
 Review comments can now post committable suggestions that can be committed within the pull request with a single click.
 
+---
+
 ## October 28, 2023
 
 ### Resolve Command
 
 Use `@coderabbitai resolve` to mark all the CodeRabbit review comments as resolved all at once.
+
+---
 
 ## October 23, 2023
 
@@ -292,11 +345,15 @@ Introducing additional CodeRabbit commands for managing code reviews:
 - On-Demand Reviews: Disable automatic reviews for your repository to switch to on-demand reviews. Use `@coderabbitai review` in a PR comment. This command will override all review filters that might be set up in the repository settings and will initiate a one-time review
 - Help Command: You can at any time post `@coderabbitai help` in a PR comment to get the list of all valid commands
 
+---
+
 ## October 12, 2023
 
 ### YML File Customization
 
 CodeRabbit customizations made easy! You can now customize CodeRabbit using a YML file from your repository. To learn more, refer to our comprehensive documentation on customizing CodeRabbit.
+
+---
 
 ## September 21, 2023
 
@@ -324,6 +381,10 @@ instructions: Review the following unit test code written using the Mocha test l
 > - Instructions generally work well for specific additional instructions. However, they are not that effective if you are instructing AI not to do something
 > - Test the review feedback on pull requests and tailor as necessary
 
-## Sep 19, 2023 - Introducing CodeRabbit for GitLab Integration
+---
+
+## Sep 19, 2023
+
+### Introducing CodeRabbit for GitLab Integration
 
 CodeRabbit is now available for GitLab! We know many of you have been waiting for this integration. Thank you for your patience. Sign up for the free trial!
