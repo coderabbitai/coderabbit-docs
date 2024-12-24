@@ -84,7 +84,7 @@ Our integration capabilities just got a major upgrade with **Microsoft Teams** a
 ### Security and SAST Remediation Improvements
 
 - Enabling comprehensive security analysis directly from context within GitHub Checks.
-- CodeRabbit now seamlessly integrates with top SAST tools that create github check annotation comments like Codacy, SonarCloud, Code Climate, GitHub Advanced Security, Palo Alto Prisma Cloud, and more!
+- CodeRabbit now seamlessly integrates with top SAST tools that create github check annotation comments such as: Codacy, SonarCloud, Code Climate, GitHub Advanced Security, Palo Alto Prisma Cloud, and more!
 - We have added a [YouTube Tutorial](https://www.youtube.com/watch?v=tfy3FdsoUtU) for a step-by-step guide on using CodeRabbit with Codacy and SonarCloud during pull requests.
 - Improved the [Semgrep Documentation](https://docs.coderabbit.ai/tools/semgrep).
 - CodeRabbit now automatically detects Semgrep rulesets from default `semgrep.yml` or `semgrep.config.yml` files, eliminating the need for manual configuration.
@@ -122,9 +122,9 @@ These updates are here to help you get more from the dashboard. Take a look toda
 
 ## July 31, 2024
 
-### Promote members to admin
+### Grant Admin Privileges to Members
 
-You can now promote members in your organization to admins within CodeRabbit. Admins will be able to manage the subscription and the seats for that organization.
+You can now grant admin privileges to members of your organization in CodeRabbit. Admins will have the ability to manage subscriptions and seat allocations for the organization.
 
 ---
 
@@ -134,7 +134,7 @@ You can now promote members in your organization to admins within CodeRabbit. Ad
 
 #### Learnings Page
 
-We're thrilled to announce the new **Learnings** page! Users can now interact with learnings captured in PR comments, enhancing future reviews. Log into CodeRabbit to see the page, where you can filter learnings by Repository, File Path, and User. You can also edit or delete learnings that are no longer relevant to your project.
+We're thrilled to announce the new **Learnings** page! Users can now interact with learnings captured in PR comments, enhancing future reviews. Log into CodeRabbit and navigate to the Learnings tab, where you can filter learnings by Repository, File Path, and User. You can also edit or delete learnings that are no longer relevant to your project.
 
 #### Reports (Beta) Page
 
@@ -149,7 +149,7 @@ Generate recurring summaries of team performance and latest PR reviews with feat
 
 #### Sequence Diagrams Configuration
 
-You can now choose whether to auto-generate sequence diagrams in PR Walkthroughs. Configure this via the CodeRabbit settings page or by setting reviews.sequence_diagrams in the .coderabbit.yaml file.
+You can now choose whether to auto-generate sequence diagrams in the PR Walkthrough comment. Enable this via the CodeRabbit settings page or by setting reviews.sequence_diagrams in the .coderabbit.yaml file.
 
 #### Enhanced Tool Settings & New Analysis Tools
 
@@ -171,11 +171,11 @@ The GitLab integration now offers more flexibility and security. Users can use P
 
 #### Sequence Diagrams
 
-CodeRabbit now generates sequence diagrams of code changes, enhancing reviewers' ability to understand the flow of control.
+CodeRabbit now generates sequence diagrams for code changes, providing reviewers with a clear visualization of the control flow for improved understanding.
 
 #### Auto-Generate PR Titles
 
-Users will now find a new option called auto_title_placeholder and will default to `@coderabbitai` title. This option allows users to put a placeholder title and have CodeRabbit auto-generate one for them when the review process kicks in.
+A new option, `auto_title_placeholder`, is now available and defaults to `@coderabbitai` title. This feature allows users to set a placeholder title, enabling CodeRabbit to automatically generate an appropriate title when the review process begins.
 
 #### New Commands
 
@@ -197,11 +197,17 @@ We have been observing that many PRs get closed quickly and CodeRabbit continues
 
 #### Review Settings
 
-Users can now select between "Chill" and "Assertive" review tones to tailor feedback styles according to their preferences. The "Assertive" profile posts more comments and nitpicks the code more aggressively, while the "Chill" profile is more relaxed and posts fewer comments.
+Users can now select between **Chill** and **Assertive** review tones to tailor feedback styles according to their preferences. The **Assertive** profile posts more comments and nitpicks the code more aggressively, while the **Chill** profile is more relaxed and posts fewer comments.
 
 #### More Static Analysis Support
 
-We are continually expanding our support for static analysis tools. We have added support for biome, hadolint, and ast-grep. Update the settings in your .coderabbit.yaml file or head over to the settings page to enable or disable the tools you want to use.
+We are continually expanding our support for static analysis tools. We've recently added support for
+
+- biome
+- hadolint
+- ast-grep.
+
+Update your .coderabbit.yaml file or visit the settings page to enable or disable the tools you wish to use.
 
 #### Tone Settings
 
