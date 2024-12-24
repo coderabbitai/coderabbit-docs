@@ -237,7 +237,7 @@ Are there any specific tools you'd like us to add? Let us know. We'd love to hea
 
 ### GDPR Compliance
 
-Excited to announce that CodeRabbit is now GDPR compliant in accordance with EU regulations!
+Excited to announce that CodeRabbit is now GDPR-compliant in accordance with EU regulations!
 
 ---
 
@@ -245,7 +245,7 @@ Excited to announce that CodeRabbit is now GDPR compliant in accordance with EU 
 
 ### GitHub Check Fixes
 
-CodeRabbit now offers fixes for GitHub Check failures on pull requests. With this change, Check Runs on GitHub that add Annotations to Pull Requests will be used. For example, popular GitHub Actions published by reviewdog (action-golangci-lint, action-staticcheck, action-eslint) and super-linter among many others have the ability to report issues on Pull Requests as annotations. Checks that output logs will be supported shortly. CodeRabbit GitHub App requires permission to read Checks for this feature to work. To enable this, please grant the necessary permissions by visiting the CodeRabbit GitHub app settings under [installation](https://github.com/settings/installations). Support for GitLab will follow.
+CodeRabbit now offers fixes for GitHub Check failures on pull requests. With this change, Check Runs on GitHub that add Annotations to Pull Requests will be used. For example, popular GitHub Actions published by reviewdog (action-golangci-lint, action-staticcheck, action-eslint) and super-linter among many others can report issues on Pull Requests as annotations. Checks that output logs will be supported shortly. CodeRabbit GitHub App requires permission to read Checks for this feature to work. To enable this, please grant the necessary permissions by visiting the CodeRabbit GitHub app settings under [installation](https://github.com/settings/installations). Support for GitLab will follow.
 
 ---
 
@@ -294,7 +294,7 @@ Really excited to see how this feature gets used, especially with access to the 
 
 ### Request Changes Workflow
 
-Enable Request Changes review workflow for CodeRabbit reviews via .coderabbit.yaml Yaml field request_changes_workflow (default: false). When enabled, review comments are posted as request changes and CodeRabbit review will be marked approved once all the review comments are resolved.
+Enable Request Changes review workflow for CodeRabbit reviews via .coderabbit.yaml under the field `request_changes_workflow` (default: false). When enabled, review comments are posted as request changes and CodeRabbit review will be marked approved once all the review comments are resolved.
 
 ---
 
@@ -304,7 +304,7 @@ Enable Request Changes review workflow for CodeRabbit reviews via .coderabbit.ya
 
 #### Learnings
 
-CodeRabbit can now learn from your conversations to fine-tune your reviews. If you encounter inaccurate feedback or something not relevant to your codebase, just let the bot know, and it will remember the context for the future. We understand that coding practices and standards evolve over time. Using the chat, you can inform the bot, and it will remove any existing learnings that are no longer relevant. This feature does not work if you have opted out of data storage.
+CodeRabbit can now learn from your conversations to fine-tune your reviews. If you encounter inaccurate feedback or something not relevant to your codebase, just let the bot know, and it will remember the context for the future. We understand that coding practices and standards evolve. Using the chat, you can inform the bot, and it will remove any existing learnings that are no longer relevant. This feature does not work if you have opted out of data storage.
 
 #### Codebase Verification
 
@@ -393,7 +393,7 @@ instructions: Review the following unit test code written using the Mocha test l
 
 ---
 
-## Sep 19, 2023
+## September 19, 2023
 
 ### Introducing CodeRabbit for GitLab Integration
 
