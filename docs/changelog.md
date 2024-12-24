@@ -211,7 +211,7 @@ Update your .coderabbit.yaml file or visit the settings page to enable or disabl
 
 #### Tone Settings
 
-Users can now customize CodeRabbit to review code in the style of their favorite characters or personalities. Here are some of our favorite examples:
+Users can now personalize CodeRabbit to review code in the style of their favorite characters or personalities. Here are a few of our top examples:
 
 - Mr. T: "You must talk like Mr. T in all your code reviews. I pity the fool who doesn't!"
 - Pirate: "Arr, matey! Ye must talk like a pirate in all yer code reviews. Yarrr!"
