@@ -68,3 +68,12 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 10. Note down the token as it will only be displayed once.
 
 ![GitLab personal access token configuration page](/img/integrations/admin-access-token.png)
+
+### Installing CodeRabbit into your GitLab Repositories
+
+1. [Go to the Repositories page in the CodeRabbit app.](https://app.coderabbit.ai/settings/repositories)
+2. Click the check box to the left of the repos you want to install CodeRabbit into. Click the box at the top to install onto all repos at once.
+3. Click **Install Repositories**.
+
+![GitLab repo Installation](/img/integrations/gitlab-repo-install.png)
+
