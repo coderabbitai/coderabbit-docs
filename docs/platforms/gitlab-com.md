@@ -76,4 +76,3 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 3. Click **Install Repositories**.
 
 ![GitLab repo Installation](/img/integrations/gitlab-repo-install.png)
-
