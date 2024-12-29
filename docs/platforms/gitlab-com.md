@@ -80,5 +80,3 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 4. After this step you will see the `https://coderabbit.ai/gitlabHandler` webhook installed in your repositories.
 
 ![GitLab Webhook Example](/img/integrations/gitlab-webhook.png)
-
-
