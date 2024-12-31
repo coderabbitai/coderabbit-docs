@@ -108,10 +108,10 @@ When team members are active in PRs, use `@coderabbitai` to engage the bot.
 
 ### Usage Limits
 
-| Feature        | Free/Trial                    | Pro Plan      |
+| Feature        | Free/Trial                    | Pro/Lite Plan |
 | -------------- | ----------------------------- | ------------- |
-| Files per hour | 200                           | 200           |
-| Reviews        | 3 back-to-back, then 3/hour   | Higher limits |
+| Files per hour | 300                          | 600          |
+| Reviews per hour | Trial: 5, OSS: 4            | 8            |
 | Conversations  | 25 back-to-back, then 50/hour | Higher limits |
 
 :::note
