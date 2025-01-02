@@ -141,6 +141,11 @@
 							"default": "@coderabbitai",
 							"description": "Add this keyword in the PR/MR title to auto-generate the title."
 						},
+						"auto_title_instructions": {
+							"type": "string",
+							"default": "",
+							"description": "Auto Title Instructions | Custom instructions for auto-generating the PR/MR title."
+						},
 						"review_status": {
 							"type": "boolean",
 							"default": true,
@@ -185,6 +190,11 @@
 							"type": "boolean",
 							"default": true,
 							"description": "Suggest labels based on the changes in the pull request in the walkthrough."
+						},
+						"auto_apply_labels": {
+							"type": "boolean",
+							"default": false,
+							"description": "Automatically apply the suggested labels to the PR/MR."
 						},
 						"suggested_reviewers": {
 							"type": "boolean",

@@ -7,7 +7,7 @@ sidebar_position: 1
 
 This is a step-by-step guide to integrate CodeRabbit with your GitHub repositories.
 
-> **CodeRabbit** is an AI code reviewer designed to ease the challenges of code review, supporting repository maintainers and teams. It not only reviews your PRs but also provides concise summaries, identifies potential issues, and offers insights that might be missed during manual reviews.
+> **CodeRabbit** is an AI code reviewer designed to ease the challenges of code review, supporting repository maintainers and teams. It reviews your PRs and provides concise summaries, identifies potential issues, and offers insights that might be missed during manual reviews.
 
 ## How CodeRabbit Works?
 
@@ -21,13 +21,13 @@ It preprocesses the PR content, builds context, leverages Large Language Models 
 
 ### 1. Accessing CodeRabbit
 
-Visit the [Code Rabbit login](https://app.coderabbit.ai/login?free-trial) page. You'll see all the authentication options, select "**Login with GitHub**" to proceed.
+Visit the [CodeRabbit login](https://app.coderabbit.ai/login?free-trial) page. You'll see all the authentication options, select "**Login with GitHub**" to proceed.
 
 ![CodeRabbit Login](/img/integrations/login-self-hosted-github.png)
 
 ### 2. Authorization
 
-When you choose **Login with GitHub** in step1 , you'll be prompted to authorize CodeRabbit.
+When you choose **Login with GitHub** in step1, you'll be prompted to authorize CodeRabbit.
 
 > This step grants the necessary permissions for CodeRabbit to interact with your repositories and pull requests.
 
@@ -55,13 +55,15 @@ If you opt to authorize all repositories during setup, CodeRabbit will automatic
 
 You can configure CodeRabbit through a YAML file or using the [App's UI](https://app.coderabbit.ai/login).
 
-You can tailor CodeRabbit's functionality using the coderabbit.yaml file, which you place directly in your GitHub repository. This file mirrors the options available in the CodeRabbit user interface, with each setting in the YAML corresponding to a specific toggle in the UI. Configure CodeRabbit either through the coderabbit.yaml file or the interface, depending on your preference.
+You can tailor CodeRabbit's functionality using the `.coderabbit.yaml` file, which you place directly in your GitHub repository. This file mirrors the options available in the CodeRabbit user interface, with each setting in the YAML corresponding to a specific toggle in the UI. Configure CodeRabbit either through the coderabbit.yaml file or the interface, depending on your preference.
 
 :::note
-If a coderabbit.yaml file exists in your GitHub repository, it takes precedence over any UI settings. Choose either the YAML file or UI configuration - you don't need to use both. **Refer Coderabbit.yaml schema [here](https://storage.googleapis.com/coderabbit_public_assets/schema.v2.json)**
+
+If a `.coderabbit.yaml` file exists in your GitHub repository, it takes precedence over any UI settings. Choose either the YAML file or UI configuration - you don't need to use both. **Refer CodeRabbit YAML schema [here](https://storage.googleapis.com/coderabbit_public_assets/schema.v2.json)**
+
 :::
 
-Once your coderabbit.yaml file is prepared according to your needs, simply place it in your GitHub repository, and you're all set—CodeRabbit is now integrated.
+Once your `.coderabbit.yaml` file is prepared according to your needs, simply place it in your GitHub repository, and you're all set — CodeRabbit is now integrated.
 
 > When a pull request is created targeting the master branch, CodeRabbit automatically initiates its review process. It analyzes the changes and generates a summary and walkthrough of the modifications. The specific feedback and analysis provided by CodeRabbit are determined by the options you've configured in your YAML file.
 
@@ -89,7 +91,7 @@ The sequence diagram illustrates the precise flow of interactions between the ob
 
 ![CodeRabbit Sequence Diagram](/img/integrations/coderabbit-sequence-diagram.png)
 
-Also check out the response when i asked for what improvements can be done on the code level
+Also, check out the response when asked for what improvements can be done on the code level.
 
 ![Code Improvements Suggested by CodeRabbit](/img/integrations/improvements.png)
 
@@ -97,7 +99,7 @@ In addition to providing reviews and summaries, **CodeRabbit** can also detect c
 
 > For example, I accidentally set up both CodeRabbit Pro (The process we've been discussing) and the open-source version (Refer to [different config process](https://github.com/coderabbitai/ai-pr-reviewer?tab=readme-ov-file#install-instructions)) in my repository at the same time.
 
-Interestingly, CodeRabbit automatically detects and alerts you about configuration conflicts.
+CodeRabbit automatically detects and alerts you about configuration conflicts.
 
 ![Configuration Issues by CodeRabbit](/img/integrations/configuration.png)
 
