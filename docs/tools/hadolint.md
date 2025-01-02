@@ -4,6 +4,12 @@ sidebar_label: Hadolint
 description: CodeRabbit's guide to Hadolint.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Hadolint](https://github.com/hadolint/hadolint) is a Dockerfile linter.
 
 ## Files

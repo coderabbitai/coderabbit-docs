@@ -64,14 +64,19 @@ LLM_PROVIDER=azure-openai
 LLM_TIMEOUT=360000
 AZURE_OPENAI_ENDPOINT=<azure-openai-endpoint>
 AZURE_OPENAI_API_KEY=<key>
+## it is recommended to use gpt-4o-mini, o1-mini, and o1-preview deployments
 AZURE_GPT4OMINI_DEPLOYMENT_NAME=<gpt-4o-mini-deployment-name>
-AZURE_GPT4O_DEPLOYMENT_NAME=<gpt-4o-deployment-name, modelVersion: 2024-08-06>
-## o1-mini is optional
-AZURE_O1_MINI_DEPLOYMENT_NAME=[<o1-mini-deployment-name>]
-## o1-preview is optional: it’s very expensive but provides best reviews
+AZURE_O1MINI_DEPLOYMENT_NAME=[<o1-mini-deployment-name>]
 AZURE_O1_DEPLOYMENT_NAME=[<o1-preview-deployment-name>]
+## gpt-4o is optional
+AZURE_GPT4O_DEPLOYMENT_NAME=<gpt-4o-deployment-name, modelVersion: 2024-08-06>
 ## gpt-4-turbo is optional: it’s expensive but provides better reviews than gpt-4o
 AZURE_GPT4TURBO_DEPLOYMENT_NAME=[<gpt-4-turbo-deployment-name, modelVersion: turbo-2024-04-09>]
+
+# if using AWS Bedrock
+AWS_ACCESS_KEY_ID=<aws-access-key>
+AWS_SECRET_ACCESS_KEY=<aws-secret-access-key>
+AWS_REGION=<aws-region>
 
 # if using Anthropic
 LLM_PROVIDER=anthropic
@@ -96,6 +101,7 @@ GITHUB_APP_PEM_FILE=<flattened-pem-file>
 CODERABBIT_LICENSE_KEY=<license-key>
 
 CODERABBIT_API_KEY=[<coderabbitai-api-key>]
+# This will use your CodeRabbit API key to store learnings on our servers.
 ENABLE_LEARNINGS=[true]
 ENABLE_METRICS=[true]
 
@@ -108,10 +114,12 @@ OAUTH2_ENDPOINT=[<endpoint>]
 OAUTH2_CLIENT_ID=[<client-id>]
 OAUTH2_CLIENT_SECRET=[<client-secret>]
 
-# Set to true to use the knowledge base features.
-ON_PREM_KNOWLEDGE_BASE=[true]
+# Set to true to use the on-prem knowledge base features. This will take precedence over the ENABLE_LEARNINGS flag above.
+SELF_HOSTED_KNOWLEDGE_BASE=[true]
 # The branch which CodeRabbit will store the knowledge base json files in.
-ON_PREM_KNOWLEDGE_BASE_BRANCH=[coderabbitai/data]
+SELF_HOSTED_KNOWLEDGE_BASE_BRANCH=[coderabbitai/data]
+# URL to the host running ChromaDB 0.5.20.
+CHROMADB_URL=[http://chromadb:8000]
 ```
 
 :::note
@@ -121,6 +129,7 @@ ON_PREM_KNOWLEDGE_BASE_BRANCH=[coderabbitai/data]
 - For `GITHUB_APP_PEM_FILE`, flatten the PEM file by replacing newlines with `\n`.
 - For `GITHUB_HOSTNAME`, use GitHub Enterprise server's hostname, for example, “github.acme-inc.com”
 - You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
+- Refer to the [Self-hosted knowledge base](/integrations/knowledge-base#self-hosted) section for details on the `ON_PREM_KNOWLEDGE_BASE`.
 
 :::
 

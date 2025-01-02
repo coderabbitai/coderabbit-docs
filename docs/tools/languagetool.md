@@ -4,6 +4,12 @@ sidebar_label: LanguageTool
 description: CodeRabbit's guide to LanguageTool.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [LanguageTool](https://github.com/languagetool-org/languagetool) is a style and grammar checker.
 
 ## Files

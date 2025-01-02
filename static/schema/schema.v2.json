@@ -141,6 +141,11 @@
 							"default": "@coderabbitai",
 							"description": "Add this keyword in the PR/MR title to auto-generate the title."
 						},
+						"auto_title_instructions": {
+							"type": "string",
+							"default": "",
+							"description": "Auto Title Instructions | Custom instructions for auto-generating the PR/MR title."
+						},
 						"review_status": {
 							"type": "boolean",
 							"default": true,
@@ -151,25 +156,55 @@
 							"default": true,
 							"description": "Set the commit status to 'pending' when the review is in progress and 'success' when it is complete."
 						},
-						"poem": {
-							"type": "boolean",
-							"default": true,
-							"description": "Generate a poem in the walkthrough comment."
-						},
 						"collapse_walkthrough": {
 							"type": "boolean",
 							"default": false,
 							"description": "Generate walkthrough in a markdown collapsible section."
+						},
+						"changed_files_summary": {
+							"type": "boolean",
+							"default": true,
+							"description": "Generate a summary of the changed files in the walkthrough."
 						},
 						"sequence_diagrams": {
 							"type": "boolean",
 							"default": true,
 							"description": "Generate sequence diagrams in the walkthrough."
 						},
-						"changed_files_summary": {
+						"assess_linked_issues": {
 							"type": "boolean",
 							"default": true,
-							"description": "Generate a summary of the changed files in the walkthrough."
+							"description": "Generate an assessment of how well the changes address the linked issues in the walkthrough."
+						},
+						"related_issues": {
+							"type": "boolean",
+							"default": true,
+							"description": "Include possibly related issues in the walkthrough."
+						},
+						"related_prs": {
+							"type": "boolean",
+							"default": true,
+							"description": "Related PRs | Include possibly related pull requests in the walkthrough."
+						},
+						"suggested_labels": {
+							"type": "boolean",
+							"default": true,
+							"description": "Suggest labels based on the changes in the pull request in the walkthrough."
+						},
+						"auto_apply_labels": {
+							"type": "boolean",
+							"default": false,
+							"description": "Automatically apply the suggested labels to the PR/MR."
+						},
+						"suggested_reviewers": {
+							"type": "boolean",
+							"default": true,
+							"description": "Suggest reviewers based on the changes in the pull request in the walkthrough."
+						},
+						"poem": {
+							"type": "boolean",
+							"default": true,
+							"description": "Generate a poem in the walkthrough comment."
 						},
 						"labeling_instructions": {
 							"type": "array",
@@ -307,7 +342,7 @@
 										}
 									},
 									"additionalProperties": false,
-									"description": "Enable ast-grep | ast-grep is a code analysis tool that helps you to find patterns in your codebase using abstract syntax trees patterns. | v0.28.1"
+									"description": "Enable ast-grep | ast-grep is a code analysis tool that helps you to find patterns in your codebase using abstract syntax trees patterns. | v0.31.1"
 								},
 								"shellcheck": {
 									"type": "object",
@@ -315,7 +350,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable ShellCheck | ShellCheck is a static analysis tool that finds bugs in your shell. | Enable shellcheck integration. | v0.9.0"
+											"description": "Enable ShellCheck | ShellCheck is a static analysis tool that finds bugs in your shell. | Enable shellcheck integration. | v0.10.0"
 										}
 									},
 									"additionalProperties": false,
@@ -328,7 +363,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable ruff integration. | v0.7.0"
+											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable ruff integration. | v0.8.2"
 										}
 									},
 									"additionalProperties": false,
@@ -341,7 +376,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Markdownlint | Markdownlint is a static analysis tool for Node.js with a library of rules to enforce standards and consistency for Markdown files. | Enable markdownlint integration. | v0.35.0"
+											"description": "Enable Markdownlint | Markdownlint is a static analysis tool for Node.js with a library of rules to enforce standards and consistency for Markdown files. | Enable markdownlint integration. | v0.37.0"
 										}
 									},
 									"additionalProperties": false,
@@ -469,7 +504,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root. Please ensure that this file contains the `paths:` parameter. | v1.12.7"
+											"description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root. Please ensure that this file contains the `paths:` parameter. | v2.0.3"
 										},
 										"level": {
 											"type": "string",
@@ -501,7 +536,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v1.61.0"
+											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v1.62.2"
 										},
 										"config_file": {
 											"type": "string",
@@ -518,7 +553,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Yamllint | yamllint is a linter for YAML files. | Enable yamllint integration. | v1.29.0"
+											"description": "Enable Yamllint | yamllint is a linter for YAML files. | Enable yamllint integration. | v1.35.1"
 										}
 									},
 									"additionalProperties": false,
@@ -531,7 +566,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration. | v8.21.1"
+											"description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration. | v8.21.2"
 										}
 									},
 									"additionalProperties": false,
@@ -544,7 +579,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Checkov | Checkov is a static code analysis tool for infrastructure-as-code files. | v3.2.268"
+											"description": "Enable Checkov | Checkov is a static code analysis tool for infrastructure-as-code files. | v3.2.334"
 										}
 									},
 									"additionalProperties": false,
@@ -587,7 +622,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Rubocop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.67.0"
+											"description": "Enable Rubocop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.69.1"
 										}
 									},
 									"additionalProperties": false,
@@ -600,7 +635,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Buf | Buf offers linting for Protobuf files. | v1.45.0"
+											"description": "Enable Buf | Buf offers linting for Protobuf files. | v1.47.2"
 										}
 									},
 									"additionalProperties": false,
@@ -613,7 +648,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Regal | Regal is a linter and language server for Rego. | v0.28.0"
+											"description": "Enable Regal | Regal is a linter and language server for Rego. | v0.29.2"
 										}
 									},
 									"additionalProperties": false,
@@ -626,7 +661,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Actionlint | is a static checker for GitHub Actions workflow files. | v1.7.1"
+											"description": "Enable Actionlint | is a static checker for GitHub Actions workflow files. | v1.7.4"
 										}
 									},
 									"additionalProperties": false,
@@ -639,7 +674,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Pmd | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.6.0"
+											"description": "Enable Pmd | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.8.0"
 										},
 										"config_file": {
 											"type": "string",
@@ -656,7 +691,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Cppcheck | Cppcheck is a static code analysis tool for the C and C++ programming languages. | v2.10.2"
+											"description": "Enable Cppcheck | Cppcheck is a static code analysis tool for the C and C++ programming languages. | v2.10-2"
 										}
 									},
 									"additionalProperties": false,
@@ -669,7 +704,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Semgrep | Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues. | Enable Semgrep integration. | v1.92.0"
+											"description": "Enable Semgrep | Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues. | Enable Semgrep integration. | v1.99.0"
 										},
 										"config_file": {
 											"type": "string",
@@ -686,7 +721,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable CircleCi | CircleCi tool is a static checker for CircleCi config files. | v0.1.30995"
+											"description": "Enable CircleCi | CircleCi tool is a static checker for CircleCi config files. | v0.1.31151"
 										}
 									},
 									"additionalProperties": false,

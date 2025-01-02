@@ -1,3 +1,19 @@
+/*
+ * Copyright 2024 CodeRabbit AI Inc
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 import OriginalFooter from "@theme-original/Footer"
 import React from "react"
 import { CRLogoBase64 } from "./cr-logo"
@@ -43,7 +59,7 @@ function CustomFooter(props) {
 								Docs
 							</a>
 							<a
-								href="https://blog.coderabbit.ai/blog"
+								href="https://coderabbit.ai/blog"
 								className="justify-center text-white text-base font-medium whitespace-nowrap mt-1"
 							>
 								Blog
@@ -55,7 +71,7 @@ function CustomFooter(props) {
 								Pricing
 							</a>
 							<a
-								href="https://coderabbit.ai/changelog"
+								href="https://docs.coderabbit.ai/changelog"
 								className="justify-center text-white text-base font-medium whitespace-nowrap mt-1"
 							>
 								Changelog

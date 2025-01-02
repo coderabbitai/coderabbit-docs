@@ -5,81 +5,83 @@ description: Frequently asked questions about CodeRabbit.
 sidebar_position: 9
 ---
 
-### General
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-#### How accurate is CodeRabbit's review?
+## General Questions {#general-questions}
 
-Early adoption results for CodeRabbit have been highly promising, demonstrating
-significant accuracy in code reviews. However, it's crucial to understand that
-AI is an evolving field, and absolute 100% accuracy can't be guaranteed. Our
-technology is continuously improving, aiming for the highest possible accuracy
-in reviews.
+### How accurate is CodeRabbit?
 
-#### Which programming languages does CodeRabbit support?
+> CodeRabbit demonstrates high accuracy in code reviews based on early adoption results. While 100% accuracy isn't guaranteed due to AI's evolving nature, our technology continuously improves through:
 
-CodeRabbit is designed to work with all programming languages. The
-proficiency of our AI models might vary between languages based on their
-popularity and the public availability of training data.
+- Regular model updates
+- Enhanced pattern recognition
+- Growing language support
+- Refined code analysis
 
-#### Does CodeRabbit store my code?
+### Language Support
 
-We do not store your code. The code repository that is cloned at the time of the review is
-disposed of as soon as the review is complete. During the review, there is
-complete data isolation of the code being reviewed, and no one from CodeRabbit
-or outside has access to the code.
+CodeRabbit works with all programming languages, with varying proficiency based on:
 
-#### Does CodeRabbit use my proprietary code for training language models?
+- Language popularity
+- Available training data
+- Community usage patterns
 
-We train our system only using publicly available datasets. CodeRabbit never
-uses proprietary code from private repositories for training purposes.
+### Data Security
 
-#### Can I switch between different organizations on CodeRabbit?
+<Tabs>
+  <TabItem value="storage" label="Code Storage" default>
+    - No persistent code storage
+    - Temporary cloning during review only
+    - Complete data isolation
+    - Immediate disposal post-review
+  </TabItem>
+  <TabItem value="training" label="Training Data">
+    - Uses only public datasets
+    - No proprietary code usage
+    - Private repositories excluded
+  </TabItem>
+</Tabs>
 
-Yes, you can switch between different organizations on CodeRabbit. To do so,
-click on the organization name in the top-left corner of the CodeRabbit UI.
+### Organization Management
 
-![Switch Organizations](/img/faq/cr_support_orgs_light.png#gh-light-mode-only)
-![Switch Organizations](/img/faq/cr_support_orgs_dark.png#gh-dark-mode-only)
+Switch between organizations easily:
 
-#### How does CodeRabbit compare to other AI code generators?
+1. Click organization name (top-left corner)
+2. Select desired organization
+3. Access organization-specific settings
 
-Code reviews remain essential, whether the code is written by a human or a bot.
-This is mainly because the perspective of the reviewer differs from that of the
-code generator, whether human or machine. This distinction is precisely why
-human peer reviews have been effective for so long. While AI-powered
-code-generation tools like GitHub Copilot hold immense potential, it's important to recognize that
-these generators are still in their early stages and may not be equipped to
-auto-generate meaningful code for moderately complex applications.
+![Organization Switcher](/img/faq/cr_support_orgs_light.png#gh-light-mode-only)
+![Organization Switcher](/img/faq/cr_support_orgs_dark.png#gh-dark-mode-only)
 
-#### How is CodeRabbit different from other code review tools?
+### Comparison with Other Tools
 
-Traditional code review tools excel in linting and static analysis, but they
-fall short in providing context-aware, conversational feedback with actionable
-suggestions for changes that can be directly committed. On the other hand,
-**CodeRabbit** leverages AI to understand the intent behind the code changes and
-provide human-like feedback for applying the best practices.
+> Code reviews remain essential, whether the code is written by a human or a bot. This is mainly because the perspective of the reviewer differs from that of the code generator, whether human or machine. This distinction is precisely why human peer reviews have been effective for so long. While AI-powered code-generation tools like GitHub Copilot hold immense potential, it's important to recognize that these generators are still in their early stages and may not be equipped to auto-generate meaningful code for moderately complex applications.
 
-### Subscription
+#### vs AI Code Generators
 
-#### Can a CodeRabbit subscription be used across multiple organizations?
+- Provides review perspective different from code generation
+- Complements tools like GitHub Copilot
+- Focuses on code quality and best practices
 
-Subscription seats are tied to the specific GitHub/GitLab organization under
-which they are purchased and cannot be used under another organization.
+#### vs Traditional Review Tools
 
-#### Do I need my own OpenAI key with CodeRabbit Pro?
+- Context-aware feedback
+- Actionable suggestions
+- Direct commit capabilities
+- AI-powered intent understanding
 
-OpenAI cost is included as part of the subscription. You don't need to have your
-own OpenAI key.
+## Usage and Configuration {#usage-and-configuration}
 
-#### How can I add or remove users for my subscription?
+### When Does CodeRabbit Review PRs?
 
-To manage users, log in to CodeRabbit and navigate to subscriptions. You can add
-or remove users as needed.
+- ✅ **New PRs**: Automatic review when created
+- ✅ **New Commits**: Automatic review when pushed to any PR
+- ⚡ **Older PRs**: Use `@coderabbitai review` to trigger manually
 
-#### How can I skip the trial and move to Pro
+![CodeRabbit- Full-Review](/img/faq/full-review.png)
 
-To move to Pro, login to CodeRabbit and navigate to the Subscription page.
-Click on **End Trial and Start Pro Plan** to end the trial and move to the Pro plan.
+### Customization Options
 
 #### How to Add or Update Your Billing Email
 
@@ -88,74 +90,57 @@ select Manage Subscription > **Billing Address**. Enter your email address in th
 Email field and click Update to save your changes.
 
 ### Usage and Configuration
+- **Language Settings**: Configure review language in repository settings
+- **Review Rules**: Customize via [Review Instructions](/guides/review-instructions)
+- **Branch Selection**: Default branch reviews enabled by default (configurable)
 
-#### Can CodeRabbit review my existing PRs after integrating it?
+### Access & Permissions
 
-CodeRabbit will by default only review new PRs or existing PRs which have a new
-commit after the app is installed. You can, however, use the
-`@coderabbitai review` command on the PR to trigger a review for existing PRs.
+- Minimal repository access required
+- Review permissions during installation
+- Individual developer support available
 
-#### Can I customize CodeRabbit?
+### Interaction Guide
 
-Reviews are customizable. For information, check out our
-[Customization](./guides/review-instructions.md) guide.
+Interact with CodeRabbit by:
 
-#### Can I choose a language other than English for the reviews?
+1. Replying directly to CodeRabbit comments
+2. Tagging `@coderabbitai` in PR discussions
+3. Adding review comments for specific lines
+4. Customize via [Review Instructions](/guides/review-instructions)
 
-CodeRabbit supports most widely used languages. You can configure this in the
-repository settings.
+:::tip Collaboration Mode
+When team members are active in PRs, use `@coderabbitai` to engage the bot.
+:::
 
-#### What access does CodeRabbit need to my repositories?
+### Usage Limits
 
-CodeRabbit requests minimal access to perform code reviews and post comments on
-Pull Requests. You can review the permissions requested during the installation process.
+| Feature          | Free/Trial                    | Pro/Lite Plan |
+| ---------------- | ----------------------------- | ------------- |
+| Files per hour   | 300                           | 600           |
+| Reviews per hour | Trial: 5, OSS: 4              | 8             |
+| Conversations    | 25 back-to-back, then 50/hour | Higher limits |
 
-#### How can I interact with the CodeRabbit bot?
+:::note
+In-trial and open-source plans have lower rate limits than the paid plan. In all cases, we re-allow further reviews/conversations after a brief timeout.
+:::
 
-To interact with CodeRabbit's bot, reply to the CodeRabbit Comment. If there are
-team members collaborating on pull requests, the bot stays silent by default but
-can be engaged by tagging **@coderabbitai**. This feature allows you to provide
-context, generate test cases, or ask for specific code suggestions, all within
-the context of your code lines or entire files.
+## Integration Guide {#integration-guide}
 
-#### Can individual developers use CodeRabbit?
+### Prerequisites
 
-Absolutely! Whether you're an individual developer or part of an organization,
-CodeRabbit can be your coding assistant, providing you with invaluable
-suggestions.
+- Organization admin access
+- Domain allowlist (GitLab: add `coderabbit.ai`)
+- Default branch configuration
 
-#### Which branches are the pull requests reviewed on?
+### Quick Setup
 
-CodeRabbit reviews pull requests on the default branch by default. You can
-change this in the repository settings.
+1. Sign up at [coderabbit.ai](https://coderabbit.ai) using your GitHub account
+2. Add your repository through the dashboard
+3. That's it. CodeRabbit will automatically start reviewing your PRs
 
-#### CodeRabbit Usage Limits
-
-There are hourly rate limits for each developer per repository:
-
-- Number of files reviewed per hour: 200
-- Number of reviews : 3 back-to-back reviews followed by 3 reviews/hour
-- Number of conversations: 25 back-to-back messages followed by 50 messages/hour
-
-In-trial and open-source plans have lower rate limits than the paid plan. In all
-cases, we re-allow further reviews/conversations after a brief timeout.
-
-### Integration
-
-#### Who can install CodeRabbit on the repositories?
-
-You need to be an admin of the organization to add the repositories.
-
-#### I can't add CodeRabbit to my GitLab Repositories. What should I do?
-
-If there are any access restrictions by domain, then you will need to add
-`coderabbit.ai` as an allowed domain.
-
-:::tip
-
-If you have further questions or need additional information, please check out
-our [Support](./about/support.md) page for more details.
-
+:::tip Need Help?
+Visit our [Support](/getting-started/support) page for additional assistance or reach out to our team on [Discord](http://discord.gg/coderabbit).
 :::
 
 #### Unable to View Repositories in GitLab
@@ -169,3 +154,77 @@ level group for Self-Hosted GitLab.
 If you’re having trouble enabling the GitLab Repositories toggle, confirm that
 you have Maintainer access in the primary group for GitLab Cloud or in the first
 level group for Self-Hosted GitLab.
+
+## Account Management {#account-management}
+
+### How do I delete my CodeRabbit account?
+
+:::danger Irreversible Account Deletion
+Deleting your CodeRabbit account is permanent and cannot be undone. This action will permanently erase:
+
+- Organization and Repository data
+- AI Bot learnings and insights
+- Subscriptions and billing information
+- All settings and configurations
+- Reports and recurring reports
+- Third-party service integrations
+  :::
+
+<Tabs>
+  <TabItem value="deletion" label="Account Deletion Steps" default>
+    1. Sign into your CodeRabbit account
+    2. Navigate to the **Subscription** page
+    3. Click the orange **Delete Account** button
+    4. Review the deletion confirmation modal
+    5. Type "delete" to confirm
+    6. Complete platform-specific cleanup steps below
+
+    :::info
+    The Delete Account button is only visible to admin users.
+    :::
+
+A confirmation modal will appear explaining the consequences of account deletion. You can expand each section for detailed information:
+
+    <div align="center">
+    ![Delete Account](/img/guides/delete_account_light.png#gh-light-mode-only)
+    ![Delete Account](/img/guides/delete_account_dark.png#gh-dark-mode-only)
+    </div>
+
+  </TabItem>
+  <TabItem value="github" label="GitHub Cleanup">
+    After account deletion, you must:
+
+    **Remove OAuth App:**
+    1. Go to Organization settings
+    2. Click **OAuth Application Policy**
+    3. Find **coderabbitai** and click the pencil icon
+    4. Click **Revoke**
+
+    **Uninstall GitHub App:**
+    1. Go to Organization settings
+    2. Click **GitHub Apps**
+    3. Select **Configure**
+    4. Click **Uninstall**
+
+  </TabItem>
+  <TabItem value="gitlab" label="GitLab Cleanup">
+    Complete these steps:
+
+    1. Remove OAuth App from User Settings > Applications
+    2. Remove Webhook from Group > Project Settings > Webhooks
+    3. Remove Bot User from Group > Manage > Members
+
+  </TabItem>
+  <TabItem value="azure" label="Azure DevOps Cleanup">
+    1. Go to Project Settings > Service Hooks
+    2. Delete CodeRabbit webhooks
+    3. Remove CodeRabbit user or delete associated Personal Access Token
+  </TabItem>
+</Tabs>
+
+:::warning Post-Deletion Steps
+The platform-specific cleanup steps are necessary to completely remove CodeRabbit access. Without completing these steps:
+
+- CodeRabbit may retain some platform permissions
+- Signing back in will recreate minimal account data
+  :::

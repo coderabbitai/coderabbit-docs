@@ -2,6 +2,7 @@
 title: CodeRabbit Features
 sidebar_label: Future Development
 description: Learn how CodeRabbit works in a pull request review.
+sidebar_position: 12
 ---
 
 # Future Developments

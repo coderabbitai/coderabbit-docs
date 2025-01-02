@@ -4,6 +4,12 @@ sidebar_label: Regal
 description: CodeRabbit's guide to Regal.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Regal](https://docs.styra.com/regal/) is a linter and language server for Rego.
 
 ## Files

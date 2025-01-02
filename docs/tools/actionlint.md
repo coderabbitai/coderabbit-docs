@@ -4,6 +4,12 @@ sidebar_label: Actionlint
 description: CodeRabbit's guide to Actionlint.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Actionlint](https://github.com/rhysd/actionlint/) is a static checker for
 GitHub Actions workflow files.
 

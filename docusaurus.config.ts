@@ -1,3 +1,19 @@
+/*
+ * Copyright 2024 CodeRabbit AI Inc
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 import { themes as prismThemes } from "prism-react-renderer"
 import { EnumChangefreq } from "sitemap"
 
@@ -42,11 +58,23 @@ const config: Config = {
 				redirects: [
 					{
 						from: "/get-started",
-						to: "/configure-coderabbit",
+						to: "/getting-started/quickstart/",
+					},
+					{
+						from: "/about/features",
+						to: "/",
+					},
+					{
+						from: "/about/pricing",
+						to: "/",
+					},
+					{
+						from: "/about/support",
+						to: "/getting-started/support",
 					},
 					{
 						from: "/guides/customize-coderabbit",
-						to: "/configure-coderabbit",
+						to: "/getting-started/configure-coderabbit",
 					},
 					{
 						from: "/guides/prompt-customization",
@@ -54,7 +82,7 @@ const config: Config = {
 					},
 					{
 						from: "/guides/configure-coderabbit",
-						to: "/configure-coderabbit",
+						to: "/getting-started/configure-coderabbit",
 					},
 					{
 						from: "/integrations/saas-gitlab",
@@ -80,6 +108,10 @@ const config: Config = {
 						from: "/platforms/self-hosted-github",
 						to: "/platforms/github-enterprise-server",
 					},
+					{
+						from: "/configure-coderabbit",
+						to: "/getting-started/configure-coderabbit",
+					},
 				],
 			},
 		],
@@ -103,6 +135,7 @@ const config: Config = {
 				docs: {
 					editUrl: "https://github.com/coderabbitai/coderabbit-docs/edit/main/",
 					sidebarPath: "./sidebars.ts",
+					path: "docs",
 					routeBasePath: "/",
 					breadcrumbs: true,
 					showLastUpdateTime: true,
@@ -165,12 +198,37 @@ const config: Config = {
 			title: "",
 			hideOnScroll: true,
 			logo: {
-				alt: "",
+				alt: "CodeRabbit",
 				src: "img/logo/bw_coderabbit.svg",
 				srcDark: "img/logo/white_coderabbit.svg",
 				href: "https://coderabbit.ai",
+				target: "_self",
 			},
-			items: [],
+			items: [
+				{
+					label: "Docs",
+					position: "left",
+					to: "/",
+					className: "navbar-link-active",
+				},
+				{
+					href: "https://coderabbit.ai/blog",
+					label: "Blog",
+					position: "left",
+				},
+				{
+					href: "https://discord.gg/coderabbit",
+					className: "navbar-icon-link discord-link",
+					"aria-label": "Discord",
+					position: "right",
+				},
+				{
+					href: "https://github.com/coderabbitai/coderabbit-docs",
+					className: "github-link",
+					"aria-label": "GitHub",
+					position: "right",
+				},
+			],
 		},
 		prism: {
 			theme: prismThemes.github,

@@ -60,7 +60,7 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 2. Select your avatar on the left sidebar.
 3. Choose "Edit Profile."
 4. Select "Access Tokens" from the left sidebar.
-5. Click "Add New Token."
+5. [Click "Add New Token."](https://gitlab.com/-/user_settings/personal_access_tokens)
 6. Enter a name and an expiry date for the token.
 7. If no expiry date is entered, it defaults to 365 days from the current date.
 8. Ensure the following scopes are selected: `api`, `read_api`, `read_user`.
@@ -68,3 +68,15 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 10. Note down the token as it will only be displayed once.
 
 ![GitLab personal access token configuration page](/img/integrations/admin-access-token.png)
+
+### Installing CodeRabbit into your GitLab Repositories
+
+1. Go to the [Repositories page](https://app.coderabbit.ai/settings/repositories) in the CodeRabbit app.
+2. Click the check box to the left of the repos you want to install CodeRabbit into. Click the box at the top to install onto all repos at once.
+3. Click **Install Repositories**.
+
+![GitLab repo Installation](/img/integrations/gitlab-repo-install.png)
+
+The webhook `https://coderabbit.ai/gitlabHandler` will now be installed in your repositories.
+
+![GitLab Webhook Example](/img/integrations/gitlab-webhook.png)

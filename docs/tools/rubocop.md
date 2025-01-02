@@ -4,6 +4,12 @@ sidebar_label: Rubocop
 description: CodeRabbit's guide to Rubocop.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Rubocop](https://rubocop.org/) A Ruby static code analyzer and formatter, based on the community Ruby style guide.
 
 ## Files

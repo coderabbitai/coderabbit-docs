@@ -4,6 +4,12 @@ sidebar_label: Yamllint
 description: CodeRabbit's guide to Yamllint.
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 [Yamllint](https://yamllint.readthedocs.io/en/stable/) is a linter for YAML.
 
 ## Files

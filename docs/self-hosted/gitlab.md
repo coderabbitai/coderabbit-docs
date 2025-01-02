@@ -60,14 +60,19 @@ LLM_PROVIDER=azure-openai
 LLM_TIMEOUT=360000
 AZURE_OPENAI_ENDPOINT=<azure-openai-endpoint>
 AZURE_OPENAI_API_KEY=<key>
+## it is recommended to use gpt-4o-mini, o1-mini, and o1-preview deployments
 AZURE_GPT4OMINI_DEPLOYMENT_NAME=<gpt-4o-mini-deployment-name>
+AZURE_O1MINI_DEPLOYMENT_NAME=[<o1-mini-deployment-name>]
+AZURE_O1_DEPLOYMENT_NAME=[<o1-preview-deployment-name>]
+## gpt-4o is optional
 AZURE_GPT4O_DEPLOYMENT_NAME=<gpt-4o-deployment-name, modelVersion: 2024-08-06>
-## o1-mini is optional
-AZURE_O1_MINI_DEPLOYMENT_NAME=<o1-mini-deployment-name>
-## o1-preview is optional: it’s very expensive but provides best reviews
-AZURE_O1_DEPLOYMENT_NAME=<o1-preview-deployment-name>
-## gpt-4-turbo is optional: it’s expensive but provides better reviews
+## gpt-4-turbo is optional: it’s expensive but provides better reviews than gpt-4o
 AZURE_GPT4TURBO_DEPLOYMENT_NAME=[<gpt-4-turbo-deployment-name, modelVersion: turbo-2024-04-09>]
+
+# if using AWS Bedrock
+AWS_ACCESS_KEY_ID=<aws-access-key>
+AWS_SECRET_ACCESS_KEY=<aws-secret-access-key>
+AWS_REGION=<aws-region>
 
 # if using Anthropic
 LLM_PROVIDER=anthropic

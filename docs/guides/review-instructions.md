@@ -9,7 +9,7 @@ sidebar_position: 3
 ---
 
 The guide explains how to add custom review instructions for the entire project.
-Also, see the guide on how to [configure CodeRabbit](../configure-coderabbit.md).
+Also, see the guide on how to [configure CodeRabbit](/getting-started/configure-coderabbit).
 
 ### Path-based instructions {#path-based}
 
@@ -47,6 +47,12 @@ reviews:
 ```
 
 ## Abstract Syntax Tree (AST) based instructions {#ast-based}
+
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
 
 CodeRabbit offers review instructions based on Abstract Syntax Tree (AST)
 patterns. Under the hood, CodeRabbit uses
