@@ -9,7 +9,7 @@ sidebar_position: 13
 
 ### GitHub Action Failure Detection and Remediation
 
-We're excited to announce our new pipeline error detection tool.  Never let a failing pipeline block your progress again!
+We're excited to announce our new pipeline error detection tool. Never let a failing pipeline block your progress again!
 
 Automatically fix build failures for GitHub Actions! This feature automatically identifies common pipeline and build failures, providing instant fixes across multiple technologies such Python, Node.js, Java, Terraform, Docker, Kubernetes and more!
 
