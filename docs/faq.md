@@ -90,6 +90,7 @@ select Manage Subscription > **Billing Address**. Enter your email address in th
 Email field and click Update to save your changes.
 
 ### Usage and Configuration
+
 - **Language Settings**: Configure review language in repository settings
 - **Review Rules**: Customize via [Review Instructions](/guides/review-instructions)
 - **Branch Selection**: Default branch reviews enabled by default (configurable)
