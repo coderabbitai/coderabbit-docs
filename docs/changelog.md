@@ -20,6 +20,12 @@ Key capabilities:
 - Comprehensive support for popular frameworks and tools
 - Integration with existing GitHub Checks
 
+Future support planned for:
+
+- Azure DevOps CI/CD
+- GitLab CI/CD
+- CircleCI
+
 ---
 
 ## December 23, 2024
