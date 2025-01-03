@@ -148,13 +148,34 @@ Test your configuration using the **Preview Report** button to generate a sample
 
 ### Grouping Options
 
-Organize report content by:
+Reports can be organized hierarchically using groups and subgroups:
 
-- Repository
-- Labels
-- Teams
+#### Primary Grouping
 
-This helps keep information organized for larger organizations or teams.
+Select from these options to organize your main report structure:
+
+- **None**: No grouping, flat list of items
+- **Repository**: Group by source repository
+- **Label**: Group by PR labels
+- **Team**: Group by team ownership
+- **User**: Group by PR author
+
+#### Subgrouping
+
+After selecting a primary group, you can add a secondary level of organization:
+
+- Choose any remaining grouping option for further categorization
+- Subgroups create a nested hierarchy within primary groups
+- Select "None" to use only primary grouping
+
+:::tip
+Choose grouping options that match your team's workflow. For example:
+
+- Use Repository → Team for large multi-team organizations
+- Use User → Label to track individual contributions by type
+- Use Team → Repository to monitor team activity across repos
+
+:::
 
 ### Report Lifecycle Management
 
