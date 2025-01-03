@@ -43,6 +43,28 @@ Format using:
 - Tables for statistics
 ```
 
+### Example for different languages
+
+Japanese:
+
+```
+レポートを英語ではなく日本語で送信してください。
+
+以下の要約を提供してください：
+- すべてのプルリクエスト活動
+- コードレビューの議論
+```
+
+French:
+
+```
+Veuillez envoyer le rapport en français et non en anglais.
+
+Veuillez fournir un résumé de :
+- Toutes les activités de demandes de fusion
+- Discussions sur la révision de code
+```
+
 ### Available Data Points
 
 Your custom reports can access the following PR information that you can reference in your prompts:
