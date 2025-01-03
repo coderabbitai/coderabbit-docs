@@ -102,10 +102,12 @@ This helps keep information organized for larger organizations or teams.
 ## Best Practices
 
 1. **Scheduling**
+
    - Align report timing with your team's workflow
    - Consider timezone differences for distributed teams
 
 2. **Content**
+
    - Keep prompts focused on actionable information
    - Use grouping to improve readability
    - Exclude unnecessary details that may create noise
