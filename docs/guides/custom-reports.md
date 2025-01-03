@@ -28,7 +28,7 @@ Custom reports allow you to:
 
 A custom report template consists of instructions that tell CodeRabbit what information to include and how to present it. Here's a basic example:
 
-```
+```text
 Please provide a summary of:
 - All merged pull requests
 - Critical bug fixes
@@ -47,7 +47,7 @@ Format using:
 
 Japanese:
 
-```
+```text
 レポートを英語ではなく日本語で送信してください。
 
 以下の要約を提供してください：
@@ -57,7 +57,7 @@ Japanese:
 
 French:
 
-```
+```text
 Veuillez envoyer le rapport en français et non en anglais.
 
 Veuillez fournir un résumé de :
@@ -99,7 +99,7 @@ Your custom reports can access the following PR information that you can referen
 
 Here's an example prompt that uses these data points:
 
-```
+```text
 Generate a summary with the following format for each PR:
 
 ## [PR Title](URL)
@@ -137,7 +137,7 @@ CodeRabbit supports markdown formatting in custom reports. You can use:
 
 You can generate reports in multiple languages by specifying the ISO language code in your template. For example:
 
-```
+```text
 Language: fr
 Please provide a summary of:
 - All pull request activities
@@ -150,7 +150,7 @@ Please provide a summary of:
 
 Include specific filtering instructions in your template:
 
-```
+```text
 Include only:
 - PRs with "critical" or "bug" labels
 - Changes to production code
@@ -166,7 +166,7 @@ Exclude:
 
 Organize information using custom grouping rules:
 
-```
+```text
 Group by:
 1. Priority (High/Medium/Low)
 2. Component (Frontend/Backend/Infrastructure)
@@ -181,7 +181,7 @@ Within each group, sort by:
 
 Add temporal analysis to your reports:
 
-```
+```text
 Provide:
 - Week-over-week comparison
 - Trend analysis for the past month
@@ -218,7 +218,7 @@ Provide:
 
 ### Executive Summary Template
 
-```
+```text
 Provide a high-level overview:
 1. Key metrics:
    - Total PRs merged
@@ -236,7 +236,7 @@ Format:
 
 ### Technical Deep Dive Template
 
-```
+```text
 Generate a detailed technical report:
 1. Code changes:
    - Architecture updates
@@ -256,7 +256,7 @@ Include:
 
 Heres a more advanced example of a custom report template:
 
-```
+```text
 Generate a report of all pull requests in the following format:
 
 - As the first paragraph, start with "🟣" if merged, "⚫" if draft, "🟢" if open, "🔴" if closed
