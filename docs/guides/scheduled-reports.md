@@ -101,7 +101,7 @@ CodeRabbit offers several built-in templates:
 
 Example custom prompt:
 
-```
+```text
 Please provide a summary of:
 - All pull request activities
 - Related issues and comments
