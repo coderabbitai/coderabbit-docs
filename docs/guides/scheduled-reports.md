@@ -23,20 +23,71 @@ CodeRabbit Pro offers automated recurring reports that provide insights into you
 
 ![Schedule Configuration](/img/guides/report-params.png)
 
-- **Frequency**: Choose between weekly, monthly, or custom intervals
-- **Days**: Select specific days of the week or month
-- **Time**: Set the time for report generation in your timezone
+The schedule configuration allows you to set precise timing for your reports:
 
-:::note
-Reports summarize events between scheduled intervals. For example, a Monday report will include activities from Friday through Monday.
+#### Frequency Options
+
+- **Days of Week**
+  - Select any combination of days (Sun-Sat)
+  - Set frequency (every 1-3 weeks)
+  - Ideal for weekly team syncs or sprint reviews
+
+- **Days of Month**
+  - Select specific dates (1-31)
+  - Special date handling:
+    - 31st: Runs on the last day of every month
+    - 30th: Skips February
+    - 29th: Only runs in February during leap years
+
+#### Time Settings
+
+- Set specific time for report generation
+- Choose from comprehensive timezone list (e.g., America/New_York)
+- Reports run at the specified time in the selected timezone
+
+:::tip Timezone Consideration
+Choose a time that works for all team members, especially for distributed teams across different time zones.
 :::
 
 ### Report Parameters
 
+Reports can be filtered using multiple parameters:
+
 - **Repositories**: Select specific repositories to monitor
-- **Labels**: Filter by specific GitHub labels
+- **Labels**: Filter by GitHub labels with operators:
+  - IN: Match any selected label
+  - ALL: Match all selected labels
 - **Users**: Filter by specific GitHub users
-- **Teams**: Narrow focus to specific teams within your organization
+- **Teams**: Filter by organization teams
+  - Note: Team filtering is not available for GitLab repositories
+
+:::note Parameter Configuration
+Each parameter can be:
+
+- Added or removed as needed
+- Combined with other parameters for precise filtering
+- Modified using different operators
+:::
+
+### Report Content
+
+Reports include comprehensive PR information:
+
+- PR metadata:
+  - Title and description
+  - Creation and last activity dates
+  - Status (merged, mergeable, draft)
+  - State (open, closed, merged)
+- Collaboration details:
+  - Labels and reviewers
+  - Comments and discussions
+  - Team associations
+- Repository context
+- Author information
+
+:::info Stale PR Detection
+PRs are marked as stale after 168 hours (7 days) of inactivity. This helps identify potential workflow bottlenecks.
+:::
 
 ### Report Templates
 
@@ -103,6 +154,40 @@ Organize report content by:
 - Teams
 
 This helps keep information organized for larger organizations or teams.
+
+### Report Lifecycle Management
+
+Control your reports through their entire lifecycle:
+
+#### Editing Reports
+
+- Make your desired changes to any configuration settings
+- Click the **Save** button to apply your changes
+- Changes take effect from the next scheduled run
+
+:::tip
+Remember to click **Save** when you're done making changes. Your modifications will be discarded if you navigate away without saving.
+:::
+
+#### Disabling Reports
+
+- Toggle the **Active** switch to temporarily pause a report
+- Disabled reports:
+  - Maintain their configuration
+  - Skip scheduled runs
+  - Can be re-enabled at any time
+  - Show "Disabled" status in the dashboard
+
+#### Deleting Reports
+
+- Click the **Delete** button (trash icon) next to the report
+- Confirm deletion in the modal
+- Note: This action is permanent and cannot be undone
+- All report history and configuration will be removed
+
+:::warning
+Deleting a report will immediately stop all scheduled runs and remove access to historical reports. Consider disabling instead of deleting if you might need the report again.
+:::
 
 ## Best Practices
 
