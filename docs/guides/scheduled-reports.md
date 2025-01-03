@@ -96,7 +96,7 @@ CodeRabbit offers several built-in templates:
 1. **Daily Standup Report**: A concise summary of pull requests and activities
 2. **Sprint Report**: A structured overview of sprint goals, completed tasks, in-progress work, and blockers
 3. **Release Notes**: A high-level changelog with summary and significant changes
-4. **Custom Templates**: Create your own format using prompts
+4. **[Custom Templates](./custom-reports.md)**: Create your own format using prompts
 
 Example custom prompt:
 
@@ -136,7 +136,7 @@ Configure where your reports will be delivered:
 3. Select target channels
 
 :::tip
-Create separate reports if you need to send to multiple channels with different formats
+Create separate reports if you need to send to multiple channels with different formats. Learn more about [custom report formats](./custom-reports.md).
 :::
 
 ## Managing Reports
@@ -208,5 +208,6 @@ Deleting a report will immediately stop all scheduled runs and remove access to 
 
 ## Related Resources
 
+- [Custom Reports](./custom-reports.md)
 - [On-demand Reports](./ondemand-reports.md)
 - [API Documentation](https://api.coderabbit.ai/api/swagger/)
