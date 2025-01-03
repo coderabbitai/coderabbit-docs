@@ -21,3 +21,4 @@ The following commands are available (invoked as PR comments):
 - `@coderabbitai configuration` to show the current CodeRabbit configuration for
   the repository.
 - `@coderabbitai help` to get help.
+- `@coderabbitai generate docstrings` to generate docstrings for functions in the PR. Learn more about [docstrings generation](/finishing-touches/docstrings).
