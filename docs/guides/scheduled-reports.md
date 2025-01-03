@@ -2,7 +2,7 @@
 title: Scheduled Reports
 sidebar_label: Scheduled Reports
 description: Learn how to set up automated recurring reports with CodeRabbit Pro
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 ```mdx-code-block

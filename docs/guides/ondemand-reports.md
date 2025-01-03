@@ -2,7 +2,7 @@
 title: On-demand Reports
 sidebar_label: On-demand Reports
 description: CodeRabbit offers a way to generate on-demand reports using a simple API request
-sidebar_position: 6
+sidebar_position: 8
 ---
 
 ```mdx-code-block
@@ -11,6 +11,18 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
 <ProPlanNotice />
 ```
+
+## Overview
+
+CodeRabbit's reporting feature helps you track and analyze pull request activity across your repositories. There are two ways to generate reports:
+
+1. **[Scheduled Reports](./scheduled-reports.md)** - Set up automated recurring reports that are delivered on a schedule to your preferred channels (email, Slack, MS Teams). This is the recommended way to keep your team informed about development progress.
+
+2. **On-demand Reports** (this guide) - Generate reports programmatically through our API when you need them. This is useful for integration with your own tools and workflows.
+
+If you're new to CodeRabbit's reporting features, we recommend starting with [Scheduled Reports](./scheduled-reports.md) to understand the available options and capabilities.
+
+## API Access
 
 CodeRabbit offers a way to generate on-demand reports using the [CodeRabbit API](https://api.coderabbit.ai/api/swagger/).
 You will need an API Key to access the CodeRabbit API and generate an on-demand report.
