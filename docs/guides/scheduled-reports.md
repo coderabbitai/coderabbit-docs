@@ -94,10 +94,10 @@ PRs are marked as stale after 168 hours (7 days) of inactivity. This helps ident
 
 CodeRabbit offers several built-in templates:
 
-1. **Daily Standup Report**: A concise summary of pull requests and activities
-2. **Sprint Report**: A structured overview of sprint goals, completed tasks, in-progress work, and blockers
-3. **Release Notes**: A high-level changelog with summary and significant changes
-4. **[Custom Templates](./custom-reports.md)**: Create your own format using prompts
+1. **Daily Standup Report**: A concise summary of pull requests and activities.
+2. **Sprint Report**: A structured overview of sprint goals, completed tasks, in-progress work, and blockers.
+3. **Release Notes**: A high-level changelog with summary and significant changes.
+4. **[Custom Templates](./custom-reports.md)**: Create your own format using prompts. Has support for multiple languages.
 
 Example custom prompt:
 
