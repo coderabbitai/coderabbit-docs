@@ -15,11 +15,13 @@ CodeRabbit Pro offers automated recurring reports that provide insights into you
 
 ## Setting Up a Recurring Report
 
-1. Navigate to **Recurring Reports** in the CodeRabbit dashboard
-2. Click **Create New Report**
+1. Navigate to **Recurring Reports** in the [CodeRabbit dashboard](https://app.coderabbit.ai/reports/recurring)
+2. Click **Create Report**
 3. Configure the following settings:
 
 ### Schedule Configuration
+
+![Schedule Configuration](/img/guides/report-params.png)
 
 - **Frequency**: Choose between weekly, monthly, or custom intervals
 - **Days**: Select specific days of the week or month
@@ -41,8 +43,9 @@ Reports summarize events between scheduled intervals. For example, a Monday repo
 CodeRabbit offers several built-in templates:
 
 1. **Daily Standup Report**: A concise summary of pull requests and activities
-2. **Sprint/Release Notes**: Detailed summaries combining related changes
-3. **Custom Templates**: Create your own format using prompts
+2. **Sprint Report**: A structured overview of sprint goals, completed tasks, in-progress work, and blockers
+3. **Release Notes**: A high-level changelog with summary and significant changes
+4. **Custom Templates**: Create your own format using prompts
 
 Example custom prompt:
 
@@ -61,6 +64,8 @@ Do not include:
 ### Communication Channels
 
 Configure where your reports will be delivered:
+
+![Report Delivery Platforms](/img/guides/report-platforms.png)
 
 #### Email
 
