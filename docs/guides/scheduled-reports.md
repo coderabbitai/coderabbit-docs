@@ -28,6 +28,7 @@ The schedule configuration allows you to set precise timing for your reports:
 #### Frequency Options
 
 - **Days of Week**
+
   - Select any combination of days (Sun-Sat)
   - Set frequency (every 1-3 weeks)
   - Ideal for weekly team syncs or sprint reviews
@@ -67,7 +68,7 @@ Each parameter can be:
 - Added or removed as needed
 - Combined with other parameters for precise filtering
 - Modified using different operators
-:::
+  :::
 
 ### Report Content
 

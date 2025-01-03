@@ -170,16 +170,19 @@ Provide:
 ## Best Practices
 
 1. **Be Specific**
+
    - Clearly define what should be included/excluded
    - Use precise language to avoid ambiguity
    - Specify exact metrics you want to track
 
 2. **Structure Matters**
+
    - Start with high-level summaries
    - Use consistent grouping patterns
    - Include clear section breaks
 
 3. **Keep it Relevant**
+
    - Focus on actionable information
    - Avoid redundant data points
    - Consider your audience's needs
