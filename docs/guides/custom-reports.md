@@ -226,6 +226,13 @@ Provide:
    - Include visual breaks
    - Maintain consistent styling
 
+5. **Use Examples**
+   - Include "do this" and "don't do this" examples (especially for titles)
+   - Demonstrate proper formatting patterns
+   - Show concrete use cases for different report types
+   - Help maintain consistency across teams
+   - Avoid ambiguity in report generation
+
 ## Example Templates
 
 ### Executive Summary Template
