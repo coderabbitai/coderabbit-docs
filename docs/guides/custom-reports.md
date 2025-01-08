@@ -133,6 +133,18 @@ CodeRabbit supports markdown formatting in custom reports. You can use:
 - Bold and italic text
 - Links
 
+### Headers and Titles
+
+The name you give to each report in the CodeRabbit menu will be used for the first line of any report or the subject for emails. For example if your report is named `Executive Summary Template` then this string will appear on the subject of your emails and start of all message chains.
+
+The reports will also have an overall title describing the report content such as `Pull Request Summary Report (January 2025)`.
+
+To change these details of this overall title you should include specific instructions in your custom prompt with examples such as:
+
+```
+- Do not add a date to the titles like "Pull Request Summary Report (January 2025)" it should just be "Pull Request Summary Report"
+```
+
 ### Language Support
 
 You can generate reports in multiple languages by specifying the ISO language code in your template. For example:
