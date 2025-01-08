@@ -141,7 +141,7 @@ The reports will also have an overall title describing the report content such a
 
 To change these details of this overall title you should include specific instructions in your custom prompt with examples such as:
 
-```
+```text
 - Do not add a date to the titles like "Pull Request Summary Report (January 2025)" it should just be "Pull Request Summary Report"
 ```
 
