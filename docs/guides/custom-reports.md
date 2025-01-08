@@ -222,6 +222,7 @@ Provide:
    - Consider your audience's needs
 
 4. **Optimize Readability**
+
    - Use appropriate formatting
    - Include visual breaks
    - Maintain consistent styling
