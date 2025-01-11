@@ -54,28 +54,28 @@ The presence of an unsupported software forge in this list does not constitute a
 
 The checked languages are supported:
 
-- [ ] Bash
-- [ ] C
+- [x] Bash
+- [x] C
 - [x] C++
-- [ ] C#
+- [x] C#
 - [x] Elixir
 - [x] Go
 - [ ] Haskell
 - [x] Java
 - [x] JavaScript
-- [ ] Kotlin
-- [ ] Lua
-- [ ] Php
+- [x] Kotlin
+- [x] Lua
+- [x] Php
 - [x] Python
-- [ ] React TypeScript
+- [x] React TypeScript
 - [x] Ruby
-- [ ] Rust
+- [x] Rust
 - [ ] Scala
-- [ ] Swift
+- [x] Swift
 - [x] TypeScript
 
 The presence of an unsupported language in this list does not constitute a commitment to support it in the future. Remember that the docstrings feature is in [beta](/early-access#beta).
 
 :::note
-In the case of JavaScript and TypeScript, there are tons of ways to declare functions. At the moment, we only support the keyword `function` at the top level.
+In the case of JavaScript and TypeScript and the React versions of both, there are tons of ways to declare functions. At the moment, we only support the keyword `function` at the top level.
 :::
