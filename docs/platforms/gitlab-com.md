@@ -80,3 +80,13 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 The webhook `https://coderabbit.ai/gitlabHandler` will now be installed in your repositories.
 
 ![GitLab Webhook Example](/img/integrations/gitlab-webhook.png)
+
+### Troubleshooting
+
+:::note
+
+If you are experiencing issues with the webhook, such as coderabbit not being able to access the repository, or not reviewing pull requests, you can manually delete the webhook to the repository.
+
+Then refresh the repository page in the CodeRabbit app and you can reinstall the webhook.
+
+:::
