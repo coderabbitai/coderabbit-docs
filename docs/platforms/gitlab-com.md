@@ -89,4 +89,6 @@ If you are experiencing issues with the webhook, such as coderabbit not being ab
 
 Then refresh the repository page in the CodeRabbit app and you can reinstall the webhook.
 
+If you cannot install the webhook please check that your GitLab user has the necessary permissions to install the webhook and the PAT is not expired.
+
 :::
