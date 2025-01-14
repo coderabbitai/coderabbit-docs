@@ -41,19 +41,19 @@
 
 ## Best Practices
 
-1. **Review Workflow**
+### Review Workflow
 
 - Start with `@coderabbitai review` for checking new changes
 - Use `@coderabbitai full review` when major changes require a fresh perspective
 - Generate summaries after significant updates using `@coderabbitai summary`
 
-2. **Managing Large Changes**
+### Managing Large Changes
 
 - Use `@coderabbitai pause` before making multiple commits
 - Resume reviews with `@coderabbitai resume` when ready
 - Consider `@coderabbitai full review` after substantial changes
 
-3. **Documentation Flow**
+### Documentation Flow
 
 - Run `@coderabbitai generate docstrings` after finalizing function implementations
 - Learn more about [docstring generation](/finishing-touches/docstrings)
