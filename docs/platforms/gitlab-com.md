@@ -90,7 +90,7 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 
 ### Group Access Token
 
-Creating a Group Access token automatically creates a bot user. With this, you simply need to provide the token, and we will take care of the rest. You will need to configure the token with developer access. Do keep in mind, a group access token will only have a scope of the group it is created in. Additional groups will require new group access tokens.
+Creating a Group Access Token in GitLab automatically generates a bot user. Ensure that the token is configured with Developer access. Once set up, you only need to provide this token for integration. Note that a Group Access Token is limited to the scope of the group where it was created. To configure additional groups, you will need to generate a separate Group Access Token for each group.
 
 :::note
 
