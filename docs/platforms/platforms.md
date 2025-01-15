@@ -19,7 +19,7 @@ CodeRabbit supports various Git platforms to provide code review for your reposi
 
 | Host                | Support                               |
 | ------------------- | ------------------------------------- |
-| GitLab.com          | [Supported](gitlab-com.md)            |
+| GitLab.com          | [Supported](gitlab-com.mdx)           |
 | GitLab Self Managed | [Supported](self-hosted-gitlab.md)    |
 | GitLab Self Hosted  | [Supported](../self-hosted/gitlab.md) |
 
