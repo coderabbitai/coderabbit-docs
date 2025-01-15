@@ -17,19 +17,19 @@ This guide will assist you in effectively integrating CodeRabbit with SaaS GitLa
 
 To enable CodeRabbit to interact with your GitLab repositories, an access token is required. This token grants the necessary permissions for interacting with the Merge Requests and Discussions APIs.
 
-    1.	Personal Access Token (PAT): You can create a new GitLab account specifically for CodeRabbit, name it “CodeRabbit” and treat it as a service account. Then generate a PAT from it where PAT will enable seamless integration between CodeRabbit and your GitLab repositories.
-    2.	Group Access Token: If your organization uses GitLab Premium or Ultimate, you can generate a Group Access Token. This option automatically creates a bot user associated with the group for managing access and posting reviews.
+    1. Personal Access Token (PAT): You can create a new GitLab account specifically for CodeRabbit, name it “CodeRabbit” and treat it as a service account. Then generate a PAT from it where PAT will enable seamless integration between CodeRabbit and your GitLab repositories.
+    2. Group Access Token: If your organization uses GitLab Premium or Ultimate, you can generate a Group Access Token. This option automatically creates a bot user associated with the group for managing access and posting reviews.
 
 ### Personal Access Token
 
 We recommend creating a new user as a service account, associating this user to the group you'd like to install CodeRabbit on, and providing CodeRabbit with the personal access token to allow access. During the installation process, CodeRabbit will automatically configure the required webhook for seamless integration.
 
 <div class="center-image">
-	<img
-		src="/img/integrations/gitlab_user_choice.png"
-		alt="GitLab user modal choice"
-		width="1000"
-	/>
+ <img
+  src="/img/integrations/gitlab_user_choice.png"
+  alt="GitLab user modal choice"
+  width="1000"
+ />
 </div>
 
 :::note
@@ -39,12 +39,12 @@ If you wish to change the review user, you must provide the access token for the
 :::
 
 <div class="center-image">
-	<img
-		src="/img/integrations/gitlab_organization_user.png"
-		alt="GitLab organization user modal
+ <img
+  src="/img/integrations/gitlab_organization_user.png"
+  alt="GitLab organization user modal
 choice"
-		width="1000"
-	/>
+  width="1000"
+ />
 </div>
 
 #### Recommendations
@@ -79,11 +79,11 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 10. Note down the token as it will only be displayed once.
 
 <div class="center-image">
-	<img
-		src="/img/integrations/admin-access-token.png"
-		alt="GitLab personal access token configuration page"
-		width="1000"
-	/>
+ <img
+  src="/img/integrations/admin-access-token.png"
+  alt="GitLab personal access token configuration page"
+  width="1000"
+ />
 </div>
 
 ---
@@ -124,21 +124,21 @@ You can confirm the correct user is being selected by verifying the user ID show
 3. Select **Install Repositories**.
 
 <div class="center-image">
-	<img
-		src="/img/integrations/gitlab-repo-install.png"
-		alt="GitLab Repo Install Modal"
-		width="1000"
-	/>
+ <img
+  src="/img/integrations/gitlab-repo-install.png"
+  alt="GitLab Repo Install Modal"
+  width="1000"
+ />
 </div>
 
 The webhook `https://coderabbit.ai/gitlabHandler` will now be installed for the projects selected.
 
 <div class="center-image">
-	<img
-		src="/img/integrations/gitlab-webhook.png"
-		alt="GitLab Webhook Example"
-		width="1000"
-	/>
+ <img
+  src="/img/integrations/gitlab-webhook.png"
+  alt="GitLab Webhook Example"
+  width="1000"
+ />
 </div>
 
 ### Troubleshooting
