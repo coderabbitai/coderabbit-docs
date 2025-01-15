@@ -90,7 +90,7 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 
 ### Group Access Token
 
-Creating a Group Access token automatically creates a bot user. With this, you simply just need to provide the token, and we will take care of the rest. Do keep in mind, a group access token only has a scope of the group it is created for. Additional groups that you wish to install CodeRabbit on will require a new group access token.
+Creating a Group Access token automatically creates a bot user. With this, you simply need to provide the token, and we will take care of the rest. You will need to configure the token with developer access. Do keep in mind, a group access token will only have a scope of the group it is created in. Additional groups will require new group access tokens.
 
 :::note
 
