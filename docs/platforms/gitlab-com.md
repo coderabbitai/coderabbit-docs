@@ -17,12 +17,12 @@ This guide will assist you in effectively integrating CodeRabbit with SaaS GitLa
 
 To enable CodeRabbit to interact with your GitLab repositories, an access token is required. This token grants the necessary permissions for interacting with the Merge Requests and Discussions APIs.
 
-    1.	Personal Access Token (PAT): You can generate a PAT using a service account. We recommend creating a dedicated service account, associating it with the appropriate base group, and generating the PAT from this account.
+    1.	Personal Access Token (PAT): You can create a new GitLab account specifically for CodeRabbit, name it “CodeRabbit” and treat it as a service account. Then generate a PAT from it where PAT will enable seamless integration between CodeRabbit and your GitLab repositories.
     2.	Group Access Token: If your organization uses GitLab Premium or Ultimate, you can generate a Group Access Token. This option automatically creates a bot user associated with the group for managing access and posting reviews.
 
 ### Personal Access Token
 
-We recommend creating a new user as a service account, associating this user to the group you'd like to install coderabbit on, and provide CodeRabbit with a the personal access. During the installation process, CodeRabbit will automatically configure the required webhook for seamless integration.
+We recommend creating a new user as a service account, associating this user to the group you'd like to install CodeRabbit on, and providing CodeRabbit with the personal access token to allow access. During the installation process, CodeRabbit will automatically configure the required webhook for seamless integration.
 
 <div class="center-image">
 	<img
@@ -67,7 +67,7 @@ choice"
 
 GitLab provides an option to generate a personal access token for a new user. Follow these steps to generate the token:
 
-1. Log in as the user intended for CodeRabbit reviews. You can treat this user as an service account.
+1. Log in using the user designated for CodeRabbit reviews. This user serves as a service account for managing reviews and related activities.
 2. Select your avatar on the left sidebar.
 3. Choose **Edit Profile**.
 4. Select **Access Tokens** from the left sidebar.
@@ -90,7 +90,7 @@ GitLab provides an option to generate a personal access token for a new user. Fo
 
 ### Group Access Token
 
-Group Access token automatically create a bot user upon creation. With this, you simply just need to provide us the token and we will take care of the rest. Do keep in mind, a group access token only has a scope of the group it is created for. Additional groups that you wish to install CodeRabbit on will require a new group access token.
+Creating a Group Access token automatically creates a bot user. With this, you simply just need to provide the token, and we will take care of the rest. Do keep in mind, a group access token only has a scope of the group it is created for. Additional groups that you wish to install CodeRabbit on will require a new group access token.
 
 :::note
 
