@@ -7,47 +7,9 @@ sidebar_position: 4
 
 CodeRabbit utilizes an internal knowledge base that integrates with several external services to provide a seamless review and issue management experience.
 
-## Issues
+## Issue Tracking Integration
 
-The issues knowledge base allows CodeRabbit to use the context from linked and related issues while reviewing the code.
-
-### Jira {#jira}
-
-```mdx-code-block
-import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
-
-<ProPlanNotice />
-```
-
-#### CodeRabbit App
-
-1. Navigate to [integrations][integrations] in the CodeRabbit app.
-2. Toggle the Jira switch to enable the integration.
-
-Upon enabling the Jira integration, CodeRabbit will redirect you to the Jira login page. Enter your Jira credentials to authenticate the integration.
-
-#### CodeRabbit Configuration
-
-1. Add Jira's Project Keys to the `knowledge_base.jira.project_keys` field in your project's CodeRabbit configuration file at `.coderabbit.yaml`.
-
-### Linear {#Linear}
-
-```mdx-code-block
-<ProPlanNotice />
-```
-
-#### CodeRabbit App
-
-1. Navigate to [integrations][integrations] in the CodeRabbit app.
-2. Toggle the Linear switch to enable the integration.
-
-Upon enabling the Linear integration, CodeRabbit will redirect you to the Linear login page. Enter your Linear credentials to authenticate the integration.
-
-#### CodeRabbit Configuration
-
-1. Add Linear's Team Keys to the `knowledge_base.linear.team_keys` field in your project's CodeRabbit configuration file at `.coderabbit.yaml`.
-
-[integrations]: https://app.coderabbit.ai/integrations
+CodeRabbit can integrate with your issue tracking systems to provide better context during code reviews. For details on setting up issue tracking integrations, see our [Issue Integrations](./issue-integrations.md) guide.
 
 ## Learnings {#learnings}
 

@@ -140,3 +140,15 @@ The webhook `https://coderabbit.ai/gitlabHandler` will now be installed for the 
 		width="1000"
 	/>
 </div>
+
+### Troubleshooting
+
+:::note
+
+If you are experiencing issues with the webhook, such as coderabbit not being able to access the repository, or not reviewing pull requests, you can manually delete the webhook to the repository.
+
+Then refresh the repository page in the CodeRabbit app and you can reinstall the webhook.
+
+If you cannot install the webhook please check that your GitLab user has the necessary permissions to install the webhook and the PAT is not expired.
+
+:::
