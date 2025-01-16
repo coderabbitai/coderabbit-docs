@@ -22,6 +22,7 @@ Set the following Repository permissions:
 - Issues: Read & write
 - Metadata: Read-only
 - Pull requests: Read & write
+- Actions: Read-only
 
 Set the following Organization permissions:
 
@@ -100,7 +101,7 @@ GITHUB_APP_PEM_FILE=<flattened-pem-file>
 
 CODERABBIT_LICENSE_KEY=<license-key>
 
-CODERABBIT_API_KEY=[<coderabbitai-api-key>]
+CODERABBIT_API_KEY=<coderabbitai-api-key>
 # This will use your CodeRabbit API key to store learnings on our servers.
 ENABLE_LEARNINGS=[true]
 ENABLE_METRICS=[true]

@@ -91,7 +91,7 @@ GITLAB_BOT_TOKEN=<personal-access-token>
 GITLAB_WEBHOOK_SECRET=<webhook-secret-key>
 CODERABBIT_LICENSE_KEY=<license-key>
 
-CODERABBIT_API_KEY=[<coderabbitai-api-key>]
+CODERABBIT_API_KEY=<coderabbitai-api-key>
 ENABLE_LEARNINGS=[true]
 ENABLE_METRICS=[true]
 

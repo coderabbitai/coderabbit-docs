@@ -86,7 +86,7 @@ AZURE_DEVOPS_BOT_TOKEN=<personal-access-token>
 AZURE_DEVOPS_BOT_USERNAME=<bot-user-username>
 CODERABBIT_LICENSE_KEY=<license-key>
 
-CODERABBIT_API_KEY=[<coderabbitai-api-key>]
+CODERABBIT_API_KEY=<coderabbitai-api-key>
 ENABLE_LEARNINGS=[true]
 ENABLE_METRICS=[true]
 
