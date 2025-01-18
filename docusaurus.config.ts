@@ -111,7 +111,7 @@ const config: Config = {
 					{
 						from: "/configure-coderabbit",
 						to: "/getting-started/configure-coderabbit",
-					}
+					},
 				],
 			},
 		],
