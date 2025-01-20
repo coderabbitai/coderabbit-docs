@@ -11,7 +11,7 @@ The self-hosted option is only available for CodeRabbit Enterprise customers wit
 
 :::
 
-## Create a Azure DevOps User
+## Create an Azure DevOps User
 
 - **Username**: Set the username to "CodeRabbit" for easier identification (optional).
 - **Profile Image**: Use the CodeRabbitAI logo for the user image (optional).
@@ -61,14 +61,10 @@ LLM_PROVIDER=azure-openai
 LLM_TIMEOUT=360000
 AZURE_OPENAI_ENDPOINT=<azure-openai-endpoint>
 AZURE_OPENAI_API_KEY=<key>
-## it is recommended to use gpt-4o-mini, o1-mini, and o1-preview deployments
+## it is recommended to use gpt-4o-mini, o1-mini, and o1-preview deployments. The production release of o1 model is inferior to the preview release as of now. Also, please make sure that the deployment name of o1-preview mentions "o1-preview" in it.
 AZURE_GPT4OMINI_DEPLOYMENT_NAME=<gpt-4o-mini-deployment-name>
 AZURE_O1MINI_DEPLOYMENT_NAME=[<o1-mini-deployment-name>]
-AZURE_O1_DEPLOYMENT_NAME=[<o1-preview-deployment-name>]
-## gpt-4o is optional
-AZURE_GPT4O_DEPLOYMENT_NAME=<gpt-4o-deployment-name, modelVersion: 2024-08-06>
-## gpt-4-turbo is optional: it’s expensive but provides better reviews than gpt-4o
-AZURE_GPT4TURBO_DEPLOYMENT_NAME=[<gpt-4-turbo-deployment-name, modelVersion: turbo-2024-04-09>]
+AZURE_O1_DEPLOYMENT_NAME=[<o1-deployment-name>]
 
 # if using AWS Bedrock
 AWS_ACCESS_KEY_ID=<aws-access-key>
@@ -115,7 +111,7 @@ docker pull <docker-registry>/coderabbit-agent:latest
 
 ### Verify the image is up
 
-You can query `/health` endpoint to verify that the coderabbit-agent service is up and running.
+You can query `/health` endpoint to verify that the `coderabbit-agent` service is up and running.
 
 ```bash
 curl 127.0.0.1:8080/health
