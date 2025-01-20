@@ -12,7 +12,7 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
 # Docstrings
 
-Docstrings generation is part of the [finishing touches](/future-developments#finishing-touches) initiative.
+Docstrings generation is part of the [finishing touches](/future-development#finishing-touches) initiative.
 
 :::info
 
