@@ -303,3 +303,13 @@ a[docid="docs"] > svg {
 .center-image {
 	text-align: center;
 }
+/* Hide "docs" text that overlays the logo */
+.navbar__items a[href="/"] {
+	font-size: 0;
+	visibility: hidden;
+}
+
+/* Ensure the logo remains visible */
+.navbar__logo {
+	visibility: visible;
+}
