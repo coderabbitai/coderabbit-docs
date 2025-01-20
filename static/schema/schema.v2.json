@@ -156,6 +156,11 @@
 							"default": true,
 							"description": "Set the commit status to 'pending' when the review is in progress and 'success' when it is complete."
 						},
+						"fail_commit_status": {
+							"type": "boolean",
+							"default": false,
+							"description": "Set the commit status to 'failure' when the PR cannot be reviewed by CodeRabbit for any reason."
+						},
 						"collapse_walkthrough": {
 							"type": "boolean",
 							"default": false,

@@ -77,8 +77,9 @@ BITBUCKET_SERVER_URL=<bitbucket-server-url>/rest
 BITBUCKET_SERVER_WEBHOOK_SECRET=<webhook-secret>
 BITBUCKET_SERVER_BOT_TOKEN=<personal-access-token>
 BITBUCKET_SERVER_BOT_USERNAME=<bot-user-username>
+
 CODERABBIT_LICENSE_KEY=<license-key>
-CODERABBIT_API_KEY=[<coderabbitai-api-key>]
+CODERABBIT_API_KEY=<coderabbitai-api-key>
 
 # Optional Features
 ENABLE_LEARNINGS=[true]

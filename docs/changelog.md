@@ -5,6 +5,14 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## January 13, 2025
+
+### GitLab Pipeline Failure Detection and Remediation
+
+We've expanded our pipeline error detection capabilities to GitLab Users! Just like with GitHub Actions, you can now automatically detect and fix pipeline failures in your GitLab CI/CD workflows.
+
+---
+
 ## January 2, 2025
 
 ### GitHub Action Failure Detection and Remediation

@@ -348,7 +348,7 @@ CodeRabbit is built for production environments with:
 
 ### Three Steps to Better Code Reviews
 
-1. **Sign in** with [GitHub](/platforms/github-com), [GitLab](/platforms/gitlab-com), or [Azure DevOps](/platforms/azure-devops)
+1. **Sign in** with [GitHub](../platforms/github-com.md), [GitLab](../platforms/gitlab-com.mdx), or [Azure DevOps](../platforms/azure-devops.md)
 2. Select and add repositories in CodeRabbit dashboard
 3. That's it. You're good to go.
 
