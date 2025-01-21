@@ -9,7 +9,7 @@ sidebar_position: 13
 
 ### Linear Issue Creation
 
-We have added the ability to create issues directly from AI Code Review Comments allowing developers to convert code review feedback into actionable Linear issues
+We have added the ability to create issues directly from AI Code Review Comments allowing developers to convert code review feedback into actionable Linear issues.
 
 ---
 
