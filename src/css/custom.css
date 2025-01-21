@@ -90,19 +90,6 @@ a[docid="docs"] > svg {
 	align-items: center;
 }
 
-@media screen and (max-width: 480px) {
-	a.navbar__item.navbar__link[docid="docs"] {
-		display: none !important;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	a.navbar__item.navbar__link[href="https://coderabbit.ai/blog"]
-	{
-		display: none;
-	}
-}
-
 [data-theme="light"] img[src$="#gh-dark-mode-only"],
 [data-theme="dark"] img[src$="#gh-light-mode-only"] {
 	display: none;
@@ -155,19 +142,6 @@ a[docid="docs"] > svg {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-@media screen and (max-width: 480px) {
-	a.navbar__item.navbar__link[docid="docs"] {
-		display: none !important;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	a.navbar__item.navbar__link[href="https://coderabbit.ai/blog"]
-	{
-		display: none;
-	}
 }
 
 /* Light mode Discord icon */
@@ -303,13 +277,16 @@ a[docid="docs"] > svg {
 .center-image {
 	text-align: center;
 }
-/* Hide "docs" text that overlays the logo */
-.navbar__items a[href="/"] {
-	font-size: 0;
-	visibility: hidden;
+
+@media screen and (max-width: 480px) {
+	a.navbar__item.navbar__link[href="/"] {
+		display: none;
+	}
 }
 
-/* Ensure the logo remains visible */
-.navbar__logo {
-	visibility: visible;
+@media screen and (max-width: 480px) {
+	a.navbar__item.navbar__link[href="https://coderabbit.ai/blog"]
+	{
+		display: none;
+	}
 }
