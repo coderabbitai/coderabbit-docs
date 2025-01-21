@@ -31,6 +31,10 @@ Upon enabling the Jira integration, CodeRabbit will redirect you to the Jira log
 ```mdx-code-block
 <ProPlanNotice />
 ```
+This integration allows CodeRabbit to connect your pull requests seamlessly with Linear, enabling bi-directional issue tracking and automated issue creation in Linear with code context. 
+
+CodeRabbit creates issues directly from pull requests, tracks completion of issue objectives, and allows developers to convert code review feedback into actionable Linear issues. 
+
 
 ### CodeRabbit App
 
