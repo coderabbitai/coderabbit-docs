@@ -28,9 +28,9 @@ Upon enabling the Jira integration, CodeRabbit will redirect you to the Jira log
 
 ### Example Usage
 
-Inside your pull request, you can include a issue to for CodeRabbit to perform an assessment and validate if the code satisfies the requirements of the issue.
+You can link an issue to your pull request, allowing CodeRabbit to assess whether your changes satisfy the issue's requirements.
 
-To link a Jira Issue, you can add the Jira Issue into the PR description.
+To link a Jira Issue, you can add the Jira Issue into the PR description as shown below.
 
 ```text
 // (Jira Project Key - Issue Number)
@@ -58,7 +58,7 @@ Upon enabling the Linear integration, CodeRabbit will redirect you to the Linear
 
 ### Example Usage
 
-To link a Linear Issue, you can add the Linear Issue via team key and issue number into the PR description.
+To link a Linear Issue, you can add the Linear Issue via the team key and issue number into the PR description as shown below.
 
 ```text
 // (Linear Team Key - Issue Number)
@@ -75,7 +75,7 @@ GitHub issue integration works automatically without any additional setup requir
 
 ### Example Usage
 
-To link a GitHub Issue, you can add the issue into the PR description.
+To link a GitHub Issue, you can add the issue into the PR description as shown below.
 
 ```text
 // (# GitHub Issue Number)
