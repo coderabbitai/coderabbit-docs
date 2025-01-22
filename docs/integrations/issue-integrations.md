@@ -26,6 +26,17 @@ Upon enabling the Jira integration, CodeRabbit will redirect you to the Jira log
 
 1. Add Jira's Project Keys to the `knowledge_base.jira.project_keys` field in your project's CodeRabbit configuration file at `.coderabbit.yaml`.
 
+### Example Usage
+
+Inside your pull request, you can include a issue to for CodeRabbit to perform an assessment and validate if the code satisfies the requirements of the issue.
+
+To link a Jira Issue, you can add the Jira Issue into the PR description.
+
+```text
+// (Jira Project Key - Issue Number)
+Closes CR-5
+```
+
 ## Linear {#Linear}
 
 ```mdx-code-block
@@ -44,3 +55,29 @@ Upon enabling the Linear integration, CodeRabbit will redirect you to the Linear
 1. Add Linear's Team Keys to the `knowledge_base.linear.team_keys` field in your project's CodeRabbit configuration file at `.coderabbit.yaml`.
 
 [integrations]: https://app.coderabbit.ai/integrations
+
+### Example Usage
+
+To link a Linear Issue, you can add the Linear Issue via team key and issue number into the PR description.
+
+```text
+// (Linear Team Key - Issue Number)
+Closes ENG-123
+```
+
+## GitHub
+
+```mdx-code-block
+<ProPlanNotice />
+```
+
+GitHub issue integration works automatically without any additional setup required.
+
+### Example Usage
+
+To link a GitHub Issue, you can add the issue into the PR description.
+
+```text
+// (# GitHub Issue Number)
+Closes #123
+```
