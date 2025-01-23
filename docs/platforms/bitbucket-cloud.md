@@ -22,11 +22,11 @@ To enable CodeRabbit to interact with your Bitbucket repositories, an app passwo
 We recommend creating a new user as a service account, associating this user to the workspace you'd like to install CodeRabbit on, and providing CodeRabbit with the app password to allow access. During the installation process, CodeRabbit will automatically configure the required webhook for seamless integration.
 
 <div class="center-image">
-	<img
-		src="/img/integrations/bitbucket-app-password-modal.png"
-		alt="Bitbucket user modal"
-		width="1000"
-	/>
+ <img
+  src="/img/integrations/bitbucket-app-password-modal.png"
+  alt="Bitbucket user modal"
+  width="1000"
+ />
 </div>
 
 :::note
@@ -70,11 +70,11 @@ Bitbucket provides an option to generate an app password for a new user. Follow 
 8. Note down the app password as it will only be displayed once.
 
 <div class="center-image">
-	<img
-		src="/img/integrations/bitbucket-app-password.png"
-		alt="Bitbucket app password configuration page"
-		width="1000"
-	/>
+ <img
+  src="/img/integrations/bitbucket-app-password.png"
+  alt="Bitbucket app password configuration page"
+  width="1000"
+ />
 </div>
 
 ### Where to Provide CodeRabbit the App Password
@@ -92,21 +92,21 @@ You can confirm the correct user is being selected by verifying the user ID show
 3. Select **Install Repositories**.
 
 <div class="center-image">
-	<img
-		src="/img/integrations/gitlab-repo-install.png"
-		alt="Bitbucket Repo Install Modal"
-		width="1000"
-	/>
+ <img
+  src="/img/integrations/gitlab-repo-install.png"
+  alt="Bitbucket Repo Install Modal"
+  width="1000"
+ />
 </div>
 
 The webhook `https://coderabbit.ai/bitbucketHandler` will now be installed for the projects selected.
 
 <div class="center-image">
-	<img
-		src="/img/integrations/bitbucket-webhook.png"
-		alt="Bitbucket Webhook Example"
-		width="1000"
-	/>
+ <img
+  src="/img/integrations/bitbucket-webhook.png"
+  alt="Bitbucket Webhook Example"
+  width="1000"
+ />
 </div>
 
 ### Troubleshooting
