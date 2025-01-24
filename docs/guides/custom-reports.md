@@ -274,7 +274,7 @@ Include:
 - Technical debt analysis
 ```
 
-### Advanced Formatting
+## Advanced Example Templates
 
 Heres a more advanced example of a custom report template:
 
