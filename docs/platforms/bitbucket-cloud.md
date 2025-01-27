@@ -1,7 +1,7 @@
 ---
 title: "[Beta] Bitbucket Cloud"
-description: Learn how to integrate CodeRabbit with Bitbucket Cloud.
-sidebar_label: Bitbucket Cloud BETA
+description: "Learn how to integrate CodeRabbit with Bitbucket Cloud."
+sidebar_label: "[Beta] Bitbucket Cloud"
 sidebar_position: 6
 ---
 
@@ -17,7 +17,9 @@ This guide will assist you in effectively integrating CodeRabbit with Bitbucket 
 
 To enable CodeRabbit to interact with your Bitbucket repositories, an app password is required. This token grants the necessary permissions for interacting with the Merge Requests and Discussions APIs.
 
-    1. App password: You can create a new Bitbucket account specifically for CodeRabbit, name it “CodeRabbit” and treat it as a service account. Then generate an App Password from it which it will enable seamless integration between CodeRabbit and your Bitbucket repositories.
+1. Create a new Bitbucket account specifically for CodeRabbit and treat it as a service account.
+2. Name the account "CodeRabbit".
+3. Generate an App Password to enable seamless integration between CodeRabbit and your Bitbucket repositories.
 
 We recommend creating a new user as a service account, associating this user to the workspace you'd like to install CodeRabbit on, and providing CodeRabbit with the app password to allow access. During the installation process, CodeRabbit will automatically configure the required webhook for seamless integration.
 
