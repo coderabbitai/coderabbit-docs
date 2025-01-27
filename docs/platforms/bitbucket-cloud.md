@@ -1,5 +1,5 @@
 ---
-title: Integrating CodeRabbit with Bitbucket Cloud
+title: [Beta] Bitbucket Cloud
 description: Learn how to integrate CodeRabbit with Bitbucket Cloud.
 sidebar_label: Bitbucket Cloud BETA
 sidebar_position: 6
@@ -13,7 +13,7 @@ CodeRabbit integrates with Bitbucket Cloud to enhance code review and collaborat
 
 This guide will assist you in effectively integrating CodeRabbit with Bitbucket Cloud.
 
-## App password
+## Configure App Password
 
 To enable CodeRabbit to interact with your Bitbucket repositories, an app password is required. This token grants the necessary permissions for interacting with the Merge Requests and Discussions APIs.
 
@@ -35,7 +35,7 @@ If you wish to change the review user, you must provide the app password for the
 
 :::
 
-#### Recommendations
+### Recommendations
 
 - **Create a dedicated user for CodeRabbit** - This ensures the user is exclusively for CodeRabbit, allowing better access control.
 - **Use "CodeRabbit" as the username** - This makes the user easily recognizable for future reference.
