@@ -1,5 +1,5 @@
 ---
-title: [Beta] Bitbucket Cloud
+title: "[Beta] Bitbucket Cloud"
 description: Learn how to integrate CodeRabbit with Bitbucket Cloud.
 sidebar_label: Bitbucket Cloud BETA
 sidebar_position: 6
