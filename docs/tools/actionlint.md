@@ -1,7 +1,7 @@
 ---
-title: Actionlint
-sidebar_label: Actionlint
-description: CodeRabbit's guide to Actionlint.
+title: actionlint
+sidebar_label: actionlint
+description: CodeRabbit's guide to actionlint.
 ---
 
 ```mdx-code-block
@@ -10,7 +10,7 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-[Actionlint](https://github.com/rhysd/actionlint/) is a static checker for
+[`actionlint`](https://github.com/rhysd/actionlint/) is a static checker for
 GitHub Actions workflow files.
 
 ## Files
@@ -26,4 +26,4 @@ CodeRabbit will use the default configuration.
 
 ## Links
 
-- [Actionlint Configuration](https://github.com/rhysd/actionlint/blob/main/docs/config.md/)
+- [`actionlint` Configuration](https://github.com/rhysd/actionlint/blob/main/docs/config.md/)

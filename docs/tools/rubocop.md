@@ -1,7 +1,7 @@
 ---
-title: Rubocop
-sidebar_label: Rubocop
-description: CodeRabbit's guide to Rubocop.
+title: RuboCop
+sidebar_label: RuboCop
+description: CodeRabbit's guide to RuboCop.
 ---
 
 ```mdx-code-block
@@ -10,11 +10,11 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-[Rubocop](https://rubocop.org/) A Ruby static code analyzer and formatter, based on the community Ruby style guide.
+[RuboCop](https://rubocop.org/) A Ruby static code analyzer and formatter, based on the community Ruby style guide.
 
 ## Files
 
-Rubocop will run on the following files and extensions:
+RuboCop will run on the following files and extensions:
 
 - `.rb`
 - `.arb`
@@ -72,7 +72,7 @@ Rubocop will run on the following files and extensions:
 
 ## Configuration
 
-Rubocop uses a YAML style configuration file. We look for the following files anywhere in the repository:
+RuboCop uses a YAML style configuration file. We look for the following files anywhere in the repository:
 
 - `.rubocop.yml`
 - `.rubocop.yaml`
@@ -81,4 +81,4 @@ CodeRabbit will use the default settings based on the profile selected if no con
 
 ## Links
 
-- [Rubocop Configuration](https://docs.rubocop.org/rubocop/1.65/configuration.html/)
+- [RuboCop Configuration](https://docs.rubocop.org/rubocop/1.65/configuration.html/)

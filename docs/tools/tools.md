@@ -45,53 +45,53 @@ Remove extraneous f prefix
 | Technology                  | Tools                                                      | Category                       |
 | :-------------------------- | :--------------------------------------------------------- | :----------------------------- |
 | All                         | [Gitleaks][Gitleaks]                                       | Code Security                  |
-| CircleCi                    | [CircleCi][CircleCi]                                       | Configuration Validation       |
+| CircleCI                    | [CircleCI][CircleCI]                                       | Configuration Validation       |
 | CloudFormation              | [Checkov][Checkov]                                         | Code Security                  |
 | Cppcheck                    | [Cppcheck][Cppcheck]                                       | Code Quality                   |
 | CSS                         | [Biome][Biome]                                             | Code Quality                   |
 | Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                   | Code Quality, Code Security    |
-| GitHub Actions              | [Actionlint][Actionlint]                                   | Code Quality                   |
+| GitHub Actions              | [actionlint][actionlint]                                   | Code Quality                   |
 | Go                          | [golangci-lint][golangci-lint]                             | Code Quality                   |
 | Helm                        | [Checkov][Checkov]                                         | Code Security                  |
 | Javascript                  | [Biome][Biome]                                             | Code Quality                   |
 | JSON, JSONC                 | [Biome][Biome]                                             | Code Quality                   |
 | JSX                         | [Biome][Biome]                                             | Code Quality                   |
-| Kotlin                      | [Detekt][Detekt]                                           | Code Quality                   |
+| Kotlin                      | [detekt][detekt]                                           | Code Quality                   |
 | Kubernetes                  | [Checkov][Checkov]                                         | Code Security                  |
-| Markdown                    | [Markdownlint][Markdownlint], [LanguageTool][LanguageTool] | Code Quality, Grammar Checking |
+| Markdown                    | [markdownlint][markdownlint], [LanguageTool][LanguageTool] | Code Quality, Grammar Checking |
 | PHP                         | [PHPStan][PHPStan]                                         | Code Quality                   |
 | Plaintext                   | [LanguageTool][LanguageTool]                               | Grammar and Spell Checking     |
 | Java                        | [PMD][PMD]                                                 | Code Quality                   |
 | Protobuf                    | [Buf][Buf]                                                 | Code Quality                   |
 | Python                      | [Ruff][Ruff]                                               | Code Quality                   |
 | Regal                       | [Regal][Regal]                                             | Code Quality                   |
-| Ruby                        | [Rubocop][Rubocop]                                         | Code Quality                   |
+| Ruby                        | [RuboCop][RuboCop]                                         | Code Quality                   |
 | Semgrep                     | [Semgrep][Semgrep]                                         | Code Security                  |
 | Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   | Code Quality                   |
 | Swift                       | [SwiftLint][SwiftLint]                                     | Code Quality                   |
 | Terraform                   | [Checkov][Checkov]                                         | Code Security                  |
 | TSX                         | [Biome][Biome]                                             | Code Quality                   |
 | Typescript                  | [Biome][Biome]                                             | Code Quality                   |
-| YAML                        | [YamlLint][YamlLint]                                       | Code Quality                   |
+| YAML                        | [YAMLlint][YAMLlint]                                       | Code Quality                   |
 
 [ShellCheck]: ./shellcheck.md
 [Ruff]: ./ruff.md
-[Markdownlint]: ./markdownlint.md
+[markdownlint]: ./markdownlint.md
 [LanguageTool]: ./languagetool.md
 [Biome]: ./biome.md
 [Hadolint]: ./hadolint.md
 [SwiftLint]: ./swiftlint.md
 [PHPStan]: ./phpstan.md
 [golangci-lint]: ./golangci-lint.md
-[YamlLint]: ./yamllint.md
+[YAMLlint]: ./yamllint.md
 [Gitleaks]: ./gitleaks.md
 [Checkov]: ./checkov.md
-[Detekt]: ./detekt.md
-[Rubocop]: ./rubocop.md
+[detekt]: ./detekt.md
+[RuboCop]: ./rubocop.md
 [Buf]: ./buf.md
-[Actionlint]: ./actionlint.md
+[actionlint]: ./actionlint.md
 [Regal]: ./regal.md
 [PMD]: ./pmd.md
 [Cppcheck]: ./cppcheck.md
-[CircleCi]: ./circleci.md
+[CircleCI]: ./circleci.md
 [Semgrep]: ./semgrep.md

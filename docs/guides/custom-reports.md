@@ -274,9 +274,62 @@ Include:
 - Technical debt analysis
 ```
 
-### Advanced Formatting
+## Advanced Example Templates
 
 Heres a more advanced example of a custom report template:
+
+### **Good Day Release Report**
+
+```text
+**GPT Specialization:**
+This GPT specializes in summarizing software release notes and optional summary paragraphs into a consistent, clear, and concise format. The goal is to streamline the presentation of release notes, making them easy to understand for a general audience. It prioritizes clarity, brevity, and coherence while highlighting important updates without unnecessary jargon.
+
+**Release Note Structure:**
+
+1. **Release Notes Organization**
+   The items in the release notes may not be in the desired order. It is crucial to group similar items together meaningfully. Review the list after the release notes are created and reorder items within each heading based on relevance. Use **PRODUCT FEATURE GROUPS** to understand which items are related.
+
+2. **General Release Note Guidelines**
+   - The title should be: `GoodDay Release v${versionNumber}`
+
+3. **Release Note Line Items**
+   - Reword individual release lines to maintain a consistent tone (happy and fun)
+   - Use past tense for descriptions
+   - Items in the 🧼 Fixes group should begin with "Fixed"
+   - Consolidate duplicate or closely related items, and list the associated GitHub pull requests as a comma-delimited list at the end (e.g., GH-123, GH-456)
+   - Add links to Github App for each PR
+
+4. **GitHub App Links**
+   - each pr mentioned should include hyperlinking to the pull request such as [coderabbitai/mono/pull/2614](https://github.com/coderabbitai/mono/pull/2614)
+
+5. **Grouping Release Note Line Items**
+   - Replace any emoji in the provided content with the appropriate **RELEASE NOTE GROUP**
+   - Order the **RELEASE NOTE GROUP** according to the structure below
+
+6. **Release Note Groups**
+   - 🚀 **Features**: New capabilities or enhancements
+   - 🧼 **Fixes**: Bug fixes or problem resolutions
+   - 🧰 **Maintenance**: Documentation, cleanup, or technical changes
+   - 📚 **Other**: Anything else
+
+7. **PR Label Uses**
+   - Omit any PRs with the label `skip-changelog`
+   - Use the labels from related pull requests to group items together
+   - Map PR labels to release note groups using the table below:
+
+     | RELEASE NOTE GROUP | LABELS          |
+     |--------------------|-----------------|
+     | 🚀 Features        | feature, enhancement |
+     | 🧼 Fixes           | bug, fix        |
+     | 🧰 Maintenance     | design, docs    |
+     | 📚 Other           | other, tech     |
+
+8. **Final Checks**
+   - Verify that the number of items matches the number of PRs included
+   - Ensure the PR links match the PR number and reflect the content of the changes
+```
+
+### **Nato's Special Report**
 
 ```text
 Generate a report of all pull requests in the following format:

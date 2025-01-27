@@ -1,7 +1,7 @@
 ---
-title: Markdownlint
-sidebar_label: Markdownlint
-description: CodeRabbit's guide to Markdownlint.
+title: markdownlint
+sidebar_label: markdownlint
+description: CodeRabbit's guide to markdownlint.
 ---
 
 ```mdx-code-block
@@ -10,7 +10,7 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-[Markdownlint](https://github.com/DavidAnson/markdownlint) is a linter for Markdown.
+[`markdownlint-cli2`](https://github.com/DavidAnson/markdownlint) is a linter for Markdown.
 
 ## Files
 
@@ -21,7 +21,7 @@ Markdownlint will run on files with the following extensions:
 
 ## Configuration
 
-Markdownlint supports the following config files:
+`markdownlint-cli2` supports the following config files:
 
 - `.markdownlint.jsonc`
 - `.markdownlint.json`
@@ -32,4 +32,4 @@ CodeRabbit will use the default settings based on the profile selected if no con
 
 ## Links
 
-- [Markdownlint Configuration](https://github.com/DavidAnson/markdownlint?tab=readme-ov-file#configuration)
+- [`markdownlint-cli2` Configuration](https://github.com/DavidAnson/markdownlint?tab=readme-ov-file#configuration)

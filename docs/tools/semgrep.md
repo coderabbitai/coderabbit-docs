@@ -10,14 +10,13 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-[Semgrep](https://semgrep.dev/) is a static analysis tool designed to scan code
-for security vulnerabilities and code quality issues.
+[Semgrep](https://github.com/semgrep/semgrep) is an open-source static analysis tool designed to scan code for security vulnerabilities and code quality issues.
 
 ## Configuration
 
-Semgrep uses a YAML style configuration file. By default we will automatically
+Semgrep uses a YAML style configuration file. By default, we will automatically
 use the following files if any are set in the root directory of your
-repostitory.
+repository.
 
 - `semgrep.yml` or `semgrep.yaml`
 - `semgrep.config.yml` or `semgrep.config.yaml`
@@ -28,10 +27,12 @@ Semgrep supports the following config files:
   project's `.coderabbit.yaml` file or setting the "Review → Tools → Semgrep →
   Config File" field in CodeRabbit's settings page.
 
-Due to licensing, CodeRabbit does not ship with the [community-created Semgrep rules](https://github.com/returntocorp/semgrep-rules), but you're free to use these in your own `semgrep.yml` config file.
+Due to licensing, CodeRabbit does not ship with the [community-created Semgrep rules](https://github.com/returntocorp/semgrep-rules).
 
 :::note
-CodeRabbit will only run Semgrep if your repository contains a Semgrep config file. This config must use the default file names or you must define the path to this file in the `.coderabbit.yaml` or config UI.
+
+CodeRabbit will only run Semgrep if your repository contains a Semgrep config file. This config must use the default file names, or you must define the path to this file in the `.coderabbit.yaml` or config UI.
+
 :::
 
 ## Links
@@ -41,43 +42,21 @@ CodeRabbit will only run Semgrep if your repository contains a Semgrep config fi
 
 ## Files
 
-Semgrep will run on the following files and extensions:
+Semgrep will run on the following files types:
 
-- `Apex`
-- `Bash`
-- `.c`
-- `.cpp`
-- `.cs`
-- `.clj`
-- `.dart`
-- `Dockerfile`
-- `.ex`
-- `.html`
-- `.go`
-- `.java`
-- `.js`
-- `.jsx`
-- `.json`
-- `.jl`
-- `.jsonnet`
-- `.kt`
-- `.kts`
-- `Lisp`
-- `.lua`
-- `.ml`
-- `.php`
-- `.py`
-- `.r`
-- `.rb`
-- `.rs`
-- `.scala`
-- `Scheme`
-- `.sol`
-- `.swift`
-- `.tf`
-- `.ts`
-- `.tsx`
-- `.yaml`
-- `.xml`
-- `ERB`
-- `Jinja`
+- C/C++
+- C#
+- Go
+- Java
+- JavaScript
+- Kotlin
+- Python
+- TypeScript
+- Ruby
+- Rust
+- JSX
+- PHP
+- Scala
+- Swift
+- Terraform
+- JSON

@@ -380,12 +380,12 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable ShellCheck | ShellCheck is a static analysis tool that finds bugs in your shell. | Enable shellcheck integration. | v0.10.0"
+											"description": "Enable ShellCheck | ShellCheck is a static analysis tool that finds bugs in your shell. | Enable ShellCheck integration. | v0.10.0"
 										}
 									},
 									"additionalProperties": false,
 									"default": {},
-									"description": "Shellcheck is a static analysis tool that finds bugs in your shell scripts."
+									"description": "ShellCheck is a static analysis tool that finds bugs in your shell scripts."
 								},
 								"ruff": {
 									"type": "object",
@@ -393,7 +393,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable ruff integration. | v0.8.2"
+											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable Ruff integration. | v0.8.2"
 										}
 									},
 									"additionalProperties": false,
@@ -406,12 +406,12 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Markdownlint | Markdownlint is a static analysis tool for Node.js with a library of rules to enforce standards and consistency for Markdown files. | Enable markdownlint integration. | v0.37.0"
+											"description": "Enable markdownlint | markdownlint-cli2 is a static analysis tool to enforce standards and consistency for Markdown files. | Enable markdownlint integration. | v0.17.2"
 										}
 									},
 									"additionalProperties": false,
 									"default": {},
-									"description": "Markdownlint is a static analysis tool to enforce standards and consistency for Markdown files."
+									"description": "markdownlint-cli2 is a static analysis tool to enforce standards and consistency for Markdown files."
 								},
 								"github-checks": {
 									"type": "object",
@@ -583,12 +583,12 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Yamllint | yamllint is a linter for YAML files. | Enable yamllint integration. | v1.35.1"
+											"description": "Enable YAMLlint | YAMLlint is a linter for YAML files. | Enable YAMLlint integration. | v1.35.1"
 										}
 									},
 									"additionalProperties": false,
 									"default": {},
-									"description": "yamllint is a linter for YAML files."
+									"description": "YAMLlint is a linter for YAML files."
 								},
 								"gitleaks": {
 									"type": "object",
@@ -622,11 +622,11 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Detekt | Detekt is a static code analysis tool for Kotlin files. | v1.23.7"
+											"description": "Enable detekt | detekt is a static code analysis tool for Kotlin files. | v1.23.7"
 										},
 										"config_file": {
 											"type": "string",
-											"description": "Optional path to the Detekt configuration file relative to the repository."
+											"description": "Optional path to the detekt configuration file relative to the repository."
 										}
 									},
 									"additionalProperties": false,
@@ -652,7 +652,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Rubocop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.69.1"
+											"description": "Enable RuboCop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.69.1"
 										}
 									},
 									"additionalProperties": false,
@@ -691,7 +691,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Actionlint | is a static checker for GitHub Actions workflow files. | v1.7.4"
+											"description": "Enable actionlint | is a static checker for GitHub Actions workflow files. | v1.7.4"
 										}
 									},
 									"additionalProperties": false,
@@ -704,11 +704,11 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Pmd | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.8.0"
+											"description": "Enable PMD | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.8.0"
 										},
 										"config_file": {
 											"type": "string",
-											"description": "Optional path to the Pmd configuration file relative to the repository."
+											"description": "Optional path to the PMD configuration file relative to the repository."
 										}
 									},
 									"additionalProperties": false,
@@ -751,12 +751,12 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable CircleCi | CircleCi tool is a static checker for CircleCi config files. | v0.1.31151"
+											"description": "Enable CircleCI | CircleCI tool is a static checker for CircleCI config files. | v0.1.31151"
 										}
 									},
 									"additionalProperties": false,
 									"default": {},
-									"description": "CircleCi tool is a static checker for CircleCi config files."
+									"description": "CircleCI tool is a static checker for CircleCI config files."
 								}
 							},
 							"additionalProperties": false,

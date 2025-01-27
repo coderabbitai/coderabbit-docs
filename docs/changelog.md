@@ -186,7 +186,7 @@ You can now choose whether to auto-generate sequence diagrams in the PR Walkthro
 
 We've refined the default settings to be less noisy and more actionable. Additionally, we've added new static analysis and security tools:
 
-- **Yamllint**: A linter for YAML files
+- **YAMLlint**: A linter for YAML files
 - **Gitleaks**: A lightweight, open-source secret scanner to prevent security breaches
 - **Checkov**: Scans infrastructure as code for misconfigurations before they become security issues
 
@@ -234,8 +234,8 @@ Users can now select between **Chill** and **Assertive** review tones to tailor 
 
 We are continually expanding our support for static analysis tools. We've recently added support for
 
-- biome
-- hadolint
+- Biome
+- Hadolint
 - ast-grep.
 
 Update your .coderabbit.yaml file or visit the settings page to enable or disable the tools you wish to use.

@@ -1,7 +1,7 @@
 ---
-title: Yamllint
-sidebar_label: Yamllint
-description: CodeRabbit's guide to Yamllint.
+title: YAMLlint
+sidebar_label: YAMLlint
+description: CodeRabbit's guide to YAMLlint.
 ---
 
 ```mdx-code-block
@@ -10,18 +10,18 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-[Yamllint](https://yamllint.readthedocs.io/en/stable/) is a linter for YAML.
+[YAMLlint](https://yamllint.readthedocs.io/en/stable/) is a linter for YAML.
 
 ## Files
 
-Yamllint will run on files with the following extensions:
+YAMLlint will run on files with the following extensions:
 
 - `.yaml`
 - `.yml`
 
 ## Configuration
 
-Yamllint supports the following config files:
+YAMLlint supports the following config files:
 
 - `.yamllint`
 - `.yamllint.yaml`
@@ -31,4 +31,4 @@ CodeRabbit will use the default settings based on the profile selected if no con
 
 ## Links
 
-- [Yamllint Configuration](https://yamllint.readthedocs.io/en/stable/configuration.html)
+- [YAMLlint Configuration](https://yamllint.readthedocs.io/en/stable/configuration.html)
