@@ -1,0 +1,163 @@
+name: BrainRabbit-CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  rabbit-build:
+    name: Build Rabbit Protocol and Modular Brain Components
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-2025, macos-15]
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          repository: bearycool11/pmll_knowledge_block
+
+      - name: Setup Environment
+        run: |
+          if [[ $RUNNER_OS == 'Linux' ]]; then
+            sudo apt-get update && sudo apt-get install -y docker.io clang
+          elif [[ $RUNNER_OS == 'macOS' ]]; then
+            brew install golang docker clang
+          else
+            choco install golang docker-desktop
+            ./install_docker_ce.ps1
+          fi
+
+      - name: Install Dependencies
+        run: |
+          go mod tidy
+          go mod vendor
+
+      - name: Build Modular Brain Components
+        run: |
+          gcc brainOrgan.c -o modular_brain_executable
+          gcc ears.c -o inner_ear_module
+          gcc pml_logic_loop.c -o logic_module
+
+      - name: Build Rabbit Protocol Components
+        run: |
+          go build -o rabbit_protocol_clang cmd/main.go
+
+      - name: Save Build Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: |
+            modular_brain_executable
+            inner_ear_module
+            logic_module
+            rabbit_protocol_clang
+
+  rabbit-run:
+    name: Test Modular Brain and Rabbit Protocol
+    runs-on: ${{ matrix.os }}
+    needs: rabbit-build
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-2025, macos-15]
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          repository: bearycool11/pmll_knowledge_block
+
+      - name: Run Tests
+        run: |
+          ./modular_brain_executable --test
+          ./logic_module --run-tests
+          ./inner_ear_module --validate
+          if [[ $RUNNER_OS == 'Linux' || $RUNNER_OS == 'macOS' ]]; then
+            docker run --rm rabbit_protocol_clang
+          else
+            docker run --rm rabbit_protocol_clang.exe
+
+  persistent-memory-loop:
+    name: Persistent Memory Logic Loop (PMLL) Integration
+    runs-on: ubuntu-latest
+    needs: rabbit-run
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          repository: bearycool11/pmll_knowledge_block
+
+      - name: Set Up Persistent Memory Logic Loop
+        run: |
+          ./pmll_setup.sh --init
+          ./pmll_train.sh --dataset cognitive_graphs.json
+          ./pmll_test.sh --validate-memory
+
+      - name: Log Memory Loop Activity
+        run: ./pmll_logger.sh --log
+
+  bugzap-pesterbot:
+    name: Scan and Fix Rogue Code
+    runs-on: ubuntu-latest
+    needs: persistent-memory-loop
+
+    steps:
+      - name: Scan for Rogue Code
+        run: grep -r "pesterbot" ./cmd || echo "No rogue code found"
+
+      - name: Remove Rogue Code
+        run: sed -i '/pesterbot/d' ./cmd/main.go
+
+  azure-coderabbitai:
+    name: Set Up and Sync Azure for CodeRabbitAI
+    runs-on: ubuntu-latest
+    needs: bugzap-pesterbot
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          repository: bearycool11/pmll_knowledge_block
+
+      - name: Login to Azure
+        run: |
+          az login --service-principal --username $AZURE_USER --password $AZURE_PASSWORD --tenant $AZURE_TENANT
+
+      - name: Create CodeRabbitAI Database
+        run: |
+          az storage account create --name coderabbitaiStorage --resource-group CodeRabbitAI --location EastUS --sku Standard_LRS
+          az storage container create --account-name coderabbitaiStorage --name neural-mem-cache
+          az storage container create --account-name coderabbitaiStorage --name task-execution-data
+
+      - name: Deploy CodeRabbitAI AI Model
+        run: |
+          az ml model deploy --name rabbitai-pmll --resource-group CodeRabbitAI --workspace-name AIWorkspace \
+            --model-id rabbitai-pmll:v1 --compute-target AzureMLCompute
+
+      - name: Validate CodeRabbitAI Deployment
+        run: ./validate_coderabbitai.sh
+
+  package-toolbelt:
+    name: Package and Publish Toolbelt
+    runs-on: ubuntu-latest
+    needs: azure-coderabbitai
+
+    steps:
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifacts
+
+      - name: Build Docker Image
+        run: docker build -t modular_brain_toolbelt:latest .
+
+      - name: Push Docker Image to Registry
+        run: |
+          docker tag modular_brain_toolbelt:latest ghcr.io/bearycool11/modular_brain_toolbelt:latest
+          docker push ghcr.io/bearycool11/modular_brain_toolbelt:latest
