@@ -63,8 +63,8 @@ AZURE_OPENAI_ENDPOINT=<azure-openai-endpoint>
 AZURE_OPENAI_API_KEY=<key>
 ## it is recommended to use gpt-4o-mini, o3-mini, and o1 deployments.
 AZURE_GPT4OMINI_DEPLOYMENT_NAME=<gpt-4o-mini-deployment-name>
-AZURE_O3MINI_DEPLOYMENT_NAME=[<o1-mini-deployment-name>]
-AZURE_O1_DEPLOYMENT_NAME=[<o1-deployment-name>]
+AZURE_O3MINI_DEPLOYMENT_NAME=<o3-mini-deployment-name>
+AZURE_O1_DEPLOYMENT_NAME=<o1-deployment-name>
 # optionally, you can swap o3-mini with o1-mini
 AZURE_O1MINI_DEPLOYMENT_NAME=[<o1-mini-deployment-name>]
 
