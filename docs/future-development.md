@@ -1,47 +1,57 @@
 ---
-title: CodeRabbit Features
-sidebar_label: Future Development
-description: Learn how CodeRabbit works in a pull request review.
+title: CodeRabbit Roadmap
+sidebar_label: Roadmap
+description: Technical roadmap and upcoming features for CodeRabbit
 sidebar_position: 12
 ---
 
-# Future Development
+# CodeRabbit Roadmap
 
-We are actively iterating and refining CodeRabbit, and this is a sneak peek into the upcoming milestones and releases. We are focused on making the Applied AI review better than the median manual review. In addition to that, we are looking at a holistic user experience with various integrations and types of reviews.
+> CodeRabbit aims to exceed the quality of manual code reviews through applied AI. Here's our technical roadmap focusing on core improvements and integrations.
 
-## Applied AI Improvements
+## AI Review Engine
 
-We are actively trying to make the application of Generative AI more useful, relevant, meaningful for the coder and reviewer journey. Our immediate focus is
+### Context Understanding
+- Deep parsing of repository structure and dependencies
+- Improved detection of architectural patterns
+- Enhanced framework-specific analysis for React, Next.js, and other major frameworks
 
-### Accuracy and Conciseness Enhancements
+### Code Analysis
+- Static analysis integration with popular linters
+- Advanced type checking for TypeScript codebases
+- Security vulnerability scanning with OWASP guidelines
 
-- Refining knowledge base context understanding
-- Implementing advanced summarization techniques
-- Implementing a knowledge base feature library
+### Response Quality
+- Concise, actionable review comments
+- Automated code suggestions with proper typing
+- Performance impact analysis of changes
 
-### Learning Refinements
+## CI/CD Integration
 
-- We have made significant improvement of the learning Enhancing reinforcement learning based on the user feedback
+> We are integrating various tool chains to enable coders and reviewers to have a consistent experience irrespective of the tools. The immediate tools would be:
 
-## New Feature Enhancements
+- CircleCI
+- Jenkins
 
-### Expanded Integrations
+## Team Collaboration
 
-We are integrating various tool chains to enable coders and reviewers to have a consistent experience irrespective of the tools. The immediate tools would be:
+### Chat Integration
 
-- **Circle CI**
-- **Jenkins**
+> Communication and the user experience of review via various communication tools will be key.
 
-### Communication Tool Integrations
-
-Communication and the user experience of review via various communication tools will be key. We will start with integrations to Slack and Microsoft Teams and will be diving into the design engineering of these flows further:
+We will start with integrations to Slack and Microsoft Teams and will be diving into the design engineering of these flows further:
 
 - **Slack**: Real-time notifications and interactive discussions
 - **Microsoft Teams**: Code review conversations within the Microsoft ecosystem
 
-### Enhanced Review Capabilities
 
-These are additional capabilities that can also be reviewed in the same PR to accelerate the coder and reviewer journey. This includes pipeline failure analysis and resolution, as well as vulnerability assessment.
+### Review Workflow
+
+> These are additional capabilities that can also be reviewed in the same PR to accelerate the coder and reviewer journey. This includes pipeline failure analysis and resolution, as well as vulnerability assessment.
+
+- Automated review assignment
+- Blocking checks configuration
+- Custom review rules per repository
 
 #### Pipeline Failure Analysis
 
@@ -56,3 +66,12 @@ Finishing touches are about experience that often take developers time away from
 > Disclaimer: any product roadmap features mentioned below are only meant to outline
 > our general product direction. This documentation is for informational purposes
 > only and may not be incorporated into any contract.
+
+## Feedback
+
+We actively use developer feedback to prioritize our roadmap. Join our community:
+
+- Join our [Discord community](https://discord.com/invite/coderabbit)
+- Submit PRs to our [documentation](https://github.com/coderabbitai/coderabbit-docs)
+
+Your input directly shapes our development priorities and helps improve CodeRabbit for everyone.
