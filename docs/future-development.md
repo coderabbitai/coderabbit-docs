@@ -12,16 +12,19 @@ sidebar_position: 12
 ## AI Review Engine
 
 ### Context Understanding
+
 - Deep parsing of repository structure and dependencies
 - Improved detection of architectural patterns
 - Enhanced framework-specific analysis for React, Next.js, and other major frameworks
 
 ### Code Analysis
+
 - Static analysis integration with popular linters
 - Advanced type checking for TypeScript codebases
 - Security vulnerability scanning with OWASP guidelines
 
 ### Response Quality
+
 - Concise, actionable review comments
 - Automated code suggestions with proper typing
 - Performance impact analysis of changes
@@ -43,7 +46,6 @@ We will start with integrations to Slack and Microsoft Teams and will be diving 
 
 - **Slack**: Real-time notifications and interactive discussions
 - **Microsoft Teams**: Code review conversations within the Microsoft ecosystem
-
 
 ### Review Workflow
 
