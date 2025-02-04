@@ -11,9 +11,9 @@ sidebar_position: 13
 
 We're excited to announce three major updates:
 
-#### [Perplexity API](https://www.perplexity.ai/) Web Search Integration
+#### Web Search Integration
 
-CodeRabbit can now search the web using [Perplexity](https://www.perplexity.ai/) to provide enhanced context in:
+CodeRabbit can now search the web to provide enhanced context in:
 
 - Pull request reviews
 - Inline code comments
