@@ -22,66 +22,66 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 
 ### Docker Build Issues
 
-<img src="/img/tools/docker-build-cicd.png" width="600" alt="Docker Build Remediation" />
-
 - Missing build dependencies
 - Base image compatibility
 - Multi-stage build optimization
 - Cache utilization improvements
 
-### Java Build & Testing
+<img src="/img/tools/docker-build-cicd.png" width="600" alt="Docker Build Remediation" />
 
-<img src="/img/tools/java-cicd.png" width="600" alt="Java Build Remediation" />
+### Java Build & Testing
 
 - Maven/Gradle dependency conflicts
 - Compilation errors
 - Test failures
 - Memory allocation issues
 
-### Kubernetes Deployments
+<img src="/img/tools/java-cicd.png" width="600" alt="Java Build Remediation" />
 
-<img src="/img/tools/kubernetes-cicd.png" width="600" alt="Kubernetes Configuration" />
+### Kubernetes Deployments
 
 - Service configuration validation
 - Resource allocation optimization
 - Network policy fixes
 - Security context remediation
 
-### NPM Package Management
+<img src="/img/tools/kubernetes-cicd.png" width="600" alt="Kubernetes Configuration" />
 
-<img src="/img/tools/npm-cicd.png" width="600" alt="NPM Dependencies" />
+### NPM Package Management
 
 - Package resolution conflicts
 - Version compatibility issues
 - Security vulnerability patches
 - Build script optimization
 
-### Python Environment
+<img src="/img/tools/npm-cicd.png" width="600" alt="NPM Dependencies" />
 
-<img src="/img/tools/python-cicd.png" width="600" alt="Python Build Issues" />
+### Python Environment
 
 - Package dependency resolution
 - Virtual environment setup
 - Test framework configuration
 - Code style compliance
 
-### Security Scanning
+<img src="/img/tools/python-cicd.png" width="600" alt="Python Build Issues" />
 
-<img src="/img/tools/semgrep-cicd.png" width="600" alt="Security Scan Results" />
+### Security Scanning
 
 - SAST finding remediation
 - Code injection prevention
 - Security best practices
 - Compliance validation
 
-### Terraform and Infrastructure as Code
+<img src="/img/tools/semgrep-cicd.png" width="600" alt="Security Scan Results" />
 
-<img src="/img/tools/terraform-cicd.png" width="600" alt="Terraform Configuration" />
+### Terraform and Infrastructure as Code
 
 - Resource configuration validation
 - State management issues
 - Provider compatibility
 - Security group optimization
+
+<img src="/img/tools/terraform-cicd.png" width="600" alt="Terraform Configuration" />
 
 ## Supported Platforms
 
