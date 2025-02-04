@@ -18,7 +18,7 @@ Our intelligent AI system analyzes pipeline failures in real-time, providing inl
 
 ## Example Remediations
 
-With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically review the output of any tooling you desire.  Here are some examples of the types of common issues we can help you fix:
+With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically review the output of any tooling you desire. Here are some examples of the types of common issues we can help you fix:
 
 ### Docker Build Issues
 
