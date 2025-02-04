@@ -7,9 +7,19 @@ sidebar_position: 13
 
 ## February 4, 2025
 
-### Bitbucket Cloud Support & CircleCI Pipeline Failure Detection
+### Bitbucket Cloud Support, CircleCI Pipeline Failure Detection & Web Search Integration
 
-We're excited to announce two major updates:
+We're excited to announce three major updates:
+
+#### [Perplexity API](https://www.perplexity.ai/) Web Search Integration
+
+CodeRabbit can now search the web using [Perplexity](https://www.perplexity.ai/) to provide enhanced context in:
+
+- Pull request reviews
+- Inline code comments
+- Issue comments
+
+This feature helps provide more accurate and up-to-date suggestions by incorporating relevant documentation, best practices, and solutions from across the web.
 
 #### Bitbucket Cloud Integration
 
