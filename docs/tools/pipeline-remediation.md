@@ -22,7 +22,7 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 
 ### Docker Build Issues
 
-![Docker Build Remediation](/img/tools/docker-build-cicd.png)
+<img src="/img/tools/docker-build-cicd.png" width="600" alt="Docker Build Remediation" />
 
 - Missing build dependencies
 - Base image compatibility
@@ -31,7 +31,7 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 
 ### Java Build & Testing
 
-![Java Build Remediation](/img/tools/java-cicd.png)
+<img src="/img/tools/java-cicd.png" width="600" alt="Java Build Remediation" />
 
 - Maven/Gradle dependency conflicts
 - Compilation errors
@@ -40,7 +40,7 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 
 ### Kubernetes Deployments
 
-![Kubernetes Configuration](/img/tools/kubernetes-cicd.png)
+<img src="/img/tools/kubernetes-cicd.png" width="600" alt="Kubernetes Configuration" />
 
 - Service configuration validation
 - Resource allocation optimization
@@ -49,7 +49,7 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 
 ### NPM Package Management
 
-![NPM Dependencies](/img/tools/npm-cicd.png)
+<img src="/img/tools/npm-cicd.png" width="600" alt="NPM Dependencies" />
 
 - Package resolution conflicts
 - Version compatibility issues
@@ -58,7 +58,7 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 
 ### Python Environment
 
-![Python Build Issues](/img/tools/python-cicd.png)
+<img src="/img/tools/python-cicd.png" width="600" alt="Python Build Issues" />
 
 - Package dependency resolution
 - Virtual environment setup
@@ -67,7 +67,7 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 
 ### Security Scanning
 
-![Security Scan Results](/img/tools/semgrep-cicd.png)
+<img src="/img/tools/semgrep-cicd.png" width="600" alt="Security Scan Results" />
 
 - SAST finding remediation
 - Code injection prevention
@@ -76,7 +76,7 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 
 ### Terraform and Infrastructure as Code
 
-![Terraform Configuration](/img/tools/terraform-cicd.png)
+<img src="/img/tools/terraform-cicd.png" width="600" alt="Terraform Configuration" />
 
 - Resource configuration validation
 - State management issues
@@ -99,9 +99,9 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 - Support for DAST (Dynamic Application Security Testing) findings
 - Remediation for SAST (Static Application Security Testing) issues
 
-![GitLab CI/CD](/img/tools/gitlab-cicd.png)
+<img src="/img/tools/gitlab-cicd.png" width="600" alt="GitLab CI/CD" />
 
-![GitLab Security Integration](/img/tools/gitlab-advanced-security.png)
+<img src="/img/tools/gitlab-advanced-security.png" width="600" alt="GitLab Security Integration" />
 
 ### CircleCI
 
@@ -110,7 +110,7 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 - Configuration validation
 - Dependency resolution
 
-![CircleCI Integration](/img/tools/circle-cicd.png)
+<img src="/img/tools/circle-cicd.png" width="600" alt="CircleCI Integration" />
 
 ## Common Use Cases
 
