@@ -18,6 +18,71 @@ Are pipeline failures holding up your pull requests? Is your latest code failing
 
 Our intelligent system analyzes pipeline failures in real-time, providing inline comments and actionable suggestions to quickly resolve issues. We support multiple CI/CD platforms and integrate with popular security scanning tools to provide comprehensive remediation guidance.
 
+## Example Remediations
+
+### Docker Build Issues
+
+![Docker Build Remediation](/img/tools/docker-build-cicd.png)
+
+- Missing build dependencies
+- Base image compatibility
+- Multi-stage build optimization
+- Cache utilization improvements
+
+### Java Build & Testing
+
+![Java Build Remediation](/img/tools/java-cicd.png)
+
+- Maven/Gradle dependency conflicts
+- Compilation errors
+- Test failures
+- Memory allocation issues
+
+### Kubernetes Deployments
+
+![Kubernetes Configuration](/img/tools/kubernetes-cicd.png)
+
+- Service configuration validation
+- Resource allocation optimization
+- Network policy fixes
+- Security context remediation
+
+### NPM Package Management
+
+![NPM Dependencies](/img/tools/npm-cicd.png)
+
+- Package resolution conflicts
+- Version compatibility issues
+- Security vulnerability patches
+- Build script optimization
+
+### Python Environment
+
+![Python Build Issues](/img/tools/python-cicd.png)
+
+- Package dependency resolution
+- Virtual environment setup
+- Test framework configuration
+- Code style compliance
+
+### Security Scanning
+
+![Security Scan Results](/img/tools/semgrep-cicd.png)
+
+- SAST finding remediation
+- Code injection prevention
+- Security best practices
+- Compliance validation
+
+### Infrastructure as Code
+
+![Terraform Configuration](/img/tools/terraform-cicd.png)
+
+- Resource configuration validation
+- State management issues
+- Provider compatibility
+- Security group optimization
+
 ## Supported Platforms
 
 ### GitHub Actions
@@ -34,7 +99,9 @@ Our intelligent system analyzes pipeline failures in real-time, providing inline
 - Support for DAST (Dynamic Application Security Testing) findings
 - Remediation for SAST (Static Application Security Testing) issues
 
-![GitLab Security Integration](/img/tools/gitlab-security-integration.png)
+![GitLab CI/CD](/img/tools/gitlab-cicd.png)
+
+![GitLab Security Integration](/img/tools/gitlab-advanced-security.png)
 
 ### CircleCI
 
@@ -42,6 +109,8 @@ Our intelligent system analyzes pipeline failures in real-time, providing inline
 - Job-level error analysis
 - Configuration validation
 - Dependency resolution
+
+![CircleCI Integration](/img/tools/circle-cicd.png)
 
 ## Common Use Cases
 
