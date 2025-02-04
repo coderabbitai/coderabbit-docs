@@ -10,15 +10,15 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-![Pipeline Remediation Overview](/img/tools/pipeline-remediation-overview.png)
-
 ## Overview
 
-Are pipeline failures holding up your pull requests? Is your latest code failing to build for no apparent reason? CodeRabbit's Pipeline Failure Remediation tool automatically detects and fixes build failures across your CI/CD pipelines.
+Are pipeline failures holding up your pull requests? Is your latest code failing to build and digging through the failure logs is an absolute nightmare? CodeRabbit's Pipeline Failure Remediation tool automatically detects and fixes build failures across your CI/CD pipelines.
 
-Our intelligent system analyzes pipeline failures in real-time, providing inline comments and actionable suggestions to quickly resolve issues. We support multiple CI/CD platforms and integrate with popular security scanning tools to provide comprehensive remediation guidance.
+Our intelligent AI system analyzes pipeline failures in real-time, providing inline comments and actionable suggestions to quickly resolve issues. We support multiple CI/CD platforms and integrate with popular security scanning tools to provide comprehensive remediation guidance.
 
 ## Example Remediations
+
+With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically review the output of any tooling you desire.  Here are some examples of the types of common issues we can help you fix:
 
 ### Docker Build Issues
 
@@ -74,7 +74,7 @@ Our intelligent system analyzes pipeline failures in real-time, providing inline
 - Security best practices
 - Compliance validation
 
-### Infrastructure as Code
+### Terraform and Infrastructure as Code
 
 ![Terraform Configuration](/img/tools/terraform-cicd.png)
 
