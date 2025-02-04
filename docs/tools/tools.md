@@ -44,7 +44,7 @@ Remove extraneous f prefix
 
 | Technology                  | Tools                                                      | Category                       |
 | :-------------------------- | :--------------------------------------------------------- | :----------------------------- |
-| All                         | [Gitleaks][Gitleaks]                                       | Code Security                  |
+| All                         | [Gitleaks][Gitleaks], [Pipeline Remediation][Pipeline]     | Code Security, CI/CD           |
 | CircleCI                    | [CircleCI][CircleCI]                                       | Configuration Validation       |
 | CloudFormation              | [Checkov][Checkov]                                         | Code Security                  |
 | Cppcheck                    | [Cppcheck][Cppcheck]                                       | Code Quality                   |
@@ -95,3 +95,4 @@ Remove extraneous f prefix
 [Cppcheck]: ./cppcheck.md
 [CircleCI]: ./circleci.md
 [Semgrep]: ./semgrep.md
+[Pipeline]: ./pipeline-remediation.md
