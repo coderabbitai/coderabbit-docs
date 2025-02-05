@@ -7,19 +7,9 @@ sidebar_position: 13
 
 ## February 4, 2025
 
-### Bitbucket Cloud Support, CircleCI Pipeline Failure Detection & Web Search Integration
+### Bitbucket Cloud Support & CircleCI Pipeline Failure Detection
 
-We're excited to announce three major updates:
-
-#### Web Search Integration
-
-CodeRabbit can now search the web to provide enhanced context in:
-
-- Pull request reviews
-- Inline code comments
-- Issue comments
-
-This feature helps provide more accurate and up-to-date suggestions by incorporating relevant documentation, best practices, and solutions from across the web.
+We're excited to announce two major updates:
 
 #### Bitbucket Cloud Integration
 
