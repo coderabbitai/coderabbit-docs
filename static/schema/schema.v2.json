@@ -819,7 +819,19 @@
 						"opt_out": {
 							"type": "boolean",
 							"default": false,
-							"description": "Opt out | Opt out of all knowledge base features."
+							"description": "Opt out | Opt out of all knowledge base features that require data retention."
+						},
+						"web_search": {
+							"type": "object",
+							"properties": {
+								"enabled": {
+									"type": "boolean",
+									"default": true,
+									"description": "Web Search | Enable the web search integration."
+								}
+							},
+							"additionalProperties": false,
+							"default": {}
 						},
 						"learnings": {
 							"type": "object",

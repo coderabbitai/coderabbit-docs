@@ -5,6 +5,28 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## February 4, 2025
+
+### Bitbucket Cloud Support & CircleCI Pipeline Failure Detection
+
+We're excited to announce two major updates:
+
+#### Bitbucket Cloud Integration
+
+CodeRabbit is now available for Bitbucket Cloud users! This integration includes:
+
+- Automated code reviews for pull requests
+- Inline review comments and suggestions
+- Real-time bot interaction for feedback and assistance
+
+Check out our [Bitbucket Cloud integration guide](https://docs.coderabbit.ai/platforms/bitbucket-cloud) to get started.
+
+#### [CircleCI](https://circleci.com/) Pipeline Failure Detection and Remediation
+
+We've expanded our pipeline error detection to [CircleCI](https://circleci.com/)! Just like with GitHub Actions and GitLab CI/CD, you can now automatically detect and fix pipeline failures from your CircleCI workflows.
+
+---
+
 ## January 13, 2025
 
 ### GitLab Pipeline Failure Detection and Remediation
@@ -40,7 +62,7 @@ Future support planned for:
 
 ### Streamlined Multi-Repository Installation for GitLab and Azure DevOps
 
-We’re thrilled to announce a significant enhancement to CodeRabbit that simplifies your workflow! You can now install CodeRabbit on multiple repositories simultaneously for GitLab and Azure DevOps, eliminating the need to activate each repository individually.
+We're thrilled to announce a significant enhancement to CodeRabbit that simplifies your workflow! You can now install CodeRabbit on multiple repositories simultaneously for GitLab and Azure DevOps, eliminating the need to activate each repository individually.
 
 With this update, you can:
 
@@ -69,7 +91,7 @@ We have implemented several performance improvements that will enhance the speed
 
 ### Support for On-premises Learning and GitLab Follow-up Issue Creation
 
-Learnings enable developers to fine-tune the AI for their specific files, repositories, and codebase, enhancing future reviews. We’re excited to extend this feature to our on-premises customers. Additionally, we’ve improved our automated workflow to create follow-up issues directly from Merge Request reviews in GitLab.
+Learnings enable developers to fine-tune the AI for their specific files, repositories, and codebase, enhancing future reviews. We're excited to extend this feature to our on-premises customers. Additionally, we've improved our automated workflow to create follow-up issues directly from Merge Request reviews in GitLab.
 
 ---
 
@@ -77,9 +99,9 @@ Learnings enable developers to fine-tune the AI for their specific files, reposi
 
 ### ESLint Support
 
-We’re excited to announce support for **ESLint**, now extending to .vue, .svelte, and .astro files, in addition to the traditional .js, .ts, and .jsx extensions. We’ve enhanced compatibility for monorepos, offering improved integration with Yarn and Pnpm workspaces for seamless project management.
+We're excited to announce support for **ESLint**, now extending to .vue, .svelte, and .astro files, in addition to the traditional .js, .ts, and .jsx extensions. We've enhanced compatibility for monorepos, offering improved integration with Yarn and Pnpm workspaces for seamless project management.
 
-Our solution respects your existing ESLint configurations, requiring only that all dependencies are properly defined in your package.json. Please note that private plugins are not yet supported. We’re dedicated to streamlining code quality maintenance and making it as efficient as possible across your web development projects.
+Our solution respects your existing ESLint configurations, requiring only that all dependencies are properly defined in your package.json. Please note that private plugins are not yet supported. We're dedicated to streamlining code quality maintenance and making it as efficient as possible across your web development projects.
 
 ---
 
@@ -87,7 +109,7 @@ Our solution respects your existing ESLint configurations, requiring only that a
 
 ### Learnings and Metrics Iteration for CodeRabbit Self-Hosted Customers
 
-We’ve enhanced the accessibility of Learnings and Metrics for self-hosted CodeRabbit customers, delivering a more seamless experience. Easily track learning patterns and insights, with the added convenience of generating API keys directly within the interface.
+We've enhanced the accessibility of Learnings and Metrics for self-hosted CodeRabbit customers, delivering a more seamless experience. Easily track learning patterns and insights, with the added convenience of generating API keys directly within the interface.
 
 **Setup:**
 
