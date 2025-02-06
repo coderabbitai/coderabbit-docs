@@ -72,8 +72,15 @@ AZURE_O1_DEPLOYMENT_NAME=<o1-deployment-name>
 # optionally, you can swap o3-mini with o1-mini
 AZURE_O1MINI_DEPLOYMENT_NAME=[<o1-mini-deployment-name>]
 
+# OAuth2 Configuration (optional)
+# This will use client credentials grant flow to get an access token, and use that token in headers while making requests to AZURE_OPENAI_ENDPOINT.
+OAUTH2_ENDPOINT=[<endpoint>]
+OAUTH2_CLIENT_ID=[<client-id>]
+OAUTH2_CLIENT_SECRET=[<client-secret>]
+
 # if using AWS Bedrock
 LLM_PROVIDER=bedrock-anthropic
+LLM_TIMEOUT=360000
 AWS_ACCESS_KEY_ID=<aws-access-key>
 AWS_SECRET_ACCESS_KEY=<aws-secret-access-key>
 AWS_REGION=<aws-region>
@@ -98,7 +105,6 @@ GITHUB_APP_PEM_FILE=<flattened-pem-file>
 CODERABBIT_LICENSE_KEY=<license-key>
 
 CODERABBIT_API_KEY=<coderabbitai-api-key>
-# This will use your CodeRabbit API key to store learnings on our servers.
 ENABLE_LEARNINGS=[true]
 ENABLE_METRICS=[true]
 
@@ -106,10 +112,6 @@ JIRA_HOST=[<jira-host-url>]
 JIRA_PAT=[<jira-personal-access-token>]
 
 LINEAR_PAT=[<linear-personal-access-token>]
-
-OAUTH2_ENDPOINT=[<endpoint>]
-OAUTH2_CLIENT_ID=[<client-id>]
-OAUTH2_CLIENT_SECRET=[<client-secret>]
 ```
 
 :::note
@@ -119,6 +121,7 @@ OAUTH2_CLIENT_SECRET=[<client-secret>]
 - For `GITHUB_APP_PEM_FILE`, flatten the PEM file by replacing newlines with `\n`.
 - For `GITHUB_HOSTNAME`, use GitHub Enterprise server's hostname, for example, “github.acme-inc.com”
 - You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
+- When `ENABLE_LEARNINGS` is set to `true`, CodeRabbit will use `CODERABBIT_API_KEY` to store learnings on our servers.
 
 :::
 

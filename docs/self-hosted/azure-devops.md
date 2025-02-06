@@ -68,8 +68,15 @@ AZURE_O1_DEPLOYMENT_NAME=<o1-deployment-name>
 # optionally, you can swap o3-mini with o1-mini
 AZURE_O1MINI_DEPLOYMENT_NAME=[<o1-mini-deployment-name>]
 
+# OAuth2 Configuration (optional)
+# This will use client credentials grant flow to get an access token, and use that token in headers while making requests to AZURE_OPENAI_ENDPOINT.
+OAUTH2_ENDPOINT=[<endpoint>]
+OAUTH2_CLIENT_ID=[<client-id>]
+OAUTH2_CLIENT_SECRET=[<client-secret>]
+
 # if using AWS Bedrock
 LLM_PROVIDER=bedrock-anthropic
+LLM_TIMEOUT=360000
 AWS_ACCESS_KEY_ID=<aws-access-key>
 AWS_SECRET_ACCESS_KEY=<aws-secret-access-key>
 AWS_REGION=<aws-region>
@@ -80,6 +87,7 @@ SELF_HOSTED=azure-devops
 
 AZURE_DEVOPS_BOT_TOKEN=<personal-access-token>
 AZURE_DEVOPS_BOT_USERNAME=<bot-user-username>
+
 CODERABBIT_LICENSE_KEY=<license-key>
 
 CODERABBIT_API_KEY=<coderabbitai-api-key>
