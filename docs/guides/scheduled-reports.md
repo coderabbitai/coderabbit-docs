@@ -142,7 +142,7 @@ Create separate reports if you need to send to multiple channels with different 
 
 ## Managing Reports
 
-### Example Results
+<!-- ### Example Results
 
 Example results help you understand and standardize your report output format. After your first report run, you'll see example results in the report configuration:
 
@@ -156,7 +156,7 @@ Here is an example of a daily standup report:
 
 We see the links are to the API and not the web interface. We can modify the example so that future reports will include the web links in a more readable format:
 
-![Edited Azure DevOps Daily Standup Report Example](/img/guides/example-report-2.png)
+![Edited Azure DevOps Daily Standup Report Example](/img/guides/example-report-2.png) -->
 
 ### Preview Reports
 
