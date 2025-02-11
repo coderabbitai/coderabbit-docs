@@ -142,6 +142,22 @@ Create separate reports if you need to send to multiple channels with different 
 
 ## Managing Reports
 
+### Example Results
+
+Example results help you understand and standardize your report output format. After your first report run, you'll see example results in the report configuration:
+
+- **Viewing Examples**: Example results appear in the report editor after the first run.
+- **Editing**: You can modify the example to standardize future report formats.
+- **Clearing**: To generate new examples erase the current example and save your report.
+
+Here is an example of a daily standup report:
+
+![Azure DevOps Daily Standup Report Example](/img/guides/example-report-1.png)
+
+We see the links are to the API and not the web interface. We can modify the example so that future reports will include the web links in a more readable format:
+
+![Edited Azure DevOps Daily Standup Report Example](/img/guides/example-report-2.png)
+
 ### Preview Reports
 
 Test your configuration using the **Preview Report** button to generate a sample report instantly.
