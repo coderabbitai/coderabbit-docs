@@ -28,6 +28,7 @@ Generate a personal access token for the CodeRabbit user to be added in the `.en
 
 - `Code` - Full
 - `Work Items` - Read, write, and manage
+- `Build` - Read
 
 Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.coderabbit.ai/platforms/azure-devops#generating-a-personal-access-token) on creating personal access tokens.
 

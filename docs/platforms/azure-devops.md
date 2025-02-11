@@ -95,7 +95,8 @@ Follow these steps to generate the token:
    accessible organizations."
 6. Enter a name and an expiry date for the token.
 7. We need to have read & write access to "Work Items" & "Code" to post reviews
-   on pull requests.
+   on pull requests. If you are on the Pro tier also add "Build" access for pipeline
+   failure remediation.
 8. Click "Create"
 
 ![CodeRabbit azure devOps personal access token creation form](/img/integrations/azure-access-token.png)
