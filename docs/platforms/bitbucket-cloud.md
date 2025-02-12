@@ -73,9 +73,14 @@ Bitbucket provides an option to generate an app password for a new user. Follow 
 
 <div class="center-image">
  <img
-  src="/img/integrations/bitbucket-app-password.png"
+  src="/img/integrations/bitbucket-app-password-page.png"
   alt="Bitbucket app password configuration page"
-  width="1000"
+ />
+</div>
+<div class="center-image">
+ <img
+  src="/img/integrations/bitbucket-app-password-permissions.png"
+  alt="Bitbucket app password permissions"
  />
 </div>
 
