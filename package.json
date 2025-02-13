@@ -11,6 +11,7 @@
 		"deploy": "docusaurus deploy",
 		"clear": "docusaurus clear",
 		"serve": "docusaurus serve",
+		"format": "prettier --write .",
 		"lint": "markdownlint-cli2 \"**/*.md\" && prettier --check .",
 		"lint:fix": "markdownlint-cli2 \"**/*.md\" --fix; prettier --list-different --write .",
 		"write-translations": "docusaurus write-translations",
