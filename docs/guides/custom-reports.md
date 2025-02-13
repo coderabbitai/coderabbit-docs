@@ -236,6 +236,47 @@ Provide:
    - Help maintain consistency across teams
    - Avoid ambiguity in report generation
 
+Try to use `<overall_summary>` and `<example>` tag blocks to keep consistency across reports:
+
+```text
+Use the <overall_instructions> to guide the content of the summary and base the formatting of the summary on the <example>. Be sure to change the PR link based on the platform of the repository.
+
+<overall_instructions>
+Generate a summary of each pull request in the following bullet point format:
+
+- PR Link
+- Title
+- PR State: Provide the state of the PR based on the following conditions:
+  - If 'Merged: true' set 'PR State: 🔀 Merged'
+  - Else If 'Draft: true' set 'PR State: 📝 Draft'
+  - Else If 'State: open' set 'PR State: 💬 Open'
+  - Else If 'State: closed' and 'Merged: false' set 'PR State: 🔒 Closed'
+  - Else set 'PR State: ❓ Unknown'
+  - If the PR is stale, add '⚠️ Stale' at the end of the PR State.
+- Mergeable (if PR State if not 'Merged'): Provide the mergeable status of the PR as 'Mergeable' or 'Not Mergeable'.
+- Summary: Provide a short summary of the PR under 50 words.
+</overall_instructions>
+
+<example>
+- **PR Link:** [#3001](https://github.com/mygithuborg/myrepo/pull/3001)
+- **Title:** feat: Add Dynamic Theme Switching Feature
+- **PR State:** 💬 Open
+- **Mergeable:** Mergeable
+- **Summary:** Introduces dynamic theme switching to improve UI accessibility. Adds support for dark/light mode toggling and updates color schemes across the application for an enhanced user experience.
+
+- **PR Link:** [#3](https://github.com/mygithuborg/myotherrepo/pull/3)
+- **Title:** Chore: Update Third-Party Dependencies for Security Enhancements
+- **PR State:** 🔀 Merged
+- **Summary:** Updates several third-party dependencies to address security vulnerabilities and improve performance. Includes minor bug fixes and adjustments to maintain compatibility with the latest libraries.
+
+- **PR Link:** [#3007](https://github.com/mygithuborg/myrepo/pull/3007)
+- **Title:** 📝 Draft: Prototype New Analytics Dashboard
+- **PR State:** 📝 Draft
+- **Mergeable:** Not Mergeable
+- **Summary:** Initiates a prototype for a new analytics dashboard designed to provide users with real-time insights. This draft version is open for early feedback and may undergo significant changes based on review and testing.  Requires update from the main branch to be mergable.
+</example>
+```
+
 ## Example Templates
 
 ### Executive Summary Template
