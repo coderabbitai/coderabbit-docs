@@ -236,11 +236,10 @@ Provide:
    - Help maintain consistency across teams
    - Avoid ambiguity in report generation
 
-- Try to use an <overall_summary> and <example> tag blocks to keep consistency across reports. EX:
+Try to use `<overall_summary>` and `<example>` tag blocks to keep consistency across reports:
 
-  ```text
-
-Use the <overall_instructions> to guide the content of the summary and base the formatting of the summary on the <example>. Be sure to change the PR link based on the platform of the repository. We cover Github, Gitlab, Azure DevOps, Bitbucket and self hosted platforms.
+```text
+Use the <overall_instructions> to guide the content of the summary and base the formatting of the summary on the <example>. Be sure to change the PR link based on the platform of the repository.
 
 <overall_instructions>
 Generate a summary of each pull request in the following bullet point format:
@@ -265,32 +264,10 @@ Generate a summary of each pull request in the following bullet point format:
 - **Mergeable:** Mergeable
 - **Summary:** Introduces dynamic theme switching to improve UI accessibility. Adds support for dark/light mode toggling and updates color schemes across the application for an enhanced user experience.
 
-- **PR Link:** [#302](https://github.com/mygithuborg/thatrepo/pull/302)
-- **Title:** Fix: Correct Typographical Error in Dashboard Header
-- **PR State:** 💬 Open
-- **Mergeable:** Mergeable
-- **Summary:** Corrects a minor typographical error in the dashboard header to ensure consistency in UI labels. This update refines the display text and improves overall clarity.
-
 - **PR Link:** [#3003](https://github.com/mygithuborg/myotherrepo/pull/3)
 - **Title:** Chore: Update Third-Party Dependencies for Security Enhancements
 - **PR State:** 🔀 Merged
 - **Summary:** Updates several third-party dependencies to address security vulnerabilities and improve performance. Includes minor bug fixes and adjustments to maintain compatibility with the latest libraries.
-
-- **PR Link:** [#14](https://github.com/mygithuborg/frontend/pull/14)
-- **Title:** Refactor: Simplify Data Fetching Logic in User Profiles Module
-- **PR State:** 💬 Open
-- **Mergeable:** Mergeable
-- **Summary:** Refactors the data fetching logic in the user profiles module by replacing nested callbacks with async/await. Enhances code readability and streamlines error handling for a more robust implementation.
-
-- **PR Link:** [#13005](https://github.com/mygithuborg/backend/pull/13005)
-- **Title:** feat: Integrate Real-Time Notifications for Activity Updates
-- **PR State:** 🔀 Merged
-- **Summary:** Implements real-time notifications to keep users updated on recent activities. Utilizes WebSocket connections for instant alerts and provides customizable notification settings within the user profile.
-
-- **PR Link:** [#3006](https://github.com/mygithuborg/myrepo/pull/3006)
-- **Title:** Hotfix: Address Issue with API Rate Limiting on Login Endpoint
-- **PR State:** 🔀 Merged
-- **Summary:** Applies a hotfix to resolve issues related to API rate limiting on the login endpoint. Adjusts configuration parameters and enhances error responses to ensure smoother authentication during peak usage.
 
 - **PR Link:** [#3007](https://github.com/mygithuborg/myrepo/pull/3007)
 - **Title:** 📝 Draft: Prototype New Analytics Dashboard
@@ -298,7 +275,7 @@ Generate a summary of each pull request in the following bullet point format:
 - **Mergeable:** Not Mergeable
 - **Summary:** Initiates a prototype for a new analytics dashboard designed to provide users with real-time insights. This draft version is open for early feedback and may undergo significant changes based on review and testing.  Requires update from the main branch to be mergable.
 </example>
-  ```
+```
 
 ## Example Templates
 
