@@ -264,7 +264,7 @@ Generate a summary of each pull request in the following bullet point format:
 - **Mergeable:** Mergeable
 - **Summary:** Introduces dynamic theme switching to improve UI accessibility. Adds support for dark/light mode toggling and updates color schemes across the application for an enhanced user experience.
 
-- **PR Link:** [#3003](https://github.com/mygithuborg/myotherrepo/pull/3)
+- **PR Link:** [#3](https://github.com/mygithuborg/myotherrepo/pull/3)
 - **Title:** Chore: Update Third-Party Dependencies for Security Enhancements
 - **PR State:** 🔀 Merged
 - **Summary:** Updates several third-party dependencies to address security vulnerabilities and improve performance. Includes minor bug fixes and adjustments to maintain compatibility with the latest libraries.
