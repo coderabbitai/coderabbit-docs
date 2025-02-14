@@ -169,17 +169,20 @@ If CodeRabbit is not functioning on certain repositories, it is likely due to th
 
 To troubleshoot this issue, please attempt to reinstall the GitHub App or GitLab Integration by following the steps below:
 
+- General Instructions:
+  1. Please insure if not selecting all repositories, that you have added all repositories that you would like to enable to the selected list in the app configuration. ![Select Repos](/img/faq/select-repos.png)
+
 - GitHub:
   1. Go to Repository settings
   2. Click **GitHub Apps** in the left sidebar under **Integrations**
-  3. Select **Configure**
-  4. Click **Uninstall**
-  5. Go into the [Coderabbit App](https://github.com/apps/coderabbitai) and install it again with the **Add Repository** button.
+  3. Select **Configure** ![Select Repos](/img/faq/github-app-settings.png)
+  4. Click **Uninstall** at the bottom of the app configuration page. ![Uninstall](/img/faq/coderabbit-github-menu.png)
+  5. Go into the [Coderabbit App](https://github.com/apps/coderabbitai) and install it again with the **Add Repository** button. ![Add Repository](/img/faq/add-repository.png)
 
 - GitLab:
   1. Remove OAuth App from User Settings > Applications
   2. Remove Webhook from Group > Project Settings > Webhooks
-  3. Go into the [Coderabbit App](https://gitlab.com/apps/coderabbitai) and install it again.
+  3. Go into the [Coderabbit App](https://gitlab.com/apps/coderabbitai) and install it again. ![Install](/img/faq/gitlab-webhook.png)
 
 ### How do I delete my CodeRabbit account?
 
