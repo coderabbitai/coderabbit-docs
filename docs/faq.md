@@ -163,6 +163,24 @@ level group for Self-Hosted GitLab.
 
 ## Account Management {#account-management}
 
+### How to troubleshoot CodeRabbit not functioning on certain repositories?
+
+If CodeRabbit is not functioning on certain repositories, it is likely due to the repository not being accessible to CodeRabbit and you must reinstall the GitHub App or GitLab Integration.
+
+To troubleshoot this issue, please attempt to reinstall the GitHub App or GitLab Integration by following the steps below:
+
+- GitHub:
+  1. Go to Repository settings
+  2. Click **GitHub Apps** in the left sidebar under **Integrations**
+  3. Select **Configure**
+  4. Click **Uninstall**
+  5. Go into the [Coderabbit App](https://github.com/apps/coderabbitai) and install it again with the **Add Repository** button.
+
+- GitLab:
+  1. Remove OAuth App from User Settings > Applications
+  2. Remove Webhook from Group > Project Settings > Webhooks
+  3. Go into the [Coderabbit App](https://gitlab.com/apps/coderabbitai) and install it again.
+
 ### How do I delete my CodeRabbit account?
 
 :::danger Irreversible Account Deletion
