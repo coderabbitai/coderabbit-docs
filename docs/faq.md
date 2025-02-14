@@ -157,7 +157,7 @@ level group for Self-Hosted GitLab.
 
 #### Unable to Enable Repositories in GitLab
 
-If you’re having trouble enabling the GitLab Repositories toggle, confirm that
+If you're having trouble enabling the GitLab Repositories toggle, confirm that
 you have Maintainer access in the primary group for GitLab Cloud or in the first
 level group for Self-Hosted GitLab.
 
@@ -169,27 +169,27 @@ If CodeRabbit is not functioning on certain repositories, it is likely due to th
 
 To troubleshoot this issue, please attempt to reinstall the GitHub App or GitLab Integration by following the steps below:
 
-- General Instructions:
+<Tabs>
+  <TabItem value="general" label="General Instructions" default>
+    1. Confirm that the author of a pull request has an active seat in CodeRabbit. If not please provide a seat to the user under the  to enable CodeRabbit and then close/reopen the pull request. ![Seat Assignment](/img/faq/seat-assignment.png)
+    3. Please insure if not selecting all repositories, that you have added all repositories that you would like to enable to the selected list in the app configuration.
+    4. If the repository is not in the list, you do not have to uninstall and reinstall the CodeRabbit App. Please add it to the list. ![Select Repos](/img/faq/select-repos.png)
+  </TabItem>
 
-  1. Confirm that the author of a pull request has an active seat in CodeRabbit. If not please provide a seat to the user under the  to enable CodeRabbit and then close/reopen the pull request.
-  2. ![Seat Assignment](static/img/faq/seat-assignment.png)
-  3. Please insure if not selecting all repositories, that you have added all repositories that you would like to enable to the selected list in the app configuration.
-  4. If the repository is not in the list, you do not have to uninstall and reinstall the CodeRabbit App. Please add it to the list.
-  5. ![Select Repos](/img/faq/select-repos.png)
+  <TabItem value="github" label="GitHub">
+    1. Go to Repository settings
+    2. Click **GitHub Apps** in the left sidebar under **Integrations**
+    3. Select **Configure** ![Select Repos](/img/faq/github-app-settings.png)
+    4. Click **Uninstall** at the bottom of the app configuration page. ![Uninstall](/img/faq/coderabbit-github-menu.png)
+    5. Go into the [Coderabbit App](https://github.com/apps/coderabbitai) and install it again with the **Add Repository** button. ![Add Repository](/img/faq/add-repository.png)
+  </TabItem>
 
-- GitHub:
-
-  1. Go to Repository settings
-  2. Click **GitHub Apps** in the left sidebar under **Integrations**
-  3. Select **Configure** ![Select Repos](/img/faq/github-app-settings.png)
-  4. Click **Uninstall** at the bottom of the app configuration page. ![Uninstall](/img/faq/coderabbit-github-menu.png)
-  5. Go into the [Coderabbit App](https://github.com/apps/coderabbitai) and install it again with the **Add Repository** button. ![Add Repository](/img/faq/add-repository.png)
-
-- GitLab:
-
-  1. Remove OAuth App from User Settings > Applications
-  2. Remove Webhook from Group > Project Settings > Webhooks
-  3. Go into the [Coderabbit App](https://gitlab.com/apps/coderabbitai) and install it again. ![Install](/img/faq/gitlab-webhook.png)
+  <TabItem value="gitlab" label="GitLab">
+    1. Remove OAuth App from User Settings > Applications
+    2. Remove Webhook from Group > Project Settings > Webhooks
+    3. Go into the [Coderabbit App](https://gitlab.com/apps/coderabbitai) and install it again. ![Install](/img/faq/gitlab-webhook.png)
+  </TabItem>
+</Tabs>
 
 ### How do I delete my CodeRabbit account?
 
