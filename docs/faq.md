@@ -171,7 +171,7 @@ To troubleshoot this issue, please attempt to reinstall the GitHub App or GitLab
 
 <Tabs>
   <TabItem value="general" label="General Instructions" default>
-    1. Confirm that the author of a pull request has an active seat in CodeRabbit. If not please provide a seat to the user under the  to enable CodeRabbit and then close/reopen the pull request. ![Seat Assignment](/img/faq/seat-assignment.png)
+    1. Confirm that the author of a pull request has an active seat in CodeRabbit. If not please provide a seat to the user under [Subscription](https://coderabbit.ai/settings/subscription) page to enable CodeRabbit for the user.  Then have the user close/reopen a new pull request for the change to see coderabbit active on the new user. ![Seat Assignment](/img/faq/seat-assignment.png)
     3. Please insure if not selecting all repositories, that you have added all repositories that you would like to enable to the selected list in the app configuration.
     4. If the repository is not in the list, you do not have to uninstall and reinstall the CodeRabbit App. Please add it to the list. ![Select Repos](/img/faq/select-repos.png)
   </TabItem>
