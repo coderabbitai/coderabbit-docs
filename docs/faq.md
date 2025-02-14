@@ -171,8 +171,10 @@ To troubleshoot this issue, please attempt to reinstall the GitHub App or GitLab
 
 - General Instructions:
 
-  1. Please insure if not selecting all repositories, that you have added all repositories that you would like to enable to the selected list in the app configuration. ![Select Repos](/img/faq/select-repos.png)
-  2. If the repository is not in the list, you do not have to uninstall and reinstall the CodeRabbit App. Please add it to the list.
+  1. Confirm that the author of a pull request has an active seat in CodeRabbit. If not please add them to enable CodeRabbit and then close/reopen the pull request.
+  2. Please insure if not selecting all repositories, that you have added all repositories that you would like to enable to the selected list in the app configuration.
+  3. If the repository is not in the list, you do not have to uninstall and reinstall the CodeRabbit App. Please add it to the list.
+  4. ![Select Repos](/img/faq/select-repos.png)
 
 - GitHub:
 
