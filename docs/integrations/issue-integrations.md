@@ -43,6 +43,8 @@ Closes CR-5
 <ProPlanNotice />
 ```
 
+With CodeRabbit, you can easily link your pull requests with Linear. It makes your life simpler by automatically creating Linear issues with all the code context, keeping your issues and pull requests in sync both ways. Plus, it lets you generate issues straight from pull requests, track how you’re hitting your goals, and even turn code review feedback into actionable tasks in Linear.
+
 ### CodeRabbit App
 
 1. Navigate to [integrations][integrations] in the CodeRabbit app.
