@@ -70,7 +70,14 @@ AZURE_O1_DEPLOYMENT_NAME=<o1-deployment-name>
 AZURE_O1MINI_DEPLOYMENT_NAME=[<o1-mini-deployment-name>]
 
 # OAuth2 Configuration (optional)
-# This will use client credentials grant flow to get an access token, and use that token in headers while making requests to AZURE_OPENAI_ENDPOINT.
+# This will use client_credentials flow to get an access token,
+# and use it to make requests to the LLM provider.
+# It is expected that the response from the OAuth2 server will be in the format
+# {
+#   "access_token": "<access-token>",
+#   "token_type": "Bearer",
+#   "expires_in": 3599,
+# }
 OAUTH2_ENDPOINT=[<endpoint>]
 OAUTH2_CLIENT_ID=[<client-id>]
 OAUTH2_CLIENT_SECRET=[<client-secret>]
