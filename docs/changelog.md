@@ -5,6 +5,21 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## March 19, 2024
+
+### Azure DevOps Pipeline Failure Detection
+
+We're excited to announce that our pipeline error detection capabilities now extend to Azure DevOps! Just like with GitHub Actions, GitLab CI/CD, and CircleCI, you can now automatically detect and fix pipeline failures in your Azure DevOps pipelines.
+
+Key features include:
+
+- Automatic detection and analysis of pipeline build failures
+- One-click fix suggestions for common issues
+- Support for popular frameworks and tools
+- Seamless integration with Azure DevOps Checks
+
+---
+
 ## February 4, 2025
 
 ### Bitbucket Cloud Support & CircleCI Pipeline Failure Detection
