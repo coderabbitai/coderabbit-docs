@@ -112,6 +112,15 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 
 <img src="/img/tools/circle-cicd.png" width="600" alt="CircleCI Integration" />
 
+### Azure DevOps
+
+- Pipeline failure detection
+- Integration with Azure DevOps Checks
+- Support for custom tasks and pipelines
+- Remediation for build issues
+
+<img src="/img/tools/az-devops-pipeline.png" width="600" alt="Azure DevOps Integration" />
+
 ## Common Use Cases
 
 Our tool handles a wide range of pipeline failures including:
