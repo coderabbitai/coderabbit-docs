@@ -174,3 +174,4 @@ Our tool handles a wide range of pipeline failures including:
 - [GitHub Actions Configuration](https://docs.github.com/en/actions)
 - [GitLab CI/CD Documentation](https://docs.gitlab.com/ee/ci/)
 - [CircleCI Documentation](https://circleci.com/docs/)
+- [Azure DevOps Documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops)
