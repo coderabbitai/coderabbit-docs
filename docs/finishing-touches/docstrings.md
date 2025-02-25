@@ -35,7 +35,7 @@ This feature has been rigorously tested and is now available for all Pro plan us
 
 ## Supported software forges
 
-The checked software forges are supported:
+These software forges are supported:
 
 - [x] Azure DevOps
 - [ ] Bitbucket Cloud
@@ -43,18 +43,19 @@ The checked software forges are supported:
 - [x] GitHub
 - [x] GitLab
 
-While Bitbucket is not officially supported, docstrings can still be generated but will be posted in a comment under the pull request. Full support for Bitbucket is planned.
+While Bitbucket is not officially supported, docstrings can still be generated. However, they will be posted in a comment under the pull request. Full support for Bitbucket is planned.
 
 ## Supported languages
 
-The checked languages are supported:
+These languages are supported:
 
 - [x] Bash
 - [x] C
-- [x] C++
 - [x] C#
+- [x] C++
 - [x] Elixir
 - [x] Go
+- [ ] Haskell
 - [x] Java
 - [x] JavaScript
 - [x] Kotlin
@@ -64,5 +65,8 @@ The checked languages are supported:
 - [x] React TypeScript
 - [x] Ruby
 - [x] Rust
+- [ ] Scala
 - [x] Swift
 - [x] TypeScript
+
+CodeRabbit uses `ast-grep` to parse the code. If you want a new language to be supported, please look into [Add New Language to ast-grep](https://ast-grep.github.io/contributing/add-lang.html#add-new-language-to-ast-grep) first.
