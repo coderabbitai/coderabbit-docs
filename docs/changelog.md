@@ -19,6 +19,10 @@ We're excited to announce the launch of the Docstrings feature! This functionali
 
 The list of supported languages and software forges is available in [the documentation](/finishing-touches/docstrings).
 
+### Azure DevOps Pipeline Failure Detection
+
+We're excited to announce that our pipeline error detection capabilities now extend to Azure DevOps! Just like with GitHub Actions, GitLab CI/CD, and CircleCI, you can now automatically detect and fix pipeline failures in your Azure DevOps pipelines.
+
 ## February 4, 2025
 
 ### Bitbucket Cloud Support & CircleCI Pipeline Failure Detection
