@@ -5,7 +5,7 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
-## March 19, 2024
+## February 25, 2025
 
 ### Azure DevOps Pipeline Failure Detection
 
