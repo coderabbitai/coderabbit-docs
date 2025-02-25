@@ -41,7 +41,7 @@ Features such as:
 - CodeRabbit Commands
 - PR summary on the fly
 - Visual diagrams
-- Docstrings (Beta)
+- Docstrings generation
 - Custom review rules
 
 > All these features improve the developer experience by reducing review time, maintaining consistency, and sharing knowledge effectively across teams.

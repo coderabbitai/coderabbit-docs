@@ -5,6 +5,20 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## February 25, 2025
+
+### Docstrings
+
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
+We're excited to announce the launch of the Docstrings feature! This functionality allows developers to generate docstrings on a pull request. By commenting `@coderabbitai generate docstrings` on any pull request, you can automatically generate docstrings for functions in the code changes.
+
+The list of supported languages and software forges is available in [the documentation](/finishing-touches/docstrings).
+
 ## February 4, 2025
 
 ### Bitbucket Cloud Support & CircleCI Pipeline Failure Detection
@@ -81,7 +95,7 @@ With this update, you can:
 
 ## December 12, 2024
 
-### Docstrings(Beta)
+### Docstrings (Beta)
 
 We have launched a new functionality as part of our finishing touches initiative to allow developers to generate docstrings on a pull request. This feature lets you generate docstrings by commenting `@coderabbitai generate docstrings` on any pull request. This works for both new and existing documentation. See [our documentation](https://docs.coderabbit.ai/finishing-touches/docstrings) for details.
 
