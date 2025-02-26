@@ -129,6 +129,7 @@ Configure where your reports will be delivered:
 1. Connect your workspace through OAuth
 2. Select target channels
 3. CodeRabbit bot will be installed automatically
+4. If installation fails check the [slack service](https://slack-status.com/) or [discord status](https://discordstatus.com/) page for any outages.
 
 #### Microsoft Teams
 
