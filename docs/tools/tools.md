@@ -45,6 +45,7 @@ Remove extraneous f prefix
 | Technology                  | Tools                                                      | Category                                            |
 | :-------------------------- | :--------------------------------------------------------- | :-------------------------------------------------- |
 | All                         | [Gitleaks][Gitleaks], [Pipeline Remediation][Pipeline]     | Code Security, CI/CD                                |
+| Azure DevOps Pipelines      | [Pipeline Remediation][Pipeline]                           | CI/CD Failure Remediation                           |
 | CircleCI                    | [CircleCI][CircleCI], [Pipeline Remediation][Pipeline]     | Configuration Validation, CI/CD Failure Remediation |
 | CloudFormation              | [Checkov][Checkov]                                         | Code Security                                       |
 | Cppcheck                    | [Cppcheck][Cppcheck]                                       | Code Quality                                        |
