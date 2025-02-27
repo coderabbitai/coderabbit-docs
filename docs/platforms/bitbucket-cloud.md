@@ -1,7 +1,7 @@
 ---
-title: "[Beta] Bitbucket Cloud"
+title: "Bitbucket Cloud"
 description: "Learn how to integrate CodeRabbit with Bitbucket Cloud."
-sidebar_label: "[Beta] Bitbucket Cloud"
+sidebar_label: "Bitbucket Cloud"
 sidebar_position: 6
 ---
 
