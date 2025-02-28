@@ -76,7 +76,9 @@ OAUTH2_CLIENT_ID=[<client-id>]
 OAUTH2_CLIENT_SECRET=[<client-secret>]
 OAUTH2_SCOPE=[<oauth2-scope>]
 
+HTTP_PROXY=[<http-proxy-url>]
 HTTPS_PROXY=[<https-proxy-url>]
+NO_PROXY=[<no-proxy-url>]
 
 # if using AWS Bedrock
 LLM_PROVIDER=bedrock-anthropic
