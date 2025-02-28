@@ -64,6 +64,7 @@ AZURE_O1MINI_DEPLOYMENT_NAME=[<o1-mini-deployment-name>]
 # OAuth2 Configuration (optional)
 # This will use client_credentials flow to get an access token,
 # and use it to make requests to the LLM provider.
+# Here is more information on this flow: https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-client-creds-grant-flow#first-case-access-token-request-with-a-shared-secret
 # It is expected that the response from the OAuth2 server will be in the format
 # {
 #   "access_token": "<access-token>",
@@ -73,6 +74,9 @@ AZURE_O1MINI_DEPLOYMENT_NAME=[<o1-mini-deployment-name>]
 OAUTH2_ENDPOINT=[<endpoint>]
 OAUTH2_CLIENT_ID=[<client-id>]
 OAUTH2_CLIENT_SECRET=[<client-secret>]
+OAUTH2_SCOPE=[<oauth2-scope>]
+
+HTTPS_PROXY=[<https-proxy-url>]
 
 # if using AWS Bedrock
 LLM_PROVIDER=bedrock-anthropic
@@ -101,6 +105,9 @@ JIRA_HOST=[<jira-host-url>]
 JIRA_PAT=[<jira-personal-access-token>]
 
 LINEAR_PAT=[<linear-personal-access-token>]
+
+ENABLE_WEB_SEARCH=[true]
+PERPLEXITY_API_KEY=[<perplexity-api-key>]
 ```
 
 :::note

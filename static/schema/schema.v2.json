@@ -652,7 +652,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable RuboCop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.69.1"
+											"description": "Enable RuboCop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.73"
 										}
 									},
 									"additionalProperties": false,
