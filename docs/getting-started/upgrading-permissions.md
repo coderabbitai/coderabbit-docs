@@ -17,6 +17,8 @@ Sometimes when we add new features to CodeRabbit, we need to request additional 
 
 ![Granting updated permissions](../../static/img/getting-started/grant-permission.png)
 
+![Updated permissions](../../static/img/getting-started/updated-permissions.png)
+
 Common reasons for permission updates include:
 
 - Access to new GitHub features
