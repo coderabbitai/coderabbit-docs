@@ -86,6 +86,8 @@ Your custom reports can access the following PR information that you can referen
 - `Created at`: datetime - When the PR was created
 - `Last activity`: datetime - Most recent activity timestamp
 - `Closed at`: datetime (if applicable) - When the PR was closed
+- `Source branch`: string - Source branch name
+- `Target branch`: string - Target branch name
 
 #### Additional Context
 
