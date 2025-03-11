@@ -115,26 +115,72 @@ Contained within the `<pr_details>` tag.
 Here's an example prompt that uses these data points:
 
 ```text
-Generate a summary with the following format for each PR:
+`Use the <overall_instructions> to guide the content of the summary. Use the format shown in <example> but do not include or refer the example's content in the final summary/report.
 
-## [PR Title](URL)
-**Status**: {Use these symbols based on state}
-- 🔀 if Merged is true
-- 📝 if Draft is true
-- 💬 if State is "open"
-- 🔒 if State is "closed" and not merged
-Add ⚠️ if Is stale is true
+<overall_instructions>
+Generate a summary of each pull request in the following bullet point format:
 
-**Author**: {Author name}
-**Created**: {Created at}
-**Labels**: {Labels joined by commas}
-**Reviewers**: {Reviewers joined by commas}
+- PR Link: Provide a hyperlink to the pull request from the 'URL:' value
+- Title: Provide the value of the 'Title:' field
+- PR State: Provide the state of the PR based on the following conditions:
+  - If 'Merged: true' set 'PR State: 🔀 Merged'
+  - Else If 'Draft: true' set 'PR State: 📝 Draft'
+  - Else If 'State: open' or 'State: active' set 'PR State: 💬 Open'
+  - Else If 'State: closed' and 'Merged: false' set 'PR State: 🔒 Closed'
+  - Else set 'PR State: ❓ Unknown'
+  - If the PR is stale, add '⚠️ Stale' at the end of the PR State.
+- Mergeable (if PR State if not 'Merged'): Provide the mergeable status of the PR as 'Mergeable' or 'Not Mergeable'.
+- Summary: In under 50 words provide a short summary of the PR.
+- Comments: In under 50 words provide a short summary of all comments found within <pr_comments>, including each comments author username from <comment_author_username>. If there are no comments available, output 'No comments'.
+</overall_instructions>
 
-### Summary
-{Summary limited to 50 words}
+<example>
+- **PR Link:** [#3001](https://github.com/mygithuborg/myrepo/pull/3001)
+- **Title:** [PR Title]
+- **PR State:** 💬 Open
+- **Mergeable:** Mergeable
+- **Summary:** [Summary of the PR].
+- **Comments:** [Summary of the PR comments].
 
-### Recent Activity
-{List last 3 comments with username and content}
+- **PR Link:** [#302](https://github.com/mygithuborg/thatrepo/pull/302)
+- **Title:** [PR Title]
+- **PR State:** 💬 Open
+- **Mergeable:** Mergeable
+- **Summary:** [Summary of the PR].
+- **Comments:** [Summary of the PR comments].
+
+- **PR Link:** [#3](https://github.com/mygithuborg/myotherrepo/pull/3)
+- **Title:** [PR Title]
+- **PR State:** 🔀 Merged
+- **Summary:** [Summary of the PR].
+- **Comments:** [Summary of the PR comments].
+
+- **PR Link:** [#14](https://github.com/mygithuborg/frontend/pull/14)
+- **Title:** [PR Title]
+- **PR State:** 💬 Open
+- **Mergeable:** Mergeable
+- **Summary:** [Summary of the PR].
+- **Comments:** [Summary of the PR comments].
+
+- **PR Link:** [#13005](https://github.com/mygithuborg/backend/pull/13005)
+- **Title:** [PR Title]
+- **PR State:** 🔀 Merged
+- **Summary:** [Summary of the PR].
+- **Comments:** [Summary of the PR comments].
+
+- **PR Link:** [#3006](https://github.com/mygithuborg/myrepo/pull/3006)
+- **Title:** [PR Title]
+- **PR State:** 🔀 Merged
+- **Summary:** [Summary of the PR].
+- **Comments:** [Summary of the PR comments].
+
+- **PR Link:** [#3007](https://github.com/mygithuborg/myrepo/pull/3007)
+- **Title:** [PR Title]
+- **PR State:** 📝 Draft
+- **Mergeable:** Not Mergeable
+- **Summary:** [Summary of the PR].
+- **Comments:** [Summary of the PR comments].
+</example>
 ```
 
 ### Formatting Options
