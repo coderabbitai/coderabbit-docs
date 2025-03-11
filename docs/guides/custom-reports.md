@@ -115,7 +115,7 @@ Contained within the `<pr_details>` tag.
 Here's an example prompt that uses these data points:
 
 ```text
-`Use the <overall_instructions> to guide the content of the summary. Use the format shown in <example> but do not include or refer the example's content in the final summary/report.
+Use the <overall_instructions> to guide the content of the summary. Use the format shown in <example> but do not include or refer the example's content in the final summary/report.
 
 <overall_instructions>
 Generate a summary of each pull request in the following bullet point format:
