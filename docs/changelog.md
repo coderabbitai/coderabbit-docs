@@ -11,7 +11,7 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
 ## March 12, 2025
 
-### Mult-Step Agent Chat
+### Multi-Step Agent Chat
 
 ```mdx-code-block
 <ProPlanNotice />
