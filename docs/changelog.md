@@ -5,6 +5,18 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## March 12, 2025
+
+### Mult-Step Agent Chat
+
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
+We're excited to announce that CodeRabbit chat can now do agentic planning on Github. This functionality allows more sophisticated request to be made of CodeRabbit chat spanning multiple files. Comment with `@coderabbitai` a natural language request on any pull request with a review comment, asking for a code change, and the chat will plan code changes if they are complex.
+
 ## February 25, 2025
 
 ### Docstrings
