@@ -1,10 +1,17 @@
-# CodeRabbit Agentic Chat
+---
+title: Agentic Chat
+sidebar_label: Agentic Chat
+description: Learn about CodeRabbit Pro's agentic chat system
+sidebar_position: 7
+---
 
-CodeRabbit Chat is a powerful assistant designed to streamline your development workflow. You can interact directly in pull request review comments and pull request comments to ask questions, have CodeRabbit rewrite code, or generate new code. This tool is built to enhance your productivity by integrating seamlessly into your existing development environment.
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
-# Getting Started
+<ProPlanNotice />
+```
 
-Chat is available exclusively for Pro customers. // some crap about sales process
+CodeRabbit Chat is a powerful pull-request-specific assistant designed to streamline your development workflow. You can interact directly in pull request review comments and pull request comments to ask questions, have CodeRabbit rewrite code, or generate new code.
 
 # Invocation
 
@@ -47,6 +54,9 @@ For rapid prototyping and quick fixes, CodeRabbit Chat is capable of generating 
 // example
 
 ## Multi-Step Agentic Flow with Planning
+
+/// github only lol
+/// early access lol
 
 When facing complex coding challenges, CodeRabbit Chat supports multi-step agentic flows that involve detailed planning and execution. Once the multi-step workflow is complete, CodeRabbit can automatically issue a pull request for the changes, ensuring that even intricate processes are handled efficiently.
 
