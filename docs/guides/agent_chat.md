@@ -62,6 +62,8 @@ For rapid prototyping and quick fixes, CodeRabbit Chat is capable of generating 
 
 When facing complex coding challenges, CodeRabbit Chat supports multi-step agentic flows that involve detailed planning and execution. Once the multi-step workflow is complete, CodeRabbit can automatically issue a pull request for the changes, ensuring that even intricate processes are handled efficiently.
 
+CodeRabbit cannot perform further modifications to opened pull requests. From there, it's your turn to checkout the branch and improve it to satisfaction. We believe that this workflow provides a significant headstart to implementing code.
+
 // example
 
 ### Configuration Changes
@@ -70,6 +72,6 @@ CodeRabbit is also capable of managing its own configuration settings upon reque
 
 // example
 
-### Help
+### Help and Feedback
 
 Need help? Join our community on [Discord](https://discord.gg/coderabbit) or contact our support team.
