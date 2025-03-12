@@ -17,9 +17,11 @@ CodeRabbit Chat is a powerful pull-request-specific assistant designed to stream
 
 ## Invocation
 
-To invoke CodeRabbit Chat, simply comment on a pull request using the handle @coderabbitai without any explicit command. The permission flow for the chat is the same as the deterministic CodeRabbit commands // some crap about commands
+To invoke CodeRabbit Chat, simply comment on a pull request using the handle `@coderabbitai` without any explicit command (so without the [explicit CodeRabbit commands](./commands.md)) in plain natural language.
 
-Upon being invoked, CodeRabbit processes your request and responds with the necessary assistance. This assistance may entail generating scripts, updating issue tracking systems, offering detailed code suggestions, or even submitting an entire pull request.
+The permission flow for the chat is the same as the deterministic CodeRabbit commands.
+
+Upon being invoked, CodeRabbit processes your request and responds with the necessary assistance. This assistance may entail generating scripts, updating issue tracking systems, offering detailed code suggestions, or even submitting an entire pull request (with your consent).
 
 ## Features
 
@@ -39,9 +41,7 @@ CodeRabbit Chat integrates real-time web search capabilities, enabling it to fet
 
 ### Jira and Linear Integration
 
-CodeRabbit Chat is integrated with Jira and Linear.
-
-// link to authing it
+CodeRabbit Chat can deal with existing issue tracking system integrations in order to integrate with your existing issues. For details on setting up issue tracking integrations, see our [Issue Integrations](../integrations/issue-integrations.md) guide.
 
 ### Learnings Integration
 
