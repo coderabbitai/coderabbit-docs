@@ -4,14 +4,15 @@ sidebar_label: Changelog
 description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+```
 
 ## March 12, 2025
 
 ### Mult-Step Agent Chat
 
 ```mdx-code-block
-import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
-
 <ProPlanNotice />
 ```
 
@@ -22,8 +23,6 @@ We're excited to announce that CodeRabbit chat can now do agentic planning on Gi
 ### Docstrings
 
 ```mdx-code-block
-import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
-
 <ProPlanNotice />
 ```
 
