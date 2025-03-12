@@ -1,92 +1,51 @@
 # CodeRabbit Agentic Chat
 
-CodeRabbit Chat is a powerful assistant designed to streamline your development workflow. You can talk to CodeRabbit directly in pull request review comments and pull request comments to ask questions, have CodeRabbit rewrite code and write new code.
+CodeRabbit Agentic Chat is a powerful assistant designed to streamline your development workflow. You can interact directly in pull request review comments and pull request comments to ask questions, have CodeRabbit rewrite code, or generate new code. This tool is built to enhance your productivity by integrating seamlessly into your existing development environment.
 
-## Table of Contents
+# Getting Started
 
-- [Getting Started](#getting-started)
-- [Invocation](#invocation)
-- [Features](#features)
-  - [Script Writing](#script-writing)
-  - [Web Search](#web-search)
-  - [Jira and Linear Integration](#jira-and-linear-integration)
-  - [Learnings Integration](#learnings-integration)
-  - [Single Step Code Generation](#single-step-code-generation)
-  - [Multi-Step Agentic Flow with Planning](#multi-step-agentic-flow-with-planning)
-  - [Configuration Changes](#configuration-changes)
-- [Usage Guidelines](#usage-guidelines)
-- [Support and Contributions](#support-and-contributions)
+Agentic Chat is available exclusively for Pro customers. // some crap about sales process
 
-## Getting Started
+# Invocation
 
-Agentic chat is available only for Pro customers. //// some crap about contacting sales paying us money
+To invoke CodeRabbit Agentic Chat, simply comment on a pull request using the handle @coderabbitai without any explicit command.
 
-## Invocation
+Once activated, CodeRabbit processes your request and responds with the necessary assistance. This assistance may include generating scripts, updating issue tracking systems, offering detailed code suggestions, or even submitting an entire pull request, providing a streamlined and efficient workflow.
 
-To invoke the CodeRabbit agentic chat, simply comment on a pull request with:
+# Features
 
-@coderabbitai
+## Script Writing
 
-without an explicit command in ordinary natural language. Once invoked, CodeRabbit will process your request and respond with the necessary assistance. This can involve script generation, issue tracking updates, detailed code suggestions, or an entire stacked pull request. /// link to command
+CodeRabbit can automatically generate scripts in various programming languages. It not only writes shell scripts but also selects the most appropriate scripting language and structure based on the specific query provided. This adaptive approach minimizes manual coding efforts by automating repetitive or standardized tasks, ultimately increasing efficiency and reducing development time.
 
-## Features
+## Web Search
 
-### Script Writing
+The assistant integrates real-time web search capabilities, enabling it to fetch up-to-date information to support its responses. By leveraging current data, CodeRabbit ensures that its answers are both accurate and contextually relevant. This feature assists in validating assumptions and discovering new methodologies, contributing to more informed and effective decision-making during development.
 
-- **Automated Script Generation:** CodeRabbit can write shell scripts and scripts in other languages when necessary.
-- **Adaptive Scripting:** The agent decides on the most appropriate scripting language and structure based on your query.
-- **Efficiency:** Reduces manual coding effort by automating repetitive or standard scripting tasks.
+## Jira and Linear Integration
 
-### Web Search
+CodeRabbit offers seamless integration with popular project management tools such as Jira and Linear. This connection allows users to manage issue tracking and task updates directly from their development environment. By synchronizing pull request comments and code updates with these systems, the tool reduces manual data entry and helps maintain a smooth, uninterrupted workflow across the project lifecycle.
 
-- **Real-Time Information:** Integrates web search capabilities to fetch up-to-date information that can be used to answer your questions.
-- **Contextual Assistance:** Leverages current data to provide more accurate and informed responses.
-- **Improved Decision Making:** Helps in validating assumptions or learning new methodologies by providing relevant external resources.
+## Learnings Integration
 
-### Jira and Linear Integration
+The agent is designed to incorporate learnings and best practices into its workflows. Users can instruct CodeRabbit to remember specific pieces of information, which it then integrates into future tasks. This dynamic learning capability enables the tool to continuously refine code quality and improve overall efficiency by applying accumulated insights from previous interactions.
 
-- **Seamless Issue Tracking:** Connects with Jira and Linear, allowing you to manage issues directly from your development environment.
-- **Project Management:** Facilitates streamlined task updates and status changes, ensuring that your project’s workflow remains uninterrupted.
-- **Automated Workflows:** Reduces the need for manual entry by synchronizing pull request comments and code updates with your project management tools.
+## Single Step Code Generation
 
-### Learnings Integration
+For rapid prototyping and quick fixes, CodeRabbit is capable of generating code snippets in a single step. This functionality is ideal for scenarios where developers need to copy and paste code quickly, reducing the likelihood of errors by automating repetitive tasks. The streamlined process saves time and allows developers to focus on more complex aspects of their projects.
 
-- **Dynamic Learning:** Incorporates learnings and best practices into its workflows.
-- **Memory Functionality:** Simply instruct the agent to remember a piece of information, and it will integrate it into future tasks.
-- **Continuous Improvement:** Uses accumulated learnings to refine code quality and improve overall efficiency.
+## Multi-Step Agentic Flow with Planning
 
-### Single Step Code Generation
+When facing complex coding challenges, CodeRabbit supports multi-step agentic flows that involve detailed planning and execution. This sophisticated approach enables the tool to manage multi-stage tasks effectively, providing structured and iterative improvements to the code. Once the multi-step workflow is complete, CodeRabbit can automatically issue a pull request for the changes, ensuring that even intricate processes are handled efficiently.
 
-- **Rapid Prototyping:** Generates code snippets in a single step, ideal for quick copy-and-paste tasks.
-- **Error Reduction:** Automates repetitive code tasks, reducing the risk of human error.
-- **Time Saving:** Streamlines the development process by delivering immediate code solutions.
+## Configuration Changes
 
-### Multi-Step Agentic Flow with Planning
+CodeRabbit is also capable of managing its own configuration settings upon request. This self-management allows the assistant to dynamically adapt to changing project requirements. By simplifying configuration updates, CodeRabbit helps users quickly adjust to new workflows or requirements without interrupting the development process.
 
-- **Complex Workflow Support:** Handles multi-step tasks that require detailed planning and execution.
-- **Sophisticated Code Generation:** Uses advanced planning strategies to solve intricate coding challenges.
-- **Automated Pull Requests:** Can issue a pull request for code changes once the multi-step workflow is complete.
-- **Iterative Improvement:** Provides a structured approach to refine code over several iterations.
+# Usage Guidelines
 
-### Configuration Changes
+When using CodeRabbit, it is important to provide clear and explicit instructions to ensure that the responses are accurate and relevant. Users are encouraged to leverage the integration with tools like Jira, Linear, and the web search functionality to maximize workflow efficiency. If the generated solution does not meet expectations, providing feedback will help the agent refine its output. Additionally, users should adhere to security best practices by avoiding the sharing of sensitive information during interactions.
 
-- **Self-Managed Configurations:** The CodeRabbit agent can manage its own configuration settings upon request.
-- **Dynamic Adaptation:** Allows for configuration updates that cater to changing project needs.
-- **Ease of Use:** Simplifies the process of adapting the agent to new workflows or requirements.
+# Support and Contributions
 
-## Usage Guidelines
-
-- **Keep Instructions Clear:** When invoking CodeRabbit, be explicit about your requirements to ensure accurate and relevant responses.
-- **Leverage the Integration:** Make full use of the integrated tools like Jira, Linear, and web search for a seamless workflow.
-- **Feedback Loop:** If a generated solution does not meet your expectations, provide feedback so that the agent can refine its output.
-- **Security Practices:** Ensure that sensitive information is not shared inadvertently during agent invocation.
-
-## Support and Contributions
-
-For additional support, bug reports, or to contribute to the development of CodeRabbit Agentic Chat, please refer to the project repository and its contribution guidelines. Engaging with the community will help improve the agent and its features continuously.
-
----
-
-By integrating these robust features, CodeRabbit Agentic Chat enhances your coding workflow, making it a valuable tool for both individual developers and larger teams. Enjoy a more efficient and streamlined development process with CodeRabbit!
-
-
+For additional support, bug reports, or to contribute to the development of CodeRabbit Agentic Chat, users should refer to the project repository and follow the contribution guidelines provided. Active engagement with the community is encouraged, as it helps continuously improve the agent and its features. This collaborative approach ensures that CodeRabbit remains a valuable tool for individual developers and larger teams alike.
