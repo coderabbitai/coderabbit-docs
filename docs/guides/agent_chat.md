@@ -29,15 +29,11 @@ Upon being invoked, CodeRabbit processes your request and responds with the nece
 
 CodeRabbit Chat can automatically generate scripts in various programming languages (mainly shell scripting) to answer questions about your codebase. If incorrect or non-running or non-germane shell scripts are created, CodeRabbit goes and tries again, and the whole script iteration process will be displayed to you in an Analysis Flow.
 
-///////// example some crap
-///////// example some crap
-
 ### Web Search
 
 CodeRabbit Chat integrates real-time web search capabilities, enabling it to fetch up-to-date information to support its responses. The CodeRabbit Chat response will indicate this if it decides to search the web to answer your query.
 
-// example
-// how to turn it off
+Set `enabled` to false within `web_search` within `knowledge_base` within the config in order to turn this off.
 
 ### Jira and Linear Integration
 
@@ -47,30 +43,21 @@ CodeRabbit Chat can deal with existing issue tracking system integrations in ord
 
 CodeRabbit Chat can insert and delete Learnings from your Learnings database. Simply ask it to do so in plain natural language.
 
-////// example some crap
-
 ### Single Step Code Generation
 
 For rapid prototyping and quick fixes, CodeRabbit Chat is capable of generating code snippets in a single step.
 
-// example
-
 ### Multi-Step Agentic Flow with Planning
 
-/// github only lol
-/// early access lol
-
-When facing complex coding challenges, CodeRabbit Chat supports multi-step agentic flows that involve detailed planning and execution. Once the multi-step workflow is complete, CodeRabbit can automatically issue a pull request for the changes, ensuring that even intricate processes are handled efficiently.
+When facing complex coding challenges, CodeRabbit Chat supports multi-step agentic flows that involve detailed planning and execution. Once the multi-step workflow is complete, CodeRabbit can automatically issue a pull request for the changes so you can consent to the code changes or edit them.
 
 CodeRabbit cannot perform further modifications to opened pull requests. From there, it's your turn to checkout the branch and improve it to satisfaction. We believe that this workflow provides a significant headstart to implementing code.
 
-// example
+Multi-step agentic flows are currently only available on Github. Multi-step agentic flows are an early access product currently.
 
 ### Configuration Changes
 
 CodeRabbit is also capable of managing its own configuration settings upon request. This self-management allows the assistant to dynamically adapt to changing project requirements. By simplifying configuration updates, CodeRabbit helps users quickly adjust to new workflows or requirements without interrupting the development process.
-
-// example
 
 ### Help and Feedback
 
