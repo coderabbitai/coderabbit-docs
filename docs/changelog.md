@@ -16,7 +16,7 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-We're excited to announce that CodeRabbit chat can now do agentic planning on Github. This functionality allows more sophisticated request to be made of CodeRabbit chat spanning multiple files. Comment with `@coderabbitai` a natural language request on any pull request with a review comment, asking for a code change, and the chat will plan code changes if they are complex.
+We're thrilled to introduce agentic planning on GitHub for CodeRabbit chat. This enhancement lets you make more advanced requests that span multiple files. Just add a review comment on any pull request tagging `@coderabbitai` along with your natural language request for a code change, and the chat will develop a plan for complex modifications. This is in addition to existing agentic chat for CodeRabbit.
 
 ## February 25, 2025
 
