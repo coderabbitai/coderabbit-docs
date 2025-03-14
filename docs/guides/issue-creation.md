@@ -15,17 +15,13 @@ CodeRabbit provides seamless issue creation capabilities across multiple platfor
 
 ## Creating Issues Through Agentic Chat
 
-Using CodeRabbit's [agentic chat](./agent_chat.md), you can create issues naturally through conversations in comment threads. Simply mention `@coderabbitai` and describe the issue you want to create.
-
-CodeRabbit will help you format and create the issue with appropriate details based on your description.
-
-![Creating issues through agentic chat](/img/guides/create-issue-agentic.png)
-
-## Inline Issue Creation
-
-You can also create issues directly from code review comments by using inline commands.
+Using CodeRabbit's chat functions, you can create issues naturally through conversations in comments or comment threads. Simply mention `@coderabbitai` and ask to create an issue.
 
 ![Creating issues inline](/img/guides/create-issue-inline.png)
+
+When using CodeRabbit's [agentic chat](./agent_chat.md), CodeRabbit will help you format and create the issue with appropriate details based on your description and desired issue platform.
+
+![Creating issues through agentic chat](/img/guides/create-issue-agentic.png)
 
 ## Supported Platforms
 
