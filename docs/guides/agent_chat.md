@@ -37,7 +37,7 @@ Set `enabled` to false within `web_search` within `knowledge_base` within the co
 
 ### Jira and Linear Integration
 
-CodeRabbit Chat can deal with existing issue tracking system integrations in order to integrate with your existing issues. For details on setting up issue tracking integrations, see our [Issue Integrations](../integrations/issue-integrations.md) guide.
+CodeRabbit Chat can deal with existing issue tracking system integrations in order to integrate with your existing issues. For details on setting up issue tracking integrations, see our [Issue Integrations](../integrations/issue-integrations.md) guide and [Issue Creation](./issue-creation.md) guide.
 
 ### Learnings Integration
 
