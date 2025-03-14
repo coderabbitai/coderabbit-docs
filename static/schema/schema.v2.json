@@ -112,6 +112,11 @@
 					"default": true,
 					"description": "Enable free tier features for users not on a paid plan."
 				},
+				"auto_resolve_threads": {
+					"type": "boolean",
+					"default": true,
+					"description": "Automatically resolve threads when code changes address the feedback. When disabled, metrics are still tracked but threads won't be marked as resolved."
+				},
 				"reviews": {
 					"type": "object",
 					"properties": {
@@ -775,6 +780,11 @@
 							"type": "boolean",
 							"default": true,
 							"description": "Enable the bot to reply automatically without requiring the user to tag it."
+						},
+						"create_issues": {
+							"type": "boolean",
+							"default": true,
+							"description": "Enable Issue creation by CodeRabbit from PR comments."
 						},
 						"integrations": {
 							"type": "object",
