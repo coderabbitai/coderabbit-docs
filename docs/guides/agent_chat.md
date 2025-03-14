@@ -53,7 +53,7 @@ When facing complex coding challenges, CodeRabbit Chat supports multi-step agent
 
 CodeRabbit cannot perform further modifications to opened pull requests. From there, it's your turn to checkout the branch and improve it to satisfaction. We believe that this workflow provides a significant headstart to implementing code.
 
-Multi-step agentic flows are currently only available on Github. Multi-step agentic flows are an early access product currently.
+Multi-step agentic flows are currently only available on Github pull request review comments. Multi-step agentic flows are an early access product currently.
 
 ### Configuration Changes
 
