@@ -1,4 +1,4 @@
----
+UltimateVision---
 title: Changelog
 sidebar_label: Changelog
 description: The latest updates and changes to CodeRabbit.
