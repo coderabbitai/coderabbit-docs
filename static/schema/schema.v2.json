@@ -112,6 +112,11 @@
 					"default": true,
 					"description": "Enable free tier features for users not on a paid plan."
 				},
+				"auto_resolve_threads": {
+					"type": "boolean",
+					"default": true,
+					"description": "Automatically resolve threads when code changes address the feedback. When disabled, metrics are still tracked but threads won't be marked as resolved."
+				},
 				"reviews": {
 					"type": "object",
 					"properties": {
@@ -210,6 +215,11 @@
 							"type": "boolean",
 							"default": true,
 							"description": "Suggest reviewers based on the changes in the pull request in the walkthrough."
+						},
+						"auto_assign_reviewers": {
+							"type": "boolean",
+							"default": false,
+							"description": "Automatically assign suggested reviewers to the pull request"
 						},
 						"poem": {
 							"type": "boolean",
@@ -566,7 +576,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v1.62.2"
+											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v1.64.8"
 										},
 										"config_file": {
 											"type": "string",
@@ -775,6 +785,11 @@
 							"type": "boolean",
 							"default": true,
 							"description": "Enable the bot to reply automatically without requiring the user to tag it."
+						},
+						"create_issues": {
+							"type": "boolean",
+							"default": true,
+							"description": "Enable Issue creation by CodeRabbit from PR comments."
 						},
 						"integrations": {
 							"type": "object",

@@ -37,13 +37,15 @@ To link a Jira Issue, you can add the Jira Issue into the PR description as show
 Closes CR-5
 ```
 
+You can also create new Jira issues directly through CodeRabbit. See our [Issue Creation guide](../guides/issue-creation.md#jira) for details.
+
 ## Linear {#Linear}
 
 ```mdx-code-block
 <ProPlanNotice />
 ```
 
-With CodeRabbit, you can easily link your pull requests with Linear. It makes your life simpler by automatically creating Linear issues with all the code context, keeping your issues and pull requests in sync both ways. Plus, it lets you generate issues straight from pull requests, track how you’re hitting your goals, and even turn code review feedback into actionable tasks in Linear.
+With CodeRabbit, you can easily link your pull requests with Linear. It makes your life simpler by automatically creating Linear issues with all the code context, keeping your issues and pull requests in sync both ways. Plus, it lets you generate issues straight from pull requests, track how you're hitting your goals, and even turn code review feedback into actionable tasks in Linear.
 
 ### CodeRabbit App
 
@@ -66,6 +68,8 @@ To link a Linear Issue, you can add the Linear Issue via the team key and issue 
 // (Linear Team Key - Issue Number)
 Closes ENG-123
 ```
+
+You can also create new Linear issues directly through CodeRabbit. Learn more in our [Issue Creation guide](../guides/issue-creation.md#linear).
 
 ## GitHub
 

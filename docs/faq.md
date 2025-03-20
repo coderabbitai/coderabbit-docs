@@ -254,6 +254,11 @@ A confirmation modal will appear explaining the consequences of account deletion
     2. Delete CodeRabbit webhooks
     3. Remove CodeRabbit user or delete associated Personal Access Token
   </TabItem>
+  <TabItem value="bitbucket" label="Bitbucket Cleanup">
+    1. Go to Project Settings > Webhooks
+    2. Delete CodeRabbit webhooks
+    3. Remove CodeRabbit user or delete associated App Passwords
+  </TabItem>
 </Tabs>
 
 :::warning Post-Deletion Steps
