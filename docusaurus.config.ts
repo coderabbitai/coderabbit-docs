@@ -126,6 +126,50 @@ const config: Config = {
 				},
 			}
 		},
+		[
+			"@inkeep/cxkit-docusaurus",
+			{
+				SearchBar: {
+					baseSettings: {
+						apiKey: process.env.INKEEP_API_KEY || "9649d8886273981b6b94c2601150fb037cdb098f628f684d",
+						integrationId: process.env.INKEEP_INTEGRATION_ID || "cm8dgcraa000rs60157haupc1",
+						organizationId: process.env.INKEEP_ORGANIZATION_ID || "org_bTr2d0WspaU3yiz5",
+						primaryBrandColor: process.env.INKEEP_PRIMARY_BRAND_COLOR || "#FF570A"
+					},
+					aiChatSettings: {
+						chatSubjectName: "CodeRabbit",
+						aiAssistantAvatar: "https://www.coderabbit.ai/favicon.ico",
+						getHelpOptions: [
+							{
+								name: "Discord",
+								icon: {
+									builtIn: "FaDiscord"
+								},
+								action: {
+									type: "open_link",
+									url: "https://discord.gg/coderabbit"
+								}
+							},
+							{
+								name: "Contact Us",
+								icon: {
+									builtIn: "IoChatbubblesOutline"
+								},
+								action: {
+									type: "open_link",
+									url: "https://www.coderabbit.ai/contact-us"
+								}
+							}
+						],
+						exampleQuestions: [
+							"What is CodeRabbit?",
+							"How to integrate CodeRabbit with GitHub?",
+							"How to set up a AI Code Review?"
+						]
+					}
+				}
+			}
+		],
 	],
 
 	presets: [
@@ -216,7 +260,7 @@ const config: Config = {
 					label: "Blog",
 					position: "left",
 				},
-				{
+								{
 					href: "https://discord.gg/coderabbit",
 					className: "navbar-icon-link discord-link",
 					"aria-label": "Discord",
