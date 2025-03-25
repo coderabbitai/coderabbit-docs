@@ -145,4 +145,4 @@ Example:
 - [Agentic Chat](./agent_chat.md)
 - [Issue Creation](./issue-creation.md)
 - [Commands](./commands.md)
-- [Tooling Guide](./tooling.md)
+- [Tooling Guide](../tools/tools.md)
