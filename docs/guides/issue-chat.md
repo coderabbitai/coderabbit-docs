@@ -88,32 +88,20 @@ CodeRabbit can help maintain open source projects by:
 
 Example:
 
-```text
-User: @coderabbitai I'm getting "TypeError: Cannot read property 'config' of undefined"
-
-CodeRabbit: Let me help troubleshoot that error...
-
-[Detailed explanation and solution steps]
-```
+![Open Source Support Example](../../static/img/guides/open-source-support.png)
 
 ### Documentation Assistance
 
 Use issue chat to:
 
-- Generate API documentation
-- Create usage examples
-- Update README files
+- Generate high level documentation
+- Create usage examples and mermaid diagrams
+- Provide content to assist in updating README files
 - Write tutorials
 
 Example:
 
-```text
-User: @coderabbitai Can you help document the new authentication middleware?
-
-CodeRabbit: I'll analyze the middleware and create documentation...
-
-[Generated documentation with examples]
-```
+![Documentation Assistance Example](../../static/img/guides/high-level-docs.png)
 
 ### Marketing Content Generation
 
@@ -126,13 +114,7 @@ CodeRabbit can assist with creating:
 
 Example:
 
-```text
-User: @coderabbitai Help me write a Reddit post about our new GraphQL features
-
-CodeRabbit: I'll create a draft post highlighting the key features...
-
-[Generated Reddit post with technical details and benefits]
-```
+![Marketing Content Example](../../static/img/guides/marketing-posts.png)
 
 ## Best Practices
 
@@ -151,10 +133,16 @@ CodeRabbit: I'll create a draft post highlighting the key features...
    - Use issue chat to document decisions
    - Reference related issues or PRs
 
+4. **Keep Questions Focused**
+   - CodeRabbit works best with clear, specific questions
+   - Link to specific files, directories or pull requests to help refine answers and provide better context
+   - CodeRabbit does not generate API documentation, Swagger specs, or other technical documentation that requires high accuracy
+   - Break down complex questions into smaller, more manageable ones
+   - Use multiple messages to ask follow up questions if needed
+
 ## Related Resources
 
 - [Agentic Chat](./agent_chat.md)
 - [Issue Creation](./issue-creation.md)
 - [Commands](./commands.md)
-
-Need help? Join our community on [Discord](https://discord.gg/coderabbit) or contact our support team.
+- [Tooling Guide](./tooling.md)
