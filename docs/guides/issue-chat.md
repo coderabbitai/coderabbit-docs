@@ -79,12 +79,16 @@ Example conversation:
 
 ### Open Source Support
 
-CodeRabbit can help maintain open source projects by:
+Issue chat, like all Pro CodeRabbit features, is free for open source projects. CodeRabbit acts as a powerful support tool for open source maintainers by:
 
-- Answering common support questions
-- Providing code examples
-- Explaining error messages
-- Suggesting debugging steps
+- Answering common user questions with detailed, contextual responses
+- Providing relevant code examples and implementation patterns
+- Explaining error messages with debugging context and solutions
+- Suggesting step-by-step debugging approaches with code snippets
+- Helping triage and categorize issues
+- Identifying potential duplicates and related issues
+- Offering guidance on best practices and common pitfalls
+- Reducing maintainer burden by handling routine support tasks
 
 Example:
 
@@ -92,7 +96,7 @@ Example:
 
 ### Documentation Assistance
 
-Use issue chat to:
+Use issue chat to generate high level descriptions of the code and services in your repositories. This can be used to create README documentation which can be used across platforms like [wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis), [Confluence](https://www.atlassian.com/software/confluence/guides), [Notion](https://www.notion.so/help/guides) and more:
 
 - Generate high level documentation
 - Create usage examples and mermaid diagrams
@@ -105,7 +109,7 @@ Example:
 
 ### Marketing Content Generation
 
-CodeRabbit can assist with creating:
+CodeRabbit can assist with creating content on new features for social media posts, blogs, and more:
 
 - Release announcements
 - Blog post drafts
