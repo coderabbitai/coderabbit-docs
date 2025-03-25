@@ -27,6 +27,10 @@ To start a conversation with CodeRabbit in any issue:
 Organizations can configure a custom bot name by creating their own bot user. The bot will respond to mentions of that custom name instead of `@coderabbitai`.
 :::
 
+![Github Chat Example](../../static/img/guides/chat-example.png)
+
+![Gitlab Chat Example](../../static/img/guides/gitlab-issue-chat.png)
+
 ## Core Capabilities
 
 ### Code Analysis
@@ -48,6 +52,16 @@ This allows CodeRabbit to:
 - Create AI powered code searches
 - Use tribal knowledge from learnings to enhance responses
 
+![Script Execution Example](../../static/img/guides/chat-script-execution.png)
+
+![Chat Learnings Example](../../static/img/guides/chat-learnings-use.png)
+
+### Agentic Thought Chain
+
+When [agentic thought chain](./agent_chat.md) is enabled, CodeRabbit will use an agentic thought chain to plan out a response using multiple commands in series to articulate a more advanced response.
+
+![Agentic Thought Chain Example](../../static/img/guides/agentic-thought-chain.png)
+
 ### Feature Planning Support
 
 Issue chat is particularly valuable during feature planning phases:
@@ -59,13 +73,7 @@ Issue chat is particularly valuable during feature planning phases:
 
 Example conversation:
 
-```text
-User: @coderabbitai We're planning to add JWT authentication. Which parts of our codebase currently handle auth?
-
-CodeRabbit: I'll analyze the codebase for authentication-related code...
-
-[Analysis results with relevant files, patterns, and suggestions]
-```
+![Feature Planning Example](../../static/img/guides/feature-planning.png)
 
 ## Additional Use Cases
 
