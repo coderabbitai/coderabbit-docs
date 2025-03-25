@@ -119,16 +119,19 @@ Example:
 ## Best Practices
 
 1. **Be Specific**
+
    - Provide context in your questions
    - Mention specific files or features when relevant
    - Clarify your goals or requirements
 
 2. **Iterative Refinement**
+
    - Start with broad questions
    - Follow up for more details
    - Ask for clarification when needed
 
 3. **Collaborative Planning**
+
    - Include stakeholders in the conversation
    - Use issue chat to document decisions
    - Reference related issues or PRs
