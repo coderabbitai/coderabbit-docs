@@ -70,6 +70,7 @@ Remove extraneous f prefix
 | Ruby                        | [RuboCop][RuboCop]                                         | Code Quality                                        |
 | Semgrep                     | [Semgrep][Semgrep]                                         | Code Security                                       |
 | Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   | Code Quality                                        |
+| SQL                         | [SQLFluff][SQLFluff]                                       | Code Quality                                        |
 | Swift                       | [SwiftLint][SwiftLint]                                     | Code Quality                                        |
 | Terraform                   | [Checkov][Checkov]                                         | Code Security                                       |
 | TSX                         | [Biome][Biome]                                             | Code Quality                                        |
@@ -77,6 +78,7 @@ Remove extraneous f prefix
 | YAML                        | [YAMLlint][YAMLlint]                                       | Code Quality                                        |
 
 [ShellCheck]: ./shellcheck.md
+[SQLFluff]: ./sqlfluff.md
 [Ruff]: ./ruff.md
 [markdownlint]: ./markdownlint.md
 [LanguageTool]: ./languagetool.md
