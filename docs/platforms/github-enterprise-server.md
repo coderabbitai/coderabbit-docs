@@ -80,38 +80,40 @@ steps below to
 3. In the left sidebar, click **Developer settings** > **GitHub Apps**
 4. Click **New GitHub App**.
 5. Set the following fields:
-   - **GitHub App name**: `CodeRabbit`
-   - **Description**: `GitHub App for CodeRabbit`
-   - **Homepage URL**: `https://coderabbit.ai`
-   - **Callback URL**: `https://app.coderabbit.ai/login`
-   - **Request user authorization (OAuth) during installation**: `true`
-   - **Webhook Active**: `true`
-   - **Webhook URL**: `https://app.coderabbit.ai/githubHandler`
-   - **Webhook secret**: Use a secure string and keep it handy.
-   - **Permissions**:
-     - **Repository permissions**:
-       - **Checks**: Read-only
-       - **Contents**: Read and write
-			 - **Commit statuses**: Read and write
-       - **Discussions**: Read-only
-       - **Issues**: Read and write
-       - **Metadata**: Read-only
-       - **Pull requests**: Read and write
-			 - **Actions**: Read-only
-     - **Organization permissions**:
-       - **Members**: Read-only
-     - **Events**:
-       - Meta
-       - Issue comment
-       - Issues
-       - Label
-       - Public
-       - Pull request
-       - Pull request review
-       - Pull request review comment
-       - Pull request review thread
-       - Push
-       - Release
+
+- **GitHub App name**: `CodeRabbit`
+- **Description**: `GitHub App for CodeRabbit`
+- **Homepage URL**: `https://coderabbit.ai`
+- **Callback URL**: `https://app.coderabbit.ai/login`
+- **Request user authorization (OAuth) during installation**: `true`
+- **Webhook Active**: `true`
+- **Webhook URL**: `https://app.coderabbit.ai/githubHandler`
+- **Webhook secret**: Use a secure string and keep it handy.
+- **Permissions**:
+  - *Repository permissions*:
+    - Actions: Read-only
+    - Checks: Read-only
+    - Contents: Read and write
+    - Commit statuses: Read and write
+    - Discussions: Read-only
+    - Issues: Read and write
+    - Metadata: Read-only
+    - Pull requests: Read and write
+  - *Organization permissions*:
+    - Members: Read-only
+- **Events**:
+  - Meta
+  - Issue comment
+  - Issues
+  - Label
+  - Public
+  - Pull request
+  - Pull request review
+  - Pull request review comment
+  - Pull request review thread
+  - Push
+  - Release
+
 6. Click **Create GitHub App**.
 
 Once the GitHub App has been created, click on **Generate a new client secret**
