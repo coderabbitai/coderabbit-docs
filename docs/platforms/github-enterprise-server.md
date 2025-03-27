@@ -92,10 +92,12 @@ steps below to
      - **Repository permissions**:
        - **Checks**: Read-only
        - **Contents**: Read and write
+			 - **Commit statuses**: Read and write
        - **Discussions**: Read-only
        - **Issues**: Read and write
        - **Metadata**: Read-only
        - **Pull requests**: Read and write
+			 - **Actions**: Read-only
      - **Organization permissions**:
        - **Members**: Read-only
      - **Events**:
