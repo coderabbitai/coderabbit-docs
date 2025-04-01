@@ -5,13 +5,51 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## April 1, 2025
+
+### Code Graph Analysis
+
+Code reviews automatically analyze dependencies across multiple files to enhance the context from code definitions (e.g., types) to improve accuracy and reduce false positives.
+
+This is a very powerful feature that gathers context behind code changes in one file that have dependencies in another file.
+
+🔍 See it in action: Review details → Additional context used → Code definitions
+In the review status message. It is automatically enabled for all users.
+
+### Automatically Run a Web Query to Include Latest Information
+
+CodeRabbit now performs Web Queries automatically to include the most recent publicly available information — even if it wasn’t included in the latest LLM update. This feature is enabled by default for all users, and you may notice it being used in review comments and chat responses.
+
+Web Queries allow CodeRabbit to fetch the latest documentation and external content to improve the accuracy and relevance of its output. You can disable this feature by setting web_search: false in your knowledge_base settings.
+
+### CodeRabbit Auto-Resolve
+
+CodeRabbit can now detect when suggested changes have been implemented and automatically resolve the related review threads on your behalf.
+
+### Dashboard Redesign
+
+```mdx-code-block
+import ProPlanNotice from "@site/src/components/ProPlanNotice.mdx"
+
+<ProPlanNotice />
+```
+
+New and Improved Dashboards to provide more useful feedback such as:
+
+- Avgerage PR Merge Time
+- Weekly Pull Request Activity
+- Number of PRs Reviewed
+- Acceptance rate of CodeRabbit Suggestions
+- Tool Findings
+- Review Feedback Breakdown
+
+and much more! Check out the new dashboard to view these metrics about your organization.
+
 ## February 25, 2025
 
 ### Docstrings
 
 ```mdx-code-block
-import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
-
 <ProPlanNotice />
 ```
 
