@@ -76,6 +76,7 @@ Remove extraneous f prefix
 | TSX                         | [Biome][Biome]                                             | Code Quality                                        |
 | Typescript                  | [Biome][Biome]                                             | Code Quality                                        |
 | YAML                        | [YAMLlint][YAMLlint]                                       | Code Quality                                        |
+| Prisma                      | [Prisma Lint][PrismaLint]                                  | Code Quality                                        |
 
 [ShellCheck]: ./shellcheck.md
 [SQLFluff]: ./sqlfluff.md
@@ -100,3 +101,4 @@ Remove extraneous f prefix
 [CircleCI]: ./circleci.md
 [Semgrep]: ./semgrep.md
 [Pipeline]: ./pipeline-remediation.md
+[PrismaLint]: ./prisma-lint.md
