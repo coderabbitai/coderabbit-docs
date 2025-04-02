@@ -53,6 +53,12 @@ and much more! Check out the new dashboard to view these metrics about your orga
 
 We're thrilled to introduce agentic planning on GitHub for CodeRabbit chat as an Experimental feature for Early Access users. This enhancement lets you make more advanced requests that span multiple files. Just add a review comment on any pull request tagging `@coderabbitai` along with your natural language request for a code change, and the chat will develop a plan for complex modifications. Upon reviewing the plan and getting your consent, CodeRabbit will emit a stacked PR to your PR for those code changes.
 
+### Additional Static Analysis Support
+
+We are continually expanding our support for static analysis tools. We've recently added support for:
+
+- SQLFluff
+
 ## February 25, 2025
 
 ### Docstrings
