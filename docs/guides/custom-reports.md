@@ -105,12 +105,12 @@ Contained within the `<pr_details>` tag.
 
 #### Comments
 
-- `${pr_comments}`: array of comment objects - Contains all the comments made on the PR.
-- `${comment}`: object - Each individual comment is wrapped in this tag and is an object with the following properties:
-  - `${comment_author_username}`: string - The username of the comment author.
-  - `${comment_created_at}`: datetime - The date and time the comment was created.
-  - `${comment_updated_at}`: datetime - The date and time the comment was last updated.
-  - `${comment_body}`: markdown - The content of the comment.
+- `<pr_comments>`: array of comment objects - Contains all the comments made on the PR.
+- `<comment>`: object - Each indidvidual comment is wrapped in this tag and is an object with the following properties:
+  - `<comment_author_username>`: string - The username of the comment author.
+  - `<comment_created_at>`: datetime - The date and time the comment was created.
+  - `<comment_updated_at>`: datetime - The date and time the comment was last updated.
+  - `<comment_body>`: markdown - The content of the comment.
 
 Here's an example prompt that uses these data points:
 
