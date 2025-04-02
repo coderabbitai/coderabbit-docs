@@ -105,12 +105,12 @@ Contained within the `<pr_details>` tag.
 
 #### Comments
 
-- `<pr_comments>`: array of comment objects - Contains all the comments made on the PR.
-- `<comment>`: object - Each indidvidual comment is wrapped in this tag and is an object with the following properties:
-  - `<comment_author_username>`: string - The username of the comment author.
-  - `<comment_created_at>`: datetime - The date and time the comment was created.
-  - `<comment_updated_at>`: datetime - The date and time the comment was last updated.
-  - `<comment_body>`: markdown - The content of the comment.
+- `${pr_comments}`: array of comment objects - Contains all the comments made on the PR.
+- `${comment}`: object - Each individual comment is wrapped in this tag and is an object with the following properties:
+  - `${comment_author_username}`: string - The username of the comment author.
+  - `${comment_created_at}`: datetime - The date and time the comment was created.
+  - `${comment_updated_at}`: datetime - The date and time the comment was last updated.
+  - `${comment_body}`: markdown - The content of the comment.
 
 Here's an example prompt that uses these data points:
 
@@ -252,17 +252,29 @@ Within each group, sort by:
 - Impact level
 ```
 
-### Time-Based Analysis
+### Optional Data Sources
 
-Add temporal analysis to your reports:
+You can also include optional data sources in your custom reports. By default, CodeRabbit will not include the following data sources.  In a custom report you will see the option to include these data sources by clicking the `Select Optional Data Sources` button.  This adds special XML tags to your prompt that allow you to include this data in your report.
 
-```text
-Provide:
-- Week-over-week comparison
-- Trend analysis for the past month
-- Velocity metrics
-- Time to merge statistics
-```
+#### Bot Comments
+
+Bot comments are comments made by bots and Coderabbit AI on a PR. To enable bot comments you must include the tag `<include_bot_comments>` in your prompt.
+
+These are very similar in structure to regular user comments but with a few key differences:
+
+- `<bot_comments>`: array of comment objects - Contains all the comments made on the PR.
+- `<bot_comment>`: object - Each individual comment is wrapped in this tag and is an object with the following properties:
+  - `<bot_name>`: string - The username of the comment author.
+  - `<bot_comment_created_at>`: datetime - The date and time the comment was created.
+  - `<bot_comment_updated_at>`: datetime - The date and time the comment was last updated.
+  - `<bot_comment_body>`: markdown - The content of the comment.
+
+#### Issues and Tickets
+
+Issues and tickets brings in conversations, descriptions, and comments from Jira and Linear in your repository. To enable issues and tickets you must include the tag `<include_issues_and_tickets>` in your prompt.
+
+- `<issues_and_tickets>`: array of comment objects - Contains all the comments made on the PR.
+- `<issue_or_ticket>`: object - Each individual comment is wrapped in this tag and is an object with the following properties:
 
 ## Best Practices
 
