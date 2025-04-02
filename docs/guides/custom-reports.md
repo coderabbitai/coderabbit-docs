@@ -271,7 +271,7 @@ These are very similar in structure to regular user comments but with a few key 
 
 #### Issues and Tickets
 
-Issues and tickets brings in conversations, descriptions, and comments from Jira and Linear in your repository. To enable issues and tickets you must include the tag `<include_issues_and_tickets>` in your prompt.
+Issues and tickets brings in conversations, descriptions, and comments from Jira and Linear as part of your report if the ticket is linked in your PR description. To enable issues and tickets you must include the tag `<include_issues_and_tickets>` in your prompt.
 
 - `<issues_and_tickets>`: array of issue objects - Contains all the linked issues and tickets.
 - `<issue>`: object - Each individual issue is wrapped in this tag and is an object with the following properties:
