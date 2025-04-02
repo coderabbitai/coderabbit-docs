@@ -254,7 +254,7 @@ Within each group, sort by:
 
 ### Optional Data Sources
 
-You can also include optional data sources in your custom reports. By default, CodeRabbit will not include the following data sources.  In a custom report you will see the option to include these data sources by clicking the `Select Optional Data Sources` button.  This adds special XML tags to your prompt that allow you to include this data in your report.
+You can also include optional data sources in your custom reports. By default, CodeRabbit will not include the following data sources. In a custom report you will see the option to include these data sources by clicking the `Select Optional Data Sources` button. This adds special XML tags to your prompt that allow you to include this data in your report.
 
 #### Bot Comments
 
@@ -273,8 +273,17 @@ These are very similar in structure to regular user comments but with a few key 
 
 Issues and tickets brings in conversations, descriptions, and comments from Jira and Linear in your repository. To enable issues and tickets you must include the tag `<include_issues_and_tickets>` in your prompt.
 
-- `<issues_and_tickets>`: array of comment objects - Contains all the comments made on the PR.
-- `<issue_or_ticket>`: object - Each individual comment is wrapped in this tag and is an object with the following properties:
+- `<issues_and_tickets>`: array of issue objects - Contains all the linked issues and tickets.
+- `<issue>`: object - Each individual issue is wrapped in this tag and is an object with the following properties:
+  - `<issue_title>`: string - The title or thread ID of the issue.
+  - `<issue_url>`: string - The URL to the issue.
+  - `<issue_id>`: string - The unique identifier of the issue.
+  - `<issue_author>`: string - The username of who created the issue.
+  - `<issue_created_at>`: datetime - The date and time the issue was created.
+  - `<issue_updated_at>`: datetime - The date and time the issue was last updated.
+  - `<issue_body>`: markdown - The content/description of the issue. This contains the following sections:
+    - `<issue_description>`: markdown - The description of the issue.
+    - `<issue_comments>`: array of comment objects - Contains all the comments made on the issue.
 
 ## Best Practices
 
