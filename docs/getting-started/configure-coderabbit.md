@@ -63,7 +63,7 @@ Refer:
 ```mdx-code-block
 <details>
 
-<summary>Tips for collapsed sections</summary>
+<summary>Configuration Details</summary>
 
 ## 1. language
 
