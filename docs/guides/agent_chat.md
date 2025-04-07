@@ -57,7 +57,7 @@ For rapid prototyping and quick fixes, CodeRabbit Chat is capable of generating 
 
 CodeRabbit is also capable of managing its own configuration settings upon request. This self-management allows the assistant to dynamically adapt to changing project requirements. By simplifying configuration updates, CodeRabbit helps users quickly adjust to new workflows or requirements without interrupting the development process.
 
-# Agentic Chat (Chat with Planning)
+## Agentic Chat (Chat with Planning)
 
 When facing complex coding challenges, CodeRabbit Agentic Chat supports multi-step agentic flows that involve detailed planning and execution. Once the multi-step workflow is complete, CodeRabbit can automatically issue a pull request for the changes so you can consent to the code changes or edit them. CodeRabbit can also place changes in the existing pull request branch or create copyable snippets.
 
