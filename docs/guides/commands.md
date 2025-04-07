@@ -36,7 +36,7 @@
 ### Agentic Chat Commands
 
 | Command              | Description                                                | Use Case                                             |
-| ---------------------| ---------------------------------------------------------- | ---------------------------------------------------- |
+| -------------------- | ---------------------------------------------------------- | ---------------------------------------------------- |
 | `@coderabbitai plan` | Get the agentic chat to plan an edit for previous comments | When you want CodeRabbit to change your code for you |
 
 ### Help & Support
