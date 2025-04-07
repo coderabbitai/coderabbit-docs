@@ -61,6 +61,8 @@ CodeRabbit is also capable of managing its own configuration settings upon reque
 
 When facing complex coding challenges, CodeRabbit Agentic Chat supports multi-step agentic flows that involve detailed planning and execution. Once the multi-step workflow is complete, CodeRabbit can automatically issue a pull request for the changes so you can consent to the code changes or edit them. CodeRabbit can also place changes in the existing pull request branch or create copyable snippets.
 
+Agent chat can be invoked explicitly with the `@coderabbitai plan` command.
+
 CodeRabbit cannot perform further modifications to opened pull requests. From there, it's your turn to checkout the branch and improve it to satisfaction. We believe that this workflow provides a significant headstart to implementing code.
 
 Agentic Chat is currently only available on Github issue, pull request and pull request review comments. Agentic Chat is an early access product currently.
