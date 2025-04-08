@@ -1,11 +1,11 @@
 ---
-title: Agentic Chat
-sidebar_label: Agentic Chat
-description: Learn about CodeRabbit Pro's agentic chat system
+title: Chat and Agentic Chat
+sidebar_label: Chat and Agentic Chat
+description: Learn about CodeRabbit Pro's chat and agentic chat system
 sidebar_position: 8
 ---
 
-# Agentic Chat
+# CodeRabbit Chat
 
 ```mdx-code-block
 import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
@@ -35,6 +35,12 @@ CodeRabbit Chat integrates real-time web search capabilities, enabling it to fet
 
 Set `enabled` to false within `web_search` within `knowledge_base` within the config in order to turn this off.
 
+### Code Definition Integration
+
+CodeRabbit Chat is capable of taking definitions of code symbols from the symbol graph that CodeRabbit generates from your codebase. The CodeRabbit Chat response will indicate in its responses if it has found relevant symbols and snippets surrounding symbols in your codebase.
+
+Set the environment variable `ENABLE_CODE_GRAPH` in self-hosted CodeRabbit instances to turn this feature off.
+
 ### Jira and Linear Integration
 
 CodeRabbit Chat can deal with existing issue tracking system integrations in order to integrate with your existing issues. For details on setting up issue tracking integrations, see our [Issue Integrations](../integrations/issue-integrations.md) guide and [Issue Creation](./issue-creation.md) guide.
@@ -47,17 +53,19 @@ CodeRabbit Chat can insert and delete Learnings from your Learnings database. Si
 
 For rapid prototyping and quick fixes, CodeRabbit Chat is capable of generating code snippets in a single step.
 
-### Multi-Step Agentic Flow with Planning
-
-When facing complex coding challenges, CodeRabbit Chat supports multi-step agentic flows that involve detailed planning and execution. Once the multi-step workflow is complete, CodeRabbit can automatically issue a pull request for the changes so you can consent to the code changes or edit them.
-
-CodeRabbit cannot perform further modifications to opened pull requests. From there, it's your turn to checkout the branch and improve it to satisfaction. We believe that this workflow provides a significant headstart to implementing code.
-
-Multi-step agentic flows are currently only available on Github pull request review comments. Multi-step agentic flows are an early access product currently.
-
 ### Configuration Changes
 
 CodeRabbit is also capable of managing its own configuration settings upon request. This self-management allows the assistant to dynamically adapt to changing project requirements. By simplifying configuration updates, CodeRabbit helps users quickly adjust to new workflows or requirements without interrupting the development process.
+
+## Agentic Chat (Chat with Planning)
+
+When facing complex coding challenges, CodeRabbit Agentic Chat supports multi-step agentic flows that involve detailed planning and execution. Once the multi-step workflow is complete, CodeRabbit can automatically issue a pull request for the changes so you can consent to the code changes or edit them. CodeRabbit can also place changes in the existing pull request branch or create copyable snippets.
+
+Agent chat can be invoked explicitly with the `@coderabbitai plan` command.
+
+CodeRabbit cannot perform further modifications to opened pull requests. From there, it's your turn to checkout the branch and improve it to satisfaction. We believe that this workflow provides a significant headstart to implementing code.
+
+Agentic Chat is currently only available on Github issue, pull request and pull request review comments. Agentic Chat is an early access product currently.
 
 ### Help and Feedback
 
