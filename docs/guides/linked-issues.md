@@ -135,9 +135,9 @@ CodeRabbit evaluates linked issues by:
 2. Comparing changes in the pull request
 3. Validating if requirements are met
 4. Providing an assessment with:
-   - ✅ Addressed
-   - ❌ Not addressed
-   - Explanation of the assessment
+   - ✅: If the objective has been addressed in the PR. The 'Explanation' column will be left blank.
+   - ❌: If the objective has not been addressed in the PR. Here a brief explanation is added to the 'Explanation' column.
+   - ❓: If it is unclear whether the objective has been addressed. Here a brief explanation is added to the 'Explanation' column.
 
 :::note
 Only the issue title and description are considered in the assessment. Comments and discussion threads are not currently analyzed.
