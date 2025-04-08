@@ -2,7 +2,7 @@
 title: Custom Reports
 sidebar_label: Custom Reports
 description: Learn how to create custom reports with CodeRabbit Pro's flexible reporting system
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 ```mdx-code-block

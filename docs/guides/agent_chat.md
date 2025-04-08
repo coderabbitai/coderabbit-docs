@@ -2,7 +2,7 @@
 title: Chat and Agentic Chat
 sidebar_label: Chat and Agentic Chat
 description: Learn about CodeRabbit Pro's chat and agentic chat system
-sidebar_position: 8
+sidebar_position: 3
 ---
 
 # CodeRabbit Chat

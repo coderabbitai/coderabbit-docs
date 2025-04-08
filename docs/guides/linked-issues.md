@@ -2,7 +2,7 @@
 title: Linked Issues
 sidebar_label: Linked Issues
 description: Learn how to effectively use linked issues with CodeRabbit for better pull request assessments
-sidebar_position: 11
+sidebar_position: 6
 ---
 
 # Linked Issues
