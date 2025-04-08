@@ -1,3 +1,10 @@
+---
+title: Code Graph
+description: Learn about CodeRabbit's intelligent graph-based code analysis.
+sidebar_label: Code Graph
+sidebar_position: 6
+---
+
 # CodeRabbit Code Graph
 
 ## What is Code Graph?
