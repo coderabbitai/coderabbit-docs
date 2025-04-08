@@ -5,6 +5,17 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## April 8, 2025
+
+### New Static Analysis Tools
+
+We've expanded our static analysis capabilities with two new tools:
+
+- **OXC**: A high-performance JavaScript/TypeScript linter written in Rust.
+- **Prisma Lint**: A dedicated linter for Prisma schema files to help enforce consistent conventions and best practices.
+
+Both tools can be configured through their respective config files or through CodeRabbit's settings page. See our [tools documentation](https://docs.coderabbit.ai/tools/tools) for more details.
+
 ## April 1, 2025
 
 ### Code Graph Analysis
