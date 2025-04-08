@@ -1,31 +1,33 @@
 ---
-title: Code Graph
+title: Code Graph Analysis
 description: Learn about CodeRabbit's intelligent graph-based code analysis.
-sidebar_label: Code Graph
+sidebar_label: Code Graph Analysis
 sidebar_position: 6
 ---
 
-# CodeRabbit Code Graph
+# CodeRabbit Code Graph Analysis
 
-## What is Code Graph?
+## What is Code Graph Analysis?
 
-Code Graph is an intelligent code analysis feature that enhances your code reviews by automatically mapping relationships between files in your codebase. By
+Code Graph Analysis is an intelligent code analysis feature that enhances your code reviews by automatically mapping relationships between files in your codebase. By
 understanding how your code connects and interacts, Code Graph provides concrete snippets of context that makes reviews more effective and insightful.
 
-## How Code Graph Enhances Your Reviews
+## How Code Graph Analysis Enhances Your Reviews
 
-When reviewing code with CodeRabbit, Code Graph automatically:
+When reviewing code with CodeRabbit, Code Graph Analysis automatically:
 
 - **Maps symbol definitions and references** across your entire codebase
 - **Analyzes commit history** to identify files that frequently change together
 - **Builds relationship graphs** showing how different parts of your code connect
 - **Enriches reviews with contextual information** about related code
 
+Code Graph Analysis is also available in the CodeRabbit Chat. CodeRabbit Chat will automatically analyze your codebase with it when the agent deems it necessary.
+
 ## Key Features
 
 ### Three Types of Contextual Information
 
-Code Graph adds three powerful layers of context to your reviews:
+Code Graph Analysis adds three powerful layers of context to your reviews:
 
 1. **Definition Files**: Files containing definitions that are referenced in the current code
 2. **Reference Files**: Files that reference symbols defined in the current code
@@ -33,7 +35,7 @@ Code Graph adds three powerful layers of context to your reviews:
 
 ### Language Support
 
-Code Graph works with:
+Code Graph Analysis works with:
 
 - Bash
 - C
@@ -57,7 +59,7 @@ Code Graph works with:
 
 ## Availability
 
-Code Graph is available on the Lite tier and above.
+Code Graph Analysis is available on the Lite tier and above.
 
 ---
 
