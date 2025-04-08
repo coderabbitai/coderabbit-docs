@@ -1,3 +1,10 @@
+---
+title: Commands
+sidebar_label: Commands
+description: Learn how to control CodeRabbit using commands in pull request comments
+sidebar_position: 1
+---
+
 # CodeRabbit Commands
 
 > Control your code reviews directly from pull request comments using CodeRabbit's command system. Each command starts with `@coderabbitai` followed by the specific action you want to take.
