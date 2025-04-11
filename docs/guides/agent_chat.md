@@ -65,7 +65,7 @@ Agent chat can be invoked explicitly with the `@coderabbitai plan` command.
 
 CodeRabbit cannot perform further modifications to opened pull requests. From there, it's your turn to checkout the branch and improve it to satisfaction. We believe that this workflow provides a significant headstart to implementing code.
 
-Agentic Chat is currently only available on Github issue, pull request and pull request review comments. Agentic Chat is an early access product currently.
+Agentic Chat is currently only available on Github issue, pull request and pull request review comments.
 
 ### Help and Feedback
 
