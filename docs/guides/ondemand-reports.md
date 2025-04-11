@@ -2,7 +2,7 @@
 title: On-demand Reports
 sidebar_label: On-demand Reports
 description: CodeRabbit offers a way to generate on-demand reports using a simple API request
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 ```mdx-code-block

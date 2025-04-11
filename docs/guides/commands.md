@@ -1,3 +1,10 @@
+---
+title: Commands
+sidebar_label: Commands
+description: Learn how to control CodeRabbit using commands in pull request comments
+sidebar_position: 1
+---
+
 # CodeRabbit Commands
 
 > Control your code reviews directly from pull request comments using CodeRabbit's command system. Each command starts with `@coderabbitai` followed by the specific action you want to take.
@@ -32,6 +39,12 @@
 | ----------------------------------- | -------------------------------------------- | --------------------------------------------------- |
 | `@coderabbitai generate docstrings` | Generates docstrings for functions in the PR | When you need automatic documentation for your code |
 | `@coderabbitai configuration`       | Shows current CodeRabbit settings            | When you need to check or export your configuration |
+
+### Agentic Chat Commands
+
+| Command              | Description                                                | Use Case                                             |
+| -------------------- | ---------------------------------------------------------- | ---------------------------------------------------- |
+| `@coderabbitai plan` | Get the agentic chat to plan an edit for previous comments | When you want CodeRabbit to change your code for you |
 
 ### Help & Support
 

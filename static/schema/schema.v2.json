@@ -266,7 +266,7 @@
 									},
 									"instructions": {
 										"type": "string",
-										"maxLength": 3000,
+										"maxLength": 20000,
 										"description": "Provides specific additional guidelines for code review based on file paths."
 									}
 								},
@@ -807,26 +807,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable OXC | OXC is a JavaScript/TypeScript linter written in Rust. | v0.16.4"
-										},
-										"rules": {
-											"type": "object",
-											"additionalProperties": {
-												"type": ["number", "string"],
-												"enum": [0, 1, 2, "off", "warn", "error"]
-											}
-										},
-										"ignoreFiles": {
-											"type": "array",
-											"items": {
-												"type": "string"
-											}
-										},
-										"ignorePatterns": {
-											"type": "array",
-											"items": {
-												"type": "string"
-											}
+											"description": "Enable OXC | OXC is a JavaScript/TypeScript linter written in Rust. | v0.16.5"
 										}
 									},
 									"additionalProperties": false,

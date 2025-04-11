@@ -2,7 +2,7 @@
 title: Issue Chat
 sidebar_label: Issue Chat
 description: Learn how to use CodeRabbit's chat capabilities within issues
-sidebar_position: 10
+sidebar_position: 4
 ---
 
 ```mdx-code-block
