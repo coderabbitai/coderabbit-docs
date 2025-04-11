@@ -15,6 +15,7 @@ A linked issue is one that is explicitly referenced in your pull request descrip
 
 - GitHub: `fixes #123`, `closes #123`, `resolves #123`
 - GitLab: `closes #123`, `fixes #123`, or full URLs
+- Bitbucket: `closes #123`, `fixes #123`, or full URLs
 - Jira/Linear: Full URLs to tickets
 
 When CodeRabbit detects linked issues, it analyzes them against your pull request changes to determine if the requirements are met:
