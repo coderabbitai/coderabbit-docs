@@ -23,6 +23,7 @@
 		"@docusaurus/plugin-client-redirects": "^3.6.1",
 		"@docusaurus/plugin-content-blog": "^3.6.1",
 		"@docusaurus/preset-classic": "^3.6.1",
+		"@inkeep/cxkit-docusaurus": "^0.5.52",
 		"@mdx-js/react": "^3.1.0",
 		"autoprefixer": "^10.4.20",
 		"clsx": "^2.1.1",

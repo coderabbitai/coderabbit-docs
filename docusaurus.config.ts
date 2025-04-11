@@ -126,6 +126,48 @@ const config: Config = {
 				},
 			}
 		},
+		[
+			"@inkeep/cxkit-docusaurus",
+			{
+				SearchBar: {
+					baseSettings: {
+						apiKey: process.env.INKEEP_API_KEY,
+						primaryBrandColor: "#FF570A",
+					},
+					aiChatSettings: {
+						chatSubjectName: "CodeRabbit",
+						aiAssistantAvatar: "https://www.coderabbit.ai/favicon.ico",
+						getHelpOptions: [
+							{
+								name: "Discord",
+								icon: {
+									builtIn: "FaDiscord",
+								},
+								action: {
+									type: "open_link",
+									url: "https://discord.gg/coderabbit",
+								},
+							},
+							{
+								name: "Contact Us",
+								icon: {
+									builtIn: "IoChatbubblesOutline",
+								},
+								action: {
+									type: "open_link",
+									url: "https://www.coderabbit.ai/contact-us",
+								},
+							},
+						],
+						exampleQuestions: [
+							"What is CodeRabbit?",
+							"How to integrate CodeRabbit with GitHub?",
+							"How to set up a AI Code Review?",
+						],
+					},
+				},
+			},
+		],
 	],
 
 	presets: [

@@ -26,6 +26,8 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile --strict-peer-dependencies
       - run: pnpm run build
+        env:
+          API_KEY: ${{ secrets.INKEEP_API_KEY }}
       - run: pnpm run lint
 
   fix:
