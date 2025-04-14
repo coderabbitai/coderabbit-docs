@@ -40,6 +40,7 @@ The tool checks for:
 The tool helps identify and fix:
 
 1. Theme Issues:
+
    - Invalid Liquid syntax
    - Missing required templates
    - Performance bottlenecks

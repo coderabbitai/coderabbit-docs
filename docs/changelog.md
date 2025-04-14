@@ -5,6 +5,31 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## April 14, 2025
+
+### Shopify CLI Integration & Bitbucket Cloud Reporting
+
+We're excited to announce two significant updates:
+
+#### Shopify CLI Integration
+
+We've added support for [Shopify CLI](https://docs.coderabbit.ai/tools/shopify-cli), a powerful tool for validating and analyzing Shopify themes and apps. This integration helps ensure your Shopify projects follow best practices by:
+
+- Validating Liquid syntax and theme requirements
+- Checking app extension configurations
+- Identifying performance bottlenecks
+- Ensuring accessibility standards
+- Detecting security vulnerabilities
+
+#### Bitbucket Cloud Scheduled Reporting
+
+Our reporting capabilities now extend to Bitbucket Cloud! You can now:
+
+- Schedule automated reports for your Bitbucket Cloud repositories
+- Generate customized summaries of team performance
+- Track PR review metrics
+- Deliver reports via Email, Slack, Microsoft Teams, or Discord
+
 ## April 8, 2025
 
 ### New Static Analysis Tools
@@ -29,7 +54,7 @@ In the review status message. It is automatically enabled for all users.
 
 ### Automatically Run a Web Query to Include Latest Information
 
-CodeRabbit now performs Web Queries automatically to include the most recent publicly available information — even if it wasn’t included in the latest LLM update. This feature is enabled by default for all users, and you may notice it being used in review comments and chat responses.
+CodeRabbit now performs Web Queries automatically to include the most recent publicly available information — even if it wasn't included in the latest LLM update. This feature is enabled by default for all users, and you may notice it being used in review comments and chat responses.
 
 Web Queries allow CodeRabbit to fetch the latest documentation and external content to improve the accuracy and relevance of its output. You can disable this feature by setting web_search: false in your knowledge_base settings.
 
