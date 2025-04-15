@@ -70,6 +70,7 @@ Remove extraneous f prefix
 | Ruby                        | [RuboCop][RuboCop]                                         | Code Quality                                        |
 | Semgrep                     | [Semgrep][Semgrep]                                         | Code Security                                       |
 | Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   | Code Quality                                        |
+| Shopify                     | [Shopify CLI][ShopifyCLI]                                  | Code Quality                                        |
 | SQL                         | [SQLFluff][SQLFluff]                                       | Code Quality                                        |
 | Swift                       | [SwiftLint][SwiftLint]                                     | Code Quality                                        |
 | Terraform                   | [Checkov][Checkov]                                         | Code Security                                       |
@@ -103,3 +104,4 @@ Remove extraneous f prefix
 [Pipeline]: ./pipeline-remediation.md
 [PrismaLint]: ./prisma-lint.md
 [OXC]: ./oxc.md
+[ShopifyCLI]: ./shopify-cli.md
