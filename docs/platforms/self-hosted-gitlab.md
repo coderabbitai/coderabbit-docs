@@ -71,6 +71,8 @@ After the user is created, you can retrieve the **User ID** from that user's
 profile and generate an [**access token**](#generating-personal-access-token).
 The access token is used to post reviews on merge requests.
 
+We recommend using the CodeRabbit [logo](/img/integrations/logo.png) as the profile picture to ensures easy recognition.
+
 #### **Creating OAuth2 application**
 
 For self-managed GitLab, we recommend creating an instance-wide application

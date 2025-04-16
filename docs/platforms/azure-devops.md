@@ -70,7 +70,7 @@ you will need to add the Personal Access Token.
   management.
 - **Use the CodeRabbit logo as the profile picture** - This further ensures easy
   recognition. You can download our logo from
-  [here](/img/integrations/logo.svg "download").
+  [here](/img/integrations/logo.png "download").
 
 ### Key Points to Remember
 

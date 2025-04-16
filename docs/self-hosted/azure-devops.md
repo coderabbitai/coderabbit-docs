@@ -16,6 +16,8 @@ The self-hosted option is only available for CodeRabbit Enterprise customers wit
 - **Username**: Set the username to "CodeRabbit" for easier identification (optional).
 - **Profile Image**: Use the CodeRabbitAI logo for the user image (optional).
 
+We recommend using the CodeRabbit [logo](/img/integrations/logo.png) as the profile picture to ensures easy recognition.
+
 ## Add User to Projects
 
 Add the CodeRabbit user to each project where you want CodeRabbit to post reviews, with rights to post reviews & open PRs.
