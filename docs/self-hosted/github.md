@@ -42,6 +42,8 @@ Set the following events:
 - Push
 - Release
 
+We recommend using the CodeRabbit [logo](/img/integrations/logo.png) as the profile picture to ensures easy recognition.
+
 ## Gather information from the GitHub App
 
 - App ID

@@ -130,6 +130,8 @@ Keep the following details handy:
 
 ![GitHub App Client ID & Secret](/img/integrations/github-app-client-id-secret.png)
 
+We recommend using the CodeRabbit [logo](/img/integrations/logo.png) as the profile picture to ensures easy recognition.
+
 ### **Step 4: CodeRabbit UI Onboarding**
 
 Submit the details that were accumulated in previous steps:
