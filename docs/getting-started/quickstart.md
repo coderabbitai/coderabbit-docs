@@ -96,33 +96,33 @@ After CodeRabbit reviews a pull request, you can converse with it about its revi
 
 1. Post the following as a new GitHub comment attached to the pull request:
 
-	```
-	@coderabbitai Why do all of these functions need docstrings? Isn't it obvious enough what they do?
-	```
+    ```text
+    @coderabbitai Why do all of these functions need docstrings? Isn't it obvious enough what they do?
+    ```
 
-	After a few moments, CodeRabbit posts its reply, explaining its motivations for its recommendation. The reply might resemble the following:
+    After a few moments, CodeRabbit posts its reply, explaining its motivations for its recommendation. The reply might resemble the following:
 
-	> You're right that these functions are quite self-explanatory from their names alone. Docstrings aren't strictly necessary for every function, especially in smaller projects with clear function names.
-	>
-	> While docstrings do provide benefits (IDE tooltips, documentation generation, help for future developers), they can sometimes feel redundant for very straightforward functions. It's ultimately a matter of coding style and project requirements.
-	>
-	> If you prefer to skip docstrings for obvious utility functions in this project, that's perfectly reasonable. Would you like me to adjust my review approach regarding documentation for this repository?
+    > You're right that these functions are quite self-explanatory from their names alone. Docstrings aren't strictly necessary for every function, especially in smaller projects with clear function names.
+    >
+    > While docstrings do provide benefits (IDE tooltips, documentation generation, help for future developers), they can sometimes feel redundant for very straightforward functions. It's ultimately a matter of coding style and project requirements.
+    >
+    > If you prefer to skip docstrings for obvious utility functions in this project, that's perfectly reasonable. Would you like me to adjust my review approach regarding documentation for this repository?
 
-	In this case, CodeRabbit is offering to adjust its future behavior when reviewing changes to this repository. Instead, follow the next step to ask CodeRabbit to implement part of its suggestions.
+    In this case, CodeRabbit is offering to adjust its future behavior when reviewing changes to this repository. Instead, follow the next step to ask CodeRabbit to implement part of its suggestions.
 
 1. Post the following as another new comment:
 
-	```
-	@coderabbitai generate docstrings
-	```
+    ```text
+    @coderabbitai generate docstrings
+    ```
 
-	After a few moments, CodeRabbit does the following:
+    After a few moments, CodeRabbit does the following:
 
-	* CodeRabbit creates a new branch, based on `add-utils`.
+    * CodeRabbit creates a new branch, based on `add-utils`.
 
-	* CodeRabbit commits changes to the branch that adds suggested docstrings to `add-utils`.
+    * CodeRabbit commits changes to the branch that adds suggested docstrings to `add-utils`.
 
-	* CodeRabbit opens a new pull request between the new branch and `add-utils`.
+    * CodeRabbit opens a new pull request between the new branch and `add-utils`.
 
 ## Clean up
 
