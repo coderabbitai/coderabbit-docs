@@ -56,7 +56,7 @@ Use your usual Git workflow to perform the following steps in the `coderabbit-te
 
 1. Create a branch named `add-utils`.
 
-1. In that new `add-utils` branch, create a new file called `simple_utils.py`, with the followingg content:
+1. In that new `add-utils` branch, create a new file called `simple_utils.py`, with the following content:
 
     ```python
     # simple_utils.py - A tiny utility library
