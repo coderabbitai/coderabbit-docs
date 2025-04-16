@@ -128,7 +128,7 @@ You are now ready to add CodeRabbit to other repositories that you own, and let 
 
 ## What's next
 
-* [Integrate CodeRabbit](http://localhost:3000/platforms/) with your repositories on GitHub, GitLab, Azure DevOps, or Bitbucket.
+* [Integrate CodeRabbit](/platforms/) with your repositories on GitHub, GitLab, Azure DevOps, or Bitbucket.
 * [Configure CodeRabbit](/getting-started/configure-coderabbit) beyond its default settings.
 * [Add custom review instructions](/guides/review-instructions).
 * [Get support for CodeRabbit](/getting-started/support).
