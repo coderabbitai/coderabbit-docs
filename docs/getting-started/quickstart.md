@@ -78,7 +78,7 @@ Use your usual Git workflow to perform the following steps in the `coderabbit-te
 
 After a few moments, CodeRabbit responds to the pull request using the `@coderabbitai` GitHub account. It performs the following actions, all of which are visible on the pull request's page on GitHub:
 
-* If you didn't write a pull request summary, then Code Rabbit adds a new summary to the pull request.
+* If you didn't write a pull request summary, then CodeRabbit adds a new summary to the pull request.
 * CodeRabbit posts a comment titled **Walkthrough** containing analysis and commentary about the content of the pull request.
 * CodeRabbit attaches a detailed code review to the pull request as another comment.
 
