@@ -1,7 +1,7 @@
 ---
 title: Quickstart
 sidebar_label: Quickstart
-description: Get started with CodeRabbit in less than 15 minutes
+description: See CodeRabbit in action, using a live GitHub repository.
 sidebar_position: 1
 ---
 
@@ -56,21 +56,21 @@ Use your usual Git workflow to perform the following steps in the `coderabbit-te
 
 1. Create a branch named `add-utils`.
 
-1. In that new `add-utils` branch, create a new file called `simple_utils.py`, with the following content:
+1. In that new `add-utils` branch, create a new file called `simple_utils.py`, with the followingg content:
 
-	```
-	# simple_utils.py - A tiny utility library
+    ```python
+    # simple_utils.py - A tiny utility library
 
-	def reverse_string(text):
-			"""Reverses the characters in a string."""
-			return text[::-1]
+    def reverse_string(text):
+        """Reverses the characters in a string."""
+        return text[::-1]
 
-	def count_words(sentence):
-			return len(sentence.split())
+    def count_words(sentence):
+        return len(sentence.split())
 
-	def celsius_to_fahrenheit(celsius):
-			return (celsius * 9/5) + 32
-	```
+    def celsius_to_fahrenheit(celsius):
+        return (celsius * 9/5) + 32
+    ```
 
 1. Commit the added file to the `add-utils` branch. Use any text you want for the commit message.
 
@@ -132,8 +132,8 @@ You are now ready to add CodeRabbit to other repositories that you own, and let 
 
 ## What's next
 
-- [Integrate CodeRabbit](http://localhost:3000/platforms/) with your repositories on GitHub, GitLab, Azure DevOps, or Bitbucket.
-- [Configure CodeRabbit](/getting-started/configure-coderabbit) beyond its default settings.
-- [Add custom review instructions](/guides/review-instructions).
-- [Get support for CodeRabbit](/getting-started/support).
-- [Learn more about how CodeRabbit works](/overview/why-coderabbit).
+* [Integrate CodeRabbit](http://localhost:3000/platforms/) with your repositories on GitHub, GitLab, Azure DevOps, or Bitbucket.
+* [Configure CodeRabbit](/getting-started/configure-coderabbit) beyond its default settings.
+* [Add custom review instructions](/guides/review-instructions).
+* [Get support for CodeRabbit](/getting-started/support).
+* [Learn more about how CodeRabbit works](/overview/why-coderabbit).
