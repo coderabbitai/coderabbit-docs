@@ -62,6 +62,8 @@ When [agentic thought chain](./agent_chat.md) is enabled, CodeRabbit will use an
 
 ![Agentic Thought Chain Example](../../static/img/guides/agentic-thought-chain.png)
 
+All scripts run in the Agentic Thought Chain are run in a secure sandboxed execution environment.
+
 ### Feature Planning Support
 
 Issue chat is particularly valuable during feature planning phases:
