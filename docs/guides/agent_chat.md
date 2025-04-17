@@ -29,6 +29,8 @@ Upon being invoked, CodeRabbit processes your request and responds with the nece
 
 CodeRabbit Chat can automatically generate scripts in various programming languages (mainly shell scripting) to answer questions about your codebase. If incorrect or non-running or non-germane shell scripts are created, CodeRabbit goes and tries again, and the whole script iteration process will be displayed to you in an Analysis Flow.
 
+All scripts are run in a secure sandboxed execution environment.
+
 ### Web Search
 
 CodeRabbit Chat integrates real-time web search capabilities, enabling it to fetch up-to-date information to support its responses. The CodeRabbit Chat response will indicate this if it decides to search the web to answer your query.
