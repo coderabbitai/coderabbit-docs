@@ -46,7 +46,7 @@ We're thrilled to introduce agentic planning on GitHub for CodeRabbit chat as Ge
 
 We've expanded our static analysis capabilities with two new tools:
 
-- **OXC**: A high-performance JavaScript/TypeScript linter written in Rust.
+- **oxlint**: A high-performance JavaScript/TypeScript linter written in Rust.
 - **Prisma Lint**: A dedicated linter for Prisma schema files to help enforce consistent conventions and best practices.
 
 Both tools can be configured through their respective config files or through CodeRabbit's settings page. See our [tools documentation](https://docs.coderabbit.ai/tools/) for more details.
@@ -104,6 +104,10 @@ We're thrilled to introduce agentic planning on GitHub for CodeRabbit chat as an
 We are continually expanding our support for static analysis tools. We've recently added support for:
 
 - SQLFluff
+- Added oxlint for faster linting
+  - oxlint is a blazingly fast JavaScript/TypeScript linter written in Rust
+  - Replaces ESLint for basic linting while maintaining ESLint for more complex rules
+  - Up to 50-100x faster than traditional ESLint
 
 ## February 25, 2025
 
