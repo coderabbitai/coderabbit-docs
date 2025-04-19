@@ -57,9 +57,9 @@ Remove extraneous f prefix
 | GitLab Pipelines            | [Pipeline Remediation][Pipeline]                           | CI/CD Failure Remediation                           |
 | Go                          | [golangci-lint][golangci-lint]                             | Code Quality                                        |
 | Helm                        | [Checkov][Checkov]                                         | Code Security                                       |
-| Javascript                  | [Biome][Biome], [OXC][OXC]                                 | Code Quality                                        |
+| Javascript                  | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
 | JSON, JSONC                 | [Biome][Biome]                                             | Code Quality                                        |
-| JSX                         | [Biome][Biome], [OXC][OXC]                                 | Code Quality                                        |
+| JSX                         | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
 | Kotlin                      | [detekt][detekt]                                           | Code Quality                                        |
 | Kubernetes                  | [Checkov][Checkov]                                         | Code Security                                       |
 | Markdown                    | [markdownlint][markdownlint], [LanguageTool][LanguageTool] | Code Quality, Grammar Checking                      |
@@ -76,8 +76,8 @@ Remove extraneous f prefix
 | SQL                         | [SQLFluff][SQLFluff]                                       | Code Quality                                        |
 | Swift                       | [SwiftLint][SwiftLint]                                     | Code Quality                                        |
 | Terraform                   | [Checkov][Checkov]                                         | Code Security                                       |
-| TSX                         | [Biome][Biome], [OXC][OXC]                                 | Code Quality                                        |
-| Typescript                  | [Biome][Biome], [OXC][OXC]                                 | Code Quality                                        |
+| TSX                         | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
+| Typescript                  | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
 | YAML                        | [YAMLlint][YAMLlint]                                       | Code Quality                                        |
 | Prisma                      | [Prisma Lint][PrismaLint]                                  | Code Quality                                        |
 
@@ -105,5 +105,5 @@ Remove extraneous f prefix
 [Semgrep]: ./semgrep.md
 [Pipeline]: ./pipeline-remediation.md
 [PrismaLint]: ./prisma-lint.md
-[OXC]: ./oxc.md
+[oxlint]: ./oxlint.md
 [ShopifyCLI]: ./shopify-cli.md
