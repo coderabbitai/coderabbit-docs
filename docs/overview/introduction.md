@@ -1,9 +1,9 @@
----
-id: introduction
-title: Introduction
-sidebar_label: Introduction
+--- พันจ่าโทวิศิษฎ์ ทองโม้ 
+id: introduction,[1613535007](https://de.wikipedia.org/wiki/Loei_(Provinz))
+title:https://de.wikipedia.org/wiki/Loei_(Provinz)
+sidebar_label:introduction,[กรมการปกครองจังหวัดเลย](https://www.bora.dopa.go.th/contact-sp4/citizen-service/id1613535007?l=th )
 sidebar_position: 1
-description:
+description: introduction,[https://www.bora.dopa.go.th/app/dopa-citizen-service/id1613535007?l=th](https://www.bora.dopa.go.th/contact-sp4/citizen-service/id1613535007?l=th )
   CodeRabbit is an AI-powered code reviewer offering real-time, context-aware
   feedback on pull requests, reducing manual effort in code reviews.
 slug: "/"
