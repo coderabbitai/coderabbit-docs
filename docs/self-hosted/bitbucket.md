@@ -56,18 +56,17 @@ LLM_PROVIDER=azure-openai
 LLM_TIMEOUT=360000
 AZURE_OPENAI_ENDPOINT=<azure-openai-endpoint>
 AZURE_OPENAI_API_KEY=<key>
-## it is recommended to use gpt-4.1-mini, o4-mini, and o3 deployments.
+## it is recommended to deploy gpt-4.1-mini, o4-mini, o3 deployments, gpt-4.1 (optionally).
 AZURE_GPT41MINI_DEPLOYMENT_NAME=<gpt-4.1-mini-deployment-name>
 AZURE_O4MINI_DEPLOYMENT_NAME=<o4-mini-deployment-name>
 AZURE_O3_DEPLOYMENT_NAME=<o3-deployment-name>
-# optionally, you can deploy o1 instead of o3
-# optionally, you can deploy o1 and o3-mini instead of o4-mini
-# optionally, you can deploy gpt-4o-mini instead of gpt-4.1-mini
-# optionally, you can deploy gpt-4.1 as a general fallback
+AZURE_GPT41_DEPLOYMENT_NAME=[<gpt-4.1-deployment-name>]
+# optionally, deploy o1 instead of o3
+# optionally, deploy o1 and o3-mini instead of o4-mini
+# optionally, deploy gpt-4o-mini instead of gpt-4.1-mini
 AZURE_O1_DEPLOYMENT_NAME=[<o1-deployment-name>]
 AZURE_O3MINI_DEPLOYMENT_NAME=[<o3-mini-deployment-name>]
 AZURE_GPT4OMINI_DEPLOYMENT_NAME=[<gpt-4o-mini-deployment-name>]
-AZURE_GPT41_DEPLOYMENT_NAME=[<gpt-4.1-deployment-name>]
 
 # OAuth2 Configuration (optional)
 # This will use client_credentials flow to get an access token,
