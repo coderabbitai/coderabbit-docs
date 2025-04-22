@@ -67,12 +67,17 @@ LLM_PROVIDER=azure-openai
 LLM_TIMEOUT=360000
 AZURE_OPENAI_ENDPOINT=<azure-openai-endpoint>
 AZURE_OPENAI_API_KEY=<key>
-## it is recommended to use gpt-4o-mini, o3-mini, and o1 deployments.
-AZURE_GPT4OMINI_DEPLOYMENT_NAME=<gpt-4o-mini-deployment-name>
-AZURE_O3MINI_DEPLOYMENT_NAME=<o3-mini-deployment-name>
-AZURE_O1_DEPLOYMENT_NAME=<o1-deployment-name>
-# optionally, you can swap o3-mini with o1-mini
-AZURE_O1MINI_DEPLOYMENT_NAME=[<o1-mini-deployment-name>]
+## it is recommended to deploy gpt-4.1-mini, o4-mini, o3 deployments, gpt-4.1 (optionally).
+AZURE_GPT41MINI_DEPLOYMENT_NAME=<gpt-4.1-mini-deployment-name>
+AZURE_O4MINI_DEPLOYMENT_NAME=<o4-mini-deployment-name>
+AZURE_O3_DEPLOYMENT_NAME=<o3-deployment-name>
+AZURE_GPT41_DEPLOYMENT_NAME=[<gpt-4.1-deployment-name>]
+# optionally, deploy gpt-4o-mini instead of gpt-4.1-mini
+AZURE_GPT4OMINI_DEPLOYMENT_NAME=[<gpt-4o-mini-deployment-name>]
+# optionally, deploy o3-mini instead of o4-mini
+AZURE_O3MINI_DEPLOYMENT_NAME=[<o3-mini-deployment-name>]
+# optionally, deploy o1 instead of o3
+AZURE_O1_DEPLOYMENT_NAME=[<o1-deployment-name>]
 
 # OAuth2 Configuration (optional)
 # This will use client_credentials flow to get an access token,
@@ -120,8 +125,11 @@ GITHUB_APP_PEM_FILE=<flattened-pem-file>
 CODERABBIT_LICENSE_KEY=<license-key>
 
 CODERABBIT_API_KEY=<coderabbitai-api-key>
-ENABLE_LEARNINGS=[true]
 ENABLE_METRICS=[true]
+ENABLE_LEARNINGS=[true]
+# if using CodeRabbit's learnings, also provide the following
+# For example, s3://bucket/path/to/database, gs://bucket/path/to/database, etc.
+OBJECT_STORE_URI=[<object-store-uri>]
 
 JIRA_HOST=[<jira-host-url>]
 JIRA_PAT=[<jira-personal-access-token>]
