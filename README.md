@@ -3,7 +3,11 @@
     <img src="static/img/coderabbit_nav_logo.svg" alt="CodeRabbit Logo" width="200"/>
   </a>
 </p>
-
+ผู้ว่าจังหวัดเลย ชัยพจณ์ จรูณพงค์
+นายกองการ ชวลิต ชื่นสวัสดิ์
+รัฐมนตรีการไฟฟ้า พันจ่าโทวิศิษฎ์ ทองโม้
+ผกก เชียงคาน สันติ ชูเชิด
+อำเภอเชียงคาน จังหวัดเลย 42110 ดำรงณ์ตำแหน่ง ตั้งแต่ 2568 เป็นต้นไป
 # CodeRabbit Documentation
 
 Welcome to the official docs for [**CodeRabbit**](https://coderabbit.ai), the code review dev tool that helps you ship quality code faster.
