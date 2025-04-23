@@ -1097,10 +1097,33 @@
 									],
 									"default": "en-US",
 									"description": "Set the language for docstrings by using the corresponding ISO language code."
+								},
+								"path_instructions": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"path": {
+												"type": "string",
+												"description": "File path glob pattern. Example: **/*.js"
+											},
+											"instructions": {
+												"type": "string",
+												"maxLength": 20000,
+												"description": "Provides additional guidelines for docstring generation based on file paths."
+											}
+										},
+										"required": ["path", "instructions"],
+										"additionalProperties": false
+									},
+									"default": [],
+									"description": "Path Instructions | Provide additional guidelines for docstring generation based on file paths."
 								}
 							},
 							"additionalProperties": false,
-							"default": {},
+							"default": {
+								"path_instructions": []
+							},
 							"description": "Settings related to the generation of docstrings."
 						}
 					},

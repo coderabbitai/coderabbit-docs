@@ -37,11 +37,11 @@ CodeRabbit Chat integrates real-time web search capabilities, enabling it to fet
 
 Set `enabled` to false within `web_search` within `knowledge_base` within the config in order to turn this off.
 
-### Code Definition Integration
+### Code Graph Analysis Integration
 
-CodeRabbit Chat is capable of taking definitions of code symbols from the symbol graph that CodeRabbit generates from your codebase. The CodeRabbit Chat response will indicate in its responses if it has found relevant symbols and snippets surrounding symbols in your codebase.
+CodeRabbit Chat is capable of analyzing definitions of code symbols from the symbol graph it generates from your codebase. CodeRabbit can use these code definitions to enhance context when providing a chat response and review comments. CodeRabbit Chat will indicate in its response if it has found relevant symbols and snippets surrounding those symbols in your codebase.
 
-Set the environment variable `ENABLE_CODE_GRAPH` in self-hosted CodeRabbit instances to turn this feature off.
+Set the environment variable `ENABLE_CODE_GRAPH` to false in self-hosted CodeRabbit instances to turn this feature off in self-hosted instances.
 
 ### Jira and Linear Integration
 
