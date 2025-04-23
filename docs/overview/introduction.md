@@ -13,11 +13,11 @@ slug: "/"
 
 This page provides a conceptual introduction to CodeRabbit. For a hands-on tutorial, see [Quickstart](/getting-started/quickstart/).
 
-## A repsonsive and insightful code reviewer
+## A responsive and insightful code reviewer
 
 **CodeRabbit** is an AI-powered code reviewer that delivers context-aware feedback on pull requests within minutes, reducing the time and effort needed for manual code reviews. It complements manual reviews by providing a fresh perspective and catching issues that manual reviews often miss, enhancing the overall review quality.
 
-Developers can interact directly with the CodeRabbit bot within their existing Git platform's pull request interface, in order to add context, ask questions, or even have the bot generate code. Over time, CodeRabbit learns from user input and improves its suggestions.
+Developers can interact directly with the CodeRabbit bot within their existing Git platform's pull request interface to add context, ask questions, or even have the bot generate code. Over time, CodeRabbit learns from user input and improves its suggestions.
 
 <div class="video-container">
   <iframe src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
@@ -33,7 +33,7 @@ Core CodeRabbit features include the following:
 - Works with contributors through natural-language conversation in comments.
 - Learns and adapts to your team's code style and review preferences.
 - Provides an observability dashboard of code-contribution activity.
-- Practices strong privacy and security, never retaining your code after reviewing it.
+- Practices strong privacy and security, with no retention of analyzed code.
 - Free for public repositories, flexible pricing for private code bases.
 
 ## Add CodeRabbit to your existing workflow
@@ -52,13 +52,13 @@ For example, if CodeRabbit uses a linter to suggest that your pull request use f
 
 For a video introduction to this feature, see [CodeRabbit Learnings](https://www.youtube.com/watch?v=Yu0cmmOYA-U).
 
-If you need to fine-tune CodeRabbit's behavior beyond this, then you can [add a CodeRabbit-specific configuration file](getting-started/configure-coderabbit) to your repository, or use the CodeRabbit web UI to set further preferences.
+If you need to fine-tune CodeRabbit's behavior beyond this, then you can [add a CodeRabbit-specific configuration file](/getting-started/configure-coderabbit) to your repository, or use the CodeRabbit web UI to set further preferences.
 
 No matter how you tune and customize CodeRabbit, its default settings make it useful out of the box, able to meaningfully review pull requests within minutes of its introduction to a repository.
 
 ### Integrate CodeRabbit with your Git platform
 
-CodeRabbit integrates in a just a few clicks with many popular Git platforms:
+CodeRabbit integrates in just a few clicks with many popular Git platforms:
 
 - GitHub, including GitHub Enterprise Server
 - GitLab, including self-managed GitLab
