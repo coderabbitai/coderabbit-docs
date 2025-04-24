@@ -36,7 +36,7 @@ Core CodeRabbit features include the following:
 - Practices strong privacy and security, with no retention of analyzed code.
 - Offers free use for public repositories, and flexible pricing for private codebases.
 
-## Add CodeRabbit to your existing workflow
+## Seamless workflow integration
 
 CodeRabbit shares its reviews as comments attached to pull requests, using the same Git platform that your team already uses. Further commits in the same pull review prompt CodeRabbit to make further reviews, using the earlier reviews as context.
 
@@ -44,7 +44,7 @@ Each time that it performs a code review, CodeRabbit runs the relevant code chan
 
 Your team can have conversations with CodeRabbit about its reviews by replying to it with follow-up comments on pull requests, asking it questions or making observations about the review using natural language. CodeRabbit continues the conversation appropriately, offering further insights about the code changes, or adjusting its own review style based on feedback.
 
-### Teach CodeRabbit your team preferences
+### Customizable review preferences
 
 As you interact with CodeRabbit through chat, it learns the review preferences of your team, and applies them to all future reviews on a given repository.
 
@@ -56,7 +56,7 @@ If you need to fine-tune CodeRabbit's behavior beyond this, then you can [add a 
 
 No matter how you tune and customize CodeRabbit, its default settings make it useful out of the box, able to meaningfully review pull requests within minutes of its introduction to a repository.
 
-### Integrate CodeRabbit with your Git platform
+### Platform integration options
 
 CodeRabbit integrates in just a few clicks with many popular Git platforms:
 
