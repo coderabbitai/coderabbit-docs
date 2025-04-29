@@ -79,7 +79,7 @@ CodeRabbit does not use data collected from code reviews to train or influence i
 
 You can opt out of data storage at any time without affecting your access to CodeRabbit. Opting out might reduce the level of personalized review feedback that CodeRabbit can provide you.
 
-## Flexible pricing, free for public use
+## Flexible pricing, free for public repositories
 
 Public repositories can use the Pro tier of CodeRabbit at no charge, including all of the code-review features described on this page. Rate limits might apply.
 
