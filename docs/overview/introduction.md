@@ -13,8 +13,6 @@ slug: "/"
 
 This page provides a conceptual introduction to CodeRabbit. For a hands-on tutorial, see [Quickstart](/getting-started/quickstart/).
 
-## A responsive and insightful code reviewer
-
 **CodeRabbit** is an AI-powered code reviewer that delivers context-aware feedback on pull requests within minutes, reducing the time and effort needed for manual code reviews. It complements manual reviews by providing a fresh perspective and catching issues that manual reviews often miss, enhancing the overall review quality.
 
 Developers can interact directly with the CodeRabbit bot within their existing Git platform's pull request interface to add context, ask questions, or even have the bot generate code. Over time, CodeRabbit learns from user input and improves its suggestions.
