@@ -1,8 +1,6 @@
 ---
-title: Issue Creation
-sidebar_label: Issue Creation
+title: Create issues
 description: Learn how to create issues directly through CodeRabbit
-sidebar_position: 5
 ---
 
 ```mdx-code-block

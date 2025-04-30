@@ -1,11 +1,9 @@
 ---
-title: Configure CodeRabbit
-sidebar_label: Configure
+title: Add a configuration file
 description:
   CodeRabbit offers various configuration options to tailor the reviews to your
   specific requirements. Configuration can be made using one of the below
   options.
-sidebar_position: 2
 ---
 
 ```mdx-code-block

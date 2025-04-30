@@ -1,8 +1,6 @@
 ---
-title: Upgrading App Permissions
+title: Set permissions
 description: Learn how to upgrade CodeRabbit's GitHub App permissions when new features are added
-sidebar_label: Upgrading Permissions
-sidebar_position: 6
 ---
 
 Sometimes when we add new features to CodeRabbit, we need to request additional GitHub permissions. If you see a warning about permissions or resources not being accessible, you'll need to approve the new permissions. Here's how to do it:

@@ -1,8 +1,6 @@
 ---
-title: Commands
-sidebar_label: Commands
+title: Control and manage code reviews
 description: Learn how to control CodeRabbit using commands in pull request comments
-sidebar_position: 1
 ---
 
 # CodeRabbit Commands

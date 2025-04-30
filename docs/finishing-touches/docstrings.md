@@ -1,6 +1,5 @@
 ---
-title: Docstrings generation with CodeRabbit
-sidebar_label: Docstrings
+title: Generate docstrings
 description: Automated docstrings pull requests with CodeRabbit
 ---
 

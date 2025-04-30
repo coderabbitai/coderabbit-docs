@@ -1,8 +1,6 @@
 ---
-title: Knowledge Base
+title: Apply your code review preferences
 description: Learn about CodeRabbit's internal knowledge base and its integrations with external services.
-sidebar_label: Knowledge Base
-sidebar_position: 4
 ---
 
 CodeRabbit utilizes an internal knowledge base that integrates with several external services to provide a seamless review and issue management experience.

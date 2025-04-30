@@ -1,8 +1,6 @@
 ---
-title: Support
-sidebar_label: Support
+title: Get support
 description: Get help with CodeRabbit and find answers to common questions.
-sidebar_position: 3
 ---
 
 Welcome to CodeRabbit Support. Please refer to the following sections for

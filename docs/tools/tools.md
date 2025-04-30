@@ -1,8 +1,6 @@
 ---
-title: Supported Tools
-sidebar_label: Supported Tools
+title: Configure third-party tool use
 description: Overview of CodeRabbit's supported linters and security analysis tools.
-sidebar_position: 1
 ---
 
 ```mdx-code-block

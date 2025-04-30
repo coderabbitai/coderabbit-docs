@@ -1,8 +1,6 @@
 ---
-title: Code Graph Analysis
+title: Analyze your code changes
 description: Learn about CodeRabbit's intelligent graph-based code analysis.
-sidebar_label: Code Graph Analysis
-sidebar_position: 6
 ---
 
 # CodeRabbit Code Graph Analysis

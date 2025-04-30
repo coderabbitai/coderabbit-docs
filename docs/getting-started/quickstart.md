@@ -19,7 +19,7 @@ When you complete this tutorial, you'll have seen CodeRabbit's code-review featu
 For a more general overview of CodeRabbit, see [Introduction](/).
 
 :::note
-While this tutorial focuses on GitHub, CodeRabbit also works with GitLab, Azure DevOps, and Bitbucket. For more information, see [Supported Git Platforms](/platforms/).
+While this tutorial focuses on GitHub, CodeRabbit also works with GitLab, Azure DevOps, and Bitbucket. For more information, see [Integrate with Git platforms](/platforms/).
 :::
 
 ## Before you begin

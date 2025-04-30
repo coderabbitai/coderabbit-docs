@@ -1,8 +1,6 @@
 ---
-title: Subscription Management
+title: Manage your subscription
 description: Learn how to manage your CodeRabbit subscription, including billing, plan changes, and seat management
-sidebar_label: Subscription Management
-sidebar_position: 7
 ---
 
 This guide covers how to manage your subscription, including accessing billing information, changing plans, and adjusting your seat count.

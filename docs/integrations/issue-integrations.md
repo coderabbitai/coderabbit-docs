@@ -1,8 +1,6 @@
 ---
-title: Issue Integrations
+title: Integrate issue tracking
 description: Learn about CodeRabbit's integrations with issue tracking systems like Jira and Linear.
-sidebar_label: Issue Integrations
-sidebar_position: 5
 ---
 
 CodeRabbit integrates with popular issue tracking systems to provide context from linked and related issues while reviewing code.

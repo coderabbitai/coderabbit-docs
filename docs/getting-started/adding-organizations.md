@@ -1,8 +1,6 @@
 ---
-title: Adding Organizations
+title: Add organizations
 description: Learn how to add new organizations to CodeRabbit
-sidebar_label: Adding Organizations
-sidebar_position: 5
 ---
 
 To add new organizations to CodeRabbit, follow these steps:
