@@ -128,7 +128,7 @@ const sidebars: SidebarsConfig = {
                 {
                     type: 'link',
                     label: 'CodeRabbit API',
-                    href: 'https:
+                    href: 'https://api.coderabbit.ai/api/swagger/',
                 },
                 {
                     type: 'category',
