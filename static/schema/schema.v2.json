@@ -116,11 +116,6 @@
 					"default": true,
 					"description": "Enable free tier features for users not on a paid plan."
 				},
-				"auto_resolve_threads": {
-					"type": "boolean",
-					"default": true,
-					"description": "Automatically resolve threads when code changes address the feedback. When disabled, metrics are still tracked but threads won't be marked as resolved."
-				},
 				"reviews": {
 					"type": "object",
 					"properties": {
@@ -284,6 +279,11 @@
 							"type": "boolean",
 							"default": true,
 							"description": "Abort the in-progress review if the pull request is closed or merged."
+						},
+						"disable_cache": {
+							"type": "boolean",
+							"default": false,
+							"description": "Disable caching of code and dependencies. This will force CodeRabbit to download the code and dependencies fresh from the repository each time."
 						},
 						"auto_review": {
 							"type": "object",
@@ -1097,10 +1097,33 @@
 									],
 									"default": "en-US",
 									"description": "Set the language for docstrings by using the corresponding ISO language code."
+								},
+								"path_instructions": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"path": {
+												"type": "string",
+												"description": "File path glob pattern. Example: **/*.js"
+											},
+											"instructions": {
+												"type": "string",
+												"maxLength": 20000,
+												"description": "Provides additional guidelines for docstring generation based on file paths."
+											}
+										},
+										"required": ["path", "instructions"],
+										"additionalProperties": false
+									},
+									"default": [],
+									"description": "Path Instructions | Provide additional guidelines for docstring generation based on file paths."
 								}
 							},
 							"additionalProperties": false,
-							"default": {},
+							"default": {
+								"path_instructions": []
+							},
 							"description": "Settings related to the generation of docstrings."
 						}
 					},
@@ -1108,7 +1131,7 @@
 					"default": {}
 				}
 			},
-			"additionalProperties": false
+			"additionalProperties": true
 		}
 	},
 	"$schema": "http://json-schema.org/draft-07/schema#"
