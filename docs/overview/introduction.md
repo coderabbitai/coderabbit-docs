@@ -80,7 +80,7 @@ CodeRabbit collects only the minimum amount of information needed to provide you
 - We keep all customer data confidential, and isolated by organization.
 - Our data collection and storage practices comply with SOC 2 and GDPR standards.
 
-For more information about how we protect your data, see [the CodeRabbbit Trust Center](https://trust.coderabbit.ai).
+For more information about how we protect your data, see [the CodeRabbit Trust Center](https://trust.coderabbit.ai).
 
 ## Flexible pricing, free for public repositories
 
