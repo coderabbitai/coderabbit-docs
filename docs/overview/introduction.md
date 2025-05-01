@@ -63,11 +63,16 @@ CodeRabbit integrates in just a few clicks with many popular Git platforms:
 - Azure DevOps
 - Bitbucket Cloud
 
-In addition, CodeRabbit can integrate with a number of popular workflow systems:
+For more information, see [Supported Git Platforms](/platforms/).
 
+In addition, you can integrate CodeRabbit with issue-management platforms. This lets you ask CodeRabbit to create tickets during code reviews, or chat with CodeRabbit about your code from within issue comments. Compatible platforms include the following:
+
+- GitHub
+- GitLab
 - Jira
 - Linear
-- CircleCI
+
+For more information, see [Issue Creation](/guides/issue-creation) and [Issue Chat](/guides/issue-chat).
 
 ## Data privacy and security
 
