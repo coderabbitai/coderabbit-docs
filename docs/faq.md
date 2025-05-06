@@ -128,7 +128,7 @@ The following limits enforced _per developer_:
 | ---------------- | ------------------------------------------ | ----------------------------- | ----------------------------- | ----------------------------- |
 | Files per hour   | 200/hour                                   | 200/hour                      | 200/hour                      | 400/hour                      |
 | Files per PR     | 100                                        | 100                           | 100                           | 200                           |
-| Reviews per hour | 4 back-to-back, then 3/hour (Summary only) | 4 back-to-back, then 3/hour   | 3 back-to-back, then 2/hour   | 5 back-to-back, then 4/hour   |
+| Reviews per hour | 3 back-to-back, then 3/hour (Summary only) | 4 back-to-back, then 4/hour   | 3 back-to-back, then 3/hour   | 5 back-to-back, then 5/hour   |
 | Chat             | N/A                                        | 25 back-to-back, then 50/hour | 10 back-to-back, then 25/hour | 25 back-to-back, then 50/hour |
 
 ## Integration Guide {#integration-guide}

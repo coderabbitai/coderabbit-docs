@@ -849,11 +849,6 @@
 							"default": true,
 							"description": "Enable the bot to reply automatically without requiring the user to tag it."
 						},
-						"create_issues": {
-							"type": "boolean",
-							"default": true,
-							"description": "Enable Issue creation by CodeRabbit from PR comments."
-						},
 						"integrations": {
 							"type": "object",
 							"properties": {
