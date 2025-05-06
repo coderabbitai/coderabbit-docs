@@ -54,7 +54,7 @@ If you need to fine-tune CodeRabbit's behavior beyond this, then you can [add a 
 
 No matter how you tune and customize CodeRabbit, its default settings make it useful out of the box, able to meaningfully review pull requests within minutes of its introduction to a repository.
 
-### Platform integration options
+### Git platform integration
 
 CodeRabbit integrates in just a few clicks with many popular Git platforms:
 
@@ -63,11 +63,18 @@ CodeRabbit integrates in just a few clicks with many popular Git platforms:
 - Azure DevOps
 - Bitbucket Cloud
 
-In addition, CodeRabbit can integrate with a number of popular workflow systems:
+For more information, see [Supported Git Platforms](/platforms/).
 
+### Issue-management integration
+
+You can integrate CodeRabbit with issue-management platforms. This lets you ask CodeRabbit to create tickets during code reviews, or chat with CodeRabbit about your code from within issue comments. Compatible platforms include the following:
+
+- GitHub Issues
+- GitLab Issues
 - Jira
 - Linear
-- CircleCI
+
+For more information, see [Issue Creation](/guides/issue-creation) and [Issue Chat](/guides/issue-chat).
 
 ## Data privacy and security
 
