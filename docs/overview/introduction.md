@@ -71,13 +71,16 @@ In addition, CodeRabbit can integrate with a number of popular workflow systems:
 
 ## Data privacy and security
 
-CodeRabbit does not use data collected from code reviews to train or influence its models. All queries to large language models (LLMs) are ephemeral, with zero retention. No data is shared with third parties.
+CodeRabbit collects only the minimum amount of information needed to provide you with our code review services. Our privacy and security posture centers around protecting your data through ephemerality:
 
-- **Temporary Storage**: CodeRabbit temporarily stores your code in memory during the review process, and deletes it afterward.
-- **Stored Embeddings**: While CodeRabbit doesn't store your code, it does store embeddings based on chat conversations and workflow systems (Linear, Jira, GitHub/GitLab issues) to improve future reviews.
-- **Compliance**: All data is kept confidential, isolated by organization, and complies with SOC2 Type II and GDPR standards.
+- All queries to large language models (LLMs) exist in-memory only, with zero retention after each query completes.
+- We don't store a copy of your code.
+- We don't use your code, code reviews, or other collected data to train LLMs.
+- CodeRabbit doesn't share any collected customer data with third parties.
+- We keep all customer data confidential, and isolated by organization.
+- Our data collection and storage practices comply with SOC 2 and GDPR standards.
 
-You can opt out of data storage at any time without affecting your access to CodeRabbit. Opting out might reduce the level of personalized review feedback that CodeRabbit can provide you.
+For more information about how we protect your data, see [the CodeRabbit Trust Center](https://trust.coderabbit.ai).
 
 ## Flexible pricing, free for public repositories
 
