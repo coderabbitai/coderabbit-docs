@@ -44,6 +44,9 @@ To add CodeRabbit to your test repository, follow these steps:
 1. Select the **Only select repositories** radio button.
 1. From the **Select repositories** menu, select the `coderabbit-test` repository that you created earlier in this Quickstart.
 1. Click **Install & Authorize**.
+   :::note
+   CodeRabbit requests read and write access to your repository in order for its code review, issue management, and pull request generation features to work. CodeRabbit never stores your code. For more information, see [the CodeRabbit Trust Center](https://trust.coderabbit.ai).
+   :::
 1. If a CodeRabbit **Complete your signup** dialog appears, then fill it out with the requested information before continuing.
 
 CodeRabbit is now ready to use with your test repository. The next steps demonstrate its core code-review features.
