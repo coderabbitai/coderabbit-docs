@@ -75,6 +75,7 @@ const sidebars: SidebarsConfig = {
 			items: [
 				"getting-started/configure-coderabbit",
 				"integrations/knowledge-base",
+				"guides/review-instructions",
 				"tools/tools",
 			],
 		},

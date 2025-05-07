@@ -1,11 +1,9 @@
 ---
-title: Review Instructions
-sidebar_label: Review Instructions
+title: Add review instructions
 description:
   CodeRabbit offers various customization options to tailor the reviews to your
   specific requirements. Customizations can be made using one of the below
   options.
-sidebar_position: 2
 ---
 
 The guide explains how to add custom review instructions for the entire project.

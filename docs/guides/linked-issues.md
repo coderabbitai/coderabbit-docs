@@ -168,6 +168,6 @@ Only the issue title and description are considered in the assessment. Comments 
 
 ## Related Resources
 
-- [Review Instructions](./review-instructions.md)
+- [Add review Instructions](/guides/review-instructions)
 - [Issue Chat](./issue-chat.md)
 - [Issue Creation](./issue-creation.md)

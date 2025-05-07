@@ -109,7 +109,7 @@ CodeRabbit generates detailed statistics and test plans for each pull request.
 
 ![Test Plan by CodeRabbit](/img/integrations/test-plan.png)
 
-> CodeRabbit also allows you to configure **custom review instructions** based on your organization's needs, in case you want it to follow specific guidelines beyond the standard review, to learn more on [adding custom review instructions](https://docs.coderabbit.ai/guides/review-instructions/)
+> CodeRabbit also allows you to configure **custom review instructions** based on your organization's needs, in case you want it to follow specific guidelines beyond the standard review, to learn more on [adding custom review instructions](/guides/review-instructions/)
 
 Whether you manage a popular repository or are working on a smaller project, whether it's hosted on **GitLab, GitHub, or self-hosted GitHub or GitLab**, CodeRabbit can help streamline your development process. This AI Code Review assistant is designed to save you time by automating code reviews and offering insightful feedback.
 
