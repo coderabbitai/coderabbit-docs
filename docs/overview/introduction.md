@@ -81,7 +81,6 @@ For more information, see [Issue Creation](/guides/issue-creation) and [Issue Ch
 CodeRabbit collects only the minimum amount of information needed to provide you with our code review services. Our privacy and security posture centers around protecting your data through ephemerality:
 
 - All queries to large language models (LLMs) exist in-memory only, with zero retention after each query completes.
-- We don't store a copy of your code.
 - We don't use your code, code reviews, or other collected data to train LLMs.
 - CodeRabbit doesn't share any collected customer data with third parties.
 - We keep all customer data confidential, and isolated by organization.

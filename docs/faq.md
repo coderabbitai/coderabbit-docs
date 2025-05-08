@@ -31,10 +31,10 @@ CodeRabbit works with all programming languages, with varying proficiency based 
 
 <Tabs>
   <TabItem value="storage" label="Code Storage" default>
-    - No persistent code storage
-    - Temporary cloning during review only
     - Complete data isolation
-    - Immediate disposal post-review
+    - Caching of encrypted code and dependency archives for faster reviews
+    - Code indexing in which we store vector representations of code for efficient code base context
+    - Both caching and code indexing can be disabled which means we store nothing post-review
   </TabItem>
   <TabItem value="training" label="Training Data">
     - Uses only public datasets
