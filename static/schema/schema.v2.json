@@ -892,7 +892,7 @@
 						"opt_out": {
 							"type": "boolean",
 							"default": false,
-							"description": "Disable Knowledge Base | Opt out of all knowledge base features that require data retention. If you opt out after opting in, all of your existing knowledge base data will be removed from the system."
+							"description": "Opt Out | Disable all knowledge base features that require data retention. If you opt out after opting in, all of your existing knowledge base data will be removed from the system."
 						},
 						"web_search": {
 							"type": "object",
