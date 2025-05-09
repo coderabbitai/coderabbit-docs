@@ -10,7 +10,7 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-[Oxlint](https://github.com/oxc-project/oxc) is a blazingly fast JavaScript/TypeScript linter written in Rust that is 50-100x faster than ESLint.
+[Oxlint](https://oxc.rs/docs/guide/usage/linter) is a blazingly fast JavaScript/TypeScript linter written in Rust that is 50-100x faster than ESLint.
 
 ## Supported Files
 
@@ -57,5 +57,5 @@ When running Oxlint, CodeRabbit:
 
 ## Links
 
-- [Oxlint GitHub Repository](https://github.com/oxc-project/oxc)
-- [Oxlint Website](https://oxc.rust-server.org)
+- [Oxlint GitHub Repository](https://github.com/oxc-project/oxc/releases/tag/oxlint_v0.16.10)
+- [Oxlint Website](https://oxc.rs/docs/guide/usage/linter)
