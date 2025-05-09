@@ -105,7 +105,7 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 
 ### CircleCI
 
-- Circle CI CI/CD Pipeline failure analysis
+- CircleCI Pipeline failure analysis
 - Job-level error analysis
 - Configuration validation
 - Dependency resolution
