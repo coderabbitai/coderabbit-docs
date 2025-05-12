@@ -6,7 +6,21 @@ description: How to review your code with the VSCode extension.
 This page is about using the CodeRabbit VSCode extension. For more information about the extension, see
 [Overview](/guides/about-vscode). To learn how to install the extension, see [Install the VSCode extension](/guides/install-vscode).
 
-## Review your code changes
+## Automatically review local commits
+
+You can let CodeRabbit automatically review commits that you make to your local Git repository. These automatic reviews compare all committed changes against the branch that your working branch is based on.
+
+To perform an automatic review, follow these steps:
+
+1. Perform a Git commit using VSCode. After you do this, a dialog appears in your VSCode window, asking **Would you like to start a review?**
+
+1. Click **Yes.** The CodeRabbit sidebar appears in your VSCode window.
+
+1. Wait for the review to complete. This might take several minutes. To cancel a review in progress, click **Stop the review**.
+
+For more options and control of code reviews performed using the CodeRabbit VSCode extension, you can manually request a review, as detailed in the following section.
+
+## Manually request code reviews
 
 To manually review changes in a local Git branch using the CodeRabbit VSCode extension, follow these steps:
 
@@ -36,4 +50,4 @@ To manually review changes in a local Git branch using the CodeRabbit VSCode ext
 
 ## What's next
 
-- The CodeRabbit [Introduction](/overview/introduction) describes how you can complement the CodeRabbit VSCode extension by setting up automatic, full-featured code reviews on your remote repository's pull requests.
+- [Uninstall the VSCode extension](/guides/install-extension)

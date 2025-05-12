@@ -85,6 +85,8 @@ const sidebars: SidebarsConfig = {
 			label: "Review pull requests",
 			items: [
 				"guides/commands",
+				"guides/code-review-best-practices",
+				"guides/code-review-troubleshooting",
 				"guides/agent_chat",
 				{
 					type: "category",
@@ -111,6 +113,17 @@ const sidebars: SidebarsConfig = {
 		{
 			type: "category",
 			collapsed: false,
+			label: "Review local changes using the VSCode extension",
+			items: [
+				"guides/about-vscode",
+				"guides/install-vscode",
+				"guides/use-vscode",
+				"guides/uninstall-vscode",
+			],
+		},
+		{
+			type: "category",
+			collapsed: false,
 			label: "Generate reports",
 			items: [
 				"guides/ondemand-reports",
@@ -128,6 +141,7 @@ const sidebars: SidebarsConfig = {
 					label: "CodeRabbit API",
 					href: "https://api.coderabbit.ai/api/swagger/",
 				},
+				"reference/review-commands",
 				{
 					type: "category",
 					label: "Supported tools",
