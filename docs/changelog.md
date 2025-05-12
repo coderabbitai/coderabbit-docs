@@ -483,7 +483,7 @@ Working as recursive autonomous agent, CodeRabbit uses shell scripts to perform 
 Here are some uses cases:
 
 - Want to defer implementing the CodeRabbit suggestion to a later time? Ask the bot the create an issue
-- Generate unit tests - comment `@coderabbitai generate unit tests` for the src/utils.ts
+- Ask the bot to explain a complex piece of code - comment `@coderabbitai explain the logic in src/utils.ts`
 - In PR comments, ask the bot to gather insights on your repository including latest commits, frequently changed files, recent contributors etc
 - When the CodeRabbit review comment is addressed, let the bot know and it can validate with the latest commit
 
