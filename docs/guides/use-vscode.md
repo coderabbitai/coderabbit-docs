@@ -8,6 +8,10 @@ This page is about performing local code reviews using the CodeRabbit VSCode ext
 
 The CodeRabbit VSCode extension works by comparing changes in your current, checked-out Git branch against another branch in your local repository. You can use the extension to automatically perform full-branch changes after every commit, or make different kinds of comparisons by manually requesting a review.
 
+:::note
+The instructions on this page are specific to using the extension with VSCode. If you are instead using a VSCode-compatible editor such as Cursor or Windsurf, then the steps that you need to follow are similar, but might require some adaptation.
+:::
+
 ## Automatically review local commits
 
 You can let CodeRabbit automatically review commits that you make to your local Git repository. These automatic reviews compare all committed changes against the branch that your working branch is based on.
@@ -28,29 +32,27 @@ For more options and control of code reviews performed using the CodeRabbit VSCo
 
 To manually review changes in a local Git branch using the CodeRabbit VSCode extension, follow these steps:
 
-1.  Click the CodeRabbit icon in the VSCode activity bar. The CodeRabbit sidebar appears.
+1. Click the CodeRabbit icon in the VSCode activity bar. The CodeRabbit sidebar appears.
 
-1.  If you want to compare your code changes
-    to a branch other than its base branch, then follow these steps:
+1. If you want to compare your code changes to a branch other than its base branch, then follow these steps:
 
-        1. In the sidebar, under **Branch**, click the name of the base branch. A **Select a base branch** dialog appears, listing other branches in your local Git repository.
+   1. In the sidebar, under **Branch**, click the name of the base branch. A **Select a base branch** dialog appears, listing other branches in your local Git repository.
 
-        1. Select the name of a base branch to compare against.
+   1. Select the name of a base branch to compare against.
 
-1.  Select one of the review-action options from the menu at the bottom of the CodeRabbit sidebar:
+1. Select one of the review-action options from the menu at the bottom of the CodeRabbit sidebar:
 
-    - To review all changes between the base branch and your current branch, including
-      both committed and uncommitted changes, select **Review all changes**. This is the default selection.
+   - To review all changes between the base branch and your current branch, including both committed and uncommitted changes, select **Review all changes**. This is the default selection.
 
-    - To limit the review to only changes on your branch that you have committed, select **Review committed changes**. This includes commits that you have pushed to your remote repository, if any, as well as any local commits.
+   - To limit the review to only changes on your branch that you have committed, select **Review committed changes**. This includes commits that you have pushed to your remote repository, if any, as well as any local commits.
 
-    - To limit the review to only uncommitted changes on your branch, select **Review uncommitted changes**.
+   - To limit the review to only uncommitted changes on your branch, select **Review uncommitted changes**. This includes both staged and unstaged changes.
 
-1.  Refer to the list of **Files to review** in the sidebar. This list represents all of the files that the selected review action includes. To change this list of files, repeat the previous step to choose a different review action, or use Git features like `git stash` to selectively remove changes.
+1. Refer to the list of **Files to review** in the sidebar. This list represents all of the files that the selected review action includes. To change this list of files, repeat the previous step to choose a different review action, or use Git features like `git stash` to selectively remove changes.
 
-1.  To perform the review, click the button part of the menu. The CodeRabbit sidebar displays a **Review** section with the review's progress.
+1. To perform the review, click the button part of the menu. The CodeRabbit sidebar displays a **Review** section with the review's progress.
 
-1.  Wait for the review to complete. This might take several minutes. To cancel a review in progress, click **Stop the review**.
+1. Wait for the review to complete. This might take several minutes. To cancel a review in progress, click **Stop the review**.
 
 After the review completes, you can browse and respond to review comments as described in the following section.
 

@@ -21,6 +21,7 @@ The extension includes the following features:
 
 - Automatic code reviews on every local Git commit
 - Manually requested reviews of local code changes
+- Full compatibility with text editors derived from VSCode, including Cursor and Windsurf
 
 ## Price and limitations
 

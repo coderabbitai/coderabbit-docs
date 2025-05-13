@@ -6,6 +6,10 @@ description: How to install the CodeRabbit VSCode extension
 This page is about installing the CodeRabbit VSCode extension. For more information about the extension, see
 [Review local changes](/code-editors).
 
+:::note
+The instructions on this page are specific to using the extension with VSCode. If you are instead using a VSCode-compatible editor such as Cursor or Windsurf, then the steps that you need to follow are similar, but might require some adaptation.
+:::
+
 ## Before you begin
 
 Before you can use the CodeRabbit VSCode extension, you need a CodeRabbit account.
@@ -16,7 +20,7 @@ If you don't already have an account, you can create one by visiting [the CodeRa
 
 To install the CodeRabbit VSCode extension, follow these steps:
 
-1. Visit [the extension's page on the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=CodeRabbit.coderabbit-vscode).
+1. Visit [the extension's page on the Visual Studio Marketplace](https://coderabbit.link/vscode-docs).
 
 1. Click **Install**.
 
