@@ -5,7 +5,7 @@ slug: /code-editors
 sidebar_label: Overview
 ---
 
-This page is about the CodeRabbit VSCode extension. For a broader overview of CodeRabbit, see [Introduction](/overview/introduction).
+This page is about the CodeRabbit VSCode extension. For a broader overview of CodeRabbit, see [Introduction](/).
 
 ## About the VSCode extension
 
