@@ -3,8 +3,10 @@ title: Use the VSCode extension
 description: How to review your code with the VSCode extension.
 ---
 
-This page is about using the CodeRabbit VSCode extension. For more information about the extension, see
-[Overview](/guides/about-vscode). To learn how to install the extension, see [Install the VSCode extension](/guides/install-vscode).
+This page is about performing local code reviews using the CodeRabbit VSCode extension. For more information about the extension, see
+[Review local changes](/code-editors). To learn how to install the extension, see [Install the VSCode extension](/guides/install-vscode).
+
+The CodeRabbit VSCode extension works by comparing changes in your current, checked-out Git branch against another branch in your local repository. You can use the extension to automatically perform full-branch changes after every commit, or make different kinds of comparisons by manually requesting a review.
 
 ## Automatically review local commits
 
@@ -18,6 +20,8 @@ To perform an automatic review, follow these steps:
 
 1. Wait for the review to complete. This might take several minutes. To cancel a review in progress, click **Stop the review**.
 
+After the review completes, you can browse and respond to review comments as described in [Work with code reviews](#work-with-code-reviews).
+
 For more options and control of code reviews performed using the CodeRabbit VSCode extension, you can manually request a review, as detailed in the following section.
 
 ## Manually request code reviews
@@ -26,10 +30,10 @@ To manually review changes in a local Git branch using the CodeRabbit VSCode ext
 
 1.  Click the CodeRabbit icon in the VSCode activity bar. The CodeRabbit sidebar appears.
 
-1.  Refer to **Branch** in the CodeRabbit sidebar. If you want to compare your code changes
-    to a branch other than the default that appears, then follow these steps:
+1.  If you want to compare your code changes
+    to a branch other than its base branch, then follow these steps:
 
-        1. Click the name of the base branch, which is `main` by default. A **Select a base branch** dialog appears, listing other branches in your local Git repository.
+        1. In the sidebar, under **Branch**, click the name of the base branch. A **Select a base branch** dialog appears, listing other branches in your local Git repository.
 
         1. Select the name of a base branch to compare against.
 
@@ -38,16 +42,50 @@ To manually review changes in a local Git branch using the CodeRabbit VSCode ext
     - To review all changes between the base branch and your current branch, including
       both committed and uncommitted changes, select **Review all changes**. This is the default selection.
 
-    - To limit the review to only changes on your branch that you have committed, select **Review committed changes**. This includes both pushed and not-pushed commits on the current branch.
+    - To limit the review to only changes on your branch that you have committed, select **Review committed changes**. This includes commits that you have pushed to your remote repository, if any, as well as any local commits.
 
-    - To limit the review to only uncommitted changes on your branch, select **Review all changes**.
+    - To limit the review to only uncommitted changes on your branch, select **Review uncommitted changes**.
 
-1.  Refer to the list of **Files to review** in the sidebar. This list represents all of the files that the selected review style includes. To change this list of files, repeat the previous step to choose a different review style, or use Git features like `git stash` to remove changes to files.
+1.  Refer to the list of **Files to review** in the sidebar. This list represents all of the files that the selected review action includes. To change this list of files, repeat the previous step to choose a different review action, or use Git features like `git stash` to selectively remove changes.
 
 1.  To perform the review, click the button part of the menu. The CodeRabbit sidebar displays a **Review** section with the review's progress.
 
 1.  Wait for the review to complete. This might take several minutes. To cancel a review in progress, click **Stop the review**.
 
+After the review completes, you can browse and respond to review comments as described in the following section.
+
+## Work with code reviews
+
+The CodeRabbit VSCode extension presents code reviews as a series of actionable comments, connected to specific files and lines. It gives you tools to apply its suggestions quickly, when possible.
+
+### Browse comments
+
+After the extension finishes its review, it adds any comments to the CodeRabbit sidebar under the **Files** heading in the **Reviews** section.
+
+Each item in **Files** is a comment referring to one or more lines in that file. Click the comment to see a detailed, inline comment in the editor, attached to the appropriate file and lines.
+
+You can react to these comments however you want: you can apply their advice literally, or let them guide you to find alternate solutions, or ignore them entirely. CodeRabbit comments are metadata stored with VSCode, and are not part of your files. The presence of comments doesn't block your use of version control.
+
+### Apply suggested changes
+
+Whenever possible, the CodeRabbit VSCode extension attaches discrete change suggestion to comments in the form of code diffs. For example, if it detects a typo in a new function name, the extension might attach a diff with a suggested correction.
+
+If you agree with CodeRabbit about the suggested fix and want to apply to exactly as it proposes, click the checkmark-shaped **Apply suggested change** icon in the inline comment. The extension makes the change for you in the editor.
+
+### Ignore or collapse comments
+
+To remove a comment from the editor, click its **Ignore** icon.
+
+To remove a comment but keep an icon in the editor noting its presence, click its **Collapse** icon.
+
+To see an ignored or collapsed comment in the editor again, click its summary in the CodeRabbit sidebar.
+
+### Browse previous reviews
+
+If you have performed reviews prior to the most recent review in the current VSCode window, then you can browse the comments from these reviews under the **Previous reviews** heading in the CodeRabbit sidebar.
+
+If a past review comment no longer applies to the current state of your code, then clicking that comment won't display a detailed comment or suggestion in the editor.
+
 ## What's next
 
-- [Uninstall the VSCode extension](/guides/install-extension)
+- [Uninstall the VSCode extension](/guides/uninstall-vscode)

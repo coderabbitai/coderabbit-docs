@@ -1,10 +1,10 @@
 ---
 title: Uninstall the VSCode extension
-description: How to uinstall the CodeRabbit VSCode extension
+description: How to uninstall the CodeRabbit VSCode extension
 ---
 
 This page is about uninstalling the CodeRabbit VSCode extension. For more information about the extension, see
-[Overview](/guides/about-vscode).
+[Review local changes](/code-editors).
 
 ## Uninstall the extension
 

@@ -111,7 +111,7 @@ const sidebars: SidebarsConfig = {
 		{
 			type: "category",
 			collapsed: false,
-			label: "Review local changes using the VSCode extension",
+			label: "Review local changes",
 			items: [
 				"guides/about-vscode",
 				"guides/install-vscode",

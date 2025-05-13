@@ -98,12 +98,12 @@ For private repositories, a number of pricing tiers are available. These range f
 
 As a separate, free product, CodeRabbit offers a VSCode extension that brings a subset of core CodeRabbit features to VSCode. This lets you use the power of CodeRabbit to tune and tidy your code changes locally before pushing your changes into a formal pull request for more thorough reviews.
 
-For more information, see [About the VSCode extension](/guides/about-vscode).
+For more information, see [Review local changes](/code-editors).
 
 ## What's next
 
 - [Quickstart](/getting-started/quickstart/) lets you experience your first CodeRabbit code review first-hand.
 
-- [About the VSCode extension] guides you through installing and using a subset of CodeRabbit features directly from your code editor.
+- [Review local changes](/code-editors) guides you through installing and using a subset of CodeRabbit features directly from your code editor.
 
 - [Why CodeRabbit?](/overview/why-coderabbit) dives further into the philosophies and technologies that drive CodeRabbit.
