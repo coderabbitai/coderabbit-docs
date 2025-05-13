@@ -76,6 +76,11 @@ Contained within the `<pr_details>` tag.
 - `State`: string ("open"/"closed") - Current state of the PR
 - `Mergeable`: boolean (true/false) - Whether the PR can be merged
 - `Is stale`: boolean - Whether PR has been inactive for over 168 hours
+- `PR Stage`: string - The current stage of open PRs in Open or Draft state, can be one of:
+  - "Needs Author Action" - PR requires author attention due to merge conflicts, draft status, or requested changes
+  - "Waiting for Author to Merge" - PR has approvals and is ready for author to merge
+  - "Waiting for Code Reviews" - PR is waiting for reviewers to approve
+  - undefined - PR is not in an open state (is merged or closed)
 
 #### Basic Information
 
@@ -124,60 +129,65 @@ Generate a summary of each pull request in the following bullet point format:
   - If 'Merged: true' set 'PR State: 🔀 Merged'
   - Else If 'Draft: true' set 'PR State: 📝 Draft'
   - Else If 'State: open' or 'State: active' set 'PR State: 💬 Open'
-  - Else If 'State: closed' and 'Merged: false' set 'PR State: 🔒 Closed'
+  - Else If 'State: closed' or 'State: DECLINED' and 'Merged: false' set 'PR State: 🔒 Closed'
   - Else set 'PR State: ❓ Unknown'
   - If the PR is stale, add '⚠️ Stale' at the end of the PR State.
-- Mergeable (if PR State if not 'Merged'): Provide the mergeable status of the PR as 'Mergeable' or 'Not Mergeable'.
+- Mergeable (if PR State is not 'Merged'): Provide the mergeable status of the PR as 'Mergeable' or 'Not Mergeable' based on the "Mergeable: " value.
+- PR Stage (if PR State is not 'Merged'): Provide the stage of the PR based on the "PR Stage: " value.
 - Summary: In under 50 words provide a short summary of the PR.
 - Comments: In under 50 words provide a short summary of all comments found within <pr_comments>, including each comments author username from <comment_author_username>. If there are no comments available, output 'No comments'.
 </overall_instructions>
 
 <example>
 - **PR Link:** [#3001](https://github.com/mygithuborg/myrepo/pull/3001)
-- **Title:** [PR Title]
+- **Title:** PR Title
 - **PR State:** 💬 Open
 - **Mergeable:** Mergeable
-- **Summary:** [Summary of the PR].
-- **Comments:** [Summary of the PR comments].
+- **PR Stage:** Waiting for Code Reviews
+- **Summary:** Summary of the PR.
+- **Comments:** Summary of the PR comments or No Comments.
 
 - **PR Link:** [#302](https://github.com/mygithuborg/thatrepo/pull/302)
-- **Title:** [PR Title]
+- **Title:** PR Title
 - **PR State:** 💬 Open
 - **Mergeable:** Mergeable
-- **Summary:** [Summary of the PR].
-- **Comments:** [Summary of the PR comments].
+- **PR Stage:** Waiting for Author to Merge
+- **Summary:** Summary of the PR.
+- **Comments:** Summary of the PR comments or No Comments.
 
 - **PR Link:** [#3](https://github.com/mygithuborg/myotherrepo/pull/3)
-- **Title:** [PR Title]
+- **Title:** PR Title
 - **PR State:** 🔀 Merged
-- **Summary:** [Summary of the PR].
-- **Comments:** [Summary of the PR comments].
+- **Summary:** Summary of the PR.
+- **Comments:** Summary of the PR comments or No Comments.
 
 - **PR Link:** [#14](https://github.com/mygithuborg/frontend/pull/14)
-- **Title:** [PR Title]
+- **Title:** PR Title
 - **PR State:** 💬 Open
+- **PR Stage:** "Needs Author Action"
 - **Mergeable:** Mergeable
-- **Summary:** [Summary of the PR].
-- **Comments:** [Summary of the PR comments].
+- **Summary:** Summary of the PR.
+- **Comments:** Summary of the PR comments or No Comments.
 
 - **PR Link:** [#13005](https://github.com/mygithuborg/backend/pull/13005)
-- **Title:** [PR Title]
+- **Title:** PR Title
 - **PR State:** 🔀 Merged
-- **Summary:** [Summary of the PR].
-- **Comments:** [Summary of the PR comments].
+- **Summary:** Summary of the PR.
+- **Comments:** Summary of the PR comments or No Comments.
 
 - **PR Link:** [#3006](https://github.com/mygithuborg/myrepo/pull/3006)
-- **Title:** [PR Title]
+- **Title:** PR Title
 - **PR State:** 🔀 Merged
-- **Summary:** [Summary of the PR].
-- **Comments:** [Summary of the PR comments].
+- **Summary:** Summary of the PR.
+- **Comments:** Summary of the PR comments or No Comments.
 
 - **PR Link:** [#3007](https://github.com/mygithuborg/myrepo/pull/3007)
-- **Title:** [PR Title]
+- **Title:** PR Title
 - **PR State:** 📝 Draft
 - **Mergeable:** Not Mergeable
-- **Summary:** [Summary of the PR].
-- **Comments:** [Summary of the PR comments].
+- **PR Stage:** "Needs Author Action"
+- **Summary:** Summary of the PR.
+- **Comments:** Summary of the PR comments or No Comments.
 </example>
 ```
 
