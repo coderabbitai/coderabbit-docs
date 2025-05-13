@@ -145,7 +145,7 @@ Generate a summary of each pull request in the following bullet point format:
 - **Mergeable:** Mergeable
 - **PR Stage:** Waiting for Code Reviews
 - **Summary:** Summary of the PR.
-- **Comments:** Summary of the PR comments or No Comments.
+ **Comments:** Summary of PR comments or No comments.
 
 - **PR Link:** [#302](https://github.com/mygithuborg/thatrepo/pull/302)
 - **Title:** PR Title
@@ -153,41 +153,41 @@ Generate a summary of each pull request in the following bullet point format:
 - **Mergeable:** Mergeable
 - **PR Stage:** Waiting for Author to Merge
 - **Summary:** Summary of the PR.
-- **Comments:** Summary of the PR comments or No Comments.
+- **Comments:** Summary of the PR comments or No comments.
 
 - **PR Link:** [#3](https://github.com/mygithuborg/myotherrepo/pull/3)
 - **Title:** PR Title
 - **PR State:** 🔀 Merged
 - **Summary:** Summary of the PR.
-- **Comments:** Summary of the PR comments or No Comments.
+- **Comments:** Summary of the PR comments or No comments.
 
 - **PR Link:** [#14](https://github.com/mygithuborg/frontend/pull/14)
 - **Title:** PR Title
 - **PR State:** 💬 Open
-- **PR Stage:** "Needs Author Action"
+- **PR Stage:** Needs Author Action
 - **Mergeable:** Mergeable
 - **Summary:** Summary of the PR.
-- **Comments:** Summary of the PR comments or No Comments.
+- **Comments:** Summary of the PR comments or No comments.
 
 - **PR Link:** [#13005](https://github.com/mygithuborg/backend/pull/13005)
 - **Title:** PR Title
 - **PR State:** 🔀 Merged
 - **Summary:** Summary of the PR.
-- **Comments:** Summary of the PR comments or No Comments.
+- **Comments:** Summary of the PR comments or No comments.
 
 - **PR Link:** [#3006](https://github.com/mygithuborg/myrepo/pull/3006)
 - **Title:** PR Title
 - **PR State:** 🔀 Merged
 - **Summary:** Summary of the PR.
-- **Comments:** Summary of the PR comments or No Comments.
+- **Comments:** Summary of the PR comments or No comments.
 
 - **PR Link:** [#3007](https://github.com/mygithuborg/myrepo/pull/3007)
 - **Title:** PR Title
 - **PR State:** 📝 Draft
 - **Mergeable:** Not Mergeable
-- **PR Stage:** "Needs Author Action"
-- **Summary:** Summary of the PR.
-- **Comments:** Summary of the PR comments or No Comments.
+ **PR Stage:** Needs Author Action
+
+ **Comments:** Summary of PR comments or No comments.
 </example>
 ```
 
