@@ -22,7 +22,7 @@ To perform an automatic review, follow these steps:
 
 1. Click **Yes.** The CodeRabbit sidebar appears in your VSCode window.
 
-1. Wait for the review to complete. This might take several minutes. To cancel a review in progress, click **Stop the review**.
+1. Wait for the review to complete. This might take a few minutes. To cancel a review in progress, click **Stop the review**.
 
 After the review completes, you can browse and respond to review comments as described in [Work with code reviews](#work-with-code-reviews).
 
@@ -52,7 +52,7 @@ To manually review changes in a local Git branch using the CodeRabbit VSCode ext
 
 1. To perform the review, click the button part of the menu. The CodeRabbit sidebar displays a **Review** section with the review's progress.
 
-1. Wait for the review to complete. This might take several minutes. To cancel a review in progress, click **Stop the review**.
+1. Wait for the review to complete. This might take a few minutes. To cancel a review in progress, click **Stop the review**.
 
 After the review completes, you can browse and respond to review comments as described in the following section.
 
