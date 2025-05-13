@@ -164,8 +164,8 @@ Generate a summary of each pull request in the following bullet point format:
 - **PR Link:** [#14](https://github.com/mygithuborg/frontend/pull/14)
 - **Title:** PR Title
 - **PR State:** 💬 Open
-- **PR Stage:** Needs Author Action
 - **Mergeable:** Mergeable
+- **PR Stage:** Needs Author Action
 - **Summary:** Summary of the PR.
 - **Comments:** Summary of the PR comments or No comments.
 
