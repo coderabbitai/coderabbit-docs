@@ -9,7 +9,7 @@ This page is about the CodeRabbit VSCode extension. For a broader overview of Co
 
 ## About the VSCode extension
 
-The CodeRabbit VSCode extension lets you apply a limited subset of CodeRabbit’s code-review features to your local development environment, directly from the VSCode IDE.
+The CodeRabbit VSCode extension lets you apply a limited subset of CodeRabbit’s code-review features to your local development environment, directly from the VSCode IDE. It also works with other text editors that are able to install and use VSCode extensions, such as Cursor and Windsurf.
 
 You can use the extension on its own, or you can use it to complement your local development on a repository whose remote has CodeRabbit installed.
 
