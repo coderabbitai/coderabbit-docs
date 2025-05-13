@@ -145,7 +145,7 @@ Generate a summary of each pull request in the following bullet point format:
 - **Mergeable:** Mergeable
 - **PR Stage:** Waiting for Code Reviews
 - **Summary:** Summary of the PR.
- **Comments:** Summary of PR comments or No comments.
+- **Comments:** Summary of the PR comments or No comments.
 
 - **PR Link:** [#302](https://github.com/mygithuborg/thatrepo/pull/302)
 - **Title:** PR Title
@@ -185,9 +185,9 @@ Generate a summary of each pull request in the following bullet point format:
 - **Title:** PR Title
 - **PR State:** 📝 Draft
 - **Mergeable:** Not Mergeable
- **PR Stage:** Needs Author Action
-
- **Comments:** Summary of PR comments or No comments.
+- **PR Stage:** Needs Author Action
+- **Summary:** Summary of the PR.
+- **Comments:** Summary of the PR comments or No comments.
 </example>
 ```
 
