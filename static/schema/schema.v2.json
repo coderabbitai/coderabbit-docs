@@ -440,7 +440,7 @@
 										},
 										"timeout_ms": {
 											"type": "number",
-											"maximum": 300000,
+											"maximum": 900000,
 											"minimum": 0,
 											"default": 90000,
 											"description": "Time in milliseconds to wait for all GitHub Checks to conclude."
