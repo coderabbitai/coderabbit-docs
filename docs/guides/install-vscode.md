@@ -20,15 +20,15 @@ If you don't already have an account, you can create one by visiting [the CodeRa
 
 To install the CodeRabbit VSCode extension, follow these steps:
 
-1. Visit [the extension's page on the Visual Studio Marketplace](https://coderabbit.link/vscode-docs).
+1. In the VSCode activity bar, click **Extensions**.
+
+1. In sidebar, type `coderabbit` into the **Search Extensions in Marketplace** search bar. After a moment, **CodeRabbit** appears in the sidebar as a search result.
+
+1. Select **CodeRabbit**. A summary of the CodeRabbit VSCode extension appears in the window's main pane, along with installation controls.
+
+1. If you would like VSCode to automatically check for and apply future updates to the extension, then keep the **Auto Update** checkbox selected. Otherwise, clear the checkbox.
 
 1. Click **Install**.
-
-1. If your browser asks you for permission to open VSCode, then click **Allow** or its equivalent control.
-
-1. A summary of the CodeRabbit VSCode extension appears in your VSCode window. If you would like VSCode to automatically check for and apply future updates to the extension, then keep the **Auto Update** checkbox selected.
-
-1. In VSCode, click **Install**.
 
 1. A **Log in to CodeRabbit to get started** dialog appears. Click **Login**. If the dialog gets dismissed or times out first, then you can follow these alternate steps:
 
@@ -41,6 +41,12 @@ To install the CodeRabbit VSCode extension, follow these steps:
 1. In your web browser, log into your CodeRabbit account.
 
 This connects your CodeRabbit account with the CodeRabbit VSCode extension.
+
+## Install using the marketplace website
+
+If you are using the VSCode IDE, and not an IDE that derives from it such as Cursor or Windsurf, then you can alternatively obtain and install the CodeRabbit VSCode extension by visiting [the extension's page on the Visual Studio Marketplace](https://coderabbit.link/vscode-docs).
+
+If you do install the extension this way, then you still need to connect your CodeRabbit account to the extension after installing it, as described in the previous section.
 
 ## What's next
 
