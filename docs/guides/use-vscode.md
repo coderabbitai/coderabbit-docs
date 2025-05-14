@@ -74,6 +74,12 @@ Whenever possible, the CodeRabbit VSCode extension attaches discrete change sugg
 
 If you agree with CodeRabbit about the suggested fix and want to apply to exactly as it proposes, click the checkmark-shaped **Apply suggested change** icon in the inline comment. The extension makes the change for you in the editor.
 
+### Request help from your AI coding agent
+
+If CodeRabbit determines that an AI coding agent could help with resolving one of its comments, then it adds a star-shaped **Fix with AI** icon to the inline display of that comment. To request assistance from the AI coding agent associated with your IDE, click this icon.
+
+The exact behavior of **Fix with AI** varies by IDE and your AI-agent configuration. For example, in VSCode, clicking **Fix with AI** invokes Copilot to help resolve the comment.
+
 ### Ignore or collapse comments
 
 To remove a comment from the editor, click its **Ignore** icon.
