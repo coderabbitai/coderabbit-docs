@@ -18,15 +18,15 @@ If you don't already have an account, you can create one by visiting [the CodeRa
 
 ## Install the extension
 
-To install the CodeRabbit VSCode extension, follow these steps:
+To install the CodeRabbit extension, follow these steps:
 
-1. In the VSCode activity bar, click **Extensions**.
+1. In the editor activity bar, click **Extensions**.
 
 1. In sidebar, type `coderabbit` into the **Search Extensions in Marketplace** search bar. After a moment, **CodeRabbit** appears in the sidebar as a search result.
 
 1. Select **CodeRabbit**. A summary of the CodeRabbit VSCode extension appears in the window's main pane, along with installation controls.
 
-1. If you would like VSCode to automatically check for and apply future updates to the extension, then keep the **Auto Update** checkbox selected. Otherwise, clear the checkbox.
+1. If you would like your editor to automatically check for and apply future updates to the extension, then keep the **Auto Update** checkbox selected. Otherwise, clear the checkbox.
 
 1. Click **Install**.
 
