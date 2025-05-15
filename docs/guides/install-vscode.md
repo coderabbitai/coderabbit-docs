@@ -45,3 +45,5 @@ This connects your CodeRabbit account with the CodeRabbit VSCode extension.
 ## What's next
 
 - [Use the VSCode extension](/guides/use-vscode)
+
+- [Configure the VSCode extension](/guides/config-vscode)

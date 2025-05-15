@@ -20,13 +20,13 @@ To perform an automatic review, follow these steps:
 
 1. Perform a Git commit using VSCode. After you do this, a dialog appears in your VSCode window, asking **Would you like to start a review?**
 
-1. Click **Yes.** The CodeRabbit sidebar appears in your VSCode window.
+1. Click **Yes**. The CodeRabbit sidebar appears in your VSCode window.
 
 1. Wait for the review to complete. This might take a few minutes. To cancel a review in progress, click **Stop the review**.
 
 After the review completes, you can browse and respond to review comments as described in [Work with code reviews](#work-with-code-reviews).
 
-You can optionally configure the extension to either always or never perform automatic code reviews on commit, instead of displaying this yes-or-no dialog. For more information, see [Configure automatic review behavior](/guides/configure-vscode#auto-reviews).
+You can optionally configure the extension to either always or never perform automatic code reviews on commit, instead of displaying this yes-or-no dialog. For more information, see [Configure automatic review behavior](/guides/config-vscode#auto-reviews).
 
 For more control of code reviews performed using the CodeRabbit VSCode extension, you can manually request a review, as detailed in the following section.
 
@@ -78,7 +78,7 @@ If you agree with CodeRabbit about the suggested fix and want to apply to exactl
 
 ### Request help from your AI coding agent {#agent}
 
-If CodeRabbit determines that an AI coding agent could help with resolving one of its comments, then it adds a star-shaped **Fix with AI** icon to the inline display of that comment. To request assistance from the AI coding agent associated with your IDE, click this icon.
+If CodeRabbit determines that an AI coding agent could help with resolving one of its comments, then it adds a star-shaped **Fix with AI** icon to the inline display of that comment. To have the extension generate a request for an AI agent to address the comment, click this icon.
 
 Depending upon your IDE and the current extension settings, the extension performs one of the following actions:
 
@@ -86,7 +86,7 @@ Depending upon your IDE and the current extension settings, the extension perfor
 - If you have Claude Code installed, then the extension can send the request to the `claude` command-line program.
 - As a fallback, the extension can copy the request, phrased as an AI prompt, to your clipboard. You can then manually paste this prompt into the coding AI of your IDE.
 
-For more information about configuring this behavior, see [Configure AI agent integration](/guides/configure-vscode#agent).
+For more information about configuring this behavior, see [Configure AI agent integration](/guides/config-vscode#agent).
 
 ### Ignore or collapse comments {#ignore}
 
@@ -103,5 +103,7 @@ If you have performed reviews prior to the most recent review in the current VSC
 If a past review comment no longer applies to the current state of your code, then clicking that comment won't display a detailed comment or suggestion in the editor.
 
 ## What's next {#whats-next}
+
+- [Configure the VSCode extension](/guides/config-vscode)
 
 - [Uninstall the VSCode extension](/guides/uninstall-vscode)

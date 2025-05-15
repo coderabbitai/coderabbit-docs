@@ -12,7 +12,7 @@ The instructions on this page are specific to using the extension with VSCode. I
 
 ## Find the settings screen {#find}
 
-To navigate to the the settings screen for the CodeRabbit VSCode extension, follow these steps:
+To navigate to the settings screen for the CodeRabbit VSCode extension, follow these steps:
 
 1. In the activity bar, click the Extensions icon.
 
@@ -46,7 +46,7 @@ The **Auto Review Mode** setting lets you control the behavior of the automatic 
 
 - **Auto**: The extension always performs a review after every commit.
 
-For more information about this feature, see [Automatically review local commits](/guides/use-vscode#auto).
+For more information about this feature, see [Automatically review local commits](/guides/use-vscode#auto-reviews).
 
 ## Set a review timeout {#timeout}
 
@@ -56,4 +56,6 @@ To turn off timeouts, set this value to `0`.
 
 ## What's next {#whats-next}
 
-- [Uninstall the VSCode extension](/guides/use-vscode)
+- [Use the VSCode extension](/guides/use-vscode)
+
+- [Uninstall the VSCode extension](/guides/uninstall-vscode)
