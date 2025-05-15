@@ -24,7 +24,7 @@ To perform an automatic review, follow these steps:
 
 1. Wait for the review to complete. This might take a few minutes. To cancel a review in progress, click **Stop the review**.
 
-After the review completes, you can browse and respond to review comments as described in [Work with code reviews](#work-with-code-reviews).
+After the review completes, you can browse and respond to review comments as described in [Work with code reviews](#work).
 
 You can optionally configure the extension to either always or never perform automatic code reviews on commit, instead of displaying this yes-or-no dialog. For more information, see [Configure automatic review behavior](/guides/config-vscode#auto-reviews).
 
