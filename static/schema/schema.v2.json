@@ -346,6 +346,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Docstrings | Options for generating Docstrings for your PRs/MRs."
+								},
+								"unit_tests": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Unit Tests | Allow CodeRabbit to generate unit tests for PRs/MRs."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Unit Tests | Options for generating unit tests for your PRs/MRs."
 								}
 							},
 							"additionalProperties": false,
@@ -389,7 +402,7 @@
 									},
 									"additionalProperties": false,
 									"default": {},
-									"description": "Enable ast-grep | ast-grep is a code analysis tool that helps you to find patterns in your codebase using abstract syntax trees patterns. | v0.31.1"
+									"description": "Enable ast-grep | ast-grep is a code analysis tool that helps you to find patterns in your codebase using abstract syntax trees patterns. | v0.38.1"
 								},
 								"shellcheck": {
 									"type": "object",
@@ -410,7 +423,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable Ruff integration. | v0.8.2"
+											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable Ruff integration. | v0.11.9"
 										}
 									},
 									"additionalProperties": false,
@@ -440,7 +453,7 @@
 										},
 										"timeout_ms": {
 											"type": "number",
-											"maximum": 300000,
+											"maximum": 900000,
 											"minimum": 0,
 											"default": 90000,
 											"description": "Time in milliseconds to wait for all GitHub Checks to conclude."
@@ -555,7 +568,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root. Please ensure that this file contains the `paths:` parameter. | v2.0.3"
+											"description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root. Please ensure that this file contains the `paths:` parameter. | v2.1.15"
 										},
 										"level": {
 											"type": "string",
@@ -604,7 +617,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable YAMLlint | YAMLlint is a linter for YAML files. | Enable YAMLlint integration. | v1.35.1"
+											"description": "Enable YAMLlint | YAMLlint is a linter for YAML files. | Enable YAMLlint integration. | v1.37.1"
 										}
 									},
 									"additionalProperties": false,
@@ -617,7 +630,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration. | v8.21.2"
+											"description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration. | v8.26.0"
 										}
 									},
 									"additionalProperties": false,
@@ -643,7 +656,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable detekt | detekt is a static code analysis tool for Kotlin files. | v1.23.7"
+											"description": "Enable detekt | detekt is a static code analysis tool for Kotlin files. | v1.23.8"
 										},
 										"config_file": {
 											"type": "string",
@@ -673,7 +686,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable RuboCop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.73"
+											"description": "Enable RuboCop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.75.5"
 										}
 									},
 									"additionalProperties": false,
@@ -686,7 +699,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Buf | Buf offers linting for Protobuf files. | v1.47.2"
+											"description": "Enable Buf | Buf offers linting for Protobuf files. | v1.54.0"
 										}
 									},
 									"additionalProperties": false,
@@ -699,7 +712,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Regal | Regal is a linter and language server for Rego. | v0.29.2"
+											"description": "Enable Regal | Regal is a linter and language server for Rego. | v0.33.1"
 										}
 									},
 									"additionalProperties": false,
@@ -712,7 +725,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable actionlint | is a static checker for GitHub Actions workflow files. | v1.7.4"
+											"description": "Enable actionlint | is a static checker for GitHub Actions workflow files. | v1.7.7"
 										}
 									},
 									"additionalProperties": false,
@@ -725,7 +738,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable PMD | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.8.0"
+											"description": "Enable PMD | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.13.0"
 										},
 										"config_file": {
 											"type": "string",
@@ -742,7 +755,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Cppcheck | Cppcheck is a static code analysis tool for the C and C++ programming languages. | v2.10-2"
+											"description": "Enable Cppcheck | Cppcheck is a static code analysis tool for the C and C++ programming languages. | v2.17.1"
 										}
 									},
 									"additionalProperties": false,
@@ -755,7 +768,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Semgrep | Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues. | Enable Semgrep integration. | v1.99.0"
+											"description": "Enable Semgrep | Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues. | Enable Semgrep integration. | v1.122.0"
 										},
 										"config_file": {
 											"type": "string",
@@ -772,7 +785,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable CircleCI | CircleCI tool is a static checker for CircleCI config files. | v0.1.31151"
+											"description": "Enable CircleCI | CircleCI tool is a static checker for CircleCI config files. | v0.1.31687"
 										}
 									},
 									"additionalProperties": false,
@@ -785,7 +798,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable SQLFluff | SQLFluff is an open source, dialect-flexible and configurable SQL linter. | v3.3.0"
+											"description": "Enable SQLFluff | SQLFluff is an open source, dialect-flexible and configurable SQL linter. | v3.4.0"
 										}
 									},
 									"additionalProperties": false,
@@ -798,7 +811,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Prisma Schema linting | Prisma Schema linting helps maintain consistent and error-free schema files | v0.10.0"
+											"description": "Enable Prisma Schema linting | Prisma Schema linting helps maintain consistent and error-free schema files | v0.10.1"
 										}
 									},
 									"additionalProperties": false,
@@ -811,7 +824,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable OXC | OXC is a JavaScript/TypeScript linter written in Rust. | v0.16.5"
+											"description": "Enable OXC | OXC is a JavaScript/TypeScript linter written in Rust. | v0.16.10"
 										}
 									},
 									"additionalProperties": false,

@@ -94,8 +94,16 @@ Public repositories can use the Pro tier of CodeRabbit at no charge, including a
 
 For private repositories, a number of pricing tiers are available. These range from a Free tier that offers unlimited code-change summaries, to an Enterprise tier with access to advanced features and SLA support. For more information, see [Pricing](https://www.coderabbit.ai/pricing).
 
+## Review local changes from within VSCode
+
+As a separate, free product, CodeRabbit offers a VSCode extension that brings a subset of core CodeRabbit features to VSCode. This lets you use the power of CodeRabbit to tune and tidy your code changes locally before pushing your changes into a formal pull request for more thorough reviews.
+
+For more information, see [Review local changes](/code-editors).
+
 ## What's next
 
 - [Quickstart](/getting-started/quickstart/) lets you experience your first CodeRabbit code review first-hand.
+
+- [Review local changes](/code-editors) guides you through installing and using a subset of CodeRabbit features directly from your code editor.
 
 - [Why CodeRabbit?](/overview/why-coderabbit) dives further into the philosophies and technologies that drive CodeRabbit.

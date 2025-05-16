@@ -94,7 +94,7 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 
 ### GitLab CI/CD
 
-- Pipeline failure analysis
+- GitLab CI/CD Pipeline failure analysis
 - Integration with GitLab Advanced Security
 - Support for DAST (Dynamic Application Security Testing) findings
 - Remediation for SAST (Static Application Security Testing) issues
@@ -105,16 +105,16 @@ With CodeRabbit CI/CD Pipeline Remediation, you have coderabbit automatically re
 
 ### CircleCI
 
-- Workflow failure detection
+- CircleCI Pipeline failure analysis
 - Job-level error analysis
 - Configuration validation
 - Dependency resolution
 
 <img src="/img/tools/circle-cicd.png" width="600" alt="CircleCI Integration" />
 
-### Azure DevOps
+### Azure DevOps Pipelines
 
-- Pipeline failure detection
+- Azure DevOps CI/CD Pipeline failure analysis
 - Integration with Azure DevOps Checks
 - Support for custom tasks and pipelines
 - Remediation for build issues
@@ -174,4 +174,4 @@ Our tool handles a wide range of pipeline failures including:
 - [GitHub Actions Configuration](https://docs.github.com/en/actions)
 - [GitLab CI/CD Documentation](https://docs.gitlab.com/ee/ci/)
 - [CircleCI Documentation](https://circleci.com/docs/)
-- [Azure DevOps Documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops)
+- [Azure DevOps Pipeline Documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops)
