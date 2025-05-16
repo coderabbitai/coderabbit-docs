@@ -19,9 +19,11 @@ The extension is intended to let you use the power of CodeRabbit to rapidly tune
 
 The extension includes the following features:
 
-- Automatic code reviews on every local Git commit
-- Manually requested reviews of local code changes
-- Full compatibility with text editors derived from VSCode, including Cursor and Windsurf
+- Automatic code reviews on every local Git commit.
+- Manually requested reviews of local code changes.
+- One-click application of simpler suggested code fixes.
+- Integration with AI coding agents, including Copilot and Claude Code, to help you resolve more complex suggestions.
+- Full compatibility with text editors derived from VSCode, including Cursor and Windsurf.
 
 ## Price and limitations
 
