@@ -12,7 +12,7 @@ The CodeRabbit VSCode extension works by comparing changes in your current, chec
 The instructions on this page are specific to using the extension with VSCode. If you are instead using a VSCode-compatible editor such as Cursor or Windsurf, then the steps that you need to follow are similar, but might require some adaptation.
 :::
 
-## Automatically review local commits
+## Automatically review local commits {#auto-reviews}
 
 You can let CodeRabbit automatically review commits that you make to your local Git repository. These automatic reviews compare all committed changes against the branch that your working branch is based on.
 
@@ -20,15 +20,17 @@ To perform an automatic review, follow these steps:
 
 1. Perform a Git commit using VSCode. After you do this, a dialog appears in your VSCode window, asking **Would you like to start a review?**
 
-1. Click **Yes.** The CodeRabbit sidebar appears in your VSCode window.
+1. Click **Yes**. The CodeRabbit sidebar appears in your VSCode window.
 
 1. Wait for the review to complete. This might take a few minutes. To cancel a review in progress, click **Stop the review**.
 
-After the review completes, you can browse and respond to review comments as described in [Work with code reviews](#work-with-code-reviews).
+After the review completes, you can browse and respond to review comments as described in [Work with code reviews](#work).
 
-For more options and control of code reviews performed using the CodeRabbit VSCode extension, you can manually request a review, as detailed in the following section.
+You can optionally configure the extension to either always or never perform automatic code reviews on commit, instead of displaying this yes-or-no dialog. For more information, see [Configure automatic review behavior](/guides/config-vscode#auto-reviews).
 
-## Manually request code reviews
+For more control of code reviews performed using the CodeRabbit VSCode extension, you can manually request a review, as detailed in the following section.
+
+## Manually request code reviews {#manual-reviews}
 
 To manually review changes in a local Git branch using the CodeRabbit VSCode extension, follow these steps:
 
@@ -56,11 +58,11 @@ To manually review changes in a local Git branch using the CodeRabbit VSCode ext
 
 After the review completes, you can browse and respond to review comments as described in the following section.
 
-## Work with code reviews
+## Work with code reviews {#work}
 
 The CodeRabbit VSCode extension presents code reviews as a series of actionable comments, connected to specific files and lines. It gives you tools to apply its suggestions quickly, when possible.
 
-### Browse comments
+### Browse comments {#browse}
 
 After the extension finishes its review, it adds any comments to the CodeRabbit sidebar under the **Files** heading in the **Reviews** section.
 
@@ -68,13 +70,25 @@ Each item in **Files** is a comment referring to one or more lines in that file.
 
 You can react to these comments however you want: you can apply their advice literally, or let them guide you to find alternate solutions, or ignore them entirely. CodeRabbit comments are metadata stored with VSCode, and are not part of your files. The presence of comments doesn't block your use of version control.
 
-### Apply suggested changes
+### Apply suggested changes {#apply}
 
 Whenever possible, the CodeRabbit VSCode extension attaches discrete change suggestion to comments in the form of code diffs. For example, if it detects a typo in a new function name, the extension might attach a diff with a suggested correction.
 
 If you agree with CodeRabbit about the suggested fix and want to apply to exactly as it proposes, click the checkmark-shaped **Apply suggested change** icon in the inline comment. The extension makes the change for you in the editor.
 
-### Ignore or collapse comments
+### Request help from your AI coding agent {#agent}
+
+If CodeRabbit determines that an AI coding agent could help with resolving one of its comments, then it adds a star-shaped **Fix with AI** icon to the inline display of that comment. To have the extension generate a request for an AI agent to address the comment, click this icon.
+
+Depending upon your IDE and the current extension settings, the extension performs one of the following actions:
+
+- If you are using VSCode with Copilot installed, then the extension can send the request directly to Copilot.
+- If you have Claude Code installed, then the extension can send the request to the `claude` command-line program.
+- As a fallback, the extension can copy the request, phrased as an AI prompt, to your clipboard. You can then manually paste this prompt into the coding AI of your IDE.
+
+For more information about configuring this behavior, see [Configure AI agent integration](/guides/config-vscode#agent).
+
+### Ignore or collapse comments {#ignore}
 
 To remove a comment from the editor, click its **Ignore** icon.
 
@@ -82,12 +96,14 @@ To remove a comment but keep an icon in the editor noting its presence, click it
 
 To see an ignored or collapsed comment in the editor again, click its summary in the CodeRabbit sidebar.
 
-### Browse previous reviews
+### Browse previous reviews {#previous}
 
 If you have performed reviews prior to the most recent review in the current VSCode window, then you can browse the comments from these reviews under the **Previous reviews** heading in the CodeRabbit sidebar.
 
 If a past review comment no longer applies to the current state of your code, then clicking that comment won't display a detailed comment or suggestion in the editor.
 
-## What's next
+## What's next {#whats-next}
+
+- [Configure the VSCode extension](/guides/config-vscode)
 
 - [Uninstall the VSCode extension](/guides/uninstall-vscode)
