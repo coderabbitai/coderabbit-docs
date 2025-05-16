@@ -30,13 +30,13 @@ const sidebars: SidebarsConfig = {
 	docsSidebar: [
 		{
 			type: "category",
-			collapsed: false,
+			collapsed: true,
 			label: "Get started with CodeRabbit",
 			items: ["overview/introduction", "getting-started/quickstart"],
 		},
 		{
 			type: "category",
-			collapsed: false,
+			collapsed: true,
 			label: "Add CodeRabbit to your repository",
 			items: [
 				"platforms/platforms",
@@ -70,7 +70,7 @@ const sidebars: SidebarsConfig = {
 		},
 		{
 			type: "category",
-			collapsed: false,
+			collapsed: true,
 			label: "Configure CodeRabbit",
 			items: [
 				"getting-started/configure-coderabbit",
@@ -81,14 +81,14 @@ const sidebars: SidebarsConfig = {
 		},
 		{
 			type: "category",
-			collapsed: false,
+			collapsed: true,
 			label: "Review pull requests",
 			items: [
 				"guides/commands",
 				"guides/agent_chat",
 				{
 					type: "category",
-					collapsed: false,
+					collapsed: true,
 					label: "Analyze and improve your code",
 					items: [
 						"integrations/code-graph-analysis",
@@ -99,7 +99,7 @@ const sidebars: SidebarsConfig = {
 		},
 		{
 			type: "category",
-			collapsed: false,
+			collapsed: true,
 			label: "Create and resolve issues",
 			items: [
 				"integrations/issue-integrations",
@@ -110,7 +110,7 @@ const sidebars: SidebarsConfig = {
 		},
 		{
 			type: "category",
-			collapsed: false,
+			collapsed: true,
 			label: "Review local changes",
 			items: [
 				"guides/about-vscode",
@@ -122,7 +122,7 @@ const sidebars: SidebarsConfig = {
 		},
 		{
 			type: "category",
-			collapsed: false,
+			collapsed: true,
 			label: "Generate reports",
 			items: [
 				"guides/ondemand-reports",
@@ -132,7 +132,7 @@ const sidebars: SidebarsConfig = {
 		},
 		{
 			type: "category",
-			collapsed: false,
+			collapsed: true,
 			label: "Reference",
 			items: [
 				{
@@ -177,7 +177,7 @@ const sidebars: SidebarsConfig = {
 		},
 		{
 			type: "category",
-			collapsed: false,
+			collapsed: true,
 			label: "Resources",
 			items: [
 				"getting-started/support",
