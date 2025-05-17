@@ -145,6 +145,7 @@ const sidebars: SidebarsConfig = {
 					label: "Supported tools",
 					collapsed: true,
 					items: [
+						"tools/list",
 						"tools/actionlint",
 						"tools/biome",
 						"tools/buf",
