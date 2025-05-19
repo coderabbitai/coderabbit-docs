@@ -158,6 +158,7 @@ const sidebars: SidebarsConfig = {
 						"tools/golangci-lint",
 						"tools/hadolint",
 						"tools/languagetool",
+						"tools/luacheck",
 						"tools/markdownlint",
 						"tools/oxlint",
 						"tools/phpstan",
