@@ -30,7 +30,7 @@ Create a new, private repository on GitHub. Name the new repository `coderabbit-
 
 To integrate CodeRabbit with your GitHub account, follow these steps:
 
-1. Visit [the CodeRabbit login page](https://app.coderabbit.ai/login).
+1. Visit [the CodeRabbit login page](https://app.coderabbit.ai/login?free-trial).
 1. Click **Login with GitHub**.
 1. Click **Authorize coderabbitai**.
 
