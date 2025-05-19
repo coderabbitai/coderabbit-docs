@@ -9,7 +9,7 @@ sidebar_position: 13
 
 ### Lua Support with Luacheck
 
-We're excited to announce support for Lua code analysis with [Luacheck](https://github.com/mpeterv/luacheck), a powerful static analyzer and linter for Lua code.
+We're excited to announce enhanced support for Lua code analysis with [Luacheck](https://github.com/mpeterv/luacheck), a powerful static analyzer and linter for Lua code.
 
 ## April 19, 2025
 
