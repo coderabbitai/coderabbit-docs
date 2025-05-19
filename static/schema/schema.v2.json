@@ -1133,6 +1133,37 @@
 								"path_instructions": []
 							},
 							"description": "Settings related to the generation of docstrings."
+						},
+						"unit_tests": {
+							"type": "object",
+							"properties": {
+								"path_instructions": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"path": {
+												"type": "string",
+												"description": "File path glob pattern. Example: **/*.js"
+											},
+											"instructions": {
+												"type": "string",
+												"maxLength": 20000,
+												"description": "Provides additional guidelines for unit test generation based on file paths."
+											}
+										},
+										"required": ["path", "instructions"],
+										"additionalProperties": false
+									},
+									"default": [],
+									"description": "Unit Test Generation | Provide additional guidelines for unit test generation based on file paths."
+								}
+							},
+							"additionalProperties": false,
+							"default": {
+								"path_instructions": []
+							},
+							"description": "Settings related to the generation of unit tests."
 						}
 					},
 					"additionalProperties": false,
