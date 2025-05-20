@@ -5,6 +5,12 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## May 19, 2025
+
+### Lua Support with Luacheck
+
+We're excited to announce enhanced support for Lua code analysis with [Luacheck](https://github.com/mpeterv/luacheck), a powerful static analyzer and linter for Lua code.
+
 ## April 19, 2025
 
 ### Docstring Path Instructions

@@ -843,6 +843,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Configuration for Shopify Theme Check to ensure theme quality and best practices"
+								},
+								"luacheck": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Lua code linting | Luacheck helps maintain consistent and error-free Lua code | v1.2.0"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Configuration for Lua code linting to ensure code quality"
 								}
 							},
 							"additionalProperties": false,

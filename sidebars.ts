@@ -145,6 +145,7 @@ const sidebars: SidebarsConfig = {
 					label: "Supported tools",
 					collapsed: true,
 					items: [
+						"tools/list",
 						"tools/actionlint",
 						"tools/biome",
 						"tools/buf",
@@ -157,6 +158,7 @@ const sidebars: SidebarsConfig = {
 						"tools/golangci-lint",
 						"tools/hadolint",
 						"tools/languagetool",
+						"tools/luacheck",
 						"tools/markdownlint",
 						"tools/oxlint",
 						"tools/phpstan",
