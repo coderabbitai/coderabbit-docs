@@ -48,7 +48,7 @@ To have CodeRabbit generate missing documentation for function code added by
 the pull request, post the following comment to the
 pull request:
 
-```
+```text
 @coderabbitai generate docstrings
 ```
 
@@ -66,7 +66,7 @@ To have CodeRabbit generate and add a new repository branch with code improvemen
 that try to address its own code review comments, post the following comment to the
 pull request:
 
-```
+```text
 @coderabbitai plan
 ```
 

@@ -33,14 +33,14 @@ the commands listed on [Code review command reference](/reference/review-command
 To pause automated reviews of a pull request, post the following comment to the
 pull request:
 
-```
+```text
 @coderabbitai pause
 ```
 
 To resume automated reviews after pausing them, post the following comment to the
 pull request:
 
-```
+```text
 @coderabbitai resume
 ```
 
@@ -49,7 +49,7 @@ pull request:
 To disable automatic code reviews for a pull request, add the following line
 anywhere in the pull request description:
 
-```
+```text
 @coderabbitai ignore
 ```
 
@@ -76,14 +76,14 @@ two types:
 To manually request a full review, post the following comment to the
 pull request:
 
-```
+```text
 @coderabbitai full review
 ```
 
 To manually request an incremental review, post the following comment to the
 pull request:
 
-```
+```text
 @coderabbitai review
 ```
 
@@ -92,7 +92,7 @@ pull request:
 To have CodeRabbit mark all of its previous comments as resolved, post the following comment to the
 pull request:
 
-```
+```text
 @coderabbitai resolve
 ```
 
@@ -102,7 +102,7 @@ To have CodeRabbit add or update a generated summary of the branch’s proposed 
 to the pull request’s description, post the following comment:
 pull request:
 
-```
+```text
 @coderabbitai summary
 ```
 
@@ -121,7 +121,7 @@ To have CodeRabbit post a comment listing out its current configuration
 with your repository, post the following comment to the
 pull request:
 
-```
+```text
 @coderabbitai configuration
 ```
 
@@ -131,7 +131,7 @@ To have CodeRabbit post a comment to the pull request with a quick-reference
 guide to its own commands and other features, post the following comment to the
 pull request:
 
-```
+```text
 @coderabbitai help
 ```
 
