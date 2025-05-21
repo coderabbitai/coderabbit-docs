@@ -175,6 +175,7 @@ const sidebars: SidebarsConfig = {
 						"tools/yamllint",
 					],
 				},
+				"reference/caching",
 			],
 		},
 		{
