@@ -12,7 +12,7 @@ request description, as specified by the next sections of this page.
 
 For a complete CodeRabbit command reference, see [Code review command reference](/reference/review-commands).
 
-## Control the flow of code reviews {#flow}
+## Control automatic code reviews {#flow}
 
 By default, CodeRabbit automatically reviews every new pull request created in
 your repository. It updates its review with comments whenever the pull request has new commits
@@ -24,26 +24,7 @@ a specific pull request, such as pausing reviews, or resolving open comments.
 For more information about permanently configuring the behavior of CodeRabbit on
 your repository, see [Add a configuration file](/getting-started/configure-coderabbit).
 
-### Have CodeRabbit ignore a pull request {#ignore}
-
-If you want CodeRabbit to completely disregard a pull request, then add
-the following text, on a line by itself, to the pull request description:
-
-```
-@coderabbitai ignore
-```
-
-You can include this line while creating the pull request, or you can add it
-to the description after you create it.
-
-So long as the `@coderabbitai ignore` line remains in the pull request description, CodeRabbit
-doesn't perform any processing at all on this pull request. This also causes
-CodeRabbit to ignore any attempts to issue to commands using comments that mention `@coderabbitai`.
-
-To have CodeRabbit stop ignoring a pull request, edit the description to
-remove the `@coderabbitai ignore` line.
-
-### Pause and resume code reviews {#pause-resume}
+### Pause and resume automatic code reviews {#pause-resume}
 
 You can tell CodeRabbit to pause its automatic reviews of a pull request. If
 you do, then you can still manually request CodeRabbit to review changes using
@@ -62,6 +43,24 @@ pull request:
 ```
 @coderabbitai resume
 ```
+
+### Disable automatic code reviews {#ignore}
+
+To disable automatic code reviews for a pull request, add the following line
+anywhere in the pull request description:
+
+```
+@coderabbitai ignore
+```
+
+As long as that text remains in the description, CodeRabbit will not
+automatically review any commits associated with that pull request.
+You can still [chat with CodeRabbit](/guides/agent_chat) and issue other commands in the pull
+request comments.
+
+To enable automatic reviews on that pull request, delete "`@coderabbitai ignore`"
+from the pull request description. CodeRabbit commences automatic reviews starting with
+the next commit made to the branch under review.
 
 ## Manually request code reviews {#request}
 
@@ -96,6 +95,20 @@ pull request:
 ```
 @coderabbitai resolve
 ```
+
+## Generate summary text {#summary}
+
+To have CodeRabbit add or update a generated summary of the branch’s proposed changes
+to the pull request’s description, post the following comment:
+pull request:
+
+```
+@coderabbitai summary
+```
+
+CodeRabbit appends the summary text to the description under the heading
+"Summary by CodeRabbit". If CodeRabbit has previously added a summary under that
+heading, then it replaces it with the new summary.
 
 ## Get information about CodeRabbit {#info}
 
