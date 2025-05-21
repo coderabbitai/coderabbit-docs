@@ -27,6 +27,7 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 | JSX                         | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
 | Kotlin                      | [detekt][detekt]                                           | Code Quality                                        |
 | Kubernetes                  | [Checkov][Checkov]                                         | Code Security                                       |
+| Lua                         | [Luacheck][Luacheck]                                       | Code Quality                                        |
 | Markdown                    | [markdownlint][markdownlint], [LanguageTool][LanguageTool] | Code Quality, Grammar Checking                      |
 | PHP                         | [PHPStan][PHPStan]                                         | Code Quality                                        |
 | Plaintext                   | [LanguageTool][LanguageTool]                               | Grammar and Spell Checking                          |
@@ -72,3 +73,4 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 [PrismaLint]: /tools/prisma-lint.md
 [oxlint]: /tools/oxlint.md
 [ShopifyCLI]: /tools/shopify-cli.md
+[Luacheck]: /tools/luacheck.md
