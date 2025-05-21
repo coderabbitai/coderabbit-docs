@@ -84,7 +84,11 @@ const sidebars: SidebarsConfig = {
 			collapsed: true,
 			label: "Review pull requests",
 			items: [
+				"guides/code-review-overview",
 				"guides/commands",
+				"guides/generate-improvements",
+				"guides/code-review-best-practices",
+				"guides/code-review-troubleshooting",
 				"guides/agent_chat",
 				{
 					type: "category",
@@ -140,6 +144,7 @@ const sidebars: SidebarsConfig = {
 					label: "CodeRabbit API",
 					href: "https://api.coderabbit.ai/api/swagger/",
 				},
+				"reference/review-commands",
 				{
 					type: "category",
 					label: "Supported tools",

@@ -3,92 +3,128 @@ title: Control and manage code reviews
 description: Learn how to control CodeRabbit using commands in pull request comments
 ---
 
-# CodeRabbit Commands
+This page is about issuing direct commands to CodeRabbit during code reviews.
+For a general overview of performing code reviews with CodeRabbit, see [Review pull requests](/guides/code-review-overview).
 
-> Control your code reviews directly from pull request comments using CodeRabbit's command system. Each command starts with `@coderabbitai` followed by the specific action you want to take.
+You can control CodeRabbit's behavior with a specific pull request by mentioning the
+username of its bot, `@coderabbitai`, alongside keywords in comments or the pull
+request description, as specified by the next sections of this page.
 
-## Review Control Commands
+For a complete CodeRabbit command reference, see [Code review command reference](/reference/review-commands).
 
-### Managing Reviews
+## Control the flow of code reviews {#flow}
 
-| Command                     | Description                                          | Use Case                                                                     |
-| --------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------- |
-| `@coderabbitai review`      | Triggers an incremental review of new changes        | When automatic reviews are disabled or you want to manually trigger a review |
-| `@coderabbitai full review` | Performs a complete review of all files from scratch | When you want to get fresh insights on the entire PR                         |
-| `@coderabbitai summary`     | Regenerates the PR summary                           | When you want an updated overview after making changes                       |
+By default, CodeRabbit automatically reviews every new pull request created in
+your repository. It updates its review with with comments whenever the pull request has new commits
+pushed to it.
 
-### Review Flow Control
+The following sections show you how to tell CodeRabbit to modify this behavior with
+a specific pull request, such as pausing reviews, or resolving open comments.
 
-| Command                | Description                              | Use Case                                            |
-| ---------------------- | ---------------------------------------- | --------------------------------------------------- |
-| `@coderabbitai pause`  | Temporarily stops reviews on the PR      | When you're making multiple rapid changes           |
-| `@coderabbitai resume` | Restarts reviews after a pause           | When you're ready for CodeRabbit to review again    |
-| `@coderabbitai ignore` | Permanently disables reviews for this PR | When you want to handle the review process manually |
+For more information about permanently configuring the behavior of CodeRabbit on
+your repository, see [Add a configuration file](/getting-started/configure-coderabbit).
 
-### Comment Management
+### Have CodeRabbit ignore a pull request {#ignore}
 
-| Command                 | Description                             | Use Case                                                |
-| ----------------------- | --------------------------------------- | ------------------------------------------------------- |
-| `@coderabbitai resolve` | Resolves all CodeRabbit review comments | When you've addressed all feedback and want to clean up |
+If you want CodeRabbit to completely disregard a pull request, then add
+the following text, on a line by itself, to the pull request description:
 
-### Documentation Commands
+```
+@coderabbitai ignore
+```
 
-| Command                             | Description                                  | Use Case                                            |
-| ----------------------------------- | -------------------------------------------- | --------------------------------------------------- |
-| `@coderabbitai generate docstrings` | Generates docstrings for functions in the PR | When you need automatic documentation for your code |
-| `@coderabbitai configuration`       | Shows current CodeRabbit settings            | When you need to check or export your configuration |
+You can include this line while creating the pull request, or you can add it
+to the description after you create it.
 
-### Agentic Chat Commands
+So long as the `@coderabbitai ignore` line remains in the pull request description, CodeRabbit
+doesn't perform any processing at all on this pull request. This also causes
+CodeRabbit to ignore any attempts to issue to commands using comments that mention `@coderabbitai`.
 
-| Command              | Description                                                | Use Case                                             |
-| -------------------- | ---------------------------------------------------------- | ---------------------------------------------------- |
-| `@coderabbitai plan` | Get the agentic chat to plan an edit for previous comments | When you want CodeRabbit to change your code for you |
+To have CodeRabbit stop ignoring a pull request, edit the description to
+remove the `@coderabbitai ignore` line.
 
-### Help & Support
+### Pause and resume code reviews {#pause-resume}
 
-| Command              | Description                                | Use Case                                   |
-| -------------------- | ------------------------------------------ | ------------------------------------------ |
-| `@coderabbitai help` | Displays available commands and usage info | When you need guidance on using CodeRabbit |
+You can tell CodeRabbit to pause its automatic reviews of a pull request. If
+you do, then you can still manually request CodeRabbit to review changes using
+the commands listed on [Code review command reference](/reference/review-commands).
 
-## Best Practices
+To pause automated reviews of a pull request, post the following comment to the
+pull request:
 
-### Review Workflow
+```
+@coderabbitai pause
+```
 
-- Start with `@coderabbitai review` for checking new changes
-- Use `@coderabbitai full review` when major changes require a fresh perspective
-- Generate summaries after significant updates using `@coderabbitai summary`
+To resume automated reviews after pausing them, post the following comment to the
+pull request:
 
-### Managing Large Changes
+```
+@coderabbitai resume
+```
 
-- Use `@coderabbitai pause` before making multiple commits
-- Resume reviews with `@coderabbitai resume` when ready
-- Consider `@coderabbitai full review` after substantial changes
+## Manually request code reviews {#request}
 
-### Documentation Flow
+You can ask CodeRabbit to perform a code review at any time. This can be useful
+when you have paused automated code reviews. Manually requested reviews have
+two types:
 
-- Run `@coderabbitai generate docstrings` after finalizing function implementations
-- Learn more about [docstring generation](/finishing-touches/docstrings)
+- A _full review_ disregards any comments that CodeRabbit has already made
+  on this pull request, and generates a complete review of the entire pull request.
 
-## Tips
+- An _incremental review_ takes all comments that CodeRabbit has made since
+  its most recent full review into consideration, and
 
-- Commands are case-insensitive (`@coderabbitai REVIEW` works the same as `@coderabbitai review`)
-- Commands can be issued by anyone with write access to the repository
-- Multiple commands can be used in sequence as needed
-- Use `@coderabbitai configuration` to export your settings before making changes
+To manually request a full review, post the following comment to the
+pull request:
 
-## Command Response Time
+```
+@coderabbitai full review
+```
 
-- Most commands (pause, resume, ignore) take effect immediately
-- Review commands typically complete within a few minutes, depending on PR size
-- Docstring generation time varies based on the number of functions
+To manually request an incremental review, post the following comment to the
+pull request:
 
-## Troubleshooting
+```
+@coderabbitai review
+```
 
-If a command doesn't seem to work:
+## Resolve comments {#resolve}
 
-1. Check that you have the necessary repository permissions
-2. Verify the command syntax
-3. Look for any response from CodeRabbit in the PR comments
-4. Use `@coderabbitai help` for command guidance
+To have CodeRabbit mark all of its previous comments as resolved, post the following comment to the
+pull request:
 
-Need help? Join our community on [Discord](https://discord.gg/coderabbit) or contact our support team.
+```
+@coderabbitai resolve
+```
+
+## Get information about CodeRabbit {#info}
+
+The commands in this section request CodeRabbit to display its own configuration
+or documentation.
+
+### Display current configutation {#config}
+
+To have CodeRabbit post a comment listing out its current configuration
+with your repository, post the following comment to the
+pull request:
+
+```
+@coderabbitai configuration
+```
+
+### Display a quick-reference guide {#help}
+
+To have CodeRabbit post a comment to the pull review with a quick-reference
+guide to its own commands and other features, post the following comment to the
+pull request:
+
+```
+@coderabbitai help
+```
+
+## What's next {#whats-next}
+
+- [Generate code improvements](/guides/generate-improvements)
+- [Best practices](/guides/code-review-best-practices)
+- [Tips and troubleshooting](/guides/code-review-tips-and-troubleshooting)
