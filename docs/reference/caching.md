@@ -1,6 +1,6 @@
 # Caching
 
-CodeRabbit provides caching capabilities for code and dependencies to accelerate the review process. This feature enhances your development workflow by delivery faster feedback.
+CodeRabbit provides caching capabilities for code and dependencies to accelerate the review process. This feature enhances your development workflow by delivering faster feedback.
 
 ## Security and Privacy
 
