@@ -3,6 +3,12 @@ title: Generate improvements
 description: Request coderabbit to generate its own code improvements during code reviews
 ---
 
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
+
+<ProPlanNotice />
+```
+
 During a code review, you can command CodeRabbit to address its own review comments
 by generating its own code improvements, which it publishes on separate branches.
 
