@@ -4,7 +4,7 @@ CodeRabbit provides caching capabilities for code and dependencies to accelerate
 
 ## Security and Privacy
 
-- Cached data is encrypted (OSS projects excepted)
+- Cached data is encrypted (except for OSS projects)
 - Cache expires after a maximum of one week
 - Cached data is used exclusively for speeding up reviews
 
