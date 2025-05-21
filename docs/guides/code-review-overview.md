@@ -23,8 +23,7 @@ A CodeRabbit code review consists of a single, multi-part comment attached to th
 The comment contains a detailed summary and analysis of the changes,
 as well as a listing of problems or areas for potential improvement that it found.
 
-CodeRabbit
-uses a variety of open-source linters and security tools to provide this analysis. CodeRabbit
+CodeRabbit uses a variety of open-source linters and security tools to provide this analysis. CodeRabbit
 also consults a number of large language models (LLMs) to further analyze and critique the proposed changes,
 using all of the content of your repository as context. The code-review comment that CodeRabbit attaches
 to your pull request synthesizes and summarizes all of the information collected from these different sources.
@@ -86,7 +85,7 @@ For more information, see [Control and manage code reviews](/guides/commands).
 
 You can command CodeRabbit to generate improvements to the branch under review.
 CodeRabbit accomplishes this by publishing a new branch based on the branch under review,
-and cerating a new pull request for your own review.
+and creating a new pull request for your own review.
 
 Available code-generation commands let you request the following from CodeRabbit:
 

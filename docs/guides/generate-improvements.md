@@ -36,14 +36,14 @@ your workflow.
 
 For a complete CodeRabbit command reference, see [Code review command reference](/reference/review-commands).
 
-### Genearate inline documentation {#docstrings}
+### Generate inline documentation {#docstrings}
 
 To have CodeRabbit generate missing documentation for function code added by
 the pull request, post the following comment to the
 pull request:
 
 ```
-@coderabbitai docstrings
+@coderabbitai generate docstrings
 ```
 
 For more information about how CodeRabbit can generate inline documentation, including
@@ -64,7 +64,8 @@ pull request:
 @coderabbitai plan
 ```
 
-## What's next
+## What's next {#whats-next}
 
+- [Control and manage code reviews](/guides/commands)
 - [Best practices](/guides/code-review-best-practices)
-- [Tips and troubleshooting](/guides/code-review-tips-and-troubleshooting)
+- [Troubleshooting](/guides/code-review-troubleshooting)

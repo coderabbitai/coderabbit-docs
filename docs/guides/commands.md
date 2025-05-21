@@ -15,7 +15,7 @@ For a complete CodeRabbit command reference, see [Code review command reference]
 ## Control the flow of code reviews {#flow}
 
 By default, CodeRabbit automatically reviews every new pull request created in
-your repository. It updates its review with with comments whenever the pull request has new commits
+your repository. It updates its review with comments whenever the pull request has new commits
 pushed to it.
 
 The following sections show you how to tell CodeRabbit to modify this behavior with
@@ -72,8 +72,7 @@ two types:
 - A _full review_ disregards any comments that CodeRabbit has already made
   on this pull request, and generates a complete review of the entire pull request.
 
-- An _incremental review_ takes all comments that CodeRabbit has made since
-  its most recent full review into consideration, and
+- An _incremental review_ takes all comments that CodeRabbit has made since its most recent full review into consideration, and generates a review of only the new changes.
 
 To manually request a full review, post the following comment to the
 pull request:
@@ -103,7 +102,7 @@ pull request:
 The commands in this section request CodeRabbit to display its own configuration
 or documentation.
 
-### Display current configutation {#config}
+### Display current configuration {#config}
 
 To have CodeRabbit post a comment listing out its current configuration
 with your repository, post the following comment to the
@@ -115,7 +114,7 @@ pull request:
 
 ### Display a quick-reference guide {#help}
 
-To have CodeRabbit post a comment to the pull review with a quick-reference
+To have CodeRabbit post a comment to the pull request with a quick-reference
 guide to its own commands and other features, post the following comment to the
 pull request:
 
@@ -127,4 +126,4 @@ pull request:
 
 - [Generate code improvements](/guides/generate-improvements)
 - [Best practices](/guides/code-review-best-practices)
-- [Tips and troubleshooting](/guides/code-review-tips-and-troubleshooting)
+- [Troubleshooting](/guides/code-review-troubleshooting)
