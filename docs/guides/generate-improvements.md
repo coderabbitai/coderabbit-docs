@@ -9,18 +9,33 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-During a code review, you can command CodeRabbit to address its own review comments
-by generating its own code improvements, which it publishes on separate branches.
+This page is about using CodeRabbit to generate improvements to code under review.
 
 For a general overview of performing code reviews with CodeRabbit, see [Review pull requests](/guides/code-review-overview).
 
 ## Overview of CodeRabbit code generation {#overview}
 
-You can command CodeRabbit to generate any code changes necessary to address its own code review suggestions,
-or you can command it specifically to address inline documentation gaps.
+:::note
+This feature is available only on GitHub.
+:::
 
-After you give it a code-generation command, CodeRabbit delivers its suggested improvements by taking these steps:
+You can request CodeRabbit to generate improvements to a branch that it is currently reviewing.
 
+To do this, write out your request prompt in a comment addressed to `@coderabbitai`,
+such as with the following examples:
+
+- `@coderabbitai Please implement the changes you suggested in your code review.`
+- `@coderabbitai Add input validation with proper error messages to these new functions.`
+- `@coderabbitai Break this large function into smaller, more focused methods.`
+
+Beyond this kind of free-form request, you can also give CodeRabbit keyword-based
+commands for common code-generation requests, as described in [Code generation commands](#commands).
+This includes the `plan` keyword, which acts as shorthand for the first prompt on the
+previous list.
+
+After you give it a code-generation prompt or command, CodeRabbit delivers its suggested improvements by taking these steps:
+
+1. CodeRabbit posts a comment or two to the pull request, detailing its improvement plans.
 1. CodeRabbit publishes a new branch, based on the open pull request's branch, to the remote repository.
 1. CodeRabbit opens a new pull request based on this new branch, and links to it from the original pull request.
 
@@ -40,6 +55,10 @@ your workflow.
 
 ## Code generation commands {#commands}
 
+This section lists short commands that you can give CodeRabbit to have it accomplish
+common code-generation tasks. For more complex tasks, you can instead write out full
+prompts, as described in the previous section.
+
 For a complete CodeRabbit command reference, see [Code review command reference](/reference/review-commands).
 
 ### Generate inline documentation {#docstrings}
@@ -58,10 +77,6 @@ the Git platforms and programming languages that this feature supports, see
 
 ### Generate solutions to open review comments {#plan}
 
-:::note
-This feature is available only on GitHub.
-:::
-
 To have CodeRabbit generate and add a new repository branch with code improvements
 that try to address its own code review comments, post the following comment to the
 pull request:
@@ -69,6 +84,16 @@ pull request:
 ```text
 @coderabbitai plan
 ```
+
+Using this keyword is essentially shorthand for writing out a prompt like like the following:
+
+```text
+@coderabbitai Implement the changes that you suggested and apply them to this pull request.
+```
+
+If you want to give CodeRabbit more specific implement instructions other than a general
+request to implement its own suggestions, then you can write out those instructions
+as a full prompt, instead of using the one-word `plan` command.
 
 ## What's next {#whats-next}
 

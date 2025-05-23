@@ -19,12 +19,13 @@ a real repository, see [Quickstart](/getting-started/quickstart).
 After you [integrate CodeRabbit with your repository](/platforms), CodeRabbit proceeds
 to automatically review every subsequent pull request, as soon as each one is created.
 
-A CodeRabbit code review consists of a single, multi-part comment attached to the pull request.
-The comment contains a detailed summary and analysis of the changes,
-as well as a listing of problems or areas for potential improvement that it found.
+CodeRabbit performs code reviews by attaching comments to the pull request.
+These comments contain detailed summaries and analyses of the changes,
+as well as listing out problems or areas for potential improvement that it found.
 
-CodeRabbit uses [a variety of open-source linters and security tools](/tools) to provide this analysis. CodeRabbit
-also consults an ensemble of models to further analyze and critique the proposed changes,
+CodeRabbit uses [a variety of open-source linters and security tools](/tools) and a custom
+code verification agent to provide this analysis. CodeRabbit
+also consults several models to further analyze and critique the proposed changes,
 using all of the content of your repository as context. The code-review comment that CodeRabbit attaches
 to your pull request synthesizes and summarizes all of the information collected from these different sources.
 
@@ -40,14 +41,6 @@ perform a code review:
   of the proposed code changes.
 - If an open pull request that CodeRabbit has already reviewed gets modified with another
   commit, then CodeRabbit performs an incremental review that focuses on the new commit.
-
-### Example code reviews {#examples}
-
-The following real pull requests, hosted on GitHub, demonstrate some example CodeRabbit
-review comments.
-
-- [A modest refactoring of Markdown-based documentation source](https://github.com/coderabbitai/coderabbit-docs/pull/325), demonstrating a CodeRabbit graph analysis.
-- [A large change that added many files](https://github.com/tyaga001/devtoolsacademy/pull/44), demonstrating incremental automated reviews of subsequent commits.
 
 ## Interact with CodeRabbit reviews {#interact}
 

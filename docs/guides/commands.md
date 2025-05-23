@@ -96,19 +96,31 @@ pull request:
 @coderabbitai resolve
 ```
 
-## Generate summary text {#summary}
+## Update information about the pull request {#update}
 
-To have CodeRabbit add or update a generated summary of the branch’s proposed changes
+The commands in this section request CodeRabbit to generate and post updated information
+about the pull request itself.
+
+### Update the summary text {#summary}
+
+To have CodeRabbit update the generated summary of the branch’s proposed changes
 to the pull request’s description, post the following comment:
-pull request:
 
 ```text
 @coderabbitai summary
 ```
 
-CodeRabbit appends the summary text to the description under the heading
-"Summary by CodeRabbit". If CodeRabbit has previously added a summary under that
-heading, then it replaces it with the new summary.
+CodeRabbit updates the summary text to the description under the heading
+"Summary by CodeRabbit".
+
+### Diagram the pull request history {#diagram}
+
+To have CodeRabbit post a comment that contains a sequence diagram which visualizes the
+history of the pull request under review, post the following comment:
+
+```text
+@coderabbitai generate sequence diagram
+```
 
 ## Get information about CodeRabbit {#info}
 
