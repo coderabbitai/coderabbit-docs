@@ -4,7 +4,7 @@ description: An overview of CodeRabbit's core code review features.
 sidebar_label: Overview
 ---
 
-One of the core features of CodeRabbit is its ability to proactively review
+The central feature of CodeRabbit is its ability to proactively review
 new pull requests on your code repository.
 
 CodeRabbit reviews take the form of pull request comments that
@@ -23,14 +23,10 @@ A CodeRabbit code review consists of a single, multi-part comment attached to th
 The comment contains a detailed summary and analysis of the changes,
 as well as a listing of problems or areas for potential improvement that it found.
 
-CodeRabbit uses a variety of open-source linters and security tools to provide this analysis. CodeRabbit
-also consults a number of large language models (LLMs) to further analyze and critique the proposed changes,
+CodeRabbit uses [a variety of open-source linters and security tools](/tools) to provide this analysis. CodeRabbit
+also consults an ensemble of models to further analyze and critique the proposed changes,
 using all of the content of your repository as context. The code-review comment that CodeRabbit attaches
 to your pull request synthesizes and summarizes all of the information collected from these different sources.
-
-For more information
-on the open-source tools that CodeRabbit applies and how you can configure its use of them,
-see [Configure third-party tool use](/tools).
 
 For more information about the graph analysis that CodeRabbit includes with its reviews
 when available, see [CodeRabbit Code Graph Analysis](/integrations/code-graph-analysis).
