@@ -58,8 +58,8 @@ No matter how you tune and customize CodeRabbit, its default settings make it us
 
 CodeRabbit integrates in just a few clicks with many popular Git platforms:
 
-- GitHub, including GitHub Enterprise Server
-- GitLab, including self-managed GitLab
+- GitHub, GitHub Enterprise Cloud, GitHub Enterprise Server,
+- GitLab, GitLab Self-Managed
 - Azure DevOps
 - Bitbucket Cloud
 
