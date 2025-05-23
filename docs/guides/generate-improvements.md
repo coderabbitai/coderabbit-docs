@@ -85,7 +85,7 @@ pull request:
 @coderabbitai plan
 ```
 
-Using this keyword is essentially shorthand for writing out a prompt like like the following:
+Using this keyword is essentially shorthand for writing out a prompt like the following:
 
 ```text
 @coderabbitai Implement the changes that you suggested and apply them to this pull request.
