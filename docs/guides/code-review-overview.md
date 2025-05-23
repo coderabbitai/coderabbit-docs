@@ -57,7 +57,7 @@ These interactions can serve several purposes:
 ### Chat with CodeRabbit {#chat}
 
 You can have open-ended, natural-language discussion with CodeRabbit during a code review, treating it
-as an LLM-powered chat bot that has your entire code repository available for context. For more information, see [CodeRabbit Chat](/guides/agent_chat).
+as an LLM-powered chatbot that has your entire code repository available for context. For more information, see [CodeRabbit Chat](/guides/agent_chat).
 
 ### Manage CodeRabbit review behavior {#manage}
 

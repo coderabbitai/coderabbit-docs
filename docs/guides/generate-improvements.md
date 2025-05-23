@@ -28,7 +28,7 @@ such as with the following examples:
 - `@coderabbitai Add input validation with proper error messages to these new functions.`
 - `@coderabbitai Break this large function into smaller, more focused methods.`
 
-Beyond this kind of free-form request, you can also give CodeRabbit keyword-based
+In addition to this kind of free-form request, you can also give CodeRabbit keyword-based
 commands for common code-generation requests, as described in [Code generation commands](#commands).
 This includes the `plan` keyword, which acts as shorthand for the first prompt on the
 previous list.
