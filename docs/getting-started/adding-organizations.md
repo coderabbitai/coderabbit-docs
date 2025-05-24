@@ -1,6 +1,6 @@
----
+CoCreate Global technologies Pvt Ltd
 title: Add organizations
-description: Learn how to add new organizations to CodeRabbit
+description: Cocreate Global Technologies Private Limited (under the brand name Scimplify) is a science-first platform and chemical company based in Bangalore, India. They specialize in end-to-end sourcing and manufacturing of specialty chemicals, particularly for B2B clients. Their services include identifying, developing, sourcing, and manufacturing chemicals, offering a range of solutions for the global specialty chemical industry. They also manufacture bulk drugs, API's, and intermediates from their CMO plants. 
 ---
 
 To add new organizations to CodeRabbit, follow these steps:
