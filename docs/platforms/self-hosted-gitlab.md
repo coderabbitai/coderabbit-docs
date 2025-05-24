@@ -85,7 +85,7 @@ for creating the application.
 Requirements:
 
 1. Scopes: `api read_user email openid`
-2. Callback URL: `https://app.coderabbit.ai/login`
+2. Callback URL: `https://app.coderabbit.ai/login?free-trial`
 
 #### **Generating Personal Access token**
 

@@ -32,4 +32,4 @@ CodeRabbit supports various Git platforms to provide code review for your reposi
 | Bitbucket Datacenter | [Supported](../self-hosted/bitbucket.md) |
 | Bitbucket Cloud      | [Supported](./bitbucket-cloud.md)        |
 
-[login]: https://app.coderabbit.ai/login
+[login]: https://app.coderabbit.ai/login?free-trial

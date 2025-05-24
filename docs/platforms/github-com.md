@@ -53,7 +53,7 @@ If you opt to authorize all repositories during setup, CodeRabbit will automatic
 
 ### 5. CodeRabbit Configuration
 
-You can configure CodeRabbit through a YAML file or using the [App's UI](https://app.coderabbit.ai/login).
+You can configure CodeRabbit through a YAML file or using the [App's UI](https://app.coderabbit.ai/login?free-trial).
 
 You can tailor CodeRabbit's functionality using the `.coderabbit.yaml` file, which you place directly in your GitHub repository. This file mirrors the options available in the CodeRabbit user interface, with each setting in the YAML corresponding to a specific toggle in the UI. Configure CodeRabbit either through the coderabbit.yaml file or the interface, depending on your preference.
 
