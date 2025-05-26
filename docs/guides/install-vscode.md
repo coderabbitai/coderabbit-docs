@@ -50,7 +50,6 @@ To install the CodeRabbit extension, follow these steps:
 
 This connects your CodeRabbit account with the CodeRabbit VSCode extension.
 
-
 ## Install using the marketplace website
 
 If you are using the VSCode IDE, and not an IDE that derives from it such as Cursor or Windsurf, then you can alternatively obtain and install the CodeRabbit VSCode extension by visiting [the extension's page on the Visual Studio Marketplace](https://coderabbit.link/vscode-docs).
