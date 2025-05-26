@@ -40,6 +40,14 @@ To install the CodeRabbit extension, follow these steps:
 
 1. In your web browser, log into your CodeRabbit account.
 
+1. After signing in, the browser will redirect you back to VSCode. If the redirect does not occur, follow these steps:
+
+   1. Copy the code displayed in the success window.
+
+   2. Click **Paste code from browser**.
+
+   3. Paste the code into the input field that appears.
+
 This connects your CodeRabbit account with the CodeRabbit VSCode extension.
 
 ## Install using the marketplace website
