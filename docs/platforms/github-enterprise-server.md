@@ -184,5 +184,6 @@ privileges on the GitHub Enterprise Server instance. This user will be responsib
 If you encounter an error during the login process, please ensure that:
 
 - The OAuth App and GitHub App are correctly configured with the right URLs and permissions.
-- Clear your browser local storage and cookies related to CodeRabbit.
-- If the issue persists, contact our support team.
+- The browser local storage and cookies related to CodeRabbit are cleared.
+
+If the issue persists, contact our support team.
