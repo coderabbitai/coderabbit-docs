@@ -67,7 +67,7 @@ LLM_PROVIDER=azure-openai
 LLM_TIMEOUT=360000
 AZURE_OPENAI_ENDPOINT=<azure-openai-endpoint>
 AZURE_OPENAI_API_KEY=<key>
-## it is recommended to deploy gpt-4.1-mini, o4-mini, o3 deployments, gpt-4.1 (optionally).
+# it is recommended to deploy gpt-4.1-mini, o4-mini, o3, gpt-4.1 (optionally).
 AZURE_GPT41MINI_DEPLOYMENT_NAME=<gpt-4.1-mini-deployment-name>
 AZURE_O4MINI_DEPLOYMENT_NAME=<o4-mini-deployment-name>
 AZURE_O3_DEPLOYMENT_NAME=<o3-deployment-name>
@@ -99,6 +99,7 @@ HTTPS_PROXY=[<https-proxy-url>]
 NO_PROXY=[<no-proxy-url>]
 
 # if using AWS Bedrock
+# it is required to have access to claude-3-haiku, claude-3-5-haiku, claude-sonnet-4, claude-opus-4.
 LLM_PROVIDER=bedrock-anthropic
 LLM_TIMEOUT=360000
 AWS_ACCESS_KEY_ID=<aws-access-key>
