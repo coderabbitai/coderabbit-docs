@@ -869,6 +869,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Configuration for Lua code linting to ensure code quality"
+								},
+								"brakeman": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Brakeman | Brakeman is a static analysis security vulnerability scanner for Ruby on Rails applications. | v7.0.2"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Brakeman is a static analysis security vulnerability scanner for Ruby on Rails applications. | v7.0.2"
 								}
 							},
 							"additionalProperties": false,
