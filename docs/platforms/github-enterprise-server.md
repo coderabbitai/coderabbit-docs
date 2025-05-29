@@ -111,6 +111,7 @@ steps below to
        - Pull request review thread
        - Push
        - Release
+   - **Where can this GitHub App be installed?**: Select `Any account`
 6. Click **Create GitHub App**.
 
 Once the GitHub App has been created, click on **Generate a new client secret**
@@ -170,3 +171,19 @@ Use this CodeRabbit IP if your instance requires IP whitelisting
 
 VPN tunneling is available as an add-on package. Please reach out to us at
 [contact@coderabbit.ai](mailto:contact@coderabbit.ai) if you are interested.
+
+### **FAQ**
+
+#### Who should create the OAuth App and GitHub App?
+
+The OAuth App and GitHub App should be created by a user with administrative
+privileges on the GitHub Enterprise Server instance. This user will be responsible for managing the integration with CodeRabbit.
+
+#### I see an error when trying to log in to CodeRabbit. What should I do?
+
+If you encounter an error during the login process, please ensure that:
+
+- The OAuth App and GitHub App are correctly configured with the right URLs and permissions.
+- The browser local storage and cookies related to CodeRabbit are cleared.
+
+If the issue persists, contact our support team.
