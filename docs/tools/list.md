@@ -35,7 +35,8 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 | Protobuf                    | [Buf][Buf]                                                 | Code Quality                                        |
 | Python                      | [Ruff][Ruff]                                               | Code Quality                                        |
 | Regal                       | [Regal][Regal]                                             | Code Quality                                        |
-| Ruby                        | [RuboCop][RuboCop]                                         | Code Quality                                        |
+| Ruby                        | [RuboCop][RuboCop], [Brakeman][Brakeman]                   | Code Quality, Code Security                         |
+| Rust                        | [Clippy][Clippy]                                           | Code Quality                                        |
 | Semgrep                     | [Semgrep][Semgrep]                                         | Code Security                                       |
 | Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   | Code Quality                                        |
 | Shopify                     | [Shopify CLI][ShopifyCLI]                                  | Code Quality                                        |
@@ -74,3 +75,5 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 [oxlint]: /tools/oxlint.md
 [ShopifyCLI]: /tools/shopify-cli.md
 [Luacheck]: /tools/luacheck.md
+[Brakeman]: /tools/brakeman.md
+[Clippy]: /tools/clippy.md
