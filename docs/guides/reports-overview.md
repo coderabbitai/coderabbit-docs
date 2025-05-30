@@ -1,6 +1,6 @@
 ---
 title: Generate reports
- description: Learn about CodeRabbit's reporting capabilities, including scheduled and on-demand reports, and how to customize them
+description: Learn about CodeRabbit's reporting capabilities, including scheduled and on-demand reports, and how to customize them
 sidebar_label: Overview
 ---
 
