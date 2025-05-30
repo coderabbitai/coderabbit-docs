@@ -11,6 +11,8 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
 CodeRabbit Pro offers automated recurring reports that provide insights into your GitHub organization's activities. These reports can be customized and delivered through various channels to help teams stay informed about development progress.
 
+For a conceptual overview of reports in CodeRabbit, see [Generate reports](/guides/reports-overview).
+
 ## Setting Up a Recurring Report
 
 1. Navigate to **Recurring Reports** in the [CodeRabbit dashboard](https://app.coderabbit.ai/reports/recurring)
@@ -248,3 +250,8 @@ Deleting a report will immediately stop all scheduled runs and remove access to 
 - [Custom Reports](./custom-reports.md)
 - [On-demand Reports](./ondemand-reports.md)
 - [API Documentation](https://api.coderabbit.ai/api/swagger/)
+
+## What's next
+
+- [Customize reports](/guides/custom-reports)
+- [Generate reports on demand](/guides/ondemand-reports)
