@@ -50,11 +50,9 @@ code_generation:
 
 These software forges are supported:
 
-- [x] Azure DevOps
-- [ ] Bitbucket Cloud
-- [ ] Bitbucket Data Center
-- [x] GitHub
-- [x] GitLab
+- Azure DevOps
+- GitHub
+- GitLab
 
 While Bitbucket is not officially supported, docstrings can still be generated. However, they will be posted in a comment under the pull request. Full support for Bitbucket is planned.
 
@@ -62,24 +60,22 @@ While Bitbucket is not officially supported, docstrings can still be generated. 
 
 These languages are supported:
 
-- [x] Bash
-- [x] C
-- [x] C#
-- [x] C++
-- [x] Elixir
-- [x] Go
-- [ ] Haskell
-- [x] Java
-- [x] JavaScript
-- [x] Kotlin
-- [x] Lua
-- [x] Php
-- [x] Python
-- [x] React TypeScript
-- [x] Ruby
-- [x] Rust
-- [ ] Scala
-- [x] Swift
-- [x] TypeScript
+- Bash
+- C
+- C#
+- C++
+- Elixir
+- Go
+- Java
+- JavaScript
+- Kotlin
+- Lua
+- Php
+- Python
+- React TypeScript
+- Ruby
+- Rust
+- Swift
+- TypeScript
 
 CodeRabbit uses `ast-grep` to parse the code. If you want a new language to be supported, please look into [Add New Language to ast-grep](https://ast-grep.github.io/contributing/add-lang.html#add-new-language-to-ast-grep) first.
