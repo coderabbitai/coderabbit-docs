@@ -14,7 +14,7 @@ The instructions on this page are specific to using the extension with VSCode. I
 
 Before you can use the CodeRabbit VSCode extension, you need a CodeRabbit account.
 
-If you don't already have an account, you can create one by visiting [the CodeRabbit login page](https://app.coderabbit.ai/login).
+If you don't already have an account, you can create one by visiting [the CodeRabbit login page](https://app.coderabbit.ai/login?free-trial).
 
 ## Install the extension
 
