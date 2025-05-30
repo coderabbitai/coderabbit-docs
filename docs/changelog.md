@@ -4,6 +4,7 @@ sidebar_label: Changelog
 description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
+
 ### May 30, 2025
 
 #### New Static Analysis Tool
@@ -14,8 +15,8 @@ We're excited to announce that [Pylint](https://github.com/PyCQA/pylint) is now 
 
 Here's why you'll love it:
 
-- 🐞 **Instantly catches bugs** and style issues in your Python code.  
-- 🪄 **Enforces clean, consistent code** across your entire team.  
+- 🐞 **Instantly catches bugs** and style issues in your Python code.
+- 🪄 **Enforces clean, consistent code** across your entire team.
 - 🧩 **Fully customizable** to match your project's unique coding standards.
 
 For more details, please visit our [tools documentation](https://docs.coderabbit.ai/tools/pylint).
