@@ -33,7 +33,7 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 | Plaintext                   | [LanguageTool][LanguageTool]                               | Grammar and Spell Checking                          |
 | Java                        | [PMD][PMD]                                                 | Code Quality                                        |
 | Protobuf                    | [Buf][Buf]                                                 | Code Quality                                        |
-| Python                      | [Pylint][Pylint], [Ruff][Ruff]                                   | Code Quality                                        |
+| Python                      | [Pylint][Pylint], [Ruff][Ruff]                             | Code Quality                                        |
 | Regal                       | [Regal][Regal]                                             | Code Quality                                        |
 | Ruby                        | [RuboCop][RuboCop], [Brakeman][Brakeman]                   | Code Quality, Code Security                         |
 | Rust                        | [Clippy][Clippy]                                           | Code Quality                                        |
