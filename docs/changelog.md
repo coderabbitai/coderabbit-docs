@@ -20,7 +20,6 @@ Here's why you'll love it:
 
 For more details, please visit our [tools documentation](https://docs.coderabbit.ai/tools/pylint).
 
-
 ## May 25, 2025
 
 ### New Security and Code Quality Tools
