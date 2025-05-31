@@ -10,6 +10,44 @@ import TabItem from '@theme/TabItem';
 
 ## General Questions {#general-questions}
 
+### How to trigger a CodeRabbit Review?
+
+Once installed CodeRabbit automatically triggers a review when a pull request is opened against the main branch of any repostiory. This branch restriction can be customized in your settings.
+
+You can also manually trigger a review at any time by commenting on a pull request with one of these commands (see [Commands](./commands.md) for full list):
+
+- `@coderabbitai review` - Triggers a standard review
+- `@coderabbitai full review` - Triggers a comprehensive review
+
+### How to run a review from my IDE?
+
+You can trigger CodeRabbit reviews directly from your IDE using our editor plugins:
+
+- [VS Code Extension](./integrations/vscode.md) - For Visual Studio Code users
+- [Cursor Plugin](./integrations/cursor.md) - For Cursor editor users
+- [WindSurf Extension](./integrations/windsurf.md) - For WindSurf IDE users
+
+These plugins allow you to request reviews without leaving your development environment. See the individual plugin documentation for installation and usage instructions.
+
+### How to install CodeRabbit?
+
+View step by step instructions depending on your platform:
+
+<Tabs>
+  <TabItem value="github" label="GitHub" default>
+    See our [GitHub App installation guide](./installation/github.md) for step-by-step instructions.
+  </TabItem>
+  <TabItem value="gitlab" label="GitLab">
+    Follow our [GitLab integration guide](./installation/gitlab.md) to get started.
+  </TabItem>
+  <TabItem value="bitbucket" label="Bitbucket">
+    Check out the [Bitbucket installation steps](./installation/bitbucket.md) for detailed setup.
+  </TabItem>
+  <TabItem value="azure" label="Azure DevOps">
+    View our [Azure DevOps setup guide](./installation/azure.md) for complete installation instructions.
+  </TabItem>
+</Tabs>
+
 ### How accurate is CodeRabbit?
 
 > CodeRabbit demonstrates high accuracy in code reviews based on early adoption results. While 100% accuracy isn't guaranteed due to AI's evolving nature, our technology continuously improves through:
