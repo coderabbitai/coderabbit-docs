@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 
 Once installed, CodeRabbit automatically triggers a review when a pull request is opened against the main branch of any repository. We automatically detect the name of the primary branch (whether this be master, main, dev, etc). This branch restriction can be customized in your settings.
 
-You can also manually trigger a review at any time by commenting on a pull request with one of these commands (see [Commands](./guides/commands.md) for full list):
+You can also manually trigger a review at any time by commenting on a pull request with one of these commands (see [Commands](/guides/commands.md) for full list):
 
 - `@coderabbitai review` - Triggers a standard review
 - `@coderabbitai full review` - Triggers a comprehensive review
@@ -33,16 +33,16 @@ View step by step instructions depending on your platform:
 
 <Tabs>
   <TabItem value="github" label="GitHub" default>
-    See our [GitHub App installation guide](./installation/github.md) for step-by-step instructions.
+    See our [GitHub App installation guide](./platforms/github-com.md) for step-by-step instructions.
   </TabItem>
   <TabItem value="gitlab" label="GitLab">
-    Follow our [GitLab integration guide](./installation/gitlab.md) to get started.
+    Follow our [GitLab integration guide](/platforms/gitlab-com.mdx) to get started.
   </TabItem>
   <TabItem value="bitbucket" label="Bitbucket">
-    Check out the [Bitbucket installation steps](./installation/bitbucket.md) for detailed setup.
+    Check out the [Bitbucket installation steps](/platforms/bitbucket-cloud.md) for detailed setup.
   </TabItem>
   <TabItem value="azure" label="Azure DevOps">
-    View our [Azure DevOps setup guide](./installation/azure.md) for complete installation instructions.
+    View our [Azure DevOps setup guide](/platforms/azure-devops.md) for complete installation instructions.
   </TabItem>
 </Tabs>
 
@@ -173,7 +173,7 @@ Email field and click Update to save your changes.
 ### Usage and Configuration
 
 - **Language Settings**: Configure review language in repository settings
-- **Review Rules**: Customize via [review instructions](/guides/review-instructions)
+- **Review Rules**: Customize via [review instructions](/guides/review-instructions.md)
 - **Branch Selection**: Default branch reviews enabled by default (configurable)
 
 ### Access & Permissions
@@ -189,7 +189,7 @@ Interact with CodeRabbit by:
 1. Replying directly to CodeRabbit comments
 2. Tagging `@coderabbitai` in PR discussions
 3. Adding review comments for specific lines
-4. Customize via [review instructions](/guides/review-instructions)
+4. Customize via [review instructions](/guides/review-instructions.md)
 
 :::tip Collaboration Mode
 When team members are active in PRs, use `@coderabbitai` to engage the bot.
@@ -227,7 +227,7 @@ The following limits enforced _per developer_:
 3. That's it. CodeRabbit will automatically start reviewing your PRs
 
 :::tip Need Help?
-Visit our [Support](/getting-started/support) page for additional assistance or reach out to our team on [Discord](http://discord.gg/coderabbit).
+Visit our [Support](/getting-started/support.md) page for additional assistance or reach out to our team on [Discord](http://discord.gg/coderabbit).
 :::
 
 #### Unable to View Repositories in GitLab
