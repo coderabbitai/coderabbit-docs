@@ -23,9 +23,7 @@ You can also manually trigger a review at any time by commenting on a pull reque
 
 You can trigger CodeRabbit reviews directly from your IDE using our editor plugins:
 
-- [VS Code Extension](./integrations/vscode.md) - For Visual Studio Code users
-- [Cursor Plugin](./integrations/cursor.md) - For Cursor editor users
-- [WindSurf Extension](./integrations/windsurf.md) - For WindSurf IDE users
+- [VSCode Extension](./guides/about-vscode.md) - For VSCode, Cursor or Windsurf users
 
 These plugins allow you to request reviews without leaving your development environment. See the individual plugin documentation for installation and usage instructions.
 
