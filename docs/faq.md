@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 
 Once installed, CodeRabbit automatically triggers a review when a pull request is opened against the main branch of any repository. We automatically detect the name of the primary branch (whether this be master, main, dev, etc). This branch restriction can be customized in your settings.
 
-You can also manually trigger a review at any time by commenting on a pull request with one of these commands (see [Commands](./commands.md) for full list):
+You can also manually trigger a review at any time by commenting on a pull request with one of these commands (see [Commands](./guides/commands.md) for full list):
 
 - `@coderabbitai review` - Triggers a standard review
 - `@coderabbitai full review` - Triggers a comprehensive review
