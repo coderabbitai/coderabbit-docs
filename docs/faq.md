@@ -65,6 +65,51 @@ CodeRabbit works with all programming languages, with varying proficiency based 
 - Available training data
 - Community usage patterns
 
+### Whats the difference between CodeRabbit Code Reviews and CodeRabbit Reports?
+
+CodeRabbit offers two distinct features that serve different roles in your development workflow:
+
+#### CodeRabbit Code Reviews
+
+**Role**: Developer, QA, and Code Reviewer
+**Access Level**: Full code access with comprehensive analysis capabilities
+
+**Key Features:**
+
+- **Complete Toolchain**: Runs all available analysis tools on your codebase
+- **Static Analysis**: Can execute shell commands and perform deep static analysis against your codebase
+- **Direct Code Access**: Has full access to code in issues and pull requests
+- **Interactive Chat**: Provides chat features for real-time collaboration and questions
+- **Comprehensive Review**: Analyzes code quality, security, performance, and best practices
+- **Actionable Feedback**: Provides specific, line-by-line suggestions and improvements
+- **Comment Interaction**: Engages with users through comments in pull requests and issues for clarifications and discussions
+- **Available in All Tiers**: All features are available across Free, Lite, and Pro plans
+
+#### CodeRabbit Reports
+
+**Role**: Project Manager and Communication Hub
+**Access Level**: Summary-only access without direct code interaction
+
+**Key Features:**
+
+- **Summary Generation**: Creates convenient, formatted summaries of all your recent pull requests
+- **Customizable Prompts**: Allows you to select or create your own summarization templates
+- **High-Level Overview**: Focuses on project progress and changes without code details
+- **Comment Analysis**: Reads and summarizes existing comments and discussions
+- **No Code Access**: Operates only on summaries and metadata, not the actual codebase
+- **Communication Tool**: Designed for stakeholders who need updates without technical details
+- **Multi-Channel Delivery**: Sends reports through various communication channels:
+  - Email notifications
+  - Slack integration
+  - Discord webhooks
+  - Microsoft Teams updates
+- **Pro Plan Exclusive**: Reports feature is available only in the Pro plan tier
+
+**In Summary:**
+
+- **Code Reviews** = Technical analysis with full code access for developers
+- **Reports** = High-level summaries with no code access for project management
+
 ### Data Security
 
 <Tabs>
