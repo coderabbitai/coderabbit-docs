@@ -10,6 +10,42 @@ import TabItem from '@theme/TabItem';
 
 ## General Questions {#general-questions}
 
+### How to trigger a CodeRabbit Review?
+
+Once installed, CodeRabbit automatically triggers a review when a pull request is opened against the main branch of any repository. We automatically detect the name of the primary branch (whether this be master, main, dev, etc). This branch restriction can be customized in your settings.
+
+You can also manually trigger a review at any time by commenting on a pull request with one of these commands (see [Commands](/guides/commands.md) for full list):
+
+- `@coderabbitai review` - Triggers a standard review
+- `@coderabbitai full review` - Triggers a comprehensive review
+
+### How to run a review from my IDE?
+
+You can trigger CodeRabbit reviews directly from your IDE using our editor plugins:
+
+- [VSCode Extension](./guides/about-vscode.md) - For VSCode, Cursor or Windsurf users
+
+These plugins allow you to request reviews without leaving your development environment. See the individual plugin documentation for installation and usage instructions.
+
+### How to install CodeRabbit?
+
+View step by step instructions depending on your platform:
+
+<Tabs>
+  <TabItem value="github" label="GitHub" default>
+    See our [GitHub App installation guide](./platforms/github-com.md) for step-by-step instructions.
+  </TabItem>
+  <TabItem value="gitlab" label="GitLab">
+    Follow our [GitLab integration guide](/platforms/gitlab-com.mdx) to get started.
+  </TabItem>
+  <TabItem value="bitbucket" label="Bitbucket">
+    Check out the [Bitbucket installation steps](/platforms/bitbucket-cloud.md) for detailed setup.
+  </TabItem>
+  <TabItem value="azure" label="Azure DevOps">
+    View our [Azure DevOps setup guide](/platforms/azure-devops.md) for complete installation instructions.
+  </TabItem>
+</Tabs>
+
 ### How accurate is CodeRabbit?
 
 > CodeRabbit demonstrates high accuracy in code reviews based on early adoption results. While 100% accuracy isn't guaranteed due to AI's evolving nature, our technology continuously improves through:
@@ -26,6 +62,51 @@ CodeRabbit works with all programming languages, with varying proficiency based 
 - Language popularity
 - Available training data
 - Community usage patterns
+
+### Whats the difference between CodeRabbit Code Reviews and CodeRabbit Reports?
+
+CodeRabbit offers two distinct features that serve different roles in your development workflow:
+
+#### CodeRabbit Code Reviews
+
+**Role**: Developer, QA, and Code Reviewer
+**Access Level**: Full code access with comprehensive analysis capabilities
+
+**Key Features:**
+
+- **Complete Toolchain**: Runs all available analysis tools on your codebase
+- **Static Analysis**: Can execute shell commands and perform deep static analysis against your codebase
+- **Direct Code Access**: Has full access to code in issues and pull requests
+- **Interactive Chat**: Provides chat features for real-time collaboration and questions
+- **Comprehensive Review**: Analyzes code quality, security, performance, and best practices
+- **Actionable Feedback**: Provides specific, line-by-line suggestions and improvements
+- **Comment Interaction**: Engages with users through comments in pull requests and issues for clarifications and discussions
+- **Available in All Tiers**: All features are available across Free, Lite, and Pro plans
+
+#### CodeRabbit Reports
+
+**Role**: Project Manager and Communication Hub
+**Access Level**: Summary-only access without direct code interaction
+
+**Key Features:**
+
+- **Summary Generation**: Creates convenient, formatted summaries of all your recent pull requests
+- **Customizable Prompts**: Allows you to select or create your own summarization templates
+- **High-Level Overview**: Focuses on project progress and changes without code details
+- **Comment Analysis**: Reads and summarizes existing comments and discussions
+- **No Code Access**: Operates only on summaries and metadata, not the actual codebase
+- **Communication Tool**: Designed for stakeholders who need updates without technical details
+- **Multi-Channel Delivery**: Sends reports through various communication channels:
+  - Email notifications
+  - Slack integration
+  - Discord webhooks
+  - Microsoft Teams updates
+- **Pro Plan Exclusive**: Reports feature is available only in the Pro plan tier
+
+**In Summary:**
+
+- **Code Reviews** = Technical analysis with full code access for developers
+- **Reports** = High-level summaries with no code access for project management
 
 ### Data Security
 
@@ -92,7 +173,7 @@ Email field and click Update to save your changes.
 ### Usage and Configuration
 
 - **Language Settings**: Configure review language in repository settings
-- **Review Rules**: Customize via [review instructions](/guides/review-instructions)
+- **Review Rules**: Customize via [review instructions](/guides/review-instructions.md)
 - **Branch Selection**: Default branch reviews enabled by default (configurable)
 
 ### Access & Permissions
@@ -108,7 +189,7 @@ Interact with CodeRabbit by:
 1. Replying directly to CodeRabbit comments
 2. Tagging `@coderabbitai` in PR discussions
 3. Adding review comments for specific lines
-4. Customize via [review instructions](/guides/review-instructions)
+4. Customize via [review instructions](/guides/review-instructions.md)
 
 :::tip Collaboration Mode
 When team members are active in PRs, use `@coderabbitai` to engage the bot.
@@ -146,7 +227,7 @@ The following limits enforced _per developer_:
 3. That's it. CodeRabbit will automatically start reviewing your PRs
 
 :::tip Need Help?
-Visit our [Support](/getting-started/support) page for additional assistance or reach out to our team on [Discord](http://discord.gg/coderabbit).
+Visit our [Support](/getting-started/support.md) page for additional assistance or reach out to our team on [Discord](http://discord.gg/coderabbit).
 :::
 
 #### Unable to View Repositories in GitLab
