@@ -792,6 +792,19 @@
 									"default": {},
 									"description": "CircleCI tool is a static checker for CircleCI config files."
 								},
+								"clippy": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Clippy | Clippy is a collection of lints to catch common mistakes and improve your Rust code. | Enable Clippy integration."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Clippy is a collection of lints to catch common mistakes and improve your Rust code."
+								},
 								"sqlfluff": {
 									"type": "object",
 									"properties": {
@@ -817,6 +830,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Configuration for Prisma Schema linting to ensure schema file quality"
+								},
+								"pylint": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Pylint | Pylint is a Python static code analysis tool. | v3.3.7"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Pylint is a Python static code analysis tool."
 								},
 								"oxc": {
 									"type": "object",
@@ -856,6 +882,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Configuration for Lua code linting to ensure code quality"
+								},
+								"brakeman": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Brakeman | Brakeman is a static analysis security vulnerability scanner for Ruby on Rails applications. | v7.0.2"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Brakeman is a static analysis security vulnerability scanner for Ruby on Rails applications. | v7.0.2"
 								}
 							},
 							"additionalProperties": false,

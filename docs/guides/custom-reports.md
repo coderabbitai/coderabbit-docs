@@ -11,6 +11,8 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
 CodeRabbit Pro allows you to create custom reports tailored to your specific needs using a flexible prompt-based system. This guide will help you understand how to create effective custom reports.
 
+For a conceptual overview of reports in CodeRabbit, see [Generate reports](/guides/reports-overview).
+
 ## Understanding Custom Reports
 
 Custom reports allow you to:
@@ -558,6 +560,6 @@ These are the available emojis and the type of change they represent. Do not usi
 
 ## Related Resources
 
-- [Scheduled Reports](./scheduled-reports.md)
-- [On-demand Reports](./ondemand-reports.md)
+- [Schedule reports](/guides/scheduled-reports)
+- [Generate reports on demand](/guides/ondemand-reports)
 - [API Documentation](https://api.coderabbit.ai/api/swagger/)

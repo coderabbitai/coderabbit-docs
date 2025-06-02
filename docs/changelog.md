@@ -5,6 +5,26 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+### May 30, 2025
+
+#### New Static Analysis Tool
+
+We're excited to announce that [Pylint](https://github.com/PyCQA/pylint) is now supported on CodeRabbit!
+
+- **Pylint**: A widely used static analysis and code quality tool for Python. It checks for errors, enforces a coding standard, and looks for code smells in your Python codebase by analyzing Python files.
+
+## May 25, 2025
+
+### New Security and Code Quality Tools
+
+We're excited to announce the addition of two powerful tools to our static analysis arsenal:
+
+- **Brakeman**: A static analysis security vulnerability scanner for Ruby on Rails applications. It helps identify security issues in your Ruby codebase by analyzing Gemfile, Ruby files (_.rb), and ERB templates (_.erb).
+
+- **Clippy**: The official linter for Rust code, helping catch common mistakes and improve your Rust code quality. It analyzes \*.rs files and supports configuration through clippy.toml files.
+
+Both tools can be configured through their respective config files or through CodeRabbit's settings page. See our [tools documentation](https://docs.coderabbit.ai/tools/) for more details.
+
 ## May 19, 2025
 
 ### Lua Support with Luacheck
