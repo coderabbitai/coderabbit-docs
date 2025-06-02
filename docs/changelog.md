@@ -5,6 +5,14 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+### May 30, 2025
+
+#### New Static Analysis Tool
+
+We're excited to announce that [Pylint](https://github.com/PyCQA/pylint) is now supported on CodeRabbit!
+
+- **Pylint**: A widely used static analysis and code quality tool for Python. It checks for errors, enforces a coding standard, and looks for code smells in your Python codebase by analyzing Python files.
+
 ## May 25, 2025
 
 ### New Security and Code Quality Tools
