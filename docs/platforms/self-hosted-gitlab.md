@@ -122,4 +122,4 @@ Use this CodeRabbit IP if your instance requires IP whitelisting
 `35.222.179.152/32` and `34.170.211.100/32`.
 
 VPN tunneling is available as an add-on package. Please reach out to us at
-[contact@coderabbit.ai](mailto:contact@coderabbit.ai) if you are interested.
+[support@coderabbit.ai](mailto:support@coderabbit.ai) if you are interested.
