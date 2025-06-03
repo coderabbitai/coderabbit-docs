@@ -77,6 +77,7 @@ const sidebars: SidebarsConfig = {
 				"integrations/knowledge-base",
 				"guides/review-instructions",
 				"tools/tools",
+				"guides/rbac",
 			],
 		},
 		{
