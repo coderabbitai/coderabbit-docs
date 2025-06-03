@@ -3,12 +3,13 @@ title: Control administrative access
 description: Using the role-based authorization feature (RBAC) of CodeRabbit
 ---
 
-CodeRabbit uses role-based authorization control (RBAC) to control which
-administrative features are available to your organization's user accounts.
+You can control which CodeRabbit
+administrative features are available to your organization's user accounts by using
+role-based access control (RBAC).
 
 ## Overview of CodeRabbit RBAC {#overview}
 
-Every CodeRabbit account has exactly one CodeRabbit RBAC role for each organization
+Every CodeRabbit account has exactly one RBAC role for each organization
 that account is associated with.
 For example, if you belong to two GitHub-based organizations that use
 CodeRabbit, then you have one CodeRabbit RBAC role set for each of those two
@@ -30,14 +31,6 @@ organization.
 For a complete list of the administrative functions available to each role, see
 [Role permissions](#permissions).
 
-### RBAC roles and CodeRabbit features {#and-features}
-
-RBAC roles have no effect on using CodeRabbit features, such
-as automated code reviews. In other words, if an organization has a Pro-tier
-CodeRabbit account, then all its users can use Pro-tier features when working
-with that organization's repositories, regardless of their CodeRabbit RBAC roles with
-that organization.
-
 ### CodeRabbit roles and Git platform roles {#and-upstream}
 
 Modifying an account's CodeRabbit RBAC role doesn't have any "upstream"
@@ -48,9 +41,15 @@ affect that account's CodeRabbit RBAC role.
 For example, if you have CodeRabbit integrated with a GitHub organization, and you change an account's CodeRabbit role from **Member** to **Admin**, then that account's
 permission or ownership level with your GitHub organization doesn't change as a result.
 
+### CodeRabbit roles and developer features {#and-features}
+
+CodeRabbit RBAC roles have no effect on using CodeRabbit developer features, such
+as automated code reviews. In other words, if an organization has a Pro-tier
+CodeRabbit account, then all developers working with its repositories can use Pro-tier features, regardless of RBAC.
+
 ## Default RBAC roles {#defaults}
 
-CodeRabbit assigns every user in your Git platform organization a default RBAC role,
+CodeRabbit assigns every user account in your organization a default RBAC role,
 using the following metrics:
 
 - If a user has an ownership-level role with the Git platform organization—for example,
@@ -75,9 +74,7 @@ following sections.
 To view a list of your organization's RBAC role assignments, follow these steps:
 
 1. Go to the [CodeRabbit dashboard](https://app.coderabbit.ai/settings/repositories).
-
 1. At the top of the sidebar, select the organization whose user roles you want to view.
-
 1. On the sidebar, click **Subscription**.
 
 This displays a table of all of the CodeRabbit **Admin** and **Member** accounts associated with the selected
@@ -96,7 +93,6 @@ To change a user account's RBAC role, follow these steps:
 
 1. Go to your organization's list of user accounts, as detailed in the previous section.
    If you have the **Admin** role within this organization, then the **Role** column in the user accounts table contains selectable menus.
-
 1. Click the menu in the user's **Role** column, and select the appropriate role from
    the list.
 
@@ -108,9 +104,7 @@ You can't grant the **Billing Admin** role to an existing user account. To add a
 To add a CodeRabbit user account with the **Billing Admin** role, follow these steps:
 
 1. Go to your organization's list of user accounts, as detailed in [View roles](#view-roles).
-
 1. Click **Invite Billing Admin**.
-
 1. Enter the name and email address of the billing administrator who you want to invite to the organization.
 
 This sends an email to the address that you specified. After the recipient completes the process of joining your organization in CodeRabbit, then their record appears in the user accounts list, under the **Billing Admins** tab.
