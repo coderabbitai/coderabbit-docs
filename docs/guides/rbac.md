@@ -43,9 +43,12 @@ permission or ownership level with your GitHub organization doesn't change as a 
 
 ### CodeRabbit roles and developer features {#and-features}
 
-CodeRabbit RBAC roles have no effect on using CodeRabbit developer features, such
-as automated code reviews. In other words, if an organization has a Pro-tier
-CodeRabbit account, then all developers working with its repositories can use Pro-tier features, regardless of RBAC.
+CodeRabbit RBAC roles affect only access to administative features. Roles have no effect on using CodeRabbit developer features, such as automated code reviews.
+
+For example, if an organization has a Pro-tier
+CodeRabbit account, then any user account with a seat assigned to it can use Pro-tier features with the organization's private repositories, regardless of that account's RBAC role.
+
+For more information on seat and subscription management, see [Manage your subscription](/getting-started/subscription-management).
 
 ## Default RBAC roles {#defaults}
 
@@ -126,3 +129,7 @@ available to each of the CodeRabbit RBAC roles.
 | User Management         | Read/Write | Read-only | Read-only     |
 | Subscription Management | Read/Write | Read-only | Read/Write    |
 | Billing Management      | Read/Write | No access | Read/Write    |
+
+## What's next {#whats-next}
+
+- [Manage your subscription](/getting-started/subscription-management)
