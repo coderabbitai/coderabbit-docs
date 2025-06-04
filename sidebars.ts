@@ -129,9 +129,10 @@ const sidebars: SidebarsConfig = {
 			collapsed: true,
 			label: "Generate reports",
 			items: [
+				"guides/reports-overview",
+				"guides/scheduled-reports",
 				"guides/ondemand-reports",
 				"guides/custom-reports",
-				"guides/scheduled-reports",
 			],
 		},
 		{
