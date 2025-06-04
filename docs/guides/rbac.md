@@ -34,7 +34,7 @@ For a complete list of the administrative functions available to each role, see
 ### CodeRabbit roles and Git platform roles {#and-upstream}
 
 Modifying an account's CodeRabbit RBAC role doesn't have any "upstream"
-effect on that account's role or permissions in your organization's Git platorm.
+effect on that account's role or permissions in your organization's Git platform.
 Similarly, changes to an account's role on your organization's Git platform don't
 affect that account's CodeRabbit RBAC role.
 
@@ -43,7 +43,7 @@ permission or ownership level with your GitHub organization doesn't change as a 
 
 ### CodeRabbit roles and developer features {#and-features}
 
-CodeRabbit RBAC roles affect only access to administative features. Roles have no effect on using CodeRabbit developer features, such as automated code reviews.
+CodeRabbit RBAC roles affect only access to administrative features. Roles have no effect on using CodeRabbit developer features, such as automated code reviews.
 
 For example, if an organization has a Pro-tier
 CodeRabbit account, then any user account with a seat assigned to it can use Pro-tier features with the organization's private repositories, regardless of that account's RBAC role.
@@ -114,7 +114,7 @@ This sends an email to the address that you specified. After the recipient compl
 
 ## Role permissions {#permissions}
 
-The following table lists the CodeRabbit administative functionality
+The following table lists the CodeRabbit administrative functionality
 available to each of the CodeRabbit RBAC roles.
 
 | Resource                | Admin      | Member    | Billing Admin |
