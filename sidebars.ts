@@ -72,7 +72,7 @@ const sidebars: SidebarsConfig = {
 			type: "category",
 			collapsed: true,
 			label: "Manage your account",
-			items: ["getting-started/subscription-management", "guides/rbac"],
+			items: ["getting-started/subscription-management", "guides/roles"],
 		},
 		{
 			type: "category",
@@ -83,7 +83,7 @@ const sidebars: SidebarsConfig = {
 				"integrations/knowledge-base",
 				"guides/review-instructions",
 				"tools/tools",
-				"guides/rbac",
+				"guides/roles",
 			],
 		},
 		{
