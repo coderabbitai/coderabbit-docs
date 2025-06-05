@@ -15,4 +15,3 @@ Dotenv Linter works out-of-the-box with zero config. But if needed, you can igno
 ## Resources
 
 - [Dotenv Linter GitHub Repo](https://github.com/dotenv-linter/dotenv-linter)
-

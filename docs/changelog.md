@@ -4,6 +4,7 @@ sidebar_label: Changelog
 description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
+
 ## June 5, 2025
 
 ### New Static Analysis Tool
