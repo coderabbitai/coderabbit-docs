@@ -4,6 +4,21 @@ sidebar_label: Changelog
 description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
+## June 5, 2025
+
+### New Static Analysis Tool
+
+We're excited to announce that [Dotenv Linter](https://github.com/dotenv-linter/dotenv-linter) is now supported on CodeRabbit!
+
+- **Dotenv Linter**: A fast, opinionated linter for `.env` files. It helps prevent misconfigurations by detecting typos, invalid syntax, and duplicated keys.
+
+Here's why you'll love it:
+
+- 🧪 **Catches common mistakes** in environment files before they cause runtime errors.
+- 🚀 **Super fast** with zero config required.
+- 📦 **Supports multiple `.env` formats** like `.env.local`, `.env.production`, and more.
+
+For more details, visit our [tools documentation](https://docs.coderabbit.ai/tools/dotenv).
 
 ### May 30, 2025
 
