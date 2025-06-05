@@ -17,6 +17,7 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 | CloudFormation              | [Checkov][Checkov]                                         | Code Security                                       |
 | Cppcheck                    | [Cppcheck][Cppcheck]                                       | Code Quality                                        |
 | CSS                         | [Biome][Biome]                                             | Code Quality                                        |
+| Environment Files (.env)    | [Dotenv Linter][DotenvLinter]                              | Code Quality                                        |
 | Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                   | Code Quality, Code Security                         |
 | GitHub Actions              | [actionlint][actionlint], [Pipeline Remediation][Pipeline] | Code Quality, CI/CD Failure Remediation             |
 | GitLab Pipelines            | [Pipeline Remediation][Pipeline]                           | CI/CD Failure Remediation                           |
@@ -78,3 +79,5 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 [Brakeman]: /tools/brakeman.md
 [Clippy]: /tools/clippy.md
 [Pylint]: /tools/pylint.md
+[DotenvLinter]: /tools/dotenv.md
+
