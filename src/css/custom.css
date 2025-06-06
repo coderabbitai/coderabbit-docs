@@ -293,3 +293,8 @@ a[docid="docs"] > svg {
 		display: none;
 	}
 }
+
+/* Disable automatic next/previous pagination links */
+.pagination-nav {
+	display: none;
+}

@@ -37,20 +37,25 @@ Welcome to the official docs for [**CodeRabbit**](https://coderabbit.ai), the co
 
 ## Getting Started
 
-1. Clone this repository:
+1. Make sure that you have the following prerequisites installed:
+
+   - [Node.js](https://nodejs.org/)
+   - [pnpm](https://pnpm.io/installation)
+
+2. Clone this repository:
 
    ```sh
    git clone https://github.com/coderabbit-ai/coderabbit-docs.git
    cd coderabbit-docs
    ```
 
-2. Install dependencies:
+3. Install Node.js dependencies using `pnpm`:
 
    ```sh
    pnpm install
    ```
 
-3. Start the development server:
+4. Start the development server:
 
    ```sh
    pnpm start
