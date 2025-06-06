@@ -65,13 +65,13 @@ works with your individual repositories.
 CodeRabbit gives you two ways to configure how it works with your team's repositories:
 
 - The [Repositories](https://app.coderabbit.ai/settings/repositories) page of the
-  Dashboard
+  CodeRabbit web interface
 - A [`coderabbit.yaml` file](/getting-started/configure-coderabbit/) in your repository
 
 The Repositories page lets you set up your per-repository
 preferences rapidly, and can help you get familiar with CodeRabbit configuration options.
 
-We recommend adding a `coderabbit.yaml` file to repositories, as well. Using this file has several advantages over using only the Dashboard:
+We recommend adding a `coderabbit.yaml` file to repositories, as well. Using this file has several advantages over using only the web interface:
 
 - It applies version control to your repository's CodeRabbit settings, letting you track changes, view configuration history, and revert to previous configurations as needed.
 - During code reviews, CodeRabbit loads the file along with rest of your repository. This means that you can include setting changes as part of a pull request, and CodeRabbit both analyzes and applies these settings during its review.
