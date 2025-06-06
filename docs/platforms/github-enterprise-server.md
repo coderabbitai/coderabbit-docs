@@ -52,7 +52,7 @@ steps below to
    - **Homepage URL**: `https://coderabbit.ai`
    - **Application description**:
      `OAuth application for signing into CodeRabbit`
-   - **Authorization callback URL**: `https://app.coderabbit.ai/login?free-trial`
+   - **Authorization callback URL**: `https://app.coderabbit.ai/login`
 6. Click **Register application**.
 
 ![GitHub Create OAuth App](/img/integrations/github-create-oauth-app.png)
@@ -82,7 +82,7 @@ steps below to
    - **GitHub App name**: `CodeRabbit`
    - **Description**: `GitHub App for CodeRabbit`
    - **Homepage URL**: `https://coderabbit.ai`
-   - **Callback URL**: `https://app.coderabbit.ai/login?free-trial`
+   - **Callback URL**: `https://app.coderabbit.ai/login`
    - **Request user authorization (OAuth) during installation**: `true`
    - **Webhook Active**: `true`
    - **Webhook URL**: `https://app.coderabbit.ai/githubHandler`
