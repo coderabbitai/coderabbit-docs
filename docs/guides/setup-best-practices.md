@@ -82,7 +82,7 @@ advantages over using only the Dashboard:
 Repository-level settings defined by a `coderabbit.yaml` take precedence over the same
 settings defned for that same repository in the Dashboard.
 
-For more information, see [Add a configuration file](getting-started/configure-coderabbit/).
+For more information, see [Add a configuration file](/getting-started/configure-coderabbit/).
 
 ### Trust the defaults {#defaults}
 
@@ -94,7 +94,7 @@ CodeRabbit gives you control over a number of its core code-review features, let
   tools](/tools) that are available to it during code reviews. This helps CodeRabbit keep its reviews broad and flexible.
 - **Knowledge base**: CodeRabbit [knowledge base](/integrations/knowledge-base/) features, including learnings and issue tracking, can require data retention. If your organization needs to meet stricter data-retention policies, then you can opt out of using these features.
 
-You can configure your use of the above features using the CodeRabbit web interface, or [a configuration file](getting-started/configure-coderabbit/).
+You can configure your use of the above features using the CodeRabbit web interface, or [a configuration file](/getting-started/configure-coderabbit/).
 
 ### Write specific CI/CD error messages {#pipeline}
 
