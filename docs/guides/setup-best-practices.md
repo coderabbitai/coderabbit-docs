@@ -84,6 +84,20 @@ settings defned for that same repository in the Dashboard.
 
 For more information, see [Add a configuration file](/getting-started/configure-coderabbit/).
 
+### Speed up reviews by adding path filters {#filters}
+
+If your repository contains a lot of data or other content that CodeRabbit
+doesn't need for code review context, then you can include _path filters_ in
+your repository configuration. For example, a filter of `!dist/**` tells CodeRabbit
+to disregard everything in your reposistory's top-level `dist` directory when
+preparing a code review.
+
+Reducing the number of contextual files that CodeRabbit needs to read and analyze
+when preparing a code review can help make its code reviews faster.
+
+You can define path filters using the CodeRabbit
+web interface, or with [a configuration file](/getting-started/configure-coderabbit/).
+
 ### Trust the defaults {#defaults}
 
 CodeRabbit gives you control over a number of its core code-review features, letting you deactivate them entirely for your repositories if needed. We have chosen the default settings to meet the needs of most organizations and situations, and recommend leaving these settings at their default values if possible:
