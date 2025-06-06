@@ -21,3 +21,7 @@ This will grant CodeRabbit access to the selected organization, allowing it to:
 - Access user email addresses (read-only)
 
 > Note: Organizations control which applications are allowed to access their private data. You may need organization admin approval to complete this process.
+
+## What's next {#whats-next}
+
+- [Manage your subscription](/getting-started/subscription-management)

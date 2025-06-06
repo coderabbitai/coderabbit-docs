@@ -71,12 +71,19 @@ const sidebars: SidebarsConfig = {
 		{
 			type: "category",
 			collapsed: true,
+			label: "Manage your account",
+			items: ["getting-started/subscription-management", "guides/roles"],
+		},
+		{
+			type: "category",
+			collapsed: true,
 			label: "Configure CodeRabbit",
 			items: [
 				"getting-started/configure-coderabbit",
 				"integrations/knowledge-base",
 				"guides/review-instructions",
 				"tools/tools",
+				"guides/roles",
 			],
 		},
 		{
@@ -198,7 +205,6 @@ const sidebars: SidebarsConfig = {
 			label: "Resources",
 			items: [
 				"getting-started/support",
-				"getting-started/subscription-management",
 				"overview/why-coderabbit",
 				"faq",
 				"early-access",
