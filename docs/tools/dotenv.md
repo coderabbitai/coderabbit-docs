@@ -1,17 +1,33 @@
-# Dotenv Linter
+---
+title: Dotenv Linter
+sidebar_label: Dotenv Linter
+description: CodeRabbit's guide to Dotenv Linter.
+---
 
-**Dotenv Linter** is a lightning-fast linter for `.env` files. It helps ensure your environment files are consistent, typo-free, and follow best practices.
+```mdx-code-block
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
-## How It Works in CodeRabbit
+<ProPlanNotice />
+```
 
-CodeRabbit automatically detects `.env`, `.env.local`, and other dotenv-style files and runs `dotenv-linter` on them.
+[Dotenv Linter](https://github.com/dotenv-linter/dotenv-linter) is a lightning-fast linter for `.env` files. It helps ensure your environment files are consistent, typo-free, and follow best practices.
 
-Issues like key duplication, missing values, incorrect formatting, or invalid characters are flagged directly in pull request reviews.
+:::note
 
-## Configuration
+Dotenv Linter does not require configuration to run and automatically anlysises `.env` files. If no configuration file is found, it will use default settings.
 
-Dotenv Linter works out-of-the-box with zero config. But if needed, you can ignore rules or configure behavior via comments in the `.env` file or project-level config.
+:::
 
-## Resources
+## Features
 
-- [Dotenv Linter GitHub Repo](https://github.com/dotenv-linter/dotenv-linter)
+Dotenv Linter can detect:
+
+- Key duplication
+- Missing values
+- Incorrect formatting
+- Invalid characters
+- And many more issues
+
+## Links
+
+- [Dotenv Linter GitHub Repository](https://github.com/dotenv-linter/dotenv-linter)
