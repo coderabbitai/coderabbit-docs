@@ -895,6 +895,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Brakeman is a static analysis security vulnerability scanner for Ruby on Rails applications. | v7.0.2"
+								},
+								"dotenvLint": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable dotenv-linter | dotenv-linter is a tool for checking and fixing .env files for problems and best practices | v3.3.0"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "dotenv-linter is a tool for checking and fixing .env files for problems and best practices"
 								}
 							},
 							"additionalProperties": false,
