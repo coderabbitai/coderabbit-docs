@@ -94,7 +94,6 @@ const sidebars: SidebarsConfig = {
 				"guides/code-review-overview",
 				"guides/commands",
 				"guides/generate-improvements",
-				"guides/code-review-best-practices",
 				"guides/code-review-troubleshooting",
 				"guides/agent_chat",
 				{
@@ -140,6 +139,15 @@ const sidebars: SidebarsConfig = {
 				"guides/scheduled-reports",
 				"guides/ondemand-reports",
 				"guides/custom-reports",
+			],
+		},
+		{
+			type: "category",
+			collapsed: true,
+			label: "Best practices",
+			items: [
+				"guides/setup-best-practices",
+				"guides/code-review-best-practices",
 			],
 		},
 		{
