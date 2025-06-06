@@ -79,8 +79,8 @@ advantages over using only the Dashboard:
 - During code reviews, CodeRabbit loads the file along with rest of your repository. This means that you can include setting changes as part of a pull request, and CodeRabbit both analyzes and applies these settings during its review.
 - The file makes the repository's CodeRabbit settings transparent to all of the repository's contributors.
 
-Repository-level settings defined by a `coderabbit.yaml` take precedence over the same
-settings defned for that same repository in the Dashboard.
+Repository-level settings defined by a `coderabbit.yaml` take precedence over the
+settings defined for that repository in the Dashboard.
 
 For more information, see [Add a configuration file](/getting-started/configure-coderabbit/).
 
