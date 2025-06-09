@@ -64,7 +64,8 @@ LLM_PROVIDER=azure-openai
 LLM_TIMEOUT=360000
 AZURE_OPENAI_ENDPOINT=<azure-openai-endpoint>
 AZURE_OPENAI_API_KEY=<key>
-## it is recommended to deploy gpt-4.1-mini, o4-mini, o3, gpt-4.1 (optionally).
+# it is recommended to deploy text-embedding-3-large, gpt-4.1-mini, o4-mini, o3, gpt-4.1 (optionally).
+AZURE_TEXT_EMBEDDING_3_LARGE_DEPLOYMENT_NAME=<text-embedding-3-large-deployment-name>
 AZURE_GPT41MINI_DEPLOYMENT_NAME=<gpt-4.1-mini-deployment-name>
 AZURE_O4MINI_DEPLOYMENT_NAME=<o4-mini-deployment-name>
 AZURE_O3_DEPLOYMENT_NAME=<o3-deployment-name>
