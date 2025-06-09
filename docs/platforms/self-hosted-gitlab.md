@@ -87,6 +87,8 @@ Requirements:
 1. Scopes: `api read_user email openid`
 2. Callback URL: `https://app.coderabbit.ai/login`
 
+foobartest
+
 #### **Generating Personal Access token**
 
 GitLab offers an option to generate a personal access token for adding a new
