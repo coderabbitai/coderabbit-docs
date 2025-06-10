@@ -112,7 +112,7 @@ CODERABBIT_API_KEY=<coderabbitai-api-key>
 ENABLE_METRICS=[true]
 ENABLE_LEARNINGS=[true]
 # if using CodeRabbit's learnings, also provide the following
-# For example, s3://bucket/path/to/database, gs://bucket/path/to/database, etc.
+# for example, s3://bucket/path/to/database, gs://bucket/path/to/database, etc.
 OBJECT_STORE_URI=[<object-store-uri>]
 
 JIRA_HOST=[<jira-host-url>]
