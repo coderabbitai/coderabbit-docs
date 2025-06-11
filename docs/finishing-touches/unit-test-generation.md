@@ -9,11 +9,15 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
+:::warning
+This feature is [experimental](/early-access#experiments).
+:::
+
 # Unit Test Generation
 
 Unit Test Generation is part of the [finishing touches](/future-development#finishing-touches).
 
-Unit Test Generation is an Early Access feature.
+Unit Test Generation is an Early Access Experimental feature.
 
 ## Usage
 
