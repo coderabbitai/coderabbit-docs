@@ -5,6 +5,16 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## June 11, 2025
+
+### Enhanced Static Analysis: HTMLHint and Checkmake Support
+
+We're excited to announce that two new static analysis tools are now supported on CodeRabbit!
+
+- [HTMLHint](https://htmlhint.com/) is a static code analysis tool for HTML that helps maintain code quality by detecting common mistakes and enforcing best practices.
+
+- [Checkmake](https://github.com/mrtazz/checkmake) is a linter for Makefiles that helps ensure your build scripts follow best practices and maintain consistency.
+
 ## June 5, 2025
 
 ### Enhanced Static Analysis: Dotenv Linter and Pylint Support
