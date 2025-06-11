@@ -64,11 +64,11 @@ works with your individual repositories.
 
 CodeRabbit gives you two ways to configure how it works with your team's repositories:
 
-- The [Repositories](https://app.coderabbit.ai/settings/repositories) page of the
-  CodeRabbit web interface
+- The **Organization Settings** and **Repositories** pages of [the
+  CodeRabbit web interface](https://app.coderabbit.ai/login)
 - A [`coderabbit.yaml` file](/getting-started/configure-coderabbit/) in your repository
 
-The Repositories page lets you set up your per-repository
+The web interface lets you set up your organization's code review
 preferences rapidly, and can help you get familiar with CodeRabbit configuration options.
 
 We recommend adding a `coderabbit.yaml` file to repositories, as well. Using this file has several advantages over using only the web interface:
