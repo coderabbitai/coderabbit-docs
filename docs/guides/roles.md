@@ -124,7 +124,6 @@ available to each of the CodeRabbit roles.
 | Reports                 | Read/Write | Read-only | No access     |
 | Integrations            | Read/Write | Read-only | No access     |
 | Repository Settings     | Read/Write | Read-only | No access     |
-| Admin Management        | Read/Write | No access | No access     |
 | Organization Settings   | Read/Write | Read-only | No access     |
 | User Management         | Read/Write | Read-only | Read-only     |
 | Subscription Management | Read/Write | Read-only | Read/Write    |
