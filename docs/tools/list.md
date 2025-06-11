@@ -23,12 +23,14 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 | GitLab Pipelines            | [Pipeline Remediation][Pipeline]                           | CI/CD Failure Remediation                           |
 | Go                          | [golangci-lint][golangci-lint]                             | Code Quality                                        |
 | Helm                        | [Checkov][Checkov]                                         | Code Security                                       |
+| HTML                        | [HTMLHint][HTMLHint]                                       | Code Quality                                        |
 | Javascript                  | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
 | JSON, JSONC                 | [Biome][Biome]                                             | Code Quality                                        |
 | JSX                         | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
 | Kotlin                      | [detekt][detekt]                                           | Code Quality                                        |
 | Kubernetes                  | [Checkov][Checkov]                                         | Code Security                                       |
 | Lua                         | [Luacheck][Luacheck]                                       | Code Quality                                        |
+| Makefile                    | [Checkmake][Checkmake]                                     | Code Quality                                        |
 | Markdown                    | [markdownlint][markdownlint], [LanguageTool][LanguageTool] | Code Quality, Grammar Checking                      |
 | PHP                         | [PHPStan][PHPStan]                                         | Code Quality                                        |
 | Plaintext                   | [LanguageTool][LanguageTool]                               | Grammar and Spell Checking                          |
@@ -80,3 +82,5 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 [Clippy]: /tools/clippy.md
 [Pylint]: /tools/pylint.md
 [DotenvLinter]: /tools/dotenv.md
+[HTMLHint]: /tools/htmlhint.md
+[Checkmake]: /tools/checkmake.md

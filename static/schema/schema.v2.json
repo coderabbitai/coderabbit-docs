@@ -908,6 +908,36 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "dotenv-linter is a tool for checking and fixing .env files for problems and best practices"
+								},
+								"htmlhint": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable HTMLHint | HTMLHint is a static code analysis tool for HTML files. | Enable HTMLHint integration. | v1.5.0"
+										},
+										"config_file": {
+											"type": "string",
+											"description": "Optional path to the HTMLHint configuration file relative to the repository. This is useful when the configuration file is named differently than the default '.htmlhintrc'."
+										}
+									},
+									"additionalProperties": false,
+									"description": "HTMLHint is a static code analysis tool for HTML files.",
+									"default": {}
+								},
+								"checkmake": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable checkmake | checkmake is a linter for Makefiles. | v0.2.2"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "checkmake is a linter for Makefiles."
 								}
 							},
 							"additionalProperties": false,

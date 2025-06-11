@@ -14,7 +14,7 @@ All CodeRabbit users have access to the [CodeRabbit Discord Server](http://disco
 ## Support Tickets
 
 :::tip
-For assistance from our support team, click the help icon located in the bottom right corner of the [CodeRabbit UI](https://app.coderabbit.ai/login). This will open a chat window where you can submit your support ticket.
+For assistance from our support team, click the help icon located in the bottom right corner of the [CodeRabbit UI](https://app.coderabbit.ai/login?free-trial). This will open a chat window where you can submit your support ticket.
 :::
 
 Complete the support ticket by providing your name, email, a description of your issue, and attaching any necessary files. If you are reporting a bug, please provide the GitHub or GitLab organization name.

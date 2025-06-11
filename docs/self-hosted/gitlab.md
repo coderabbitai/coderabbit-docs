@@ -62,7 +62,8 @@ LLM_PROVIDER=azure-openai
 LLM_TIMEOUT=360000
 AZURE_OPENAI_ENDPOINT=<azure-openai-endpoint>
 AZURE_OPENAI_API_KEY=<key>
-## it is recommended to deploy gpt-4.1-mini, o4-mini, o3, gpt-4.1 (optionally).
+# it is recommended to deploy text-embedding-3-large, gpt-4.1-mini, o4-mini, o3, gpt-4.1 (optionally).
+AZURE_TEXT_EMBEDDING_3_LARGE_DEPLOYMENT_NAME=<text-embedding-3-large-deployment-name>
 AZURE_GPT41MINI_DEPLOYMENT_NAME=<gpt-4.1-mini-deployment-name>
 AZURE_O4MINI_DEPLOYMENT_NAME=<o4-mini-deployment-name>
 AZURE_O3_DEPLOYMENT_NAME=<o3-deployment-name>
@@ -113,6 +114,9 @@ SELF_HOSTED=gitlab
 
 GITLAB_BOT_TOKEN=<personal-access-token>
 GITLAB_WEBHOOK_SECRET=<webhook-secret-key>
+# if seeing '500 Internal Server Error' in CodeRabbit logs when trying to post review comments,
+# make sure to set the following environment variable to 1500 (1.5 seconds).
+GITLAB_PUBLISH_DELAY=[<delay-ms-between-draft-and-publish>]
 
 CODERABBIT_LICENSE_KEY=<license-key>
 
@@ -120,7 +124,7 @@ CODERABBIT_API_KEY=<coderabbitai-api-key>
 ENABLE_METRICS=[true]
 ENABLE_LEARNINGS=[true]
 # if using CodeRabbit's learnings, also provide the following
-# For example, s3://bucket/path/to/database, gs://bucket/path/to/database, etc.
+# for example, s3://bucket/path/to/database, gs://bucket/path/to/database, etc.
 OBJECT_STORE_URI=[<object-store-uri>]
 
 JIRA_HOST=[<jira-host-url>]

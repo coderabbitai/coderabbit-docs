@@ -57,7 +57,7 @@ Your intelligent code review companion that understands context.
 > From its foundation as a Generative AI-first platform, CodeRabbit has evolved to become the preferred code review tool among developers because of its speed, intelligence, adaptability, and support for features like contextual analysis, security scanning, and architectural insights. CodeRabbit supports all major programming languages and integrates with popular development [tools](/tools).
 
 :::info Get Started
-If your team needs intelligent code reviews, CodeRabbit delivers. If you're new to AI-powered reviews, [sign up for a Free account](https://app.coderabbit.ai/login), join the [Discord server](https://discord.gg/coderabbit), and start the journey with us.
+If your team needs intelligent code reviews, CodeRabbit delivers. If you're new to AI-powered reviews, [sign up for a Free account](https://app.coderabbit.ai/login?free-trial), join the [Discord server](https://discord.gg/coderabbit), and start the journey with us.
 :::
 
 ## CodeRabbit is Context-Aware
@@ -432,9 +432,9 @@ Try CodeRabbit on your next pull request. Experience how AI-powered code review 
 
 > Start reading more about the custom [code review instructions](/guides/review-instructions) or how CodeRabbit verify issues using [knowledge bases](/integrations/knowledge-base) like Linear and Jira.
 
-Transform your code reviews now, [Start your free trial today](https://app.coderabbit.ai/login) and join the Discord server and chat with CodeRabbit users and team.
+Transform your code reviews now, [Start your free trial today](https://app.coderabbit.ai/login?free-trial) and join the Discord server and chat with CodeRabbit users and team.
 
 <div style={{display: 'flex', gap: '10px', marginTop: '20px'}}>
-  <a href="https://app.coderabbit.ai/login" className="button button--primary button--lg">Sign Up Free</a>
+  <a href="https://app.coderabbit.ai/login?free-trial" className="button button--primary button--lg">Sign Up Free</a>
   <a href="https://discord.gg/coderabbit" className="button button--secondary button--lg">Join Discord</a>
 </div>
