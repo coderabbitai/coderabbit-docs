@@ -30,7 +30,7 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 | Kotlin                      | [detekt][detekt]                                           | Code Quality                                        |
 | Kubernetes                  | [Checkov][Checkov]                                         | Code Security                                       |
 | Lua                         | [Luacheck][Luacheck]                                       | Code Quality                                        |
-| Make                        | [Checkmake][Checkmake]                                     | Code Quality                                        |
+| Makefile                    | [Checkmake][Checkmake]                                     | Code Quality                                        |
 | Markdown                    | [markdownlint][markdownlint], [LanguageTool][LanguageTool] | Code Quality, Grammar Checking                      |
 | PHP                         | [PHPStan][PHPStan]                                         | Code Quality                                        |
 | Plaintext                   | [LanguageTool][LanguageTool]                               | Grammar and Spell Checking                          |
