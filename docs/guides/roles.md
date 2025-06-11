@@ -105,7 +105,7 @@ You can't grant the **Billing Admin** role to an existing user account. To add a
 ### Add billing admin accounts {#billing}
 
 :::note
-Billing Admin users don't requrie CodeRabbit seat licenses. You can add Billing Admin users regardless of how many seat licenses you have available.
+Billing Admin users don't require CodeRabbit seat licenses. You can add Billing Admin users regardless of how many seat licenses you have available.
 :::
 
 To add a CodeRabbit user account with the **Billing Admin** role, follow these steps:
