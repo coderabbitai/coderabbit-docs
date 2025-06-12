@@ -21,7 +21,7 @@ Unit Test Generation is an Early Access Experimental feature.
 
 ## Usage
 
-Once you are done with your pull request and its reviews, you may want to perform finishing touches to your code, such as adding unit tests. You can request CodeRabbit to generate unit tests by typing `@coderabbitai auto-generate unit tests` in a comment under that pull request or by clicking a checkbox under `🧪 Generate Unit Tests` in the CodeRabbit Walkthrough.
+Once you are done with your pull request and its reviews, you may want to perform finishing touches to your code, such as adding unit tests. You can request CodeRabbit to generate unit tests by typing `@coderabbitai auto-generate unit tests` in a comment under that pull request or by clicking a checkbox under **Generate Unit Tests** in the CodeRabbit Walkthrough.
 
 Once sent, CodeRabbit will perform the following actions:
 
@@ -50,16 +50,8 @@ These software forges are supported:
 
 - GitHub
 
-We are working on GitLab and Azure DevOps support as of writing.
-
 ## Supported CI/CD systems
 
 These CI/CD systems are supported for post-generation adjustments:
 
 - GitHub actions
-
-We are working on CircleCI and Travis CI support as of writing.
-
-## Supported languages
-
-Any programming language and unit test library / framework known to the LLM is supported.

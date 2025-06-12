@@ -19,7 +19,7 @@ We're excited to announce that two new static analysis tools are now supported o
 
 ### Unit Test Generation, Early Access
 
-We're excited to announce our new unit test generation feature, for early access! CodeRabbit can now automatically generate unit tests for your code changes.
+We're excited to announce that our new unit test generation feature is now available in early access! CodeRabbit can now automatically generate unit tests for your code changes.
 
 Key capabilities:
 
@@ -27,7 +27,7 @@ Key capabilities:
 - **Context-Aware**: Generates tests that understand your existing codebase patterns and testing conventions
 - **One-Click Integration**: Simply comment `@coderabbitai auto-generate unit tests` on any pull request or specific file, or click on the checkbox available in the walkthrough comment for Early Access customers.
 
-The generated tests can be easily customized to fit your specific requirements.
+You can customize the generated tests to fit your specific requirements.
 
 ## June 5, 2025
 
