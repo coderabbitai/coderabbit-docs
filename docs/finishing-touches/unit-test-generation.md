@@ -29,10 +29,6 @@ Once sent, CodeRabbit will perform the following actions:
 - Unit tests will be generated for the PR, in a separate PR, in the same PR in a new commit, or in a comment to copy-paste, depending on your choice
 - If (and only if) you choose to generate the unit tests in a separate PR, CodeRabbit will examine your GitHub checks (build steps and tests and such) and adjust the PR to deal with build failures, test failures and similar.
 
-Here's an example of what a pull request may look like:
-
-![Unit Tests PR](/img/finishing-touches/unit-tests-pull-request.png)
-
 ## Path Instructions
 
 You can customize the generated unit tests by providing instructions based on file paths in your `.coderabbit.yaml`. The `path` is a [minimatch](https://github.com/isaacs/minimatch) pattern.
