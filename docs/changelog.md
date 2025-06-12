@@ -22,6 +22,7 @@ We're excited to announce that two new static analysis tools are now supported o
 We're excited to announce our new unit test generation feature, for early access! CodeRabbit can now automatically generate unit tests for your code changes.
 
 Key capabilities:
+
 - **Intelligent Test Generation**: Automatically creates unit tests that cover edge cases, error scenarios, and core functionality
 - **Context-Aware**: Generates tests that understand your existing codebase patterns and testing conventions
 - **One-Click Integration**: Simply comment `@coderabbitai auto-generate unit tests` on any pull request or specific file, or click on the checkbox available in the walkthrough comment for Early Access customers.
