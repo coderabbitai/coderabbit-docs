@@ -15,6 +15,19 @@ We're excited to announce that two new static analysis tools are now supported o
 
 - [Checkmake](https://github.com/mrtazz/checkmake) is a linter for Makefiles that helps ensure your build scripts follow best practices and maintain consistency.
 
+## June 10, 2025
+
+### Unit Test Generation, Early Access
+
+We're excited to announce our new unit test generation feature, for early access! CodeRabbit can now automatically generate unit tests for your code changes.
+
+Key capabilities:
+- **Intelligent Test Generation**: Automatically creates unit tests that cover edge cases, error scenarios, and core functionality
+- **Context-Aware**: Generates tests that understand your existing codebase patterns and testing conventions
+- **One-Click Integration**: Simply comment `@coderabbitai auto-generate unit tests` on any pull request or specific file, or click on the checkbox available in the walkthrough comment for Early Access customers.
+
+The generated tests can be easily customized to fit your specific requirements.
+
 ## June 5, 2025
 
 ### Enhanced Static Analysis: Dotenv Linter and Pylint Support
