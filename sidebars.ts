@@ -103,6 +103,7 @@ const sidebars: SidebarsConfig = {
 					items: [
 						"integrations/code-graph-analysis",
 						"finishing-touches/docstrings",
+						"finishing-touches/unit-test-generation",
 					],
 				},
 			],
