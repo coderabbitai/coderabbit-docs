@@ -1,5 +1,5 @@
 ---
-title: Generate Unit Tests
+title: Generate unit tests
 description: Automated Unit Test Generation with CodeRabbit
 ---
 
