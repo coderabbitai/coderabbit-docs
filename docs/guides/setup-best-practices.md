@@ -64,23 +64,21 @@ works with your individual repositories.
 
 CodeRabbit gives you two ways to configure how it works with your team's repositories:
 
-- The [Repositories](https://app.coderabbit.ai/settings/repositories) page of the
-  Dashboard
+- The **Organization Settings** and **Repositories** pages of [the
+  CodeRabbit web interface](https://app.coderabbit.ai/login)
 - A [`coderabbit.yaml` file](/getting-started/configure-coderabbit/) in your repository
 
-The graphical UI of the Repositories page lets you set up your per-repository
-preferences more rapidly, and can help you get familiar with CodeRabbit configuration options.
+The web interface lets you set up your organization's code review
+preferences rapidly, and can help you get familiar with CodeRabbit configuration options.
 
-Once you are ready to fine-tune the ways that CodeRabbit works with your repositories,
-we recommend adding a `coderabbit.yaml` file to each one. This file has several
-advantages over using only the Dashboard:
+We recommend adding a `coderabbit.yaml` file to repositories, as well. Using this file has several advantages over using only the web interface:
 
-- It applies version control to your repository's CodeRabbit settings.
+- It applies version control to your repository's CodeRabbit settings, letting you track changes, view configuration history, and revert to previous configurations as needed.
 - During code reviews, CodeRabbit loads the file along with rest of your repository. This means that you can include setting changes as part of a pull request, and CodeRabbit both analyzes and applies these settings during its review.
 - The file makes the repository's CodeRabbit settings transparent to all of the repository's contributors.
 
 Repository-level settings defined by a `coderabbit.yaml` take precedence over the
-settings defined for that repository in the Dashboard.
+settings defined for that repository or for your organization using the CodeRabbit web interface.
 
 For more information, see [Add a configuration file](/getting-started/configure-coderabbit/).
 
@@ -89,14 +87,14 @@ For more information, see [Add a configuration file](/getting-started/configure-
 If your repository contains a lot of data or other content that CodeRabbit
 doesn't need for code review context, then you can include _path filters_ in
 your repository configuration. For example, a filter of `!dist/**` tells CodeRabbit
-to disregard everything in your reposistory's top-level `dist` directory when
+to disregard everything in your repository's top-level `dist` directory when
 preparing a code review.
 
 Reducing the number of contextual files that CodeRabbit needs to read and analyze
 when preparing a code review can help make its code reviews faster.
 
 You can define path filters using the CodeRabbit
-web interface, or with [a configuration file](/getting-started/configure-coderabbit/).
+web interface, or with [a `coderabbit.yaml` file](/getting-started/configure-coderabbit/).
 
 ### Trust the defaults {#defaults}
 
@@ -108,7 +106,7 @@ CodeRabbit gives you control over a number of its core code-review features, let
   tools](/tools) that are available to it during code reviews. This helps CodeRabbit keep its reviews broad and flexible.
 - **Knowledge base**: CodeRabbit [knowledge base](/integrations/knowledge-base/) features, including learnings and issue tracking, can require data retention. If your organization needs to meet stricter data-retention policies, then you can opt out of using these features.
 
-You can configure your use of the above features using the CodeRabbit web interface, or [a configuration file](/getting-started/configure-coderabbit/).
+You can configure your use of the above features using the CodeRabbit web interface, or [a `coderabbit.yaml` file](/getting-started/configure-coderabbit/).
 
 ### Write specific CI/CD error messages {#pipeline}
 
