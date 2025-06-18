@@ -234,6 +234,9 @@ The following paths are blocked by default, grouped by category:
 
 </details>
 
+![Screenshot 2025-06-18 at 2 46 57 PM](https://github.com/user-attachments/assets/8592f452-9ecd-44f2-8fcf-cd87c56aa093)
+
+
 ### Sample Usage
 
 :::note
