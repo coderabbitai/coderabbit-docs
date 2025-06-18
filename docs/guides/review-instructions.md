@@ -234,8 +234,9 @@ The following paths are blocked by default, grouped by category:
 
 </details>
 
-![Screenshot 2025-06-18 at 2 46 57 PM](https://github.com/user-attachments/assets/8592f452-9ecd-44f2-8fcf-cd87c56aa093)
+You can also edit your path filters directly in the UI by navigating to: **Configuration** > **Review** > **Settings** > **Path Filters**
 
+<img src="/img/guides/path-filters.png" width="600" alt="CircleCI Integration" />
 
 ### Sample Usage
 
