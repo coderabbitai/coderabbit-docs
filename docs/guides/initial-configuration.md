@@ -120,15 +120,15 @@ By default, CodeRabbit applies the same review instructions and contexts to all 
 
 Each path instruction specifies a path specification and a set of instructions, the latter of which you express using natural language. For example, you can add a section like this to your repository's `coderabbit.yaml` file:
 
-```
+```yaml
 path_instructions:
     - path: `src/**/*.{ts,tsx,js}`
-      instructions:
-		- Review the React.js, TypeScript, JavaScript code for best practices
-           - Check for common security vulnerabilities such as:
-       	    - SQL Injection
-        	  - Insecure dependencies
-       	    - Sensitive data exposure
+    instructions:
+    - Review the React.js, TypeScript, JavaScript code for best practices
+        - Check for common security vulnerabilities such as:
+        - SQL Injection
+        - Insecure dependencies
+        - Sensitive data exposure
 ```
 
 For more information, see [Path instructions](/reference/configuration#path-instructions) in the configuration reference.

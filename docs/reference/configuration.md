@@ -36,8 +36,8 @@ Each entry in this reference corresponds to a single CodeRabbit configuration se
     </table>
   </TabItem>
   <TabItem value="yaml" label="coderabbit.yaml">
-		_This setting can be defined only in the web UI settings for your
-		organization._
+    _This setting can be defined only in the web UI settings for your
+    organization._
   </TabItem>
 </Tabs>
 
@@ -800,22 +800,19 @@ Path filters, if defined, restrict the portions of your repository that CodeRabb
 uses for context when preparing code reviews.
 
 You can define a list of path specifications, relative to the root of your
-repository, to use as path filters. These path specifications can use extended
-glob patterns.
+repository, to use as path filters.
 
-If you define at least one path filter, then CodeRabbit restricts its reviews
-only to files whose paths meet all of the following criteria:
-
-- The file must match at least one filter that doesn't begin with a leading `!` character.
-- The file must match none of the filters that begin with a leading `!` character.
+Paths can be _exclude paths_, which start with a leading `!` character, or _include
+paths_. If the list of paths contains at least one include path, then CodeRabbit
+includes _only_ files that match the provided paths.
 
 For example, the following list of path filters instructs CodeRabbit to limit its reviews
-only to files found in the `src` top-level directory, but exclude any `.txt` or `.js`
+only to files found in the `src` top-level directory, but exclude any `.bin` or `.csv`
 files:
 
-```
+```bash
 src/**
-!**/*.{txt,js}
+!**/*.{bin,csv}
 ```
 
 :::note
