@@ -19,6 +19,225 @@ instructions besides the standard review.
 
 > For example, you may want to enforce a style guide by file types or directories.
 
+### Default Blocked Paths
+
+By default, CodeRabbit blocks certain file paths and extensions from being reviewed. If you want CodeRabbit to review any of these blocked paths, you can explicitly include them in your Path Filters configuration.
+
+<details>
+<summary>View complete list of default blocked paths</summary>
+
+The following paths are blocked by default, grouped by category:
+
+#### Build and Dependency Directories
+
+| Path Pattern          | Description                |
+| --------------------- | -------------------------- |
+| `!**/dist/**`         | Build output directory     |
+| `!**/node_modules/**` | Node.js dependencies       |
+| `!**/.svelte-kit/**`  | SvelteKit build directory  |
+| `!**/.webpack/**`     | Webpack build directory    |
+| `!**/.yarn/**`        | Yarn cache directory       |
+| `!**/.docusaurus/**`  | Docusaurus build directory |
+| `!**/.temp/**`        | Temporary files directory  |
+| `!**/.cache/**`       | Cache directory            |
+| `!**/.next/**`        | Next.js build directory    |
+| `!**/.nuxt/**`        | Nuxt.js build directory    |
+
+#### Lock Files
+
+| Path Pattern            | Description        |
+| ----------------------- | ------------------ |
+| `!**/package-lock.json` | npm lock file      |
+| `!**/yarn.lock`         | Yarn lock file     |
+| `!**/pnpm-lock.yaml`    | pnpm lock file     |
+| `!**/bun.lockb`         | Bun lock file      |
+| `!**/*.lock`            | Generic lock files |
+
+#### Generated Code
+
+| Path Pattern           | Description                            |
+| ---------------------- | -------------------------------------- |
+| `!**/generated/**`     | Generated code directory               |
+| `!**/@generated/**`    | Generated code directory (alternative) |
+| `!**/__generated__/**` | Generated code directory (alternative) |
+| `!**/__generated/**`   | Generated code directory (alternative) |
+| `!**/_generated/**`    | Generated code directory (alternative) |
+| `!**/gen/**`           | Generated code directory (alternative) |
+| `!**/@gen/**`          | Generated code directory (alternative) |
+| `!**/__gen__/**`       | Generated code directory (alternative) |
+| `!**/__gen/**`         | Generated code directory (alternative) |
+| `!**/_gen/**`          | Generated code directory (alternative) |
+
+#### Binary and Compiled Files
+
+| Path Pattern  | Description             |
+| ------------- | ----------------------- |
+| `!**/*.app`   | Application bundle      |
+| `!**/*.bin`   | Binary file             |
+| `!**/*.class` | Java compiled class     |
+| `!**/*.dll`   | Windows dynamic library |
+| `!**/*.dylib` | macOS dynamic library   |
+| `!**/*.exe`   | Windows executable      |
+| `!**/*.o`     | Object file             |
+| `!**/*.so`    | Shared object file      |
+| `!**/*.wasm`  | WebAssembly file        |
+
+#### Archives and Compressed Files
+
+| Path Pattern | Description             |
+| ------------ | ----------------------- |
+| `!**/*.bz2`  | Bzip2 archive           |
+| `!**/*.gz`   | Gzip archive            |
+| `!**/*.xz`   | XZ archive              |
+| `!**/*.zip`  | ZIP archive             |
+| `!**/*.7z`   | 7-Zip archive           |
+| `!**/*.rar`  | RAR archive             |
+| `!**/*.zst`  | Zstandard archive       |
+| `!**/*.tar`  | TAR archive             |
+| `!**/*.jar`  | Java archive            |
+| `!**/*.war`  | Web application archive |
+| `!**/*.nar`  | NAR archive             |
+
+#### Media Files
+
+| Path Pattern | Description     |
+| ------------ | --------------- |
+| `!**/*.mp3`  | MP3 audio       |
+| `!**/*.wav`  | WAV audio       |
+| `!**/*.wma`  | WMA audio       |
+| `!**/*.mp4`  | MP4 video       |
+| `!**/*.avi`  | AVI video       |
+| `!**/*.mkv`  | MKV video       |
+| `!**/*.wmv`  | WMV video       |
+| `!**/*.m4a`  | M4A audio       |
+| `!**/*.m4v`  | M4V video       |
+| `!**/*.3gp`  | 3GP video       |
+| `!**/*.3g2`  | 3G2 video       |
+| `!**/*.rm`   | RealMedia video |
+| `!**/*.mov`  | QuickTime video |
+| `!**/*.flv`  | Flash video     |
+| `!**/*.swf`  | Flash animation |
+| `!**/*.flac` | FLAC audio      |
+| `!**/*.ogg`  | OGG audio       |
+
+#### Images and Fonts
+
+| Path Pattern  | Description            |
+| ------------- | ---------------------- |
+| `!**/*.ico`   | Icon file              |
+| `!**/*.svg`   | SVG image              |
+| `!**/*.jpeg`  | JPEG image             |
+| `!**/*.jpg`   | JPEG image             |
+| `!**/*.png`   | PNG image              |
+| `!**/*.gif`   | GIF image              |
+| `!**/*.bmp`   | BMP image              |
+| `!**/*.tiff`  | TIFF image             |
+| `!**/*.webm`  | WebM image             |
+| `!**/*.ttf`   | TrueType font          |
+| `!**/*.otf`   | OpenType font          |
+| `!**/*.woff`  | Web Open Font Format   |
+| `!**/*.woff2` | Web Open Font Format 2 |
+| `!**/*.eot`   | Embedded OpenType font |
+
+#### Documents and Data Files
+
+| Path Pattern    | Description             |
+| --------------- | ----------------------- |
+| `!**/*.pdf`     | PDF document            |
+| `!**/*.doc`     | Word document           |
+| `!**/*.docx`    | Word document           |
+| `!**/*.xls`     | Excel spreadsheet       |
+| `!**/*.xlsx`    | Excel spreadsheet       |
+| `!**/*.ppt`     | PowerPoint presentation |
+| `!**/*.pptx`    | PowerPoint presentation |
+| `!**/*.csv`     | CSV data file           |
+| `!**/*.tsv`     | TSV data file           |
+| `!**/*.dat`     | Data file               |
+| `!**/*.db`      | Database file           |
+| `!**/*.parquet` | Parquet data file       |
+
+#### Development and System Files
+
+| Path Pattern         | Description         |
+| -------------------- | ------------------- |
+| `!**/tags`           | Tags file           |
+| `!**/.tags`          | Tags file           |
+| `!**/TAGS`           | Tags file           |
+| `!**/.TAGS`          | Tags file           |
+| `!**/.DS_Store`      | macOS system file   |
+| `!**/.cscope.files`  | Cscope files        |
+| `!**/.cscope.out`    | Cscope output       |
+| `!**/.cscope.in.out` | Cscope input/output |
+| `!**/.cscope.po.out` | Cscope output       |
+| `!**/*.log`          | Log file            |
+| `!**/*.map`          | Source map          |
+| `!**/*.out`          | Output file         |
+| `!**/*.sum`          | Checksum file       |
+| `!**/*.work`         | Work file           |
+| `!**/*.md5sum`       | MD5 checksum file   |
+
+#### Game and 3D Assets
+
+| Path Pattern        | Description            |
+| ------------------- | ---------------------- |
+| `!**/*.tga`         | Targa image            |
+| `!**/*.dds`         | DirectDraw surface     |
+| `!**/*.psd`         | Photoshop document     |
+| `!**/*.fbx`         | FBX 3D model           |
+| `!**/*.obj`         | OBJ 3D model           |
+| `!**/*.blend`       | Blender file           |
+| `!**/*.dae`         | COLLADA 3D model       |
+| `!**/*.gltf`        | GL Transmission Format |
+| `!**/*.hlsl`        | HLSL shader            |
+| `!**/*.glsl`        | GLSL shader            |
+| `!**/*.unity`       | Unity scene            |
+| `!**/*.umap`        | Unreal map             |
+| `!**/*.prefab`      | Unity prefab           |
+| `!**/*.mat`         | Material file          |
+| `!**/*.shader`      | Shader file            |
+| `!**/*.shadergraph` | Shader graph           |
+| `!**/*.sav`         | Save file              |
+| `!**/*.scene`       | Scene file             |
+| `!**/*.asset`       | Asset file             |
+
+#### Python-specific Files
+
+| Path Pattern   | Description           |
+| -------------- | --------------------- |
+| `!**/*.pyc`    | Python compiled file  |
+| `!**/*.pyd`    | Python dynamic module |
+| `!**/*.pyo`    | Python optimized file |
+| `!**/*.pkl`    | Python pickle file    |
+| `!**/*.pickle` | Python pickle file    |
+
+#### Go-specific Files
+
+| Path Pattern     | Description                     |
+| ---------------- | ------------------------------- |
+| `!**/*.pb.go`    | Protocol buffer Go file         |
+| `!**/*.pb.gw.go` | Protocol buffer gateway Go file |
+
+#### Terraform Files
+
+| Path Pattern           | Description            |
+| ---------------------- | ---------------------- |
+| `!**/*.tfstate`        | Terraform state file   |
+| `!**/*.tfstate.backup` | Terraform state backup |
+
+#### Minified Files
+
+| Path Pattern       | Description                    |
+| ------------------ | ------------------------------ |
+| `!**/*.min.js`     | Minified JavaScript            |
+| `!**/*.min.js.map` | Minified JavaScript source map |
+| `!**/*.min.js.css` | Minified CSS                   |
+
+</details>
+
+You can also edit your path filters directly in the UI by navigating to: **Configuration** > **Review** > **Settings** > **Path Filters**
+
+<img src="/img/guides/path-filters.png" width="600" alt="CircleCI Integration" />
+
 ### Sample Usage
 
 :::note
