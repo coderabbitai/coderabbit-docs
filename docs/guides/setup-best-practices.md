@@ -18,7 +18,7 @@ CodeRabbit works best when it has a user account all to itself on your Git platf
 Your team treats this account as a bot or service account—even on platforms that don't
 have a formal concept of separate service accounts, such as Bitbucket Cloud.
 
-If you use GitHub, then CodeRabbit sets up a service account named `CoderabbitAI` for you as soon as you connect your GitHub organization to CodeRabbit. On other platforms, such as Bitbucket Cloud or Gitlab, you must set this account up yourself.
+If you use GitHub, then CodeRabbit sets up a service account named `CodeRabbitAI` for you as soon as you connect your GitHub organization to CodeRabbit. On other platforms, such as Bitbucket Cloud or Gitlab, you must set this account up yourself.
 
 For platform-specific instructions about setting up this user, see
 [Integrate with Git platforms](/platforms/).
