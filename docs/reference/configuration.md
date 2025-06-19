@@ -870,10 +870,10 @@ and JavaScript files in a reposistory's `src` directory:
 
 <Tabs groupId="config-setting">
   <TabItem value="web-ui" label="Example path settings: Web UI" default>
-		![An example path instruction](/img/reference/path-instructions.png)
+    ![An example path instruction](/img/reference/path-instructions.png)
   </TabItem>
   <TabItem value="yaml" label="Example path settings: coderabbit.yaml">
-```
+```yaml
 path_instructions:
   - path: src/**/*.{ts,tsx,js}
   instructions:
