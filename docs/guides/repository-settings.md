@@ -30,7 +30,7 @@ To view or modify your organizational settings using the CodeRabbit web interfac
 ## Configure your repository with `coderabbit.yaml`
 
 For more information about creating and updating a `coderabbit.yaml` file in
-your repository, see [Add a configuration file](getting-started/configure-coderabbit).
+your repository, see [Add a configuration file](/getting-started/configure-coderabbit).
 
 ## What's next {#whats-next}
 
