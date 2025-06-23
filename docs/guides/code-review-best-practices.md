@@ -1,7 +1,7 @@
 ---
 title: Code review best practices
 description: Best practices for managing CodeRabbit code reviews.
-sidebar_label: Best practices
+sidebar_label: Code reviews
 ---
 
 This page lists best practices for performing code reviews with CodeRabbit.

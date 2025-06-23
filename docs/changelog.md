@@ -5,6 +5,40 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## June 11, 2025
+
+### Enhanced Static Analysis: HTMLHint and Checkmake Support
+
+We're excited to announce that two new static analysis tools are now supported on CodeRabbit!
+
+- [HTMLHint](https://htmlhint.com/) is a static code analysis tool for HTML that helps maintain code quality by detecting common mistakes and enforcing best practices.
+
+- [Checkmake](https://github.com/mrtazz/checkmake) is a linter for Makefiles that helps ensure your build scripts follow best practices and maintain consistency.
+
+## June 10, 2025
+
+### Unit Test Generation, Early Access
+
+We're excited to announce that our new unit test generation feature is now available in early access! CodeRabbit can now automatically generate unit tests for your code changes.
+
+Key capabilities:
+
+- **Intelligent Test Generation**: Automatically creates unit tests that cover edge cases, error scenarios, and core functionality
+- **Context-Aware**: Generates tests that understand your existing codebase patterns and testing conventions
+- **One-Click Integration**: Simply comment `@coderabbitai auto-generate unit tests` on any pull request or specific file, or click on the checkbox available in the walkthrough comment for Early Access customers.
+
+You can customize the generated tests to fit your specific requirements.
+
+## June 5, 2025
+
+### Enhanced Static Analysis: Dotenv Linter and Pylint Support
+
+We're excited to announce that two new static analysis tools are now supported on CodeRabbit!
+
+- [Dotenv Linter](https://github.com/dotenv-linter/dotenv-linter) is a fast, opinionated linter for `.env` files that helps prevent misconfigurations by detecting typos, invalid syntax, and duplicated keys.
+
+- [Pylint](https://github.com/PyCQA/pylint) is a widely used static analysis and code quality tool for Python. It checks for errors, enforces coding standards, and looks for code smells in your Python codebase.
+
 ## May 25, 2025
 
 ### New Security and Code Quality Tools

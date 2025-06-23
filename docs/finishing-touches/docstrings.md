@@ -15,7 +15,7 @@ Docstrings generation is part of the [finishing touches](/future-development#fin
 
 ## Usage
 
-Once you are done with your pull request and its reviews, you may want to perform finishing touches to your code, such as adding in-code documentation. You can request CodeRabbit to generate docstrings by typing `@coderabbitai generate docstrings` in a comment under that pull request.
+Once you are done with your pull request and its reviews, you may want to perform finishing touches to your code, such as adding in-code documentation. You can request CodeRabbit to generate docstrings by typing `@coderabbitai generate docstrings` in a comment under that pull request or by clicking the **Generate Docstrings** checkbox under **Finishing Touches** in the CodeRabbit Walkthrough.
 
 Once sent, CodeRabbit will perform the following actions:
 

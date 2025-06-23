@@ -71,12 +71,19 @@ const sidebars: SidebarsConfig = {
 		{
 			type: "category",
 			collapsed: true,
+			label: "Manage your account",
+			items: ["getting-started/subscription-management", "guides/roles"],
+		},
+		{
+			type: "category",
+			collapsed: true,
 			label: "Configure CodeRabbit",
 			items: [
 				"getting-started/configure-coderabbit",
 				"integrations/knowledge-base",
 				"guides/review-instructions",
 				"tools/tools",
+				"guides/roles",
 			],
 		},
 		{
@@ -87,7 +94,6 @@ const sidebars: SidebarsConfig = {
 				"guides/code-review-overview",
 				"guides/commands",
 				"guides/generate-improvements",
-				"guides/code-review-best-practices",
 				"guides/code-review-troubleshooting",
 				"guides/agent_chat",
 				{
@@ -97,6 +103,7 @@ const sidebars: SidebarsConfig = {
 					items: [
 						"integrations/code-graph-analysis",
 						"finishing-touches/docstrings",
+						"finishing-touches/unit-test-generation",
 					],
 				},
 			],
@@ -133,6 +140,15 @@ const sidebars: SidebarsConfig = {
 				"guides/scheduled-reports",
 				"guides/ondemand-reports",
 				"guides/custom-reports",
+			],
+		},
+		{
+			type: "category",
+			collapsed: true,
+			label: "Best practices",
+			items: [
+				"guides/setup-best-practices",
+				"guides/code-review-best-practices",
 			],
 		},
 		{
@@ -190,7 +206,6 @@ const sidebars: SidebarsConfig = {
 			label: "Resources",
 			items: [
 				"getting-started/support",
-				"getting-started/subscription-management",
 				"overview/why-coderabbit",
 				"faq",
 				"early-access",

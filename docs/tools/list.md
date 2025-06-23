@@ -18,22 +18,25 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 | Cppcheck                    | [Cppcheck][Cppcheck]                                       | Code Quality                                        |
 | CSS                         | [Biome][Biome]                                             | Code Quality                                        |
 | Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                   | Code Quality, Code Security                         |
+| Environment Files (.env)    | [Dotenv Linter][DotenvLinter]                              | Code Quality                                        |
 | GitHub Actions              | [actionlint][actionlint], [Pipeline Remediation][Pipeline] | Code Quality, CI/CD Failure Remediation             |
 | GitLab Pipelines            | [Pipeline Remediation][Pipeline]                           | CI/CD Failure Remediation                           |
 | Go                          | [golangci-lint][golangci-lint]                             | Code Quality                                        |
 | Helm                        | [Checkov][Checkov]                                         | Code Security                                       |
+| HTML                        | [HTMLHint][HTMLHint]                                       | Code Quality                                        |
 | Javascript                  | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
 | JSON, JSONC                 | [Biome][Biome]                                             | Code Quality                                        |
 | JSX                         | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
 | Kotlin                      | [detekt][detekt]                                           | Code Quality                                        |
 | Kubernetes                  | [Checkov][Checkov]                                         | Code Security                                       |
 | Lua                         | [Luacheck][Luacheck]                                       | Code Quality                                        |
+| Makefile                    | [Checkmake][Checkmake]                                     | Code Quality                                        |
 | Markdown                    | [markdownlint][markdownlint], [LanguageTool][LanguageTool] | Code Quality, Grammar Checking                      |
 | PHP                         | [PHPStan][PHPStan]                                         | Code Quality                                        |
 | Plaintext                   | [LanguageTool][LanguageTool]                               | Grammar and Spell Checking                          |
 | Java                        | [PMD][PMD]                                                 | Code Quality                                        |
 | Protobuf                    | [Buf][Buf]                                                 | Code Quality                                        |
-| Python                      | [Ruff][Ruff]                                               | Code Quality                                        |
+| Python                      | [Ruff][Ruff], [Pylint][Pylint]                             | Code Quality                                        |
 | Regal                       | [Regal][Regal]                                             | Code Quality                                        |
 | Ruby                        | [RuboCop][RuboCop], [Brakeman][Brakeman]                   | Code Quality, Code Security                         |
 | Rust                        | [Clippy][Clippy]                                           | Code Quality                                        |
@@ -77,3 +80,7 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 [Luacheck]: /tools/luacheck.md
 [Brakeman]: /tools/brakeman.md
 [Clippy]: /tools/clippy.md
+[Pylint]: /tools/pylint.md
+[DotenvLinter]: /tools/dotenv.md
+[HTMLHint]: /tools/htmlhint.md
+[Checkmake]: /tools/checkmake.md

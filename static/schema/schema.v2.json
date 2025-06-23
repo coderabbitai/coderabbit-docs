@@ -95,7 +95,17 @@
 						"de-LU",
 						"fr-FR",
 						"bg-BG",
-						"bg"
+						"bg",
+						"he-IL",
+						"he",
+						"hi-IN",
+						"hi",
+						"vi-VN",
+						"vi",
+						"th-TH",
+						"th",
+						"bn-BD",
+						"bn"
 					],
 					"default": "en-US",
 					"description": "Set the language for reviews by using the corresponding ISO language code."
@@ -680,6 +690,23 @@
 									"default": {},
 									"description": "ESLint is a static code analysis tool for JavaScript files."
 								},
+								"flake8": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Flake8 | Flake8 is a Python linter that wraps PyFlakes, pycodestyle and Ned Batchelder's McCabe script. | v7.2.0"
+										},
+										"config_file": {
+											"type": "string",
+											"description": "Optional path to the Flake8 configuration file relative to the repository. This is useful when the configuration file is named differently than the default '.flake8' or 'setup.cfg'."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Flake8 is a Python linter that wraps PyFlakes, pycodestyle and Ned Batchelder's McCabe script."
+								},
 								"rubocop": {
 									"type": "object",
 									"properties": {
@@ -895,6 +922,49 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Brakeman is a static analysis security vulnerability scanner for Ruby on Rails applications. | v7.0.2"
+								},
+								"dotenvLint": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable dotenv-linter | dotenv-linter is a tool for checking and fixing .env files for problems and best practices | v3.3.0"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "dotenv-linter is a tool for checking and fixing .env files for problems and best practices"
+								},
+								"htmlhint": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable HTMLHint | HTMLHint is a static code analysis tool for HTML files. | Enable HTMLHint integration. | v1.5.0"
+										},
+										"config_file": {
+											"type": "string",
+											"description": "Optional path to the HTMLHint configuration file relative to the repository. This is useful when the configuration file is named differently than the default '.htmlhintrc'."
+										}
+									},
+									"additionalProperties": false,
+									"description": "HTMLHint is a static code analysis tool for HTML files.",
+									"default": {}
+								},
+								"checkmake": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable checkmake | checkmake is a linter for Makefiles. | v0.2.2"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "checkmake is a linter for Makefiles."
 								}
 							},
 							"additionalProperties": false,
@@ -970,6 +1040,27 @@
 							},
 							"additionalProperties": false,
 							"default": {}
+						},
+						"code_guidelines": {
+							"type": "object",
+							"properties": {
+								"enabled": {
+									"type": "boolean",
+									"default": true,
+									"description": "Enabled | Enable CodeRabbit to enforce your organisation's coding standards during reviews."
+								},
+								"filePatterns": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									},
+									"default": [],
+									"description": "File Patterns | Specify files for your coding guideline documents in this section. CodeRabbit will scan these files to understand your team's standards and apply them during code reviews. Multiple files supported. File names are case-sensitive. Common files like: (**/.cursorrules, .github/copilot-instructions.md, **/CLAUDE.md, **/.cursor/rules/*, **/.windsurfrules, **/.clinerules/*, **/.rules/*) are included by default."
+								}
+							},
+							"additionalProperties": false,
+							"default": {},
+							"description": "CodeRabbit will analyse and learn from your organisation's code guidelines, which you can mention in the file patterns section. These guidelines will then be used to conduct thorough code reviews."
 						},
 						"learnings": {
 							"type": "object",
@@ -1153,7 +1244,17 @@
 										"de-LU",
 										"fr-FR",
 										"bg-BG",
-										"bg"
+										"bg",
+										"he-IL",
+										"he",
+										"hi-IN",
+										"hi",
+										"vi-VN",
+										"vi",
+										"th-TH",
+										"th",
+										"bn-BD",
+										"bn"
 									],
 									"default": "en-US",
 									"description": "Set the language for docstrings by using the corresponding ISO language code."
