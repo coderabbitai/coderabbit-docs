@@ -128,6 +128,8 @@ const sidebars: SidebarsConfig = {
 				"guides/install-vscode",
 				"guides/use-vscode",
 				"guides/config-vscode",
+				"guides/best-practices-vscode",
+				"guides/troubleshooting-vscode",
 				"guides/uninstall-vscode",
 			],
 		},
