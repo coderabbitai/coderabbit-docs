@@ -181,7 +181,7 @@ For more information, see [Labels](/reference/configuration#labels) in the confi
 
 If you want CodeRabbit to extend its automatic-review attention beyond the default branch of your repository—that is, `main` or `master`, usually—then you can give CodeRabbit a list of other branches that it is allowed to review.
 
-For more information, see [Branches](/reference/configuration#brancehs) in the configuration reference.
+For more information, see [Base branches](/reference/configuration#base-branches) in the configuration reference.
 
 ## Configure tools {#tools}
 
