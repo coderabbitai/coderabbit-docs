@@ -11,14 +11,14 @@ Git repository. For a general overview of configuring CodeRabbit, see [Configure
 CodeRabbit provides two ways to manage its code-review behavior with each of your organization's repositories:
 
 1. View or modify your per-repository settings using the CodeRabbit web interface.
-1. Add a `coderabbit.yaml` file to your repository.
+1. Add a `.coderabbit.yaml` file to your repository.
 
-Any settings that you define in the `coderabbit.yaml` file take precedence over
+Any settings that you define in the `.coderabbit.yaml` file take precedence over
 settings defined by the web interface. If your repository doesn't have a
-`coderabbit.yaml` file, then CodeRabbit applies only the settings from the web
+`.coderabbit.yaml` file, then CodeRabbit applies only the settings from the web
 interface.
 
-While the web interface provides and easier way to explore the available configuration options for your repository, we recommend using a `coderabbit.yaml` file as a best practice. For more information, see [Fine-tune reviews using YAML files](/guides/setup-best-practices#yaml).
+While the web interface provides and easier way to explore the available configuration options for your repository, we recommend using a `.coderabbit.yaml` file as a best practice. For more information, see [Fine-tune reviews using YAML files](/guides/setup-best-practices#yaml).
 
 ## Browse and modify your settings using the web interface {#modify}
 
@@ -30,9 +30,9 @@ To view of modify your repsository settings using the CodeRabbit web interface, 
 1. If the **Use Organization Settings** toggle is on, then click it to turn it off. If you leave it on, then CodeRabbit applies the settings you have set through [the organization-configuration page](/guide/organization-settings) to this repository.
 1. Browse and modify the settings as needed. If you do make changes, click **Apply Changes** when you are finished.
 
-## Configure your repository with `coderabbit.yaml`
+## Configure your repository with `.coderabbit.yaml`
 
-For more information about creating and updating a `coderabbit.yaml` file in
+For more information about creating and updating a `.coderabbit.yaml` file in
 your repository, see [Add a configuration file](/getting-started/configure-coderabbit).
 
 ## What's next {#whats-next}

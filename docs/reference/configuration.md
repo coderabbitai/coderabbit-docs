@@ -16,7 +16,7 @@ For an overview of how configuration works with CodeRabbit, see [Configure CodeR
 Each entry in this reference corresponds to a single CodeRabbit configuration setting, including an informational table and a description of what the setting does. The tables have two views, which you can select with a tab:
 
 - The **Web UI** tab displays the location and default value of the setting in the CodeRabbit web interface, for both [organization settings](/guides/organization-settings) and [repository settings](/guides/repository-settings).
-- The **coderabbit.yaml** tab displays information about the field's location and datatype in [your repository's `coderabbit.yaml` file](/getting-started/configure-coderabbit).
+- The **coderabbit.yaml** tab displays information about the field's location and datatype in [your repository's `.coderabbit.yaml` file](/getting-started/configure-coderabbit).
 
 ## Global Settings
 
@@ -35,7 +35,7 @@ Each entry in this reference corresponds to a single CodeRabbit configuration se
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     _This setting can be defined only in the web UI settings for your
     organization._
   </TabItem>
@@ -71,7 +71,7 @@ If you re-enable data retention, then CodeRabbit re-enables these features, and 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -107,7 +107,7 @@ code reviews.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -144,7 +144,7 @@ For more information about payment tiers and features, see [Pricing](https://www
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -180,7 +180,7 @@ to American English.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -227,7 +227,7 @@ A few possible examples:
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -262,7 +262,7 @@ Abort the in-progress review if the pull request is closed or merged.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -309,7 +309,7 @@ and [Let CodeRabbit read your issue trakcer](https://docs.coderabbit.ai/guides/s
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -344,7 +344,7 @@ Automatically apply the suggested labels to the PR/MR.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -379,7 +379,7 @@ Automatically assign suggested reviewers to the pull request
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -414,7 +414,7 @@ Custom instructions for auto-generating the PR/MR title.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -449,7 +449,7 @@ Add this keyword in the PR/MR title to auto-generate the title.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -484,7 +484,7 @@ Generate a summary of the changed files in the walkthrough.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -519,7 +519,7 @@ Generate walkthrough in a markdown collapsible section.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -554,7 +554,7 @@ Set the commit status to 'pending' when the review is in progress and 'success' 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -603,7 +603,7 @@ all data retention, then your repositories won't keep a cache.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -638,7 +638,7 @@ Set the commit status to 'failure' when the PR cannot be reviewed by CodeRabbit 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -673,7 +673,7 @@ Generate a high level summary of the changes in the PR/MR description.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -708,7 +708,7 @@ Include the high level summary in the walkthrough comment.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -743,7 +743,7 @@ Placeholder in the PR/MR description that gets replaced with the high level summ
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -778,7 +778,7 @@ Provide guidelines for suggesting labels for the PR/MR. When specific labels or 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -841,7 +841,7 @@ For more information, see [Speed up reviews by adding path filters](https://docs
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -904,7 +904,7 @@ see [the `awesome-coderabbit` public repository](https://github.com/coderabbitai
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -939,7 +939,7 @@ Generate a poem in the walkthrough comment.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -982,7 +982,7 @@ contexts. The `Assertive` profile mode can get quite nitpicky in some circumstan
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1017,7 +1017,7 @@ Include possibly related issues in the walkthrough.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1052,7 +1052,7 @@ Include possibly related pull requests in the walkthrough.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1092,7 +1092,7 @@ to require before a pull request can be merged.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1127,7 +1127,7 @@ Post review details on each review. Additionally, post a review status when a re
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1162,7 +1162,7 @@ Generate sequence diagrams in the walkthrough.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1197,7 +1197,7 @@ Suggest labels based on the changes in the pull request in the walkthrough.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1234,7 +1234,7 @@ Suggest reviewers based on the changes in the pull request in the walkthrough.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1273,7 +1273,7 @@ Disabling this setting also effectively disables all of the other settings liste
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1312,7 +1312,7 @@ We recommend leaving this option enabled.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1351,7 +1351,7 @@ reviews pull requests on both your repository's default branch and its `staging`
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1387,7 +1387,7 @@ in your Git platform.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1422,7 +1422,7 @@ Ignore reviewing if the title of the pull request contains any of these keywords
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1462,7 +1462,7 @@ In this case, you can manually request reviews of pull requests lacking a qualif
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1498,7 +1498,7 @@ added in a pull request. For more information, see [Docstrings](/finishing-touch
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1536,7 +1536,7 @@ added in a pull request. For more information, see [Unit Test Generation](/finis
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1573,7 +1573,7 @@ Enable the bot to reply automatically without requiring the user to tag it.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1608,7 +1608,7 @@ Enable the Jira integration for opening issues, etc. 'auto' disables the integra
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1647,7 +1647,7 @@ Enable the Linear integration for opening issues, etc. 'auto' disables the integ
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1682,7 +1682,7 @@ Disable all knowledge base features that require data retention. If you opt out 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1717,7 +1717,7 @@ Specify the scope of pull requests to use for the knowledge base. 'local' uses t
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1752,7 +1752,7 @@ Enable the web search integration.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1789,7 +1789,7 @@ Specify the scope of git platform (GitHub/GitLab) issues to use for the knowledg
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1824,7 +1824,7 @@ Enable the Jira knowledge base integration. 'auto' disables the integration for 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1859,7 +1859,7 @@ Specify the Jira project keys to use for the knowledge base.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1896,7 +1896,7 @@ Specify the scope of learnings to use for the knowledge base. 'local' uses the r
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1931,7 +1931,7 @@ Enable the Linear knowledge base integration. 'auto' disables the integration fo
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1968,7 +1968,7 @@ Specify the Linear team keys (identifiers) to use for the knowledge base. E.g. '
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2003,7 +2003,7 @@ Set the language for docstrings by using the corresponding ISO language code.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2038,7 +2038,7 @@ Provide additional guidelines for docstring generation based on file paths.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2081,7 +2081,7 @@ actionlint is a static checker for GitHub Actions workflow files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2120,7 +2120,7 @@ Enable ast-grep | ast-grep is a code analysis tool that helps you to find patter
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2155,7 +2155,7 @@ Use ast-grep essentials package.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2190,7 +2190,7 @@ Predefined packages to be used.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2225,7 +2225,7 @@ List of rules directories.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2264,7 +2264,7 @@ Biome is a fast formatter, linter, and analyzer for web projects.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2303,7 +2303,7 @@ Brakeman is a static analysis security vulnerability scanner for Ruby on Rails a
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2342,7 +2342,7 @@ Buf offers linting for Protobuf files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2381,7 +2381,7 @@ checkmake is a linter for Makefiles.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2420,7 +2420,7 @@ Checkov is a static code analysis tool for infrastructure-as-code files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2459,7 +2459,7 @@ CircleCI tool is a static checker for CircleCI config files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2498,7 +2498,7 @@ Clippy is a collection of lints to catch common mistakes and improve your Rust c
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2537,7 +2537,7 @@ Cppcheck is a static code analysis tool for the C and C++ programming languages.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2576,7 +2576,7 @@ Detekt is a static code analysis tool for Kotlin files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2611,7 +2611,7 @@ Enable detekt.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2650,7 +2650,7 @@ dotenv-linter is a tool for checking and fixing .env files for problems and best
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2689,7 +2689,7 @@ ESLint is a static code analysis tool for JavaScript files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2728,7 +2728,7 @@ GitHub Checks integration configuration.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2763,7 +2763,7 @@ Enable integration, defaults to true
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2802,7 +2802,7 @@ Gitleaks is a secret scanner.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2841,7 +2841,7 @@ golangci-lint is a fast linters runner for Go.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2876,7 +2876,7 @@ Enable golangci-lint.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2915,7 +2915,7 @@ Hadolint is a Dockerfile linter.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2954,7 +2954,7 @@ HTMLHint is a static code analysis tool for HTML files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2989,7 +2989,7 @@ Enable HTMLHint.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3028,7 +3028,7 @@ LanguageTool is a style and grammar checker for 30+ languages.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3063,7 +3063,7 @@ IDs of categories to be disabled. Note: TYPOS, TYPOGRAPHY, and CASING are always
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3098,7 +3098,7 @@ IDs of rules to be disabled. Note: EN_UNPAIRED_BRACKETS, and EN_UNPAIRED_QUOTES 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3133,7 +3133,7 @@ Enable LanguageTool
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3168,7 +3168,7 @@ IDs of categories to be enabled.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3203,7 +3203,7 @@ Only the rules and categories whose IDs are specified with 'enabledRules' or 'en
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3238,7 +3238,7 @@ IDs of rules to be enabled. The rule won't run unless 'level' is set to a level 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3277,7 +3277,7 @@ Configuration for Lua code linting to ensure code quality
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3316,7 +3316,7 @@ markdownlint-cli2 is a static analysis tool to enforce standards and consistency
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3355,7 +3355,7 @@ OXC is a JavaScript/TypeScript linter written in Rust.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3394,7 +3394,7 @@ PHPStan is a tool to analyze PHP code.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3429,7 +3429,7 @@ PHPStan requires [config file](https://phpstan.org/config-reference#config-file)
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3468,7 +3468,7 @@ PMD is an extensible multilanguage static code analyzer. It’s mainly concerned
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3503,7 +3503,7 @@ Enable PMD.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3542,7 +3542,7 @@ Configuration for Prisma Schema linting to ensure schema file quality
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3581,7 +3581,7 @@ Pylint is a Python static code analysis tool.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3620,7 +3620,7 @@ Regal is a linter and language server for Rego.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3659,7 +3659,7 @@ RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3698,7 +3698,7 @@ Ruff is a Python linter and code formatter.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3737,7 +3737,7 @@ Semgrep is a static analysis tool designed to scan code for security vulnerabili
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3772,7 +3772,7 @@ Enable Semgrep.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3811,7 +3811,7 @@ ShellCheck is a static analysis tool that finds bugs in your shell scripts.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3850,7 +3850,7 @@ Configuration for Shopify Theme Check to ensure theme quality and best practices
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3889,7 +3889,7 @@ SQLFluff is an open source, dialect-flexible and configurable SQL linter.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3928,7 +3928,7 @@ SwiftLint integration configuration object.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3963,7 +3963,7 @@ Enable SwiftLint.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -4002,7 +4002,7 @@ YAMLlint is a linter for YAML files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml" default>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>

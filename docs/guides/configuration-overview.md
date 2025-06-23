@@ -40,11 +40,11 @@ If you want to apply separate CodeRabbit configuration to your organization's di
 manage repository-specific CodeRabbit settings in two ways:
 
 - Use the CodeRabbit web interface.
-- Add a `coderabbit.yaml` file to the top level of your repository.
+- Add a `.coderabbit.yaml` file to the top level of your repository.
 
 For more information, see [Set your repository preferences](/guides/repository-settings).
 
-While the web interface provides and easier way to explore the available configuration options for your repository, we recommend using a `coderabbit.yaml` file as a best practice. For more information, see [Fine-tune reviews using YAML files](/guides/setup-best-practices#yaml).
+While the web interface provides and easier way to explore the available configuration options for your repository, we recommend using a `.coderabbit.yaml` file as a best practice. For more information, see [Fine-tune reviews using YAML files](/guides/setup-best-practices#yaml).
 
 ## Initial configuration {#initial}
 

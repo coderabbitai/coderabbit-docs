@@ -18,7 +18,7 @@ the key settings described by this page can help you tune the behavior of
 CodeRabbit for the specific needs of your team. You can use this guide when initially setting up your organization and repositories with CodeRabbit, or you can return to it after using CodeRabbit
 for a while, when you feel ready to customize its behavior.
 
-Each section in the guide links to specific entries in the configuration reference. Each entry in the linked reference specifies the location of its configuration setting, in either the CodeRabbit web UI or your `coderabbit.yaml` file.
+Each section in the guide links to specific entries in the configuration reference. Each entry in the linked reference specifies the location of its configuration setting, in either the CodeRabbit web UI or your `.coderabbit.yaml` file.
 
 ## General settings {#general}
 
@@ -120,7 +120,7 @@ For an overview about using path-based instructions in CodeRabbit, see [Path-bas
 
 If your repository contains files or locations that CodeRabbit should disregard when preparing code reviews—or you want CodeRabbit to limit its consideration to only certain files—then you can define one or more _path filters_. Adding path filters to a large repository containing a lot of data, generated files, or other non-code content can let CodeRabbit work faster.
 
-For example, the following `coderabbit.yaml` excerpt instructs CodeRabbit to take review context only the contents of directories named `src/` in your repository, while disregarding any individual files with `.bin` or `.csv` extensions.
+For example, the following `.coderabbit.yaml` excerpt instructs CodeRabbit to take review context only the contents of directories named `src/` in your repository, while disregarding any individual files with `.bin` or `.csv` extensions.
 
 ```yaml
 path_filters:
@@ -135,7 +135,7 @@ For more information, see [Path filters](/reference/configuration#path-filters) 
 
 You can set _path instructions_ that provide CodeRabbit with additional review instructions for various files or locations in your repository. Each path instruction specifies a path specification and a set of instructions, the latter of which you express using natural language.
 
-For example, to give CodeRabbit review instructions specific to JavaScript and TypeScript files, you can add a section like this to your repository's `coderabbit.yaml` file:
+For example, to give CodeRabbit review instructions specific to JavaScript and TypeScript files, you can add a section like this to your repository's `.coderabbit.yaml` file:
 
 ```yaml
 path_instructions:
@@ -189,7 +189,7 @@ CodeRabbit has access to dozens of industry-standard open-source tools to help i
 
 By default, CodeRabbit considers every tool available to it during code reviews. If you want CodeRabbit to disregard certain tools, then you can disable them.
 
-Several tools that CodeRabbit uses also allow you to specify a path to a tool-specific configuration file in your repository. For example, the following `coderabbit.yaml` excerpt directs CodeRabbit to use configuration files in the repository's `/pmd-config` directory when using the `pmd` tool:
+Several tools that CodeRabbit uses also allow you to specify a path to a tool-specific configuration file in your repository. For example, the following `.coderabbit.yaml` excerpt directs CodeRabbit to use configuration files in the repository's `/pmd-config` directory when using the `pmd` tool:
 
 ```yaml
 reviews:
