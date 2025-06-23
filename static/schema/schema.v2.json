@@ -690,6 +690,23 @@
 									"default": {},
 									"description": "ESLint is a static code analysis tool for JavaScript files."
 								},
+								"flake8": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Flake8 | Flake8 is a Python linter that wraps PyFlakes, pycodestyle and Ned Batchelder's McCabe script. | v7.2.0"
+										},
+										"config_file": {
+											"type": "string",
+											"description": "Optional path to the Flake8 configuration file relative to the repository. This is useful when the configuration file is named differently than the default '.flake8' or 'setup.cfg'."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Flake8 is a Python linter that wraps PyFlakes, pycodestyle and Ned Batchelder's McCabe script."
+								},
 								"rubocop": {
 									"type": "object",
 									"properties": {
@@ -1023,6 +1040,27 @@
 							},
 							"additionalProperties": false,
 							"default": {}
+						},
+						"code_guidelines": {
+							"type": "object",
+							"properties": {
+								"enabled": {
+									"type": "boolean",
+									"default": true,
+									"description": "Enabled | Enable CodeRabbit to enforce your organisation's coding standards during reviews."
+								},
+								"filePatterns": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									},
+									"default": [],
+									"description": "File Patterns | Specify files for your coding guideline documents in this section. CodeRabbit will scan these files to understand your team's standards and apply them during code reviews. Multiple files supported. File names are case-sensitive. Common files like: (**/.cursorrules, .github/copilot-instructions.md, **/CLAUDE.md, **/.cursor/rules/*, **/.windsurfrules, **/.clinerules/*, **/.rules/*) are included by default."
+								}
+							},
+							"additionalProperties": false,
+							"default": {},
+							"description": "CodeRabbit will analyse and learn from your organisation's code guidelines, which you can mention in the file patterns section. These guidelines will then be used to conduct thorough code reviews."
 						},
 						"learnings": {
 							"type": "object",
