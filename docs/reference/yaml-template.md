@@ -142,7 +142,7 @@ reviews:
     brakeman:
       enabled: true
     dotenvLint:
-	 enabled: true
+    enabled: true
     htmlhint: true
       enabled: true
       config_file: ''
