@@ -34,8 +34,7 @@ configuration in a YAML format. You can then copy the configuration to a
 :::
 
 You can add a `.coderabbit.yaml` configuration file to the root of your
-repositories. Below is a sample YAML file that can be used as a starting point
-and changed as needed:
+repositories. For a complete sample `.coderabbit.yaml` file which you can add to your repository and update as needed, see [Configuration file template](/reference/yaml-template).
 
 Write your configuration file in the below editor to validate:
 

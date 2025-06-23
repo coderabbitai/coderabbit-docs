@@ -167,6 +167,7 @@ const sidebars: SidebarsConfig = {
 				},
 				"reference/review-commands",
 				"reference/configuration",
+				"reference/yaml-template",
 				{
 					type: "category",
 					label: "Supported tools",
