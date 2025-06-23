@@ -27,7 +27,7 @@ To view of modify your repsository settings using the CodeRabbit web interface, 
 1. Visit [the CodeRabbit web interface](https://app.coderabbit.ai/settings/repositories).
 1. In the sidebar, click **Repositories**.
 1. Click the gear-shaped **Settings** icon of the repository whose settings you want to view or modify.
-1. If the **Use Organization Settings** toggle is on, then click it to turn it off. If you leave it on, then CodeRabbit applies the settings you have set through [the organization-configuration page](/guide/organization-settings) to this repository.
+1. If the **Use Organization Settings** toggle is on, then click it to turn it off. If you leave it on, then CodeRabbit applies the settings you have set through [the organization-configuration page](/guides/organization-settings) to this repository.
 1. Browse and modify the settings as needed. If you do make changes, click **Apply Changes** when you are finished.
 
 ## Configure your repository with `.coderabbit.yaml`
