@@ -5,8 +5,7 @@ sidebar_label: Overview
 ---
 
 After you finish [integrating CodeRabbit with your Git platform](/platforms/),
-you can configure CodeRabbit to best fit the needs of your organization, team,
-and individual code repositories.
+you can configure CodeRabbit to best fit the needs of your Git platform's organization and repositories.
 
 ## About CodeRabbit configuration
 
@@ -17,40 +16,37 @@ adding code reviews to new pull requests in your repositories.
 
 However, understanding how to configure CodeRabbit lets you tune its behavior
 to the particulars of your team's code. A few advantages of manually configuring
-CodeRabbit inlcude the following:
+CodeRabbit include the following:
 
-- Let CodeRabbit deliver its reviews more quickly by giving it guidance on the level of review detail you want.
-- Get more meaningful code reviews by specifying the parts of your repository that CodeRabbit should read to gain context.
-- Make sure that CodeRabbit works in compliance with your organiation's data-retention policies.
+- Adjust the level of detail in CodeRabbit code reviews.
+- Customize review instructions to meet your specific coding standards.
+- Take advantage of agentic workflows that can speed up your review cycles.
 
 ## Configuration methods {#methods}
 
 You can configure CodeRabbit in several ways, from global organization settings
-down to configuration directives for specific repositories:
+down to configuration directives for specific repositories.
 
-- Configure the default behavior of CodeRabbit
-  across your whole organization, using the CodeRabbit web UI.
-- Configure the behavior of CodeRabbit when reviewing pull requests in a specific repository. You can do this in two ways:
-  - Use the CodeRabbitweb UI.
-  - Add a `coderabbit.yaml` file to the top level of your repository.
+### Organization settings {#org}
 
-To determine its behavior with a specific repository, CodeRabbit applies the configuration methods in the following order of precedence, from highest to lowest:
+If you want to apply the same CodeRabbit configuration to all of your organization's repositories, then
+you can manage organizational settings using the CodeRabbit web UI.
 
-1. The [repository's `coderabbit.yaml` file](/getting-started/configure-coderabbit), if it has one.
-1. The [repository's settings](/guides/repository-settings) as they appear in the CodeRabbit web UI.
-1. The [organization's settings](/guides/organization-settings) as they appear in the CodeRabbit web UI.
+For more information, see [Set your organization preferences](/guides/organization-settings).
 
-If you are new to CodeRabbit, then we encourage you to explore the settings available through the CodeRabbit web UI
-to become familiar with the options available to you, and their default values.
+### Repository settings {#repo}
+
+If you want to apply separate CodeRabbit configuration to your organization's different repositories, then you can
+manage repository-specific CodeRabbit settings in two ways:
+
+- Use the CodeRabbit web interface.
+- Add a `coderabbit.yaml` file to the top level of your repository.
+
+For more information, see [Set your repository preferences](/guides/repository-settings).
+
+While the web interface provides and easier way to explore the available configuration options for your repository, we recommend using a `coderabbit.yaml` file as a best practice. For more information, see [Fine-tune reviews using YAML files](/guides/setup-best-practices#yaml).
 
 ## Initial configuration {#initial}
 
 The [Initial configuration guide](/guides/initial-configuration) tours you through several settings that we
 recommend that you review after you set up CodeRabbit with your organization.
-
-## What's next {#whats-next}
-
-- [Set your organization preferences](/guides/organization-settings)
-- [Set your repository preferences](/guides/repository-settings)
-- [Add a configuration file](/getting-started/configure-coderabbit)
-- [Initial configuration guide](/guides/initial-configuration)

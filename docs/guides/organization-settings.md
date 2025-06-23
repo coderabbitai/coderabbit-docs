@@ -1,10 +1,13 @@
 ---
-title: Set your orgnaization preferences
+title: Set your organization preferences
 description: Learn the basics of configuring CodeRabbit for your organization.
 ---
 
-This page is about managing the default settings of CodeRabbit for your
-organization. For a general overview of configuring CodeRabbit, see [Configure CodeRabbit](/guides/configuration-overview).
+This page is about managing the default settings of CodeRabbit across your
+whole Git platform organization. If you instead want to configure CodeRabbit
+separately for your organization's different repositories, then see [Set your repository preferences](/guides/repository-settings)
+
+For a general overview of configuring CodeRabbit, see [Configure CodeRabbit](/guides/configuration-overview).
 
 ## About organization settings {#about}
 
@@ -14,7 +17,7 @@ to review and set your organizational settings:
 
 - When you give CodeRabbit access to a new repository, CodeRabbit applies all of your
   organizational settings to that repository as defaults.
-- Some settings, such as [Data retention], apply only at the organizational level, with
+- Some settings, such as [Data retention](/reference/configuration#data-retention), apply only at the organizational level, with
   no per-repository equivalent.
 
 ## Browse and modify your organization settings {#modify}
@@ -28,4 +31,3 @@ To view or modify your organizational settings, follow these steps:
 ## What's next {#whats-next}
 
 - [Initial configuration guide](/guides/initial-configuration)
-- [Set your repository preferences](/guides/repository-settings)

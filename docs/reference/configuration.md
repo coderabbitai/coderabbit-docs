@@ -23,7 +23,7 @@ Each entry in this reference corresponds to a single CodeRabbit configuration se
 ### Data retention
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -35,7 +35,7 @@ Each entry in this reference corresponds to a single CodeRabbit configuration se
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     _This setting can be defined only in the web UI settings for your
     organization._
   </TabItem>
@@ -44,7 +44,7 @@ Each entry in this reference corresponds to a single CodeRabbit configuration se
 If `true`, then CodeRabbit is allowed to retain enough data about your code
 review history in order to enable the following features:
 
-- **Cacheing**: allows CodeRabbit to store data about your repository between
+- **Caching**: allows CodeRabbit to store data about your repository between
   code reviews, improving the speed of subsequent reviews.
 - **Knowledge base**: allows CodeRabbit to maintain its own database about
   your repository and your team's code review preferences, which can improve
@@ -59,7 +59,7 @@ If you re-enable data retention, then CodeRabbit re-enables these features, and 
 ### Early Access
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -71,7 +71,7 @@ If you re-enable data retention, then CodeRabbit re-enables these features, and 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -95,7 +95,7 @@ code reviews.
 ### Enable Free Tier
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -107,7 +107,7 @@ code reviews.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -132,7 +132,7 @@ For more information about payment tiers and features, see [Pricing](https://www
 ### Language
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -144,7 +144,7 @@ For more information about payment tiers and features, see [Pricing](https://www
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -168,7 +168,7 @@ to American English.
 ### Tone Instructions
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -180,7 +180,7 @@ to American English.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -215,7 +215,7 @@ A few possible examples:
 #### Abort On Close
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -227,7 +227,7 @@ A few possible examples:
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -250,7 +250,7 @@ Abort the in-progress review if the pull request is closed or merged.
 #### Assess Linked Issues
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -262,7 +262,7 @@ Abort the in-progress review if the pull request is closed or merged.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -280,7 +280,7 @@ Abort the in-progress review if the pull request is closed or merged.
   </TabItem>
 </Tabs>
 
-If enabled, then the reviews that CodeRabbit generates include assessments of how well a proposed code change issues that the pull request refers to. CodeRabbit considers issues referred to by number in the following locations:
+If enabled, then the reviews that CodeRabbit generates include assessments of how well a proposed code change addresses any issues that the pull request refers to. CodeRabbit considers issues referred to by number in the following locations:
 
 - The title of the pull request.
 - The description of the pull request.
@@ -297,7 +297,7 @@ and [Let CodeRabbit read your issue trakcer](https://docs.coderabbit.ai/guides/s
 #### Auto Apply Labels
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -309,7 +309,7 @@ and [Let CodeRabbit read your issue trakcer](https://docs.coderabbit.ai/guides/s
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -332,7 +332,7 @@ Automatically apply the suggested labels to the PR/MR.
 #### Auto Assign Reviewers
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -344,7 +344,7 @@ Automatically apply the suggested labels to the PR/MR.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -367,7 +367,7 @@ Automatically assign suggested reviewers to the pull request
 #### Auto Title Instructions
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -379,7 +379,7 @@ Automatically assign suggested reviewers to the pull request
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -402,7 +402,7 @@ Custom instructions for auto-generating the PR/MR title.
 #### Auto Title Placeholder
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -414,7 +414,7 @@ Custom instructions for auto-generating the PR/MR title.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -437,7 +437,7 @@ Add this keyword in the PR/MR title to auto-generate the title.
 #### Changed Files Summary
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -449,7 +449,7 @@ Add this keyword in the PR/MR title to auto-generate the title.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -472,7 +472,7 @@ Generate a summary of the changed files in the walkthrough.
 #### Collapse Walkthrough
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -484,7 +484,7 @@ Generate a summary of the changed files in the walkthrough.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -507,7 +507,7 @@ Generate walkthrough in a markdown collapsible section.
 #### Commit Status
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -519,7 +519,7 @@ Generate walkthrough in a markdown collapsible section.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -542,7 +542,7 @@ Set the commit status to 'pending' when the review is in progress and 'success' 
 #### Disable Cache
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -554,7 +554,7 @@ Set the commit status to 'pending' when the review is in progress and 'success' 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -591,7 +591,7 @@ all data retention, then your repositories won't keep a cache.
 #### Fail Commit Status
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -603,7 +603,7 @@ all data retention, then your repositories won't keep a cache.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -626,7 +626,7 @@ Set the commit status to 'failure' when the PR cannot be reviewed by CodeRabbit 
 #### High Level Summary
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -638,7 +638,7 @@ Set the commit status to 'failure' when the PR cannot be reviewed by CodeRabbit 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -661,7 +661,7 @@ Generate a high level summary of the changes in the PR/MR description.
 #### High Level Summary In Walkthrough
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -673,7 +673,7 @@ Generate a high level summary of the changes in the PR/MR description.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -696,7 +696,7 @@ Include the high level summary in the walkthrough comment.
 #### High Level Summary Placeholder
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -708,7 +708,7 @@ Include the high level summary in the walkthrough comment.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -731,7 +731,7 @@ Placeholder in the PR/MR description that gets replaced with the high level summ
 #### Labeling Instructions
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -743,7 +743,7 @@ Placeholder in the PR/MR description that gets replaced with the high level summ
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -766,7 +766,7 @@ Provide guidelines for suggesting labels for the PR/MR. When specific labels or 
 #### Path Filters
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -778,7 +778,7 @@ Provide guidelines for suggesting labels for the PR/MR. When specific labels or 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -829,7 +829,7 @@ For more information, see [Speed up reviews by adding path filters](https://docs
 #### Path Instructions
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -841,7 +841,7 @@ For more information, see [Speed up reviews by adding path filters](https://docs
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -892,7 +892,7 @@ see [the `awesome-coderabbit` public repository](https://github.com/coderabbitai
 #### Poem
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -904,7 +904,7 @@ see [the `awesome-coderabbit` public repository](https://github.com/coderabbitai
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -927,7 +927,7 @@ Generate a poem in the walkthrough comment.
 #### Profile {#profile}
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -939,7 +939,7 @@ Generate a poem in the walkthrough comment.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -970,7 +970,7 @@ contexts. The `Assertive` profile mode can get quite nitpicky in some circumstan
 #### Related Issues
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -982,7 +982,7 @@ contexts. The `Assertive` profile mode can get quite nitpicky in some circumstan
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1005,7 +1005,7 @@ Include possibly related issues in the walkthrough.
 #### Related PRs
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1017,7 +1017,7 @@ Include possibly related issues in the walkthrough.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1040,7 +1040,7 @@ Include possibly related pull requests in the walkthrough.
 #### Request Changes Workflow
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1052,7 +1052,7 @@ Include possibly related pull requests in the walkthrough.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1080,7 +1080,7 @@ to require before a pull request can be merged.
 #### Review Status
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1092,7 +1092,7 @@ to require before a pull request can be merged.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1115,7 +1115,7 @@ Post review details on each review. Additionally, post a review status when a re
 #### Sequence Diagrams
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1127,7 +1127,7 @@ Post review details on each review. Additionally, post a review status when a re
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1150,7 +1150,7 @@ Generate sequence diagrams in the walkthrough.
 #### Suggested Labels
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1162,7 +1162,7 @@ Generate sequence diagrams in the walkthrough.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1185,7 +1185,7 @@ Suggest labels based on the changes in the pull request in the walkthrough.
 #### Suggested Reviewers
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1197,7 +1197,7 @@ Suggest labels based on the changes in the pull request in the walkthrough.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1222,7 +1222,7 @@ Suggest reviewers based on the changes in the pull request in the walkthrough.
 #### Enable Automatic Review
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1234,7 +1234,7 @@ Suggest reviewers based on the changes in the pull request in the walkthrough.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1261,7 +1261,7 @@ Disabling this setting also effectively disables all of the other settings liste
 #### Automatic Incremental Review
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1273,7 +1273,7 @@ Disabling this setting also effectively disables all of the other settings liste
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1291,10 +1291,7 @@ Disabling this setting also effectively disables all of the other settings liste
   </TabItem>
 </Tabs>
 
-If enabled, then CodeRabbit automatically performs incremental reviews of pull requests that it has already reviewed, and you must manually request full reviews.
-
-If disabled, then CodeRabbit always performs full reviews, and you must manually request
-incremental reviews.
+If enabled, then CodeRabbit performs automatic reviews of existing pull requests when their associated branches have commits pushed to them. These incremental reviews happen in addition to the initial code review that CodeRabbit generates after the pull request is first created.
 
 For more information on manual review commands, see [Manually request code reviews](/guides/code-review-overview#review).
 
@@ -1303,7 +1300,7 @@ We recommend leaving this option enabled.
 #### Base Branches
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1315,7 +1312,7 @@ We recommend leaving this option enabled.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1342,7 +1339,7 @@ reviews pull requests on both your repository's default branch and its `staging`
 #### Drafts
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1354,7 +1351,7 @@ reviews pull requests on both your repository's default branch and its `staging`
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1378,7 +1375,7 @@ in your Git platform.
 #### Ignore Title Keywords
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1390,7 +1387,7 @@ in your Git platform.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1413,7 +1410,7 @@ Ignore reviewing if the title of the pull request contains any of these keywords
 #### Labels
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1425,7 +1422,7 @@ Ignore reviewing if the title of the pull request contains any of these keywords
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1453,7 +1450,7 @@ In this case, you can manually request reviews of pull requests lacking a qualif
 #### Docstrings
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1465,7 +1462,7 @@ In this case, you can manually request reviews of pull requests lacking a qualif
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1489,7 +1486,7 @@ added in a pull request. For more information, see [Docstrings](/finishing-touch
 #### Unit Tests
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1501,7 +1498,7 @@ added in a pull request. For more information, see [Docstrings](/finishing-touch
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1527,7 +1524,7 @@ added in a pull request. For more information, see [Unit Test Generation](/finis
 ### Auto Reply
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1539,7 +1536,7 @@ added in a pull request. For more information, see [Unit Test Generation](/finis
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1564,7 +1561,7 @@ Enable the bot to reply automatically without requiring the user to tag it.
 ### Jira
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1576,7 +1573,7 @@ Enable the bot to reply automatically without requiring the user to tag it.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1599,7 +1596,7 @@ Enable the Jira integration for opening issues, etc. 'auto' disables the integra
 ### Linear
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1611,7 +1608,7 @@ Enable the Jira integration for opening issues, etc. 'auto' disables the integra
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1638,7 +1635,7 @@ Enable the Linear integration for opening issues, etc. 'auto' disables the integ
 #### Opt Out
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1650,7 +1647,7 @@ Enable the Linear integration for opening issues, etc. 'auto' disables the integ
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1673,7 +1670,7 @@ Disable all knowledge base features that require data retention. If you opt out 
 #### Pull Requests
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1685,7 +1682,7 @@ Disable all knowledge base features that require data retention. If you opt out 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1708,7 +1705,7 @@ Specify the scope of pull requests to use for the knowledge base. 'local' uses t
 #### Web Search
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1720,7 +1717,7 @@ Specify the scope of pull requests to use for the knowledge base. 'local' uses t
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1743,7 +1740,7 @@ Enable the web search integration.
 ### Issues
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1755,7 +1752,7 @@ Enable the web search integration.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1780,7 +1777,7 @@ Specify the scope of git platform (GitHub/GitLab) issues to use for the knowledg
 #### Enable Jira
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1792,7 +1789,7 @@ Specify the scope of git platform (GitHub/GitLab) issues to use for the knowledg
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1815,7 +1812,7 @@ Enable the Jira knowledge base integration. 'auto' disables the integration for 
 #### Project Keys
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1827,7 +1824,7 @@ Enable the Jira knowledge base integration. 'auto' disables the integration for 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1850,7 +1847,7 @@ Specify the Jira project keys to use for the knowledge base.
 ### Learnings
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1862,7 +1859,7 @@ Specify the Jira project keys to use for the knowledge base.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1887,7 +1884,7 @@ Specify the scope of learnings to use for the knowledge base. 'local' uses the r
 #### Enable Linear
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1899,7 +1896,7 @@ Specify the scope of learnings to use for the knowledge base. 'local' uses the r
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1922,7 +1919,7 @@ Enable the Linear knowledge base integration. 'auto' disables the integration fo
 #### Team Keys
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1934,7 +1931,7 @@ Enable the Linear knowledge base integration. 'auto' disables the integration fo
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1959,7 +1956,7 @@ Specify the Linear team keys (identifiers) to use for the knowledge base. E.g. '
 ### Code Generation Language
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -1971,7 +1968,7 @@ Specify the Linear team keys (identifiers) to use for the knowledge base. E.g. '
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -1994,7 +1991,7 @@ Set the language for docstrings by using the corresponding ISO language code.
 ### Docstring Path Instructions
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2006,7 +2003,7 @@ Set the language for docstrings by using the corresponding ISO language code.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2029,7 +2026,7 @@ Provide additional guidelines for docstring generation based on file paths.
 ### Unit Test Path Instructions
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2041,7 +2038,7 @@ Provide additional guidelines for docstring generation based on file paths.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2072,7 +2069,7 @@ actionlint is a static checker for GitHub Actions workflow files.
 #### Enable actionlint
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2084,7 +2081,7 @@ actionlint is a static checker for GitHub Actions workflow files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2111,7 +2108,7 @@ Enable ast-grep | ast-grep is a code analysis tool that helps you to find patter
 #### Essential Rules
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2123,7 +2120,7 @@ Enable ast-grep | ast-grep is a code analysis tool that helps you to find patter
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2146,7 +2143,7 @@ Use ast-grep essentials package.
 #### Packages
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2158,7 +2155,7 @@ Use ast-grep essentials package.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2181,7 +2178,7 @@ Predefined packages to be used.
 #### Rule Dirs
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2193,7 +2190,7 @@ Predefined packages to be used.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2216,7 +2213,7 @@ List of rules directories.
 #### Util Dirs
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2228,7 +2225,7 @@ List of rules directories.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2255,7 +2252,7 @@ Biome is a fast formatter, linter, and analyzer for web projects.
 #### Enable Biome
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2267,7 +2264,7 @@ Biome is a fast formatter, linter, and analyzer for web projects.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2294,7 +2291,7 @@ Brakeman is a static analysis security vulnerability scanner for Ruby on Rails a
 #### Enable Brakeman
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2306,7 +2303,7 @@ Brakeman is a static analysis security vulnerability scanner for Ruby on Rails a
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2333,7 +2330,7 @@ Buf offers linting for Protobuf files.
 #### Enable Buf
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2345,7 +2342,7 @@ Buf offers linting for Protobuf files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2372,7 +2369,7 @@ checkmake is a linter for Makefiles.
 #### Enable checkmake
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2384,7 +2381,7 @@ checkmake is a linter for Makefiles.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2411,7 +2408,7 @@ Checkov is a static code analysis tool for infrastructure-as-code files.
 #### Enable Checkov
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2423,7 +2420,7 @@ Checkov is a static code analysis tool for infrastructure-as-code files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2450,7 +2447,7 @@ CircleCI tool is a static checker for CircleCI config files.
 #### Enable CircleCI
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2462,7 +2459,7 @@ CircleCI tool is a static checker for CircleCI config files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2489,7 +2486,7 @@ Clippy is a collection of lints to catch common mistakes and improve your Rust c
 #### Enable Clippy
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2501,7 +2498,7 @@ Clippy is a collection of lints to catch common mistakes and improve your Rust c
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2528,7 +2525,7 @@ Cppcheck is a static code analysis tool for the C and C++ programming languages.
 #### Enable Cppcheck
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2540,7 +2537,7 @@ Cppcheck is a static code analysis tool for the C and C++ programming languages.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2564,10 +2561,45 @@ Cppcheck is a static code analysis tool for the C and C++ programming languages.
 
 Detekt is a static code analysis tool for Kotlin files.
 
+#### Enable detekt
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review > Tools > detekt > Enable</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </table>
+  </TabItem>
+  <TabItem value="yaml" label="coderabbit.yaml" default>
+    <table>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.detekt.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </table>
+  </TabItem>
+</Tabs>
+
+Enable detekt.
+
 #### Config File
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2579,7 +2611,7 @@ Detekt is a static code analysis tool for Kotlin files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2599,41 +2631,6 @@ Detekt is a static code analysis tool for Kotlin files.
 
 Optional path to the detekt configuration file relative to the repository.
 
-#### Enable detekt
-
-<Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
-    <table>
-      <tr>
-        <td><strong>Location</strong></td>
-        <td>Review > Tools > detekt > Enable</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>true</td>
-      </tr>
-    </table>
-  </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
-    <table>
-      <tr>
-        <td><strong>Field</strong></td>
-        <td>`reviews.tools.detekt.enabled`</td>
-      </tr>
-      <tr>
-        <td><strong>Datatype</strong></td>
-        <td>boolean</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>true</td>
-      </tr>
-    </table>
-  </TabItem>
-</Tabs>
-
-detekt is a static code analysis tool for Kotlin files.
-
 ### dotenv-linter
 
 dotenv-linter is a tool for checking and fixing .env files for problems and best practices
@@ -2641,7 +2638,7 @@ dotenv-linter is a tool for checking and fixing .env files for problems and best
 #### Enable dotenv-linter
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2653,7 +2650,7 @@ dotenv-linter is a tool for checking and fixing .env files for problems and best
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2680,7 +2677,7 @@ ESLint is a static code analysis tool for JavaScript files.
 #### Enable ESLint
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2692,7 +2689,7 @@ ESLint is a static code analysis tool for JavaScript files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2719,7 +2716,7 @@ GitHub Checks integration configuration.
 #### Enable GitHub Checks
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2731,7 +2728,7 @@ GitHub Checks integration configuration.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2754,7 +2751,7 @@ Enable integration, defaults to true
 #### Timeout Ms
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2766,7 +2763,7 @@ Enable integration, defaults to true
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2793,7 +2790,7 @@ Gitleaks is a secret scanner.
 #### Enable Gitleaks
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2805,7 +2802,7 @@ Gitleaks is a secret scanner.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2829,10 +2826,45 @@ Gitleaks is a secret scanner.
 
 golangci-lint is a fast linters runner for Go.
 
+#### Enable golangci-lint
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review > Tools > golangci-lint > Enable</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </table>
+  </TabItem>
+  <TabItem value="yaml" label="coderabbit.yaml" default>
+    <table>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.golangci-lint.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </table>
+  </TabItem>
+</Tabs>
+
+Enable golangci-lint.
+
 #### Config File
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2844,7 +2876,7 @@ golangci-lint is a fast linters runner for Go.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2864,41 +2896,6 @@ golangci-lint is a fast linters runner for Go.
 
 Optional path to the golangci-lint configuration file relative to the repository. Useful when the configuration file is named differently than the default '.golangci.yml', '.golangci.yaml', '.golangci.toml', '.golangci.json'.
 
-#### Enable golangci-lint
-
-<Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
-    <table>
-      <tr>
-        <td><strong>Location</strong></td>
-        <td>Review > Tools > golangci-lint > Enable</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>true</td>
-      </tr>
-    </table>
-  </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
-    <table>
-      <tr>
-        <td><strong>Field</strong></td>
-        <td>`reviews.tools.golangci-lint.enabled`</td>
-      </tr>
-      <tr>
-        <td><strong>Datatype</strong></td>
-        <td>boolean</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>true</td>
-      </tr>
-    </table>
-  </TabItem>
-</Tabs>
-
-golangci-lint is a fast linters runner for Go.
-
 ### Hadolint
 
 Hadolint is a Dockerfile linter.
@@ -2906,7 +2903,7 @@ Hadolint is a Dockerfile linter.
 #### Enable Hadolint
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2918,7 +2915,7 @@ Hadolint is a Dockerfile linter.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2942,10 +2939,45 @@ Hadolint is a Dockerfile linter.
 
 HTMLHint is a static code analysis tool for HTML files.
 
+#### Enable HTMLHint
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review > Tools > HTMLHint > Enable</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </table>
+  </TabItem>
+  <TabItem value="yaml" label="coderabbit.yaml" default>
+    <table>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.htmlhint.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </table>
+  </TabItem>
+</Tabs>
+
+Enable HTMLHint.
+
 #### Config File
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -2957,7 +2989,7 @@ HTMLHint is a static code analysis tool for HTML files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -2977,41 +3009,6 @@ HTMLHint is a static code analysis tool for HTML files.
 
 Optional path to the HTMLHint configuration file relative to the repository. This is useful when the configuration file is named differently than the default '.htmlhintrc'.
 
-#### Enable HTMLHint
-
-<Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
-    <table>
-      <tr>
-        <td><strong>Location</strong></td>
-        <td>Review > Tools > HTMLHint > Enable</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>true</td>
-      </tr>
-    </table>
-  </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
-    <table>
-      <tr>
-        <td><strong>Field</strong></td>
-        <td>`reviews.tools.htmlhint.enabled`</td>
-      </tr>
-      <tr>
-        <td><strong>Datatype</strong></td>
-        <td>boolean</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>true</td>
-      </tr>
-    </table>
-  </TabItem>
-</Tabs>
-
-HTMLHint is a static code analysis tool for HTML files.
-
 ### LanguageTool
 
 LanguageTool is a style and grammar checker for 30+ languages.
@@ -3019,7 +3016,7 @@ LanguageTool is a style and grammar checker for 30+ languages.
 #### Disabled Categories
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3031,7 +3028,7 @@ LanguageTool is a style and grammar checker for 30+ languages.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3054,7 +3051,7 @@ IDs of categories to be disabled. Note: TYPOS, TYPOGRAPHY, and CASING are always
 #### Disabled Rules
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3066,7 +3063,7 @@ IDs of categories to be disabled. Note: TYPOS, TYPOGRAPHY, and CASING are always
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3089,7 +3086,7 @@ IDs of rules to be disabled. Note: EN_UNPAIRED_BRACKETS, and EN_UNPAIRED_QUOTES 
 #### Enable LanguageTool
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3101,7 +3098,7 @@ IDs of rules to be disabled. Note: EN_UNPAIRED_BRACKETS, and EN_UNPAIRED_QUOTES 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3124,7 +3121,7 @@ Enable LanguageTool
 #### Enabled Categories
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3136,7 +3133,7 @@ Enable LanguageTool
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3159,7 +3156,7 @@ IDs of categories to be enabled.
 #### Enabled Only
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3171,7 +3168,7 @@ IDs of categories to be enabled.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3194,7 +3191,7 @@ Only the rules and categories whose IDs are specified with 'enabledRules' or 'en
 #### Enabled Rules
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3206,7 +3203,7 @@ Only the rules and categories whose IDs are specified with 'enabledRules' or 'en
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3229,7 +3226,7 @@ IDs of rules to be enabled. The rule won't run unless 'level' is set to a level 
 #### Level
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3241,7 +3238,7 @@ IDs of rules to be enabled. The rule won't run unless 'level' is set to a level 
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3268,7 +3265,7 @@ Configuration for Lua code linting to ensure code quality
 #### Enable Luacheck
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3280,7 +3277,7 @@ Configuration for Lua code linting to ensure code quality
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3307,7 +3304,7 @@ markdownlint-cli2 is a static analysis tool to enforce standards and consistency
 #### Enable markdownlint
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3319,7 +3316,7 @@ markdownlint-cli2 is a static analysis tool to enforce standards and consistency
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3346,7 +3343,7 @@ OXC is a JavaScript/TypeScript linter written in Rust.
 #### Enable OXC
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3358,7 +3355,7 @@ OXC is a JavaScript/TypeScript linter written in Rust.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3385,7 +3382,7 @@ PHPStan is a tool to analyze PHP code.
 #### Enable PHPStan
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3397,7 +3394,7 @@ PHPStan is a tool to analyze PHP code.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3420,7 +3417,7 @@ PHPStan requires [config file](https://phpstan.org/config-reference#config-file)
 #### Level
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3432,7 +3429,7 @@ PHPStan requires [config file](https://phpstan.org/config-reference#config-file)
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3456,10 +3453,45 @@ Specify the [rule level](https://phpstan.org/user-guide/rule-levels) to run. Thi
 
 PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java.
 
+#### Enable PMD
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review > Tools > PMD > Enable</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </table>
+  </TabItem>
+  <TabItem value="yaml" label="coderabbit.yaml" default>
+    <table>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.pmd.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </table>
+  </TabItem>
+</Tabs>
+
+Enable PMD.
+
 #### Config File
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3471,7 +3503,7 @@ PMD is an extensible multilanguage static code analyzer. It’s mainly concerned
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3491,41 +3523,6 @@ PMD is an extensible multilanguage static code analyzer. It’s mainly concerned
 
 Optional path to the PMD configuration file relative to the repository.
 
-#### Enable PMD
-
-<Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
-    <table>
-      <tr>
-        <td><strong>Location</strong></td>
-        <td>Review > Tools > PMD > Enable</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>true</td>
-      </tr>
-    </table>
-  </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
-    <table>
-      <tr>
-        <td><strong>Field</strong></td>
-        <td>`reviews.tools.pmd.enabled`</td>
-      </tr>
-      <tr>
-        <td><strong>Datatype</strong></td>
-        <td>boolean</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>true</td>
-      </tr>
-    </table>
-  </TabItem>
-</Tabs>
-
-PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java.
-
 ### Prisma Schema Linting
 
 Configuration for Prisma Schema linting to ensure schema file quality
@@ -3533,7 +3530,7 @@ Configuration for Prisma Schema linting to ensure schema file quality
 #### Enable Prisma Schema Linting
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3545,7 +3542,7 @@ Configuration for Prisma Schema linting to ensure schema file quality
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3572,7 +3569,7 @@ Pylint is a Python static code analysis tool.
 #### Enable Pylint
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3584,7 +3581,7 @@ Pylint is a Python static code analysis tool.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3611,7 +3608,7 @@ Regal is a linter and language server for Rego.
 #### Enable Regal
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3623,7 +3620,7 @@ Regal is a linter and language server for Rego.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3650,7 +3647,7 @@ RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter.
 #### Enable RuboCop
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3662,7 +3659,7 @@ RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3689,7 +3686,7 @@ Ruff is a Python linter and code formatter.
 #### Enable Ruff
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3701,7 +3698,7 @@ Ruff is a Python linter and code formatter.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3725,10 +3722,45 @@ Ruff is a Python linter and code formatter.
 
 Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues.
 
+#### Enable Semgrep
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review > Tools > Semgrep > Enable</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </table>
+  </TabItem>
+  <TabItem value="yaml" label="coderabbit.yaml" default>
+    <table>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.semgrep.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </table>
+  </TabItem>
+</Tabs>
+
+Enable Semgrep.
+
 #### Config File
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3740,7 +3772,7 @@ Semgrep is a static analysis tool designed to scan code for security vulnerabili
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3760,41 +3792,6 @@ Semgrep is a static analysis tool designed to scan code for security vulnerabili
 
 Optional path to the Semgrep configuration file relative to the repository.
 
-#### Enable Semgrep
-
-<Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
-    <table>
-      <tr>
-        <td><strong>Location</strong></td>
-        <td>Review > Tools > Semgrep > Enable</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>true</td>
-      </tr>
-    </table>
-  </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
-    <table>
-      <tr>
-        <td><strong>Field</strong></td>
-        <td>`reviews.tools.semgrep.enabled`</td>
-      </tr>
-      <tr>
-        <td><strong>Datatype</strong></td>
-        <td>boolean</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>true</td>
-      </tr>
-    </table>
-  </TabItem>
-</Tabs>
-
-Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues.
-
 ### ShellCheck
 
 ShellCheck is a static analysis tool that finds bugs in your shell scripts.
@@ -3802,7 +3799,7 @@ ShellCheck is a static analysis tool that finds bugs in your shell scripts.
 #### Enable ShellCheck
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3814,7 +3811,7 @@ ShellCheck is a static analysis tool that finds bugs in your shell scripts.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3841,7 +3838,7 @@ Configuration for Shopify Theme Check to ensure theme quality and best practices
 #### Enable Shopify Theme Check
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3853,7 +3850,7 @@ Configuration for Shopify Theme Check to ensure theme quality and best practices
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3880,7 +3877,7 @@ SQLFluff is an open source, dialect-flexible and configurable SQL linter.
 #### Enable SQLFluff
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3892,7 +3889,7 @@ SQLFluff is an open source, dialect-flexible and configurable SQL linter.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3916,10 +3913,45 @@ SQLFluff is an open source, dialect-flexible and configurable SQL linter.
 
 SwiftLint integration configuration object.
 
+#### Enable SwiftLint
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review > Tools > SwiftLint > Enable</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </table>
+  </TabItem>
+  <TabItem value="yaml" label="coderabbit.yaml" default>
+    <table>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.swiftlint.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </table>
+  </TabItem>
+</Tabs>
+
+Enable SwiftLint.
+
 #### Config File
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -3931,7 +3963,7 @@ SwiftLint integration configuration object.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
@@ -3951,41 +3983,6 @@ SwiftLint integration configuration object.
 
 Optional path to the SwiftLint configuration file relative to the repository. This is useful when the configuration file is named differently than the default '.swiftlint.yml' or '.swiftlint.yaml'.
 
-#### Enable SwiftLint
-
-<Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
-    <table>
-      <tr>
-        <td><strong>Location</strong></td>
-        <td>Review > Tools > SwiftLint > Enable</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>true</td>
-      </tr>
-    </table>
-  </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
-    <table>
-      <tr>
-        <td><strong>Field</strong></td>
-        <td>`reviews.tools.swiftlint.enabled`</td>
-      </tr>
-      <tr>
-        <td><strong>Datatype</strong></td>
-        <td>boolean</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>true</td>
-      </tr>
-    </table>
-  </TabItem>
-</Tabs>
-
-SwiftLint is a Swift linter.
-
 ### YAMLlint
 
 YAMLlint is a linter for YAML files.
@@ -3993,7 +3990,7 @@ YAMLlint is a linter for YAML files.
 #### Enable YAMLlint
 
 <Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI" default>
+  <TabItem value="web-ui" label="Web UI">
     <table>
       <tr>
         <td><strong>Location</strong></td>
@@ -4005,7 +4002,7 @@ YAMLlint is a linter for YAML files.
       </tr>
     </table>
   </TabItem>
-  <TabItem value="yaml" label="coderabbit.yaml">
+  <TabItem value="yaml" label="coderabbit.yaml" default>
     <table>
       <tr>
         <td><strong>Field</strong></td>
