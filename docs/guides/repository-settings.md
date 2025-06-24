@@ -39,5 +39,5 @@ To view or modify your repository settings using the CodeRabbit web interface, f
 
 ## What's next {#whats-next}
 
-- [Configuration best practices](/guides/setup-best-practices#configuration)
 - [Initial configuration guide](/guides/initial-configuration)
+- [Configuration best practices](/guides/setup-best-practices#configuration)

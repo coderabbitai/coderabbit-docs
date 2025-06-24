@@ -27,3 +27,4 @@ To view or modify your organizational settings, follow these steps:
 ## What's next {#whats-next}
 
 - [Initial configuration guide](/guides/initial-configuration)
+- [Configuration best practices](/guides/setup-best-practices#configuration)
