@@ -13,12 +13,17 @@ CodeRabbit provides two ways to manage its code-review behavior with each of you
 - Add a `.coderabbit.yaml` file to your repository.
 - View or modify your per-repository settings using the CodeRabbit web interface.
 
-Any settings that you define in the `.coderabbit.yaml` file take precedence over
-settings defined by the web interface. If your repository doesn't have a
-`.coderabbit.yaml` file, then CodeRabbit applies only the settings from the web
-interface.
+If your repository contains a `.coderabbit.yaml` file at the top level of its default branch,
+then CodeRabbit applies all of its settings to that repository's code reviews. CodeRabbit applies its own default values to any configuration settings not defined by your `.coderabbit.yaml` file.
 
-While the web interface provides and easier way to explore the available configuration options for your repository, we recommend using a `.coderabbit.yaml` file as a best practice. For more information, see [Fine-tune reviews using YAML files](/guides/setup-best-practices#yaml).
+If your repository doesn't have a `.coderabbit.yaml` file, then CodeRabbit applies the configuration from the CodeRabbit web interface, instead.
+
+While the web interface provides an easier way to explore the available configuration options for your repository, we recommend using a `.coderabbit.yaml` file as a best practice. For more information, see [Fine-tune reviews using YAML files](/guides/setup-best-practices#yaml).
+
+## Configure your repository with `.coderabbit.yaml`
+
+For more information about creating and updating a `.coderabbit.yaml` file in
+your repository, see [Add a configuration file](/getting-started/configure-coderabbit).
 
 ## Browse and modify your settings using the web interface {#modify}
 
@@ -29,11 +34,6 @@ To view or modify your repository settings using the CodeRabbit web interface, f
 1. Click the gear-shaped **Settings** icon of the repository whose settings you want to view or modify.
 1. If the **Use Organization Settings** toggle is on, then click it to turn it off. If you leave it on, then CodeRabbit applies the settings you have set through [the organization-configuration page](/guides/organization-settings) to this repository.
 1. Browse and modify the settings as needed. If you do make changes, click **Apply Changes** when you are finished.
-
-## Configure your repository with `.coderabbit.yaml`
-
-For more information about creating and updating a `.coderabbit.yaml` file in
-your repository, see [Add a configuration file](/getting-started/configure-coderabbit).
 
 ## What's next {#whats-next}
 
