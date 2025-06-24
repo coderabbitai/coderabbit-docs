@@ -20,25 +20,7 @@ for a while, when you feel ready to customize its behavior.
 
 Each section in the guide links to specific entries in the configuration reference. Each entry in the linked reference specifies the location of its configuration setting, in either the CodeRabbit web UI or your `.coderabbit.yaml` file.
 
-## General settings {#general}
-
-These settings adjust overall CodeRabbit code review behavior.
-
-### Adjust code-review strictness {#profile}
-
-If you want CodeRabbit to apply a much stricter and more nitpicky stance to its code reviews, then you can switch its _profile_ setting from `chill` to `assertive`.
-
-CodeRabbit is aware of nitpickier output from the linters and other tools that it applies to code reviews, but includes less of it in its own review comments when the profile is set to `chill`. To have CodeRabbit include more nitpicky tool output in reviews, use the `assertive` profile.
-
-For more information, see [Profile](/reference/configuration#profile) in the configuration reference.
-
-### Configure learnings {#learnings}
-
-By default, CodeRabbit learns your team's review preferences by letting you [teach it your preferences in plain language during code reviews](/integrations/knowledge-base#learnings). CodeRabbit remembers these preferences, and applies them to subsequent code reviews in the same repository.
-
-If you don't want this feature, you can disable it. For more information, see [Learnings](/reference/configuration#learnings) in the configuration reference.
-
-## Data retention settings {#data-retention}
+## Data retention and knowledge base settings {#data-retention}
 
 These settings help you control how much data about your code that CodeRabbit retains.
 CodeRabbit temporarily stores information about your repositories in order to tailored reviews more quickly and better tailored to your team's needs. You can opt of these features if your organization has stricter data-retention policies.
@@ -68,10 +50,16 @@ For more information, see
 
 ### Configure knowledge base retention {#opt-out}
 
-By default, CodeRabbit keeps its own [_knowledge base_](/integrations/knowledge-base): a store of metadata about your repositories, your team's history of pull requests, linked issues, and [learnings] about how CodeRabbit should tailor its own review behavior to best serve your team. If this long-term knowledge base storage conflicts with your organization's data-retention policies, then you can disable this feature.
+By default, CodeRabbit keeps its own [_knowledge base_](/integrations/knowledge-base): a store of metadata about your repositories, your team's history of pull requests, linked issues, and learnings about how CodeRabbit should tailor its own review behavior to best serve your team. If this long-term knowledge base storage conflicts with your organization's data-retention policies, then you can disable this feature.
 
 For more information, see
 [Opt out](/reference/configuration#opt-out) in the configuration reference.
+
+### Configure learnings {#learnings}
+
+CodeRabbit learns your team's review preferences by letting you [teach it your preferences in plain language during code reviews](/integrations/knowledge-base#learnings). CodeRabbit remembers these preferences, and applies them to subsequent code reviews in the same repository.
+
+This setting lets you set the scope of which stored learnings that CodeRabbit should apply to its code reviews. For more information, see [Learnings](/reference/configuration#learnings) in the configuration reference.
 
 ## Tune the length of code reviews {#content}
 
@@ -175,6 +163,14 @@ reviews:
 For more information, see [Tools](/reference/configuration#tools) in the configuration reference.
 
 ## Other code review settings {#other}
+
+### Adjust code-review strictness {#profile}
+
+If you want CodeRabbit to apply a much stricter and more nitpicky stance to its code reviews, then you can switch its _profile_ setting from `chill` to `assertive`.
+
+CodeRabbit is aware of nitpickier output from the linters and other tools that it applies to code reviews, but includes less of it in its own review comments when the profile is set to `chill`. To have CodeRabbit include more nitpicky tool output in reviews, use the `assertive` profile.
+
+For more information, see [Profile](/reference/configuration#profile) in the configuration reference.
 
 ### Configure pull request approval {#request-changes}
 

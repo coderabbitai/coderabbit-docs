@@ -22,8 +22,10 @@ While the web interface provides an easier way to explore the available configur
 
 ## Configure your repository with `.coderabbit.yaml`
 
-For more information about creating and updating a `.coderabbit.yaml` file in
-your repository, see [Add a configuration file](/getting-started/configure-coderabbit).
+To add a `.coderabbit.yaml` file to your repository, merge a copy of [our template configuration file](/reference/yaml-template)
+to the top level of your default branch. From there, you can update your repository's CodeRabbit configuration by updating the `.coderabbit.yaml` file exactly as you would any other text file in your repository.
+
+For more information about the `.coderabbit.yaml` file, see [Add a configuration file](/getting-started/configure-coderabbit).
 
 ## Browse and modify your settings using the web interface {#modify}
 
