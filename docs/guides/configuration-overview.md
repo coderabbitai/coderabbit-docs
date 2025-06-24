@@ -44,7 +44,7 @@ manage repository-specific CodeRabbit settings in two ways:
 
 For more information, see [Set your repository preferences](/guides/repository-settings).
 
-While the web interface provides and easier way to explore the available configuration options for your repository, we recommend using a `.coderabbit.yaml` file as a best practice. For more information, see [Fine-tune reviews using YAML files](/guides/setup-best-practices#yaml).
+While the web interface provides and easier way to explore the available configuration options for your repository, we recommend using a `.coderabbit.yaml` file [as a best practice](/guides/setup-best-practices#yaml).
 
 ## Initial configuration {#initial}
 

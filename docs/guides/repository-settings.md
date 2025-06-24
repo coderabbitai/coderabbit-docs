@@ -18,7 +18,7 @@ then CodeRabbit applies all of its settings to that repository's code reviews. C
 
 If your repository doesn't have a `.coderabbit.yaml` file, then CodeRabbit applies the configuration from the CodeRabbit web interface, instead.
 
-While the web interface provides an easier way to explore the available configuration options for your repository, we recommend using a `.coderabbit.yaml` file as a best practice. For more information, see [Fine-tune reviews using YAML files](/guides/setup-best-practices#yaml).
+While the web interface provides an easier way to explore the available configuration options for your repository, we recommend using a `.coderabbit.yaml` file [as a best practice](/guides/setup-best-practices#yaml).
 
 ## Configure your repository with `.coderabbit.yaml`
 
