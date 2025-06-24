@@ -22,3 +22,21 @@ Or you can comment directly on some lines of code in the PR. `@coderabbitai do n
 Watch our [video walkthrough on learnings](https://www.youtube.com/watch?v=Yu0cmmOYA-U) for more information.
 
 :::
+
+## Code Guidelines {#code_guidelines}
+
+CodeRabbit will analyse and learn from your organisation's code guidelines, which you can set up in the knowledge base section. These guidelines will then be used to conduct thorough code reviews.
+
+The following patterns are scanned by default.
+
+```text
+**/.cursorrules
+.github/copilot-instructions.md
+**/CLAUDE.md
+**/.cursor/rules/*
+**/.windsurfrules
+**/.clinerules/*
+**/.rules/*
+```
+
+![Illustration of code guidelines configuration](/img/knowledge-base/code-guidelines.png)
