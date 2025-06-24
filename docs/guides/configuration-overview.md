@@ -39,8 +39,8 @@ For more information, see [Set your organization preferences](/guides/organizati
 If you want to apply separate CodeRabbit configuration to your organization's different repositories, then you can
 manage repository-specific CodeRabbit settings in two ways:
 
-- Use the CodeRabbit web interface.
 - Add a `.coderabbit.yaml` file to the top level of your repository.
+- Use the CodeRabbit web interface.
 
 For more information, see [Set your repository preferences](/guides/repository-settings).
 

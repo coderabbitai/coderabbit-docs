@@ -32,31 +32,9 @@ CodeRabbit is aware of nitpickier output from the linters and other tools that i
 
 For more information, see [Profile](/reference/configuration#profile) in the configuration reference.
 
-### Configure pull request approval {#request-changes}
-
-By default, CodeRabbit doesn't mark pull requests as approved after any code review, even if CodeRabbit doesn't have any further significant changes to suggest. This leaves the job of formal pull request approval entirely up to human reviewers.
-
-If you want to allow CodeRabbit to mark pull requests as approved, then you can enable the _request changes workflow_ setting. If you do, then CodeRabbit can approve pull requests after it reviewed a pull request and had all of its comments resolved.
-
-This can be useful if you have a workflow that requires several reviewers to approve a pull request before anyone can merge it. For example, if you have configured your repository on your Git platform to require two approvals for any pull request, then activating this CodeRabbit setting lets you merge a pull request after approval from CodeRabbit plus one human reviewer. This can help reduce your team's code-review load.
-
-:::note
-We recommend a policy of always requiring the approval of at least one human reviewer, even if you allow CodeRabbit to approve pull requests. As with an generative AI technology, CodeRabbit works best as a helpful partner to your team, and not as a replacement for human expertise or judgment.
-:::
-
-For more information, see [Request Changes Workflow](/reference/configuration#request-changes-workflow) in the configuration reference.
-
-### Configure chat-based issue creation {#chat-issues}
-
-You can [ask CodeRabbit to create issues for you](https://docs.coderabbit.ai/guides/issue-creation) in the comments of a pull request that it's reviewing.
-
-If you have integrated CodeRabbit with Jira or Linear, then you can tune this behavior a little more, restricting this feature to private repositories—the default setting—or disabling it entirely.
-
-For more information, see [Integrations](/reference/configuration#integrations) in the configuration reference.
-
 ### Configure learnings {#learnings}
 
-You can teach CodeRabbit your team's review preferences by [stating them in plain language during code reviews](/integrations/knowledge-base#learnings). CodeRabbit remembers these these preferences, and applies them to subsequent code reviews in the same repository.
+By default, CodeRabbit learns your team's review preferences by letting you [teach it your preferences in plain language during code reviews](/integrations/knowledge-base#learnings). CodeRabbit remembers these preferences, and applies them to subsequent code reviews in the same repository.
 
 If you don't want this feature, you can disable it. For more information, see [Learnings](/reference/configuration#learnings) in the configuration reference.
 
@@ -139,13 +117,8 @@ For example, to give CodeRabbit review instructions specific to JavaScript and T
 
 ```yaml
 path_instructions:
-    - path: `src/**/*.{ts,tsx,js}`
-    instructions:
-    - Review the React.js, TypeScript, JavaScript code for best practices
-        - Check for common security vulnerabilities such as:
-        - SQL Injection
-        - Insecure dependencies
-        - Sensitive data exposure
+  - path: `src/**/*.{ts,tsx,js}`
+    instructions: "Review the React.js, TypeScript, JavaScript code for best practices. Check for common security vulnerabilities, such as SQL injection, insecure dependencies, and sensitive data exposure."
 ```
 
 For more information, see [Path instructions](/reference/configuration#path-instructions) in the configuration reference.
@@ -200,6 +173,30 @@ reviews:
 ```
 
 For more information, see [Tools](/reference/configuration#tools) in the configuration reference.
+
+## Other code review settings {#other}
+
+### Configure pull request approval {#request-changes}
+
+By default, CodeRabbit doesn't mark pull requests as approved after any code review, even if CodeRabbit doesn't have any further significant changes to suggest. This leaves the job of formal pull request approval entirely up to human reviewers.
+
+If you want to allow CodeRabbit to mark pull requests as approved, then you can enable the _request changes workflow_ setting. If you do, then CodeRabbit can approve pull requests after it reviewed a pull request and had all of its comments resolved.
+
+This can be useful if you have a workflow that requires several reviewers to approve a pull request before anyone can merge it. For example, if you have configured your repository on your Git platform to require two approvals for any pull request, then activating this CodeRabbit setting lets you merge a pull request after approval from CodeRabbit plus one human reviewer. This can help reduce your team's code-review load.
+
+:::note
+We recommend a policy of always requiring the approval of at least one human reviewer, even if you allow CodeRabbit to approve pull requests. As with an generative AI technology, CodeRabbit works best as a helpful partner to your team, and not as a replacement for human expertise or judgment.
+:::
+
+For more information, see [Request Changes Workflow](/reference/configuration#request-changes-workflow) in the configuration reference.
+
+### Configure chat-based issue creation {#chat-issues}
+
+You can [ask CodeRabbit to create issues for you](https://docs.coderabbit.ai/guides/issue-creation) in the comments of a pull request that it's reviewing.
+
+If you have integrated CodeRabbit with Jira or Linear, then you can tune this behavior a little more, restricting this feature to private repositories—the default setting—or disabling it entirely.
+
+For more information, see [Integrations](/reference/configuration#integrations) in the configuration reference.
 
 ## What's next {#whats-next}
 

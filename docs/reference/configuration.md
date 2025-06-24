@@ -170,7 +170,7 @@ For more information about payment tiers and features, see [Pricing](https://www
 </Tabs>
 
 Defines the written language that CodeRabbit presents its review comments in. Defaults
-to American English.
+to U.S. English.
 
 ### Tone Instructions
 
@@ -606,7 +606,7 @@ Activate this setting to disallow CodeRabbit from caching your repository's code
 When caching is allowed, then CodeRabbit stores a cache of code and metadata from
 your repostory for up to seven days after its most recent code review. This cache
 lets CodeRabbit save time and effort in between subsquent reviews of the same
-repository.
+repository. For more information, see [Caching](/reference/caching/).
 
 We recommend leaving this setting off, which allows caching, and can speed up
 code reviews. For more information, see

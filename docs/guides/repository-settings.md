@@ -10,8 +10,8 @@ Git repository. For a general overview of configuring CodeRabbit, see [Configure
 
 CodeRabbit provides two ways to manage its code-review behavior with each of your organization's repositories:
 
-1. View or modify your per-repository settings using the CodeRabbit web interface.
-1. Add a `.coderabbit.yaml` file to your repository.
+- Add a `.coderabbit.yaml` file to your repository.
+- View or modify your per-repository settings using the CodeRabbit web interface.
 
 Any settings that you define in the `.coderabbit.yaml` file take precedence over
 settings defined by the web interface. If your repository doesn't have a
@@ -22,7 +22,7 @@ While the web interface provides and easier way to explore the available configu
 
 ## Browse and modify your settings using the web interface {#modify}
 
-To view of modify your repsository settings using the CodeRabbit web interface, follow these steps:
+To view or modify your repository settings using the CodeRabbit web interface, follow these steps:
 
 1. Visit [the CodeRabbit web interface](https://app.coderabbit.ai/settings/repositories).
 1. In the sidebar, click **Repositories**.
