@@ -14,17 +14,17 @@ For a general overview of CodeRabbit configuration, see [Configure CodeRabbit](/
 # yaml-language-server: $schema=https://storage.googleapis.com/coderabbit_public_assets/schema.v2.json
 
 language: en-US
-tone_instructions: ''
+tone_instructions: ""
 early_access: true
 enable_free_tier: true
 reviews:
   profile: chill
   request_changes_workflow: false
   high_level_summary: true
-  high_level_summary_placeholder: '@coderabbitai summary'
+  high_level_summary_placeholder: "@coderabbitai summary"
   high_level_summary_in_walkthrough: false
-  auto_title_placeholder: '@coderabbitai'
-  auto_title_instructions: ''
+  auto_title_placeholder: "@coderabbitai"
+  auto_title_instructions: ""
   review_status: true
   commit_status: true
   fail_commit_status: false
@@ -40,12 +40,12 @@ reviews:
   auto_assign_reviewers: false
   poem: true
   labeling_instructions:
-    - label: ''
-      instructions: ''
+    - label: ""
+      instructions: ""
   path_filters: []
   path_instructions:
-    - path: ''
-      instructions: ''
+    - path: ""
+      instructions: ""
   abort_on_close: true
   disable_cache: false
   auto_review:
@@ -89,13 +89,13 @@ reviews:
       enabled: true
     swiftlint:
       enabled: true
-      config_file: ''
+      config_file: ""
     phpstan:
       enabled: true
       level: default
     golangci-lint:
       enabled: true
-      config_file: ''
+      config_file: ""
     yamllint:
       enabled: true
     gitleaks:
@@ -104,7 +104,7 @@ reviews:
       enabled: true
     detekt:
       enabled: true
-      config_file: ''
+      config_file: ""
     eslint:
       enabled: true
     rubocop:
@@ -117,12 +117,12 @@ reviews:
       enabled: true
     pmd:
       enabled: true
-      config_file: ''
+      config_file: ""
     cppcheck:
       enabled: true
     semgrep:
       enabled: true
-      config_file: ''
+      config_file: ""
     circleci:
       enabled: true
     clippy:
@@ -142,10 +142,10 @@ reviews:
     brakeman:
       enabled: true
     dotenvLint:
-    enabled: true
-    htmlhint: true
       enabled: true
-      config_file: ''
+    htmlhint:
+      enabled: true
+      config_file: ""
     checkmake:
       enabled: true
 chat:
@@ -178,10 +178,10 @@ code_generation:
   docstrings:
     language: en-US
     path_instructions:
-      - path: ''
-        instructions: ''
+      - path: ""
+        instructions: ""
   unit_tests:
     path_instructions:
-      - path: ''
-        instructions: ''
+      - path: ""
+        instructions: ""
 ```
