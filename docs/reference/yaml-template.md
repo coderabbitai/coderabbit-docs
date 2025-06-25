@@ -159,6 +159,9 @@ knowledge_base:
   opt_out: false
   web_search:
     enabled: true
+  code_guidelines:
+    enabled: true
+    filePatterns: []
   learnings:
     scope: auto
   issues:
