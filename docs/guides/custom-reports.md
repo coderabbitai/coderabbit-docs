@@ -299,6 +299,8 @@ Issues and tickets brings in conversations, descriptions, and comments from Jira
 
 This option gives you the ability to create a report limited only to reports containing a "Score Card" or "Score Chart" bot comment from CodeRabbit or other bots. To enable issues and tickets you must include the tag `<pr_score_card>` in your prompt.
 
+> **IMPORTANT:** This will automatically remove any pull requests from your reports if they do not contain a "Score Card" or "Score Chart" bot comment. Using this option without setting up a flow to create these comments will result in `No new pull request activity in the last XYZ hours` errors. Do not enable this option unless you have created a "Score Card" or "Score Chart" bot comment flow.
+
 For example you can ask coderabbit to check serveral conditions on a pull request and produce a "Score Chart":
 
 <details>
