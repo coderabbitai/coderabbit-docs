@@ -295,6 +295,101 @@ Issues and tickets brings in conversations, descriptions, and comments from Jira
     - `<issue_description>`: markdown - The description of the issue.
     - `<issue_comments>`: array of comment objects - Contains all the comments made on the issue.
 
+#### Remove PRs without a "Score Card/Chart" bot comment
+
+This option gives you the ability to create a report limited only to reports containing a "Score Card" or "Score Chart" bot comment from CodeRabbit or other bots. To enable issues and tickets you must include the tag `<pr_score_card>` in your prompt.
+
+For example you can ask coderabbit to check serveral conditions on a pull request and produce a "Score Chart":
+
+<details>
+<summary>Click to view example User Score Card/Chart Comment:</summary>
+
+![Score Card/Chart Trigger Comment Example](/img/guides/score-card-trigger-comment.png)
+
+```markdown
+@coderabbitai
+Use the <overall_instructions> to guide the content of the summary. Use the format shown in <\_example> but do not include or refer to the example's content in the final summary/report.
+
+<overall_instructions>
+
+**Instructions:**
+Generate a weekly code review report for the author of this pull request only following scoring parameters. Calculate the scores and compile the results into a table so that the team-wise average score can be easily determined.
+**Scoring Parameters:**
+
+1. **Basic Code Standards (Score out of 2)**
+
+   - Avoidance of hard-coded values
+   - No repetition of code (DRY principle)
+
+2. **Code Readability (Score out of 2)**
+
+   - Presence of meaningful comments
+   - Proper variable declaration using `const` and `let`
+
+3. **Error Handling (Score out of 4)**
+
+   - Handling failure scenarios (e.g., try-catch, fallbacks)
+   - Proper loading state implementation (e.g., button click loading states)
+   - Handling edge cases (e.g., checking for undefined or missing values)
+   - Input validation (ensuring correct user inputs)
+
+4. **Circle CI Check Validation (Score: 0 or 1)**
+   - `0` → Not Passed
+   - `1` → Passed
+
+**Final Score Calculation:**
+Combine the scores from the parameters above to derive the final code quality score (out of 5).
+**Output Format:**
+Provide the final report in a table format with the following columns (use shorthand notations), be sure to include this list at the top above the chart in the "Column Notation" section so users understand what the columns mean:
+
+- **User Name (User)**
+- **Basic Code Standards (BCS) (out of 2)**
+- **Code Readability (CR) (out of 2)**
+- **Error Handling (EH) (out of 4)**
+- **Shopify Theme Check (CI) (out of 1)**
+- **Final Code Quality Score (FCQS) (out of 9)**
+
+</overall_instructions>
+
+<\_example>
+
+## Column Notation
+
+- **User Name (User)**
+- **Basic Code Standards (BCS) (out of 2)**
+- **Code Readability (CR) (out of 2)**
+- **Error Handling (EH) (out of 4)**
+- **Shopify Theme Check (CI) (out of 1)**
+- **Final Code Quality Score (FCQS) (out of 9)**
+
+## Score Chart
+
+| User     | BCS (2) | CR (3) | EH (2) | CI (1) | FCQS (9) |
+| -------- | ------- | ------ | ------ | ------ | -------- |
+| John Doe | 2       | 3      | 2      | 1      | 9        |
+
+</\_example>
+```
+
+</details>
+
+Then CodeRabbit will reply with a score for you pull request:
+
+<details>
+<summary>Click to view resulting Score Card/Chart bot comment:</summary>
+
+![CodeRabbit Score Card/Chart Result Comment Example](/img/guides/score-card-result-comment.png)
+
+</details>
+
+**Best Practices for Score Cards/Charts:**
+
+- The reporting bot only has access to your comments and summary (like a project manager) if you want to make a report looking for these score card/chart comments make sure the reviewer does this ahead of time.
+- Only include checks for very specific scenarios, such as a specific check failing or using tabs vs spaces.
+- Do not use general rules without explaining specifically what they mean. If you add "Insure the pull request follows development best practices" you must define what "development best practices" actually mean or the AI will guess.
+- Make one point for each specific check and make sure its a True/False condition.
+- Instead of manually commenting on pull requests you can use the [Github Actions Bot](https://github.com/marketplace/actions/github-project-bot) to automatically comment on pull requests and trigger coderabbit score card/chart comments by including `@coderabbit` in the comment.
+
 ## Best Practices
 
 1. **Be Specific**
