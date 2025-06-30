@@ -39,6 +39,15 @@ PHPCS supports many coding standards including:
 - **PEAR**: PEAR coding standard
 - **Zend**: Zend Framework coding standard
 
+## Configuration
+
+PHPCS requires a configuration file to run. CodeRabbit will only run PHPCS if one of the following configuration files is found:
+
+- `phpcs.xml` - XML configuration file
+- `phpcs.xml.dist` - Distributed XML configuration file
+
+CodeRabbit will not run PHPCS if no configuration file is found.
+
 ## Links
 
 - [PHPCS GitHub Repository](https://github.com/squizlabs/PHP_CodeSniffer)
