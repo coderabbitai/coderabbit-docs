@@ -391,6 +391,8 @@ You can then utilize this in a report. We recommend your report looks specifical
 
 ![Report Example](/img/guides/score-card-report-result.png)
 
+![Where to put this prompt](/img/guides/where-score-report-prompt-go.png)
+
 Prompt Example:
 
 ```markdown
