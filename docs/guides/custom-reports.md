@@ -451,7 +451,7 @@ You will create a new chart averaging all the values from various pull requests 
 - Only include checks for very specific scenarios, such as a specific check failing or using tabs vs spaces.
 - Do not use general rules without explaining specifically what they mean. If you add "Insure the pull request follows development best practices" you must define what "development best practices" actually mean or the AI will guess.
 - Make one point for each specific check and make sure its a True/False condition.
-- Instead of manually commenting on pull requests you can use the [Github Actions Bot](https://github.com/marketplace/actions/github-project-bot) to automatically comment on pull requests and trigger coderabbit score card/chart comments by including `@coderabbit` in the comment.
+- Instead of manually commenting on pull requests you can use the [Github Actions Bot](https://github.com/marketplace/actions/create-or-update-comment) to automatically comment on pull requests and trigger coderabbit score card/chart comments by including `@coderabbit` in the comment.
 
 ## Best Practices
 
