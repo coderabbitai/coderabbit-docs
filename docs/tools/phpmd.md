@@ -29,6 +29,13 @@ PHPMD can detect various code quality issues including:
 - **Unused Code Rules**: Detects unused variables, parameters, methods, and classes
 - **Size Rules**: Identifies overly complex methods and classes
 
+### Review Mode Behavior
+
+CodeRabbit's review mode affects which PHPMD rules are applied:
+
+- **Chill Mode**: Only checks for unused code (`unusedcode` rule set)
+- **Assertive Mode**: Checks all rule sets including clean code, code size, controversial rules, design issues, naming conventions, and unused code (`cleancode,codesize,controversial,design,naming,unusedcode`)
+
 ## Links
 
 - [PHPMD Official Website](https://phpmd.org/)
