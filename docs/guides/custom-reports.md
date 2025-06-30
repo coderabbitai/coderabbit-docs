@@ -384,6 +384,67 @@ Then CodeRabbit will reply with a score for you pull request:
 
 </details>
 
+You can then utilize this in a report. We recommend your report looks specifically for these score cards and puts together a unified report:
+
+<details>
+<summary>Click to view example Report Prompt when using Score Card/Chart:</summary>
+
+![Report Example](/img/guides/score-card-report-result.png)
+
+Prompt Example:
+
+```markdown
+Use the <overall_instructions> to guide the content of the summary. Use the format shown in <example> but do not include or refer to the example's content in the final summary/report.
+
+<overall_instructions>
+**Instructions:**
+
+Locate the score chart comment in the <bot_comments>. There will be a single comment with data on these fields:
+
+- **User Name (User)**
+- **Basic Code Standards (BCS) (out of 2)**
+- **Code Readability (CR) (out of 2)**
+- **Error Handling (EH) (out of 4)**
+- **Shopify Theme Check (CI) (out of 1)**
+- **Final Code Quality Score (FCQS) (out of 9)**
+
+These details may also be in the form of a chart such as:
+
+## Score Chart
+
+| User     | BCS (2) | CR (3) | EH (2) | CI (1) | FCQS (9) |
+| -------- | ------- | ------ | ------ | ------ | -------- |
+| John Doe | 2       | 3      | 2      | 1      | 9        |
+
+You will create a new chart averaging all the values from various pull requests for each author. Only include pull requests with a `Score Chart`. Do not invent or create score charts if none exist.
+
+</overall_instructions>
+
+<example>
+
+## Column Notation
+
+- **User Name (User)**
+- **Basic Code Standards (BCS) (out of 2)**
+- **Code Readability (CR) (out of 2)**
+- **Error Handling (EH) (out of 4)**
+- **Shopify Theme Check (CI) (out of 1)**
+- **Final Code Quality Score (FCQS) (out of 9)**
+
+## Score Chart
+
+| User     | BCS (2) | CR (3) | EH (2) | CI (1) | FCQS (9) | PR URL |
+| -------- | ------- | ------ | ------ | ------ | -------- | ------ |
+| John Doe | 2       | 3      | 2      | 1      | 9        | URL    |
+| Alex Foo | 2       | 3      | 2      | 1      | 9        | URL    |
+
+</example>
+<include_bot_comments>
+<pr_score_card>
+```
+
+</details>
+
 **Best Practices for Score Cards/Charts:**
 
 - The reporting bot only has access to your comments and summary (like a project manager) if you want to make a report looking for these score card/chart comments make sure the reviewer does this ahead of time.
