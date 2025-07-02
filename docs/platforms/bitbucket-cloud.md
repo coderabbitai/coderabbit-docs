@@ -13,28 +13,20 @@ CodeRabbit integrates with Bitbucket Cloud to enhance code review and collaborat
 
 This guide will assist you in effectively integrating CodeRabbit with Bitbucket Cloud.
 
-## Configure App Password
+## Configure Api Token
 
-To enable CodeRabbit to interact with your Bitbucket repositories, an app password is required. This token grants the necessary permissions for interacting with the Merge Requests and Discussions APIs.
+To enable CodeRabbit to interact with your Bitbucket repositories, an api token is required. This token grants the necessary permissions for interacting with the Merge Requests and Discussions APIs.
 
 1. Create a new Bitbucket account specifically for CodeRabbit and treat it as a service account.
 2. Name the account "CodeRabbit".
 3. If your Bitbucket workspace requires two-step verification, then you must also enable two-step verification on this new account.
-4. Generate an App Password to enable seamless integration between CodeRabbit and your Bitbucket repositories.
+4. Generate an Api Token to enable seamless integration between CodeRabbit and your Bitbucket repositories.
 
-We recommend creating a new user as a service account, associating this user to the workspace you'd like to install CodeRabbit on, and providing CodeRabbit with the app password to allow access. During the installation process, CodeRabbit will automatically configure the required webhook for seamless integration.
-
-<div class="center-image">
- <img
-  src="/img/integrations/bitbucket-app-password-modal.png"
-  alt="Bitbucket user modal"
-  width="1000"
- />
-</div>
+We recommend creating a new user as a service account, associating this user to the workspace you'd like to install CodeRabbit on, and providing CodeRabbit with the api token to allow access. During the installation process, CodeRabbit will automatically configure the required webhook for seamless integration.
 
 :::note
 
-If you wish to change the review user, you must provide the app password for the new user who will post reviews and comments. However, this requires manually removing the previous user from the projects and associated webhooks. Once this is done, you will need to reinstall the CodeRabbit app for each project.
+If you wish to change the review user, you must provide the api token for the new user who will post reviews and comments. However, this requires manually removing the previous user from the projects and associated webhooks. Once this is done, you will need to reinstall the CodeRabbit app for each project.
 
 :::
 
@@ -48,46 +40,46 @@ If you wish to change the review user, you must provide the app password for the
 
 #### Key Points to Remember
 
-- Code reviews will be attributed to the owner of the app password.
+- Code reviews will be attributed to the owner of the api token.
 
-#### Generating an App password
+#### Generating an Api token
 
-Bitbucket provides an option to generate an app password for a new user. Follow these steps to generate the password:
+Bitbucket provides an option to generate an api token for a new user. Follow these steps to generate the token:
 
 1. Log in using the user designated for CodeRabbit reviews. This user serves as a service account for managing reviews and related activities.
-2. Go to "Personal Bitbucket Settings".
-3. Choose **App passwords**.
-4. Click **Create app password**.
-5. Enter a label easily recognizable for this app passwords usage.
+2. Go to ["API Tokens Settings"](https://id.atlassian.com/manage-profile/security/api-tokens).
+3. Click **Create API token with scopes**.
+4. Enter a name easily recognizable for this api token usage and an expiration date based on your plan of using the product.
+5. On next step select **Bitbucket**
 6. Ensure the following scopes are selected:
-   1. Account - Read
-   2. Issues - Write
-   3. Workspace membership - Read
-   4. Projects - Write
-   5. Repositories - Write
-   6. Pull requests - Write
-   7. Webhooks - Read and write
-   8. Pipelines - Read
-   9. Runners - Read
+	1. read:account
+	2. read:user:bitbucket
+	3. write:issue:bitbucket
+	4. read:issue:bitbucket
+	5. read:workspace:bitbucket
+	6. admin:project:bitbucket
+	7. write:webhook:bitbucket
+	8. read:webhook:bitbucket
+	9. read:pipeline:bitbucket
+	10. read:runner:bitbucket
+	11. read:repository:bitbucket
+	12. write:repository:bitbucket
+	13. read:pullrequest:bitbucket
+	14. write:pullrequest:bitbucket
 7. Click **Create**
-8. Note down the app password as it will only be displayed once.
+8. Note down the api token as it will only be displayed once.
 
 <div class="center-image">
  <img
-  src="/img/integrations/bitbucket-app-password-page.png"
-  alt="Bitbucket app password configuration page"
- />
-</div>
-<div class="center-image">
- <img
-  src="/img/integrations/bitbucket-app-password-permissions.png"
-  alt="Bitbucket app password permissions"
+  src="/img/integrations/bitbucket-api-token-scopes.png"
+  alt="Bitbucket API token scopes"
+  width="1000"
  />
 </div>
 
-### Where to Provide CodeRabbit the App Password
+### Where to Provide CodeRabbit the Api Token
 
-By default, if no app password is provided, CodeRabbit will prompt you to provide one during the installation process. However, if you wish to provide the token beforehand, you can do so by navigating to the **Organization Settings** tab, and selecting the **Bitbucket User** tab on the sidebar. Once entering the app password, the password will be validated and saved for future use.
+By default, if no api token is provided, CodeRabbit will prompt you to provide one during the installation process. However, if you wish to provide the token beforehand, you can do so by navigating to the **Organization Settings** tab, and selecting the **Bitbucket User** tab on the sidebar. Once entering the api token, the token will be validated and saved for future use.
 
 You can confirm the correct user is being selected by verifying the user ID shown on the UI with the user ID of the service account user you created.
 
@@ -125,6 +117,6 @@ If you are experiencing issues with the webhook, such as CodeRabbit not being ab
 
 Then refresh the repository page in the CodeRabbit app and you can reinstall the webhook.
 
-If you cannot install the webhook please check that your Bitbucket user has the necessary permissions to install the webhook and the App Password is properly configured.
+If you cannot install the webhook please check that your Bitbucket user has the necessary permissions to install the webhook and the Api Token is properly configured.
 
 :::
