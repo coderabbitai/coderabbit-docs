@@ -77,7 +77,7 @@ By default, CodeRabbit writes thorough code reviews with several sub-sections. I
 
 ## Adjust path-specific CodeRabbit behavior {#path}
 
-These settings direct CodeRabbit to treat various files and and locations in
+These settings direct CodeRabbit to treat various files and locations in
 your repository differently.
 
 For an overview about using path-based instructions in CodeRabbit, see [Path-based instructions](/guides/review-instructions#path-based).
