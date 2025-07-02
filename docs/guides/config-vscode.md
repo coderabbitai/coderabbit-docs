@@ -14,11 +14,11 @@ The instructions on this page are specific to using the extension with VSCode. I
 
 To navigate to the settings screen for the CodeRabbit VSCode extension, follow these steps:
 
-1. In the activity bar, click the Extensions icon.
+1. Open the CodeRabbit activity bar/sidebar.
 
-1. In the sidebar, under **Installed**, click the gear-shaped **Manage** icon in the CodeRabbit row.
+1. In the sidebar, click on gear shaped icon on top right(beside logout icon).
 
-1. In the menu that appears, select **Settings**.
+1. You can also search for CodeRabbit: Settings in the command palette to open the settings.
 
 The settings screen contains the following configuration controls.
 
@@ -31,6 +31,14 @@ The **Agent Type** setting lets you choose the extension's response to using the
   This works only with VSCode, using Copilot. If you have this option selected when using a different IDE, then the extension instead copies the prompt to your clipboard.
 
 - **Claude Code**: The extension opens the Terminal pane of your IDE and tries to use the `claude` command-line program to apply the suggested fix to your code. You need to have Claude Code installed for this option to be effective.
+
+- **Codex CLI**: The extension opens the Terminal pane of your IDE and tries to use the `codex` command-line program to apply the suggested fix to your code. You need to have Codex CLI installed for this option to be effective.
+
+- **Cline**: The extension opens the `Cline` sidebar and runs a task to apply the suggested fix to your code. You need to have the `Cline` extension installed for this option to be effective.
+
+- **Roo**: The extension opens the `Roo` sidebar and runs a task to apply the suggested fix to your code. You need to have the `Roo` extension installed for this option to be effective.
+
+- **Kilo Code**: The extension opens the `Kilo Code` sidebar and runs a task to apply the suggested fix to your code. You need to have the `Kilo Code` extension installed for this option to be effective.
 
 - **Clipboard**: The extension copies prompt text describing the suggested fix to your clipboard. From there, you can manually paste the prompt into the coding AI agent that you use with your IDE.
 
