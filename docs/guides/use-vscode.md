@@ -18,7 +18,7 @@ You can let CodeRabbit automatically review commits that you make to your local 
 
 To perform an automatic review, follow these steps:
 
-1. Perform a Git commit using VSCode. After you do this, a dialog appears in your VSCode window, asking **Would you like to start a review?**
+1. Perform a Git commit using VSCode or terminal. After you do this, a dialog appears in your VSCode window, asking **Would you like to start a review?**
 
 1. Click **Yes**. The CodeRabbit sidebar appears in your VSCode window.
 
