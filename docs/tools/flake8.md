@@ -26,7 +26,7 @@ Flake8 can detect many issues, including:
 - Undefined names / variables
 - Cyclomatic-complexity over threshold (default 10)
 - Error-prone constructs (e.g., comparison to literal True / False)
-- Select / ignore rule filtering (--select, --extend-ignore)
+- Select / ignore rule filtering (`--select`, `--extend-ignore`)
 - Extensible plugin ecosystem and custom rule support
 
 ## Links

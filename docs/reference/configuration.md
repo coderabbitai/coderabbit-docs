@@ -2862,7 +2862,7 @@ Flake8 is a static code analysis tool for Python files.
       <tbody>
       <tr>
         <td><strong>Location</strong></td>
-        <td>Review &gt; Tools &gt; Enable Flake8</td>
+        <td>Review &gt; Tools &gt; Flake8 &gt; Enable</td>
       </tr>
       <tr>
         <td><strong>Default</strong></td>
@@ -3712,6 +3712,43 @@ PMD is an extensible multilanguage static code analyzer. It’s mainly concerned
 
 Enable PMD.
 
+#### Config File
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review > Tools > PMD > Config File</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>_No default_</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.pmd.config_file`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>string</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>_No default_</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+</Tabs>
+
+Optional path to the PMD configuration file relative to the repository.
+
 ### PHPMD
 
 PHPMD is a static code analysis tool for PHP files.
@@ -3793,43 +3830,6 @@ PHPCS is a static code analysis and coding-standard checker for PHP (plus JS/CSS
 </Tabs>
 
 PHPCS is a static code analysis tool for PHP, JavaScript and CSS files.
-
-#### Config File
-
-<Tabs groupId="config-setting">
-  <TabItem value="web-ui" label="Web UI">
-    <table>
-      <tbody>
-      <tr>
-        <td><strong>Location</strong></td>
-        <td>Review > Tools > PMD > Config File</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>_No default_</td>
-      </tr>
-    </tbody></table>
-  </TabItem>
-  <TabItem value="yaml" label=".coderabbit.yaml" default>
-    <table>
-      <tbody>
-      <tr>
-        <td><strong>Field</strong></td>
-        <td>`reviews.tools.pmd.config_file`</td>
-      </tr>
-      <tr>
-        <td><strong>Datatype</strong></td>
-        <td>string</td>
-      </tr>
-      <tr>
-        <td><strong>Default</strong></td>
-        <td>_No default_</td>
-      </tr>
-    </tbody></table>
-  </TabItem>
-</Tabs>
-
-Optional path to the PMD configuration file relative to the repository.
 
 ### Prisma Schema Linting
 
