@@ -2850,6 +2850,47 @@ ESLint is a static code analysis tool for JavaScript files.
 
 ESLint is a static code analysis tool for JavaScript files.
 
+### Flake8
+
+Flake8 is a static code analysis tool for Python files.
+
+#### Enable Flake8
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review &gt; Tools &gt; Enable Flake8</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.flake8.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+</Tabs>
+
+Flake8 is a static code analysis tool for Python files.
+
 ### GitHub Checks
 
 GitHub Checks integration configuration.
@@ -3670,6 +3711,88 @@ PMD is an extensible multilanguage static code analyzer. It’s mainly concerned
 </Tabs>
 
 Enable PMD.
+
+### PHPMD
+
+PHPMD is a static code analysis tool for PHP files.
+
+#### Enable PHPMD
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review &gt; Tools &gt; Enable PHPMD</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.phpmd.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+</Tabs>
+
+PHPMD is a static code analysis tool for PHP files.
+
+### PHPCS
+
+PHPCS is a static code analysis and coding-standard checker for PHP (plus JS/CSS) files.
+
+#### Enable PHPCS
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review &gt; Tools &gt; Enable PHPCS</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.phpcs.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+</Tabs>
+
+PHPCS is a static code analysis tool for PHP, JavaScript and CSS files.
 
 #### Config File
 
