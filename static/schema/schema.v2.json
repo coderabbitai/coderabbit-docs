@@ -465,8 +465,8 @@
 											"type": "number",
 											"maximum": 900000,
 											"minimum": 0,
-											"default": 300000,
-											"description": "Time in milliseconds to wait for all GitHub Checks to conclude. Default is 5 minutes."
+											"default": 90000,
+											"description": "Time in milliseconds to wait for all GitHub Checks to conclude. Default is 90 seconds."
 										}
 									},
 									"additionalProperties": false,
