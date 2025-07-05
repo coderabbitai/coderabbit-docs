@@ -4,6 +4,8 @@ description: An overview of CodeRabbit's core code review features.
 sidebar_label: Overview
 ---
 
+import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx'
+
 The central feature of CodeRabbit is its ability to proactively review
 new pull requests on your code repository.
 
@@ -13,6 +15,15 @@ This information, usually added to pull requests within minutes, can help your t
 
 The following sections present an overview of this feature. For a hands-on example that lets you experience a CodeRabbit code review using
 a real repository, see [Quickstart](/getting-started/quickstart).
+
+## Review eligibility {#eligibility}
+
+CodeRabbit will review your pull request if one of the following is true:
+
+- **Public repositories:** CodeRabbit reviews every PR by default.  
+- **Private repositories:** CodeRabbit reviews PRs only when your organization has a Pro plan **and** you have an assigned seat.
+
+<ProPlanNotice />
 
 ## Automatically review pull requests {#review}
 
