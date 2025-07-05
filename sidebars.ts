@@ -32,7 +32,11 @@ const sidebars: SidebarsConfig = {
 			type: "category",
 			collapsed: true,
 			label: "Get started with CodeRabbit",
-			items: ["overview/introduction", "getting-started/quickstart"],
+			items: [
+				"overview/introduction",
+				"overview/learnings",
+				"getting-started/quickstart",
+			],
 		},
 		{
 			type: "category",

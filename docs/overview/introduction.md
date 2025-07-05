@@ -107,3 +107,5 @@ For more information, see [Review local changes](/code-editors).
 - [Review local changes](/code-editors) guides you through installing and using a subset of CodeRabbit features directly from your code editor.
 
 - [Why CodeRabbit?](/overview/why-coderabbit) dives further into the philosophies and technologies that drive CodeRabbit.
+
+- [Start Learning](/overview/learnings/) to dive into hands-on code reviews, practical examples, and lessons from real development workflows.
