@@ -5,6 +5,16 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## July 3, 2025
+
+### Enhanced Python Static Analysis: Flake8 Support
+
+We're excited to announce enhanced Python static analysis capabilities with [Flake8](https://flake8.pycqa.org/) support!
+
+[Flake8](https://flake8.pycqa.org/) is a Python linting utility that wraps PyFlakes, pycodestyle, and Mccabe to check your Python code for style and logical errors.
+
+See our [tools documentation](https://docs.coderabbit.ai/tools/) for more details.
+
 ## July 1, 2025
 
 ### Enhanced Code Guidelines Support
