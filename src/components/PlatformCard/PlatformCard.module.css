@@ -1,0 +1,18 @@
+.platformCard {
+	display: flex;
+	align-items: center;
+	background: var(--imf-list-card-background-color);
+	border-radius: 8px;
+	padding: 1.3rem;
+	border: 2px solid var(--ifm-background-color-secondary);
+}
+
+.platformIcon {
+	width: 32px;
+	height: 32px;
+	margin-right: 16px;
+}
+
+[data-theme="dark"] .platformIcon {
+	filter: invert(1);
+}

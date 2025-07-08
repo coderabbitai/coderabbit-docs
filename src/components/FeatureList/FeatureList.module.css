@@ -1,0 +1,43 @@
+.crFeatureCard {
+	background: var(--imf-list-card-background-color);
+	border-radius: 8px;
+	padding: 1.3rem;
+	margin: 0.8rem 0;
+	border: 2px solid var(--ifm-background-color-secondary);
+}
+
+.crFeatureList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.crFeatureList li {
+	position: relative;
+	padding-left: 1.7em;
+	margin-bottom: 1em;
+	font-size: 1.08rem;
+	line-height: 1.6;
+}
+
+.crFeatureList li:before {
+	content: "";
+	position: absolute;
+	left: 0.3em;
+	top: 0.5em;
+	width: 0.6em;
+	height: 0.6em;
+	background: var(--imf-list-bullets-color);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.crFeatureList li a {
+	color: var(--ifm-color-primary, orange);
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.crFeatureList li a:hover {
+	text-decoration: underline;
+}
