@@ -16,15 +16,6 @@ This information, usually added to pull requests within minutes, can help your t
 The following sections present an overview of this feature. For a hands-on example that lets you experience a CodeRabbit code review using
 a real repository, see [Quickstart](/getting-started/quickstart).
 
-## Review eligibility {#eligibility}
-
-CodeRabbit will review your pull request if one of the following is true:
-
-- **Public repositories:** CodeRabbit reviews every PR by default.  
-- **Private repositories:** CodeRabbit reviews PRs only when your organization has a Pro plan **and** you have an assigned seat.
-
-<ProPlanNotice />
-
 ## Automatically review pull requests {#review}
 
 After you [integrate CodeRabbit with your repository](/platforms), CodeRabbit proceeds
@@ -52,6 +43,15 @@ perform a code review:
   of the proposed code changes.
 - If an open pull request that CodeRabbit has already reviewed gets modified with another
   commit, then CodeRabbit performs an incremental review that focuses on the new commit.
+
+### Which pull requests get automatically reviewed {#eligibility}
+
+CodeRabbit automatically reviews a pull request when **either** of the following statements is true:
+
+- **The pull request is in a public repository.** CodeRabbit reviews pull requests against the main branch of your public repositories by default. This feature is available to every subscription tier, including the free plan.  
+- **The pull request is in a private repository and your organization is on the Pro plan with a seat assigned to you.** Only under this condition does CodeRabbit review private-repository pull requests.
+
+<ProPlanNotice />
 
 ## Interact with CodeRabbit reviews {#interact}
 
