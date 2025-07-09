@@ -18,6 +18,14 @@ Flake8 will run on files with the following extensions:
 
 - `*.py`
 
+## Configuration
+
+Flake8 supports the following config files:
+
+- `.flake8`
+
+CodeRabbit will not run Flake8 if no config file is found.
+
 ## Features
 
 Flake8 can detect many issues such as:
