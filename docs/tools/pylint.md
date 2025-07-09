@@ -18,6 +18,17 @@ Pylint will run on files with the following extensions:
 
 - `*.py`
 
+## Configuration
+
+Pylint supports the following config files:
+
+- `.pylintrc`
+- `pylintrc`
+- `.pylintrc.toml`
+- `pylintrc.toml`
+
+CodeRabbit will not run Pylint if no config file is found.
+
 ## Features
 
 Pylint can detect many issues such as:
