@@ -39,6 +39,8 @@
 	--ifm-navbar-height: 5rem;
 	--ifm-font-family-base: "Poppins", "Work Sans", sans-serif;
 	--ifm-background-color-primary: #f6f6f1;
+	--ifm-background-color-secondary: #e8e8e8;
+	--ifm-breadcrumb-item-background-active: #ffe9e2;
 }
 
 [data-theme="dark"] {
@@ -51,6 +53,8 @@
 	--ifm-color-primary-lightest: #171717;
 	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 	--ifm-background-color-primary: #171717;
+	--ifm-background-color-secondary: #232323;
+	--ifm-breadcrumb-item-background-active: #3f322e;
 }
 
 #__docusaurus {
@@ -102,6 +106,8 @@ a[docid="docs"] > svg {
 	overflow: hidden;
 	max-width: 100%;
 	background: #000;
+	border-radius: 1rem;
+	border: 4px solid var(--ifm-background-color-secondary);
 }
 
 .video-container iframe {
@@ -297,4 +303,35 @@ a[docid="docs"] > svg {
 /* Disable automatic next/previous pagination links */
 .pagination-nav {
 	display: none;
+}
+/* ===== MARKDOWN STYLES ===== */
+.theme-doc-markdown.markdown {
+	line-height: 1.8rem;
+}
+/* ===== BREADCRUMB STYLES ===== */
+
+.breadcrumbs {
+	display: flex;
+	gap: 0.5rem;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+.breadcrumbs::-webkit-scrollbar {
+	display: none;
+}
+.breadcrumbs__item {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	gap: 1rem;
+}
+.breadcrumbs__link {
+	transition: color 0.2s ease;
+	background-color: var(--ifm-background-color-secondary);
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+	font-weight: 600;
+	cursor: default;
+	background-color: var(--ifm-breadcrumb-item-background-active);
 }

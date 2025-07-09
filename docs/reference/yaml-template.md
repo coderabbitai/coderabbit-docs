@@ -151,7 +151,6 @@ reviews:
       enabled: true
     htmlhint:
       enabled: true
-      config_file: ""
     checkmake:
       enabled: true
 chat:
