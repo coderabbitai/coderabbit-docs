@@ -9,7 +9,7 @@ description:
 slug: "/"
 ---
 
-import FeatureList from "../../src/components/FeatureList"
+import ListItems from "../../src/components/ListItems"
 import InfoBox from "../../src/components/InfoBox"
 import PlatformGrid from "../../src/components/PlatformGrid"
 import PlatformCard from "../../src/components/PlatformCard"
@@ -37,7 +37,7 @@ Developers can interact directly with the CodeRabbit bot within their existing G
 
 Core CodeRabbit features include the following:
 
-<FeatureList
+<ListItems
 	items={[
 		"Integrates rapidly with popular Git platforms and workflows.",
 		"Applies dozens of open-source, industry-standard code analyzers to every commit.",
@@ -110,7 +110,7 @@ You can integrate CodeRabbit with issue-management platforms. This lets you ask 
 
 CodeRabbit collects only the minimum amount of information needed to provide you with our code review services. Our privacy and security posture centers around protecting your data through ephemerality:
 
-<FeatureList
+<ListItems
 	items={[
 		"All queries to large language models (LLMs) exist in-memory only, with zero retention after each query completes.",
 		"We don't use your code, code reviews, or other collected data to train LLMs.",
@@ -147,7 +147,7 @@ As a separate, free product, CodeRabbit offers a VSCode extension that brings a 
 
 ## What's next
 
-<FeatureList
+<ListItems
 	items={[
 		<>
 			<a href="/getting-started/quickstart/">Quickstart</a> lets you experience

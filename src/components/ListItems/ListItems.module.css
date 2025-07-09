@@ -12,12 +12,33 @@
 	padding: 0;
 }
 
+.crOrderedList {
+	list-style: decimal;
+	margin: 0;
+	padding-left: 1.5em;
+}
+
 .crFeatureList li {
 	position: relative;
 	padding-left: 1.7em;
 	margin-bottom: 1em;
 	font-size: 1.08rem;
 	line-height: 1.6;
+}
+
+.crFeatureList li:last-child {
+	margin-bottom: 0;
+}
+
+.crOrderedList li {
+	margin-bottom: 1em;
+	font-size: 1.08rem;
+	line-height: 1.6;
+	padding-left: 0.3em;
+}
+
+.crOrderedList li:last-child {
+	margin-bottom: 0;
 }
 
 .crFeatureList li:before {
@@ -38,6 +59,16 @@
 	font-weight: 500;
 }
 
+.crOrderedList li a {
+	color: var(--ifm-color-primary, orange);
+	text-decoration: none;
+	font-weight: 500;
+}
+
 .crFeatureList li a:hover {
+	text-decoration: underline;
+}
+
+.crOrderedList li a:hover {
 	text-decoration: underline;
 }

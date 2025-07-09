@@ -5,22 +5,35 @@ description: See CodeRabbit in action, using a live GitHub repository.
 sidebar_position: 1
 ---
 
+import ListItems from "../../src/components/ListItems"
+import InfoBox from "../../src/components/InfoBox"
+import Note from "../../src/components/Note"
+
 # Quickstart
 
 This tutorial gives you a hands-on demonstration of CodeRabbit, using a real, GitHub-based repository. It guides you through the following tasks:
 
-1. Integrate CodeRabbit into a GitHub-based repository that you own.
-1. Observe CodeRabbit perform a code review of a pull request that you initiate.
-1. Converse with CodeRabbit about the code review.
-1. Prompt CodeRabbit to generate its own improvements to the pull request.
+<ListItems
+	orderedList
+	items={[
+		"Integrate CodeRabbit into a GitHub-based repository that you own.",
+		"Observe CodeRabbit perform a code review of a pull request that you initiate.",
+		"Converse with CodeRabbit about the code review.",
+		"Prompt CodeRabbit to generate its own improvements to the pull request.",
+	]}
+/>
 
 When you complete this tutorial, you'll have seen CodeRabbit's code-review feature in action, and glimpsed a few of its other AI-driven abilities as well.
 
-For a more general overview of CodeRabbit, see [Introduction](/).
+<InfoBox>
+	For a more general overview of CodeRabbit, see <a href="/">Introduction</a>.
+</InfoBox>
 
-:::note
-While this tutorial focuses on GitHub, CodeRabbit also works with GitLab, Azure DevOps, and Bitbucket. For more information, see [Integrate with Git platforms](/platforms/).
-:::
+<Note>
+	While this tutorial focuses on GitHub, CodeRabbit also works with GitLab,
+	Azure DevOps, and Bitbucket. For more information, see{" "}
+	<a href="/platforms/">Integrate with Git platforms</a>.
+</Note>
 
 ## Before you begin
 
@@ -30,9 +43,24 @@ Create a new, private repository on GitHub. Name the new repository `coderabbit-
 
 To integrate CodeRabbit with your GitHub account, follow these steps:
 
-1. Visit [the CodeRabbit login page](https://app.coderabbit.ai/login?free-trial).
-1. Click **Login with GitHub**.
-1. Click **Authorize coderabbitai**.
+<ListItems
+	orderedList
+	items={[
+		<>
+			Visit{" "}
+			<a href="https://app.coderabbit.ai/login?free-trial">
+				the CodeRabbit login page
+			</a>
+			.
+		</>,
+		<>
+			Click <strong>Login with GitHub</strong>.
+		</>,
+		<>
+			Click <strong>Authorize coderabbitai</strong>.
+		</>,
+	]}
+/>
 
 CodeRabbit takes a moment to set up the integration. After it finishes, the CodeRabbit dashboard appears.
 

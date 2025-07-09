@@ -45,6 +45,9 @@
 	--imf-list-bullets-color: #25bab1;
 	--imf-color-background-orange-light: #fffcfb;
 	--imf-color-border-orange: #ffceb6;
+	--imf-note-border-color: #25bab1;
+	--imf-note-background-color: #f1fffe;
+	--imf-note-text-color: #208682;
 }
 
 [data-theme="dark"] {
@@ -63,6 +66,8 @@
 	--imf-list-bullets-color: #208682;
 	--imf-color-background-orange-light: #232323;
 	--imf-color-border-orange: #232323;
+	--imf-note-border-color: #208682;
+	--imf-note-background-color: #252828;
 }
 
 #__docusaurus {
