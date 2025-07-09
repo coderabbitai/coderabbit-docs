@@ -107,6 +107,8 @@ reviews:
       config_file: ""
     eslint:
       enabled: true
+    flake8:
+      enabled: true
     rubocop:
       enabled: true
     buf:
@@ -118,6 +120,10 @@ reviews:
     pmd:
       enabled: true
       config_file: ""
+    phpmd:
+      enabled: true
+    phpcs:
+      enabled: true
     cppcheck:
       enabled: true
     semgrep:
