@@ -9,7 +9,7 @@ sidebar_position: 13
 
 ### Python Static Analysis Tools Configuration Requirement
 
-We've updated our Python static analysis tools to ensure they run only with proper configuration files:
+We've updated Pylint and Flake8 to ensure they run only with proper configuration files:
 
 - **[Pylint](https://docs.coderabbit.ai/tools/pylint)**: Now requires a configuration file (`.pylintrc`, `pylintrc`, `.pylintrc.toml`, or `pylintrc.toml`) to run. CodeRabbit will not run Pylint if no config file is found.
 
