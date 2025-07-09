@@ -5,18 +5,6 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
-## July 9, 2025
-
-### Python Static Analysis Tools Configuration Requirement
-
-We've updated Pylint and Flake8 to ensure they run only with proper configuration files:
-
-- **[Pylint](https://docs.coderabbit.ai/tools/pylint)**: Now requires a configuration file (`.pylintrc`, `pylintrc`, `.pylintrc.toml`, or `pylintrc.toml`) to run. CodeRabbit will not run Pylint if no config file is found.
-
-- **[Flake8](https://docs.coderabbit.ai/tools/flake8)**: Requires a `.flake8` configuration file to run. CodeRabbit will not run Flake8 if no config file is found.
-
-This ensures that these tools operate with your project's specific coding standards and preferences. For detailed configuration information, refer to our [Pylint](/tools/pylint) and [Flake8](/tools/flake8) documentation pages.
-
 ## July 3, 2025
 
 ### Enhanced Python Static Analysis: Flake8 Support
