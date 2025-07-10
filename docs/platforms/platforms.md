@@ -1,6 +1,7 @@
 ---
 title: Add CodeRabbit to your repository
 description: Conceptual overview of integrating CodeRabbit with your Git platform
+sidebar_label: Overview
 ---
 
 This page presents an overview of integrating CodeRabbit with your Git platform.
