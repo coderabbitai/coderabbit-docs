@@ -5,6 +5,16 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## July 10, 2025
+
+### Enhanced Python Static Analysis: nbqa Support for Jupyter Notebooks
+
+We're excited to announce enhanced Python static analysis capabilities with nbqa support for Jupyter Notebooks!
+
+Our existing integrated [Ruff](https://docs.astral.sh/ruff/), [Flake8](https://flake8.pycqa.org/) and [Pylint](https://pylint.pycqa.org/) tools now support linting Jupyter Notebooks (`.ipynb` files) using [nbqa](https://github.com/nbQA-dev/nbQA). This allows you to maintain code quality across your Python projects, including Jupyter Notebooks.
+
+See our [Ruff](/tools/ruff), [Flake8](/tools/flake8), and [Pylint](/tools/pylint) documentation for more details.
+
 ## July 3, 2025
 
 ### Enhanced Python Static Analysis: Flake8 Support

@@ -10,13 +10,14 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-[Ruff](https://docs.astral.sh/ruff/) is a linter for Python.
+[Ruff](https://docs.astral.sh/ruff/) is a linter for Python or Jupiter Notebooks.
 
 ## Files
 
 Ruff will run on files with the following extensions:
 
 - `.py`
+- `.ipynb` (using nbqa)
 
 ## Configuration
 
@@ -31,3 +32,4 @@ CodeRabbit will use the default settings based on the profile selected if no con
 ## Links
 
 - [Ruff Configuration](https://docs.astral.sh/ruff/configuration/)
+- [nbqa Documentation](https://github.com/nbQA-dev/nbQA)
