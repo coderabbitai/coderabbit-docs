@@ -37,6 +37,7 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 | Java                        | [PMD][PMD]                                                 | Code Quality                                        |
 | Protobuf                    | [Buf][Buf]                                                 | Code Quality                                        |
 | Python                      | [Ruff][Ruff], [Pylint][Pylint], [Flake8][Flake8]           | Code Quality                                        |
+| Jupyter Notebooks           | [Ruff][Ruff], [Pylint][Pylint], [Flake8][Flake8]           | Code Quality                                        |
 | Regal                       | [Regal][Regal]                                             | Code Quality                                        |
 | Ruby                        | [RuboCop][RuboCop], [Brakeman][Brakeman]                   | Code Quality, Code Security                         |
 | Rust                        | [Clippy][Clippy]                                           | Code Quality                                        |

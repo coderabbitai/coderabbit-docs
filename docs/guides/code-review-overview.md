@@ -48,7 +48,7 @@ perform a code review:
 
 CodeRabbit automatically reviews a pull request when **either** of the following statements is true:
 
-- The pull request is in a public repository. CodeRabbit reviews pull requests against the main branch of your public repositories by default. This feature is available to every subscription tier, including the free plan.  
+- The pull request is in a public repository. CodeRabbit reviews pull requests against the main branch of your public repositories by default. This feature is available to every subscription tier, including the free plan.
 - The pull request is in a private repository and your organization is on the Pro plan with a seat assigned to you. Only under this condition does CodeRabbit review private-repository pull requests.
 
 <ProPlanNotice />
