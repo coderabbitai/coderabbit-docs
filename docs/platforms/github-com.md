@@ -32,11 +32,11 @@ authorize CodeRabbit with your GitHub account. To do this, follow these steps:
 1.  GitHub displays a summary of the information that CodeRabbit needs in order to integrate with your
     GitHub account. This includes read-only access to the following:
 
-        * Organizations and teams that are associated with your GitHub account.
+         * Organizations and teams that are associated with your GitHub account.
 
-        * Email addresses that are associated with your GitHub account.
+         * Email addresses that are associated with your GitHub account.
 
-        To allow CodeRabbit access to this information, click **Authorize coderabbitai**.
+         To allow CodeRabbit access to this information, click **Authorize coderabbitai**.
 
 After you complete these steps, your browser navigates to the CodeRabbit web interface.
 
