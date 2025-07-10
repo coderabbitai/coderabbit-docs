@@ -1,0 +1,11 @@
+.chatBubble {
+	background: var(--imf-text-button-color-bg);
+	color: #222;
+	border-radius: 6px;
+	padding: 1em 1.2em;
+	margin: 1em 0;
+	font-family: "Fira Mono", "Menlo", "Monaco", "Consolas", monospace;
+	font-size: 0.98em;
+	white-space: pre-wrap;
+	word-break: break-word;
+}

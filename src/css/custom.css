@@ -48,6 +48,9 @@
 	--imf-note-border-color: #25bab1;
 	--imf-note-background-color: #f1fffe;
 	--imf-note-text-color: #208682;
+	--imf-text-color-bg: #e8e8e8;
+	--imf-text-color: #171717;
+	--imf-text-button-color-bg: #e8e8e8;
 }
 
 [data-theme="dark"] {
@@ -68,6 +71,9 @@
 	--imf-color-border-orange: #232323;
 	--imf-note-border-color: #208682;
 	--imf-note-background-color: #252828;
+	--imf-text-color-bg: #232323;
+	--imf-text-color: #f5f5f5;
+	--imf-text-button-color-bg: #e8e8e8;
 }
 
 #__docusaurus {
@@ -314,4 +320,15 @@ a[docid="docs"] > svg {
 /* Disable automatic next/previous pagination links */
 .pagination-nav {
 	display: none;
+}
+.language-text {
+	background-color: var(--imf-text-color-bg) !important;
+}
+.language-text .token-line {
+	color: var(--imf-text-color) !important;
+}
+.language-text [class*="buttonGroup"] button {
+	background-color: var(--imf-text-color-bg) !important;
+	color: var(--imf-text-color) !important;
+	border-radius: 4px;
 }

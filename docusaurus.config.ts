@@ -273,8 +273,8 @@ const config: Config = {
 			],
 		},
 		prism: {
-			theme: prismThemes.github,
-			darkTheme: prismThemes.dracula,
+			theme: prismThemes.nightOwl,
+			darkTheme: prismThemes.nightOwl,
 		},
 		algolia: {
 			// The application ID provided by Algolia
