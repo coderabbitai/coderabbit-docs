@@ -1,35 +1,43 @@
 ---
-title: Integrate with Git platforms
-description: Overview of CodeRabbit's supported Git platforms.
+title: Add CodeRabbit to your repository
+description: Conceptual overview of integrating CodeRabbit with your Git platform
 ---
 
-CodeRabbit supports various Git platforms to provide code review for your repositories. For the cloud-hosted Git platforms, you can [login][login] to CodeRabbit and add your repositories. The following platforms are supported:
+This page presents an overview of integrating CodeRabbit with your Git platform.
+For a conceptual overview of CodeRabbit, see [Introduction](/).
 
-## GitHub
+## Use CodeRabbit with Git platforms
 
-| Host                     | Support                                  |
-| ------------------------ | ---------------------------------------- |
-| GitHub.com               | [Supported](github-com.md)               |
-| GitHub Enterprise Server | [Supported](github-enterprise-server.md) |
+CodeRabbit integrates with the following Git platforms:
 
-## GitLab
+- [GitHub.com](/platforms/github-com)
+- [GitHub Enterprise Server](/platforms/github-enterprise-server)
+- [GitLab.com](/platforms/gitlab-com)
+- [Self-managed GitLab](/platforms/self-hosted-gitlab)
+- [Azure DevOps](/platforms/azure-devops)
+- [BitBucket Cloud](/platforms/bitbucket-cloud)
 
-| Host                | Support                            |
-| ------------------- | ---------------------------------- |
-| GitLab.com          | [Supported](gitlab-com.mdx)        |
-| GitLab Self Managed | [Supported](self-hosted-gitlab.md) |
+The exact steps for each platform are outlined in the pages linked above. That said, integrating any
+Git platform with CodeRabbit follows this general pattern:
 
-## Azure DevOps
+1. Log into CodeRabbit using your Git platform account.
 
-| Host         | Support                      |
-| ------------ | ---------------------------- |
-| Azure DevOps | [Supported](azure-devops.md) |
+1. Add the organizations containing the repositories that you want CodeRabbit to work with. You generally need ownership-level permissions with these organizations. (Different Git platforms might call their organizations different
+   things, such as "groups" in GitLab and "workspaces" in BitBucket.)
 
-## Bitbucket
+1. Create a dedicated CodeRabbit service account on your Git platform, if needed. We handle
+   this step for you on some platforms, such as GitHub.com.
 
-| Host                 | Support                                  |
-| -------------------- | ---------------------------------------- |
-| Bitbucket Datacenter | [Supported](../self-hosted/bitbucket.md) |
-| Bitbucket Cloud      | [Supported](./bitbucket-cloud.md)        |
+1. Grant CodeRabbit the permissions that it needs to work with one or more
+   of the repositories that you have ownership-level access to.
 
-[login]: https://app.coderabbit.ai/login?free-trial
+After you finish integrating CodeRabbit with one or more repositories, you can [start using CodeRabbit immediately](/guides/code-review-overview) using its default configuration, which automatically reviews or summarizes new pull requests. You can also [customize CodeRabbit’s configuration](/guides/configuration-overview) to suit your team's needs.
+
+## What's next {#whats-next}
+
+- [Integrate CodeRabbit with GitHub.com](/platforms/github-com)
+- [Integrate CodeRabbit with GitHub Enterprise Server](/platforms/github-enterprise-server)
+- [Integrate CodeRabbit with GitLab.com](/platforms/gitlab-com)
+- [Integrate CodeRabbit with Self-managed GitLab](/platforms/self-hosted-gitlab)
+- [Integrate CodeRabbit with Azure DevOps](/platforms/azure-devops)
+- [Integrate CodeRabbit with BitBucket Cloud](/platforms/bitbucket-cloud)

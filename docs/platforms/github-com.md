@@ -1,116 +1,109 @@
 ---
-title: Integrating CodeRabbit with GitHub.com
+title: Integrate with GitHub.com
 description: Learn how to integrate CodeRabbit and add to your GitHub workflow.
 sidebar_label: GitHub.com
-sidebar_position: 1
 ---
 
 This is a step-by-step guide to integrate CodeRabbit with your GitHub repositories.
 
-> **CodeRabbit** is an AI code reviewer designed to ease the challenges of code review, supporting repository maintainers and teams. It reviews your PRs and provides concise summaries, identifies potential issues, and offers insights that might be missed during manual reviews.
+For an overview of how CodeRabbit integrates with Git platforms, see
+[Add CodeRabbit to your repository](/platforms).
 
-## How CodeRabbit Works?
+For a hands-on tutorial with CodeRabbit performing code reviews on a live
+GitHub repository that you create, see [Quickstart](/getting-started/quickstart).
 
-> CodeRabbit integrates with GitHub, automating the code review process from the moment a pull request is created.
+## Before you begin
 
-It preprocesses the PR content, builds context, leverages Large Language Models for analysis, and then post-processes the AI response before posting the review back to GitHub. This streamlined workflow ensures thorough AI-powered code reviews without manual intervention.
+You need to have a GitHub account, and ownership-level permissions of at least one repository associated with that account.
 
-![How CodeRabbit Works](/img/integrations/how-codeRabbit-works.png)
+If you want to authorize CodeRabbit to write code reviews for a repository contained in a GitHub organization, then you need ownership-level permission with that organization, as well.
 
-## Let's Integrate CodeRabbit with GitHub
+## Authorize CodeRabbit with your GitHub account
 
-### 1. Accessing CodeRabbit
+Before you can you use CodeRabbit with GitHub, you need to
+authorize CodeRabbit with your GitHub account. To do this, follow these steps:
 
-Visit the [CodeRabbit login](https://app.coderabbit.ai/login?free-trial) page. You'll see all the authentication options, select "**Login with GitHub**" to proceed.
+1.  Visit [the CodeRabbit login page](https://app.coderabbit.ai/login).
 
-![CodeRabbit Login](/img/integrations/login-self-hosted-github.png)
+1.  Click **Login with GitHub**. Your browser navigates to GitHub.com.
 
-### 2. Authorization
+1.  If GitHub prompts to sign in to your GitHub account before continuing, then enter your GitHub login credentials as you normally would. Otherwise, continue to the next step.
 
-When you choose **Login with GitHub** in step1, you'll be prompted to authorize CodeRabbit.
+1.  GitHub displays a summary of the information that CodeRabbit needs in order to integrate with your
+    GitHub account. This includes read-only access to the following:
 
-> This step grants the necessary permissions for CodeRabbit to interact with your repositories and pull requests.
+        * Organizations and teams that are associated with your GitHub account.
 
-![Authorization Login](/img/integrations/authorization-codeRabbit.png)
+        * Email addresses that are associated with your GitHub account.
 
-### 3. Selecting Your Organization
+        To allow CodeRabbit access to this information, click **Authorize coderabbitai**.
 
-Upon Authorization, If you're part of multiple organizations, you'll have the opportunity to choose which one you want to associate with CodeRabbit. This ensures that you're setting up the tool for the correct team or project.
+After you complete these steps, your browser navigates to the CodeRabbit web interface.
 
-![How to Select Organization in CodeRabbit](/img/integrations/select-organization.png)
+Now that you've integrated CodeRabbit with your GitHub account, you need to give CodeRabbit additional permissions to work with your code repositories. To do this, see the next section.
 
-### 4. Exploring the CodeRabbit Dashboard
+## Allow CodeRabbit to access your repositories
 
-Upon successful authorization, you'll be logged into the CodeRabbit user interface.
+Even after you've integrated CodeRabbit with your GitHub account, you need to
+separately grant CodeRabbit the permissions that it needs to post code reviews and
+create pull requests in your repositories.
 
-Here, you can add repositories and configure CodeRabbit config settings for each repository.
+You need to authorize CodeRabbit separately for each GitHub organization whose repositories you want it to work with. You can give CodeRabbit permission to
+work with all of the repositories associated with a GitHub organization, or limit its access to a select list.
 
-![CodeRabbit Dashboard](/img/integrations/codeRabbit-dashboard.png)
+### Overview of required permissions
 
-:::tip
-If you opt to authorize all repositories during setup, CodeRabbit will automatically include any new repositories you create on GitHub in the future. This saves you the hassle of manual additions down the line.
-:::
+CodeRabbit requires the following permissions to work with your repositories:
 
-### 5. CodeRabbit Configuration
+- Read-only access to actions, checks, discussions, members, and metadata.
 
-You can configure CodeRabbit through a YAML file or using the [App's UI](https://app.coderabbit.ai/login?free-trial).
+- Read-and-write access to code, commit statuses, issues, and pull requests.
 
-You can tailor CodeRabbit's functionality using the `.coderabbit.yaml` file, which you place directly in your GitHub repository. This file mirrors the options available in the CodeRabbit user interface, with each setting in the YAML corresponding to a specific toggle in the UI. Configure CodeRabbit either through the coderabbit.yaml file or the interface, depending on your preference.
+CodeRabbit requests read and write access to your repository in order for its code review, issue management, and pull request generation features to work. CodeRabbit never stores your code. For more information, see [the CodeRabbit Trust Center](https://trust.coderabbit.ai).
 
-:::note
+### Authorize CodeRabbit with your repositories
 
-If a `.coderabbit.yaml` file exists in your GitHub repository, it takes precedence over any UI settings. Choose either the YAML file or UI configuration - you don't need to use both. **Refer CodeRabbit YAML schema [here](https://storage.googleapis.com/coderabbit_public_assets/schema.v2.json)**
+To give CodeRabbit access to one or more of your repositories, follow these steps:
 
-:::
+1. Visit [the CodeRabbit web interface](https://app.coderabbit.ai/settings/repositories).
 
-Once your `.coderabbit.yaml` file is prepared according to your needs, simply place it in your GitHub repository, and you're all set — CodeRabbit is now integrated.
+1. Make sure that the correct GitHub organization for the repository is displayed
+   at the top of the web interface. To change the organization, click **Change
+   Organization** and select a different organization from the list.
 
-> When a pull request is created targeting the master branch, CodeRabbit automatically initiates its review process. It analyzes the changes and generates a summary and walkthrough of the modifications. The specific feedback and analysis provided by CodeRabbit are determined by the options you've configured in your YAML file.
+   If the repositories that you want to add are associated directly with your GitHub account, and not a separate organization, then select your account name as the organization.
 
-Let's see a few examples of CodeRabbit's review comments from a specific pull request in one of the projects.
+   If the organization containing the repository doesn't appear in the list, then you might
+   need to refresh the list of organizations that CodeRabbit has associated with your
+   GitHub account. For more information, see [Add organizations](/getting-started/adding-organizations).
 
-This particular PR involved in changing the language model from LLaMA 2 to LLaMA 3, for testing purposes. These examples will showcase how CodeRabbit analyzed and commented on this significant model switch.
+1. Click the **Add Repositories** button. Your browser navigates to GitHub.com.
 
-## Sample PR Review Workflow using CodeRabbit
+   If the selected organization has no repositories registered with CodeRabbit, then your browser displays a CodeRabbit permissions dialog for setting up a new integration. Proceed to the next step.
 
-CodeRabbit automatically generates a PR summary highlighting key changes.
+   Otherwise, your browser displays a GitHub settings page for your organization's existing CodeRabbit integration. Scroll down to the section titled **Repository access**, and then proceed to the next step.
 
-![CodeRabbit Summary](/img/integrations/summary-by-codeRabbit.png)
+1. Select which repositories you'd like to allow CodeRabbit to write code reviews for.
 
-This image shows CodeRabbit's review status for another pull request. It highlights that **12 actionable comments** were generated, and the review also includes additional comments on specific files, demonstrating CodeRabbit's comprehensive analysis of the code changes.
+   To give CodeRabbit access to all repositories in the organization, select **All repositories**. This also automatically grants CodeRabbit access to all repositories added to the organization in the future.
 
-![Actionable Comments By CodeRabbit](/img/integrations/actionable-comments-by-coderabbit.png)
+   To give CodeRabbit access to specific, limited list of repositories, select **Only select repositories**, and then choose repositories from the list.
 
-You can also use [CodeRabbit commands](https://docs.coderabbit.ai/guides/commands/) to chat with the AI code Reviewer.
+   :::note
+   You can change this setting later.
+   :::
 
-![CodeRabbit Commands](/img/integrations/full-review.png)
+1. Click the button at the bottom of the form, which has one of the following labels, depending upon context:
 
-CodeRabbit could generate a **code sequence diagram** when you request a full review.
+   - **Install & Authorize**, if this organization has no repositories integrated with CodeRabbit, and you are an owner of this organization.
+   - **Save**, if this organization already has repositories integrated with CodeRabbit
 
-The sequence diagram illustrates the precise flow of interactions between the objects in the system.
+1. If you are integrating an organization with CodeRabbit for the first time, then your browser navigates back to the CodeRabbit web interface.
 
-![CodeRabbit Sequence Diagram](/img/integrations/coderabbit-sequence-diagram.png)
+   Otherwise, your browser remains on your GitHub settings page, and you can manually navigate [back to the CodeRabbit web interface](https://app.coderabbit.ai/settings/repositories).
 
-Also, check out the response when asked for what improvements can be done on the code level.
+## What's next
 
-![Code Improvements Suggested by CodeRabbit](/img/integrations/improvements.png)
+- [Set your repository preferences](/guides/repository-settings)
 
-In addition to providing reviews and summaries, **CodeRabbit** can also detect configuration issues.
-
-> For example, I accidentally set up both CodeRabbit Pro (The process we've been discussing) and the open-source version (Refer to [different config process](https://github.com/coderabbitai/ai-pr-reviewer?tab=readme-ov-file#install-instructions)) in my repository at the same time.
-
-CodeRabbit automatically detects and alerts you about configuration conflicts.
-
-![Configuration Issues by CodeRabbit](/img/integrations/configuration.png)
-
-CodeRabbit generates detailed statistics and test plans for each pull request.
-
-![Statistics by CodeRabbit](/img/integrations/statistics.png)
-
-![Test Plan by CodeRabbit](/img/integrations/test-plan.png)
-
-> CodeRabbit also allows you to configure **custom review instructions** based on your organization's needs, in case you want it to follow specific guidelines beyond the standard review, to learn more on [adding custom review instructions](/guides/review-instructions)
-
-Whether you manage a popular repository or are working on a smaller project, whether it's hosted on **GitLab, GitHub, or self-hosted GitHub or GitLab**, CodeRabbit can help streamline your development process. This AI Code Review assistant is designed to save you time by automating code reviews and offering insightful feedback.
-
-> Explore, Experiment, Discover how [CodeRabbit](https://docs.coderabbit.ai/) can streamline your code review process using AI.
+- [Review pull requests](/guides/code-review-overview)
