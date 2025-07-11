@@ -336,14 +336,6 @@
 									},
 									"default": [],
 									"description": "Base branches (other than the default branch) to review. Accepts regex patterns."
-								},
-								"ignore_usernames": {
-									"type": "array",
-									"items": {
-										"type": "string"
-									},
-									"default": [],
-									"description": "Ignore reviewing pull requests by these usernames. These should match the Git platform usernames exactly, not the email addresses."
 								}
 							},
 							"additionalProperties": false,
