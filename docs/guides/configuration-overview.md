@@ -46,6 +46,28 @@ For more information, see [Set your repository preferences](/guides/repository-s
 
 While the web interface provides and easier way to explore the available configuration options for your repository, we recommend using a `.coderabbit.yaml` file [as a best practice](/guides/setup-best-practices#yaml).
 
+## Configuration priority {#priority}
+
+CodeRabbit follows a specific hierarchy when determining which configuration settings to use. Understanding this priority system helps you manage your configuration effectively:
+
+### Priority order (highest to lowest)
+
+1. **Local `.coderabbit.yaml` file of head branch**
+2. **Repository settings** (web UI)
+3. **Organization settings** (web UI)
+
+### How priority works
+
+- **If you have a local `.coderabbit.yaml` file in your source or head branch**: All repository and organization settings are ignored. Only the local YAML file configuration is used. Anything not defined in that file uses default settings.
+- **If you don't have a local YAML file but have enabled repository settings**: Organization settings are ignored. Only repository settings are used.
+- **If you have organization settings and repository settings are disabled**: Only organization settings are used.
+
+### Configuration inheritance
+
+When a configuration source is active, it completely overrides all lower-priority sources. For example, if you set `reviews.tools.github-checks.timeout_ms` to `900000` in organization settings, but you have a local `.coderabbit.yaml` file that doesn't define this setting, CodeRabbit will use the default value of `90000` instead of the organization setting.
+
+This means that configuration is not merged or inherited - the highest priority source takes complete control over all settings.
+
 ## Initial configuration {#initial}
 
 The [Initial configuration guide](/guides/initial-configuration) tours you through several settings that we
