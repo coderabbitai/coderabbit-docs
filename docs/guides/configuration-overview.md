@@ -58,7 +58,7 @@ CodeRabbit follows a specific hierarchy when determining which configuration set
 
 ### How priority works
 
-- **If you have a local `.coderabbit.yaml` file in your source or head branch**: All repository and organization settings are ignored. Only the local YAML file configuration is used. Anything not defined in that file uses default settings.
+- **If you have a local `.coderabbit.yaml` file in your head branch**: All repository and organization settings are ignored. Only the local YAML file configuration is used. Anything not defined in that file uses default settings.
 - **If you don't have a local YAML file but have enabled repository settings**: Organization settings are ignored. Only repository settings are used.
 - **If you have organization settings and repository settings are disabled**: Only organization settings are used.
 
