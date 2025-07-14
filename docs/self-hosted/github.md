@@ -141,7 +141,7 @@ LINEAR_PAT=[<linear-personal-access-token>]
 ENABLE_WEB_SEARCH=[true]
 PERPLEXITY_API_KEY=[<perplexity-api-key>]
 
-YAML_CONFIG=[<yaml-config>]
+YAML_CONFIG=[<escaped-yaml-config>]
 ```
 
 :::note
