@@ -10,13 +10,14 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-[Pylint](https://pylint.pycqa.org/) is a static code analysis tool for Python. It checks your Python code for errors, enforces a coding standard, and looks for code smells.
+[Pylint](https://pylint.pycqa.org/) is a static code analysis tool for Python or Jupiter Notebooks. It checks your Python code for errors, enforces a coding standard, and looks for code smells.
 
 ## Supported Files
 
 Pylint will run on files with the following extensions:
 
 - `*.py`
+- `.ipynb` (using nbqa)
 
 ## Configuration
 
@@ -46,3 +47,4 @@ Pylint can detect many issues such as:
 - [Pylint GitHub Repository](https://github.com/pylint-dev/pylint)
 - [Pylint Documentation](https://pylint.pycqa.org/en/latest/)
 - [Message Control](https://pylint.pycqa.org/en/latest/user_guide/message-control.html)
+- [nbqa Documentation](https://github.com/nbQA-dev/nbQA)

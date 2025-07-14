@@ -10,13 +10,14 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 <ProPlanNotice />
 ```
 
-[Flake8](https://flake8.pycqa.org/) is a Python linting utility that wraps PyFlakes, pycodestyle, and Mccabe to check your Python code for style and logical errors.
+[Flake8](https://flake8.pycqa.org/) is a Python linting utility that wraps PyFlakes, pycodestyle, and Mccabe to check your Python or Jupiter Notebook code for style and logical errors.
 
 ## Supported Files
 
 Flake8 will run on files with the following extensions:
 
 - `*.py`
+- `*.ipynb` (using nbqa)
 
 ## Configuration
 
@@ -42,3 +43,4 @@ Flake8 can detect many issues such as:
 - [Flake8 GitHub Repository](https://github.com/pycqa/flake8)
 - [Flake8 Documentation](https://flake8.pycqa.org/en/latest/)
 - [Flake8 Configuration](https://flake8.pycqa.org/en/latest/user/configuration.html)
+- [nbqa Documentation](https://github.com/nbQA-dev/nbQA)

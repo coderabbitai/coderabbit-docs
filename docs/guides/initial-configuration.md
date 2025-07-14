@@ -72,7 +72,7 @@ By default, CodeRabbit writes thorough code reviews with several sub-sections. I
 - [Related issues](/reference/configuration#related-issues): lists issues found in your issue tracker that might be related to this pull request.
 - [Related pull requests](/reference/configuration#realted-prs): lists pull requests that might be related to this pull request.
 - [Suggested labels](/reference/configuration#suggested-labels): Suggests labels for this pull request.
-- [Suggested reviewers](/reference/configuration#suggested-reveiwers): automatically suggest reviewers for PR
+- [Suggested reviewers](/reference/configuration#suggested-reviewers): automatically suggest reviewers for PR
 - [Poem](/reference/configuration#poem): generates a short poem about this pull request.
 
 ## Adjust path-specific CodeRabbit behavior {#path}
