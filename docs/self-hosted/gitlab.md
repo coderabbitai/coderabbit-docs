@@ -44,7 +44,7 @@ Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.
    - Issues events
    - Merge request events
 
-We have a convenient [script](/static/code/gitlab-webhook.sh) to help you add webhooks to all projects in a GitLab instance. You can run it with the following command:
+We have a convenient [script](/code/gitlab-webhook.sh) to help you add webhooks to all projects in a GitLab instance. You can run it with the following command:
 
 ```bash
 # Make sure the script is executable:
