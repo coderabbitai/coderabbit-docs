@@ -140,6 +140,8 @@ LINEAR_PAT=[<linear-personal-access-token>]
 
 ENABLE_WEB_SEARCH=[true]
 PERPLEXITY_API_KEY=[<perplexity-api-key>]
+
+YAML_CONFIG=[<yaml-config>]
 ```
 
 :::note
@@ -150,6 +152,7 @@ PERPLEXITY_API_KEY=[<perplexity-api-key>]
 - For `GITHUB_HOSTNAME`, use GitHub Enterprise server's hostname, for example, “github.acme-inc.com”
 - You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
 - When `ENABLE_LEARNINGS` is set to `true`, CodeRabbit will use `CODERABBIT_API_KEY` to store learnings on our servers.
+- `YAML_CONFIG` is an optional configuration file that can be used to customize CodeRabbit's behavior at the deployment level. It takes the same format as the [CodeRabbit YAML configuration](/docs/getting-started/configure-coderabbit.md) file. It requires the entire YAML file to be in an escaped string format, for example, `YAML_CONFIG="key1: value1\nkey2: value2"`. You can use [Escape YAML](https://escapeyaml.dev/) to generate the escaped string.
 
 :::
 
