@@ -58,9 +58,11 @@ CodeRabbit requires the following permissions to work with your repositories:
 
 - Read-and-write access to code, commit statuses, issues, and pull requests.
 
+:::note
 CodeRabbit requests read and write access to your repository in order for its code review, issue management, and pull request generation features to work. CodeRabbit never stores your code. For more information, see [the CodeRabbit Trust Center](https://trust.coderabbit.ai).
+:::
 
-### Authorize CodeRabbit with your repositories
+### Grant required permissions
 
 To give CodeRabbit access to one or more of your repositories, follow these steps:
 
