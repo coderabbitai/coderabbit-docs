@@ -45,7 +45,7 @@ Welcome to the official docs for [**CodeRabbit**](https://coderabbit.ai), the co
 2. Clone this repository:
 
    ```sh
-   git clone https://github.com/coderabbit-ai/coderabbit-docs.git
+   git clone https://github.com/coderabbitai/coderabbit-docs.git
    cd coderabbit-docs
    ```
 
