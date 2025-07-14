@@ -44,6 +44,33 @@ Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.
    - Issues events
    - Merge request events
 
+We have a convenient [script](/code/gitlab-webhook.sh) to help you add webhooks to all projects in a GitLab instance. You can run it with the following command:
+
+```bash
+# Make sure the script is executable:
+chmod +x gitlab-webhook.sh
+
+# PAT example (header auto-detected)
+export GITLAB_TOKEN="glpat-xxxxx"
+./gitlab-add-webhook.sh \
+  -h "gitlab.example.com" -u "http://<coderabbit-agent-addr>/gitlab_webhooks" \
+  -s "mySecret" -p 42
+
+# PAT example (explicit header)
+./gitlab-add-webhook.sh \
+  -h "gitlab.example.com" -u "http://<coderabbit-agent-addr>/gitlab_webhooks" \
+  -s "mySecret" -g "mygroup/mysubgroup/myproject" \
+  -t "glpat-xxxxx" \
+  -A "PRIVATE-TOKEN"
+
+# OAuth token with explicit header
+./gitlab-add-webhook.sh \
+  -h "gitlab.example.com" -u "http://<coderabbit-agent-addr>/gitlab_webhooks" \
+  -s "mySecret" -g "company/backend" \
+  -t "eyJhbGciOi..." \
+  -A "Authorization: Bearer"
+```
+
 ## Prepare a `.env` file
 
 Create a `.env` file with the following content:
