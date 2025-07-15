@@ -37,12 +37,45 @@ Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.
 1. **Navigate to Add Webhook Page**: Go to the webhook configuration page in the desired GitLab project.
 2. **Add Webhook URL**: Enter the URL pointing to the CodeRabbit service, followed by `/gitlab_webhooks` (e.g., `http://127.0.0.1:8080/gitlab_webhooks`).
 3. **Generate and Save Secret Token**: Generate a secret token, add it to the webhook, and store it securely. This will be needed for the `.env` file as `GITLAB_WEBHOOK_SECRET` (you can use a single secret token for all projects).
-4. Select triggers:
+4. **Select triggers**:
 
    - Push events
    - Comments
    - Issues events
    - Merge request events
+
+## Add Webhook Using a Script
+
+We have a convenient [script](/code/gitlab-webhook.sh) to help you add webhooks to a project or all projects under a group in a GitLab instance.
+
+```bash
+# Make sure the script is executable:
+chmod +x gitlab-webhook.sh
+```
+
+Example usage:
+
+```bash
+# PAT example (header auto-detected)
+export GITLAB_TOKEN="glpat-xxxxx"
+./gitlab-add-webhook.sh \
+  -h "gitlab.example.com" -u "http://<coderabbit-agent-addr>/gitlab_webhooks" \
+  -s "mySecret" -p 42
+
+# PAT example (explicit header)
+./gitlab-add-webhook.sh \
+  -h "gitlab.example.com" -u "http://<coderabbit-agent-addr>/gitlab_webhooks" \
+  -s "mySecret" -g "mygroup/mysubgroup/myproject" \
+  -t "glpat-xxxxx" \
+  -A "PRIVATE-TOKEN"
+
+# OAuth token with explicit header
+./gitlab-add-webhook.sh \
+  -h "gitlab.example.com" -u "http://<coderabbit-agent-addr>/gitlab_webhooks" \
+  -s "mySecret" -g "company/backend" \
+  -t "eyJhbGciOi..." \
+  -A "Authorization: Bearer"
+```
 
 ## Prepare a `.env` file
 
@@ -134,6 +167,8 @@ LINEAR_PAT=[<linear-personal-access-token>]
 
 ENABLE_WEB_SEARCH=[true]
 PERPLEXITY_API_KEY=[<perplexity-api-key>]
+
+YAML_CONFIG=[<escaped-yaml-config>]
 ```
 
 :::note
@@ -141,6 +176,7 @@ PERPLEXITY_API_KEY=[<perplexity-api-key>]
 - If you are using Azure OpenAI, verify that the model deployment names are in the .env file.
 - Values marked with [] are not optional to provide.
 - You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
+- `YAML_CONFIG` is an optional configuration file that can be used to customize CodeRabbit's behavior at the deployment level. It takes the same format as the [CodeRabbit YAML configuration](/docs/getting-started/configure-coderabbit.md) file. It requires the entire YAML file to be in an escaped string format, for example, `YAML_CONFIG="key1: value1\nkey2: value2"`. You can use [Escape YAML](https://escapeyaml.dev/) to generate the escaped string.
 
 :::
 
