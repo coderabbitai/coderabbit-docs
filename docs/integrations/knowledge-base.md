@@ -1,5 +1,5 @@
 ---
-title: Apply your code review preferences
+title: Knowledge base overview
 description: Learn about CodeRabbit's internal knowledge base and its integrations with external services.
 ---
 

@@ -40,15 +40,15 @@ If CodeRabbit decides to create one or more learnings based on a comment, then i
 
 ### An example of adding a learning {#example}
 
-Imagine a scenario where CodeRabbit has reviewed a pull request from your team that adds a feature to an authentication middleware library. CodeRabbit has flagged a certain file as needing improvement, attaching this comment to the relevant lines in its review:
+Imagine a scenario where CodeRabbit has reviewed a GitHub-based pull request from your team that adds a feature to an authentication middleware library. CodeRabbit has flagged a certain file as needing improvement, attaching this comment to the relevant lines in its review:
 
 > Consider using nested try-catch blocks here to handle different error scenarios more comprehensively.
 
-If this critique disagrees with your team's coding practices specific to try-catch blocks, then you can reply to this CodeRabbit using a comment of your own:
+If this critique disagrees with your team's coding practices specific to try-catch blocks, then you can reply to this CodeRabbit using a comment of your own, addressed to the `@coderabbitai` service account on GitHub:
 
 > @coderabbitai Actually, we've found that nested try-catch blocks make our auth middleware harder to debug in production. We prefer early returns with specific error codes - it's cleaner and our monitoring tools can track them better.
 
-CodeRabbit—in this case, using the @coderabbitai service account available on GitHub—considers your reply, and decides to make a learning out of it. It acknowledges this in another reply:
+CodeRabbit considers your reply, and decides to make a learning out of it. It acknowledges this in another reply:
 
 > You're absolutely right about the debugging benefits. Early returns with specific error codes do provide better clarity and monitoring capabilities. I'll remember this preference for your authentication middleware. Thank you for the guidance!
 
@@ -58,13 +58,13 @@ CodeRabbit then creates a new learnings record for itself. Along with metadata s
 
 > In authentication middleware, prefer returning early with specific error codes rather than nested try-catch blocks. This improves readability and makes error tracking easier in production environments.
 
-### Best practices for new learnings
+### Best practices for new learnings {#best-practices}
 
 When communicating with CodeRabbit during an active code review, you can help make any resulting learnings more specific by replying directly to review comments that CodeRabbit has left on specific files, rather than leaving comments on the overall pull request. This gives CodeRabbit more context when considering feedback, allowing it to create more specific learnings.
 
-## View learnings
+## View learnings {#view}
 
-To view the learnings that CodeRabbit has associated with your Git platform organization,
+To view the learnings that CodeRabbit has associated with your organization,
 follow these steps:
 
 1. Visit [the CodeRabbit web interface](https://app.coderabbit.ai/settings/repositories).
@@ -73,7 +73,9 @@ follow these steps:
 
 This displays a paged list of all of the learnings associated with your organization, sorted by creation time, newest-first. To see more details about any learnings record, click its text.
 
-### Filter displayed learnings
+### Filter displayed learnings {#filter}
+
+Over time, the learnings that CodeRabbit gathers for your organization can become quite numerous. This can make manually browsing the full list difficult. The CodeRabbit web interface has search and filtering tools to help you find specific learnings, based on the topic of the learning text, or on other metadata.
 
 To filter the displayed learnings by topic or concept, enter that topic or concept into the **Similarity search** field, and set **Top K** to the number of results you want returned. Because this is a vector-based similarity search, the returned learnings don't necessarily contain the exact text of your search terms.
 
@@ -81,7 +83,7 @@ For example, to see the top ten learnings that have to do with error reporting, 
 
 To filter the displayed learnings by repository, user, or file path, click **+ Filters**, and select additional criteria.
 
-### Edit or delete learnings
+### Edit or delete learnings {#edit}
 
 If your account has the **Admin** [CodeRabbit role](/guides/roles) with your organization, then you can freely edit the text of any stored learning, or delete it outright.
 
@@ -91,11 +93,11 @@ To edit or delete a learning, follow these steps:
 
 1. Select **Edit** or **Delete**.
 
-## Configure learnings storage and application
+## Configure learnings storage and application {#configure}
 
 CodeRabbit has several configuration options that modify the storage and application of learnings.
 
-### Opt out of learnings storage
+### Opt out of learnings storage {#opt-out}
 
 CodeRabbit enables learnings by default. To disable learnings, modify one of the following configuration options:
 
@@ -103,11 +105,11 @@ CodeRabbit enables learnings by default. To disable learnings, modify one of the
 
 - To disable all CodeRabbit features that require long-term data retention about your organization's use of CodeRabbit—including learnings—disable [the _Data retention_ setting](/reference/configuration#data-retention).
 
-::warning
+:::warning
 Disabling data retention immediately and irrevocably deletes all learnings that CodeRabbit has associated with your organization.
 :::
 
-### Specify the scope of applied learnings
+### Specify the scope of applied learnings {#scope}
 
 [The Learnings configuration setting](/reference/configuration#learnings) lets you specify the _scope_ that CodeRabbit applies to all
 of the learnings it has collected about your organization. You can set this option to one of the
@@ -116,3 +118,7 @@ following values:
 - **`auto`**: When reviewing a public repository, CodeRabbit applies only the learnings specific to that repository. When reviewing private repository, CodeRabbit applies all of your organization's learnings. This is the default setting.
 - **`global`**: CodeRabbit applies all of your organization's learnings to all code reviews.
 - **`local`**: CodeRabbit applies only learnings associated with code reviews' respective repositories.
+
+## What's next {#whats-next}
+
+- [Add review instructions](/guides/review-instructions)

@@ -79,6 +79,6 @@ As a complement to the configuration methods listed above, CodeRabbit keeps an i
 
 For more information, see [Teach CodeRabbit your review preferences](/guides/learnings).
 
-# What's next {#whats-next}
+## What's next {#whats-next}
 
 - [Initial configuration guide](/guides/initial-configuration)
