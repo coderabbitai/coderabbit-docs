@@ -37,7 +37,7 @@ Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.
 1. **Navigate to Add Webhook Page**: Go to the webhook configuration page in the desired GitLab project.
 2. **Add Webhook URL**: Enter the URL pointing to the CodeRabbit service, followed by `/gitlab_webhooks` (e.g., `http://127.0.0.1:8080/gitlab_webhooks`).
 3. **Generate and Save Secret Token**: Generate a secret token, add it to the webhook, and store it securely. This will be needed for the `.env` file as `GITLAB_WEBHOOK_SECRET` (you can use a single secret token for all projects).
-4. Select triggers:
+4. **Select triggers**:
 
    - Push events
    - Comments
