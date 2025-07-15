@@ -7,13 +7,13 @@
 # Make sure the script is executable:
 # chmod +x gitlab-webhook.sh
 
-# PAT example (header auto-detected)
+# PAT auto-detected header
 # export GITLAB_TOKEN="glpat-xxxxx"
 # ./gitlab-add-webhook.sh \
 #   -h "gitlab.example.com" -u "https://ci.example.com/gitlab-hook" \
 #   -s "mySecret" -p 42
 
-# PAT example (explicit header)
+# PAT with explicit header
 # ./gitlab-add-webhook.sh \
 #   -h "gitlab.example.com" -u "https://ci.example.com/gitlab-hook" \
 #   -s "mySecret" -g "mygroup/mysubgroup/myproject" \
