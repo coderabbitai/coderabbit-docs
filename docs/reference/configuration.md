@@ -2850,6 +2850,47 @@ ESLint is a static code analysis tool for JavaScript files.
 
 ESLint is a static code analysis tool for JavaScript files.
 
+### Flake8
+
+Flake8 is a static code analysis tool for Python files.
+
+#### Enable Flake8
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review &gt; Tools &gt; Flake8 &gt; Enable</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.flake8.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+</Tabs>
+
+Flake8 is a static code analysis tool for Python files.
+
 ### GitHub Checks
 
 GitHub Checks integration configuration.
@@ -3511,11 +3552,11 @@ markdownlint-cli2 is a static analysis tool to enforce standards and consistency
 
 markdownlint-cli2 is a static analysis tool to enforce standards and consistency for Markdown files.
 
-### OXC
+### Oxlint
 
-OXC is a JavaScript/TypeScript linter written in Rust.
+Oxlint is a JavaScript/TypeScript linter for OXC written in Rust.
 
-#### Enable OXC
+#### Enable Oxlint
 
 <Tabs groupId="config-setting">
   <TabItem value="web-ui" label="Web UI">
@@ -3523,7 +3564,7 @@ OXC is a JavaScript/TypeScript linter written in Rust.
       <tbody>
       <tr>
         <td><strong>Location</strong></td>
-        <td>Review > Tools > Enable OXC</td>
+        <td>Review > Tools > Enable Oxlint</td>
       </tr>
       <tr>
         <td><strong>Default</strong></td>
@@ -3550,7 +3591,7 @@ OXC is a JavaScript/TypeScript linter written in Rust.
   </TabItem>
 </Tabs>
 
-OXC is a JavaScript/TypeScript linter written in Rust.
+Oxlint is a JavaScript/TypeScript linter for OXC written in Rust.
 
 ### PHPStan
 
@@ -3707,6 +3748,88 @@ Enable PMD.
 </Tabs>
 
 Optional path to the PMD configuration file relative to the repository.
+
+### PHPMD
+
+PHPMD is a static code analysis tool for PHP files.
+
+#### Enable PHPMD
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review &gt; Tools &gt; Enable PHPMD</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.phpmd.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+</Tabs>
+
+PHPMD is a static code analysis tool for PHP files.
+
+### PHPCS
+
+PHPCS is a static code analysis and coding-standard checker for PHP (plus JS/CSS) files.
+
+#### Enable PHPCS
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Review &gt; Tools &gt; Enable PHPCS</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`reviews.tools.phpcs.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+</Tabs>
+
+PHPCS is a static code analysis tool for PHP, JavaScript and CSS files.
 
 ### Prisma Schema Linting
 
