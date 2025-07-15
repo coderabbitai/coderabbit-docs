@@ -44,12 +44,18 @@ Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.
    - Issues events
    - Merge request events
 
-We have a convenient [script](/code/gitlab-webhook.sh) to help you add webhooks to all projects in a GitLab instance. You can run it with the following command:
+## Add Webhook Using a Script
+
+We have a convenient [script](/code/gitlab-webhook.sh) to help you add webhooks to all projects in a GitLab instance.
 
 ```bash
 # Make sure the script is executable:
 chmod +x gitlab-webhook.sh
+```
 
+Example usage:
+
+```bash
 # PAT example (header auto-detected)
 export GITLAB_TOKEN="glpat-xxxxx"
 ./gitlab-add-webhook.sh \
