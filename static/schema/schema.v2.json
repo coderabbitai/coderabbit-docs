@@ -412,7 +412,7 @@
 									},
 									"additionalProperties": false,
 									"default": {},
-									"description": "Enable ast-grep | ast-grep is a code analysis tool that helps you to find patterns in your codebase using abstract syntax trees patterns. | v0.38.1"
+									"description": "Enable ast-grep | ast-grep is a code analysis tool that helps you to find patterns in your codebase using abstract syntax trees patterns. | v0.38.6"
 								},
 								"shellcheck": {
 									"type": "object",
@@ -433,7 +433,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable Ruff integration. | v0.11.9"
+											"description": "Enable Ruff | Ruff is a Python linter and code formatter. |  Enable Ruff integration. | v0.12.2"
 										}
 									},
 									"additionalProperties": false,
@@ -578,7 +578,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root. Please ensure that this file contains the `paths:` parameter. | v2.1.15"
+											"description": "Enable PHPStan | PHPStan requires [config file](https://phpstan.org/config-reference#config-file) in your repository root. Please ensure that this file contains the `paths:` parameter. | v2.1.17"
 										},
 										"level": {
 											"type": "string",
@@ -666,7 +666,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration. | v8.26.0"
+											"description": "Enable Gitleaks | Gitleaks is a secret scanner. | Enable Gitleaks integration. | v8.27.2"
 										}
 									},
 									"additionalProperties": false,
@@ -735,7 +735,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable RuboCop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.75.5"
+											"description": "Enable RuboCop | RuboCop is a Ruby static code analyzer (a.k.a. linter ) and code formatter. | v1.76.1"
 										}
 									},
 									"additionalProperties": false,
@@ -748,7 +748,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Buf | Buf offers linting for Protobuf files. | v1.54.0"
+											"description": "Enable Buf | Buf offers linting for Protobuf files. | v1.55.1"
 										}
 									},
 									"additionalProperties": false,
@@ -761,7 +761,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Regal | Regal is a linter and language server for Rego. | v0.33.1"
+											"description": "Enable Regal | Regal is a linter and language server for Rego. | v0.35.1"
 										}
 									},
 									"additionalProperties": false,
@@ -787,7 +787,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable PMD | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.13.0"
+											"description": "Enable PMD | PMD is an extensible multilanguage static code analyzer. It’s mainly concerned with Java. | v7.15.0"
 										},
 										"config_file": {
 											"type": "string",
@@ -834,7 +834,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable CircleCI | CircleCI tool is a static checker for CircleCI config files. | v0.1.31687"
+											"description": "Enable CircleCI | CircleCI tool is a static checker for CircleCI config files. | v0.1.32638"
 										}
 									},
 									"additionalProperties": false,
@@ -860,7 +860,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable SQLFluff | SQLFluff is an open source, dialect-flexible and configurable SQL linter. | v3.4.0"
+											"description": "Enable SQLFluff | SQLFluff is an open source, dialect-flexible and configurable SQL linter. | v3.4.1"
 										}
 									},
 									"additionalProperties": false,
@@ -873,7 +873,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Prisma Schema linting | Prisma Schema linting helps maintain consistent and error-free schema files | v0.10.1"
+											"description": "Enable Prisma Schema linting | Prisma Schema linting helps maintain consistent and error-free schema files | v0.10.2"
 										}
 									},
 									"additionalProperties": false,
