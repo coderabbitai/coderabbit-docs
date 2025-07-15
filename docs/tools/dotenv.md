@@ -18,6 +18,17 @@ Dotenv Linter does not require configuration to run and automatically anlysises 
 
 :::
 
+:::info
+
+CodeRabbit runs Dotenv Linter against the following file patterns:
+
+- `**/.env`
+- `**/.env.*`
+
+We will not run against files that do not start with `.env` (e.g., `test.env`).
+
+:::
+
 ## Features
 
 Dotenv Linter can detect:
