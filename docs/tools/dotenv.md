@@ -25,7 +25,7 @@ CodeRabbit runs Dotenv Linter against the following file patterns:
 - `**/.env`
 - `**/.env.*`
 
-We will not run against files that do not start with `.env` (e.g., `test.env`).
+We will not run against files that do not start with `.env` (e.g., `test.env`). However `.env.dev` or `.env.local` is fine.
 
 :::
 
