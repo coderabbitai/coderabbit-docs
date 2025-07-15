@@ -137,7 +137,7 @@
 						},
 						"request_changes_workflow": {
 							"type": "boolean",
-							"default": false,
+							"default": true,
 							"description": "Approve the review once CodeRabbit's comments are resolved. Note: In GitLab, all discussions must be resolved."
 						},
 						"high_level_summary": {
@@ -369,6 +369,81 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Unit Tests | Options for generating unit tests for your PRs/MRs."
+								}
+							},
+							"additionalProperties": false,
+							"default": {}
+						},
+						"pre_merge_checks": {
+							"type": "object",
+							"properties": {
+								"docstrings": {
+									"type": "object",
+									"properties": {
+										"mode": {
+											"type": "string",
+											"enum": ["off", "warning", "error"],
+											"default": "warning",
+											"description": "Mode | Level of enforcement for docstring coverage check. Warning only generates a warning and does not require the user to resolve the check. While error requires the user to resolve issues before merging pull request."
+										},
+										"threshold": {
+											"type": "number",
+											"minimum": 0,
+											"maximum": 100,
+											"default": 80,
+											"description": "Percentage threshold for docstring coverage check."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Docstring Coverage | Checks if the code has sufficient docstrings."
+								},
+								"title": {
+									"type": "object",
+									"properties": {
+										"mode": {
+											"type": "string",
+											"enum": ["off", "warning", "error"],
+											"default": "warning",
+											"description": "Mode | Level of enforcement for pull request title check. Warning only generates a warning and does not require the user to resolve the check. While error requires the user to resolve issues before merging pull request."
+										},
+										"requirements": {
+											"type": "string",
+											"default": "",
+											"description": "Requirements | Requirements for the pull request title. Example: 'Title should be concise and descriptive, ideally under 50 characters.'"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Title Check | Checks if the pull request title is appropriate and follows best practices."
+								},
+								"description": {
+									"type": "object",
+									"properties": {
+										"mode": {
+											"type": "string",
+											"enum": ["off", "warning", "error"],
+											"default": "warning",
+											"description": "Mode | Level of enforcement for pull request description check. Warning only generates a warning and does not require the user to resolve the check. While error requires the user to resolve issues before merging pull request."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Description Check | Checks if the pull request description is appropriate and follows best practices."
+								},
+								"issue_assessment": {
+									"type": "object",
+									"properties": {
+										"mode": {
+											"type": "string",
+											"enum": ["off", "warning", "error"],
+											"default": "warning",
+											"description": "Mode | Level of enforcement for linked issue assessment. Warning only generates a warning and does not require the user to resolve the check. While error requires the user to resolve issues before merging pull request."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Linked Issue Assessment | Checks if the pull request addresses the linked issues. Generate an assessment of how well the changes address the linked issues."
 								}
 							},
 							"additionalProperties": false,
@@ -899,12 +974,12 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable OXC | OXC is a JavaScript/TypeScript linter written in Rust. | v0.16.10"
+											"description": "Enable Oxlint | Oxlint is a JavaScript/TypeScript linter for OXC written in Rust. | v0.16.10"
 										}
 									},
 									"additionalProperties": false,
 									"default": {},
-									"description": "OXC is a JavaScript/TypeScript linter written in Rust."
+									"description": "Oxlint is a JavaScript/TypeScript linter for OXC written in Rust."
 								},
 								"shopifyThemeCheck": {
 									"type": "object",
