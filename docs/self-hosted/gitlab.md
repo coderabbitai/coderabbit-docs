@@ -46,7 +46,7 @@ Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.
 
 ## Add Webhook Using a Script
 
-We have a convenient [script](/code/gitlab-webhook.sh) to help you add webhooks to all projects in a GitLab instance.
+We have a convenient [script](/code/gitlab-webhook.sh) to help you add webhooks to a project or all projects under a group in a GitLab instance.
 
 ```bash
 # Make sure the script is executable:
