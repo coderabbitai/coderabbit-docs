@@ -988,6 +988,11 @@
 							"additionalProperties": false,
 							"description": "Tools that provide additional context to code reviews.",
 							"default": {}
+						},
+						"pre_merge_checks": {
+							"type": "object",
+							"additionalProperties": {},
+							"default": {}
 						}
 					},
 					"additionalProperties": false,
