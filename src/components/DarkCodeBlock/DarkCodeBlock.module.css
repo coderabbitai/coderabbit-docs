@@ -1,0 +1,131 @@
+.codeBlock {
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  border: none;
+  font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
+  position: relative;
+}
+
+.codeHeader {
+  background-color: #1a1a1a;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #333;
+  color: #888;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.codeTitle {
+  color: #888;
+  font-style: italic;
+}
+
+.codeContainer {
+  position: relative;
+  background-color: #1a1a1a;
+}
+
+.codeContent {
+  margin: 0;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  background-color: transparent;
+  color: #e6e6e6;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.codeLine {
+  display: block;
+  min-height: 1.6rem;
+}
+
+.copyButtonContainer {
+  background-color: #1a1a1a;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.copyButton {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.copyButton:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #666;
+}
+
+.copyButton:active {
+  transform: scale(0.98);
+}
+
+.copyButton svg {
+  width: 14px;
+  height: 14px;
+}
+
+.codeContent :global(.keyword) {
+  color: #4fc1ff;
+  font-weight: 400;
+}
+
+.codeContent :global(.comment) {
+  color: #6a9955;
+  font-style: italic;
+}
+
+.codeContent :global(.string) {
+  color: #ff6b9d;
+}
+
+.codeContent :global(.function) {
+  color: #ffab70;
+  font-weight: 400;
+}
+
+.codeContent :global(.number) {
+  color: #53FFE8;
+}
+
+.codeContent :global(.header) {
+  color: #e6e6e6;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .codeContent {
+    font-size: 0.8rem;
+    padding: 0.75rem;
+    padding-bottom: 3rem;
+  }
+
+  .copyButton {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .copyButtonContainer {
+    padding: 0.5rem 0.75rem;
+  }
+}

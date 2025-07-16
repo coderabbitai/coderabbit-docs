@@ -5,11 +5,12 @@ description: See CodeRabbit in action, using a live GitHub repository.
 sidebar_position: 1
 ---
 
-import ListItems from "../../src/components/ListItems"
-import InfoBox from "../../src/components/InfoBox"
-import Note from "../../src/components/Note"
 import CodeBlock from "@theme/CodeBlock"
 import ChatBubble from "../../src/components/ChatBubble"
+import DarkCodeBlock from "../../src/components/DarkCodeBlock"
+import InfoBox from "../../src/components/InfoBox"
+import ListItems from "../../src/components/ListItems"
+import Note from "../../src/components/Note"
 
 # Quickstart
 
@@ -70,14 +71,21 @@ CodeRabbit takes a moment to set up the integration. After it finishes, the Code
 
 To add CodeRabbit to your test repository, follow these steps:
 
-1. On the CodeRabbit dashboard, click **Add Repositories**. A GitHub repository-access dialog appears.
-1. Select the **Only select repositories** radio button.
-1. From the **Select repositories** menu, select the `coderabbit-test` repository that you created earlier in this Quickstart.
-1. Click **Install & Authorize**.
-   :::note
-   CodeRabbit requests read and write access to your repository in order for its code review, issue management, and pull request generation features to work. CodeRabbit never stores your code. For more information, see [the CodeRabbit Trust Center](https://trust.coderabbit.ai).
-   :::
-1. If a CodeRabbit **Complete your signup** dialog appears, then fill it out with the requested information before continuing.
+<ListItems
+	orderedList
+	items={[
+		<>On the CodeRabbit dashboard, click <strong>Add Repositories</strong>.</>,
+		<>Select the <strong>Only select repositories</strong> radio button.</>,
+		<>From the <strong>Select repositories</strong> menu, select the <code>coderabbit-test</code> repository that you created earlier in this Quickstart.</>,
+		<>
+			Click <strong>Install & Authorize</strong>.
+			<Note>
+				CodeRabbit requests read and write access to your repository in order for its code review, issue management, and pull request generation features to work. CodeRabbit never stores your code. For more information, see <a href="https://trust.coderabbit.ai">the CodeRabbit Trust Center</a>.
+			</Note>
+		</>,
+		<>If a CodeRabbit <strong>Complete your signup</strong> dialog appears, then fill it out with the requested information before continuing.</>,
+	]}
+/>
 
 CodeRabbit is now ready to use with your test repository. The next steps demonstrate its core code-review features.
 
@@ -93,19 +101,18 @@ Use your usual Git workflow to perform the following steps in the `coderabbit-te
 		"Create a branch named `add-utils`.",
 		<>
 			In that new <code>add-utils</code> branch, create a new file called <code>simple_utils.py</code>, with the following content:
-			<CodeBlock language="python">{`
-# simple_utils.py - A tiny utility library
+			<DarkCodeBlock language="python">{`# simple_utils.py - A tiny utility library
 
 def reverse_string(text):
-"""Reverses the characters in a string."""
-return text[::-1]
+    """Reverses the characters in a string."""
+    return text[::-1]
 
 def count_words(sentence):
-return len(sentence.split())
+    return len(sentence.split())
 
 def celsius_to_fahrenheit(celsius):
-return (celsius \* 9/5) + 32
-`}</CodeBlock>
+    return (celsius * 9/5) + 32
+`}</DarkCodeBlock>
 		</>,
 		"Commit the added file to the `add-utils`branch. Use any text you want for the commit message.",
 		"Create a pull request that proposes to merge the`add-utils`branch into the`main` branch. Use any text you want for the pull request message.",
@@ -116,12 +123,10 @@ After a few moments, CodeRabbit responds to the pull request using the `@coderab
 
 <ListItems
 	items={[
-		"If you didn't write a pull request summary, then CodeRabbit adds a new summary to the pull request.",
-		"CodeRabbit posts a comment titled **Walkthrough** containing analysis and commentary about the content of the pull request.",
-		"CodeRabbit attaches a detailed code review to the pull request as another comment.",
-
-    ]}
-
+		<>If you didn't write a pull request summary, then CodeRabbit adds a new summary to the pull request.</>,
+		<>CodeRabbit posts a comment titled <strong>Walkthrough</strong> containing analysis and commentary about the content of the pull request.</>,
+		<>CodeRabbit attaches a detailed code review to the pull request as another comment.</>,
+	]}
 />
 
 Part of the review resembles the following screenshot:
@@ -136,33 +141,31 @@ After CodeRabbit reviews a pull request, you can converse with it about its revi
 
 1. Post the following as a new GitHub comment attached to the pull request:
 
-   ```text
-   @coderabbitai Why do all of these functions need docstrings? Isn't it obvious enough what they do?
-   ```
+<ChatBubble>@coderabbitai Why do all of these functions need docstrings? Isn't it obvious enough what they do?</ChatBubble>
 
-   After a few moments, CodeRabbit posts its reply, explaining its motivations for its recommendation. The reply might resemble the following:
+After a few moments, CodeRabbit posts its reply, explaining its motivations for its recommendation. The reply might resemble the following:
 
 <ChatBubble>
-	{`> You're right that these functions are quite self-explanatory from their names alone. Docstrings aren't strictly necessary for every function, especially in smaller projects with clear function names.
->
-> While docstrings do provide benefits (IDE tooltips, documentation generation, help for future developers), they can sometimes feel redundant for very straightforward functions. It's ultimately a matter of coding style and project requirements.
->
-> If you prefer to skip docstrings for obvious utility functions in this project, that's perfectly reasonable. Would you like me to adjust my review approach regarding documentation for this repository?`}
+{`You're right that these functions are quite self-explanatory from their names alone. Docstrings aren't strictly necessary for every function, especially in smaller projects with clear function names.
+
+  While docstrings do provide benefits (IDE tooltips, documentation generation, help for future developers), they can sometimes feel redundant for very straightforward functions. It's ultimately a matter of coding style and project requirements.
+
+  If you prefer to skip docstrings for obvious utility functions in this project, that's perfectly reasonable. Would you like me to adjust my review approach regarding documentation for this repository?`}
 </ChatBubble>
 
 In this case, CodeRabbit is offering to adjust its future behavior when reviewing changes to this repository. Instead, follow the next step to ask CodeRabbit to implement part of its suggestions.
 
-1. Post the following as another new comment:
+2. Post the following as another new comment:
 
-   ```text
-   @coderabbitai generate docstrings
-   ```
+<ChatBubble>@coderabbitai generate docstrings</ChatBubble>
 
-   After a few moments, CodeRabbit does the following:
+After a few moments, CodeRabbit does the following:
 
-   - CodeRabbit creates a new branch, based on `add-utils`.
-   - CodeRabbit commits changes to the branch that adds suggested docstrings to `add-utils`.
-   - CodeRabbit opens a new pull request between the new branch and `add-utils`.
+<ListItems items={[
+	<>CodeRabbit creates a new branch, based on `add-utils`.</>,
+	<>CodeRabbit commits changes to the branch that adds suggested docstrings to `add-utils`.</>,
+	<>CodeRabbit opens a new pull request between the new branch and `add-utils`.</>,
+]} />
 
 ## Clean up
 
@@ -172,8 +175,10 @@ You are now ready to add CodeRabbit to other repositories that you own, and let 
 
 ## What's next
 
-- [Integrate CodeRabbit](/platforms/) with your repositories on GitHub, GitLab, Azure DevOps, or Bitbucket.
-- [Configure CodeRabbit](/getting-started/configure-coderabbit) beyond its default settings.
-- [Add custom review instructions](/guides/review-instructions).
-- [Get support for CodeRabbit](/getting-started/support).
-- [Learn more about how CodeRabbit works](/overview/why-coderabbit).
+<ListItems items={[
+	<><a href="/platforms/">Integrate CodeRabbit</a> with your repositories on GitHub, GitLab, Azure DevOps, or Bitbucket.</>,
+	<><a href="/getting-started/configure-coderabbit">Configure CodeRabbit</a> beyond its default settings.</>,
+	<><a href="/guides/review-instructions">Add custom review instructions</a>.</>,
+	<><a href="/getting-started/support">Get support for CodeRabbit</a>.</>,
+	<><a href="/overview/why-coderabbit">Learn more about how CodeRabbit works</a>.</>,
+]} />

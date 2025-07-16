@@ -92,27 +92,6 @@ a[docid="docs"] > svg {
 	display: none;
 }
 
-/* Adjustments for mobile view */
-@media (max-width: 768px) {
-	/* Reduce the logo size for smaller screens */
-	.navbar__logo img {
-		height: 32px;
-		align-items: center;
-	}
-
-	/* Reduce the padding around the logo for smaller screens */
-	.navbar__logo {
-		padding: 2px; /* Adjust the padding for smaller screens */
-	}
-}
-
-/* Center the Discord link within its parent */
-.navbar__items.navbar__items--right {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 [data-theme="light"] img[src$="#gh-dark-mode-only"],
 [data-theme="dark"] img[src$="#gh-light-mode-only"] {
 	display: none;
@@ -148,7 +127,14 @@ a[docid="docs"] > svg {
 	display: none;
 }
 
-/* Adjustments for mobile view */
+/* Center the Discord link within its parent */
+.navbar__items.navbar__items--right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Consolidated mobile view adjustments */
 @media (max-width: 768px) {
 	/* Reduce the logo size for smaller screens */
 	.navbar__logo img {
@@ -158,15 +144,13 @@ a[docid="docs"] > svg {
 
 	/* Reduce the padding around the logo for smaller screens */
 	.navbar__logo {
-		padding: 2px; /* Adjust the padding for smaller screens */
+		padding: 2px;
 	}
-}
 
-/* Center the Discord link within its parent */
-.navbar__items.navbar__items--right {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	/* Content padding for mobile */
+	.markdown {
+		padding-left: 1rem;
+	}
 }
 
 /* Light mode Discord icon */
@@ -364,4 +348,20 @@ a[docid="docs"] > svg {
 	font-weight: 600;
 	cursor: default;
 	background-color: var(--ifm-breadcrumb-item-background-active);
+}
+
+/* Add left spacing to main content */
+.markdown {
+	padding-left: 1.5rem;
+}
+
+/* Align numbered lists with other content */
+.markdown ol {
+	padding-left: 1.2rem;
+	margin-left: 0;
+}
+
+.markdown ol > li {
+	margin-left: 0;
+	padding-left: 0.5rem;
 }

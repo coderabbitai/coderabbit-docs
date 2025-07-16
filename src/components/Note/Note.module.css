@@ -17,9 +17,9 @@
 }
 
 .icon {
-	font-size: 1.3em;
+	width: 1.5em;
+	height: 1.5em;
 	margin-right: 0.5em;
-	color: #2ec4b6;
 	flex-shrink: 0;
 }
 
