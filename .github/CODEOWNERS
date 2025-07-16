@@ -1,2 +1,3 @@
-*.ts @coderabbitai/typescript-reviewers
-sidebars.ts
+docusaurus.config.ts @coderabbitai/typescript-reviewers
+src/**/*.ts @coderabbitai/typescript-reviewers
+src/**/*.tsx @coderabbitai/typescript-reviewers
