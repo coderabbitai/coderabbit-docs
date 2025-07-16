@@ -30,15 +30,19 @@ The **Agent Type** setting lets you choose the extension's response to using the
 
   This works only with VSCode, using Copilot. If you have this option selected when using a different IDE, then the extension instead copies the prompt to your clipboard.
 
-- **Claude Code**: The extension opens the Terminal pane of your IDE and tries to use the `claude` command-line program to apply the suggested fix to your code. You need to have Claude Code installed for this option to be effective.
+- **Claude Code**: The extension opens the Terminal pane of your IDE and tries to use the `claude` command-line program to apply the suggested fix to your code. You need to have [Claude Code](https://www.anthropic.com/claude-code) installed for this option to be effective.
 
-- **Codex CLI**: The extension opens the Terminal pane of your IDE and tries to use the `codex` command-line program to apply the suggested fix to your code. You need to have Codex CLI installed for this option to be effective.
+- **Codex CLI**: The extension opens the Terminal pane of your IDE and tries to use the `codex` command-line program to apply the suggested fix to your code. You need to have [Codex CLI](https://github.com/openai/codex) installed for this option to be effective.
 
-- **Cline**: The extension opens the `Cline` sidebar and runs a task to apply the suggested fix to your code. You need to have the `Cline` extension installed for this option to be effective.
+- **OpenCode**: The extension opens the Terminal pane of your IDE and tries to use the `opencode` command-line program to apply the suggested fix to your code. You need to have [OpenCode](https://opencode.ai) installed for this option to be effective.
 
-- **Roo**: The extension opens the `Roo` sidebar and runs a task to apply the suggested fix to your code. You need to have the `Roo` extension installed for this option to be effective.
+- **Cline**: The extension opens the `Cline` sidebar and runs a task to apply the suggested fix to your code. You need to have the [Cline](https://cline.bot/) extension installed for this option to be effective.
 
-- **Kilo Code**: The extension opens the `Kilo Code` sidebar and runs a task to apply the suggested fix to your code. You need to have the `Kilo Code` extension installed for this option to be effective.
+- **Roo**: The extension opens the `Roo` sidebar and runs a task to apply the suggested fix to your code. You need to have the [Roo](https://github.com/RooCodeInc/Roo-Code) extension installed for this option to be effective.
+
+- **Kilo Code**: The extension opens the `Kilo Code` sidebar and runs a task to apply the suggested fix to your code. You need to have the [Kilo Code](https://kilocode.ai/) extension installed for this option to be effective.
+
+- **Augment Code**: The extension opens the `Augment Code` sidebar with the prompt to apply the suggested fix to your code, and you can start the task. You need to have the [Augment Code](https://www.augmentcode.com/) extension installed for this option to be effective.
 
 - **Clipboard**: The extension copies prompt text describing the suggested fix to your clipboard. From there, you can manually paste the prompt into the coding AI agent that you use with your IDE.
 
