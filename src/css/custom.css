@@ -41,6 +41,16 @@
 	--ifm-background-color-primary: #f6f6f1;
 	--ifm-background-color-secondary: #e8e8e8;
 	--ifm-breadcrumb-item-background-active: #ffe9e2;
+	--imf-list-card-background-color: #ffffff;
+	--imf-list-bullets-color: #25bab1;
+	--imf-color-background-orange-light: #fffcfb;
+	--imf-color-border-orange: #ffceb6;
+	--imf-note-border-color: #25bab1;
+	--imf-note-background-color: #f1fffe;
+	--imf-note-text-color: #208682;
+	--imf-text-color-bg: #e8e8e8;
+	--imf-text-color: #171717;
+	--imf-text-button-color-bg: #e8e8e8;
 }
 
 [data-theme="dark"] {
@@ -55,6 +65,15 @@
 	--ifm-background-color-primary: #171717;
 	--ifm-background-color-secondary: #232323;
 	--ifm-breadcrumb-item-background-active: #3f322e;
+	--imf-list-card-background-color: #232323;
+	--imf-list-bullets-color: #208682;
+	--imf-color-background-orange-light: #232323;
+	--imf-color-border-orange: #232323;
+	--imf-note-border-color: #208682;
+	--imf-note-background-color: #252828;
+	--imf-text-color-bg: #232323;
+	--imf-text-color: #f5f5f5;
+	--imf-text-button-color-bg: #e8e8e8;
 }
 
 #__docusaurus {
@@ -303,6 +322,17 @@ a[docid="docs"] > svg {
 /* Disable automatic next/previous pagination links */
 .pagination-nav {
 	display: none;
+}
+.language-text {
+	background-color: var(--imf-text-color-bg) !important;
+}
+.language-text .token-line {
+	color: var(--imf-text-color) !important;
+}
+.language-text [class*="buttonGroup"] button {
+	background-color: var(--imf-text-color-bg) !important;
+	color: var(--imf-text-color) !important;
+	border-radius: 4px;
 }
 /* ===== MARKDOWN STYLES ===== */
 .theme-doc-markdown.markdown {
