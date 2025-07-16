@@ -269,7 +269,7 @@ echo "[INFO] Finished processing all projects" >&2
 total_projects=$((${#WEBHOOK_PROJECTS[@]} + ${#EXISTING_WEBHOOK_PROJECTS[@]}))
 
 if [[ $total_projects -eq 0 ]]; then
-  echo "[INFO] No projects were processed."
+  echo "[INFO] No projects were processed"
 else
   if [[ ${#WEBHOOK_PROJECTS[@]} -gt 0 ]]; then
     if [[ "$VERBOSE" == "true" ]]; then
