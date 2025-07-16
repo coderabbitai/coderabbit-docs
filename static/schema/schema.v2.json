@@ -899,12 +899,12 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable OXC | OXC is a JavaScript/TypeScript linter written in Rust. | v0.16.10"
+											"description": "Enable Oxlint | Oxlint is a JavaScript/TypeScript linter for OXC written in Rust. | v0.16.10"
 										}
 									},
 									"additionalProperties": false,
 									"default": {},
-									"description": "OXC is a JavaScript/TypeScript linter written in Rust."
+									"description": "Oxlint is a JavaScript/TypeScript linter for OXC written in Rust."
 								},
 								"shopifyThemeCheck": {
 									"type": "object",
@@ -987,6 +987,11 @@
 							},
 							"additionalProperties": false,
 							"description": "Tools that provide additional context to code reviews.",
+							"default": {}
+						},
+						"pre_merge_checks": {
+							"type": "object",
+							"additionalProperties": {},
 							"default": {}
 						}
 					},
