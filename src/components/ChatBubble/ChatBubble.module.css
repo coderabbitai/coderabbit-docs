@@ -1,6 +1,6 @@
 .chatBubble {
 	background: var(--imf-text-button-color-bg);
-	color: #222;
+	color: var(--imf-text-color);
 	border-radius: 6px;
 	padding: 1em 1.2em;
 	margin: 1em 0;
