@@ -12,6 +12,31 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
 [Shopify CLI](https://github.com/Shopify/cli) is a command-line tool that helps you build Shopify apps, themes, and custom storefronts. It provides functionality for initializing, building, developing, and deploying Shopify projects.
 
+## Requirements
+
+The tool only runs when the following conditions are met:
+
+### File Types
+
+- Only processes pull requests changing `*.liquid` files
+
+### Configuration Files
+
+- Requires either `.theme-check.yml` or `.theme-check.yaml` configuration file in the project root
+
+### Directory Structure
+
+- Requires the standard Shopify theme directory structure at the project root:
+  - `assets/`
+  - `config/`
+  - `layout/`
+  - `locales/`
+  - `sections/`
+  - `snippets/`
+  - `templates/`
+
+If any of these requirements are not met, the tool will not run.
+
 ## Validation Rules
 
 The tool checks for:
