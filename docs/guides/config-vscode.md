@@ -28,7 +28,7 @@ The **Agent Type** setting lets you choose the extension's response to using the
 
 - **Native**: The extension prompts the AI agent associated with your IDE to apply the suggested fix.
 
-  This works only with VSCode, using Copilot. If you have this option selected when using a different IDE, then the extension instead copies the prompt to your clipboard.
+  This works only with VSCode(using Copilot) and Cursor(you have to start the task). If you have this option selected when using a different IDE, then the extension instead copies the prompt to your clipboard.
 
 - **Claude Code**: The extension opens the Terminal pane of your IDE and tries to use the `claude` command-line program to apply the suggested fix to your code. You need to have [Claude Code](https://www.anthropic.com/claude-code) installed for this option to be effective.
 
