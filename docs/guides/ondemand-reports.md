@@ -14,7 +14,7 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
 This page is about using the CodeRabbit API to generate on-demand reports about your organization's usage of CodeRabbit. For a conceptual overview of reports in CodeRabbit, see [Generate reports](/guides/reports-overview).
 
-If you're new to CodeRabbit's reporting features, then we recommend starting with [Scheduled reports](/guides/scheduled-reports) to understand the available options and capabilities.
+If you're new to CodeRabbit's reporting features, then we recommend starting with [Scheduled reports](/guides/scheduled-reports) to understand the available options and capabilities. In almost every scenario we recommend using the **Scheduled Reports** option. The **On-demand Report** does not have any additional benifits from the **Scheduled Reports** and has many limitations.
 
 ## API Access
 
