@@ -23,6 +23,10 @@ We've enhanced the default daily standup report template to include a "Next Step
 
 Reports now include CI/CD GitHub Action check status as a data source. Your reports will be aware of which CI/CD checks are failing or passing, giving you better visibility into the health of your pull requests and helping identify potential issues before they become blockers.
 
+#### Score Card Custom Report Option
+
+We've added a new score card report feature that allows you to grade and create report cards for your developers. This custom report option provides a structured way to evaluate developer performance and contributions. See our [custom reports documentation](/guides/custom-reports#remove-prs-without-a-score-cardchart-bot-comment) for more details on how to implement score cards in your reports.
+
 ## July 10, 2025
 
 ### Enhanced Python Static Analysis: nbqa Support for Jupyter Notebooks
