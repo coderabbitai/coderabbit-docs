@@ -25,7 +25,7 @@ Reports now include CI/CD GitHub Action check status as a data source. Your repo
 
 #### Score Card Custom Report Option
 
-We've added a new score card report feature that allows you to grade and create report cards for your developers. This custom report option provides a structured way to evaluate developer performance and contributions. See our [custom reports documentation](/guides/custom-reports#remove-prs-without-a-score-cardchart-bot-comment) for more details on how to implement score cards in your reports.
+We've added a new optional score card report feature that allows you to grade and create report cards for your developers. This custom report optional data source provides a structured way to evaluate developer performance and contributions. See our [custom reports documentation](/guides/custom-reports#remove-prs-without-a-score-cardchart-bot-comment) for more details on how to implement score cards in your reports.
 
 ## July 10, 2025
 
