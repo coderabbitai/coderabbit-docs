@@ -88,11 +88,33 @@ CodeRabbit collects only the minimum amount of information needed to provide you
 
 For more information about how we protect your data, see [the CodeRabbit Trust Center](https://trust.coderabbit.ai).
 
-## Flexible pricing, free for public repositories
+## Subscription and pricing
 
-Public repositories can use the Pro tier of CodeRabbit at no charge, including all of the code-review features described on this page. Rate limits might apply.
+CodeRabbit offers multiple subscription tiers:
 
-For private repositories, a number of pricing tiers are available. These range from a Free tier that offers unlimited code-change summaries, to an Enterprise tier with access to advanced features and SLA support. For more information, see [Pricing](https://www.coderabbit.ai/pricing).
+- _CodeRabbit Lite_ is our free tier, which includes the following features:
+
+  - Public repositories can use [all CodeRabbit code review features](/guides/code-review-overview).
+  - Every developer on your team can use [the CodeRabbit VSCode extension](/code-editors) in their IDEs.
+  - Private repositories are limited to using CodeRabbit for pull request summaries, and not complete code reviews.
+  - You can configure CodeRabbit by adding [`.coderabbit.yaml` files](/getting-started/configure-coderabbit) to your public repositories.
+
+- _CodeRabbit Pro_ is a paid tier with all of the features of the Lite tier, plus the following:
+
+  - CodeRabbit creates automated code reviews for all of your repositories, both public and private.
+  - You can configure CodeRabbit using either `.coderabbit.yaml` files or using the CodeRabbit web interface.
+
+- _CodeRabbit Enterprise_ brings your team all of the functionality of CodeRabbit Pro plus a variety of advanced CodeRabbit features, as well as SLA support.
+
+The Pro and Enterprise subscription tiers use seat-based pricing. For more information, see [Pricing](https://www.coderabbit.ai/pricing).
+
+### Free use for public repositories
+
+Public repositories can make full, free use of CodeRabbit's core code-review features, with no seat limit. This applies to all subscription tiers, including the free Lite tier. Rate limits might apply.
+
+### Discounts for startups
+
+Eligible startup companies can use the CodeRabbit Startup Program, which offers a 50 percent discount on paid-tier CodeRabbit subscriptions for three months. For more information, see [Startup Program](https://www.coderabbit.ai/startup-program).
 
 ## Review local changes from within VSCode
 
