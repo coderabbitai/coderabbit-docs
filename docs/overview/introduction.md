@@ -21,7 +21,7 @@ Developers can interact directly with the CodeRabbit bot within their existing G
   <iframe src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 </div>
 
-## Core features
+## Core features {#features}
 
 Core CodeRabbit features include the following:
 
@@ -34,7 +34,7 @@ Core CodeRabbit features include the following:
 - Practices strong privacy and security, with no retention of analyzed code.
 - Offers free use for public repositories, and flexible pricing for private codebases.
 
-## Seamless workflow integration
+## Seamless workflow integration {#workflow}
 
 CodeRabbit shares its reviews as comments attached to pull requests, using the same Git platform that your team already uses. Further commits in the same pull review prompt CodeRabbit to make further reviews, using the earlier reviews as context.
 
@@ -42,7 +42,7 @@ Each time that it performs a code review, CodeRabbit runs the relevant code chan
 
 Your team can have conversations with CodeRabbit about its reviews by replying to it with follow-up comments on pull requests, asking it questions or making observations about the review using natural language. CodeRabbit continues the conversation appropriately, offering further insights about the code changes, or adjusting its own review style based on feedback.
 
-### Customizable review preferences
+### Customizable review preferences {#preferences}
 
 As you interact with CodeRabbit through chat, it learns the review preferences of your team, and applies them to all future reviews on a given repository.
 
@@ -54,7 +54,7 @@ If you need to fine-tune CodeRabbit's behavior beyond this, then you can [add a 
 
 No matter how you tune and customize CodeRabbit, its default settings make it useful out of the box, able to meaningfully review pull requests within minutes of its introduction to a repository.
 
-### Git platform integration
+### Git platform integration {#integration}
 
 CodeRabbit integrates in just a few clicks with many popular Git platforms:
 
@@ -65,7 +65,7 @@ CodeRabbit integrates in just a few clicks with many popular Git platforms:
 
 For more information, see [Supported Git Platforms](/platforms/).
 
-### Issue-management integration
+### Issue-management integration {#issues}
 
 You can integrate CodeRabbit with issue-management platforms. This lets you ask CodeRabbit to create tickets during code reviews, or chat with CodeRabbit about your code from within issue comments. Compatible platforms include the following:
 
@@ -76,7 +76,7 @@ You can integrate CodeRabbit with issue-management platforms. This lets you ask 
 
 For more information, see [Issue Creation](/guides/issue-creation) and [Issue Chat](/guides/issue-chat).
 
-## Data privacy and security
+## Data privacy and security {#security}
 
 CodeRabbit collects only the minimum amount of information needed to provide you with our code review services. Our privacy and security posture centers around protecting your data through ephemerality:
 
@@ -88,7 +88,7 @@ CodeRabbit collects only the minimum amount of information needed to provide you
 
 For more information about how we protect your data, see [the CodeRabbit Trust Center](https://trust.coderabbit.ai).
 
-## Subscription and pricing
+## Subscription and pricing {#pricing}
 
 CodeRabbit offers multiple subscription tiers:
 
@@ -108,21 +108,21 @@ CodeRabbit offers multiple subscription tiers:
 
 The Pro and Enterprise subscription tiers use seat-based pricing. For more information, see [Pricing](https://www.coderabbit.ai/pricing).
 
-### Free use for public repositories
+### Free use for public repositories {#free}
 
 Public repositories can make full, free use of CodeRabbit's core code-review features, with no seat limit. This applies to all subscription tiers, including the free Lite tier. Rate limits might apply.
 
-### Discounts for startups
+### Discounts for startups {#startups}
 
 Eligible startup companies can use the CodeRabbit Startup Program, which offers a 50 percent discount on paid-tier CodeRabbit subscriptions for three months. For more information, see [Startup Program](https://www.coderabbit.ai/startup-program).
 
-## Review local changes from within VSCode
+## Review local changes from within VSCode {#vscode}
 
 As a separate, free product, CodeRabbit offers a VSCode extension that brings a subset of core CodeRabbit features to VSCode. This lets you use the power of CodeRabbit to tune and tidy your code changes locally before pushing your changes into a formal pull request for more thorough reviews.
 
 For more information, see [Review local changes](/code-editors).
 
-## What's next
+## What's next {#whats-next}
 
 - [Quickstart](/getting-started/quickstart/) lets you experience your first CodeRabbit code review first-hand.
 
