@@ -19,7 +19,7 @@ Reports now support exclusion filters using the `NOT_IN` option, allowing you to
 
 We've enhanced the default daily standup report template to include a "Next Steps" section. This provides clear guidance on what actions authors and reviewers should take regarding each pull request or change, making your reports more actionable and helping teams stay on track.
 
-#### CI/CD GitHub Action Check Status Integration
+#### CI/CD GitHub Action Check Status Awareness
 
 Reports now include CI/CD GitHub Action check status as a data source. Your reports will be aware of which CI/CD checks are failing or passing, giving you better visibility into the health of your pull requests and helping identify potential issues before they become blockers.
 
