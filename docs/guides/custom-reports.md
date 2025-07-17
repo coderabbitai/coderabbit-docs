@@ -307,7 +307,7 @@ Issues and tickets brings in conversations, descriptions, and comments from Jira
 
 This option gives you the ability to create a report limited only to pull requests containing a "Score Card" or "Score Chart" bot comment from CodeRabbit or other bots. To enable issues and tickets you must include the tag `<pr_score_card>` in your prompt.
 
-> **IMPORTANT:** This will automatically remove any pull requests from your reports if they do not contain a "Score Card" or "Score Chart" bot comment. Using this option without setting up a flow to create these comments will result in `No new pull request activity in the last XYZ hours` errors. Do not enable this option unless you have created a "Score Card" or "Score Chart" bot comment flow.
+> **IMPORTANT:** This will automatically remove any pull requests from your reports if they do not contain a "Score Card" or "Score Chart" bot comment. Using this option without setting up a flow to create these comments will result in `No new pull request activity in the last XYZ hours` errors. Do not enable this option unless you have asked coderabbit to create a "Score Card" thourhg a comment or implimented the "Score Chart" bot comment flow below.
 
 For example you can ask coderabbit to check serveral conditions on a pull request and produce a "Score Chart":
 
@@ -348,7 +348,7 @@ Generate a weekly code review report for the author of this pull request only fo
    - `1` → Passed
 
 **Final Score Calculation:**
-Combine the scores from the parameters above to derive the final code quality score (out of 5).
+Combine the scores from the parameters above to derive the final code quality score (out of 9).
 **Output Format:**
 Provide the final report in a table format with the following columns (use shorthand notations), be sure to include this list at the top above the chart in the "Column Notation" section so users understand what the columns mean:
 
