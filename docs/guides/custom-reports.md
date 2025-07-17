@@ -117,6 +117,14 @@ Contained within the `<pr_details>` tag.
   - `<comment_updated_at>`: datetime - The date and time the comment was last updated.
   - `<comment_body>`: markdown - The content of the comment.
 
+#### CI/CD Check Status
+
+- `<pr_checks>`: array of check objects - Contains all CI/CD checks for the PR. _GitHub Only_.
+- `<pr_check>`: object - Each individual check is wrapped in this tag and is an object with the following properties:
+  - `<pr_check_name>`: string - The name of the CI/CD check.
+  - `<pr_check_status>`: string - The status of the check (e.g., "success", "failure", "in_progress", "canceled").
+  - `<pr_check_url>`: string - The URL to view the detailed results of the check.
+
 Here's an example prompt that uses these data points:
 
 ```text
@@ -299,7 +307,7 @@ Issues and tickets brings in conversations, descriptions, and comments from Jira
 
 This option gives you the ability to create a report limited only to pull requests containing a "Score Card" or "Score Chart" bot comment from CodeRabbit or other bots. To enable issues and tickets you must include the tag `<pr_score_card>` in your prompt.
 
-> **IMPORTANT:** This will automatically remove any pull requests from your reports if they do not contain a "Score Card" or "Score Chart" bot comment. Using this option without setting up a flow to create these comments will result in `No new pull request activity in the last XYZ hours` errors. Do not enable this option unless you have created a "Score Card" or "Score Chart" bot comment flow.
+> **IMPORTANT:** This will automatically remove any pull requests from your reports if they do not contain a "Score Card" or "Score Chart" bot comment. Using this option without setting up a flow to create these comments will result in `No new pull request activity in the last XYZ hours` errors. Do not enable this option unless you have asked coderabbit to create a "Score Card" thourhg a comment or implimented the "Score Chart" bot comment flow below.
 
 For example you can ask coderabbit to check serveral conditions on a pull request and produce a "Score Chart":
 
@@ -340,7 +348,7 @@ Generate a weekly code review report for the author of this pull request only fo
    - `1` → Passed
 
 **Final Score Calculation:**
-Combine the scores from the parameters above to derive the final code quality score (out of 5).
+Combine the scores from the parameters above to derive the final code quality score (out of 9).
 **Output Format:**
 Provide the final report in a table format with the following columns (use shorthand notations), be sure to include this list at the top above the chart in the "Column Notation" section so users understand what the columns mean:
 
