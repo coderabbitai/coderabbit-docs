@@ -117,6 +117,14 @@ Contained within the `<pr_details>` tag.
   - `<comment_updated_at>`: datetime - The date and time the comment was last updated.
   - `<comment_body>`: markdown - The content of the comment.
 
+#### CI/CD Check Status
+
+- `<pr_checks>`: array of check objects - Contains all CI/CD checks for the PR. _GitHub Only_.
+- `<pr_check>`: object - Each individual check is wrapped in this tag and is an object with the following properties:
+  - `<pr_check_name>`: string - The name of the CI/CD check.
+  - `<pr_check_status>`: string - The status of the check (e.g., "success", "failure", "in_progress", "canceled").
+  - `<pr_check_url>`: string - The URL to view the detailed results of the check.
+
 Here's an example prompt that uses these data points:
 
 ```text
