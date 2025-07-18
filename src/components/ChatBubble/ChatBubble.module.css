@@ -8,4 +8,70 @@
 	font-size: 0.98em;
 	white-space: pre-wrap;
 	word-break: break-word;
+	position: relative;
+}
+
+.content {
+	padding-right: 2.5rem;
+}
+
+.copyButton {
+	position: absolute;
+	top: 0.75rem;
+	right: 0.75rem;
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	border-radius: 4px;
+	color: var(--imf-text-color);
+	cursor: pointer;
+	padding: 0.5rem;
+	opacity: 0.7;
+	transition: opacity 0.2s ease, background 0.2s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.copyButton:hover {
+	opacity: 1;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.copyButton:active {
+	transform: scale(0.95);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.chatBubble {
+		padding: 0.8rem 1rem;
+		font-size: 0.95rem;
+	}
+	
+	.content {
+		padding-right: 2.2rem;
+	}
+	
+	.copyButton {
+		top: 0.6rem;
+		right: 0.6rem;
+		padding: 0.4rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.chatBubble {
+		padding: 0.7rem 0.8rem;
+		font-size: 0.9rem;
+	}
+	
+	.content {
+		padding-right: 2rem;
+	}
+	
+	.copyButton {
+		top: 0.5rem;
+		right: 0.5rem;
+		padding: 0.3rem;
+	}
 }

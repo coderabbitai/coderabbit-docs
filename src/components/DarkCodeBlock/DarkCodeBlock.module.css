@@ -3,9 +3,14 @@
   border-radius: 8px;
   overflow: hidden;
   background-color: #1a1a1a;
-  border: none;
+  border: 1px solid #333;
   font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
   position: relative;
+}
+
+/* Add border for dark theme */
+[data-theme="dark"] .codeBlock {
+  border: 1px solid #444;
 }
 
 .codeHeader {
@@ -38,6 +43,10 @@
   line-height: 1.6;
   overflow-x: auto;
   white-space: pre;
+}
+
+.shortCode {
+  padding-bottom: 0.5rem;
 }
 
 .codeLine {
@@ -118,6 +127,10 @@
     font-size: 0.8rem;
     padding: 0.75rem;
     padding-bottom: 3rem;
+  }
+  
+  .shortCode {
+    padding-bottom: 0.3rem;
   }
 
   .copyButton {

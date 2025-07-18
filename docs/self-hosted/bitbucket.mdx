@@ -1,57 +1,62 @@
 ---
-title: Use Self-Hosted CodeRabbit With Azure DevOps
-sidebar_label: Azure DevOps
-description: Instructions to self-host CodeRabbit and integrate it with Azure DevOps.
-sidebar_position: 3
+title: Use Self-Hosted CodeRabbit With Bitbucket Datacenter
+sidebar_label: Bitbucket Datacenter
+description: Instructions to self-host CodeRabbit and integrate it with  Bitbucket Datacenter.
+sidebar_position: 4
 ---
 
-:::note
+import ListItems from '@site/src/components/ListItems/ListItems';
+import Note from '@site/src/components/Note/Note';
+import DarkCodeBlock from '@site/src/components/DarkCodeBlock/DarkCodeBlock';
+
+<Note>
 
 The self-hosted option is only available for CodeRabbit Enterprise customers with 500 user seats or more. Please contact [CodeRabbit Sales](mailto:sales@coderabbit.ai) to learn more about the CodeRabbit Enterprise plan.
 
-:::
+</Note>
 
-## Create an Azure DevOps User
+## Create a Bitbucket User
 
-- **Username**: Set the username to "CodeRabbit" for easier identification (optional).
-- **Profile Image**: Use the CodeRabbitAI logo for the user image (optional).
+<ListItems items={[
+  <><strong>Username</strong>: Set the username to "CodeRabbit" for easier identification (optional).</>,
+  <><strong>Profile Image</strong>: Use the CodeRabbitAI logo for the user image (optional).</>
+]} />
 
 We recommend using the CodeRabbit [logo](/img/integrations/logo.png) as the profile picture to ensures easy recognition.
 
 ## Add User to Projects
 
-Add the CodeRabbit user to each project where you want CodeRabbit to post reviews, with rights to post reviews & open PRs.
+Add the CodeRabbit user to each project where you want CodeRabbit to post reviews, with permissions to:
+
+<ListItems items={[
+  <>Post reviews</>,
+  <>Open pull requests</>
+]} />
 
 ## Create a Personal Access Token for CodeRabbit user
 
-Generate a personal access token for the CodeRabbit user to be added in the `.env` file as `AZURE_DEVOPS_BOT_TOKEN`.
+Generate a personal access token for the CodeRabbit user to be added in the `.env` file as `BITBUCKET_SERVER_BOT_TOKEN`.
 
-**Necessary Scopes**:
+## Add a webhook to each project
 
-- `Code` - Full
-- `Work Items` - Read, write, and manage
-- `Build` - Read
+<ListItems orderedList items={[
+  <><strong>Navigate to Webhook Settings</strong>: Go to the repository settings and locate the webhooks configuration page.</>,
+  <><strong>Configure Events</strong>: Enable the following Pull Request events:
+    <ListItems nested items={[
+      <>"Opened"</>,
+      <>"Modified"</>,
+      <>"Comment Added"</>
+    ]} />
+  </>,
+  <><strong>Add Webhook URL</strong>: Enter the URL pointing to the CodeRabbit service, followed by <code>/bitbucket_server_webhooks</code> (e.g., <code>http://127.0.0.1:8080/bitbucket_server_webhooks</code>).</>
+]} />
 
-Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.coderabbit.ai/platforms/azure-devops#generating-a-personal-access-token) on creating personal access tokens.
+## Prepare a `.env` file
 
-## Add the necessary webhooks to each project
+Create a `.env` file with the following content:
 
-1. **Navigate to project's Service Hooks Page**: Go to the service hooks configuration page in the desired Azure DevOps project.
-
-2. **Add the following webhooks:**
-
-   1. Pull request created
-   2. Pull request updated
-   3. Pull request commented on
-
-3. **Add Webhook URL**: Enter the URL pointing to the CodeRabbit service, followed by `/azure_webhooks` (e.g., `http://127.0.0.1:8080/azure_webhooks`) for each webhook.
-
-## Prepare an `.env` file
-
-Create an `.env` file with the following content:
-
-```bash
-# if using OpenAI
+<DarkCodeBlock language="bash">
+{`# if using OpenAI
 LLM_PROVIDER=openai
 LLM_TIMEOUT=360000
 OPENAI_API_KEYS=<openai-key>
@@ -104,12 +109,15 @@ AWS_ACCESS_KEY_ID=<aws-access-key>
 AWS_SECRET_ACCESS_KEY=<aws-secret-access-key>
 AWS_REGION=<aws-region>
 
+# System Configuration
 TEMP_PATH=/cache
 
-SELF_HOSTED=azure-devops
+SELF_HOSTED=bitbucket-server
 
-AZURE_DEVOPS_BOT_TOKEN=<personal-access-token>
-AZURE_DEVOPS_BOT_USERNAME=<bot-user-username>
+BITBUCKET_SERVER_URL=<bitbucket-server-url>/rest
+BITBUCKET_SERVER_WEBHOOK_SECRET=<webhook-secret>
+BITBUCKET_SERVER_BOT_TOKEN=<personal-access-token>
+BITBUCKET_SERVER_BOT_USERNAME=<bot-user-username>
 
 CODERABBIT_LICENSE_KEY=<license-key>
 
@@ -128,39 +136,40 @@ LINEAR_PAT=[<linear-personal-access-token>]
 ENABLE_WEB_SEARCH=[true]
 PERPLEXITY_API_KEY=[<perplexity-api-key>]
 
-YAML_CONFIG=[<escaped-yaml-config>]
-```
+YAML_CONFIG=[<escaped-yaml-config>]`}
+</DarkCodeBlock>
 
-:::note
+<Note>
 
-- If you are using Azure OpenAI, verify that the model deployment names are in the .env file.
-- Values marked with [] are not optional to provide.
-- You can generate `CODERABBIT_API_KEY` from CodeRabbit UI -> Organizations Settings -> API Keys.
-- `YAML_CONFIG` is an optional configuration file that can be used to customize CodeRabbit's behavior at the deployment level. It takes the same format as the [CodeRabbit YAML configuration](/docs/getting-started/configure-coderabbit.md) file. It requires the entire YAML file to be in an escaped string format, for example, `YAML_CONFIG="key1: value1\nkey2: value2"`. You can use [Escape YAML](https://escapeyaml.dev/) to generate the escaped string.
+<ListItems items={[
+  <>If you are using Azure OpenAI, verify that the model deployment names are in the .env file. Values marked with [] are optional and can be omitted if the feature is not needed.</>,
+  <>You can generate <code>CODERABBIT_API_KEY</code> from CodeRabbit UI {"->"} Organizations Settings {"->"} API Keys.</>,
+  <><code>YAML_CONFIG</code> is an optional configuration file that can be used to customize CodeRabbit's behavior at the deployment level. It takes the same format as the <a href="/docs/getting-started/configure-coderabbit.md">CodeRabbit YAML configuration</a> file. It requires the entire YAML file to be in an escaped string format, for example, <code>YAML_CONFIG="key1: value1\nkey2: value2"</code>. You can use <a href="https://escapeyaml.dev/">Escape YAML</a> to generate the escaped string.</>
+]} />
 
-:::
+</Note>
 
 ## Pull the CodeRabbit Docker image
 
 Authenticate and pull the Docker image using the provided credentials file:
 
-```bash
-cat coderabbit.json | docker login -u _json_key --password-stdin us-docker.pkg.dev
-docker pull <docker-registry>/coderabbit-agent:latest
-```
+<DarkCodeBlock language="bash">
+{`cat coderabbit.json | docker login -u _json_key --password-stdin us-docker.pkg.dev
+docker pull us-docker.pkg.dev/coderabbitprod/self-hosted/coderabbit-agent:latest`}
+</DarkCodeBlock>
 
 ### Verify the image is up
 
 You can query `/health` endpoint to verify that the `coderabbit-agent` service is up and running.
 
-```bash
-curl 127.0.0.1:8080/health
-```
+<DarkCodeBlock language="bash">
+{`curl 127.0.0.1:8080/health`}
+</DarkCodeBlock>
 
 ## Host the image
 
 You can host the image on a server, serverless function, or container environment and expose port `8080`. Run the Docker image with the equivalent command on your chosen platform, ensuring you replace the `.env` file path with the path to your actual `.env` file:
 
-```bash
-docker run --env-file .env --publish 127.0.0.1:8080:8080 <docker-registry>/coderabbit-agent:latest
-```
+<DarkCodeBlock language="bash">
+{`docker run --env-file .env --publish 127.0.0.1:8080:8080 us-docker.pkg.dev/coderabbitprod/self-hosted/coderabbit-agent:latest`}
+</DarkCodeBlock>

@@ -3,7 +3,38 @@
 	border-radius: 8px;
 	padding: 1.3rem;
 	margin: 0.8rem 0;
-	border: 2px solid var(--ifm-background-color-secondary);
+}
+
+.crNestedList {
+	margin: 0.5rem 0;
+	padding: 0;
+	background: none;
+	border: none;
+}
+
+.crNestedList .crFeatureList li {
+	padding-left: 2rem;
+}
+
+.crNestedList .crFeatureList li:before {
+	left: 0.5rem;
+}
+
+/* Second level nesting - square bullets */
+.crNestedLevel2 li:before {
+	border-radius: 0 !important;
+	width: 0.3em !important;
+	height: 0.3em !important;
+	top: 0.65em !important;
+	background: #333 !important;
+}
+
+.crNestedList .crNestedLevel2 li {
+	padding-left: 2.5rem;
+}
+
+.crNestedList .crNestedLevel2 li:before {
+	left: 0.7rem;
 }
 
 .crFeatureList {
@@ -45,10 +76,10 @@
 	content: "";
 	position: absolute;
 	left: 0.3em;
-	top: 0.5em;
-	width: 0.6em;
-	height: 0.6em;
-	background: var(--imf-list-bullets-color);
+	top: 0.6em;
+	width: 0.4em;
+	height: 0.4em;
+	background: #333;
 	border-radius: 50%;
 	display: inline-block;
 }
@@ -71,4 +102,59 @@
 
 .crOrderedList li a:hover {
 	text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.crFeatureCard {
+		padding: 1rem;
+		margin: 0.6rem 0;
+	}
+	
+	.crFeatureList li {
+		padding-left: 1.5em;
+		margin-bottom: 0.8em;
+		font-size: 1rem;
+	}
+	
+	.crOrderedList li {
+		margin-bottom: 0.8em;
+		font-size: 1rem;
+		padding-left: 0.2em;
+	}
+	
+	.crNestedList .crFeatureList li {
+		padding-left: 1.8rem;
+	}
+	
+	.crNestedList .crNestedLevel2 li {
+		padding-left: 2.2rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.crFeatureCard {
+		padding: 0.8rem;
+		margin: 0.5rem 0;
+	}
+	
+	.crFeatureList li {
+		padding-left: 1.3em;
+		margin-bottom: 0.7em;
+		font-size: 0.95rem;
+	}
+	
+	.crOrderedList li {
+		margin-bottom: 0.7em;
+		font-size: 0.95rem;
+		padding-left: 0.15em;
+	}
+	
+	.crNestedList .crFeatureList li {
+		padding-left: 1.6rem;
+	}
+	
+	.crNestedList .crNestedLevel2 li {
+		padding-left: 2rem;
+	}
 }

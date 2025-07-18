@@ -33,16 +33,16 @@ View step by step instructions depending on your platform:
 
 <Tabs>
   <TabItem value="github" label="GitHub" default>
-    See our [GitHub App installation guide](./platforms/github-com.md) for step-by-step instructions.
+    See our [GitHub App installation guide](./platforms/github-com.mdx) for step-by-step instructions.
   </TabItem>
   <TabItem value="gitlab" label="GitLab">
     Follow our [GitLab integration guide](/platforms/gitlab-com.mdx) to get started.
   </TabItem>
   <TabItem value="bitbucket" label="Bitbucket">
-    Check out the [Bitbucket installation steps](/platforms/bitbucket-cloud.md) for detailed setup.
+    Check out the [Bitbucket installation steps](/platforms/bitbucket-cloud.mdx) for detailed setup.
   </TabItem>
   <TabItem value="azure" label="Azure DevOps">
-    View our [Azure DevOps setup guide](/platforms/azure-devops.md) for complete installation instructions.
+    View our [Azure DevOps setup guide](/platforms/azure-devops.mdx) for complete installation instructions.
   </TabItem>
 </Tabs>
 

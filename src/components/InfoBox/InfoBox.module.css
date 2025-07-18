@@ -17,3 +17,20 @@
 .infoBox a:hover {
 	text-decoration: underline;
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.infoBox {
+		padding: 0.6em;
+		border-radius: 10px;
+		font-size: 0.95rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.infoBox {
+		padding: 0.5em;
+		border-radius: 8px;
+		font-size: 0.9rem;
+	}
+}

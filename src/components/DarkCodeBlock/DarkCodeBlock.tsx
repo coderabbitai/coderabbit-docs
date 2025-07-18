@@ -29,6 +29,7 @@ const DarkCodeBlock: React.FC<DarkCodeBlockProps> = ({
   const highlightedCode = useMemo(() => {
     const highlightCode = (code: string, lang: string) => {
     const lines = code.trim().split('\n');
+    const isShortCode = lines.length <= 3;
 
     return lines.map((line, index) => {
       if (lang === 'python') {
@@ -148,6 +149,9 @@ const DarkCodeBlock: React.FC<DarkCodeBlockProps> = ({
     return highlightCode(children, language);
   }, [children, language, KEYWORDS]);
 
+  const lineCount = children.trim().split('\n').length;
+  const isShortCode = lineCount <= 3;
+
   return (
     <div className={styles.codeBlock}>
       {title && (
@@ -156,7 +160,7 @@ const DarkCodeBlock: React.FC<DarkCodeBlockProps> = ({
         </div>
       )}
       <div className={styles.codeContainer}>
-        <pre className={styles.codeContent}>
+        <pre className={`${styles.codeContent} ${isShortCode ? styles.shortCode : ''}`}>
           <code className={`language-${language}`}>
             {highlightedCode}
           </code>
