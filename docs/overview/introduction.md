@@ -94,15 +94,15 @@ CodeRabbit offers multiple subscription tiers:
 
 - _CodeRabbit Lite_ is our free tier, which includes the following features:
 
-  - Public repositories can use [all CodeRabbit code review features](/guides/code-review-overview).
+  - Public repositories can use [all CodeRabbit code review features](/guides/code-review-overview). Private repositories are limited to using CodeRabbit for pull request summaries.
   - Every developer on your team can use [the CodeRabbit VSCode extension](/code-editors) in their IDEs.
-  - Private repositories are limited to using CodeRabbit for pull request summaries, and not complete code reviews.
   - You can configure CodeRabbit by adding [`.coderabbit.yaml` files](/getting-started/configure-coderabbit) to your public repositories.
 
 - _CodeRabbit Pro_ is a paid tier with all of the features of the Lite tier, plus the following:
 
   - CodeRabbit creates automated code reviews for all of your repositories, both public and private.
-  - You can configure CodeRabbit using either `.coderabbit.yaml` files or using the CodeRabbit web interface.
+  - You can configure CodeRabbit using either `.coderabbit.yaml` files or the CodeRabbit web interface.
+  - You can optionally use the CodeRabbit web interface to set organization-wide preferences.
 
 - _CodeRabbit Enterprise_ brings your team all of the functionality of CodeRabbit Pro plus a variety of advanced CodeRabbit features, as well as SLA support.
 
