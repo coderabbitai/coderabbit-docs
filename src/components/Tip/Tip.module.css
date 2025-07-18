@@ -1,0 +1,84 @@
+.tip {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: #FFFCFB;
+	border: 2px solid #FFCEB6;
+	border-radius: 12px;
+	padding: 1rem 1.2rem;
+	margin: 1.2rem 0;
+	font-size: 1rem;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.3em;
+}
+
+.icon {
+	width: 1.5em;
+	height: 1.5em;
+	margin-right: 0.5em;
+	flex-shrink: 0;
+	color: #FF570A;
+}
+
+.title {
+	font-weight: 600;
+	color: #FF570A;
+	font-size: 1rem;
+}
+
+.content {
+	margin-top: 0.2em;
+	color: var(--ifm-color-content);
+}
+
+.tip p {
+	margin: 0;
+	line-height: 1.6;
+}
+
+.tip p:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.tip {
+		padding: 0.8rem 1rem;
+		margin: 1rem 0;
+		font-size: 0.95rem;
+		border-radius: 10px;
+	}
+	
+	.icon {
+		width: 1.3em;
+		height: 1.3em;
+		margin-right: 0.4em;
+	}
+	
+	.title {
+		font-size: 0.95rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.tip {
+		padding: 0.7rem 0.8rem;
+		margin: 0.8rem 0;
+		font-size: 0.9rem;
+		border-radius: 8px;
+	}
+	
+	.icon {
+		width: 1.2em;
+		height: 1.2em;
+		margin-right: 0.3em;
+	}
+	
+	.title {
+		font-size: 0.9rem;
+	}
+}
