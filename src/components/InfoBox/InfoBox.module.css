@@ -1,0 +1,19 @@
+.infoBox {
+	border: 2px solid var(--imf-color-border-orange);
+	border-radius: 12px;
+	background: var(--imf-color-background-orange-light);
+	padding: 0.7em;
+}
+
+.infoBox p {
+	margin: 0rem;
+}
+
+.infoBox a {
+	color: var(--ifm-color-primary);
+	text-decoration: none;
+}
+
+.infoBox a:hover {
+	text-decoration: underline;
+}
