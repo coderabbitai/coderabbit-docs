@@ -95,6 +95,9 @@ LLM_TIMEOUT=360000
 AWS_ACCESS_KEY_ID=<aws-access-key>
 AWS_SECRET_ACCESS_KEY=<aws-secret-access-key>
 AWS_REGION=<aws-region>
+# optionally, use cross-region inference to access models in other regions
+# if this is set to `true`, CodeRabbit will access models from `us`, `eu`, or `ap` regions based on the AWS_REGION value.
+AWS_USE_CROSS_REGION_INFERENCE=[<true>]
 
 # System Configuration
 TEMP_PATH=/cache
