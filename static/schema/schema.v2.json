@@ -195,6 +195,11 @@
 							"default": true,
 							"description": "Generate sequence diagrams in the walkthrough."
 						},
+						"estimate_code_review_effort": {
+							"type": "boolean",
+							"default": true,
+							"description": "Estimate the code review effort in the walkthrough."
+						},
 						"assess_linked_issues": {
 							"type": "boolean",
 							"default": true,
