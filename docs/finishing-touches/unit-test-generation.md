@@ -21,7 +21,7 @@ Unit Test Generation is an Early Access Experimental feature.
 
 ## Usage
 
-Once you are done with your pull request and its reviews, you may want to perform finishing touches to your code, such as adding unit tests. You can request CodeRabbit to generate unit tests by typing `@coderabbitai auto-generate unit tests` in a comment under that pull request or by clicking a checkbox under **Generate Unit Tests** in the CodeRabbit Walkthrough.
+Once you are done with your pull request and its reviews, you may want to perform finishing touches to your code, such as adding unit tests. You can request CodeRabbit to generate unit tests by typing `@coderabbitai generate unit tests` in a comment under that pull request or by clicking a checkbox under **Generate Unit Tests** in the CodeRabbit Walkthrough.
 
 Once sent, CodeRabbit will perform the following actions:
 

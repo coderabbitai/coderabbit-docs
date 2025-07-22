@@ -97,7 +97,7 @@ Key capabilities:
 
 - **Intelligent Test Generation**: Automatically creates unit tests that cover edge cases, error scenarios, and core functionality
 - **Context-Aware**: Generates tests that understand your existing codebase patterns and testing conventions
-- **One-Click Integration**: Simply comment `@coderabbitai auto-generate unit tests` on any pull request or specific file, or click on the checkbox available in the walkthrough comment for Early Access customers.
+- **One-Click Integration**: Simply comment `@coderabbitai generate unit tests` on any pull request or specific file, or click on the checkbox available in the walkthrough comment for Early Access customers.
 
 You can customize the generated tests to fit your specific requirements.
 
