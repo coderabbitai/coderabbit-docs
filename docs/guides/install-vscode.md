@@ -59,5 +59,5 @@ If you do install the extension this way, then you still need to connect your Co
 ## What's next
 
 - [Use the VSCode extension](/guides/use-vscode)
-
 - [Configure the VSCode extension](/guides/config-vscode)
+- [Use with Self-hosted CodeRabbit](/guides/use-vscode-selfhosted)
