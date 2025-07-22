@@ -1,5 +1,5 @@
 ---
-title: With self-hosted CodeRabbit
+title: Use with self-hosted CodeRabbit
 description: How to setup the VSCode extension with self-hosted CodeRabbit
 ---
 
