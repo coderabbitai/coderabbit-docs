@@ -60,11 +60,9 @@ The **Auto Review Mode** setting lets you control the behavior of the automatic 
 
 For more information about this feature, see [Automatically review local commits](/guides/use-vscode#auto-reviews).
 
-## Set a review timeout {#timeout}
+## Use with self-hosted CodeRabbit {#self-hosted-coderabbit}
 
-The **Review Timeout** setting lets you specify how long the extension waits for a response from CodeRabbit remote servers before timing out a code review. The default value is `20`.
-
-To turn off timeouts, set this value to `0`.
+This setting is only used when you're using a self-hosted instance of CodeRabbit. If you're using the CodeRabbit Cloud service, you don't need to configure this setting. You will need to login and logout of the extension after adding this value.
 
 ## What's next {#whats-next}
 
