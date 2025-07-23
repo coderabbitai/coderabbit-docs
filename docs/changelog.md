@@ -151,7 +151,7 @@ Pair these IDE-embedded reviews with our deeper Git-platform reviews for a multi
 
 ### Docstring Path Instructions
 
-You can now provide path-based instructions for the generation of docstring in `.coderabbit.yaml`.
+You can now provide file path instructions for the generation of docstring in `.coderabbit.yaml`.
 
 Example:
 
