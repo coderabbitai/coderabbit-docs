@@ -716,7 +716,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v1.64.8"
+											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v2.2.2"
 										},
 										"config_file": {
 											"type": "string",
