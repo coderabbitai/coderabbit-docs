@@ -363,127 +363,6 @@ a[docid="docs"] > svg {
 	padding-left: 0.5rem;
 }
 
-/* ===== PLATFORM GRID STYLES ===== */
-.platform-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1rem;
-	margin: 1.5rem 0;
-}
-
-.platform-card {
-	display: flex;
-	align-items: center;
-	background: var(--imf-list-card-background-color);
-	border-radius: 8px;
-	padding: 1.3rem;
-	border: 2px solid var(--ifm-background-color-secondary);
-}
-
-.platform-icon {
-	width: 32px;
-	height: 32px;
-	margin-right: 16px;
-}
-
-[data-theme="dark"] .platform-icon {
-	filter: invert(1);
-}
-
-/* Responsive design for mobile */
-@media (max-width: 768px) {
-	.platform-grid {
-		grid-template-columns: 1fr;
-		gap: 0.75rem;
-	}
-
-	.platform-card {
-		padding: 1rem;
-	}
-
-	.platform-icon {
-		width: 24px;
-		height: 24px;
-		margin-right: 12px;
-	}
-}
-
-/* ===== PLATFORM INTEGRATION GRID STYLES ===== */
-/* Grid layout for displaying supported Git platforms and issue management integrations */
-.platform-integration-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1rem;
-	margin: 1.5rem 0;
-}
-
-.platform-integration-card {
-	display: flex;
-	align-items: center;
-	padding: 1.5rem;
-	border: 1px solid var(--ifm-color-emphasis-200);
-	border-radius: 8px;
-	background-color: var(--ifm-background-surface-color);
-}
-
-.platform-integration-icon {
-	width: 32px;
-	height: 32px;
-	margin-right: 1rem;
-	flex-shrink: 0;
-}
-
-.platform-integration-card span {
-	font-size: 1rem;
-	font-weight: 500;
-	color: var(--ifm-color-content);
-	line-height: 1.4;
-}
-
-/* Dark mode adjustments for platform icons */
-[data-theme="dark"] .platform-integration-icon {
-	filter: invert(1) brightness(0.9);
-}
-
-/* Dark mode styling for platform integration cards */
-[data-theme="dark"] .platform-integration-card {
-	border-color: var(--ifm-color-emphasis-400);
-	background-color: var(--ifm-background-color-secondary);
-}
-
-/* Responsive design for mobile */
-@media (max-width: 768px) {
-	.platform-integration-grid {
-		grid-template-columns: 1fr;
-		gap: 0.75rem;
-	}
-
-	.platform-integration-card {
-		padding: 1.25rem;
-	}
-
-	.platform-integration-icon {
-		width: 28px;
-		height: 28px;
-		margin-right: 0.75rem;
-	}
-}
-
-@media (max-width: 480px) {
-	.platform-integration-card {
-		padding: 1rem;
-	}
-
-	.platform-integration-icon {
-		width: 24px;
-		height: 24px;
-		margin-right: 0.5rem;
-	}
-
-	.platform-integration-card span {
-		font-size: 0.9rem;
-	}
-}
 
 /* ===== PLATFORM TABLES STYLING ===== */
 .markdown table {
@@ -491,7 +370,6 @@ a[docid="docs"] > svg {
 	width: 100%;
 	border-collapse: separate;
 	border-spacing: 0;
-	background: #ffffff !important;
 	border: none !important;
 	table-layout: auto;
 	margin: 2rem 0;
@@ -500,7 +378,18 @@ a[docid="docs"] > svg {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Create scrollable wrapper for tables on mobile */
+/* Consolidated table background and border declarations */
+.markdown table thead,
+.markdown table tbody,
+.markdown table tr,
+.markdown table th,
+.markdown table td,
+.markdown table tbody tr:hover,
+.markdown table tbody tr:hover td {
+	background: #ffffff !important;
+	border: none !important;
+}
+
 @media (max-width: 768px) {
 	.markdown {
 		overflow-x: auto;
@@ -514,27 +403,12 @@ a[docid="docs"] > svg {
 	}
 }
 
-.markdown table thead {
-	background: #ffffff !important;
-}
-
-.markdown table tbody {
-	background: #ffffff !important;
-}
-
-.markdown table tr {
-	background: #ffffff !important;
-	border: none !important;
-}
-
 .markdown table th {
-	background: #ffffff !important;
 	color: var(--ifm-heading-color);
-	padding: 1.5rem 2rem 1.5rem 2rem;
+	padding: 1.5rem 2rem;
 	text-align: left;
 	font-weight: 600;
 	font-size: 1.1rem;
-	border: none !important;
 	border-bottom: 1px solid #e5e7eb !important;
 	border-right: 1px solid #f3f4f6 !important;
 	box-sizing: border-box;
@@ -552,13 +426,11 @@ a[docid="docs"] > svg {
 }
 
 .markdown table td {
-	padding: 1.5rem 2rem 1.5rem 2rem;
-	border: none !important;
+	padding: 1.5rem 2rem;
 	border-bottom: 1px solid #f3f4f6 !important;
 	border-right: 1px solid #f3f4f6 !important;
 	color: var(--ifm-color-content);
 	vertical-align: middle;
-	background: #ffffff !important;
 	box-sizing: border-box;
 	font-size: 1rem;
 }
@@ -634,22 +506,19 @@ a[docid="docs"] > svg {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-[data-theme="dark"] .markdown table thead {
-	background: #232323 !important;
-}
-
-[data-theme="dark"] .markdown table tbody {
-	background: #232323 !important;
-}
-
-[data-theme="dark"] .markdown table tr {
+/* Consolidated dark theme table background and border declarations */
+[data-theme="dark"] .markdown table thead,
+[data-theme="dark"] .markdown table tbody,
+[data-theme="dark"] .markdown table tr,
+[data-theme="dark"] .markdown table th,
+[data-theme="dark"] .markdown table td,
+[data-theme="dark"] .markdown table tbody tr:hover,
+[data-theme="dark"] .markdown table tbody tr:hover td {
 	background: #232323 !important;
 	border: none !important;
 }
 
 [data-theme="dark"] .markdown table th {
-	background: #232323 !important;
-	border: none !important;
 	border-bottom: 1px solid #404040 !important;
 	border-right: 1px solid #363636 !important;
 }
@@ -659,10 +528,8 @@ a[docid="docs"] > svg {
 }
 
 [data-theme="dark"] .markdown table td {
-	border: none !important;
 	border-bottom: 1px solid #363636 !important;
 	border-right: 1px solid #363636 !important;
-	background: #232323 !important;
 }
 
 [data-theme="dark"] .markdown table td:last-child {
@@ -673,129 +540,66 @@ a[docid="docs"] > svg {
 	border-bottom: none !important;
 }
 
-[data-theme="dark"] .markdown table tbody tr:hover {
-	background: #232323 !important;
+
+/* ===== SUPPORTED LINKS WITH CHECKMARK ICONS ===== */
+/* Add checkmark icons to "Supported" links in platform tables */
+.markdown table td a[href*="github-com"],
+.markdown table td a[href*="github-enterprise-server"],
+.markdown table td a[href*="gitlab-com"],
+.markdown table td a[href*="self-hosted-gitlab"],
+.markdown table td a[href*="azure-devops"],
+.markdown table td a[href*="bitbucket"] {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
 }
 
-[data-theme="dark"] .markdown table tbody tr:hover td {
-	background: #232323 !important;
-}
-
-/* Support icon styling */
-.support-icon {
-	display: inline;
-	margin-right: 0.75rem;
-	vertical-align: middle;
-	width: 20px;
-	height: 20px;
+.markdown table td a[href*="github-com"]::before,
+.markdown table td a[href*="github-enterprise-server"]::before,
+.markdown table td a[href*="gitlab-com"]::before,
+.markdown table td a[href*="self-hosted-gitlab"]::before,
+.markdown table td a[href*="azure-devops"]::before,
+.markdown table td a[href*="bitbucket"]::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: url('/img/Icons/Vector.png') center/contain no-repeat;
 	flex-shrink: 0;
 }
 
-.markdown table td .support-icon + * {
-	color: var(--ifm-color-content);
-	font-weight: 400;
-}
-
-[data-theme="dark"] .markdown table td .support-icon + * {
-	color: var(--ifm-color-content);
+/* Dark theme and responsive styles */
+[data-theme="dark"] .markdown table td a[href*="github-com"]::before,
+[data-theme="dark"] .markdown table td a[href*="github-enterprise-server"]::before,
+[data-theme="dark"] .markdown table td a[href*="gitlab-com"]::before,
+[data-theme="dark"] .markdown table td a[href*="self-hosted-gitlab"]::before,
+[data-theme="dark"] .markdown table td a[href*="azure-devops"]::before,
+[data-theme="dark"] .markdown table td a[href*="bitbucket"]::before {
+	filter: invert(1) brightness(0.8);
 }
 
 @media (max-width: 768px) {
-	.support-icon {
-		width: 18px;
-		height: 18px;
+	.markdown table td a[href*="github-com"]::before,
+	.markdown table td a[href*="github-enterprise-server"]::before,
+	.markdown table td a[href*="gitlab-com"]::before,
+	.markdown table td a[href*="self-hosted-gitlab"]::before,
+	.markdown table td a[href*="azure-devops"]::before,
+	.markdown table td a[href*="bitbucket"]::before {
+		width: 14px;
+		height: 14px;
 	}
 }
 
 @media (max-width: 480px) {
-	.support-icon {
-		width: 16px;
-		height: 16px;
+	.markdown table td a[href*="github-com"]::before,
+	.markdown table td a[href*="github-enterprise-server"]::before,
+	.markdown table td a[href*="gitlab-com"]::before,
+	.markdown table td a[href*="self-hosted-gitlab"]::before,
+	.markdown table td a[href*="azure-devops"]::before,
+	.markdown table td a[href*="bitbucket"]::before {
+		width: 12px;
+		height: 12px;
 	}
 }
-
-/* ===== REUSABLE NOTE COMPONENT STYLES ===== */
-.note-box {
-	border: 2px solid #25bab1;
-	border-radius: 12px;
-	background-color: #f1fffe;
-	padding: 1rem 1.2rem;
-	margin: 1.5rem 0;
-}
-
-[data-theme="dark"] .note-box {
-	border: 2px solid #208682;
-	background-color: #252828;
-}
-
-/* Responsive design for note box */
-@media (max-width: 768px) {
-	.note-box {
-		padding: 0.8rem 1rem;
-		margin: 1rem 0;
-		font-size: 0.95rem;
-		border-radius: 10px;
-	}
-
-	.note-icon {
-		width: 18px;
-		height: 18px;
-	}
-}
-
-@media (max-width: 480px) {
-	.note-box {
-		padding: 0.7rem 0.8rem;
-		margin: 0.8rem 0;
-		font-size: 0.9rem;
-		border-radius: 8px;
-	}
-
-	.note-icon {
-		width: 16px;
-		height: 16px;
-	}
-}
-
-
-
-/* ===== WARNING BOX STYLING ===== */
-
-.note-header {
-	display: flex;
-	align-items: center;
-	margin-bottom: 0.5rem;
-}
-
-.note-icon {
-	width: 1.2rem;
-	height: 1.2rem;
-	margin-right: 0.5rem;
-}
-
-.note-title {
-	color: #208682;
-	font-weight: 600;
-	font-size: 1rem;
-	margin: 0;
-}
-
-.note-content {
-	color: var(--ifm-color-content);
-	line-height: 1.6;
-	margin: 0;
-}
-
-.note-content a {
-	color: var(--ifm-color-primary);
-	text-decoration: none;
-	font-weight: 500;
-}
-
-.note-content a:hover {
-	text-decoration: underline;
-}
-
 
 /* ===== DOCUSAURUS BLOCKQUOTE OVERRIDE ===== */
 /* Override standard markdown blockquotes (>) to match custom design */
@@ -844,100 +648,6 @@ a[docid="docs"] > svg {
 }
 
 
-/* ===== REUSABLE CHAT BUBBLE STYLES ===== */
-/* Simple HTML/CSS chat bubble styling to match original ChatBubble component */
-.custom-chat-bubble {
-	background: #f6f7f8;
-	border: 1px solid #e0e1e2;
-	color: var(--imf-text-color);
-	border-radius: 6px;
-	padding: 1em 1.2em;
-	margin: 1em 0;
-	font-family: "Fira Mono", "Menlo", "Monaco", "Consolas", monospace;
-	font-size: 0.98em;
-	white-space: pre-wrap;
-	word-break: break-word;
-	position: relative;
-}
-
-.custom-chat-bubble .chat-content {
-	padding-right: 2.5rem;
-}
-
-.custom-chat-bubble .copy-button {
-	position: absolute;
-	top: 0.75rem;
-	right: 0.75rem;
-	background: rgba(255, 255, 255, 0.1);
-	border: none;
-	border-radius: 4px;
-	color: var(--imf-text-color);
-	cursor: pointer;
-	padding: 0.5rem;
-	opacity: 0.7;
-	transition:
-		opacity 0.2s ease,
-		background 0.2s ease;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.custom-chat-bubble .copy-button:hover {
-	opacity: 1;
-	background: rgba(255, 255, 255, 0.2);
-}
-
-.custom-chat-bubble .copy-button:active {
-	transform: scale(0.95);
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-	.custom-chat-bubble {
-		padding: 0.8rem 1rem;
-		font-size: 0.95rem;
-	}
-
-	.custom-chat-bubble .chat-content {
-		padding-right: 2.2rem;
-	}
-
-	.custom-chat-bubble .copy-button {
-		top: 0.6rem;
-		right: 0.6rem;
-		padding: 0.4rem;
-	}
-}
-
-@media (max-width: 480px) {
-	.custom-chat-bubble {
-		padding: 0.7rem 0.8rem;
-		font-size: 0.9rem;
-	}
-
-	.custom-chat-bubble .chat-content {
-		padding-right: 2rem;
-	}
-
-	.custom-chat-bubble .copy-button {
-		top: 0.5rem;
-		right: 0.5rem;
-		padding: 0.3rem;
-	}
-}
-
-[data-theme="dark"] .custom-chat-bubble {
-	background: #232323;
-	border: 1px solid #363636;
-}
-
-[data-theme="dark"] .custom-chat-bubble .copy-button {
-	background: rgba(255, 255, 255, 0.1);
-	color: #ffffff;
-}
-
-/* new css changes */
 
 /* info component */
 .theme-admonition.theme-admonition-info {
@@ -1537,249 +1247,221 @@ div[class*="codeBlockContainer"] button[class*="copyButton"]:hover {
 	}
 }
 
-/* ===== LANGUAGE-SPECIFIC CODE BLOCK STYLING ===== */
-/* Python, YAML, and Bash code blocks with dark background - both light and dark themes */
+/* ===== CODE BLOCK STYLING ===== */
+.prism-code[class*="language-python"], pre[class*="language-python"], .prism-code[class*="language-yaml"], pre[class*="language-yaml"], .prism-code[class*="language-yml"], pre[class*="language-yml"], .prism-code[class*="language-bash"], pre[class*="language-bash"], .prism-code[class*="language-shell"], pre[class*="language-shell"] { background: #171717 !important; color: #e8e8e8 !important; border: 1px solid #363636 !important; }
 
-.prism-code[class*="language-python"],
-pre[class*="language-python"],
-.prism-code[class*="language-yaml"],
-pre[class*="language-yaml"],
-.prism-code[class*="language-yml"],
-pre[class*="language-yml"],
-.prism-code[class*="language-bash"],
-pre[class*="language-bash"],
-.prism-code[class*="language-shell"],
-pre[class*="language-shell"] {
-	background-color: #171717 !important;
-	color: #E8E8E8 !important;
-	border: 1px solid #363636 !important;
-	border-radius: 6px !important;
-}
+/* Syntax highlighting */
+.prism-code[class*="language-"] .token, pre[class*="language-"] .token { color: #e8e8e8 !important; font-style: normal !important; }
+.prism-code[class*="language-"] .token.string, pre[class*="language-"] .token.string { color: #ff6b9d !important; }
+.prism-code[class*="language-"] .token.keyword, pre[class*="language-"] .token.keyword { color: #79D5FF !important; }
+.prism-code[class*="language-"] .token.function, pre[class*="language-"] .token.function { color: #FFB07B !important; }
+.prism-code[class*="language-"] .token.builtin, pre[class*="language-"] .token.builtin { color: #7dd3fc !important; }
+.prism-code[class*="language-"] .token.number, pre[class*="language-"] .token.number { color: #53FFE8 !important; }
+.prism-code[class*="language-"] .token.operator, .prism-code[class*="language-"] .token.punctuation, pre[class*="language-"] .token.operator, pre[class*="language-"] .token.punctuation { color: #d1d5db !important; }
+.prism-code[class*="language-"] .token.comment, pre[class*="language-"] .token.comment { color: #9ca3af !important; font-style: italic !important; }
 
-.prism-code[class*="language-python"] .token-line,
-pre[class*="language-python"] .token-line,
-.prism-code[class*="language-yaml"] .token-line,
-pre[class*="language-yaml"] .token-line,
-.prism-code[class*="language-yml"] .token-line,
-pre[class*="language-yml"] .token-line {
-	color: #ffffff !important;
-}
-
-/* Bash token lines - light gray text on dark background for light theme */
-.prism-code[class*="language-bash"] .token-line,
-pre[class*="language-bash"] .token-line,
-.prism-code[class*="language-shell"] .token-line,
-pre[class*="language-shell"] .token-line {
-	color: #E8E8E8 !important;
-}
-
-/* Copy button styling for language-specific blocks */
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-python"]) button[class*="copyButton"],
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-yaml"]) button[class*="copyButton"],
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-yml"]) button[class*="copyButton"],
+/* Copy button for dark code blocks */
 div[class*="codeBlockContainer"]:has(.prism-code[class*="language-bash"]) button[class*="copyButton"],
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-shell"]) button[class*="copyButton"] {
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-shell"]) button[class*="copyButton"],
+div[class*="codeBlockContainer"]:has(pre[class*="language-bash"]) button[class*="copyButton"],
+div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) button[class*="copyButton"] {
 	background: rgba(0, 0, 0, 0.6) !important;
-	border: 1px solid #363636 !important;
 	color: #f5f5f5 !important;
 }
 
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-python"]) button[class*="copyButton"]:hover,
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-yaml"]) button[class*="copyButton"]:hover,
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-yml"]) button[class*="copyButton"]:hover,
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-bash"]) button[class*="copyButton"]:hover,
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-shell"]) button[class*="copyButton"]:hover {
-	background: rgba(0, 0, 0, 0.8) !important;
+/* ===== GIT PLATFORM INTEGRATION GRID ===== */
+/* Transform the git platforms list into a visual grid with icons */
+#git-platform-integration ~ p + ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+	margin: 1.5rem 0;
+	align-items: start;
 }
 
-/* Dark theme - override text color to be light for dark theme */
-[data-theme="dark"] .prism-code[class*="language-python"],
-[data-theme="dark"] pre[class*="language-python"],
-[data-theme="dark"] .prism-code[class*="language-yaml"],
-[data-theme="dark"] pre[class*="language-yaml"],
-[data-theme="dark"] .prism-code[class*="language-yml"],
-[data-theme="dark"] pre[class*="language-yml"],
-[data-theme="dark"] .prism-code[class*="language-bash"],
-[data-theme="dark"] pre[class*="language-bash"],
-[data-theme="dark"] .prism-code[class*="language-shell"],
-[data-theme="dark"] pre[class*="language-shell"] {
-	color: #f5f5f5 !important;
+#git-platform-integration ~ p + ul li {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 1.5rem 2rem;
+	border: 2px solid #e0e0e0;
+	border-radius: 8px;
+	background-color: #fafafa;
+	font-weight: 500;
+	min-height: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	margin: 0;
+	position: relative;
+	top: 0;
 }
 
-[data-theme="dark"] .prism-code[class*="language-python"] .token-line,
-[data-theme="dark"] pre[class*="language-python"] .token-line,
-[data-theme="dark"] .prism-code[class*="language-yaml"] .token-line,
-[data-theme="dark"] pre[class*="language-yaml"] .token-line,
-[data-theme="dark"] .prism-code[class*="language-yml"] .token-line,
-[data-theme="dark"] pre[class*="language-yml"] .token-line {
-	color: #f5f5f5 !important;
+#git-platform-integration ~ p + ul li::before {
+	content: "";
+	width: 24px;
+	height: 24px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	flex-shrink: 0;
 }
 
-/* Dark theme bash token lines - light gray text on dark background */
-[data-theme="dark"] .prism-code[class*="language-bash"] .token-line,
-[data-theme="dark"] pre[class*="language-bash"] .token-line,
-[data-theme="dark"] .prism-code[class*="language-shell"] .token-line,
-[data-theme="dark"] pre[class*="language-shell"] .token-line {
-	color: #f5f5f5 !important;
+/* Platform-specific icons using nth-child since we know the order:
+   1. GitHub, 2. GitLab, 3. Bitbucket, 4. Azure */
+#git-platform-integration ~ p + ul li:nth-child(1)::before {
+	background-image: url('/img/overview/Github.png');
 }
 
-/* ===== SIMPLE BASH SYNTAX HIGHLIGHTING ===== */
-/* Target whatever tokens Prism.js actually generates */
-
-/* All available token types - cover all bases */
-.prism-code[class*="language-bash"] .token,
-pre[class*="language-bash"] .token,
-.prism-code[class*="language-shell"] .token,
-pre[class*="language-shell"] .token {
-	color: inherit; /* Let specific tokens override */
+#git-platform-integration ~ p + ul li:nth-child(2)::before {
+	background-image: url('/img/overview/Gitlab.png');
 }
 
-/* Comments */
-.prism-code[class*="language-bash"] .token.comment,
-pre[class*="language-bash"] .token.comment,
-.prism-code[class*="language-shell"] .token.comment,
-pre[class*="language-shell"] .token.comment {
-	color: #6a737d !important;
-	font-style: italic !important;
+#git-platform-integration ~ p + ul li:nth-child(3)::before {
+	background-image: url('/img/overview/Bitbucket.png');
 }
 
-/* Strings - pink */
-.prism-code[class*="language-bash"] .token.string,
-pre[class*="language-bash"] .token.string,
-.prism-code[class*="language-shell"] .token.string,
-pre[class*="language-shell"] .token.string {
-	color: #f472b6 !important;
+#git-platform-integration ~ p + ul li:nth-child(4)::before {
+	background-image: url('/img/overview/Azure.png');
 }
 
-/* Variables - light blue */
-.prism-code[class*="language-bash"] .token.variable,
-.prism-code[class*="language-bash"] .token.environment,
-.prism-code[class*="language-bash"] .token.builtin,
-.prism-code[class*="language-bash"] .token.function,
-.prism-code[class*="language-bash"] .token.command,
-.prism-code[class*="language-bash"] .token.keyword,
-pre[class*="language-bash"] .token.variable,
-pre[class*="language-bash"] .token.environment,
-pre[class*="language-bash"] .token.builtin,
-pre[class*="language-bash"] .token.function,
-pre[class*="language-bash"] .token.command,
-pre[class*="language-bash"] .token.keyword,
-.prism-code[class*="language-shell"] .token.variable,
-.prism-code[class*="language-shell"] .token.environment,
-.prism-code[class*="language-shell"] .token.builtin,
-.prism-code[class*="language-shell"] .token.function,
-.prism-code[class*="language-shell"] .token.command,
-.prism-code[class*="language-shell"] .token.keyword,
-pre[class*="language-shell"] .token.variable,
-pre[class*="language-shell"] .token.environment,
-pre[class*="language-shell"] .token.builtin,
-pre[class*="language-shell"] .token.function,
-pre[class*="language-shell"] .token.command,
-pre[class*="language-shell"] .token.keyword {
-	color: #7dd3fc !important;
+/* Dark theme support */
+[data-theme="dark"] #git-platform-integration ~ p + ul li {
+	background-color: #232323;
+	border-color: #363636;
+	color: #ffffff;
 }
 
-/* Numbers */
-.prism-code[class*="language-bash"] .token.number,
-pre[class*="language-bash"] .token.number,
-.prism-code[class*="language-shell"] .token.number,
-pre[class*="language-shell"] .token.number {
-	color: #fbbf24 !important;
+[data-theme="dark"] #git-platform-integration ~ p + ul li::before {
+	filter: invert(1) brightness(0.8);
 }
 
-/* Dark theme versions */
-[data-theme="dark"] .prism-code[class*="language-bash"] .token.comment,
-[data-theme="dark"] pre[class*="language-bash"] .token.comment,
-[data-theme="dark"] .prism-code[class*="language-shell"] .token.comment,
-[data-theme="dark"] pre[class*="language-shell"] .token.comment {
-	color: #6b7280 !important;
-	font-style: italic !important;
+/* Responsive design */
+@media (max-width: 768px) {
+	#git-platform-integration ~ p + ul {
+		grid-template-columns: 1fr 1fr;
+		gap: 0.8rem;
+	}
+
+	#git-platform-integration ~ p + ul li {
+		padding: 1.2rem 1.5rem;
+		font-size: 0.95rem;
+	}
 }
 
-[data-theme="dark"] .prism-code[class*="language-bash"] .token.string,
-[data-theme="dark"] pre[class*="language-bash"] .token.string,
-[data-theme="dark"] .prism-code[class*="language-shell"] .token.string,
-[data-theme="dark"] pre[class*="language-shell"] .token.string {
-	color: #f472b6 !important;
+@media (max-width: 480px) {
+	#git-platform-integration ~ p + ul {
+		grid-template-columns: 1fr;
+		gap: 0.6rem;
+	}
+
+	#git-platform-integration ~ p + ul li {
+		padding: 1rem 1.2rem;
+		font-size: 0.9rem;
+	}
+
+	#git-platform-integration ~ p + ul li::before {
+		width: 20px;
+		height: 20px;
+	}
 }
 
-[data-theme="dark"] .prism-code[class*="language-bash"] .token.variable,
-[data-theme="dark"] .prism-code[class*="language-bash"] .token.environment,
-[data-theme="dark"] .prism-code[class*="language-bash"] .token.builtin,
-[data-theme="dark"] .prism-code[class*="language-bash"] .token.function,
-[data-theme="dark"] .prism-code[class*="language-bash"] .token.command,
-[data-theme="dark"] .prism-code[class*="language-bash"] .token.keyword,
-[data-theme="dark"] pre[class*="language-bash"] .token.variable,
-[data-theme="dark"] pre[class*="language-bash"] .token.environment,
-[data-theme="dark"] pre[class*="language-bash"] .token.builtin,
-[data-theme="dark"] pre[class*="language-bash"] .token.function,
-[data-theme="dark"] pre[class*="language-bash"] .token.command,
-[data-theme="dark"] pre[class*="language-bash"] .token.keyword,
-[data-theme="dark"] .prism-code[class*="language-shell"] .token.variable,
-[data-theme="dark"] .prism-code[class*="language-shell"] .token.environment,
-[data-theme="dark"] .prism-code[class*="language-shell"] .token.builtin,
-[data-theme="dark"] .prism-code[class*="language-shell"] .token.function,
-[data-theme="dark"] .prism-code[class*="language-shell"] .token.command,
-[data-theme="dark"] .prism-code[class*="language-shell"] .token.keyword,
-[data-theme="dark"] pre[class*="language-shell"] .token.variable,
-[data-theme="dark"] pre[class*="language-shell"] .token.environment,
-[data-theme="dark"] pre[class*="language-shell"] .token.builtin,
-[data-theme="dark"] pre[class*="language-shell"] .token.function,
-[data-theme="dark"] pre[class*="language-shell"] .token.command,
-[data-theme="dark"] pre[class*="language-shell"] .token.keyword {
-	color: #7dd3fc !important;
+/* ===== ISSUE-MANAGEMENT INTEGRATION GRID ===== */
+/* Transform the issue-management platforms list into a visual grid with icons */
+/* Target the ul that comes after the Issue-management integration heading by position */
+#issue-management-integration ~ p + ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+	margin: 1.5rem 0;
+	align-items: start;
 }
 
-[data-theme="dark"] .prism-code[class*="language-bash"] .token.number,
-[data-theme="dark"] pre[class*="language-bash"] .token.number,
-[data-theme="dark"] .prism-code[class*="language-shell"] .token.number,
-[data-theme="dark"] pre[class*="language-shell"] .token.number {
-	color: #fbbf24 !important;
+#issue-management-integration ~ p + ul li {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 1.5rem 2rem;
+	border: 2px solid #e0e0e0;
+	border-radius: 8px;
+	background-color: #fafafa;
+	font-weight: 500;
+	min-height: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	margin: 0;
+	position: relative;
+	top: 0;
 }
 
-
-/* ===== CODE BLOCK TITLE STYLING FOR BASH/.ENV FILES ===== */
-/* Light theme - black title on light background */
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-bash"]) div[class*="codeBlockTitle"],
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-shell"]) div[class*="codeBlockTitle"],
-div[class*="codeBlockContainer"]:has(pre[class*="language-bash"]) div[class*="codeBlockTitle"],
-div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) div[class*="codeBlockTitle"] {
-	background-color: #f6f7f8 !important;
-	color: #000000 !important;
-	border: 1px solid #e0e1e2 !important;
-	border-bottom: none !important;
-	font-weight: 600 !important;
-	margin-bottom: 0 !important;
-	border-radius: 6px 6px 0 0 !important;
+#issue-management-integration ~ p + ul li::before {
+	content: "";
+	width: 24px;
+	height: 24px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	flex-shrink: 0;
 }
 
-/* Dark theme - white title on dark background */
-[data-theme="dark"] div[class*="codeBlockContainer"]:has(.prism-code[class*="language-bash"]) div[class*="codeBlockTitle"],
-[data-theme="dark"] div[class*="codeBlockContainer"]:has(.prism-code[class*="language-shell"]) div[class*="codeBlockTitle"],
-[data-theme="dark"] div[class*="codeBlockContainer"]:has(pre[class*="language-bash"]) div[class*="codeBlockTitle"],
-[data-theme="dark"] div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) div[class*="codeBlockTitle"] {
-	background-color: #2a2a2a !important;
-	color: #ffffff !important;
-	border: 1px solid #363636 !important;
-	border-bottom: none !important;
-	font-weight: 600 !important;
-	margin-bottom: 0 !important;
-	border-radius: 6px 6px 0 0 !important;
+/* Platform-specific icons using nth-child since we know the order:
+   1. GitHub Issues, 2. GitLab Issues, 3. Jira, 4. Linear */
+#issue-management-integration ~ p + ul li:nth-child(1)::before {
+	background-image: url('/img/overview/Github.png');
 }
 
-/* Remove any gap between title and code block for bash/shell */
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-bash"]) .prism-code,
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-shell"]) .prism-code,
-div[class*="codeBlockContainer"]:has(pre[class*="language-bash"]) pre,
-div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) pre {
-	margin-top: 0 !important;
-	border-radius: 0 0 6px 6px !important;
+#issue-management-integration ~ p + ul li:nth-child(2)::before {
+	background-image: url('/img/overview/Gitlab.png');
 }
 
-/* For bash/shell code blocks without titles, keep full border radius */
-div[class*="codeBlockContainer"]:not(:has(div[class*="codeBlockTitle"])):has(.prism-code[class*="language-bash"]) .prism-code,
-div[class*="codeBlockContainer"]:not(:has(div[class*="codeBlockTitle"])):has(.prism-code[class*="language-shell"]) .prism-code,
-div[class*="codeBlockContainer"]:not(:has(div[class*="codeBlockTitle"])):has(pre[class*="language-bash"]) pre,
-div[class*="codeBlockContainer"]:not(:has(div[class*="codeBlockTitle"])):has(pre[class*="language-shell"]) pre {
-	border-radius: 6px !important;
+#issue-management-integration ~ p + ul li:nth-child(3)::before {
+	background-image: url('/img/overview/Jira.png');
+}
+
+#issue-management-integration ~ p + ul li:nth-child(4)::before {
+	background-image: url('/img/overview/Linear.png');
+}
+
+/* Dark theme support */
+[data-theme="dark"] #issue-management-integration ~ p + ul li {
+	background-color: #232323;
+	border-color: #363636;
+	color: #ffffff;
+}
+
+[data-theme="dark"] #issue-management-integration ~ p + ul li::before {
+	filter: invert(1) brightness(0.8);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	#issue-management-integration ~ p + ul {
+		grid-template-columns: 1fr 1fr;
+		gap: 0.8rem;
+	}
+
+	#issue-management-integration ~ p + ul li {
+		padding: 0.8rem 1rem;
+		font-size: 0.95rem;
+	}
+}
+
+@media (max-width: 480px) {
+	#issue-management-integration ~ p + ul {
+		grid-template-columns: 1fr;
+		gap: 0.6rem;
+	}
+
+	#issue-management-integration ~ p + ul li {
+		padding: 0.7rem 0.8rem;
+		font-size: 0.9rem;
+	}
+
+	#issue-management-integration ~ p + ul li::before {
+		width: 20px;
+		height: 20px;
+	}
 }

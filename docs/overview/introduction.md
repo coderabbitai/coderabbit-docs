@@ -9,7 +9,6 @@ description:
 slug: "/"
 ---
 
-
 # Introduction
 
 This page provides a conceptual introduction to CodeRabbit. For a hands-on tutorial, see [Quickstart](/getting-started/quickstart/).
@@ -19,14 +18,7 @@ This page provides a conceptual introduction to CodeRabbit. For a hands-on tutor
 Developers can interact directly with the CodeRabbit bot within their existing Git platform's pull request interface to add context, ask questions, or even have the bot generate code. Over time, CodeRabbit learns from user input and improves its suggestions.
 
 <div class="video-container">
-  <iframe
-    src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY"
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerPolicy="strict-origin-when-cross-origin"
-    allowFullScreen
-  ></iframe>
+  <iframe src="https://www.youtube.com/embed/3SyUOSebG7E?si=i0oT9RAnH0PW81lY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 </div>
 
 ## Core features
@@ -66,48 +58,21 @@ No matter how you tune and customize CodeRabbit, its default settings make it us
 
 CodeRabbit integrates in just a few clicks with many popular Git platforms:
 
-<div class="platform-integration-grid">
-  <div class="platform-integration-card">
-    <img class="platform-integration-icon" src="/img/overview/Github.png" alt="GitHub, including GitHub Enterprise Server" />
-    <span>GitHub, including GitHub Enterprise Server</span>
-  </div>
-  <div class="platform-integration-card">
-    <img class="platform-integration-icon" src="/img/overview/Gitlab.png" alt="GitLab, including self-managed GitLab" />
-    <span>GitLab, including self-managed GitLab</span>
-  </div>
-  <div class="platform-integration-card">
-    <img class="platform-integration-icon" src="/img/overview/Bitbucket.png" alt="Bitbucket Cloud" />
-    <span>Bitbucket Cloud</span>
-  </div>
-  <div class="platform-integration-card">
-    <img class="platform-integration-icon" src="/img/overview/Azure.png" alt="Azure DevOps" />
-    <span>Azure DevOps</span>
-  </div>
-</div>
+- GitHub, GitHub Enterprise Cloud, GitHub Enterprise Server,
+- GitLab, GitLab Self-Managed
+- Azure DevOps
+- Bitbucket Cloud
+
 For more information, see [Supported Git Platforms](/platforms/).
 
 ### Issue-management integration
 
 You can integrate CodeRabbit with issue-management platforms. This lets you ask CodeRabbit to create tickets during code reviews, or chat with CodeRabbit about your code from within issue comments. Compatible platforms include the following:
 
-<div class="platform-integration-grid">
-  <div class="platform-integration-card">
-    <img class="platform-integration-icon" src="img/overview/Github.png" alt="GitHub Issues" />
-    <span>GitHub Issues</span>
-  </div>
-  <div class="platform-integration-card">
-    <img class="platform-integration-icon" src="img/overview/Gitlab.png" alt="GitLab Issues" />
-    <span>GitLab Issues</span>
-  </div>
-  <div class="platform-integration-card">
-    <img class="platform-integration-icon" src="img/overview/Jira.png" alt="Jira" />
-    <span>Jira</span>
-  </div>
-  <div class="platform-integration-card">
-    <img class="platform-integration-icon" src="img/overview/Linear.png" alt="Linear" />
-    <span>Linear</span>
-  </div>
-</div>
+- GitHub Issues
+- GitLab Issues
+- Jira
+- Linear
 
 For more information, see [Issue Creation](/guides/issue-creation) and [Issue Chat](/guides/issue-chat).
 
@@ -118,7 +83,6 @@ CodeRabbit collects only the minimum amount of information needed to provide you
 - All queries to large language models (LLMs) exist in-memory only, with zero retention after each query completes.
 - We don't use your code, code reviews, or other collected data to train LLMs.
 - CodeRabbit doesn't share any collected customer data with third parties.
-- Works with contributors through natural-language conversation in comments.
 - We keep all customer data confidential, and isolated by organization.
 - Our data collection and storage practices comply with SOC 2 and GDPR standards.
 
@@ -128,9 +92,7 @@ For more information about how we protect your data, see [the CodeRabbit Trust C
 
 Public repositories can use the Pro tier of CodeRabbit at no charge, including all of the code-review features described on this page. Rate limits might apply.
 
-For private repositories, a number of pricing tiers are available. These range from a Free tier that offers unlimited code-change summaries, to an Enterprise tier with access to advanced features and SLA support.
-
-For more information, see [Pricing](https://www.coderabbit.ai/pricing).
+For private repositories, a number of pricing tiers are available. These range from a Free tier that offers unlimited code-change summaries, to an Enterprise tier with access to advanced features and SLA support. For more information, see [Pricing](https://www.coderabbit.ai/pricing).
 
 ## Review local changes from within VSCode
 
@@ -141,5 +103,7 @@ For more information, see [Review local changes](/code-editors).
 ## What's next
 
 - [Quickstart](/getting-started/quickstart/) lets you experience your first CodeRabbit code review first-hand.
+
 - [Review local changes](/code-editors) guides you through installing and using a subset of CodeRabbit features directly from your code editor.
+
 - [Why CodeRabbit?](/overview/why-coderabbit) dives further into the philosophies and technologies that drive CodeRabbit.
