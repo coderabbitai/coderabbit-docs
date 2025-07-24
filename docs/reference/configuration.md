@@ -3552,11 +3552,11 @@ markdownlint-cli2 is a static analysis tool to enforce standards and consistency
 
 markdownlint-cli2 is a static analysis tool to enforce standards and consistency for Markdown files.
 
-### OXC
+### Oxlint
 
-OXC is a JavaScript/TypeScript linter written in Rust.
+Oxlint is a JavaScript/TypeScript linter for OXC written in Rust.
 
-#### Enable OXC
+#### Enable Oxlint
 
 <Tabs groupId="config-setting">
   <TabItem value="web-ui" label="Web UI">
@@ -3564,7 +3564,7 @@ OXC is a JavaScript/TypeScript linter written in Rust.
       <tbody>
       <tr>
         <td><strong>Location</strong></td>
-        <td>Review > Tools > Enable OXC</td>
+        <td>Review > Tools > Enable Oxlint</td>
       </tr>
       <tr>
         <td><strong>Default</strong></td>
@@ -3591,7 +3591,7 @@ OXC is a JavaScript/TypeScript linter written in Rust.
   </TabItem>
 </Tabs>
 
-OXC is a JavaScript/TypeScript linter written in Rust.
+Oxlint is a JavaScript/TypeScript linter for OXC written in Rust.
 
 ### PHPStan
 

@@ -195,6 +195,11 @@
 							"default": true,
 							"description": "Generate sequence diagrams in the walkthrough."
 						},
+						"estimate_code_review_effort": {
+							"type": "boolean",
+							"default": true,
+							"description": "Estimate the code review effort in the walkthrough."
+						},
 						"assess_linked_issues": {
 							"type": "boolean",
 							"default": true,
@@ -374,6 +379,81 @@
 							"additionalProperties": false,
 							"default": {}
 						},
+						"pre_merge_checks": {
+							"type": "object",
+							"properties": {
+								"docstrings": {
+									"type": "object",
+									"properties": {
+										"mode": {
+											"type": "string",
+											"enum": ["off", "warning", "error"],
+											"default": "warning",
+											"description": "Mode | Level of enforcement for docstring coverage check. Warning only generates a warning and does not require the user to resolve the check. While error requires the user to resolve issues before merging pull request."
+										},
+										"threshold": {
+											"type": "number",
+											"minimum": 0,
+											"maximum": 100,
+											"default": 80,
+											"description": "Percentage threshold for docstring coverage check."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Docstring Coverage | Checks if the code has sufficient docstrings."
+								},
+								"title": {
+									"type": "object",
+									"properties": {
+										"mode": {
+											"type": "string",
+											"enum": ["off", "warning", "error"],
+											"default": "warning",
+											"description": "Mode | Level of enforcement for pull request title check. Warning only generates a warning and does not require the user to resolve the check. While error requires the user to resolve issues before merging pull request."
+										},
+										"requirements": {
+											"type": "string",
+											"default": "",
+											"description": "Requirements | Requirements for the pull request title. Example: 'Title should be concise and descriptive, ideally under 50 characters.'"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Title Check | Checks if the pull request title is appropriate and follows best practices."
+								},
+								"description": {
+									"type": "object",
+									"properties": {
+										"mode": {
+											"type": "string",
+											"enum": ["off", "warning", "error"],
+											"default": "warning",
+											"description": "Mode | Level of enforcement for pull request description check. Warning only generates a warning and does not require the user to resolve the check. While error requires the user to resolve issues before merging pull request."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Description Check | Checks if the pull request description is appropriate and follows best practices."
+								},
+								"issue_assessment": {
+									"type": "object",
+									"properties": {
+										"mode": {
+											"type": "string",
+											"enum": ["off", "warning", "error"],
+											"default": "warning",
+											"description": "Mode | Level of enforcement for linked issue assessment. Warning only generates a warning and does not require the user to resolve the check. While error requires the user to resolve issues before merging pull request."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Linked Issue Assessment | Checks if the pull request addresses the linked issues. Generate an assessment of how well the changes address the linked issues."
+								}
+							},
+							"additionalProperties": false,
+							"default": {}
+						},
 						"tools": {
 							"type": "object",
 							"properties": {
@@ -535,7 +615,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Biome | Biome is a fast formatter, linter, and analyzer for web projects. | Enable Biome integration. | v1.9.4"
+											"description": "Enable Biome | Biome is a fast formatter, linter, and analyzer for web projects. | Enable Biome integration. | v2.1.2"
 										}
 									},
 									"additionalProperties": false,
@@ -636,7 +716,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v1.64.8"
+											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v2.2.2"
 										},
 										"config_file": {
 											"type": "string",
@@ -817,7 +897,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Semgrep | Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues. | Enable Semgrep integration. | v1.122.0"
+											"description": "Enable Semgrep | Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues. | Enable Semgrep integration. | v1.128.1"
 										},
 										"config_file": {
 											"type": "string",
@@ -899,12 +979,12 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable OXC | OXC is a JavaScript/TypeScript linter written in Rust. | v0.16.10"
+											"description": "Enable Oxlint | Oxlint is a JavaScript/TypeScript linter for OXC written in Rust. | v0.16.10"
 										}
 									},
 									"additionalProperties": false,
 									"default": {},
-									"description": "OXC is a JavaScript/TypeScript linter written in Rust."
+									"description": "Oxlint is a JavaScript/TypeScript linter for OXC written in Rust."
 								},
 								"shopifyThemeCheck": {
 									"type": "object",
