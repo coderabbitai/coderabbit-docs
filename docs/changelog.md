@@ -5,6 +5,12 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## July 23, 2025
+
+### ⚡️ Unit Test Generation - Beta
+
+CodeRabbit's unit test generation is now available in Beta! Automatically generate comprehensive unit tests for your code changes, ensuring better test coverage and catching edge cases you might miss. Our AI analyzes your code structure and creates tests that follow best practices and your project's testing patterns. Learn more [here](https://docs.coderabbit.ai/finishing-touches/unit-test-generation), or just try it under ✨ Finishing Touches.
+
 ## July 17, 2025
 
 ### Enhanced Reporting Capabilities
@@ -97,7 +103,7 @@ Key capabilities:
 
 - **Intelligent Test Generation**: Automatically creates unit tests that cover edge cases, error scenarios, and core functionality
 - **Context-Aware**: Generates tests that understand your existing codebase patterns and testing conventions
-- **One-Click Integration**: Simply comment `@coderabbitai auto-generate unit tests` on any pull request or specific file, or click on the checkbox available in the walkthrough comment for Early Access customers.
+- **One-Click Integration**: Simply comment `@coderabbitai generate unit tests` on any pull request or specific file, or click on the checkbox available in the walkthrough comment for Early Access customers.
 
 You can customize the generated tests to fit your specific requirements.
 
