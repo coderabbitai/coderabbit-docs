@@ -41,6 +41,16 @@
 	--ifm-background-color-primary: #f6f6f1;
 	--ifm-background-color-secondary: #e8e8e8;
 	--ifm-breadcrumb-item-background-active: #ffe9e2;
+	--imf-list-card-background-color: #ffffff;
+	--imf-list-bullets-color: #25bab1;
+	--imf-color-background-orange-light: #fffcfb;
+	--imf-color-border-orange: #ffceb6;
+	--imf-note-border-color: #25bab1;
+	--imf-note-background-color: #f1fffe;
+	--imf-note-text-color: #208682;
+	--imf-text-color-bg: #e8e8e8;
+	--imf-text-color: #171717;
+	--imf-text-button-color-bg: #e8e8e8;
 }
 
 [data-theme="dark"] {
@@ -55,6 +65,15 @@
 	--ifm-background-color-primary: #171717;
 	--ifm-background-color-secondary: #232323;
 	--ifm-breadcrumb-item-background-active: #3f322e;
+	--imf-list-card-background-color: #232323;
+	--imf-list-bullets-color: #208682;
+	--imf-color-background-orange-light: #232323;
+	--imf-color-border-orange: #232323;
+	--imf-note-border-color: #208682;
+	--imf-note-background-color: #252828;
+	--imf-text-color-bg: #232323;
+	--imf-text-color: #f5f5f5;
+	--imf-text-button-color-bg: #232323;
 }
 
 #__docusaurus {
@@ -71,27 +90,6 @@
 
 a[docid="docs"] > svg {
 	display: none;
-}
-
-/* Adjustments for mobile view */
-@media (max-width: 768px) {
-	/* Reduce the logo size for smaller screens */
-	.navbar__logo img {
-		height: 32px;
-		align-items: center;
-	}
-
-	/* Reduce the padding around the logo for smaller screens */
-	.navbar__logo {
-		padding: 2px; /* Adjust the padding for smaller screens */
-	}
-}
-
-/* Center the Discord link within its parent */
-.navbar__items.navbar__items--right {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 [data-theme="light"] img[src$="#gh-dark-mode-only"],
@@ -129,7 +127,12 @@ a[docid="docs"] > svg {
 	display: none;
 }
 
-/* Adjustments for mobile view */
+.navbar__items.navbar__items--right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 @media (max-width: 768px) {
 	/* Reduce the logo size for smaller screens */
 	.navbar__logo img {
@@ -139,15 +142,12 @@ a[docid="docs"] > svg {
 
 	/* Reduce the padding around the logo for smaller screens */
 	.navbar__logo {
-		padding: 2px; /* Adjust the padding for smaller screens */
+		padding: 2px;
 	}
-}
 
-/* Center the Discord link within its parent */
-.navbar__items.navbar__items--right {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	.markdown {
+		padding-left: 1rem;
+	}
 }
 
 /* Light mode Discord icon */
@@ -304,6 +304,17 @@ a[docid="docs"] > svg {
 .pagination-nav {
 	display: none;
 }
+.language-text {
+	background-color: var(--imf-text-color-bg) !important;
+}
+.language-text .token-line {
+	color: var(--imf-text-color) !important;
+}
+.language-text [class*="buttonGroup"] button {
+	background-color: var(--imf-text-color-bg) !important;
+	color: var(--imf-text-color) !important;
+	border-radius: 4px;
+}
 /* ===== MARKDOWN STYLES ===== */
 .theme-doc-markdown.markdown {
 	line-height: 1.8rem;
@@ -334,4 +345,1441 @@ a[docid="docs"] > svg {
 	font-weight: 600;
 	cursor: default;
 	background-color: var(--ifm-breadcrumb-item-background-active);
+}
+
+/* Add left spacing to main content */
+.markdown {
+	padding-left: 1.5rem;
+}
+
+/* Align numbered lists with other content */
+.markdown ol {
+	padding-left: 1.2rem;
+	margin-left: 0;
+}
+
+.markdown ol > li {
+	margin-left: 0;
+	padding-left: 0.5rem;
+}
+
+/* ===== PLATFORM GRID STYLES ===== */
+.platform-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	margin: 1.5rem 0;
+}
+
+.platform-card {
+	display: flex;
+	align-items: center;
+	background: var(--imf-list-card-background-color);
+	border-radius: 8px;
+	padding: 1.3rem;
+	border: 2px solid var(--ifm-background-color-secondary);
+}
+
+.platform-icon {
+	width: 32px;
+	height: 32px;
+	margin-right: 16px;
+}
+
+[data-theme="dark"] .platform-icon {
+	filter: invert(1);
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+	.platform-grid {
+		grid-template-columns: 1fr;
+		gap: 0.75rem;
+	}
+
+	.platform-card {
+		padding: 1rem;
+	}
+
+	.platform-icon {
+		width: 24px;
+		height: 24px;
+		margin-right: 12px;
+	}
+}
+
+/* ===== PLATFORM INTEGRATION GRID STYLES ===== */
+/* Grid layout for displaying supported Git platforms and issue management integrations */
+.platform-integration-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	margin: 1.5rem 0;
+}
+
+.platform-integration-card {
+	display: flex;
+	align-items: center;
+	padding: 1.5rem;
+	border: 1px solid var(--ifm-color-emphasis-200);
+	border-radius: 8px;
+	background-color: var(--ifm-background-surface-color);
+}
+
+.platform-integration-icon {
+	width: 32px;
+	height: 32px;
+	margin-right: 1rem;
+	flex-shrink: 0;
+}
+
+.platform-integration-card span {
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--ifm-color-content);
+	line-height: 1.4;
+}
+
+/* Dark mode adjustments for platform icons */
+[data-theme="dark"] .platform-integration-icon {
+	filter: invert(1) brightness(0.9);
+}
+
+/* Dark mode styling for platform integration cards */
+[data-theme="dark"] .platform-integration-card {
+	border-color: var(--ifm-color-emphasis-400);
+	background-color: var(--ifm-background-color-secondary);
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+	.platform-integration-grid {
+		grid-template-columns: 1fr;
+		gap: 0.75rem;
+	}
+
+	.platform-integration-card {
+		padding: 1.25rem;
+	}
+
+	.platform-integration-icon {
+		width: 28px;
+		height: 28px;
+		margin-right: 0.75rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.platform-integration-card {
+		padding: 1rem;
+	}
+
+	.platform-integration-icon {
+		width: 24px;
+		height: 24px;
+		margin-right: 0.5rem;
+	}
+
+	.platform-integration-card span {
+		font-size: 0.9rem;
+	}
+}
+
+/* ===== PLATFORM TABLES STYLING ===== */
+.markdown table {
+	display: table;
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	background: #ffffff !important;
+	border: none !important;
+	table-layout: auto;
+	margin: 2rem 0;
+	border-radius: 12px !important;
+	overflow: hidden;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Create scrollable wrapper for tables on mobile */
+@media (max-width: 768px) {
+	.markdown {
+		overflow-x: auto;
+	}
+
+	.markdown table {
+		min-width: 600px;
+		width: auto;
+		margin: 1.5rem 0;
+		display: table;
+	}
+}
+
+.markdown table thead {
+	background: #ffffff !important;
+}
+
+.markdown table tbody {
+	background: #ffffff !important;
+}
+
+.markdown table tr {
+	background: #ffffff !important;
+	border: none !important;
+}
+
+.markdown table th {
+	background: #ffffff !important;
+	color: var(--ifm-heading-color);
+	padding: 1.5rem 2rem 1.5rem 2rem;
+	text-align: left;
+	font-weight: 600;
+	font-size: 1.1rem;
+	border: none !important;
+	border-bottom: 1px solid #e5e7eb !important;
+	border-right: 1px solid #f3f4f6 !important;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.markdown table th:first-child {
+	border-top-left-radius: 12px;
+}
+
+.markdown table th:last-child {
+	border-bottom: 1px solid #e5e7eb !important;
+	border-right: none !important;
+	border-top-right-radius: 12px;
+}
+
+.markdown table td {
+	padding: 1.5rem 2rem 1.5rem 2rem;
+	border: none !important;
+	border-bottom: 1px solid #f3f4f6 !important;
+	border-right: 1px solid #f3f4f6 !important;
+	color: var(--ifm-color-content);
+	vertical-align: middle;
+	background: #ffffff !important;
+	box-sizing: border-box;
+	font-size: 1rem;
+}
+
+.markdown table td:last-child {
+	border-bottom: 1px solid #f3f4f6 !important;
+	border-right: none !important;
+}
+
+.markdown table tbody tr:last-child td {
+	border-bottom: none !important;
+}
+
+.markdown table tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 12px;
+}
+
+.markdown table tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 12px;
+}
+
+.markdown table tbody tr:hover {
+	background: #ffffff !important;
+}
+
+.markdown table tbody tr:hover td {
+	background: #ffffff !important;
+}
+
+/* Responsive design for tables */
+@media (max-width: 768px) {
+	.markdown table th {
+		padding: 1.2rem 1.5rem;
+		font-size: 1rem;
+		white-space: nowrap;
+	}
+
+	.markdown table td {
+		padding: 1.2rem 1.5rem;
+		font-size: 0.95rem;
+		white-space: nowrap;
+	}
+}
+
+@media (max-width: 480px) {
+	.markdown table {
+		min-width: 500px;
+		margin: 1rem 0;
+		font-size: 0.9rem;
+	}
+
+	.markdown table th {
+		padding: 1rem 1.2rem;
+		font-size: 0.95rem;
+		white-space: nowrap;
+	}
+
+	.markdown table td {
+		padding: 1rem 1.2rem;
+		font-size: 0.9rem;
+		white-space: nowrap;
+	}
+
+	.support-icon {
+		width: 16px !important;
+		height: 16px !important;
+		margin-right: 0.5rem !important;
+	}
+}
+
+[data-theme="dark"] .markdown table {
+	background: #232323 !important;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .markdown table thead {
+	background: #232323 !important;
+}
+
+[data-theme="dark"] .markdown table tbody {
+	background: #232323 !important;
+}
+
+[data-theme="dark"] .markdown table tr {
+	background: #232323 !important;
+	border: none !important;
+}
+
+[data-theme="dark"] .markdown table th {
+	background: #232323 !important;
+	border: none !important;
+	border-bottom: 1px solid #404040 !important;
+	border-right: 1px solid #363636 !important;
+}
+
+[data-theme="dark"] .markdown table th:last-child {
+	border-right: none !important;
+}
+
+[data-theme="dark"] .markdown table td {
+	border: none !important;
+	border-bottom: 1px solid #363636 !important;
+	border-right: 1px solid #363636 !important;
+	background: #232323 !important;
+}
+
+[data-theme="dark"] .markdown table td:last-child {
+	border-right: none !important;
+}
+
+[data-theme="dark"] .markdown table tbody tr:last-child td {
+	border-bottom: none !important;
+}
+
+[data-theme="dark"] .markdown table tbody tr:hover {
+	background: #232323 !important;
+}
+
+[data-theme="dark"] .markdown table tbody tr:hover td {
+	background: #232323 !important;
+}
+
+/* Support icon styling */
+.support-icon {
+	display: inline;
+	margin-right: 0.75rem;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+}
+
+.markdown table td .support-icon + * {
+	color: var(--ifm-color-content);
+	font-weight: 400;
+}
+
+[data-theme="dark"] .markdown table td .support-icon + * {
+	color: var(--ifm-color-content);
+}
+
+@media (max-width: 768px) {
+	.support-icon {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+@media (max-width: 480px) {
+	.support-icon {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+/* ===== REUSABLE NOTE COMPONENT STYLES ===== */
+.note-box {
+	border: 2px solid #25bab1;
+	border-radius: 12px;
+	background-color: #f1fffe;
+	padding: 1rem 1.2rem;
+	margin: 1.5rem 0;
+}
+
+[data-theme="dark"] .note-box {
+	border: 2px solid #208682;
+	background-color: #252828;
+}
+
+/* Responsive design for note box */
+@media (max-width: 768px) {
+	.note-box {
+		padding: 0.8rem 1rem;
+		margin: 1rem 0;
+		font-size: 0.95rem;
+		border-radius: 10px;
+	}
+
+	.note-icon {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+@media (max-width: 480px) {
+	.note-box {
+		padding: 0.7rem 0.8rem;
+		margin: 0.8rem 0;
+		font-size: 0.9rem;
+		border-radius: 8px;
+	}
+
+	.note-icon {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+
+
+/* ===== WARNING BOX STYLING ===== */
+
+.note-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.note-icon {
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-right: 0.5rem;
+}
+
+.note-title {
+	color: #208682;
+	font-weight: 600;
+	font-size: 1rem;
+	margin: 0;
+}
+
+.note-content {
+	color: var(--ifm-color-content);
+	line-height: 1.6;
+	margin: 0;
+}
+
+.note-content a {
+	color: var(--ifm-color-primary);
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.note-content a:hover {
+	text-decoration: underline;
+}
+
+
+/* ===== DOCUSAURUS BLOCKQUOTE OVERRIDE ===== */
+/* Override standard markdown blockquotes (>) to match custom design */
+.markdown blockquote {
+	border-left: 3px solid #9b9b9b;
+	background-color: transparent;
+	padding: 1.2rem 1.5rem;
+	margin: 1.5rem 0;
+	color: var(--ifm-color-content);
+	line-height: 1.6;
+	border-radius: 0;
+	font-style: normal;
+	position: relative;
+}
+
+.markdown blockquote p {
+	margin: 0;
+	line-height: 1.6;
+}
+
+.markdown blockquote p:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+/* Dark theme support for blockquotes */
+[data-theme="dark"] .markdown blockquote {
+	background-color: #2a2a2a;
+	border-left: 4px solid #666666;
+}
+
+/* Responsive design for blockquotes */
+@media (max-width: 768px) {
+	.markdown blockquote {
+		padding: 1rem 1.2rem;
+		margin: 1.2rem 0;
+		border-left-width: 3px;
+	}
+}
+
+@media (max-width: 480px) {
+	.markdown blockquote {
+		padding: 0.8rem 1rem;
+		margin: 1rem 0;
+		border-left-width: 3px;
+	}
+}
+
+
+/* ===== REUSABLE CHAT BUBBLE STYLES ===== */
+/* Simple HTML/CSS chat bubble styling to match original ChatBubble component */
+.custom-chat-bubble {
+	background: #f6f7f8;
+	border: 1px solid #e0e1e2;
+	color: var(--imf-text-color);
+	border-radius: 6px;
+	padding: 1em 1.2em;
+	margin: 1em 0;
+	font-family: "Fira Mono", "Menlo", "Monaco", "Consolas", monospace;
+	font-size: 0.98em;
+	white-space: pre-wrap;
+	word-break: break-word;
+	position: relative;
+}
+
+.custom-chat-bubble .chat-content {
+	padding-right: 2.5rem;
+}
+
+.custom-chat-bubble .copy-button {
+	position: absolute;
+	top: 0.75rem;
+	right: 0.75rem;
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	border-radius: 4px;
+	color: var(--imf-text-color);
+	cursor: pointer;
+	padding: 0.5rem;
+	opacity: 0.7;
+	transition:
+		opacity 0.2s ease,
+		background 0.2s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.custom-chat-bubble .copy-button:hover {
+	opacity: 1;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.custom-chat-bubble .copy-button:active {
+	transform: scale(0.95);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.custom-chat-bubble {
+		padding: 0.8rem 1rem;
+		font-size: 0.95rem;
+	}
+
+	.custom-chat-bubble .chat-content {
+		padding-right: 2.2rem;
+	}
+
+	.custom-chat-bubble .copy-button {
+		top: 0.6rem;
+		right: 0.6rem;
+		padding: 0.4rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.custom-chat-bubble {
+		padding: 0.7rem 0.8rem;
+		font-size: 0.9rem;
+	}
+
+	.custom-chat-bubble .chat-content {
+		padding-right: 2rem;
+	}
+
+	.custom-chat-bubble .copy-button {
+		top: 0.5rem;
+		right: 0.5rem;
+		padding: 0.3rem;
+	}
+}
+
+[data-theme="dark"] .custom-chat-bubble {
+	background: #232323;
+	border: 1px solid #363636;
+}
+
+[data-theme="dark"] .custom-chat-bubble .copy-button {
+	background: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+}
+
+/* new css changes */
+
+/* info component */
+.theme-admonition.theme-admonition-info {
+	background-color: #e3f2fd !important;
+	border: 2px solid #4cb3d4 !important;
+	padding: 16px !important;
+	border-radius: 8px !important;
+	font-family: "Roboto", sans-serif !important;
+	margin: 1.5rem 0 !important;
+}
+
+.theme-admonition.theme-admonition-info p {
+	color: #333 !important;
+	font-size: 1rem !important;
+	line-height: 1.6 !important;
+}
+
+.theme-admonition.theme-admonition-info a {
+	color: #1976d2 !important;
+	text-decoration: none !important;
+}
+
+.theme-admonition.theme-admonition-info a:hover {
+	text-decoration: underline !important;
+}
+
+.theme-admonition.theme-admonition-info .admonitionHeading_Gvgb {
+	color: #4cb3d4 !important;
+	display: flex !important;
+	align-items: center !important;
+	font-size: 1rem !important;
+	flex-direction: row !important;
+	text-transform: capitalize !important;
+}
+
+.theme-admonition.theme-admonition-info .admonitionIcon_Rf37 svg {
+	display: block !important;
+	color: #4cb3d4 !important;
+	fill: #4cb3d4 !important;
+	width: 16px !important;
+	height: 16px !important;
+}
+
+/* Dark theme support for info component */
+[data-theme="dark"] .theme-admonition.theme-admonition-info {
+	background-color: #252828 !important;
+	border: 2px solid #4cb3d4 !important;
+}
+
+[data-theme="dark"] .theme-admonition.theme-admonition-info p {
+	color: #f5f5f5 !important;
+}
+
+[data-theme="dark"] .theme-admonition.theme-admonition-info a {
+	color: #64b5f6 !important;
+}
+
+[data-theme="dark"] .theme-admonition.theme-admonition-info .admonitionHeading_Gvgb {
+	color: #4cb3d4 !important;
+}
+
+/* Responsive design for info component */
+@media (max-width: 768px) {
+	.theme-admonition.theme-admonition-info {
+		padding: 12px !important;
+		margin: 1rem 0 !important;
+		border-radius: 6px !important;
+	}
+
+	.theme-admonition.theme-admonition-info p {
+		font-size: 0.95rem !important;
+	}
+
+	.theme-admonition.theme-admonition-info .admonitionHeading_Gvgb {
+		font-size: 0.95rem !important;
+	}
+
+	.theme-admonition.theme-admonition-info .admonitionIcon_Rf37 {
+		width: 18px !important;
+		height: 18px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.theme-admonition.theme-admonition-info {
+		padding: 10px !important;
+		margin: 0.8rem 0 !important;
+		border-radius: 4px !important;
+	}
+
+	.theme-admonition.theme-admonition-info p {
+		font-size: 0.9rem !important;
+		line-height: 1.5 !important;
+	}
+
+	.theme-admonition.theme-admonition-info .admonitionHeading_Gvgb {
+		font-size: 0.9rem !important;
+	}
+
+	.theme-admonition.theme-admonition-info .admonitionIcon_Rf37 {
+		width: 16px !important;
+		height: 16px !important;
+	}
+}
+
+/* note component */
+.theme-admonition.theme-admonition-note {
+	background-color: #eaf6f4 !important;
+	border: 2px solid #00b8a9 !important;
+	padding: 16px !important;
+	border-radius: 8px !important;
+	font-family: "Roboto", sans-serif !important;
+	margin: 1.5rem 0 !important;
+}
+
+.theme-admonition.theme-admonition-note p {
+	color: #333 !important;
+	font-size: 1rem !important;
+	line-height: 1.6 !important;
+}
+
+.theme-admonition.theme-admonition-note a {
+	color: #ff6600 !important;
+	text-decoration: none !important;
+}
+
+.theme-admonition.theme-admonition-note a:hover {
+	text-decoration: underline !important;
+}
+.admonitionHeading_Gvgb {
+	color: #208682;
+	display: flex;
+	align-items: center;
+	font-size: 1rem !important;
+
+	flex-direction: row;
+	text-transform: capitalize !important;
+}
+
+.admonitionIcon_Rf37 svg {
+	display: none !important;
+}
+
+.theme-admonition.theme-admonition-note .admonitionIcon_Rf37 {
+	background-image: url("/static/img/Icons/Icons.png");
+	background-position: center;
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+}
+
+/* Dark theme support for note component */
+[data-theme="dark"] .theme-admonition.theme-admonition-note {
+	background-color: #252828 !important;
+	border: 2px solid #208682 !important;
+}
+
+[data-theme="dark"] .theme-admonition.theme-admonition-note p {
+	color: #f5f5f5 !important;
+}
+
+[data-theme="dark"] .theme-admonition.theme-admonition-note a {
+	color: #ff865b !important;
+}
+
+[data-theme="dark"] .admonitionHeading_Gvgb {
+	color: #25bab1 !important;
+}
+
+/* Responsive design for note component */
+@media (max-width: 768px) {
+	.theme-admonition.theme-admonition-note {
+		padding: 12px !important;
+		margin: 1rem 0 !important;
+		border-radius: 6px !important;
+	}
+
+	.theme-admonition.theme-admonition-note p {
+		font-size: 0.95rem !important;
+	}
+
+	.admonitionHeading_Gvgb {
+		font-size: 0.95rem !important;
+	}
+
+	.theme-admonition.theme-admonition-note .admonitionIcon_Rf37 {
+		width: 18px !important;
+		height: 18px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.theme-admonition.theme-admonition-note {
+		padding: 10px !important;
+		margin: 0.8rem 0 !important;
+		border-radius: 4px !important;
+	}
+
+	.theme-admonition.theme-admonition-note p {
+		font-size: 0.9rem !important;
+		line-height: 1.5 !important;
+	}
+
+	.admonitionHeading_Gvgb {
+		font-size: 0.9rem !important;
+	}
+
+	.theme-admonition.theme-admonition-note .admonitionIcon_Rf37 {
+		width: 16px !important;
+		height: 16px !important;
+	}
+}
+
+/* ===== TIP COMPONENT STYLING ===== */
+/* Style Docusaurus :::tip admonitions to match design */
+.theme-admonition.theme-admonition-tip {
+	background-color: #FFFCFB !important;
+	border: 2px solid #ff865b !important;
+	padding: 1rem 1.25rem !important;
+	border-radius: 16px !important;
+	font-family: "Roboto", sans-serif !important;
+	margin: 1.5rem 0 !important;
+}
+
+.theme-admonition.theme-admonition-tip p {
+	color: #333 !important;
+	font-size: 0.9rem !important;
+	line-height: 1.6 !important;
+	margin: 0 !important;
+}
+
+.theme-admonition.theme-admonition-tip a {
+	color: #ff570a !important;
+	text-decoration: none !important;
+}
+
+.theme-admonition.theme-admonition-tip a:hover {
+	text-decoration: underline !important;
+}
+
+.theme-admonition.theme-admonition-tip .admonitionHeading_Gvgb {
+	color: #ff570a !important;
+	display: flex !important;
+	align-items: center !important;
+	font-size: 1.1rem !important;
+	font-weight: 600 !important;
+	margin-bottom: 0.5rem !important;
+	text-transform: capitalize !important;
+}
+
+.theme-admonition.theme-admonition-tip .admonitionIcon_Rf37 svg {
+	display: none !important;
+}
+
+.theme-admonition.theme-admonition-tip .admonitionIcon_Rf37 {
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 21C9 21.55 9.45 22 10 22H14C14.55 22 15 21.55 15 21V20H9V21ZM12 2C8.14 2 5 5.14 5 9C5 11.38 6.19 13.47 8 14.74V17C8 17.55 8.45 18 9 18H15C15.55 18 16 17.55 16 17V14.74C17.81 13.47 19 11.38 19 9C19 5.14 15.86 2 12 2ZM14.85 13.1L14 13.7V16H10V13.7L9.15 13.1C7.8 12.16 7 10.63 7 9C7 6.24 9.24 4 12 4S17 6.24 17 9C17 10.63 16.2 12.16 14.85 13.1Z' fill='%23ff570a'/%3E%3C/svg%3E") !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	width: 20px !important;
+	height: 20px !important;
+	margin-right: 0.5rem !important;
+}
+
+/* Dark theme support for tip component */
+[data-theme="dark"] .theme-admonition.theme-admonition-tip {
+	background-color: #232323 !important;
+	border: 2px solid #e97c57 !important;
+}
+
+[data-theme="dark"] .theme-admonition.theme-admonition-tip p {
+	color: #f5f5f5 !important;
+	font-size: 0.9rem !important;
+}
+
+[data-theme="dark"] .theme-admonition.theme-admonition-tip a {
+	color: #ff865b !important;
+}
+
+[data-theme="dark"] .theme-admonition.theme-admonition-tip .admonitionHeading_Gvgb {
+	color: #e97c57 !important;
+}
+
+[data-theme="dark"] .theme-admonition.theme-admonition-tip .admonitionIcon_Rf37 {
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 21C9 21.55 9.45 22 10 22H14C14.55 22 15 21.55 15 21V20H9V21ZM12 2C8.14 2 5 5.14 5 9C5 11.38 6.19 13.47 8 14.74V17C8 17.55 8.45 18 9 18H15C15.55 18 16 17.55 16 17V14.74C17.81 13.47 19 11.38 19 9C19 5.14 15.86 2 12 2ZM14.85 13.1L14 13.7V16H10V13.7L9.15 13.1C7.8 12.16 7 10.63 7 9C7 6.24 9.24 4 12 4S17 6.24 17 9C17 10.63 16.2 12.16 14.85 13.1Z' fill='%23e97c57'/%3E%3C/svg%3E") !important;
+	width: 20px !important;
+	height: 20px !important;
+}
+
+/* Responsive design for tip component */
+@media (max-width: 768px) {
+	.theme-admonition.theme-admonition-tip {
+		padding: 0.9rem 1.1rem !important;
+		margin: 1rem 0 !important;
+		border-radius: 12px !important;
+	}
+
+	.theme-admonition.theme-admonition-tip p {
+		font-size: 0.85rem !important;
+	}
+
+	.theme-admonition.theme-admonition-tip .admonitionHeading_Gvgb {
+		font-size: 1rem !important;
+		margin-bottom: 0.4rem !important;
+	}
+
+	.theme-admonition.theme-admonition-tip .admonitionIcon_Rf37 {
+		width: 18px !important;
+		height: 18px !important;
+		margin-right: 0.4rem !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.theme-admonition.theme-admonition-tip {
+		padding: 0.8rem 1rem !important;
+		margin: 0.8rem 0 !important;
+		border-radius: 10px !important;
+	}
+
+	.theme-admonition.theme-admonition-tip p {
+		font-size: 0.8rem !important;
+		line-height: 1.5 !important;
+	}
+
+	.theme-admonition.theme-admonition-tip .admonitionHeading_Gvgb {
+		font-size: 0.95rem !important;
+		margin-bottom: 0.3rem !important;
+	}
+
+	.theme-admonition.theme-admonition-tip .admonitionIcon_Rf37 {
+		width: 16px !important;
+		height: 16px !important;
+		margin-right: 0.3rem !important;
+	}
+}
+
+/* ===== WARNING COMPONENT STYLING ===== */
+/* Style Docusaurus :::warning admonitions to match design */
+.theme-admonition.theme-admonition-warning {
+	background-color: #ffffff !important;
+	border: 2px solid #f1c232 !important;
+	padding: 1rem 1.25rem !important;
+	border-radius: 16px !important;
+	font-family: "Roboto", sans-serif !important;
+	margin: 1.5rem 0 !important;
+}
+
+.theme-admonition.theme-admonition-warning p {
+	color: #333 !important;
+	font-size: 1rem !important;
+	line-height: 1.6 !important;
+	margin: 0 !important;
+}
+
+.theme-admonition.theme-admonition-warning a {
+	color: #b38705 !important;
+	text-decoration: none !important;
+}
+
+.theme-admonition.theme-admonition-warning a:hover {
+	text-decoration: underline !important;
+}
+
+.theme-admonition.theme-admonition-warning .admonitionHeading_Gvgb {
+	color: #b38705 !important;
+	display: flex !important;
+	align-items: center !important;
+	font-size: 1.1rem !important;
+	font-weight: 600 !important;
+	margin-bottom: 0.5rem !important;
+	text-transform: capitalize !important;
+}
+
+.theme-admonition.theme-admonition-warning .admonitionIcon_Rf37 svg {
+	display: none !important;
+}
+
+.theme-admonition.theme-admonition-warning .admonitionIcon_Rf37 {
+	background-image: url("/static/img/icons/Warning.png") !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	width: 20px !important;
+	height: 20px !important;
+	margin-right: 0.5rem !important;
+}
+
+/* Dark theme support for warning component */
+[data-theme="dark"] .theme-admonition.theme-admonition-warning {
+	background-color: #232323 !important;
+	border: 2px solid #4b4a47 !important;
+}
+
+[data-theme="dark"] .theme-admonition.theme-admonition-warning p {
+	color: #f5f5f5 !important;
+}
+
+[data-theme="dark"] .theme-admonition.theme-admonition-warning a {
+	color: #e9af01 !important;
+}
+
+[data-theme="dark"] .theme-admonition.theme-admonition-warning .admonitionHeading_Gvgb {
+	color: #e9af01 !important;
+}
+
+/* Responsive design for warning component */
+@media (max-width: 768px) {
+	.theme-admonition.theme-admonition-warning {
+		padding: 0.9rem 1.1rem !important;
+		margin: 1rem 0 !important;
+		border-radius: 12px !important;
+	}
+
+	.theme-admonition.theme-admonition-warning p {
+		font-size: 0.95rem !important;
+	}
+
+	.theme-admonition.theme-admonition-warning .admonitionHeading_Gvgb {
+		font-size: 1rem !important;
+		margin-bottom: 0.4rem !important;
+	}
+
+	.theme-admonition.theme-admonition-warning .admonitionIcon_Rf37 {
+		width: 18px !important;
+		height: 18px !important;
+		margin-right: 0.4rem !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.theme-admonition.theme-admonition-warning {
+		padding: 0.8rem 1rem !important;
+		margin: 0.8rem 0 !important;
+		border-radius: 10px !important;
+	}
+
+	.theme-admonition.theme-admonition-warning p {
+		font-size: 0.9rem !important;
+		line-height: 1.5 !important;
+	}
+
+	.theme-admonition.theme-admonition-warning .admonitionHeading_Gvgb {
+		font-size: 0.95rem !important;
+		margin-bottom: 0.3rem !important;
+	}
+
+	.theme-admonition.theme-admonition-warning .admonitionIcon_Rf37 {
+		width: 16px !important;
+		height: 16px !important;
+		margin-right: 0.3rem !important;
+	}
+}
+
+/* ===== DOCUSAURUS CODE BLOCK OVERRIDES ===== */
+/* Override default Docusaurus code blocks to match custom chat-bubble styling */
+
+.prism-code,
+pre[class*="language-"],
+.theme-code-block pre {
+	background-color: #f6f7f8 !important;
+	border: 1px solid #e0e1e2 !important;
+	border-radius: 8px !important;
+	padding: 0.6rem 0.8rem !important;
+	margin: 1rem 0 !important;
+	font-family: "Fira Mono", "Menlo", "Monaco", "Consolas", monospace !important;
+	font-size: 0.9rem !important;
+	line-height: 1.2 !important;
+	color: #333 !important;
+}
+
+.codeBlockContainer_Ckt0,
+div[class*="codeBlockContainer"] {
+	background-color: transparent !important;
+	border: none !important;
+	border-radius: 8px !important;
+	margin: 1rem 0 !important;
+}
+
+.codeBlockContent_biex,
+div[class*="codeBlockContent"] {
+	background-color: transparent !important;
+	border: none !important;
+	padding: 0 !important;
+}
+
+.prism-code .token-line,
+pre[class*="language-"] .token-line {
+	color: #333 !important;
+}
+
+/* Style the copy button to match the design */
+.codeBlockContainer_Ckt0 .copyButton_kopz,
+div[class*="codeBlockContainer"] button[class*="copyButton"] {
+	position: absolute !important;
+	top: 0.75rem !important;
+	right: 0.75rem !important;
+	background: rgba(255, 255, 255, 0.8) !important;
+	border: 1px solid #e0e1e2 !important;
+	border-radius: 4px !important;
+	color: #666 !important;
+	padding: 0.4rem !important;
+	opacity: 0.8 !important;
+	transition: opacity 0.2s ease, background 0.2s ease !important;
+}
+
+.codeBlockContainer_Ckt0 .copyButton_kopz:hover,
+div[class*="codeBlockContainer"] button[class*="copyButton"]:hover {
+	opacity: 1 !important;
+	background: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Dark theme support for code blocks */
+[data-theme="dark"] .prism-code,
+[data-theme="dark"] pre[class*="language-"],
+[data-theme="dark"] .theme-code-block pre {
+	background-color: #232323 !important;
+	border: 1px solid #363636 !important;
+	color: #f5f5f5 !important;
+	padding: 0.6rem 0.8rem !important;
+	margin: 1rem 0 !important;
+	line-height: 1.2 !important;
+}
+
+[data-theme="dark"] .codeBlockContainer_Ckt0,
+[data-theme="dark"] div[class*="codeBlockContainer"] {
+	background-color: transparent !important;
+	border: none !important;
+	margin: 1rem 0 !important;
+}
+
+[data-theme="dark"] .prism-code .token-line,
+[data-theme="dark"] pre[class*="language-"] .token-line {
+	color: #f5f5f5 !important;
+}
+
+[data-theme="dark"] .codeBlockContainer_Ckt0 .copyButton_kopz,
+[data-theme="dark"] div[class*="codeBlockContainer"] button[class*="copyButton"] {
+	background: rgba(0, 0, 0, 0.6) !important;
+	border: 1px solid #363636 !important;
+	color: #f5f5f5 !important;
+}
+
+[data-theme="dark"] .codeBlockContainer_Ckt0 .copyButton_kopz:hover,
+[data-theme="dark"] div[class*="codeBlockContainer"] button[class*="copyButton"]:hover {
+	background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Responsive design for code blocks */
+@media (max-width: 768px) {
+	.prism-code,
+	pre[class*="language-"],
+	.theme-code-block pre {
+		padding: 0.5rem 0.7rem !important;
+		margin: 0.8rem 0 !important;
+		font-size: 0.85rem !important;
+		line-height: 1.15 !important;
+		border-radius: 6px !important;
+	}
+
+	.codeBlockContainer_Ckt0,
+	div[class*="codeBlockContainer"] {
+		margin: 0.8rem 0 !important;
+		border-radius: 6px !important;
+	}
+
+	.codeBlockContainer_Ckt0 .copyButton_kopz,
+	div[class*="codeBlockContainer"] button[class*="copyButton"] {
+		top: 0.5rem !important;
+		right: 0.5rem !important;
+		padding: 0.3rem !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.prism-code,
+	pre[class*="language-"],
+	.theme-code-block pre {
+		padding: 0.4rem 0.6rem !important;
+		margin: 0.6rem 0 !important;
+		font-size: 0.8rem !important;
+		line-height: 1.1 !important;
+		border-radius: 4px !important;
+	}
+
+	.codeBlockContainer_Ckt0,
+	div[class*="codeBlockContainer"] {
+		margin: 0.6rem 0 !important;
+		border-radius: 4px !important;
+	}
+
+	.codeBlockContainer_Ckt0 .copyButton_kopz,
+	div[class*="codeBlockContainer"] button[class*="copyButton"] {
+		top: 0.4rem !important;
+		right: 0.4rem !important;
+		padding: 0.25rem !important;
+	}
+}
+
+/* ===== LANGUAGE-SPECIFIC CODE BLOCK STYLING ===== */
+/* Python, YAML, and Bash code blocks with dark background - both light and dark themes */
+
+.prism-code[class*="language-python"],
+pre[class*="language-python"],
+.prism-code[class*="language-yaml"],
+pre[class*="language-yaml"],
+.prism-code[class*="language-yml"],
+pre[class*="language-yml"],
+.prism-code[class*="language-bash"],
+pre[class*="language-bash"],
+.prism-code[class*="language-shell"],
+pre[class*="language-shell"] {
+	background-color: #171717 !important;
+	color: #E8E8E8 !important;
+	border: 1px solid #363636 !important;
+	border-radius: 6px !important;
+}
+
+.prism-code[class*="language-python"] .token-line,
+pre[class*="language-python"] .token-line,
+.prism-code[class*="language-yaml"] .token-line,
+pre[class*="language-yaml"] .token-line,
+.prism-code[class*="language-yml"] .token-line,
+pre[class*="language-yml"] .token-line {
+	color: #ffffff !important;
+}
+
+/* Bash token lines - light gray text on dark background for light theme */
+.prism-code[class*="language-bash"] .token-line,
+pre[class*="language-bash"] .token-line,
+.prism-code[class*="language-shell"] .token-line,
+pre[class*="language-shell"] .token-line {
+	color: #E8E8E8 !important;
+}
+
+/* Copy button styling for language-specific blocks */
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-python"]) button[class*="copyButton"],
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-yaml"]) button[class*="copyButton"],
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-yml"]) button[class*="copyButton"],
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-bash"]) button[class*="copyButton"],
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-shell"]) button[class*="copyButton"] {
+	background: rgba(0, 0, 0, 0.6) !important;
+	border: 1px solid #363636 !important;
+	color: #f5f5f5 !important;
+}
+
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-python"]) button[class*="copyButton"]:hover,
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-yaml"]) button[class*="copyButton"]:hover,
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-yml"]) button[class*="copyButton"]:hover,
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-bash"]) button[class*="copyButton"]:hover,
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-shell"]) button[class*="copyButton"]:hover {
+	background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Dark theme - override text color to be light for dark theme */
+[data-theme="dark"] .prism-code[class*="language-python"],
+[data-theme="dark"] pre[class*="language-python"],
+[data-theme="dark"] .prism-code[class*="language-yaml"],
+[data-theme="dark"] pre[class*="language-yaml"],
+[data-theme="dark"] .prism-code[class*="language-yml"],
+[data-theme="dark"] pre[class*="language-yml"],
+[data-theme="dark"] .prism-code[class*="language-bash"],
+[data-theme="dark"] pre[class*="language-bash"],
+[data-theme="dark"] .prism-code[class*="language-shell"],
+[data-theme="dark"] pre[class*="language-shell"] {
+	color: #f5f5f5 !important;
+}
+
+[data-theme="dark"] .prism-code[class*="language-python"] .token-line,
+[data-theme="dark"] pre[class*="language-python"] .token-line,
+[data-theme="dark"] .prism-code[class*="language-yaml"] .token-line,
+[data-theme="dark"] pre[class*="language-yaml"] .token-line,
+[data-theme="dark"] .prism-code[class*="language-yml"] .token-line,
+[data-theme="dark"] pre[class*="language-yml"] .token-line {
+	color: #f5f5f5 !important;
+}
+
+/* Dark theme bash token lines - light gray text on dark background */
+[data-theme="dark"] .prism-code[class*="language-bash"] .token-line,
+[data-theme="dark"] pre[class*="language-bash"] .token-line,
+[data-theme="dark"] .prism-code[class*="language-shell"] .token-line,
+[data-theme="dark"] pre[class*="language-shell"] .token-line {
+	color: #f5f5f5 !important;
+}
+
+/* ===== SIMPLE BASH SYNTAX HIGHLIGHTING ===== */
+/* Target whatever tokens Prism.js actually generates */
+
+/* All available token types - cover all bases */
+.prism-code[class*="language-bash"] .token,
+pre[class*="language-bash"] .token,
+.prism-code[class*="language-shell"] .token,
+pre[class*="language-shell"] .token {
+	color: inherit; /* Let specific tokens override */
+}
+
+/* Comments */
+.prism-code[class*="language-bash"] .token.comment,
+pre[class*="language-bash"] .token.comment,
+.prism-code[class*="language-shell"] .token.comment,
+pre[class*="language-shell"] .token.comment {
+	color: #6a737d !important;
+	font-style: italic !important;
+}
+
+/* Strings - pink */
+.prism-code[class*="language-bash"] .token.string,
+pre[class*="language-bash"] .token.string,
+.prism-code[class*="language-shell"] .token.string,
+pre[class*="language-shell"] .token.string {
+	color: #f472b6 !important;
+}
+
+/* Variables - light blue */
+.prism-code[class*="language-bash"] .token.variable,
+.prism-code[class*="language-bash"] .token.environment,
+.prism-code[class*="language-bash"] .token.builtin,
+.prism-code[class*="language-bash"] .token.function,
+.prism-code[class*="language-bash"] .token.command,
+.prism-code[class*="language-bash"] .token.keyword,
+pre[class*="language-bash"] .token.variable,
+pre[class*="language-bash"] .token.environment,
+pre[class*="language-bash"] .token.builtin,
+pre[class*="language-bash"] .token.function,
+pre[class*="language-bash"] .token.command,
+pre[class*="language-bash"] .token.keyword,
+.prism-code[class*="language-shell"] .token.variable,
+.prism-code[class*="language-shell"] .token.environment,
+.prism-code[class*="language-shell"] .token.builtin,
+.prism-code[class*="language-shell"] .token.function,
+.prism-code[class*="language-shell"] .token.command,
+.prism-code[class*="language-shell"] .token.keyword,
+pre[class*="language-shell"] .token.variable,
+pre[class*="language-shell"] .token.environment,
+pre[class*="language-shell"] .token.builtin,
+pre[class*="language-shell"] .token.function,
+pre[class*="language-shell"] .token.command,
+pre[class*="language-shell"] .token.keyword {
+	color: #7dd3fc !important;
+}
+
+/* Numbers */
+.prism-code[class*="language-bash"] .token.number,
+pre[class*="language-bash"] .token.number,
+.prism-code[class*="language-shell"] .token.number,
+pre[class*="language-shell"] .token.number {
+	color: #fbbf24 !important;
+}
+
+/* Dark theme versions */
+[data-theme="dark"] .prism-code[class*="language-bash"] .token.comment,
+[data-theme="dark"] pre[class*="language-bash"] .token.comment,
+[data-theme="dark"] .prism-code[class*="language-shell"] .token.comment,
+[data-theme="dark"] pre[class*="language-shell"] .token.comment {
+	color: #6b7280 !important;
+	font-style: italic !important;
+}
+
+[data-theme="dark"] .prism-code[class*="language-bash"] .token.string,
+[data-theme="dark"] pre[class*="language-bash"] .token.string,
+[data-theme="dark"] .prism-code[class*="language-shell"] .token.string,
+[data-theme="dark"] pre[class*="language-shell"] .token.string {
+	color: #f472b6 !important;
+}
+
+[data-theme="dark"] .prism-code[class*="language-bash"] .token.variable,
+[data-theme="dark"] .prism-code[class*="language-bash"] .token.environment,
+[data-theme="dark"] .prism-code[class*="language-bash"] .token.builtin,
+[data-theme="dark"] .prism-code[class*="language-bash"] .token.function,
+[data-theme="dark"] .prism-code[class*="language-bash"] .token.command,
+[data-theme="dark"] .prism-code[class*="language-bash"] .token.keyword,
+[data-theme="dark"] pre[class*="language-bash"] .token.variable,
+[data-theme="dark"] pre[class*="language-bash"] .token.environment,
+[data-theme="dark"] pre[class*="language-bash"] .token.builtin,
+[data-theme="dark"] pre[class*="language-bash"] .token.function,
+[data-theme="dark"] pre[class*="language-bash"] .token.command,
+[data-theme="dark"] pre[class*="language-bash"] .token.keyword,
+[data-theme="dark"] .prism-code[class*="language-shell"] .token.variable,
+[data-theme="dark"] .prism-code[class*="language-shell"] .token.environment,
+[data-theme="dark"] .prism-code[class*="language-shell"] .token.builtin,
+[data-theme="dark"] .prism-code[class*="language-shell"] .token.function,
+[data-theme="dark"] .prism-code[class*="language-shell"] .token.command,
+[data-theme="dark"] .prism-code[class*="language-shell"] .token.keyword,
+[data-theme="dark"] pre[class*="language-shell"] .token.variable,
+[data-theme="dark"] pre[class*="language-shell"] .token.environment,
+[data-theme="dark"] pre[class*="language-shell"] .token.builtin,
+[data-theme="dark"] pre[class*="language-shell"] .token.function,
+[data-theme="dark"] pre[class*="language-shell"] .token.command,
+[data-theme="dark"] pre[class*="language-shell"] .token.keyword {
+	color: #7dd3fc !important;
+}
+
+[data-theme="dark"] .prism-code[class*="language-bash"] .token.number,
+[data-theme="dark"] pre[class*="language-bash"] .token.number,
+[data-theme="dark"] .prism-code[class*="language-shell"] .token.number,
+[data-theme="dark"] pre[class*="language-shell"] .token.number {
+	color: #fbbf24 !important;
+}
+
+
+/* ===== CODE BLOCK TITLE STYLING FOR BASH/.ENV FILES ===== */
+/* Light theme - black title on light background */
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-bash"]) div[class*="codeBlockTitle"],
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-shell"]) div[class*="codeBlockTitle"],
+div[class*="codeBlockContainer"]:has(pre[class*="language-bash"]) div[class*="codeBlockTitle"],
+div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) div[class*="codeBlockTitle"] {
+	background-color: #f6f7f8 !important;
+	color: #000000 !important;
+	border: 1px solid #e0e1e2 !important;
+	border-bottom: none !important;
+	font-weight: 600 !important;
+	margin-bottom: 0 !important;
+	border-radius: 6px 6px 0 0 !important;
+}
+
+/* Dark theme - white title on dark background */
+[data-theme="dark"] div[class*="codeBlockContainer"]:has(.prism-code[class*="language-bash"]) div[class*="codeBlockTitle"],
+[data-theme="dark"] div[class*="codeBlockContainer"]:has(.prism-code[class*="language-shell"]) div[class*="codeBlockTitle"],
+[data-theme="dark"] div[class*="codeBlockContainer"]:has(pre[class*="language-bash"]) div[class*="codeBlockTitle"],
+[data-theme="dark"] div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) div[class*="codeBlockTitle"] {
+	background-color: #2a2a2a !important;
+	color: #ffffff !important;
+	border: 1px solid #363636 !important;
+	border-bottom: none !important;
+	font-weight: 600 !important;
+	margin-bottom: 0 !important;
+	border-radius: 6px 6px 0 0 !important;
+}
+
+/* Remove any gap between title and code block for bash/shell */
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-bash"]) .prism-code,
+div[class*="codeBlockContainer"]:has(.prism-code[class*="language-shell"]) .prism-code,
+div[class*="codeBlockContainer"]:has(pre[class*="language-bash"]) pre,
+div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) pre {
+	margin-top: 0 !important;
+	border-radius: 0 0 6px 6px !important;
+}
+
+/* For bash/shell code blocks without titles, keep full border radius */
+div[class*="codeBlockContainer"]:not(:has(div[class*="codeBlockTitle"])):has(.prism-code[class*="language-bash"]) .prism-code,
+div[class*="codeBlockContainer"]:not(:has(div[class*="codeBlockTitle"])):has(.prism-code[class*="language-shell"]) .prism-code,
+div[class*="codeBlockContainer"]:not(:has(div[class*="codeBlockTitle"])):has(pre[class*="language-bash"]) pre,
+div[class*="codeBlockContainer"]:not(:has(div[class*="codeBlockTitle"])):has(pre[class*="language-shell"]) pre {
+	border-radius: 6px !important;
 }
