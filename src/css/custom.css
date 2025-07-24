@@ -48,8 +48,8 @@
 	--imf-note-border-color: #25bab1;
 	--imf-note-background-color: #f1fffe;
 	--imf-note-text-color: #208682;
-	--imf-text-color-bg: #e8e8e8;
-	--imf-text-color: #171717;
+	--imf-text-color-bg: #f6f7f8;
+	--imf-text-color: #1a1a1a;
 	--imf-text-button-color-bg: #e8e8e8;
 }
 
@@ -347,12 +347,11 @@ a[docid="docs"] > svg {
 	background-color: var(--ifm-breadcrumb-item-background-active);
 }
 
-/* Add left spacing to main content */
+/* ===== MARKDOWN LAYOUT ===== */
 .markdown {
 	padding-left: 1.5rem;
 }
 
-/* Align numbered lists with other content */
 .markdown ol {
 	padding-left: 1.2rem;
 	margin-left: 0;
@@ -363,8 +362,7 @@ a[docid="docs"] > svg {
 	padding-left: 0.5rem;
 }
 
-
-/* ===== PLATFORM TABLES STYLING ===== */
+/* ===== TABLE STYLING ===== */
 .markdown table {
 	display: table;
 	width: 100%;
@@ -376,20 +374,62 @@ a[docid="docs"] > svg {
 	border-radius: 12px !important;
 	overflow: hidden;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	background: #ffffff !important;
 }
 
-/* Consolidated table background and border declarations */
-.markdown table thead,
-.markdown table tbody,
-.markdown table tr,
-.markdown table th,
-.markdown table td,
-.markdown table tbody tr:hover,
-.markdown table tbody tr:hover td {
-	background: #ffffff !important;
+.markdown table * {
+	background: inherit !important;
 	border: none !important;
 }
 
+.markdown table th,
+.markdown table td {
+	padding: 1.5rem 2rem;
+	box-sizing: border-box;
+	border-right: 1px solid #f3f4f6 !important;
+}
+
+.markdown table th {
+	color: var(--ifm-heading-color);
+	text-align: left;
+	font-weight: 600;
+	font-size: 1.1rem;
+	border-bottom: 1px solid #e5e7eb !important;
+	margin: 0;
+}
+
+.markdown table td {
+	color: var(--ifm-color-content);
+	vertical-align: middle;
+	font-size: 1rem;
+	border-bottom: 1px solid #f3f4f6 !important;
+}
+
+.markdown table th:first-child { border-top-left-radius: 12px; }
+.markdown table th:last-child { border-top-right-radius: 12px; border-right: none !important; }
+.markdown table td:last-child,
+.markdown table th:last-child { border-right: none !important; }
+.markdown table tbody tr:last-child td { border-bottom: none !important; }
+.markdown table tbody tr:last-child td:first-child { border-bottom-left-radius: 12px; }
+.markdown table tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
+
+/* Dark theme tables */
+[data-theme="dark"] .markdown table {
+	background: #232323 !important;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .markdown table th {
+	border-bottom: 1px solid #404040 !important;
+	border-right: 1px solid #363636 !important;
+}
+
+[data-theme="dark"] .markdown table td {
+	border-bottom: 1px solid #363636 !important;
+	border-right: 1px solid #363636 !important;
+}
+
+/* Responsive tables */
 @media (max-width: 768px) {
 	.markdown {
 		overflow-x: auto;
@@ -399,79 +439,28 @@ a[docid="docs"] > svg {
 		min-width: 600px;
 		width: auto;
 		margin: 1.5rem 0;
-		display: table;
-	}
-}
-
-.markdown table th {
-	color: var(--ifm-heading-color);
-	padding: 1.5rem 2rem;
-	text-align: left;
-	font-weight: 600;
-	font-size: 1.1rem;
-	border-bottom: 1px solid #e5e7eb !important;
-	border-right: 1px solid #f3f4f6 !important;
-	box-sizing: border-box;
-	margin: 0;
-}
-
-.markdown table th:first-child {
-	border-top-left-radius: 12px;
-}
-
-.markdown table th:last-child {
-	border-bottom: 1px solid #e5e7eb !important;
-	border-right: none !important;
-	border-top-right-radius: 12px;
-}
-
-.markdown table td {
-	padding: 1.5rem 2rem;
-	border-bottom: 1px solid #f3f4f6 !important;
-	border-right: 1px solid #f3f4f6 !important;
-	color: var(--ifm-color-content);
-	vertical-align: middle;
-	box-sizing: border-box;
-	font-size: 1rem;
-}
-
-.markdown table td:last-child {
-	border-bottom: 1px solid #f3f4f6 !important;
-	border-right: none !important;
-}
-
-.markdown table tbody tr:last-child td {
-	border-bottom: none !important;
-}
-
-.markdown table tbody tr:last-child td:first-child {
-	border-bottom-left-radius: 12px;
-}
-
-.markdown table tbody tr:last-child td:last-child {
-	border-bottom-right-radius: 12px;
-}
-
-.markdown table tbody tr:hover {
-	background: #ffffff !important;
-}
-
-.markdown table tbody tr:hover td {
-	background: #ffffff !important;
-}
-
-/* Responsive design for tables */
-@media (max-width: 768px) {
-	.markdown table th {
-		padding: 1.2rem 1.5rem;
-		font-size: 1rem;
-		white-space: nowrap;
 	}
 
+	.markdown table th,
 	.markdown table td {
 		padding: 1.2rem 1.5rem;
 		font-size: 0.95rem;
 		white-space: nowrap;
+	}
+
+	.markdown table th {
+		font-size: 1rem;
+	}
+
+	/* Table icon responsive */
+	.markdown table td a[href*="github-com"]::before,
+	.markdown table td a[href*="github-enterprise-server"]::before,
+	.markdown table td a[href*="gitlab-com"]::before,
+	.markdown table td a[href*="self-hosted-gitlab"]::before,
+	.markdown table td a[href*="azure-devops"]::before,
+	.markdown table td a[href*="bitbucket"]::before {
+		width: 14px;
+		height: 14px;
 	}
 }
 
@@ -482,16 +471,14 @@ a[docid="docs"] > svg {
 		font-size: 0.9rem;
 	}
 
-	.markdown table th {
-		padding: 1rem 1.2rem;
-		font-size: 0.95rem;
-		white-space: nowrap;
-	}
-
+	.markdown table th,
 	.markdown table td {
 		padding: 1rem 1.2rem;
 		font-size: 0.9rem;
-		white-space: nowrap;
+	}
+
+	.markdown table th {
+		font-size: 0.95rem;
 	}
 
 	.support-icon {
@@ -499,50 +486,21 @@ a[docid="docs"] > svg {
 		height: 16px !important;
 		margin-right: 0.5rem !important;
 	}
-}
 
-[data-theme="dark"] .markdown table {
-	background: #232323 !important;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-/* Consolidated dark theme table background and border declarations */
-[data-theme="dark"] .markdown table thead,
-[data-theme="dark"] .markdown table tbody,
-[data-theme="dark"] .markdown table tr,
-[data-theme="dark"] .markdown table th,
-[data-theme="dark"] .markdown table td,
-[data-theme="dark"] .markdown table tbody tr:hover,
-[data-theme="dark"] .markdown table tbody tr:hover td {
-	background: #232323 !important;
-	border: none !important;
-}
-
-[data-theme="dark"] .markdown table th {
-	border-bottom: 1px solid #404040 !important;
-	border-right: 1px solid #363636 !important;
-}
-
-[data-theme="dark"] .markdown table th:last-child {
-	border-right: none !important;
-}
-
-[data-theme="dark"] .markdown table td {
-	border-bottom: 1px solid #363636 !important;
-	border-right: 1px solid #363636 !important;
-}
-
-[data-theme="dark"] .markdown table td:last-child {
-	border-right: none !important;
-}
-
-[data-theme="dark"] .markdown table tbody tr:last-child td {
-	border-bottom: none !important;
+	/* Table icon responsive */
+	.markdown table td a[href*="github-com"]::before,
+	.markdown table td a[href*="github-enterprise-server"]::before,
+	.markdown table td a[href*="gitlab-com"]::before,
+	.markdown table td a[href*="self-hosted-gitlab"]::before,
+	.markdown table td a[href*="azure-devops"]::before,
+	.markdown table td a[href*="bitbucket"]::before {
+		width: 12px;
+		height: 12px;
+	}
 }
 
 
-/* ===== SUPPORTED LINKS WITH CHECKMARK ICONS ===== */
-/* Add checkmark icons to "Supported" links in platform tables */
+/* Platform links with checkmark icons */
 .markdown table td a[href*="github-com"],
 .markdown table td a[href*="github-enterprise-server"],
 .markdown table td a[href*="gitlab-com"],
@@ -567,38 +525,13 @@ a[docid="docs"] > svg {
 	flex-shrink: 0;
 }
 
-/* Dark theme and responsive styles */
 [data-theme="dark"] .markdown table td a[href*="github-com"]::before,
 [data-theme="dark"] .markdown table td a[href*="github-enterprise-server"]::before,
 [data-theme="dark"] .markdown table td a[href*="gitlab-com"]::before,
 [data-theme="dark"] .markdown table td a[href*="self-hosted-gitlab"]::before,
 [data-theme="dark"] .markdown table td a[href*="azure-devops"]::before,
 [data-theme="dark"] .markdown table td a[href*="bitbucket"]::before {
-	filter: invert(1) brightness(0.8);
-}
-
-@media (max-width: 768px) {
-	.markdown table td a[href*="github-com"]::before,
-	.markdown table td a[href*="github-enterprise-server"]::before,
-	.markdown table td a[href*="gitlab-com"]::before,
-	.markdown table td a[href*="self-hosted-gitlab"]::before,
-	.markdown table td a[href*="azure-devops"]::before,
-	.markdown table td a[href*="bitbucket"]::before {
-		width: 14px;
-		height: 14px;
-	}
-}
-
-@media (max-width: 480px) {
-	.markdown table td a[href*="github-com"]::before,
-	.markdown table td a[href*="github-enterprise-server"]::before,
-	.markdown table td a[href*="gitlab-com"]::before,
-	.markdown table td a[href*="self-hosted-gitlab"]::before,
-	.markdown table td a[href*="azure-devops"]::before,
-	.markdown table td a[href*="bitbucket"]::before {
-		width: 12px;
-		height: 12px;
-	}
+	filter: none;
 }
 
 /* ===== DOCUSAURUS BLOCKQUOTE OVERRIDE ===== */
@@ -630,52 +563,32 @@ a[docid="docs"] > svg {
 	border-left: 4px solid #666666;
 }
 
-/* Responsive design for blockquotes */
-@media (max-width: 768px) {
-	.markdown blockquote {
-		padding: 1rem 1.2rem;
-		margin: 1.2rem 0;
-		border-left-width: 3px;
-	}
-}
-
-@media (max-width: 480px) {
-	.markdown blockquote {
-		padding: 0.8rem 1rem;
-		margin: 1rem 0;
-		border-left-width: 3px;
-	}
-}
 
 
 
-/* info component */
-.theme-admonition.theme-admonition-info {
-	background-color: #e3f2fd !important;
-	border: 2px solid #4cb3d4 !important;
-	padding: 16px !important;
-	border-radius: 8px !important;
+/* ===== ADMONITION COMPONENTS ===== */
+/* Base admonition styles */
+.theme-admonition {
+	border: 2px solid !important;
 	font-family: "Roboto", sans-serif !important;
 	margin: 1.5rem 0 !important;
 }
 
-.theme-admonition.theme-admonition-info p {
+.theme-admonition p {
 	color: #333 !important;
 	font-size: 1rem !important;
 	line-height: 1.6 !important;
 }
 
-.theme-admonition.theme-admonition-info a {
-	color: #1976d2 !important;
+.theme-admonition a {
 	text-decoration: none !important;
 }
 
-.theme-admonition.theme-admonition-info a:hover {
+.theme-admonition a:hover {
 	text-decoration: underline !important;
 }
 
-.theme-admonition.theme-admonition-info .admonitionHeading_Gvgb {
-	color: #4cb3d4 !important;
+.admonitionHeading_Gvgb {
 	display: flex !important;
 	align-items: center !important;
 	font-size: 1rem !important;
@@ -683,7 +596,21 @@ a[docid="docs"] > svg {
 	text-transform: capitalize !important;
 }
 
-.theme-admonition.theme-admonition-info .admonitionIcon_Rf37 svg {
+.admonitionIcon_Rf37 svg {
+	display: none !important;
+}
+
+/* Individual admonition types */
+.theme-admonition-info {
+	background-color: #e3f2fd !important;
+	border-color: #4cb3d4 !important;
+	padding: 16px !important;
+	border-radius: 8px !important;
+}
+
+.theme-admonition-info a { color: #1976d2 !important; }
+.theme-admonition-info .admonitionHeading_Gvgb { color: #4cb3d4 !important; }
+.theme-admonition-info .admonitionIcon_Rf37 svg {
 	display: block !important;
 	color: #4cb3d4 !important;
 	fill: #4cb3d4 !important;
@@ -691,107 +618,16 @@ a[docid="docs"] > svg {
 	height: 16px !important;
 }
 
-/* Dark theme support for info component */
-[data-theme="dark"] .theme-admonition.theme-admonition-info {
-	background-color: #252828 !important;
-	border: 2px solid #4cb3d4 !important;
-}
-
-[data-theme="dark"] .theme-admonition.theme-admonition-info p {
-	color: #f5f5f5 !important;
-}
-
-[data-theme="dark"] .theme-admonition.theme-admonition-info a {
-	color: #64b5f6 !important;
-}
-
-[data-theme="dark"] .theme-admonition.theme-admonition-info .admonitionHeading_Gvgb {
-	color: #4cb3d4 !important;
-}
-
-/* Responsive design for info component */
-@media (max-width: 768px) {
-	.theme-admonition.theme-admonition-info {
-		padding: 12px !important;
-		margin: 1rem 0 !important;
-		border-radius: 6px !important;
-	}
-
-	.theme-admonition.theme-admonition-info p {
-		font-size: 0.95rem !important;
-	}
-
-	.theme-admonition.theme-admonition-info .admonitionHeading_Gvgb {
-		font-size: 0.95rem !important;
-	}
-
-	.theme-admonition.theme-admonition-info .admonitionIcon_Rf37 {
-		width: 18px !important;
-		height: 18px !important;
-	}
-}
-
-@media (max-width: 480px) {
-	.theme-admonition.theme-admonition-info {
-		padding: 10px !important;
-		margin: 0.8rem 0 !important;
-		border-radius: 4px !important;
-	}
-
-	.theme-admonition.theme-admonition-info p {
-		font-size: 0.9rem !important;
-		line-height: 1.5 !important;
-	}
-
-	.theme-admonition.theme-admonition-info .admonitionHeading_Gvgb {
-		font-size: 0.9rem !important;
-	}
-
-	.theme-admonition.theme-admonition-info .admonitionIcon_Rf37 {
-		width: 16px !important;
-		height: 16px !important;
-	}
-}
-
-/* note component */
-.theme-admonition.theme-admonition-note {
+.theme-admonition-note {
 	background-color: #eaf6f4 !important;
-	border: 2px solid #00b8a9 !important;
+	border-color: #00b8a9 !important;
 	padding: 16px !important;
 	border-radius: 8px !important;
-	font-family: "Roboto", sans-serif !important;
-	margin: 1.5rem 0 !important;
 }
 
-.theme-admonition.theme-admonition-note p {
-	color: #333 !important;
-	font-size: 1rem !important;
-	line-height: 1.6 !important;
-}
-
-.theme-admonition.theme-admonition-note a {
-	color: #ff6600 !important;
-	text-decoration: none !important;
-}
-
-.theme-admonition.theme-admonition-note a:hover {
-	text-decoration: underline !important;
-}
-.admonitionHeading_Gvgb {
-	color: #208682;
-	display: flex;
-	align-items: center;
-	font-size: 1rem !important;
-
-	flex-direction: row;
-	text-transform: capitalize !important;
-}
-
-.admonitionIcon_Rf37 svg {
-	display: none !important;
-}
-
-.theme-admonition.theme-admonition-note .admonitionIcon_Rf37 {
+.theme-admonition-note a { color: #ff6600 !important; }
+.theme-admonition-note .admonitionHeading_Gvgb { color: #208682 !important; }
+.theme-admonition-note .admonitionIcon_Rf37 {
 	background-image: url("/static/img/Icons/Icons.png");
 	background-position: center;
 	width: 20px;
@@ -799,110 +635,27 @@ a[docid="docs"] > svg {
 	background-size: cover;
 }
 
-/* Dark theme support for note component */
-[data-theme="dark"] .theme-admonition.theme-admonition-note {
-	background-color: #252828 !important;
-	border: 2px solid #208682 !important;
-}
-
-[data-theme="dark"] .theme-admonition.theme-admonition-note p {
-	color: #f5f5f5 !important;
-}
-
-[data-theme="dark"] .theme-admonition.theme-admonition-note a {
-	color: #ff865b !important;
-}
-
-[data-theme="dark"] .admonitionHeading_Gvgb {
-	color: #25bab1 !important;
-}
-
-/* Responsive design for note component */
-@media (max-width: 768px) {
-	.theme-admonition.theme-admonition-note {
-		padding: 12px !important;
-		margin: 1rem 0 !important;
-		border-radius: 6px !important;
-	}
-
-	.theme-admonition.theme-admonition-note p {
-		font-size: 0.95rem !important;
-	}
-
-	.admonitionHeading_Gvgb {
-		font-size: 0.95rem !important;
-	}
-
-	.theme-admonition.theme-admonition-note .admonitionIcon_Rf37 {
-		width: 18px !important;
-		height: 18px !important;
-	}
-}
-
-@media (max-width: 480px) {
-	.theme-admonition.theme-admonition-note {
-		padding: 10px !important;
-		margin: 0.8rem 0 !important;
-		border-radius: 4px !important;
-	}
-
-	.theme-admonition.theme-admonition-note p {
-		font-size: 0.9rem !important;
-		line-height: 1.5 !important;
-	}
-
-	.admonitionHeading_Gvgb {
-		font-size: 0.9rem !important;
-	}
-
-	.theme-admonition.theme-admonition-note .admonitionIcon_Rf37 {
-		width: 16px !important;
-		height: 16px !important;
-	}
-}
-
-/* ===== TIP COMPONENT STYLING ===== */
-/* Style Docusaurus :::tip admonitions to match design */
-.theme-admonition.theme-admonition-tip {
+.theme-admonition-tip {
 	background-color: #FFFCFB !important;
-	border: 2px solid #ff865b !important;
+	border-color: #ff865b !important;
 	padding: 1rem 1.25rem !important;
 	border-radius: 16px !important;
-	font-family: "Roboto", sans-serif !important;
-	margin: 1.5rem 0 !important;
 }
 
-.theme-admonition.theme-admonition-tip p {
-	color: #333 !important;
+.theme-admonition-tip p {
 	font-size: 0.9rem !important;
-	line-height: 1.6 !important;
 	margin: 0 !important;
 }
 
-.theme-admonition.theme-admonition-tip a {
+.theme-admonition-tip a { color: #ff570a !important; }
+.theme-admonition-tip .admonitionHeading_Gvgb {
 	color: #ff570a !important;
-	text-decoration: none !important;
-}
-
-.theme-admonition.theme-admonition-tip a:hover {
-	text-decoration: underline !important;
-}
-
-.theme-admonition.theme-admonition-tip .admonitionHeading_Gvgb {
-	color: #ff570a !important;
-	display: flex !important;
-	align-items: center !important;
 	font-size: 1.1rem !important;
 	font-weight: 600 !important;
 	margin-bottom: 0.5rem !important;
-	text-transform: capitalize !important;
 }
 
-.theme-admonition.theme-admonition-tip .admonitionIcon_Rf37 svg {
-	display: none !important;
-}
-
-.theme-admonition.theme-admonition-tip .admonitionIcon_Rf37 {
+.theme-admonition-tip .admonitionIcon_Rf37 {
 	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 21C9 21.55 9.45 22 10 22H14C14.55 22 15 21.55 15 21V20H9V21ZM12 2C8.14 2 5 5.14 5 9C5 11.38 6.19 13.47 8 14.74V17C8 17.55 8.45 18 9 18H15C15.55 18 16 17.55 16 17V14.74C17.81 13.47 19 11.38 19 9C19 5.14 15.86 2 12 2ZM14.85 13.1L14 13.7V16H10V13.7L9.15 13.1C7.8 12.16 7 10.63 7 9C7 6.24 9.24 4 12 4S17 6.24 17 9C17 10.63 16.2 12.16 14.85 13.1Z' fill='%23ff570a'/%3E%3C/svg%3E") !important;
 	background-position: center !important;
 	background-repeat: no-repeat !important;
@@ -912,121 +665,23 @@ a[docid="docs"] > svg {
 	margin-right: 0.5rem !important;
 }
 
-/* Dark theme support for tip component */
-[data-theme="dark"] .theme-admonition.theme-admonition-tip {
-	background-color: #232323 !important;
-	border: 2px solid #e97c57 !important;
-}
-
-[data-theme="dark"] .theme-admonition.theme-admonition-tip p {
-	color: #f5f5f5 !important;
-	font-size: 0.9rem !important;
-}
-
-[data-theme="dark"] .theme-admonition.theme-admonition-tip a {
-	color: #ff865b !important;
-}
-
-[data-theme="dark"] .theme-admonition.theme-admonition-tip .admonitionHeading_Gvgb {
-	color: #e97c57 !important;
-}
-
-[data-theme="dark"] .theme-admonition.theme-admonition-tip .admonitionIcon_Rf37 {
-	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 21C9 21.55 9.45 22 10 22H14C14.55 22 15 21.55 15 21V20H9V21ZM12 2C8.14 2 5 5.14 5 9C5 11.38 6.19 13.47 8 14.74V17C8 17.55 8.45 18 9 18H15C15.55 18 16 17.55 16 17V14.74C17.81 13.47 19 11.38 19 9C19 5.14 15.86 2 12 2ZM14.85 13.1L14 13.7V16H10V13.7L9.15 13.1C7.8 12.16 7 10.63 7 9C7 6.24 9.24 4 12 4S17 6.24 17 9C17 10.63 16.2 12.16 14.85 13.1Z' fill='%23e97c57'/%3E%3C/svg%3E") !important;
-	width: 20px !important;
-	height: 20px !important;
-}
-
-/* Responsive design for tip component */
-@media (max-width: 768px) {
-	.theme-admonition.theme-admonition-tip {
-		padding: 0.9rem 1.1rem !important;
-		margin: 1rem 0 !important;
-		border-radius: 12px !important;
-	}
-
-	.theme-admonition.theme-admonition-tip p {
-		font-size: 0.85rem !important;
-	}
-
-	.theme-admonition.theme-admonition-tip .admonitionHeading_Gvgb {
-		font-size: 1rem !important;
-		margin-bottom: 0.4rem !important;
-	}
-
-	.theme-admonition.theme-admonition-tip .admonitionIcon_Rf37 {
-		width: 18px !important;
-		height: 18px !important;
-		margin-right: 0.4rem !important;
-	}
-}
-
-@media (max-width: 480px) {
-	.theme-admonition.theme-admonition-tip {
-		padding: 0.8rem 1rem !important;
-		margin: 0.8rem 0 !important;
-		border-radius: 10px !important;
-	}
-
-	.theme-admonition.theme-admonition-tip p {
-		font-size: 0.8rem !important;
-		line-height: 1.5 !important;
-	}
-
-	.theme-admonition.theme-admonition-tip .admonitionHeading_Gvgb {
-		font-size: 0.95rem !important;
-		margin-bottom: 0.3rem !important;
-	}
-
-	.theme-admonition.theme-admonition-tip .admonitionIcon_Rf37 {
-		width: 16px !important;
-		height: 16px !important;
-		margin-right: 0.3rem !important;
-	}
-}
-
-/* ===== WARNING COMPONENT STYLING ===== */
-/* Style Docusaurus :::warning admonitions to match design */
-.theme-admonition.theme-admonition-warning {
+.theme-admonition-warning {
 	background-color: #ffffff !important;
-	border: 2px solid #f1c232 !important;
+	border-color: #f1c232 !important;
 	padding: 1rem 1.25rem !important;
 	border-radius: 16px !important;
-	font-family: "Roboto", sans-serif !important;
-	margin: 1.5rem 0 !important;
 }
 
-.theme-admonition.theme-admonition-warning p {
-	color: #333 !important;
-	font-size: 1rem !important;
-	line-height: 1.6 !important;
-	margin: 0 !important;
-}
-
-.theme-admonition.theme-admonition-warning a {
+.theme-admonition-warning p { margin: 0 !important; }
+.theme-admonition-warning a { color: #b38705 !important; }
+.theme-admonition-warning .admonitionHeading_Gvgb {
 	color: #b38705 !important;
-	text-decoration: none !important;
-}
-
-.theme-admonition.theme-admonition-warning a:hover {
-	text-decoration: underline !important;
-}
-
-.theme-admonition.theme-admonition-warning .admonitionHeading_Gvgb {
-	color: #b38705 !important;
-	display: flex !important;
-	align-items: center !important;
 	font-size: 1.1rem !important;
 	font-weight: 600 !important;
 	margin-bottom: 0.5rem !important;
-	text-transform: capitalize !important;
 }
 
-.theme-admonition.theme-admonition-warning .admonitionIcon_Rf37 svg {
-	display: none !important;
-}
-
-.theme-admonition.theme-admonition-warning .admonitionIcon_Rf37 {
+.theme-admonition-warning .admonitionIcon_Rf37 {
 	background-image: url("/static/img/icons/Warning.png") !important;
 	background-position: center !important;
 	background-repeat: no-repeat !important;
@@ -1036,74 +691,120 @@ a[docid="docs"] > svg {
 	margin-right: 0.5rem !important;
 }
 
-/* Dark theme support for warning component */
-[data-theme="dark"] .theme-admonition.theme-admonition-warning {
+/* Dark theme admonitions */
+[data-theme="dark"] .theme-admonition p { color: #f5f5f5 !important; }
+
+[data-theme="dark"] .theme-admonition-info {
+	background-color: #252828 !important;
+}
+
+[data-theme="dark"] .theme-admonition-info p { color: #f5f5f5 !important; }
+[data-theme="dark"] .theme-admonition-info a { color: #64b5f6 !important; }
+[data-theme="dark"] .theme-admonition-info .admonitionHeading_Gvgb { color: #4cb3d4 !important; }
+
+[data-theme="dark"] .theme-admonition-note {
+	background-color: #252828 !important;
+	border-color: #208682 !important;
+}
+
+[data-theme="dark"] .theme-admonition-note a { color: #ff865b !important; }
+[data-theme="dark"] .theme-admonition-note .admonitionHeading_Gvgb,
+[data-theme="dark"] .admonitionHeading_Gvgb { color: #25bab1 !important; }
+
+[data-theme="dark"] .theme-admonition-tip {
 	background-color: #232323 !important;
-	border: 2px solid #4b4a47 !important;
+	border-color: #e97c57 !important;
 }
 
-[data-theme="dark"] .theme-admonition.theme-admonition-warning p {
-	color: #f5f5f5 !important;
+[data-theme="dark"] .theme-admonition-tip p { font-size: 0.9rem !important; }
+[data-theme="dark"] .theme-admonition-tip a { color: #ff865b !important; }
+[data-theme="dark"] .theme-admonition-tip .admonitionHeading_Gvgb { color: #e97c57 !important; }
+[data-theme="dark"] .theme-admonition-tip .admonitionIcon_Rf37 {
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 21C9 21.55 9.45 22 10 22H14C14.55 22 15 21.55 15 21V20H9V21ZM12 2C8.14 2 5 5.14 5 9C5 11.38 6.19 13.47 8 14.74V17C8 17.55 8.45 18 9 18H15C15.55 18 16 17.55 16 17V14.74C17.81 13.47 19 11.38 19 9C19 5.14 15.86 2 12 2ZM14.85 13.1L14 13.7V16H10V13.7L9.15 13.1C7.8 12.16 7 10.63 7 9C7 6.24 9.24 4 12 4S17 6.24 17 9C17 10.63 16.2 12.16 14.85 13.1Z' fill='%23e97c57'/%3E%3C/svg%3E") !important;
 }
 
-[data-theme="dark"] .theme-admonition.theme-admonition-warning a {
-	color: #e9af01 !important;
+[data-theme="dark"] .theme-admonition-warning {
+	background-color: #232323 !important;
+	border-color: #4b4a47 !important;
 }
 
-[data-theme="dark"] .theme-admonition.theme-admonition-warning .admonitionHeading_Gvgb {
-	color: #e9af01 !important;
-}
+[data-theme="dark"] .theme-admonition-warning a { color: #e9af01 !important; }
+[data-theme="dark"] .theme-admonition-warning .admonitionHeading_Gvgb { color: #e9af01 !important; }
 
-/* Responsive design for warning component */
+/* Responsive admonitions */
 @media (max-width: 768px) {
-	.theme-admonition.theme-admonition-warning {
-		padding: 0.9rem 1.1rem !important;
+	.theme-admonition {
+		padding: 12px !important;
 		margin: 1rem 0 !important;
+		border-radius: 6px !important;
+	}
+	
+	.theme-admonition p { font-size: 0.95rem !important; }
+	.admonitionHeading_Gvgb { font-size: 0.95rem !important; }
+	.admonitionIcon_Rf37 { width: 18px !important; height: 18px !important; }
+	
+	.theme-admonition-tip {
+		padding: 0.9rem 1.1rem !important;
 		border-radius: 12px !important;
 	}
-
-	.theme-admonition.theme-admonition-warning p {
-		font-size: 0.95rem !important;
-	}
-
-	.theme-admonition.theme-admonition-warning .admonitionHeading_Gvgb {
+	
+	.theme-admonition-tip p { font-size: 0.85rem !important; }
+	.theme-admonition-tip .admonitionHeading_Gvgb {
 		font-size: 1rem !important;
 		margin-bottom: 0.4rem !important;
 	}
-
-	.theme-admonition.theme-admonition-warning .admonitionIcon_Rf37 {
-		width: 18px !important;
-		height: 18px !important;
-		margin-right: 0.4rem !important;
+	
+	.theme-admonition-warning {
+		padding: 0.9rem 1.1rem !important;
+		border-radius: 12px !important;
+	}
+	
+	.theme-admonition-warning .admonitionHeading_Gvgb {
+		font-size: 1rem !important;
+		margin-bottom: 0.4rem !important;
 	}
 }
 
 @media (max-width: 480px) {
-	.theme-admonition.theme-admonition-warning {
-		padding: 0.8rem 1rem !important;
+	.theme-admonition {
+		padding: 10px !important;
 		margin: 0.8rem 0 !important;
-		border-radius: 10px !important;
+		border-radius: 4px !important;
 	}
-
-	.theme-admonition.theme-admonition-warning p {
+	
+	.theme-admonition p {
 		font-size: 0.9rem !important;
 		line-height: 1.5 !important;
 	}
-
-	.theme-admonition.theme-admonition-warning .admonitionHeading_Gvgb {
+	
+	.admonitionHeading_Gvgb { font-size: 0.9rem !important; }
+	.admonitionIcon_Rf37 { width: 16px !important; height: 16px !important; }
+	
+	.theme-admonition-tip {
+		padding: 0.8rem 1rem !important;
+		border-radius: 10px !important;
+	}
+	
+	.theme-admonition-tip p {
+		font-size: 0.8rem !important;
+		line-height: 1.5 !important;
+	}
+	
+	.theme-admonition-tip .admonitionHeading_Gvgb {
 		font-size: 0.95rem !important;
 		margin-bottom: 0.3rem !important;
 	}
-
-	.theme-admonition.theme-admonition-warning .admonitionIcon_Rf37 {
-		width: 16px !important;
-		height: 16px !important;
-		margin-right: 0.3rem !important;
+	
+	.theme-admonition-warning {
+		padding: 0.8rem 1rem !important;
+		border-radius: 10px !important;
+	}
+	
+	.theme-admonition-warning .admonitionHeading_Gvgb {
+		font-size: 0.95rem !important;
+		margin-bottom: 0.3rem !important;
 	}
 }
-
-/* ===== DOCUSAURUS CODE BLOCK OVERRIDES ===== */
-/* Override default Docusaurus code blocks to match custom chat-bubble styling */
 
 .prism-code,
 pre[class*="language-"],
@@ -1139,26 +840,18 @@ pre[class*="language-"] .token-line {
 	color: #333 !important;
 }
 
-/* Style the copy button to match the design */
-.codeBlockContainer_Ckt0 .copyButton_kopz,
-div[class*="codeBlockContainer"] button[class*="copyButton"] {
-	position: absolute !important;
-	top: 0.75rem !important;
-	right: 0.75rem !important;
-	background: rgba(255, 255, 255, 0.8) !important;
-	border: 1px solid #e0e1e2 !important;
-	border-radius: 4px !important;
-	color: #666 !important;
-	padding: 0.4rem !important;
-	opacity: 0.8 !important;
-	transition: opacity 0.2s ease, background 0.2s ease !important;
+/* Override for text blocks specifically - force dark text */
+.language-text .token-line,
+.prism-code.language-text .token-line,
+pre[class*="language-text"] .token-line,
+.language-text,
+.prism-code.language-text,
+pre.language-text,
+code[class*="language-text"],
+.language-text * {
+	color: #000000 !important;
 }
 
-.codeBlockContainer_Ckt0 .copyButton_kopz:hover,
-div[class*="codeBlockContainer"] button[class*="copyButton"]:hover {
-	opacity: 1 !important;
-	background: rgba(255, 255, 255, 0.95) !important;
-}
 
 /* Dark theme support for code blocks */
 [data-theme="dark"] .prism-code,
@@ -1184,17 +877,6 @@ div[class*="codeBlockContainer"] button[class*="copyButton"]:hover {
 	color: #f5f5f5 !important;
 }
 
-[data-theme="dark"] .codeBlockContainer_Ckt0 .copyButton_kopz,
-[data-theme="dark"] div[class*="codeBlockContainer"] button[class*="copyButton"] {
-	background: rgba(0, 0, 0, 0.6) !important;
-	border: 1px solid #363636 !important;
-	color: #f5f5f5 !important;
-}
-
-[data-theme="dark"] .codeBlockContainer_Ckt0 .copyButton_kopz:hover,
-[data-theme="dark"] div[class*="codeBlockContainer"] button[class*="copyButton"]:hover {
-	background: rgba(0, 0, 0, 0.8) !important;
-}
 
 /* Responsive design for code blocks */
 @media (max-width: 768px) {
@@ -1214,12 +896,6 @@ div[class*="codeBlockContainer"] button[class*="copyButton"]:hover {
 		border-radius: 6px !important;
 	}
 
-	.codeBlockContainer_Ckt0 .copyButton_kopz,
-	div[class*="codeBlockContainer"] button[class*="copyButton"] {
-		top: 0.5rem !important;
-		right: 0.5rem !important;
-		padding: 0.3rem !important;
-	}
 }
 
 @media (max-width: 480px) {
@@ -1239,12 +915,6 @@ div[class*="codeBlockContainer"] button[class*="copyButton"]:hover {
 		border-radius: 4px !important;
 	}
 
-	.codeBlockContainer_Ckt0 .copyButton_kopz,
-	div[class*="codeBlockContainer"] button[class*="copyButton"] {
-		top: 0.4rem !important;
-		right: 0.4rem !important;
-		padding: 0.25rem !important;
-	}
 }
 
 /* ===== CODE BLOCK STYLING ===== */
@@ -1260,116 +930,10 @@ div[class*="codeBlockContainer"] button[class*="copyButton"]:hover {
 .prism-code[class*="language-"] .token.operator, .prism-code[class*="language-"] .token.punctuation, pre[class*="language-"] .token.operator, pre[class*="language-"] .token.punctuation { color: #d1d5db !important; }
 .prism-code[class*="language-"] .token.comment, pre[class*="language-"] .token.comment { color: #9ca3af !important; font-style: italic !important; }
 
-/* Copy button for dark code blocks */
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-bash"]) button[class*="copyButton"],
-div[class*="codeBlockContainer"]:has(.prism-code[class*="language-shell"]) button[class*="copyButton"],
-div[class*="codeBlockContainer"]:has(pre[class*="language-bash"]) button[class*="copyButton"],
-div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) button[class*="copyButton"] {
-	background: rgba(0, 0, 0, 0.6) !important;
-	color: #f5f5f5 !important;
-}
 
-/* ===== GIT PLATFORM INTEGRATION GRID ===== */
-/* Transform the git platforms list into a visual grid with icons */
-#git-platform-integration ~ p + ul {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1rem;
-	list-style: none;
-	padding: 0;
-	margin: 1.5rem 0;
-	align-items: start;
-}
-
-#git-platform-integration ~ p + ul li {
-	display: flex;
-	align-items: center;
-	gap: 0.75rem;
-	padding: 1.5rem 2rem;
-	border: 2px solid #e0e0e0;
-	border-radius: 8px;
-	background-color: #fafafa;
-	font-weight: 500;
-	min-height: 100px;
-	height: 100px;
-	box-sizing: border-box;
-	margin: 0;
-	position: relative;
-	top: 0;
-}
-
-#git-platform-integration ~ p + ul li::before {
-	content: "";
-	width: 24px;
-	height: 24px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	flex-shrink: 0;
-}
-
-/* Platform-specific icons using nth-child since we know the order:
-   1. GitHub, 2. GitLab, 3. Bitbucket, 4. Azure */
-#git-platform-integration ~ p + ul li:nth-child(1)::before {
-	background-image: url('/img/overview/Github.png');
-}
-
-#git-platform-integration ~ p + ul li:nth-child(2)::before {
-	background-image: url('/img/overview/Gitlab.png');
-}
-
-#git-platform-integration ~ p + ul li:nth-child(3)::before {
-	background-image: url('/img/overview/Bitbucket.png');
-}
-
-#git-platform-integration ~ p + ul li:nth-child(4)::before {
-	background-image: url('/img/overview/Azure.png');
-}
-
-/* Dark theme support */
-[data-theme="dark"] #git-platform-integration ~ p + ul li {
-	background-color: #232323;
-	border-color: #363636;
-	color: #ffffff;
-}
-
-[data-theme="dark"] #git-platform-integration ~ p + ul li::before {
-	filter: invert(1) brightness(0.8);
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-	#git-platform-integration ~ p + ul {
-		grid-template-columns: 1fr 1fr;
-		gap: 0.8rem;
-	}
-
-	#git-platform-integration ~ p + ul li {
-		padding: 1.2rem 1.5rem;
-		font-size: 0.95rem;
-	}
-}
-
-@media (max-width: 480px) {
-	#git-platform-integration ~ p + ul {
-		grid-template-columns: 1fr;
-		gap: 0.6rem;
-	}
-
-	#git-platform-integration ~ p + ul li {
-		padding: 1rem 1.2rem;
-		font-size: 0.9rem;
-	}
-
-	#git-platform-integration ~ p + ul li::before {
-		width: 20px;
-		height: 20px;
-	}
-}
-
-/* ===== ISSUE-MANAGEMENT INTEGRATION GRID ===== */
-/* Transform the issue-management platforms list into a visual grid with icons */
-/* Target the ul that comes after the Issue-management integration heading by position */
+/* ===== INTEGRATION GRIDS ===== */
+/* Base styles for both Git and Issue management integration grids */
+#git-platform-integration ~ p + ul,
 #issue-management-integration ~ p + ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -1380,6 +944,7 @@ div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) button[class*
 	align-items: start;
 }
 
+#git-platform-integration ~ p + ul li,
 #issue-management-integration ~ p + ul li {
 	display: flex;
 	align-items: center;
@@ -1397,6 +962,7 @@ div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) button[class*
 	top: 0;
 }
 
+#git-platform-integration ~ p + ul li::before,
 #issue-management-integration ~ p + ul li::before {
 	content: "";
 	width: 24px;
@@ -1407,40 +973,41 @@ div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) button[class*
 	flex-shrink: 0;
 }
 
-/* Platform-specific icons using nth-child since we know the order:
-   1. GitHub Issues, 2. GitLab Issues, 3. Jira, 4. Linear */
-#issue-management-integration ~ p + ul li:nth-child(1)::before {
-	background-image: url('/img/overview/Github.png');
-}
+/* Git platform icons */
+#git-platform-integration ~ p + ul li:nth-child(1)::before { background-image: url('/img/overview/Github.png'); }
+#git-platform-integration ~ p + ul li:nth-child(2)::before { background-image: url('/img/overview/Gitlab.png'); }
+#git-platform-integration ~ p + ul li:nth-child(3)::before { background-image: url('/img/overview/Bitbucket.png'); }
+#git-platform-integration ~ p + ul li:nth-child(4)::before { background-image: url('/img/overview/Azure.png'); }
 
-#issue-management-integration ~ p + ul li:nth-child(2)::before {
-	background-image: url('/img/overview/Gitlab.png');
-}
-
-#issue-management-integration ~ p + ul li:nth-child(3)::before {
-	background-image: url('/img/overview/Jira.png');
-}
-
-#issue-management-integration ~ p + ul li:nth-child(4)::before {
-	background-image: url('/img/overview/Linear.png');
-}
+/* Issue management icons */
+#issue-management-integration ~ p + ul li:nth-child(1)::before { background-image: url('/img/overview/Github.png'); }
+#issue-management-integration ~ p + ul li:nth-child(2)::before { background-image: url('/img/overview/Gitlab.png'); }
+#issue-management-integration ~ p + ul li:nth-child(3)::before { background-image: url('/img/overview/Jira.png'); }
+#issue-management-integration ~ p + ul li:nth-child(4)::before { background-image: url('/img/overview/Linear.png'); }
 
 /* Dark theme support */
+[data-theme="dark"] #git-platform-integration ~ p + ul li,
 [data-theme="dark"] #issue-management-integration ~ p + ul li {
 	background-color: #232323;
 	border-color: #363636;
 	color: #ffffff;
 }
 
+[data-theme="dark"] #git-platform-integration ~ p + ul li::before,
 [data-theme="dark"] #issue-management-integration ~ p + ul li::before {
 	filter: invert(1) brightness(0.8);
 }
 
-/* Responsive design */
+/* Responsive integration grids */
 @media (max-width: 768px) {
+	#git-platform-integration ~ p + ul,
 	#issue-management-integration ~ p + ul {
-		grid-template-columns: 1fr 1fr;
 		gap: 0.8rem;
+	}
+
+	#git-platform-integration ~ p + ul li {
+		padding: 1.2rem 1.5rem;
+		font-size: 0.95rem;
 	}
 
 	#issue-management-integration ~ p + ul li {
@@ -1450,9 +1017,15 @@ div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) button[class*
 }
 
 @media (max-width: 480px) {
+	#git-platform-integration ~ p + ul,
 	#issue-management-integration ~ p + ul {
 		grid-template-columns: 1fr;
 		gap: 0.6rem;
+	}
+
+	#git-platform-integration ~ p + ul li {
+		padding: 1rem 1.2rem;
+		font-size: 0.9rem;
 	}
 
 	#issue-management-integration ~ p + ul li {
@@ -1460,8 +1033,110 @@ div[class*="codeBlockContainer"]:has(pre[class*="language-shell"]) button[class*
 		font-size: 0.9rem;
 	}
 
+	#git-platform-integration ~ p + ul li::before,
 	#issue-management-integration ~ p + ul li::before {
 		width: 20px;
 		height: 20px;
 	}
+}
+
+/* ===== DATA PRIVACY SECTION PLAIN BULLETS ===== */
+/* Ensure data privacy section uses regular bullet points, not boxes */
+#data-privacy-and-security ~ p + ul {
+	display: block !important;
+	grid-template-columns: none !important;
+	gap: 0 !important;
+	list-style: disc !important;
+	padding-left: 1.5rem !important;
+	margin: 1rem 0 !important;
+}
+
+#data-privacy-and-security ~ p + ul li {
+	display: list-item !important;
+	align-items: initial !important;
+	gap: 0 !important;
+	padding: 0.25rem 0 !important;
+	border: none !important;
+	border-radius: 0 !important;
+	background-color: transparent !important;
+	font-weight: normal !important;
+	min-height: auto !important;
+	height: auto !important;
+	box-sizing: content-box !important;
+	margin: 0 !important;
+	position: static !important;
+	top: auto !important;
+}
+
+#data-privacy-and-security ~ p + ul li::before {
+	display: none !important;
+	content: none !important;
+	width: 0 !important;
+	height: 0 !important;
+	background: none !important;
+}
+
+[data-theme="dark"] #data-privacy-and-security ~ p + ul li {
+	background-color: transparent !important;
+	border: none !important;
+	color: inherit !important;
+}
+
+/* ===== FORCE DARK TEXT FOR TEXT CODE BLOCKS ===== */
+/* Aggressive override for text code blocks in light theme */
+:root {
+	--prism-color-text: #000000 !important;
+}
+
+[data-theme="light"] .language-text .token-line,
+[data-theme="light"] .prism-code.language-text .token-line,
+[data-theme="light"] pre.language-text .token-line,
+[data-theme="light"] .language-text span,
+[data-theme="light"] .prism-code.language-text span,
+[data-theme="light"] pre.language-text span,
+.theme-code-block .language-text .token-line,
+.theme-code-block .language-text span,
+.codeBlockContent_biex .language-text .token-line,
+.codeBlockContent_biex .language-text span {
+	color: #1c1e21 !important;
+	opacity: 1 !important;
+}
+
+/* Also target text nodes directly */
+[data-theme="light"] .language-text,
+[data-theme="light"] .prism-code.language-text,
+[data-theme="light"] pre.language-text,
+.theme-code-block .language-text,
+.codeBlockContent_biex .language-text {
+	color: #1c1e21 !important;
+}
+
+/* Reset button styling in text blocks */
+[data-theme="light"] .language-text button,
+[data-theme="light"] .language-text [class*="button"],
+[data-theme="light"] .prism-code.language-text button,
+[data-theme="light"] .prism-code.language-text [class*="button"],
+[data-theme="light"] pre.language-text button,
+[data-theme="light"] pre.language-text [class*="button"],
+.theme-code-block .language-text button,
+.theme-code-block .language-text [class*="button"],
+.codeBlockContent_biex .language-text button,
+.codeBlockContent_biex .language-text [class*="button"] {
+	color: initial;
+}
+
+/* Make copy button icon lighter in dark mode - target all possible SVG elements */
+[data-theme="dark"] .copyButtonIcons_IEyt,
+[data-theme="dark"] .copyButtonIcons_IEyt *,
+[data-theme="dark"] .copyButtonIcons_IEyt svg,
+[data-theme="dark"] .copyButtonIcons_IEyt svg *,
+[data-theme="dark"] .copyButtonIcons_IEyt path,
+[data-theme="dark"] button .copyButtonIcons_IEyt,
+[data-theme="dark"] button .copyButtonIcons_IEyt *,
+[data-theme="dark"] button .copyButtonIcons_IEyt svg,
+[data-theme="dark"] button .copyButtonIcons_IEyt svg *,
+[data-theme="dark"] button .copyButtonIcons_IEyt path {
+	color: #f5f5f5 !important;
+	fill: #f5f5f5 !important;
+	stroke: #f5f5f5 !important;
 }
