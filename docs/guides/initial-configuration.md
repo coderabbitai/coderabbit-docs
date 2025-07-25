@@ -81,7 +81,7 @@ You can give CodeRabbit additional instructions for reviewing specific files or
 locations in your repository, or configure CodeRabbit to disregard certain file paths
 during code reviews.
 
-For an overview about using path-based instructions in CodeRabbit, see [Path-based instructions](/guides/review-instructions#path-based).
+For an overview about using path instructions in CodeRabbit, see [Path instructions](/guides/review-instructions#path-based).
 
 ### Add path filters {#filters}
 
@@ -115,7 +115,7 @@ For more information, see [Path instructions](/reference/configuration#path-inst
 ### Add documentation or unit-test path instructions {#doc-path}
 
 Similar to the general path instructions described by the previous section, you
-can define path-based instructions that direct CodeRabbit to generate inline
+can define path instructions that direct CodeRabbit to generate inline
 documentation or unit tests, with specific instructions associated with different
 locations or filenames.
 

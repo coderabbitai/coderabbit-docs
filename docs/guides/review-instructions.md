@@ -9,7 +9,7 @@ description:
 The guide explains how to add custom review instructions for the entire project.
 Also, see the guide on how to [configure CodeRabbit](/getting-started/configure-coderabbit).
 
-## Path-based instructions {#path-based}
+## Path instructions {#path-based}
 
 This section explains how to add custom code review instructions for the entire
 project or specific file paths in your project using glob patterns. Developers
