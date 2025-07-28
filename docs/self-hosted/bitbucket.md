@@ -157,18 +157,18 @@ cat coderabbit.json | docker login -u _json_key --password-stdin us-docker.pkg.d
 docker pull us-docker.pkg.dev/coderabbitprod/self-hosted/coderabbit-agent:latest
 ```
 
-### Verify the image is up
-
-You can query `/health` endpoint to verify that the `coderabbit-agent` service is up and running.
-
-```bash
-curl 127.0.0.1:8080/health
-```
-
 ## Host the image
 
 You can host the image on a server, serverless function, or container environment and expose port `8080`. Run the Docker image with the equivalent command on your chosen platform, ensuring you replace the `.env` file path with the path to your actual `.env` file:
 
 ```bash
 docker run --env-file .env --publish 127.0.0.1:8080:8080 us-docker.pkg.dev/coderabbitprod/self-hosted/coderabbit-agent:latest
+```
+
+### Verify the image is up
+
+You can query `/health` endpoint to verify that the `coderabbit-agent` service is up and running.
+
+```bash
+curl 127.0.0.1:8080/health
 ```
