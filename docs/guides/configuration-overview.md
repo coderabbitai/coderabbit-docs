@@ -75,7 +75,7 @@ recommend that you review after you set up CodeRabbit with your organization.
 
 ## Learnings {#learnings}
 
-As a complement to the configuration methods listed above, CodeRabbit keeps an internal database with _learnings_ that it collects about your team's code review preferences, based on your interactions with CodeRabbit over time. CodeRabbit learnings let you fine-tune the ways that CodeRabbit conducts its code reviews in ways that are highly specific to your repositories, and your team's coding own styles.
+As a complement to the configuration methods listed above, CodeRabbit keeps an internal database with _learnings_ that it collects about your team's code review preferences, based on your interactions with the CodeRabbit bot over time. CodeRabbit learnings let you fine-tune the ways that CodeRabbit conducts its code reviews in ways that are highly specific to your repositories, and your team's coding styles.
 
 For more information, see [Teach CodeRabbit your review preferences](/guides/learnings).
 
