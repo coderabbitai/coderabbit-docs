@@ -35,3 +35,4 @@ The extension makes only basic CodeRabbit review features available, with defaul
 
 - [Install the VSCode extension](/guides/install-vscode)
 - [Use the VSCode extension](/guides/use-vscode)
+- [Use with Self-hosted CodeRabbit](/guides/use-vscode-selfhosted)

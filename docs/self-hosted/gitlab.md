@@ -37,12 +37,45 @@ Consult official CodeRabbitAI documentation for a detailed [guide](https://docs.
 1. **Navigate to Add Webhook Page**: Go to the webhook configuration page in the desired GitLab project.
 2. **Add Webhook URL**: Enter the URL pointing to the CodeRabbit service, followed by `/gitlab_webhooks` (e.g., `http://127.0.0.1:8080/gitlab_webhooks`).
 3. **Generate and Save Secret Token**: Generate a secret token, add it to the webhook, and store it securely. This will be needed for the `.env` file as `GITLAB_WEBHOOK_SECRET` (you can use a single secret token for all projects).
-4. Select triggers:
+4. **Select triggers**:
 
    - Push events
    - Comments
    - Issues events
    - Merge request events
+
+## Add Webhook Using a Script
+
+We have a convenient [script](/code/gitlab-webhook.sh) to help you add webhooks to a project or all projects under a group in a GitLab instance.
+
+```bash
+# Make sure the script is executable:
+chmod +x gitlab-webhook.sh
+```
+
+Example usage:
+
+```bash
+# PAT example (header auto-detected)
+export GITLAB_TOKEN="glpat-xxxxx"
+./gitlab-add-webhook.sh \
+  -h "gitlab.example.com" -u "http://<coderabbit-agent-addr>/gitlab_webhooks" \
+  -s "mySecret" -p 42
+
+# PAT example (explicit header)
+./gitlab-add-webhook.sh \
+  -h "gitlab.example.com" -u "http://<coderabbit-agent-addr>/gitlab_webhooks" \
+  -s "mySecret" -g "mygroup/mysubgroup/myproject" \
+  -t "glpat-xxxxx" \
+  -A "PRIVATE-TOKEN"
+
+# OAuth token with explicit header
+./gitlab-add-webhook.sh \
+  -h "gitlab.example.com" -u "http://<coderabbit-agent-addr>/gitlab_webhooks" \
+  -s "mySecret" -g "company/backend" \
+  -t "eyJhbGciOi..." \
+  -A "Authorization: Bearer"
+```
 
 ## Prepare a `.env` file
 
@@ -101,6 +134,9 @@ LLM_TIMEOUT=360000
 AWS_ACCESS_KEY_ID=<aws-access-key>
 AWS_SECRET_ACCESS_KEY=<aws-secret-access-key>
 AWS_REGION=<aws-region>
+# optionally, use cross-region inference to access models in other regions
+# if this is set to `true`, CodeRabbit will access models from `us`, `eu`, or `ap` regions based on the AWS_REGION value.
+AWS_USE_CROSS_REGION_INFERENCE=[<true>]
 
 # if using Anthropic
 LLM_PROVIDER=anthropic
@@ -122,10 +158,21 @@ CODERABBIT_LICENSE_KEY=<license-key>
 
 CODERABBIT_API_KEY=<coderabbitai-api-key>
 ENABLE_METRICS=[true]
-ENABLE_LEARNINGS=[true]
-# if using CodeRabbit's learnings, also provide the following
-# for example, s3://bucket/path/to/database, gs://bucket/path/to/database, etc.
-OBJECT_STORE_URI=[<object-store-uri>]
+
+
+# CodeRabbit - KNOWLEDGE BASE
+#
+# Requisite: To enable CodeRabbit's knowledge base, you need to provide an object store URI.
+OBJECT_STORE_URI=[<object-store-uri>] # All major object stores are supported e.g., s3://bucket/path/to/database, gs://bucket/path/to/database, etc.
+
+ENABLE_KNOWLEDGE_BASE=[true] # Global feature flag to enable/disable all knowledge base features.
+
+ENABLE_PRS_INDEX=[true] # Feature flag to enable/disable PRs indexing.
+ENABLE_ISSUES_INDEX=[true] # Feature flag to enable/disable Issues indexing.
+ENABLE_LEARNING_INDEX=[true] # Feature flag to enable/disable Learning indexing.
+ENABLE_CODE_GUIDELINES_INDEX=[true] # Feature flag to enable/disable Code Guidelines indexing.
+ENABLE_CODE_INDEX=[true] # Feature flag to enable/disable Code indexing.
+
 
 JIRA_HOST=[<jira-host-url>]
 JIRA_PAT=[<jira-personal-access-token>]

@@ -17,16 +17,16 @@ You can track and analyze pull request activity across your organization's repos
 
 There are two ways to generate reports:
 
-- **[Scheduled Reports](/guides/scheduled-reports)**: Set up automated, recurring reports that are delivered to your team on a set schedule. Supported delivery channels include the following:
+- **[Scheduled Reports](/guides/scheduled-reports)**: Set up automated, recurring reports that are delivered to your team on a set schedule. **Use this option if you want to adjust your settings and send a report more than once**. Supported delivery channels include the following:
 
   - Email
   - Discord
   - Slack
   - Teams
 
-- **[On-demand Reports](/guides/ondemand-reports)**: If you require customized integration of reports with your own tools and workflows, then you can generate reports programmatically through our API.
+- **[On-demand Reports](/guides/ondemand-reports)**: If you want to test a report format and produce a single report once, try the "On-demand Reports" Option. You can also generate reports programmatically through our API, but we do not recommend this as the API reporting is in beta. If you want to run an **On-demand Report** more than once then you must use the **Scheduled Reports** option.
 
-For your first reports, we recommend exploring scheduled reports. Its web-based UI can help you get familiar with the options available to you.
+In almost every scenario we recommend using the **Scheduled Reports** option. The **On-demand Report** does not have any additional benifits from the **Scheduled Reports** and has many limitations.
 
 ## Customize reports using natural language {#customize}
 
