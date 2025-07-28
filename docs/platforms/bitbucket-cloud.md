@@ -1,6 +1,6 @@
 ---
-title: "Bitbucket"
-description: "Learn how to integrate CodeRabbit with Bitbucket."
+title: "Bitbucket Cloud"
+description: "Learn how to integrate CodeRabbit with Bitbucket Cloud."
 sidebar_label: "Bitbucket"
 sidebar_position: 6
 ---
@@ -11,7 +11,7 @@ CodeRabbit integrates with Bitbucket to enhance code review and collaboration by
 - Displaying review comments and suggestions directly on merge requests.
 - Enabling seamless interaction with the CodeRabbit bot for real-time feedback and assistance.
 
-This guide will assist you in effectively integrating CodeRabbit with Bitbucket.
+This guide will assist you in effectively integrating CodeRabbit with Bitbucket Cloud. [Click here](https://docs.coderabbit.ai/self-hosted/bitbucket) for instructions integrating Bitbucket Data Center with CodeRabit self-hosted edition. 
 
 ## Configure API Token
 
