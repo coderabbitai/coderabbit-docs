@@ -12,6 +12,15 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
 [Dotenv Linter](https://github.com/dotenv-linter/dotenv-linter) is a lightning-fast linter for `.env` files. It helps ensure your environment files are consistent, typo-free, and follow best practices.
 
+## Files
+
+Dotenv Linter will run on files with the following patterns:
+
+- `**/.env`
+- `**/.env.*`
+
+We will not run against files that do not start with `.env` (e.g., `test.env`). However `.env.dev` or `.env.local` is fine.
+
 :::note
 
 Dotenv Linter does not require configuration to run and automatically anlysises `.env` files. If no configuration file is found, it will use default settings.
