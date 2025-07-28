@@ -92,19 +92,26 @@ For more information about how we protect your data, see [the CodeRabbit Trust C
 
 CodeRabbit offers multiple subscription tiers:
 
-- _CodeRabbit Lite_ is our free tier, which includes the following features:
+- The _Free_ tier includes the following features:
 
   - Public repositories can use [all CodeRabbit code review features](/guides/code-review-overview). Private repositories are limited to using CodeRabbit for pull request summaries.
   - Every developer on your team can use [the CodeRabbit VSCode extension](/code-editors) in their IDEs.
   - You can configure CodeRabbit by adding [`.coderabbit.yaml` files](/getting-started/configure-coderabbit) to your public repositories.
 
-- _CodeRabbit Pro_ is a paid tier with all of the features of the Lite tier, plus the following:
+- The _Lite_ tier has all of the features of the Free tier, plus the following:
 
   - CodeRabbit creates automated code reviews for all of your repositories, both public and private.
+
+- The _Pro_ tier has all of the features of the Lite tier, plus the following:
+
   - You can configure CodeRabbit using either `.coderabbit.yaml` files or the CodeRabbit web interface.
   - You can optionally use the CodeRabbit web interface to set organization-wide preferences.
+  - CodeRabbit can [generate reports](/guides/reports-overview) about your repositories' changes.
+  - You can have CodeRabbit complement its code reviews by [authoring its own suggested improvements] to your pull requests, including [generating docstrings] for your code.
+  - You can [integrate CodeRabbit with external issue tracking platforms](/integrations/issue-integrations).
+  - You have access to analytics dashboards, higher rate limits, and other features.
 
-- _CodeRabbit Enterprise_ brings your team all of the functionality of CodeRabbit Pro plus a variety of advanced CodeRabbit features, as well as SLA support.
+- The _Enterprise_ tier brings your team all of the functionality of CodeRabbit Pro plus a variety of advanced CodeRabbit features, as well as SLA support.
 
 The Pro and Enterprise subscription tiers use seat-based pricing. For more information, see [Pricing](https://www.coderabbit.ai/pricing).
 
