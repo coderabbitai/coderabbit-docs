@@ -108,7 +108,7 @@ CodeRabbit offers multiple subscription tiers:
   - You can configure CodeRabbit using either `.coderabbit.yaml` files or the CodeRabbit web interface.
   - You can optionally use the CodeRabbit web interface to set organization-wide preferences.
   - CodeRabbit can [generate reports](/guides/reports-overview) about your repositories' changes.
-  - You can have CodeRabbit complement its code reviews by [authoring its own suggested improvements] to your pull requests, including [docstrings](/finishing-touches/docstrings) and [unit tests](/finishing-touches/unit-test-generation) for your code.
+  - You can have CodeRabbit complement its code reviews by [authoring its own suggested improvements](/guides/generate-improvements) to your pull requests, including [docstrings](/finishing-touches/docstrings) and [unit tests](/finishing-touches/unit-test-generation) for your code.
   - You can [integrate CodeRabbit with external issue tracking platforms](/integrations/issue-integrations).
   - You have access to analytics dashboards, higher rate limits, and other features.
 
