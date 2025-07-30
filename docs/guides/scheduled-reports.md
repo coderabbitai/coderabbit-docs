@@ -52,11 +52,12 @@ Choose a time that works for all team members, especially for distributed teams 
 
 ### Report Parameters
 
-Reports can be filtered using multiple parameters:
+Reports can be filtered using multiple parameters, match pull requests using the **IN** option and exclude pull requests using the **NOT_IN** option:
 
 - **Repositories**: Select specific repositories to monitor
 - **Labels**: Filter by GitHub labels with operators:
   - IN: Match any selected label
+  - NOT_IN: Exclude any pr with select label
   - ALL: Match all selected labels
 - **Users**: Filter by specific GitHub users
 - **Teams**: Filter by organization teams

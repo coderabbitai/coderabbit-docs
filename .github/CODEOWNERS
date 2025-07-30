@@ -1,1 +1,3 @@
-*.ts @coderabbitai/typescript-reviewers
+docusaurus.config.ts @coderabbitai/typescript-reviewers
+src/**/*.ts @coderabbitai/typescript-reviewers
+src/**/*.tsx @coderabbitai/react-reviewers

@@ -137,7 +137,7 @@
 						},
 						"request_changes_workflow": {
 							"type": "boolean",
-							"default": true,
+							"default": false,
 							"description": "Approve the review once CodeRabbit's comments are resolved. Note: In GitLab, all discussions must be resolved."
 						},
 						"high_level_summary": {
@@ -194,6 +194,11 @@
 							"type": "boolean",
 							"default": true,
 							"description": "Generate sequence diagrams in the walkthrough."
+						},
+						"estimate_code_review_effort": {
+							"type": "boolean",
+							"default": true,
+							"description": "Estimate the code review effort in the walkthrough."
 						},
 						"assess_linked_issues": {
 							"type": "boolean",
@@ -610,7 +615,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Biome | Biome is a fast formatter, linter, and analyzer for web projects. | Enable Biome integration. | v1.9.4"
+											"description": "Enable Biome | Biome is a fast formatter, linter, and analyzer for web projects. | Enable Biome integration. | v2.1.2"
 										}
 									},
 									"additionalProperties": false,
@@ -711,7 +716,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v1.64.8"
+											"description": "Enable golangci-lint | golangci-lint is a fast linters runner for Go. | Enable golangci-lint integration. | v2.2.2"
 										},
 										"config_file": {
 											"type": "string",
@@ -892,7 +897,7 @@
 										"enabled": {
 											"type": "boolean",
 											"default": true,
-											"description": "Enable Semgrep | Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues. | Enable Semgrep integration. | v1.122.0"
+											"description": "Enable Semgrep | Semgrep is a static analysis tool designed to scan code for security vulnerabilities and code quality issues. | Enable Semgrep integration. | v1.128.1"
 										},
 										"config_file": {
 											"type": "string",
