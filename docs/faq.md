@@ -203,7 +203,7 @@ In-trial and open-source plans have lower rate limits than the paid plan. In all
 
 :::
 
-The following limits enforced _per developer_:
+The following limits are enforced _per developer_:
 
 | Feature                          | Free Plan                                  | Trial Plan                        | OSS Plan                      | Pro/Lite Plan                 |
 | -------------------------------- | ------------------------------------------ | --------------------------------- | ----------------------------- | ----------------------------- |
