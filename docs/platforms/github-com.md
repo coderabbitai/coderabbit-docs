@@ -20,7 +20,7 @@ If you want to authorize CodeRabbit to write code reviews for a repository conta
 
 ## Authorize CodeRabbit with your GitHub account
 
-Before you can you use CodeRabbit with GitHub, you need to
+Before you can use CodeRabbit with GitHub, you need to
 authorize CodeRabbit with your GitHub account. To do this, follow these steps:
 
 1. Visit [the CodeRabbit login page](https://app.coderabbit.ai/login).
