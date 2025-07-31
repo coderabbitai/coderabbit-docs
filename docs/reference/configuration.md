@@ -1976,6 +1976,100 @@ Specify the Jira project keys to use for the knowledge base.
 
 Specify the scope of learnings to use for the knowledge base. 'local' uses the repository's learnings, 'global' uses the organization's learnings, and 'auto' uses repository's learnings for public repositories and organization's learnings for private repositories.
 
+### Code guidelines
+
+You can define a list of paths that guide CodeRabbit to your organization's code guidelines.
+If you do, then CodeRabbit applies these guidelines to its code reviews. For more
+information, see [Code Guidelines](/integrations/knowledge-base#code_guidelines).
+
+#### Enable code guidelines
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Knowledge Base > Enabled</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`knowledge_base.code_guidelines.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>`true`</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+</Tabs>
+
+Enable CodeRabbit to enforce your organization's coding standards during reviews.
+
+#### File patterns
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Knowledge Base > File Patterns</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>_No patterns_</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`knowledge_base.code_guidelines.filePatterns`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>array</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>`[]`</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+</Tabs>
+
+A list of path specifications to your repository's coding guideline documents, relative
+to the root of your repository. Fileglob matching is allowed. Paths are case-sensitive.
+
+If the code guidelines feature is enabled, then CodeRabbit applies code-guideline
+documents found at the following paths, in addition to any paths that you define:
+
+- `**/.cursorrules`
+- `.github/copilot-instructions.md`
+- `**/CLAUDE.md`
+- `**/GEMINI.md`
+- `**/.cursor/rules/*`
+- `**/.windsurfrules`
+- `**/.clinerules/*`
+- `**/.rules/*`
+- `**/AGENT.md`
+
 ### Linear
 
 #### Enable Linear
