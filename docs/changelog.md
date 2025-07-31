@@ -250,7 +250,7 @@ import ProPlanNotice from "@site/src/components/ProPlanNotice.mdx"
 
 New and Improved Dashboards to provide more useful feedback such as:
 
-- Avgerage PR Merge Time
+- Average PR Merge Time
 - Weekly Pull Request Activity
 - Number of PRs Reviewed
 - Acceptance rate of CodeRabbit Suggestions
