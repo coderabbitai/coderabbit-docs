@@ -301,11 +301,11 @@ If enabled, then the reviews that CodeRabbit generates include assessments of ho
 
 Besides this setting, issue assessment requires at least one of the following:
 
-- You use the built-in issue managemet system of GitHub or GitLab.
+- You use the built-in issue management system of GitHub or GitLab.
 - You have integrated CodeRabbit with an external issue manager.
 
 For more information, see [Integrate issue tracking](/integrations/issue-integrations/)
-and [Let CodeRabbit read your issue trakcer](https://docs.coderabbit.ai/guides/setup-best-practices#issues).
+and [Let CodeRabbit read your issue tracker](https://docs.coderabbit.ai/guides/setup-best-practices#issues).
 
 #### Auto Apply Labels
 
@@ -909,7 +909,7 @@ You associate each set of instuctions with a file path relative to the root
 of your repository. Your path specification can use extended glob patterns.
 
 The following example defines a set of path instructions for all TypeScript
-and JavaScript files in a reposistory's `src` directory:
+and JavaScript files in a repository's `src` directory:
 
 <Tabs groupId="config-setting">
   <TabItem value="web-ui" label="Example path settings: Web UI" default>
@@ -1398,7 +1398,7 @@ We recommend leaving this option enabled.
 </Tabs>
 
 A list of branches that CodeRabbit performs automatic code reviews on, other
-than the reposiorty's main branch (usually `main` or `master`.)
+than the repository's main branch (usually `main` or `master`.)
 
 For example, if you add `staging` as a base branch, then CodeRabbit automatically
 reviews pull requests on both your repository's default branch and its `staging` branch.
