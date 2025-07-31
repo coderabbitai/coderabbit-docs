@@ -16,12 +16,18 @@
 		"lint:fix": "markdownlint-cli2 \"**/*.md\" --fix; prettier --list-different --write .",
 		"write-translations": "docusaurus write-translations",
 		"write-heading-ids": "docusaurus write-heading-ids",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"changelog:validate": "node scripts/validate-changelog.js",
+		"changelog:build-redirects": "node scripts/build-changelog-redirects.js",
+		"changelog:data": "node scripts/generate-changelog-data.js",
+		"changelog:sidebar": "node scripts/generate-changelog-sidebar.js",
+		"changelog:build": "npm run changelog:data && npm run changelog:sidebar && npm run changelog:build-redirects"
 	},
 	"dependencies": {
 		"@docusaurus/core": "^3.6.1",
 		"@docusaurus/plugin-client-redirects": "^3.6.1",
 		"@docusaurus/plugin-content-blog": "^3.6.1",
+		"@docusaurus/plugin-content-docs": "3.6.1",
 		"@docusaurus/preset-classic": "^3.6.1",
 		"@inkeep/cxkit-docusaurus": "^0.5.52",
 		"@mdx-js/react": "^3.1.0",

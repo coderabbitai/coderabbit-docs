@@ -1,0 +1,45 @@
+:root {
+  /* Changelog-specific design tokens */
+  --changelog-primary: #ff570a;
+  --changelog-primary-light: #ff865b;
+  --changelog-primary-dark: #cc4608;
+
+  /* Timeline */
+  --changelog-timeline-color: #e1e4e8;
+  --changelog-timeline-dot-size: 12px;
+  --changelog-timeline-line-width: 2px;
+  --changelog-timeline-active-color: var(--changelog-primary);
+
+  /* Cards */
+  --changelog-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --changelog-card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --changelog-card-radius: 12px;
+
+  /* Hero */
+  --changelog-hero-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --changelog-hero-height: 400px;
+  --changelog-hero-mobile-height: 300px;
+
+  /* Typography */
+  --changelog-heading-font: var(--ifm-font-family-base);
+  --changelog-body-font: var(--ifm-font-family-base);
+
+  /* Animations */
+  --changelog-transition-fast: 150ms ease;
+  --changelog-transition-base: 250ms ease;
+  --changelog-transition-slow: 350ms ease;
+
+  /* Spacing */
+  --changelog-section-gap: 4rem;
+  --changelog-card-gap: 2rem;
+}
+
+[data-theme="dark"] {
+  --changelog-primary: #ff865b;
+  --changelog-primary-light: #ffa57d;
+  --changelog-primary-dark: #ff570a;
+  --changelog-timeline-color: #30363d;
+  --changelog-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --changelog-card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --changelog-hero-gradient: linear-gradient(135deg, #434343 0%, #000000 100%);
+}

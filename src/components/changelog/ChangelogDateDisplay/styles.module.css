@@ -1,0 +1,97 @@
+.dateDisplay {
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 2rem);
+  width: 240px;
+  padding: 2rem 0;
+}
+
+.dateWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.datePrimary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+.dateMonth {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-primary);
+}
+
+.dateDay {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--ifm-font-color-base);
+}
+
+.dateSecondary {
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 2rem;
+}
+
+.timelineDot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px var(--ifm-background-surface-color),
+              0 0 0 4px var(--ifm-color-primary-lighter);
+}
+
+.timelineLine {
+  position: absolute;
+  left: 5px;
+  top: 20px;
+  width: 2px;
+  height: 60px;
+  background: linear-gradient(
+    to bottom,
+    var(--ifm-color-primary) 0%,
+    transparent 100%
+  );
+}
+
+.navigation {
+  margin-top: 2rem;
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+/* Mobile: hide on small screens */
+@media (max-width: 996px) {
+  .dateDisplay {
+    display: none;
+  }
+}

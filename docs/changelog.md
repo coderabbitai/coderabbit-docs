@@ -5,6 +5,16 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+import ChangelogRedirect from '@site/src/components/ChangelogRedirect';
+
+<ChangelogRedirect />
+
+# Changelog
+
+> **Note:** This changelog has moved to a new location. You will be automatically redirected to the [new changelog section](/changelog).
+
+---
+
 ## July 23, 2025
 
 ### ⚡️ Unit Test Generation - Beta

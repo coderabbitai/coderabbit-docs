@@ -1,0 +1,837 @@
+{
+  "entries": [
+    {
+      "id": "unit-test-generation-beta",
+      "filename": "2025-07-23-unit-test-generation-beta.md",
+      "metadata": {
+        "title": "Unit Test Generation - Beta",
+        "date": "2025-07-23",
+        "slug": "unit-test-generation-beta",
+        "tags": [
+          "feature",
+          "docs"
+        ],
+        "heroImage": "/img/changelog/unit-test-generation-beta-hero.webp",
+        "summary": "⚡️ Unit Test Generation - Beta",
+        "permalink": "/changelog/unit-test-generation-beta"
+      }
+    },
+    {
+      "id": "enhanced-reporting-capabilities",
+      "filename": "2025-07-17-enhanced-reporting-capabilities.md",
+      "metadata": {
+        "title": "Enhanced Reporting Capabilities",
+        "date": "2025-07-17",
+        "slug": "enhanced-reporting-capabilities",
+        "tags": [
+          "feature",
+          "improvement",
+          "bugfix",
+          "docs"
+        ],
+        "heroImage": "/img/changelog/test-feature-demo.svg",
+        "summary": "Enhanced Reporting Capabilities",
+        "permalink": "/changelog/enhanced-reporting-capabilities"
+      }
+    },
+    {
+      "id": "enhanced-python-static-analysis-nbqa-support-for-jupyter-notebooks",
+      "filename": "2025-07-10-enhanced-python-static-analysis-nbqa-support-for-jupyter-notebooks.md",
+      "metadata": {
+        "title": "Enhanced Python Static Analysis: nbqa Support for Jupyter Notebooks",
+        "date": "2025-07-10",
+        "slug": "enhanced-python-static-analysis-nbqa-support-for-jupyter-notebooks",
+        "tags": [
+          "improvement",
+          "docs",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/enhanced-python-static-analysis-nbqa-support-for-jupyter-notebooks-hero.webp",
+        "summary": "Enhanced Python Static Analysis: nbqa Support for Jupyter Notebooks",
+        "permalink": "/changelog/enhanced-python-static-analysis-nbqa-support-for-jupyter-notebooks"
+      }
+    },
+    {
+      "id": "enhanced-python-static-analysis-flake8-support",
+      "filename": "2025-07-03-enhanced-python-static-analysis-flake8-support.md",
+      "metadata": {
+        "title": "Enhanced Python Static Analysis: Flake8 Support",
+        "date": "2025-07-03",
+        "slug": "enhanced-python-static-analysis-flake8-support",
+        "tags": [
+          "improvement",
+          "docs",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/enhanced-python-static-analysis-flake8-support-hero.webp",
+        "summary": "Enhanced Python Static Analysis: Flake8 Support",
+        "permalink": "/changelog/enhanced-python-static-analysis-flake8-support"
+      }
+    },
+    {
+      "id": "enhanced-code-guidelines-support",
+      "filename": "2025-07-01-enhanced-code-guidelines-support.md",
+      "metadata": {
+        "title": "Enhanced Code Guidelines Support",
+        "date": "2025-07-01",
+        "slug": "enhanced-code-guidelines-support",
+        "tags": [
+          "improvement"
+        ],
+        "heroImage": "/img/changelog/enhanced-code-guidelines-support-hero.webp",
+        "summary": "Enhanced Code Guidelines Support",
+        "permalink": "/changelog/enhanced-code-guidelines-support"
+      }
+    },
+    {
+      "id": "enhanced-php-static-analysis-phpmd-and-phpcs-support",
+      "filename": "2025-06-27-enhanced-php-static-analysis-phpmd-and-phpcs-support.md",
+      "metadata": {
+        "title": "Enhanced PHP Static Analysis: PHPMD and PHPCS Support",
+        "date": "2025-06-27",
+        "slug": "enhanced-php-static-analysis-phpmd-and-phpcs-support",
+        "tags": [
+          "improvement",
+          "bugfix",
+          "docs",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/enhanced-php-static-analysis-phpmd-and-phpcs-support-hero.webp",
+        "summary": "Enhanced PHP Static Analysis: PHPMD and PHPCS Support",
+        "permalink": "/changelog/enhanced-php-static-analysis-phpmd-and-phpcs-support"
+      }
+    },
+    {
+      "id": "enhanced-static-analysis-htmlhint-and-checkmake-support",
+      "filename": "2025-06-11-enhanced-static-analysis-htmlhint-and-checkmake-support.md",
+      "metadata": {
+        "title": "Enhanced Static Analysis: HTMLHint and Checkmake Support",
+        "date": "2025-06-11",
+        "slug": "enhanced-static-analysis-htmlhint-and-checkmake-support",
+        "tags": [
+          "improvement",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/enhanced-static-analysis-htmlhint-and-checkmake-support-hero.webp",
+        "summary": "Enhanced Static Analysis: HTMLHint and Checkmake Support",
+        "permalink": "/changelog/enhanced-static-analysis-htmlhint-and-checkmake-support"
+      }
+    },
+    {
+      "id": "unit-test-generation-early-access",
+      "filename": "2025-06-10-unit-test-generation-early-access.md",
+      "metadata": {
+        "title": "Unit Test Generation, Early Access",
+        "date": "2025-06-10",
+        "slug": "unit-test-generation-early-access",
+        "tags": [
+          "feature"
+        ],
+        "heroImage": "/img/changelog/unit-test-generation-early-access-hero.webp",
+        "summary": "Unit Test Generation, Early Access",
+        "permalink": "/changelog/unit-test-generation-early-access"
+      }
+    },
+    {
+      "id": "enhanced-static-analysis-dotenv-linter-and-pylint-support",
+      "filename": "2025-06-05-enhanced-static-analysis-dotenv-linter-and-pylint-support.md",
+      "metadata": {
+        "title": "Enhanced Static Analysis: Dotenv Linter and Pylint Support",
+        "date": "2025-06-05",
+        "slug": "enhanced-static-analysis-dotenv-linter-and-pylint-support",
+        "tags": [
+          "improvement",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/enhanced-static-analysis-dotenv-linter-and-pylint-support-hero.webp",
+        "summary": "Enhanced Static Analysis: Dotenv Linter and Pylint Support",
+        "permalink": "/changelog/enhanced-static-analysis-dotenv-linter-and-pylint-support"
+      }
+    },
+    {
+      "id": "new-security-and-code-quality-tools",
+      "filename": "2025-05-25-new-security-and-code-quality-tools.md",
+      "metadata": {
+        "title": "New Security and Code Quality Tools",
+        "date": "2025-05-25",
+        "slug": "new-security-and-code-quality-tools",
+        "tags": [
+          "improvement",
+          "bugfix",
+          "security",
+          "docs",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/new-security-and-code-quality-tools-hero.webp",
+        "summary": "New Security and Code Quality Tools",
+        "permalink": "/changelog/new-security-and-code-quality-tools"
+      }
+    },
+    {
+      "id": "lua-support-with-luacheck",
+      "filename": "2025-05-19-lua-support-with-luacheck.md",
+      "metadata": {
+        "title": "Lua Support with Luacheck",
+        "date": "2025-05-19",
+        "slug": "lua-support-with-luacheck",
+        "tags": [
+          "improvement",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/lua-support-with-luacheck-hero.webp",
+        "summary": "Lua Support with Luacheck",
+        "permalink": "/changelog/lua-support-with-luacheck"
+      }
+    },
+    {
+      "id": "coderabbit-for-vs-code-cursor-and-windsurf-is-here-",
+      "filename": "2025-05-14-coderabbit-for-vs-code-cursor-and-windsurf-is-here-.md",
+      "metadata": {
+        "title": "CodeRabbit for VS Code, Cursor, and Windsurf Is Here \udf89",
+        "date": "2025-05-14",
+        "slug": "coderabbit-for-vs-code-cursor-and-windsurf-is-here-",
+        "tags": [
+          "bugfix"
+        ],
+        "heroImage": "/img/changelog/coderabbit-for-vs-code-cursor-and-windsurf-is-here--hero.webp",
+        "summary": "CodeRabbit for VS Code, Cursor, and Windsurf Is Here 🎉",
+        "permalink": "/changelog/coderabbit-for-vs-code-cursor-and-windsurf-is-here-"
+      }
+    },
+    {
+      "id": "docstring-path-instructions",
+      "filename": "2025-04-19-docstring-path-instructions.md",
+      "metadata": {
+        "title": "Docstring Path Instructions",
+        "date": "2025-04-19",
+        "slug": "docstring-path-instructions",
+        "tags": [
+          "docs"
+        ],
+        "heroImage": "/img/changelog/docstring-path-instructions-hero.webp",
+        "summary": "Docstring Path Instructions",
+        "permalink": "/changelog/docstring-path-instructions"
+      }
+    },
+    {
+      "id": "shopify-cli-integration-bitbucket-cloud-reporting",
+      "filename": "2025-04-14-shopify-cli-integration-bitbucket-cloud-reporting.md",
+      "metadata": {
+        "title": "Shopify CLI Integration & Bitbucket Cloud Reporting",
+        "date": "2025-04-14",
+        "slug": "shopify-cli-integration-bitbucket-cloud-reporting",
+        "tags": [
+          "feature",
+          "improvement",
+          "security",
+          "docs",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/shopify-cli-integration-bitbucket-cloud-reporting-hero.webp",
+        "summary": "Shopify CLI Integration & Bitbucket Cloud Reporting",
+        "permalink": "/changelog/shopify-cli-integration-bitbucket-cloud-reporting"
+      }
+    },
+    {
+      "id": "agent-chat",
+      "filename": "2025-04-11-agent-chat.md",
+      "metadata": {
+        "title": "Agent Chat",
+        "date": "2025-04-11",
+        "slug": "agent-chat",
+        "tags": [
+          "feature",
+          "improvement",
+          "bugfix"
+        ],
+        "heroImage": "/img/changelog/agent-chat-hero.webp",
+        "summary": "Agent Chat",
+        "permalink": "/changelog/agent-chat"
+      }
+    },
+    {
+      "id": "new-static-analysis-tools",
+      "filename": "2025-04-08-new-static-analysis-tools.md",
+      "metadata": {
+        "title": "New Static Analysis Tools",
+        "date": "2025-04-08",
+        "slug": "new-static-analysis-tools",
+        "tags": [
+          "improvement",
+          "docs",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/new-static-analysis-tools-hero.webp",
+        "summary": "New Static Analysis Tools",
+        "permalink": "/changelog/new-static-analysis-tools"
+      }
+    },
+    {
+      "id": "code-graph-analysis",
+      "filename": "2025-04-01-code-graph-analysis.md",
+      "metadata": {
+        "title": "Code Graph Analysis",
+        "date": "2025-04-01",
+        "slug": "code-graph-analysis",
+        "tags": [
+          "feature",
+          "improvement",
+          "bugfix",
+          "docs",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/code-graph-analysis-hero.webp",
+        "summary": "Code Graph Analysis",
+        "permalink": "/changelog/code-graph-analysis"
+      }
+    },
+    {
+      "id": "docstrings",
+      "filename": "2025-02-25-docstrings.md",
+      "metadata": {
+        "title": "Docstrings",
+        "date": "2025-02-25",
+        "slug": "docstrings",
+        "tags": [
+          "bugfix",
+          "docs"
+        ],
+        "heroImage": "/img/changelog/docstrings-hero.webp",
+        "summary": "Docstrings",
+        "permalink": "/changelog/docstrings"
+      }
+    },
+    {
+      "id": "bitbucket-cloud-support-circleci-pipeline-failure-detection",
+      "filename": "2025-02-04-bitbucket-cloud-support-circleci-pipeline-failure-detection.md",
+      "metadata": {
+        "title": "Bitbucket Cloud Support & CircleCI Pipeline Failure Detection",
+        "date": "2025-02-04",
+        "slug": "bitbucket-cloud-support-circleci-pipeline-failure-detection",
+        "tags": [
+          "improvement",
+          "bugfix",
+          "docs"
+        ],
+        "heroImage": "/img/changelog/bitbucket-cloud-support-circleci-pipeline-failure-detection-hero.webp",
+        "summary": "Bitbucket Cloud Support & CircleCI Pipeline Failure Detection",
+        "permalink": "/changelog/bitbucket-cloud-support-circleci-pipeline-failure-detection"
+      }
+    },
+    {
+      "id": "linear-issue-creation",
+      "filename": "2025-01-21-linear-issue-creation.md",
+      "metadata": {
+        "title": "Linear Issue Creation",
+        "date": "2025-01-21",
+        "slug": "linear-issue-creation",
+        "tags": [
+          "feature",
+          "bugfix"
+        ],
+        "heroImage": "/img/changelog/linear-issue-creation-hero.webp",
+        "summary": "Linear Issue Creation",
+        "permalink": "/changelog/linear-issue-creation"
+      }
+    },
+    {
+      "id": "gitlab-pipeline-failure-detection-and-remediation",
+      "filename": "2025-01-13-gitlab-pipeline-failure-detection-and-remediation.md",
+      "metadata": {
+        "title": "GitLab Pipeline Failure Detection and Remediation",
+        "date": "2025-01-13",
+        "slug": "gitlab-pipeline-failure-detection-and-remediation",
+        "tags": [
+          "bugfix"
+        ],
+        "heroImage": "/img/changelog/gitlab-pipeline-failure-detection-and-remediation-hero.webp",
+        "summary": "GitLab Pipeline Failure Detection and Remediation",
+        "permalink": "/changelog/gitlab-pipeline-failure-detection-and-remediation"
+      }
+    },
+    {
+      "id": "github-action-failure-detection-and-remediation",
+      "filename": "2025-01-02-github-action-failure-detection-and-remediation.md",
+      "metadata": {
+        "title": "GitHub Action Failure Detection and Remediation",
+        "date": "2025-01-02",
+        "slug": "github-action-failure-detection-and-remediation",
+        "tags": [
+          "bugfix",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/github-action-failure-detection-and-remediation-hero.webp",
+        "summary": "GitHub Action Failure Detection and Remediation",
+        "permalink": "/changelog/github-action-failure-detection-and-remediation"
+      }
+    },
+    {
+      "id": "streamlined-multi-repository-installation-for-gitlab-and-azure-devops",
+      "filename": "2024-12-23-streamlined-multi-repository-installation-for-gitlab-and-azure-devops.md",
+      "metadata": {
+        "title": "Streamlined Multi-Repository Installation for GitLab and Azure DevOps",
+        "date": "2024-12-23",
+        "slug": "streamlined-multi-repository-installation-for-gitlab-and-azure-devops",
+        "tags": [
+          "improvement"
+        ],
+        "heroImage": "/img/changelog/streamlined-multi-repository-installation-for-gitlab-and-azure-devops-hero.webp",
+        "summary": "Streamlined Multi-Repository Installation for GitLab and Azure DevOps",
+        "permalink": "/changelog/streamlined-multi-repository-installation-for-gitlab-and-azure-devops"
+      }
+    },
+    {
+      "id": "docstrings-beta",
+      "filename": "2024-12-12-docstrings-beta.md",
+      "metadata": {
+        "title": "Docstrings (Beta)",
+        "date": "2024-12-12",
+        "slug": "docstrings-beta",
+        "tags": [
+          "feature",
+          "docs"
+        ],
+        "heroImage": "/img/changelog/docstrings-beta-hero.webp",
+        "summary": "Docstrings (Beta)",
+        "permalink": "/changelog/docstrings-beta"
+      }
+    },
+    {
+      "id": "code-review-performance-enhancements-with-improved-comment-resolution-logic",
+      "filename": "2024-11-25-code-review-performance-enhancements-with-improved-comment-resolution-logic.md",
+      "metadata": {
+        "title": "Code Review Performance Enhancements with Improved Comment Resolution Logic",
+        "date": "2024-11-25",
+        "slug": "code-review-performance-enhancements-with-improved-comment-resolution-logic",
+        "tags": [
+          "improvement",
+          "bugfix"
+        ],
+        "heroImage": "/img/changelog/code-review-performance-enhancements-with-improved-comment-resolution-logic-hero.webp",
+        "summary": "Code Review Performance Enhancements with Improved Comment Resolution Logic",
+        "permalink": "/changelog/code-review-performance-enhancements-with-improved-comment-resolution-logic"
+      }
+    },
+    {
+      "id": "support-for-on-premises-learning-and-gitlab-follow-up-issue-creation",
+      "filename": "2024-11-20-support-for-on-premises-learning-and-gitlab-follow-up-issue-creation.md",
+      "metadata": {
+        "title": "Support for On-premises Learning and GitLab Follow-up Issue Creation",
+        "date": "2024-11-20",
+        "slug": "support-for-on-premises-learning-and-gitlab-follow-up-issue-creation",
+        "tags": [
+          "improvement",
+          "bugfix"
+        ],
+        "heroImage": "/img/changelog/support-for-on-premises-learning-and-gitlab-follow-up-issue-creation-hero.webp",
+        "summary": "Support for On-premises Learning and GitLab Follow-up Issue Creation",
+        "permalink": "/changelog/support-for-on-premises-learning-and-gitlab-follow-up-issue-creation"
+      }
+    },
+    {
+      "id": "eslint-support",
+      "filename": "2024-11-08-eslint-support.md",
+      "metadata": {
+        "title": "ESLint Support",
+        "date": "2024-11-08",
+        "slug": "eslint-support",
+        "tags": [
+          "improvement"
+        ],
+        "heroImage": "/img/changelog/eslint-support-hero.webp",
+        "summary": "ESLint Support",
+        "permalink": "/changelog/eslint-support"
+      }
+    },
+    {
+      "id": "learnings-and-metrics-iteration-for-coderabbit-self-hosted-customers",
+      "filename": "2024-10-31-learnings-and-metrics-iteration-for-coderabbit-self-hosted-customers.md",
+      "metadata": {
+        "title": "Learnings and Metrics Iteration for CodeRabbit Self-Hosted Customers",
+        "date": "2024-10-31",
+        "slug": "learnings-and-metrics-iteration-for-coderabbit-self-hosted-customers",
+        "tags": [
+          "feature",
+          "improvement"
+        ],
+        "heroImage": "/img/changelog/learnings-and-metrics-iteration-for-coderabbit-self-hosted-customers-hero.webp",
+        "summary": "Learnings and Metrics Iteration for CodeRabbit Self-Hosted Customers",
+        "permalink": "/changelog/learnings-and-metrics-iteration-for-coderabbit-self-hosted-customers"
+      }
+    },
+    {
+      "id": "microsoft-teams-integration-bitbucket-support",
+      "filename": "2024-10-30-microsoft-teams-integration-bitbucket-support.md",
+      "metadata": {
+        "title": "Microsoft Teams Integration & Bitbucket Support",
+        "date": "2024-10-30",
+        "slug": "microsoft-teams-integration-bitbucket-support",
+        "tags": [
+          "general"
+        ],
+        "heroImage": "/img/changelog/microsoft-teams-integration-bitbucket-support-hero.webp",
+        "summary": "Microsoft Teams Integration & Bitbucket Support",
+        "permalink": "/changelog/microsoft-teams-integration-bitbucket-support"
+      }
+    },
+    {
+      "id": "security-and-sast-remediation-improvements",
+      "filename": "2024-10-22-security-and-sast-remediation-improvements.md",
+      "metadata": {
+        "title": "Security and SAST Remediation Improvements",
+        "date": "2024-10-22",
+        "slug": "security-and-sast-remediation-improvements",
+        "tags": [
+          "feature",
+          "improvement",
+          "security",
+          "docs",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/security-and-sast-remediation-improvements-hero.webp",
+        "summary": "Security and SAST Remediation Improvements",
+        "permalink": "/changelog/security-and-sast-remediation-improvements"
+      }
+    },
+    {
+      "id": "related-prs-and-label-suggestions",
+      "filename": "2024-09-09-related-prs-and-label-suggestions.md",
+      "metadata": {
+        "title": "Related PRs and Label suggestions",
+        "date": "2024-09-09",
+        "slug": "related-prs-and-label-suggestions",
+        "tags": [
+          "bugfix"
+        ],
+        "heroImage": "/img/changelog/related-prs-and-label-suggestions-hero.webp",
+        "summary": "Related PRs and Label suggestions",
+        "permalink": "/changelog/related-prs-and-label-suggestions"
+      }
+    },
+    {
+      "id": "new-dashboard",
+      "filename": "2024-08-15-new-dashboard.md",
+      "metadata": {
+        "title": "New Dashboard",
+        "date": "2024-08-15",
+        "slug": "new-dashboard",
+        "tags": [
+          "improvement",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/new-dashboard-hero.webp",
+        "summary": "New Dashboard",
+        "permalink": "/changelog/new-dashboard"
+      }
+    },
+    {
+      "id": "grant-admin-privileges-to-members",
+      "filename": "2024-07-31-grant-admin-privileges-to-members.md",
+      "metadata": {
+        "title": "Grant Admin Privileges to Members",
+        "date": "2024-07-31",
+        "slug": "grant-admin-privileges-to-members",
+        "tags": [
+          "general"
+        ],
+        "heroImage": "/img/changelog/grant-admin-privileges-to-members-hero.webp",
+        "summary": "Grant Admin Privileges to Members",
+        "permalink": "/changelog/grant-admin-privileges-to-members"
+      }
+    },
+    {
+      "id": "new-features-and-improvements",
+      "filename": "2024-07-16-new-features-and-improvements.md",
+      "metadata": {
+        "title": "New Features and Improvements",
+        "date": "2024-07-16",
+        "slug": "new-features-and-improvements",
+        "tags": [
+          "feature",
+          "improvement",
+          "bugfix",
+          "security",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/new-features-and-improvements-hero.webp",
+        "summary": "New Features and Improvements",
+        "permalink": "/changelog/new-features-and-improvements"
+      }
+    },
+    {
+      "id": "new-features-and-improvements-1",
+      "filename": "2024-05-28-new-features-and-improvements-1.md",
+      "metadata": {
+        "title": "New Features and Improvements",
+        "date": "2024-05-28",
+        "slug": "new-features-and-improvements-1",
+        "tags": [
+          "feature",
+          "improvement"
+        ],
+        "heroImage": "/img/changelog/new-features-and-improvements-1-hero.webp",
+        "summary": "New Features and Improvements",
+        "permalink": "/changelog/new-features-and-improvements-1"
+      }
+    },
+    {
+      "id": "new-features-and-improvements-2",
+      "filename": "2024-05-23-new-features-and-improvements-2.md",
+      "metadata": {
+        "title": "New Features and Improvements",
+        "date": "2024-05-23",
+        "slug": "new-features-and-improvements-2",
+        "tags": [
+          "feature",
+          "improvement",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/new-features-and-improvements-2-hero.webp",
+        "summary": "New Features and Improvements",
+        "permalink": "/changelog/new-features-and-improvements-2"
+      }
+    },
+    {
+      "id": "static-analyzers-and-linters-integration",
+      "filename": "2024-04-18-static-analyzers-and-linters-integration.md",
+      "metadata": {
+        "title": "Static Analyzers and Linters Integration",
+        "date": "2024-04-18",
+        "slug": "static-analyzers-and-linters-integration",
+        "tags": [
+          "bugfix",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/static-analyzers-and-linters-integration-hero.webp",
+        "summary": "Static Analyzers and Linters Integration",
+        "permalink": "/changelog/static-analyzers-and-linters-integration"
+      }
+    },
+    {
+      "id": "gdpr-compliance",
+      "filename": "2024-04-01-gdpr-compliance.md",
+      "metadata": {
+        "title": "GDPR Compliance",
+        "date": "2024-04-01",
+        "slug": "gdpr-compliance",
+        "tags": [
+          "general"
+        ],
+        "heroImage": "/img/changelog/gdpr-compliance-hero.webp",
+        "summary": "GDPR Compliance",
+        "permalink": "/changelog/gdpr-compliance"
+      }
+    },
+    {
+      "id": "github-check-fixes",
+      "filename": "2024-03-12-github-check-fixes.md",
+      "metadata": {
+        "title": "GitHub Check Fixes",
+        "date": "2024-03-12",
+        "slug": "github-check-fixes",
+        "tags": [
+          "bugfix",
+          "tools"
+        ],
+        "heroImage": "/img/changelog/github-check-fixes-hero.webp",
+        "summary": "GitHub Check Fixes",
+        "permalink": "/changelog/github-check-fixes"
+      }
+    },
+    {
+      "id": "soc-2-type-ii-compliance",
+      "filename": "2024-03-11-soc-2-type-ii-compliance.md",
+      "metadata": {
+        "title": "SOC 2 Type II Compliance",
+        "date": "2024-03-11",
+        "slug": "soc-2-type-ii-compliance",
+        "tags": [
+          "security"
+        ],
+        "heroImage": "/img/changelog/soc-2-type-ii-compliance-hero.webp",
+        "summary": "SOC 2 Type II Compliance",
+        "permalink": "/changelog/soc-2-type-ii-compliance"
+      }
+    },
+    {
+      "id": "enhanced-markdown-review",
+      "filename": "2024-03-02-enhanced-markdown-review.md",
+      "metadata": {
+        "title": "Enhanced Markdown Review",
+        "date": "2024-03-02",
+        "slug": "enhanced-markdown-review",
+        "tags": [
+          "improvement"
+        ],
+        "heroImage": "/img/changelog/enhanced-markdown-review-hero.webp",
+        "summary": "Enhanced Markdown Review",
+        "permalink": "/changelog/enhanced-markdown-review"
+      }
+    },
+    {
+      "id": "self-hosted-gitlab-integration",
+      "filename": "2024-01-17-self-hosted-gitlab-integration.md",
+      "metadata": {
+        "title": "Self-hosted GitLab Integration",
+        "date": "2024-01-17",
+        "slug": "self-hosted-gitlab-integration",
+        "tags": [
+          "docs"
+        ],
+        "heroImage": "/img/changelog/self-hosted-gitlab-integration-hero.webp",
+        "summary": "Self-hosted GitLab Integration",
+        "permalink": "/changelog/self-hosted-gitlab-integration"
+      }
+    },
+    {
+      "id": "deep-insights-feature-release",
+      "filename": "2024-01-02-deep-insights-feature-release.md",
+      "metadata": {
+        "title": "Deep Insights Feature Release",
+        "date": "2024-01-02",
+        "slug": "deep-insights-feature-release",
+        "tags": [
+          "bugfix"
+        ],
+        "heroImage": "/img/changelog/deep-insights-feature-release-hero.webp",
+        "summary": "Deep Insights Feature Release",
+        "permalink": "/changelog/deep-insights-feature-release"
+      }
+    },
+    {
+      "id": "request-changes-workflow",
+      "filename": "2023-12-18-request-changes-workflow.md",
+      "metadata": {
+        "title": "Request Changes Workflow",
+        "date": "2023-12-18",
+        "slug": "request-changes-workflow",
+        "tags": [
+          "bugfix"
+        ],
+        "heroImage": "/img/changelog/request-changes-workflow-hero.webp",
+        "summary": "Request Changes Workflow",
+        "permalink": "/changelog/request-changes-workflow"
+      }
+    },
+    {
+      "id": "multiple-features-release",
+      "filename": "2023-12-05-multiple-features-release.md",
+      "metadata": {
+        "title": "Multiple Features Release",
+        "date": "2023-12-05",
+        "slug": "multiple-features-release",
+        "tags": [
+          "bugfix"
+        ],
+        "heroImage": "/img/changelog/multiple-features-release-hero.webp",
+        "summary": "Multiple Features Release",
+        "permalink": "/changelog/multiple-features-release"
+      }
+    },
+    {
+      "id": "issue-validation",
+      "filename": "2023-11-05-issue-validation.md",
+      "metadata": {
+        "title": "Issue Validation",
+        "date": "2023-11-05",
+        "slug": "issue-validation",
+        "tags": [
+          "bugfix"
+        ],
+        "heroImage": "/img/changelog/issue-validation-hero.webp",
+        "summary": "Issue Validation",
+        "permalink": "/changelog/issue-validation"
+      }
+    },
+    {
+      "id": "committable-suggestions",
+      "filename": "2023-11-01-committable-suggestions.md",
+      "metadata": {
+        "title": "Committable Suggestions",
+        "date": "2023-11-01",
+        "slug": "committable-suggestions",
+        "tags": [
+          "general"
+        ],
+        "heroImage": "/img/changelog/committable-suggestions-hero.webp",
+        "summary": "Committable Suggestions",
+        "permalink": "/changelog/committable-suggestions"
+      }
+    },
+    {
+      "id": "resolve-command",
+      "filename": "2023-10-28-resolve-command.md",
+      "metadata": {
+        "title": "Resolve Command",
+        "date": "2023-10-28",
+        "slug": "resolve-command",
+        "tags": [
+          "bugfix"
+        ],
+        "heroImage": "/img/changelog/resolve-command-hero.webp",
+        "summary": "Resolve Command",
+        "permalink": "/changelog/resolve-command"
+      }
+    },
+    {
+      "id": "coderabbit-commands",
+      "filename": "2023-10-23-coderabbit-commands.md",
+      "metadata": {
+        "title": "CodeRabbit Commands",
+        "date": "2023-10-23",
+        "slug": "coderabbit-commands",
+        "tags": [
+          "general"
+        ],
+        "heroImage": "/img/changelog/coderabbit-commands-hero.webp",
+        "summary": "CodeRabbit Commands",
+        "permalink": "/changelog/coderabbit-commands"
+      }
+    },
+    {
+      "id": "yml-file-customization",
+      "filename": "2023-10-12-yml-file-customization.md",
+      "metadata": {
+        "title": "YML File Customization",
+        "date": "2023-10-12",
+        "slug": "yml-file-customization",
+        "tags": [
+          "docs"
+        ],
+        "heroImage": "/img/changelog/yml-file-customization-hero.webp",
+        "summary": "YML File Customization",
+        "permalink": "/changelog/yml-file-customization"
+      }
+    },
+    {
+      "id": "path-based-review-instructions",
+      "filename": "2023-09-21-path-based-review-instructions.md",
+      "metadata": {
+        "title": "Path-Based Review Instructions",
+        "date": "2023-09-21",
+        "slug": "path-based-review-instructions",
+        "tags": [
+          "general"
+        ],
+        "heroImage": "/img/changelog/path-based-review-instructions-hero.webp",
+        "summary": "Path-Based Review Instructions",
+        "permalink": "/changelog/path-based-review-instructions"
+      }
+    },
+    {
+      "id": "introducing-coderabbit-for-gitlab-integration",
+      "filename": "2023-09-19-introducing-coderabbit-for-gitlab-integration.md",
+      "metadata": {
+        "title": "Introducing CodeRabbit for GitLab Integration",
+        "date": "2023-09-19",
+        "slug": "introducing-coderabbit-for-gitlab-integration",
+        "tags": [
+          "general"
+        ],
+        "heroImage": "/img/changelog/introducing-coderabbit-for-gitlab-integration-hero.webp",
+        "summary": "Introducing CodeRabbit for GitLab Integration",
+        "permalink": "/changelog/introducing-coderabbit-for-gitlab-integration"
+      }
+    }
+  ]
+}

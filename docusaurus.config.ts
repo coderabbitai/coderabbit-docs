@@ -53,6 +53,26 @@ const config: Config = {
 
 	plugins: [
 		[
+			"@docusaurus/plugin-content-docs",
+			{
+				id: "changelog",
+				path: "changelog",
+				routeBasePath: "changelog",
+				sidebarPath: "./sidebarsChangelog.ts",
+				showLastUpdateTime: true,
+				showLastUpdateAuthor: false,
+				editUrl: "https://github.com/coderabbit/coderabbit-docs/edit/main/",
+				remarkPlugins: [],
+				rehypePlugins: [],
+				beforeDefaultRemarkPlugins: [],
+				beforeDefaultRehypePlugins: [],
+				// Disable version warnings for changelog
+				onInlineTags: "ignore",
+				// Custom metadata
+				docItemComponent: "@site/src/components/ChangelogItem",
+			},
+		],
+		[
 			"@docusaurus/plugin-client-redirects",
 			{
 				redirects: [
@@ -111,6 +131,11 @@ const config: Config = {
 					{
 						from: "/configure-coderabbit",
 						to: "/getting-started/configure-coderabbit",
+					},
+					// Simple redirect from old changelog page to new section
+					{
+						from: "/docs/changelog",
+						to: "/changelog",
 					},
 				],
 			},
@@ -233,6 +258,7 @@ const config: Config = {
 		docs: {
 			sidebar: {
 				hideable: true,
+				autoCollapseCategories: false, // Keeps timeline expanded
 			},
 		},
 		metadata: [{ name: "twitter:card", content: "summary_large_image" }],
@@ -252,6 +278,11 @@ const config: Config = {
 					position: "left",
 					to: "/",
 					className: "navbar-link-active",
+				},
+				{
+					label: "Changelog",
+					position: "left",
+					to: "/changelog",
 				},
 				{
 					href: "https://coderabbit.ai/blog",

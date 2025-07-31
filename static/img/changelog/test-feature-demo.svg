@@ -1,0 +1,9 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#f0f0f0"/>
+  <text x="400" y="225" font-family="Arial, sans-serif" font-size="36" fill="#666" text-anchor="middle">
+    Feature Demo Placeholder
+  </text>
+  <text x="400" y="270" font-family="Arial, sans-serif" font-size="18" fill="#999" text-anchor="middle">
+    Replace with actual GIF/image
+  </text>
+</svg>

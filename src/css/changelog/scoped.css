@@ -1,0 +1,87 @@
+/* Import variables */
+@import './variables.css';
+
+/* All styles scoped to changelog pages only */
+/* Changelog page specific styles - properly scoped */
+[data-changelog="true"] {
+  
+  /* Remove ALL ToC elements - now replaced with date display */
+  .theme-doc-toc-desktop,
+  .theme-doc-toc-mobile,
+  .table-of-contents,
+  .toc-wrapper,
+  .col--3,
+  .tocCollapsible_node_modules-\@docusaurus-theme-classic-lib-theme-TOC-styles-module {
+    display: none !important;
+  }
+
+  /* Override Docusaurus default layout since we have custom layout */
+  .docItemContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-styles-module {
+    max-width: 100%;
+  }
+  
+  /* Remove default padding/margins */
+  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  /* Make main content full width when sidebar is hidden */
+  main[class*="docMainContainer"] {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  .col.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    max-width: 100% !important;
+  }
+
+  /* Hide breadcrumbs */
+  .theme-doc-breadcrumbs {
+    display: none;
+  }
+  
+  /* Typography specific to changelog */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--changelog-heading-font);
+  }
+  
+  p, li {
+    font-family: var(--changelog-body-font);
+    line-height: 1.7;
+  }
+  
+  /* Clean, modern styling inspired by Vercel/Linear */
+  article {
+    font-size: 1.0625rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* Smooth scroll behavior - only for changelog navigation */
+@media (prefers-reduced-motion: no-preference) {
+  [data-changelog="true"] {
+    scroll-behavior: smooth;
+  }
+}

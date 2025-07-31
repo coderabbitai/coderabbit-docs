@@ -1,0 +1,144 @@
+.changelogList {
+  margin: 2rem 0;
+}
+
+.changelogEntry {
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.changelogEntry:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--ifm-global-shadow-md);
+  transform: translateY(-2px);
+}
+
+.entryLink {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.entryLink:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.entryImage {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.entryImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.changelogEntry:hover .entryImage img {
+  transform: scale(1.05);
+}
+
+.entryContent {
+  padding: 1.5rem;
+}
+
+.entryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.entryTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.entryLink:hover .entryTitle {
+  color: var(--ifm-color-primary);
+}
+
+.entryDate {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.entrySummary {
+  margin: 0.75rem 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+}
+
+.entryTags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+}
+
+.tag--feature {
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darkest);
+}
+
+.tag--improvement {
+  background: var(--ifm-color-success-lightest);
+  color: var(--ifm-color-success-darkest);
+}
+
+.tag--bugfix {
+  background: var(--ifm-color-warning-lightest);
+  color: var(--ifm-color-warning-darkest);
+}
+
+.tag--tools {
+  background: var(--ifm-color-info-lightest);
+  color: var(--ifm-color-info-darkest);
+}
+
+.tag--docs {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.viewAll {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .entryHeader {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .entryTitle {
+    font-size: 1.1rem;
+  }
+  
+  .entryContent {
+    padding: 1rem;
+  }
+}

@@ -15,6 +15,162 @@
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Work+Sans:wght@400;500;600;700&display=swap");
+@import "./changelog/index.css";
+
+/* Timeline Sidebar Styles for Changelog */
+[data-changelog="true"] .theme-doc-sidebar-menu,
+nav[aria-label*="changelog"] .theme-doc-sidebar-menu,
+.sidebar-changelog .theme-doc-sidebar-menu {
+  position: relative;
+  padding-left: 2rem;
+}
+
+/* Timeline line */
+[data-changelog="true"] .theme-doc-sidebar-menu::before,
+nav[aria-label*="changelog"] .theme-doc-sidebar-menu::before,
+.sidebar-changelog .theme-doc-sidebar-menu::before {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--changelog-timeline-color, var(--ifm-color-emphasis-300));
+}
+
+/* Timeline dots for each item */
+[data-changelog="true"] .menu__link,
+nav[aria-label*="changelog"] .menu__link,
+.sidebar-changelog .menu__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+[data-changelog="true"] .menu__link::before,
+nav[aria-label*="changelog"] .menu__link::before,
+.sidebar-changelog .menu__link::before {
+  content: "";
+  position: absolute;
+  left: -1.25rem;
+  width: var(--changelog-timeline-dot-size, 12px);
+  height: var(--changelog-timeline-dot-size, 12px);
+  background: var(--ifm-background-surface-color);
+  border: 2px solid var(--changelog-timeline-color, var(--ifm-color-emphasis-300));
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+/* Active item dot */
+[data-changelog="true"] .menu__link--active::before,
+nav[aria-label*="changelog"] .menu__link--active::before,
+.sidebar-changelog .menu__link--active::before {
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  transform: scale(1.2);
+}
+
+/* Hover effect */
+[data-changelog="true"] .menu__link:hover::before,
+nav[aria-label*="changelog"] .menu__link:hover::before,
+.sidebar-changelog .menu__link:hover::before {
+  border-color: var(--ifm-color-primary);
+  transform: scale(1.1);
+}
+
+/* Date display in sidebar items */
+[data-changelog="true"] .menu__link,
+nav[aria-label*="changelog"] .menu__link,
+.sidebar-changelog .menu__link {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* Month/Year headers styling */
+[data-changelog="true"] .menu__list-item-collapsible,
+nav[aria-label*="changelog"] .menu__list-item-collapsible,
+.sidebar-changelog .menu__list-item-collapsible {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+[data-changelog="true"] .menu__list-item-collapsible > .menu__link,
+nav[aria-label*="changelog"] .menu__list-item-collapsible > .menu__link,
+.sidebar-changelog .menu__list-item-collapsible > .menu__link {
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--ifm-color-emphasis-600);
+  padding-left: 0;
+}
+
+[data-changelog="true"] .menu__list-item-collapsible > .menu__link::before,
+nav[aria-label*="changelog"] .menu__list-item-collapsible > .menu__link::before,
+.sidebar-changelog .menu__list-item-collapsible > .menu__link::before {
+  display: none;
+}
+
+/* Nested items indentation */
+[data-changelog="true"] .menu__list .menu__list,
+nav[aria-label*="changelog"] .menu__list .menu__list,
+.sidebar-changelog .menu__list .menu__list {
+  padding-left: 0;
+}
+
+/* Timeline end cap */
+[data-changelog="true"] .theme-doc-sidebar-menu::after,
+nav[aria-label*="changelog"] .theme-doc-sidebar-menu::after,
+.sidebar-changelog .theme-doc-sidebar-menu::after {
+  content: "";
+  position: absolute;
+  left: 0.625rem;
+  bottom: -0.5rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  background: var(--changelog-timeline-color, var(--ifm-color-emphasis-300));
+  border-radius: 50%;
+}
+
+/* Mobile responsive timeline adjustments */
+@media (max-width: 996px) {
+  /* Reduce timeline spacing on mobile */
+  nav[aria-label*="changelog"] .theme-doc-sidebar-menu,
+  .sidebar-changelog .theme-doc-sidebar-menu {
+    padding-left: 1.5rem;
+  }
+  
+  /* Adjust timeline line position */
+  nav[aria-label*="changelog"] .theme-doc-sidebar-menu::before,
+  .sidebar-changelog .theme-doc-sidebar-menu::before {
+    left: 0.5rem;
+  }
+  
+  /* Adjust dot positions */
+  nav[aria-label*="changelog"] .menu__link::before,
+  .sidebar-changelog .menu__link::before {
+    left: -1.5rem;
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Adjust end cap position */
+  nav[aria-label*="changelog"] .theme-doc-sidebar-menu::after,
+  .sidebar-changelog .theme-doc-sidebar-menu::after {
+    left: 0.375rem;
+  }
+  
+  /* Ensure search stays visible on mobile */
+  .changelog-search-mobile {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--ifm-background-surface-color);
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--ifm-toc-border-color);
+  }
+}
 
 @tailwind base;
 @tailwind components;
@@ -278,6 +434,202 @@ a[docid="docs"] > svg {
 
 .center-image {
 	text-align: center;
+}
+
+/* ===== TIMELINE SIDEBAR STYLES ===== */
+/* Timeline variables */
+:root {
+	--timeline-line-color: #e1e4e8;
+	--timeline-dot-color: var(--ifm-color-primary);
+	--timeline-dot-size: 12px;
+	--timeline-line-width: 2px;
+	--timeline-spacing: 2rem;
+}
+
+[data-theme="dark"] {
+	--timeline-line-color: #30363d;
+}
+
+/* Apply timeline styles to specific sidebar */
+.timeline-sidebar .menu__list {
+	position: relative;
+	padding-left: var(--timeline-spacing);
+}
+
+/* Vertical line for timeline */
+.timeline-sidebar .menu__list::before {
+	content: "";
+	position: absolute;
+	left: calc(var(--timeline-dot-size) / 2);
+	top: 0;
+	bottom: 0;
+	width: var(--timeline-line-width);
+	background: var(--timeline-line-color);
+}
+
+/* Timeline dots for each item */
+.timeline-sidebar .menu__list-item {
+	position: relative;
+}
+
+.timeline-sidebar .menu__list-item::before {
+	content: "";
+	position: absolute;
+	left: calc(-1 * var(--timeline-spacing) + var(--timeline-dot-size) / 2);
+	top: 0.75rem;
+	width: var(--timeline-dot-size);
+	height: var(--timeline-dot-size);
+	background: var(--timeline-dot-color);
+	border: 2px solid var(--ifm-background-color-primary);
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* Active item dot styling */
+.timeline-sidebar .menu__link--active::before {
+	box-shadow: 0 0 0 4px var(--ifm-color-primary-lighter);
+}
+
+/* Hover effect on dots */
+.timeline-sidebar .menu__list-item:hover::before {
+	transform: scale(1.2);
+	transition: transform 0.2s ease;
+}
+
+/* Category styling for timeline */
+.timeline-sidebar .menu__list-item--collapsed > .menu__list-item-collapsible::before {
+	background: var(--timeline-line-color);
+}
+
+/* Nested items in timeline */
+.timeline-sidebar .menu__list .menu__list {
+	margin-left: calc(var(--timeline-spacing) / 2);
+}
+
+.timeline-sidebar .menu__list .menu__list::before {
+	display: none;
+}
+
+.timeline-sidebar .menu__list .menu__list .menu__list-item::before {
+	width: 8px;
+	height: 8px;
+	left: calc(-1.5 * var(--timeline-spacing) + var(--timeline-dot-size) / 2 + 2px);
+}
+
+/* Date/version badges for timeline items */
+.timeline-sidebar .menu__link {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.timeline-sidebar .menu__link-badge {
+	font-size: 0.75rem;
+	padding: 0.125rem 0.5rem;
+	background: var(--ifm-color-emphasis-200);
+	border-radius: 0.25rem;
+	margin-left: auto;
+}
+
+/* Changelog-specific timeline styling */
+.theme-doc-sidebar-container:has(.changelog-sidebar) {
+	--timeline-dot-color: #28a745;
+}
+
+/* Apply timeline to changelog sidebar automatically */
+nav[aria-label*="changelog"] .menu__list,
+.changelog-sidebar .menu__list {
+	position: relative;
+	padding-left: var(--timeline-spacing);
+}
+
+nav[aria-label*="changelog"] .menu__list::before,
+.changelog-sidebar .menu__list::before {
+	content: "";
+	position: absolute;
+	left: calc(var(--timeline-dot-size) / 2);
+	top: 0;
+	bottom: 0;
+	width: var(--timeline-line-width);
+	background: var(--timeline-line-color);
+}
+
+nav[aria-label*="changelog"] .menu__list-item::before,
+.changelog-sidebar .menu__list-item::before {
+	content: "";
+	position: absolute;
+	left: calc(-1 * var(--timeline-spacing) + var(--timeline-dot-size) / 2);
+	top: 0.75rem;
+	width: var(--timeline-dot-size);
+	height: var(--timeline-dot-size);
+	background: var(--timeline-dot-color);
+	border: 2px solid var(--ifm-background-color-primary);
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* Additional timeline variations */
+
+/* Milestone timeline with larger dots */
+.timeline-milestone::before {
+	width: 16px !important;
+	height: 16px !important;
+	left: calc(-1 * var(--timeline-spacing) + 8px) !important;
+}
+
+/* Timeline with icons (using customProps) */
+.timeline-sidebar .menu__link[data-icon]::after {
+	content: attr(data-icon);
+	margin-left: auto;
+	font-size: 1.2rem;
+}
+
+/* Animated timeline dots */
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 var(--timeline-dot-color);
+	}
+	70% {
+		box-shadow: 0 0 0 6px transparent;
+	}
+	100% {
+		box-shadow: 0 0 0 0 transparent;
+	}
+}
+
+.timeline-sidebar .menu__link--active + .menu__list-item::before {
+	animation: pulse 2s infinite;
+}
+
+/* Timeline with dates */
+.timeline-item[data-date]::after {
+	content: attr(data-date);
+	position: absolute;
+	right: 1rem;
+	top: 0.75rem;
+	font-size: 0.75rem;
+	color: var(--ifm-color-emphasis-600);
+}
+
+/* Gradient timeline line */
+.timeline-gradient .menu__list::before {
+	background: linear-gradient(
+		to bottom,
+		var(--timeline-dot-color),
+		var(--timeline-line-color)
+	);
+}
+
+/* Timeline end cap */
+.timeline-sidebar .menu__list::after {
+	content: "";
+	position: absolute;
+	left: calc(var(--timeline-dot-size) / 2 - 2px);
+	bottom: -4px;
+	width: 6px;
+	height: 6px;
+	background: var(--timeline-line-color);
+	border-radius: 50%;
 }
 
 @media screen and (max-width: 480px) {

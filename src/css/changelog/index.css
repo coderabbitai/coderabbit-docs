@@ -1,0 +1,96 @@
+/* Import all changelog styles */
+@import './variables.css';
+@import './scoped.css';
+
+/* Root changelog styles - now using imported variables */
+
+/* Hide ToC for all changelog pages */
+.theme-doc-page[data-changelog="true"] .theme-doc-toc-desktop,
+.theme-doc-page[data-changelog="true"] .theme-doc-toc-mobile {
+	display: none;
+}
+
+/* Adjust content width when ToC is hidden */
+.theme-doc-page[data-changelog="true"] .theme-doc-markdown {
+	max-width: 100%;
+}
+
+/* Changelog-specific styling */
+.theme-doc-page[data-changelog="true"] article {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Style the main title differently */
+.theme-doc-page[data-changelog="true"] .theme-doc-markdown > h1:first-child {
+	display: none; /* Hide since we show it in metadata */
+}
+
+/* Enhanced link styling for changelog */
+.theme-doc-page[data-changelog="true"] a {
+	color: var(--ifm-color-primary);
+	transition: color 0.2s;
+}
+
+.theme-doc-page[data-changelog="true"] a:hover {
+	color: var(--ifm-color-primary-dark);
+	text-decoration: underline;
+}
+
+/* Code blocks in changelog */
+.theme-doc-page[data-changelog="true"] code {
+	background: var(--ifm-color-emphasis-200);
+	padding: 0.1rem 0.3rem;
+	border-radius: 0.2rem;
+}
+
+/* Blockquotes for important notes */
+.theme-doc-page[data-changelog="true"] blockquote {
+	border-left: 4px solid var(--ifm-color-primary);
+	background: var(--ifm-color-primary-lightest);
+	padding: 1rem;
+	margin: 1.5rem 0;
+}
+
+[data-theme="dark"] .theme-doc-page[data-changelog="true"] blockquote {
+	background: rgba(255, 87, 10, 0.1);
+}
+
+/* Sidebar enhancements for changelog */
+nav[aria-label*="changelog"] .menu__list-item > .menu__link,
+.sidebar-changelog .menu__list-item > .menu__link {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* Add subtle animation to timeline dots */
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 87, 10, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba(255, 87, 10, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(255, 87, 10, 0);
+	}
+}
+
+nav[aria-label*="changelog"] .menu__link--active::before,
+.sidebar-changelog .menu__link--active::before {
+	animation: pulse 2s infinite;
+}
+
+/* Special styling for breaking changes */
+nav[aria-label*="changelog"] .menu__link[href*="breaking"],
+.sidebar-changelog .menu__link[href*="breaking"] {
+	color: var(--ifm-color-danger);
+	font-weight: 500;
+}
+
+nav[aria-label*="changelog"] .menu__link[href*="breaking"]::before,
+.sidebar-changelog .menu__link[href*="breaking"]::before {
+	background: var(--ifm-color-danger);
+	border-color: var(--ifm-color-danger);
+}
