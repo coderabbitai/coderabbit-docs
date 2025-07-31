@@ -919,12 +919,12 @@ and JavaScript files in a repository's `src` directory:
 ```yaml
 path_instructions:
   - path: src/**/*.{ts,tsx,js}
-  instructions:
-    - Review the React.js/TypeScript/JavaScript code for best practices
-    - Check for common security vulnerabilities such as:
-    - SQL Injection
-    - Insecure dependencies
-    - Sensitive data exposure
+    instructions: |
+      - Review the React.js/TypeScript/JavaScript code for best practices
+      - Check for common security vulnerabilities such as:
+      - SQL Injection
+      - Insecure dependencies
+      - Sensitive data exposure
 ```
   </TabItem>
 </Tabs>
