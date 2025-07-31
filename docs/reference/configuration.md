@@ -604,8 +604,8 @@ Set the commit status to 'pending' when the review is in progress and 'success' 
 Activate this setting to disallow CodeRabbit from caching your repository's code and dependencies. This forces CodeRabbit to download the code and dependencies fresh from the repository for every code review that it performs.
 
 When caching is allowed, then CodeRabbit stores a cache of code and metadata from
-your repostory for up to seven days after its most recent code review. This cache
-lets CodeRabbit save time and effort in between subsquent reviews of the same
+your repository for up to seven days after its most recent code review. This cache
+lets CodeRabbit save time and effort in between subsequent reviews of the same
 repository. For more information, see [Caching](/reference/caching/).
 
 We recommend leaving this setting off, which allows caching, and can speed up
@@ -902,10 +902,10 @@ For more information, see [Speed up reviews by adding path filters](https://docs
   </TabItem>
 </Tabs>
 
-Path instructions are additional sets of instructions, expressed in natural lanaguge,
-that you provide to CodeRabbit for reveiwing certain files in your repository.
+Path instructions are additional sets of instructions, expressed in natural language,
+that you provide to CodeRabbit for reviewing certain files in your repository.
 
-You associate each set of instuctions with a file path relative to the root
+You associate each set of instructions with a file path relative to the root
 of your repository. Your path specification can use extended glob patterns.
 
 The following example defines a set of path instructions for all TypeScript
@@ -929,7 +929,7 @@ path_instructions:
   </TabItem>
 </Tabs>
 
-For further examples of path instructions specific to various programming langauges,
+For further examples of path instructions specific to various programming languages,
 see [the `awesome-coderabbit` public repository](https://github.com/coderabbitai/awesome-coderabbit/tree/main/configs).
 
 #### Poem
