@@ -50,7 +50,7 @@ For example, if CodeRabbit uses a linter to suggest that your pull request use f
 
 For a video introduction to this feature, see [CodeRabbit Learnings](https://www.youtube.com/watch?v=Yu0cmmOYA-U).
 
-If you need to fine-tune CodeRabbit's behavior beyond this, then you can [add a CodeRabbit-specific configuration file](/getting-started/configure-coderabbit) to your repository, or use the CodeRabbit web UI to set further preferences. This file can include [path-based instructions](/guides/review-instructions) for how CodeRabbit should review different files within your codebase.
+If you need to fine-tune CodeRabbit's behavior beyond this, then you can [add a CodeRabbit-specific configuration file](/getting-started/configure-coderabbit) to your repository, or use the CodeRabbit web UI to set further preferences. This file can include [path instructions](/guides/review-instructions) for how CodeRabbit should review different files within your codebase.
 
 No matter how you tune and customize CodeRabbit, its default settings make it useful out of the box, able to meaningfully review pull requests within minutes of its introduction to a repository.
 
