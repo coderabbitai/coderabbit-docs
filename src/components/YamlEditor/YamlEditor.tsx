@@ -18,10 +18,14 @@ import React, { useState, useEffect } from "react"
 
 import AceEditor from "react-ace"
 import "ace-builds/src-noconflict/theme-github"
+import "ace-builds/src-noconflict/theme-monokai"
+import "ace-builds/src-noconflict/theme-terminal"
 import "ace-builds/src-noconflict/ext-language_tools"
 
 import "ace-builds/webpack-resolver"
 import "ace-builds/src-noconflict/mode-yaml"
+
+import styles from "./YamlEditor.module.css"
 
 import jsYaml from "js-yaml"
 
@@ -58,7 +62,7 @@ export default function YamlEditor() {
 
 	function validateAndSetAnnotations(yaml) {
 		try {
-			const doc = jsYaml.load(yaml, { strict: true })
+			const doc = jsYaml.load(yaml)
 			const isValid = validate(doc)
 
 			if (!isValid && validate.errors) {
@@ -151,24 +155,26 @@ export default function YamlEditor() {
 	}
 
 	return (
-		<div className="m4">
+		<div className={styles.yamlEditorContainer}>
 			<AceEditor
 				mode="yaml"
-				theme="github"
+				theme="terminal"
 				onChange={onChange}
 				value={value}
 				name="yaml-editor"
+				className={styles.yamlEditor}
 				editorProps={{ $blockScrolling: true }}
 				setOptions={{
 					useWorker: false,
 					showPrintMargin: false,
 					showGutter: true,
+					fontSize: 14,
+					fontFamily: "'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
 				}}
 				annotations={annotations}
 				width="100%"
 				height="400px"
 			/>
-			<br />
 		</div>
 	)
 }
