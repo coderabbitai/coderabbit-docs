@@ -5,6 +5,12 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## August 1, 2025
+
+### Dark Theme Support for UI App
+
+CodeRabbit app now supports Light, Dark, and System themes. Use the new theme toggle next to your profile to switch modes.
+
 ## July 17, 2025
 
 ### Enhanced Reporting Capabilities
