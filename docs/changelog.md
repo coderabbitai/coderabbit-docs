@@ -5,6 +5,24 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## August 4, 2025
+
+### Model Context Protocol (MCP) Server Integration - Early Access
+
+Pro users can now connect CodeRabbit to your external tools and knowledge bases to provide more contextual code reviews. Our AI automatically pulls relevant information from your documentation, project management tools, and internal wikis to better understand your code changes and business requirements. Connect your custom MCP servers through Settings > Integrations to get reviews and chat conversations that understand your full development context.
+
+## August 1, 2025
+
+### Dark Theme Support for UI App
+
+CodeRabbit app now supports Light, Dark, and System themes. Use the new theme toggle next to your profile to switch modes.
+
+## July 23, 2025
+
+### ⚡️ Unit Test Generation - Beta
+
+CodeRabbit's unit test generation is now available in Beta! Automatically generate comprehensive unit tests for your code changes, ensuring better test coverage and catching edge cases you might miss. Our AI analyzes your code structure and creates tests that follow best practices and your project's testing patterns. Learn more [here](https://docs.coderabbit.ai/finishing-touches/unit-test-generation), or just try it under ✨ Finishing Touches.
+
 ## July 17, 2025
 
 ### Enhanced Reporting Capabilities
@@ -244,7 +262,7 @@ import ProPlanNotice from "@site/src/components/ProPlanNotice.mdx"
 
 New and Improved Dashboards to provide more useful feedback such as:
 
-- Avgerage PR Merge Time
+- Average PR Merge Time
 - Weekly Pull Request Activity
 - Number of PRs Reviewed
 - Acceptance rate of CodeRabbit Suggestions
