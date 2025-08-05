@@ -57,7 +57,7 @@ For more information, see
 
 ### Configure learnings {#learnings}
 
-CodeRabbit learns your team's review preferences by letting you [teach it your preferences in plain language during code reviews](/integrations/knowledge-base#learnings). CodeRabbit remembers these preferences, and applies them to subsequent code reviews in the same repository.
+CodeRabbit learns your team's review preferences by letting you [teach it your preferences in plain language during code reviews](/guides/learnings). CodeRabbit remembers these preferences, and applies them to subsequent code reviews in the same repository.
 
 This setting lets you set the scope of which stored learnings that CodeRabbit should apply to its code reviews. For more information, see [Learnings](/reference/configuration#learnings) in the configuration reference.
 
