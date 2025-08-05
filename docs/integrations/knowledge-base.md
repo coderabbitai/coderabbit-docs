@@ -28,8 +28,16 @@ Watch our [video walkthrough on learnings](https://www.youtube.com/watch?v=Yu0cm
 CodeRabbit can read _code guideline_ files that set standards and expectations about
 your team's coding practices, described in natural language. CodeRabbit applies any instructions it reads from a repository's code guideline files to all subsequent code reviews.
 
-By default, CodeRabbit looks for the standard guideline files used by other AI coding assistants, including Claude Code, Cursor, and Windsurf. You can also mark any other file
-or set of files in your repository as code guideline files by providing CodeRabbit with a list
+By default, CodeRabbit looks for and loads guideline files used by other AI coding assistants, including the following:
+
+- Claude Code
+- Cursor
+- Gemini
+- GitHub Copilot
+- Windsurf
+
+You can also mark any other file
+or set of files in your repository as code guidelines by providing CodeRabbit with a list
 of paths to those files.
 
 This feature is enabled by default; you can disable it if needed.
