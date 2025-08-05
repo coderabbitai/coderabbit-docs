@@ -5,6 +5,12 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## August 4, 2025
+
+### Model Context Protocol (MCP) Server Integration - Early Access
+
+Pro users can now connect CodeRabbit to your external tools and knowledge bases to provide more contextual code reviews. Our AI automatically pulls relevant information from your documentation, project management tools, and internal wikis to better understand your code changes and business requirements. Connect your custom MCP servers through Settings > Integrations to get reviews and chat conversations that understand your full development context.
+
 ## August 1, 2025
 
 ### Dark Theme Support for UI App
