@@ -63,7 +63,7 @@ CodeRabbit works with all programming languages, with varying proficiency based 
 - Available training data
 - Community usage patterns
 
-### Whats the difference between CodeRabbit Code Reviews and CodeRabbit Reports?
+### What's the difference between CodeRabbit Code Reviews and CodeRabbit Reports?
 
 CodeRabbit offers two distinct features that serve different roles in your development workflow:
 
@@ -203,7 +203,7 @@ In-trial and open-source plans have lower rate limits than the paid plan. In all
 
 :::
 
-The following limits enforced _per developer_:
+The following limits are enforced _per developer_:
 
 | Feature                          | Free Plan                                  | Trial Plan                        | OSS Plan                      | Pro/Lite Plan                 |
 | -------------------------------- | ------------------------------------------ | --------------------------------- | ----------------------------- | ----------------------------- |

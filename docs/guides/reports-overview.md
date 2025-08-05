@@ -26,7 +26,7 @@ There are two ways to generate reports:
 
 - **[On-demand Reports](/guides/ondemand-reports)**: If you want to test a report format and produce a single report once, try the "On-demand Reports" Option. You can also generate reports programmatically through our API, but we do not recommend this as the API reporting is in beta. If you want to run an **On-demand Report** more than once then you must use the **Scheduled Reports** option.
 
-In almost every scenario we recommend using the **Scheduled Reports** option. The **On-demand Report** does not have any additional benifits from the **Scheduled Reports** and has many limitations.
+In almost every scenario we recommend using the **Scheduled Reports** option. The **On-demand Report** does not have any additional benefits from the **Scheduled Reports** and has many limitations.
 
 ## Customize reports using natural language {#customize}
 

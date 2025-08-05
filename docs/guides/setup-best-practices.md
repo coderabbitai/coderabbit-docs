@@ -1,6 +1,6 @@
 ---
 title: "Setup and configuration best practices"
-description: Best practices for seting up CodeRabbit.
+description: Best practices for setting up CodeRabbit.
 sidebar_label: Setup and configuration
 ---
 

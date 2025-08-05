@@ -158,10 +158,21 @@ CODERABBIT_LICENSE_KEY=<license-key>
 
 CODERABBIT_API_KEY=<coderabbitai-api-key>
 ENABLE_METRICS=[true]
-ENABLE_LEARNINGS=[true]
-# if using CodeRabbit's learnings, also provide the following
-# for example, s3://bucket/path/to/database, gs://bucket/path/to/database, etc.
-OBJECT_STORE_URI=[<object-store-uri>]
+
+
+# CodeRabbit - KNOWLEDGE BASE
+#
+# Requisite: To enable CodeRabbit's knowledge base, you need to provide an object store URI.
+OBJECT_STORE_URI=[<object-store-uri>] # All major object stores are supported e.g., s3://bucket/path/to/database, gs://bucket/path/to/database, etc.
+
+ENABLE_KNOWLEDGE_BASE=[true] # Global feature flag to enable/disable all knowledge base features.
+
+ENABLE_PRS_INDEX=[true] # Feature flag to enable/disable PRs indexing.
+ENABLE_ISSUES_INDEX=[true] # Feature flag to enable/disable Issues indexing.
+ENABLE_LEARNING_INDEX=[true] # Feature flag to enable/disable Learning indexing.
+ENABLE_CODE_GUIDELINES_INDEX=[true] # Feature flag to enable/disable Code Guidelines indexing.
+ENABLE_CODE_INDEX=[true] # Feature flag to enable/disable Code indexing.
+
 
 JIRA_HOST=[<jira-host-url>]
 JIRA_PAT=[<jira-personal-access-token>]
@@ -192,18 +203,18 @@ cat coderabbit.json | docker login -u _json_key --password-stdin us-docker.pkg.d
 docker pull <docker-registry>/coderabbit-agent:latest
 ```
 
-### Verify the image is up
-
-You can query `/health` endpoint to verify that the coderabbit-agent service is up and running.
-
-```bash
-curl 127.0.0.1:8080/health
-```
-
 ## Host the image
 
 You can host the image on a server, serverless function, or container environment and expose port `8080`. Run the Docker image with the equivalent command on your chosen platform, ensuring you replace the `.env` file path with the path to your actual `.env` file:
 
 ```bash
 docker run --env-file .env --publish 127.0.0.1:8080:8080 <docker-registry>/coderabbit-agent:latest
+```
+
+### Verify the image is up
+
+You can query `/health` endpoint to verify that the coderabbit-agent service is up and running.
+
+```bash
+curl 127.0.0.1:8080/health
 ```

@@ -29,11 +29,11 @@ CodeRabbit through chat, see [Interact with CodeRabbit reviews](/guides/code-rev
 
 ## Documentation commands
 
-| Command                                  | Description                                  | Use Case                                            |
-| ---------------------------------------- | -------------------------------------------- | --------------------------------------------------- |
-| `@coderabbitai generate docstrings`      | Generates docstrings for functions in the PR | When you need automatic documentation for your code |
+| Command                             | Description                                  | Use Case                                            |
+| ----------------------------------- | -------------------------------------------- | --------------------------------------------------- |
+| `@coderabbitai generate docstrings` | Generates docstrings for functions in the PR | When you need automatic documentation for your code |
 | `@coderabbitai generate unit tests` | Generates unit tests for the PR              | When you need automatic unit testing for your code  |
-| `@coderabbitai configuration`            | Shows current CodeRabbit settings            | When you need to check or export your configuration |
+| `@coderabbitai configuration`       | Shows current CodeRabbit settings            | When you need to check or export your configuration |
 
 ## Agentic chat commands
 
