@@ -31,6 +31,7 @@ reviews:
   collapse_walkthrough: false
   changed_files_summary: true
   sequence_diagrams: true
+  estimate_code_review_effort: true
   assess_linked_issues: true
   related_issues: true
   related_prs: true
