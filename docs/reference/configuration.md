@@ -1980,7 +1980,7 @@ Specify the scope of learnings to use for the knowledge base. 'local' uses the r
 
 You can define a list of paths that guide CodeRabbit to your organization's code guidelines.
 If you do, then CodeRabbit applies these guidelines to its code reviews. For more
-information, see [Code Guidelines](/integrations/knowledge-base#code_guidelines).
+information, see [Code Guidelines](/integrations/knowledge-base#code-guidelines).
 
 #### Enable code guidelines
 

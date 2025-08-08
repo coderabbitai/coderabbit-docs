@@ -127,7 +127,7 @@ const sidebars: SidebarsConfig = {
 		{
 			type: "category",
 			collapsed: true,
-			label: "Review local changes",
+			label: "IDE extensions",
 			items: [
 				"guides/about-vscode",
 				"guides/install-vscode",
@@ -135,6 +135,14 @@ const sidebars: SidebarsConfig = {
 				"guides/use-vscode-selfhosted",
 				"guides/config-vscode",
 				"guides/uninstall-vscode",
+			],
+		},
+		{
+			type: "category",
+			collapsed: true,
+			label: "Context enrichment",
+			items: [
+				"context-enrichment/mcp-server-integrations",
 			],
 		},
 		{
@@ -226,7 +234,6 @@ const sidebars: SidebarsConfig = {
 				"overview/why-coderabbit",
 				"faq",
 				"early-access",
-				"future-development",
 				"changelog",
 			],
 		},

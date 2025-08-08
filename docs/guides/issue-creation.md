@@ -37,7 +37,7 @@ To create Jira issues, ensure you have [configured the Jira integration](../inte
 
 ### Linear
 
-Make sure you have [set up the Linear integration](../integrations/issue-integrations.md#linear) to create Linear issues.
+Make sure you have [set up the Linear integration](../integrations/issue-integrations.md#Linear) to create Linear issues.
 
 ## Tips for Issue Creation
 
