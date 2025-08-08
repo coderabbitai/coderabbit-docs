@@ -301,11 +301,11 @@ If enabled, then the reviews that CodeRabbit generates include assessments of ho
 
 Besides this setting, issue assessment requires at least one of the following:
 
-- You use the built-in issue managemet system of GitHub or GitLab.
+- You use the built-in issue management system of GitHub or GitLab.
 - You have integrated CodeRabbit with an external issue manager.
 
 For more information, see [Integrate issue tracking](/integrations/issue-integrations/)
-and [Let CodeRabbit read your issue trakcer](https://docs.coderabbit.ai/guides/setup-best-practices#issues).
+and [Let CodeRabbit read your issue tracker](https://docs.coderabbit.ai/guides/setup-best-practices#issues).
 
 #### Auto Apply Labels
 
@@ -604,8 +604,8 @@ Set the commit status to 'pending' when the review is in progress and 'success' 
 Activate this setting to disallow CodeRabbit from caching your repository's code and dependencies. This forces CodeRabbit to download the code and dependencies fresh from the repository for every code review that it performs.
 
 When caching is allowed, then CodeRabbit stores a cache of code and metadata from
-your repostory for up to seven days after its most recent code review. This cache
-lets CodeRabbit save time and effort in between subsquent reviews of the same
+your repository for up to seven days after its most recent code review. This cache
+lets CodeRabbit save time and effort in between subsequent reviews of the same
 repository. For more information, see [Caching](/reference/caching/).
 
 We recommend leaving this setting off, which allows caching, and can speed up
@@ -902,14 +902,14 @@ For more information, see [Speed up reviews by adding path filters](https://docs
   </TabItem>
 </Tabs>
 
-Path instructions are additional sets of instructions, expressed in natural lanaguge,
-that you provide to CodeRabbit for reveiwing certain files in your repository.
+Path instructions are additional sets of instructions, expressed in natural language,
+that you provide to CodeRabbit for reviewing certain files in your repository.
 
-You associate each set of instuctions with a file path relative to the root
+You associate each set of instructions with a file path relative to the root
 of your repository. Your path specification can use extended glob patterns.
 
 The following example defines a set of path instructions for all TypeScript
-and JavaScript files in a reposistory's `src` directory:
+and JavaScript files in a repository's `src` directory:
 
 <Tabs groupId="config-setting">
   <TabItem value="web-ui" label="Example path settings: Web UI" default>
@@ -919,17 +919,17 @@ and JavaScript files in a reposistory's `src` directory:
 ```yaml
 path_instructions:
   - path: src/**/*.{ts,tsx,js}
-  instructions:
-    - Review the React.js/TypeScript/JavaScript code for best practices
-    - Check for common security vulnerabilities such as:
-    - SQL Injection
-    - Insecure dependencies
-    - Sensitive data exposure
+    instructions: |
+      - Review the React.js/TypeScript/JavaScript code for best practices
+      - Check for common security vulnerabilities such as:
+      - SQL Injection
+      - Insecure dependencies
+      - Sensitive data exposure
 ```
   </TabItem>
 </Tabs>
 
-For further examples of path instructions specific to various programming langauges,
+For further examples of path instructions specific to various programming languages,
 see [the `awesome-coderabbit` public repository](https://github.com/coderabbitai/awesome-coderabbit/tree/main/configs).
 
 #### Poem
@@ -1398,7 +1398,7 @@ We recommend leaving this option enabled.
 </Tabs>
 
 A list of branches that CodeRabbit performs automatic code reviews on, other
-than the reposiorty's main branch (usually `main` or `master`.)
+than the repository's main branch (usually `main` or `master`.)
 
 For example, if you add `staging` as a base branch, then CodeRabbit automatically
 reviews pull requests on both your repository's default branch and its `staging` branch.
@@ -1975,6 +1975,100 @@ Specify the Jira project keys to use for the knowledge base.
 </Tabs>
 
 Specify the scope of learnings to use for the knowledge base. 'local' uses the repository's learnings, 'global' uses the organization's learnings, and 'auto' uses repository's learnings for public repositories and organization's learnings for private repositories.
+
+### Code guidelines
+
+You can define a list of paths that guide CodeRabbit to your organization's code guidelines.
+If you do, then CodeRabbit applies these guidelines to its code reviews. For more
+information, see [Code Guidelines](/integrations/knowledge-base#code_guidelines).
+
+#### Enable code guidelines
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Knowledge Base > Enabled</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>true</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`knowledge_base.code_guidelines.enabled`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>boolean</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>`true`</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+</Tabs>
+
+Enable CodeRabbit to enforce your organization's coding standards during reviews.
+
+#### File patterns
+
+<Tabs groupId="config-setting">
+  <TabItem value="web-ui" label="Web UI">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Location</strong></td>
+        <td>Knowledge Base > File Patterns</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>_No patterns_</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+  <TabItem value="yaml" label=".coderabbit.yaml" default>
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Field</strong></td>
+        <td>`knowledge_base.code_guidelines.filePatterns`</td>
+      </tr>
+      <tr>
+        <td><strong>Datatype</strong></td>
+        <td>array</td>
+      </tr>
+      <tr>
+        <td><strong>Default</strong></td>
+        <td>`[]`</td>
+      </tr>
+    </tbody></table>
+  </TabItem>
+</Tabs>
+
+A list of path specifications to your repository's coding guideline documents, relative
+to the root of your repository. Fileglob matching is allowed. Paths are case-sensitive.
+
+If the code guidelines feature is enabled, then CodeRabbit applies code-guideline
+documents found at the following paths, in addition to any paths that you define:
+
+- `**/.cursorrules`
+- `.github/copilot-instructions.md`
+- `**/CLAUDE.md`
+- `**/GEMINI.md`
+- `**/.cursor/rules/*`
+- `**/.windsurfrules`
+- `**/.clinerules/*`
+- `**/.rules/*`
+- `**/AGENT.md`
 
 ### Linear
 

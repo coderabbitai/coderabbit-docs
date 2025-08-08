@@ -1,5 +1,5 @@
 ---
-title: Apply your code review preferences
+title: Knowledge base overview
 description: Learn about CodeRabbit's internal knowledge base and its integrations with external services.
 ---
 
@@ -17,26 +17,25 @@ For example, you can add a comment in a PR to chat directly with CodeRabbit. `@c
 
 Or you can comment directly on some lines of code in the PR. `@coderabbitai do not complain about lack of error handling here, it is handled higher up the execution stack.`
 
-:::tip Video Tutorial
+For more information, see [Teach CodeRabbit your review preferences](/guides/learnings).
 
-Watch our [video walkthrough on learnings](https://www.youtube.com/watch?v=Yu0cmmOYA-U) for more information.
+## Code Guidelines {#code-guidelines}
 
-:::
+CodeRabbit can read _code guideline_ files that set standards and expectations about
+your team's coding practices, described in natural language. CodeRabbit applies any instructions it reads from a repository's code guideline files to all subsequent code reviews.
 
-## Code Guidelines {#code_guidelines}
+By default, CodeRabbit looks for and loads guideline files used by other AI coding assistants, including the following:
 
-CodeRabbit will analyse and learn from your organisation's code guidelines, which you can set up in the knowledge base section. These guidelines will then be used to conduct thorough code reviews.
+- Claude Code
+- Cursor
+- Gemini
+- GitHub Copilot
+- Windsurf
 
-The following patterns are scanned by default.
+You can also mark any other file
+or set of files in your repository as code guidelines by providing CodeRabbit with a list
+of paths to those files.
 
-```text
-**/.cursorrules
-.github/copilot-instructions.md
-**/CLAUDE.md
-**/.cursor/rules/*
-**/.windsurfrules
-**/.clinerules/*
-**/.rules/*
-```
+This feature is enabled by default; you can disable it if needed.
 
-![Illustration of code guidelines configuration](/img/knowledge-base/code-guidelines.png)
+For more information about configuring the code guidelines feature, see [Code guidelines](/reference/configuration#code-guidelines) in the configuration reference page.
