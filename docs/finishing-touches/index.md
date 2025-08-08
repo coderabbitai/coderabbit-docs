@@ -11,5 +11,3 @@ Finishing Touches features help you polish pull requests after review:
 - [Unit Test Generation](/finishing-touches/unit-test-generation)
 
 Use these tools to improve documentation and test coverage before merging.
-
-

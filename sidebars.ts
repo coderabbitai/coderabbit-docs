@@ -141,9 +141,7 @@ const sidebars: SidebarsConfig = {
 			type: "category",
 			collapsed: true,
 			label: "Context enrichment",
-			items: [
-				"context-enrichment/mcp-server-integrations",
-			],
+			items: ["context-enrichment/mcp-server-integrations"],
 		},
 		{
 			type: "category",
