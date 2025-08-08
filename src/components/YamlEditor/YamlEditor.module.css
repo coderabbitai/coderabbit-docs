@@ -1,0 +1,235 @@
+.yamlEditorContainer {
+	margin: 1rem 0;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.yamlEditor {
+	border-radius: 8px;
+	font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace !important;
+	font-size: 14px !important;
+	line-height: 1.5 !important;
+}
+
+/* Dark theme styling to match the image - using higher specificity */
+.yamlEditor .ace_editor,
+.yamlEditor .ace_editor.ace_terminal,
+.yamlEditor .ace_scroller,
+.yamlEditor .ace_content {
+	background-color: #000000 !important;
+	color: #ffffff !important;
+}
+
+.yamlEditor .ace_gutter,
+.yamlEditor .ace_editor.ace_terminal .ace_gutter {
+	background-color: #000000 !important;
+	color: #6c6c6c !important;
+	border-right: 1px solid #404040 !important;
+}
+
+.yamlEditor .ace_gutter-active-line,
+.yamlEditor .ace_editor.ace_terminal .ace_gutter-active-line {
+	background-color: #404040 !important;
+}
+
+.yamlEditor .ace_line,
+.yamlEditor .ace_editor.ace_terminal .ace_line {
+	background-color: #000000 !important;
+}
+
+.yamlEditor .ace_cursor,
+.yamlEditor .ace_editor.ace_terminal .ace_cursor {
+	color: #ffffff !important;
+}
+
+.yamlEditor .ace_selection,
+.yamlEditor .ace_editor.ace_terminal .ace_selection {
+	background-color: #44475a !important;
+}
+
+.yamlEditor .ace_selected-word,
+.yamlEditor .ace_editor.ace_terminal .ace_selected-word {
+	background-color: #44475a !important;
+}
+
+.yamlEditor .ace_active-line,
+.yamlEditor .ace_editor.ace_terminal .ace_active-line {
+	background-color: #44475a !important;
+}
+
+/* Additional overrides for all possible background elements */
+.yamlEditor .ace_layer,
+.yamlEditor .ace_text-layer,
+.yamlEditor .ace_marker-layer,
+.yamlEditor .ace_cursor-layer {
+	background-color: #000000 !important;
+}
+
+/* Global override for any remaining elements */
+.yamlEditor * {
+	background-color: transparent !important;
+}
+
+.yamlEditor .ace_editor,
+.yamlEditor .ace_editor *,
+.yamlEditor .ace_scroller,
+.yamlEditor .ace_content {
+	background-color: #000000 !important;
+}
+
+/* YAML syntax highlighting to match the image - using higher specificity */
+.yamlEditor .ace_comment,
+.yamlEditor .ace_editor.ace_terminal .ace_comment {
+	color: #999999 !important;
+	font-style: italic !important;
+}
+
+/* Target lines that start with # (comments) */
+.yamlEditor .ace_text-layer .ace_line:first-child,
+.yamlEditor .ace_text-layer .ace_line:first-child * {
+	color: #999999 !important;
+	font-style: italic !important;
+}
+
+/* More specific targeting for any element containing comment-like content */
+.yamlEditor [class*="comment"],
+.yamlEditor [class*="Comment"] {
+	color: #999999 !important;
+	font-style: italic !important;
+}
+
+.yamlEditor .ace_string,
+.yamlEditor .ace_editor.ace_terminal .ace_string {
+	color: #ff84d6 !important;
+}
+
+.yamlEditor .ace_constant.ace_numeric,
+.yamlEditor .ace_editor.ace_terminal .ace_constant.ace_numeric {
+	color: #b5cea8 !important;
+}
+
+.yamlEditor .ace_constant.ace_language,
+.yamlEditor .ace_editor.ace_terminal .ace_constant.ace_language {
+	color: #569cd6 !important;
+	font-weight: bold !important;
+}
+
+.yamlEditor .ace_variable,
+.yamlEditor .ace_editor.ace_terminal .ace_variable {
+	color: #ffffff !important;
+}
+
+.yamlEditor .ace_keyword,
+.yamlEditor .ace_editor.ace_terminal .ace_keyword {
+	color: #ffffff !important;
+}
+
+.yamlEditor .ace_storage,
+.yamlEditor .ace_editor.ace_terminal .ace_storage {
+	color: #ffffff !important;
+}
+
+.yamlEditor .ace_entity.ace_name.ace_tag,
+.yamlEditor .ace_editor.ace_terminal .ace_entity.ace_name.ace_tag {
+	color: #ffffff !important;
+}
+
+.yamlEditor .ace_markup.ace_heading,
+.yamlEditor .ace_editor.ace_terminal .ace_markup.ace_heading {
+	color: #ffffff !important;
+}
+
+/* Light theme support */
+[data-theme="light"] .yamlEditor .ace_editor {
+	background-color: #ffffff !important;
+	color: #24292e !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_gutter {
+	background-color: #f6f8fa !important;
+	color: #6a737d !important;
+	border-right: 1px solid #e1e4e8 !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_gutter-active-line {
+	background-color: #f6f8fa !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_line {
+	background-color: #ffffff !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_cursor {
+	color: #24292e !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_selection {
+	background-color: #c8e1ff !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_selected-word {
+	background-color: #c8e1ff !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_active-line {
+	background-color: #f6f8fa !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_comment {
+	color: #999999 !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_string {
+	color: #032f62 !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_constant.ace_numeric {
+	color: #005cc5 !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_constant.ace_language {
+	color: #d73a49 !important;
+	font-weight: bold !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_variable {
+	color: #005cc5 !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_keyword {
+	color: #d73a49 !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_storage {
+	color: #d73a49 !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_entity.ace_name.ace_tag {
+	color: #005cc5 !important;
+}
+
+[data-theme="light"] .yamlEditor .ace_markup.ace_heading {
+	color: #005cc5 !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.yamlEditor {
+		font-size: 12px !important;
+	}
+
+	.yamlEditorContainer {
+		margin: 0.8rem 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.yamlEditor {
+		font-size: 11px !important;
+	}
+
+	.yamlEditorContainer {
+		margin: 0.6rem 0;
+	}
+}

@@ -175,7 +175,7 @@ const config: Config = {
 			"classic",
 			{
 				docs: {
-					editUrl: "https://github.com/coderabbitai/coderabbit-docs/edit/main/",
+					editUrl: () => null,
 					sidebarPath: "./sidebars.ts",
 					path: "docs",
 					routeBasePath: "/",
@@ -221,6 +221,10 @@ const config: Config = {
 			src: "https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js",
 			async: true,
 		},
+		{
+			src: "/js/navbar-theme.js",
+			async: true,
+		},
 	],
 
 	themeConfig: {
@@ -254,11 +258,6 @@ const config: Config = {
 					className: "navbar-link-active",
 				},
 				{
-					href: "https://coderabbit.ai/blog",
-					label: "Blog",
-					position: "left",
-				},
-				{
 					href: "https://discord.gg/coderabbit",
 					className: "navbar-icon-link discord-link",
 					"aria-label": "Discord",
@@ -268,6 +267,17 @@ const config: Config = {
 					href: "https://github.com/coderabbitai/coderabbit-docs",
 					className: "github-link",
 					"aria-label": "GitHub",
+					position: "right",
+				},
+				{
+					type: "html",
+					position: "right",
+					value:
+						'<div class="navbar__item"><button class="clean-btn navbar__item navbar-theme-toggle" type="button" aria-label="Switch between dark and light mode" tabindex="0"></button></div>',
+				},
+				{
+					href: "https://coderabbit.ai/blog",
+					label: "Blog",
 					position: "right",
 				},
 			],
