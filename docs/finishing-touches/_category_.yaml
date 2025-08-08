@@ -2,3 +2,7 @@ label: Finishing Touches
 position: 8
 collapsible: true
 collapsed: true
+link:
+  type: generated-index
+  title: Finishing Touches
+  slug: /finishing-touches

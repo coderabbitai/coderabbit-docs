@@ -11,7 +11,7 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
 # Docstrings
 
-Docstrings generation is part of the [finishing touches](/future-development#finishing-touches).
+Docstrings generation is part of the [Finishing Touches](/finishing-touches).
 
 ## Usage
 

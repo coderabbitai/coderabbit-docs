@@ -70,7 +70,7 @@ By default, CodeRabbit writes thorough code reviews with several sub-sections. I
 - [Sequence diagrams](/reference/configuration#sequence-diagrams): includes a visual diagram of object interactions.
 - [Assess linked issues](/reference/configuration#assess-linked-issues): assesses how well the pull request addresses any linked issues.
 - [Related issues](/reference/configuration#related-issues): lists issues found in your issue tracker that might be related to this pull request.
-- [Related pull requests](/reference/configuration#realted-prs): lists pull requests that might be related to this pull request.
+- [Related pull requests](/reference/configuration#related-prs): lists pull requests that might be related to this pull request.
 - [Suggested labels](/reference/configuration#suggested-labels): Suggests labels for this pull request.
 - [Suggested reviewers](/reference/configuration#suggested-reviewers): automatically suggest reviewers for PR
 - [Poem](/reference/configuration#poem): generates a short poem about this pull request.

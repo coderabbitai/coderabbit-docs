@@ -15,7 +15,7 @@ This feature is in beta.
 
 # Unit Test Generation
 
-Unit Test Generation is part of the [finishing touches](/future-development#finishing-touches).
+Unit Test Generation is part of the [Finishing Touches](/finishing-touches).
 
 ## Usage
 
