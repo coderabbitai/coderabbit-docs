@@ -22,6 +22,7 @@ For a CodeRabbit command reference, see [Code review command reference](/referen
 - Use `@coderabbitai pause` before making multiple commits.
 - Resume reviews with `@coderabbitai resume` when ready.
 - Consider `@coderabbitai full review` after substantial changes.
+- Consider generating a fresh sequence diagram with `@coderabbitai generate sequence diagram` after significant updates.
 
 ## Documentation flow
 
