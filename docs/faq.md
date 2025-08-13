@@ -210,7 +210,7 @@ The following limits are enforced _per developer_:
 | Files per hour                   | 200/hour                                   | 200/hour                      | 200/hour                      | 400/hour                                                                 |
 | Files per PR                     | 100                                        | 100                           | 100                           | 200                                                                      |
 | Reviews per hour (Git platforms) | 3 back-to-back, then 2/hour (Summary only) | 4 back-to-back, then 3/hour   | 3 back-to-back, then 2/hour   | 5 back-to-back, then 4/hour                                              |
-| Reviews per hour (IDE Extension) | 2 back-to-back, then 1/hour                | 4 back-to-back, then 3/hour   | 2 back-to-back, then 1/hour   | Pro: 4 back-to-back, then 5/hour.<br/>Lite: 2 back-to-back, then 1/hour. |
+| Reviews per hour (IDE Extension) | 1 back-to-back, then 1/hour                | 4 back-to-back, then 3/hour   | 1 back-to-back, then 1/hour   | Pro: 4 back-to-back, then 5/hour.<br/>Lite: 1 back-to-back, then 1/hour. |
 | Chat                             | N/A                                        | 25 back-to-back, then 50/hour | 10 back-to-back, then 25/hour | 25 back-to-back, then 50/hour                                            |
 
 ## Integration Guide {#integration-guide}
