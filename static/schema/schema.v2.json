@@ -1063,6 +1063,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "checkmake is a linter for Makefiles."
+								},
+								"osvScanner": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable OSV Scanner | OSV Scanner is a tool for vulnerability package scanning | v2.1.0"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "OSV Scanner is a tool for vulnerability package scanning."
 								}
 							},
 							"additionalProperties": false,
