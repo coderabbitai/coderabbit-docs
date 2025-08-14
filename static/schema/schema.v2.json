@@ -1063,6 +1063,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "checkmake is a linter for Makefiles."
+								},
+								"osvScanner": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable OSV Scanner | OSV Scanner is a tool for vulnerability package scanning | v2.1.0"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "OSV Scanner is a tool for vulnerability package scanning."
 								}
 							},
 							"additionalProperties": false,
@@ -1236,6 +1249,27 @@
 									"enum": ["local", "global", "auto"],
 									"default": "auto",
 									"description": "Pull Requests | Specify the scope of pull requests to use for the knowledge base. 'local' uses the repository's pull requests, 'global' uses the organization's pull requests, and 'auto' uses repository's pull requests for public repositories and organization's pull requests for private repositories."
+								}
+							},
+							"additionalProperties": false,
+							"default": {}
+						},
+						"mcp": {
+							"type": "object",
+							"properties": {
+								"usage": {
+									"type": "string",
+									"enum": ["auto", "enabled", "disabled"],
+									"default": "auto",
+									"description": "MCP | Enable the MCP knowledge base integration. 'auto' disables the integration for public repositories."
+								},
+								"disabled_servers": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									},
+									"default": [],
+									"description": "MCP Disabled Servers | Specify MCP server labels to disable (case-insensitive). These servers will be excluded from reviews and knowledge base queries."
 								}
 							},
 							"additionalProperties": false,
