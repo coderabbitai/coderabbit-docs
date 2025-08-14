@@ -1090,6 +1090,11 @@
 				"chat": {
 					"type": "object",
 					"properties": {
+						"art": {
+							"type": "boolean",
+							"default": true,
+							"description": "Generate art in response to chat messages. CodeRabbit expresses emotions as either ASCII or Emoji art."
+						},
 						"auto_reply": {
 							"type": "boolean",
 							"default": true,
