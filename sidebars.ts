@@ -202,6 +202,7 @@ const sidebars: SidebarsConfig = {
 						"tools/languagetool",
 						"tools/luacheck",
 						"tools/markdownlint",
+						"tools/osv-scanner",
 						"tools/oxlint",
 						"tools/phpcs",
 						"tools/phpmd",
