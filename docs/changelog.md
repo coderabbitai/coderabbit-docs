@@ -5,6 +5,14 @@ description: The latest updates and changes to CodeRabbit.
 sidebar_position: 13
 ---
 
+## August 14, 2025
+
+### OSV-Scanner Integration
+
+We've added support for [OSV-Scanner](https://github.com/google/osv-scanner), Google's vulnerability scanner that identifies security vulnerabilities in your project's dependencies and installed packages using the [OSV.dev](https://osv.dev) database.
+
+OSV-Scanner requires an `osv-scanner.toml` configuration file to run. See our [OSV-Scanner documentation](/tools/osv-scanner) for more details.
+
 ## August 4, 2025
 
 ### Model Context Protocol (MCP) Server Integration - Early Access

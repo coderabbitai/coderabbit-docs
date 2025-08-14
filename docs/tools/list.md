@@ -9,48 +9,48 @@ For more information about fine-tuning the CodeRabbit configuration of a tool, c
 
 For an overview of how CodeRabbit uses these tools when generating code reviews, as well as general information about controlling their use, see [Configure third-party tools](/tools/).
 
-| Technology                  | Tools                                                      | Category                                            |
-| :-------------------------- | :--------------------------------------------------------- | :-------------------------------------------------- |
-| All                         | [Gitleaks][Gitleaks], [Pipeline Remediation][Pipeline]     | Code Security, CI/CD                                |
-| Azure DevOps Pipelines      | [Pipeline Remediation][Pipeline]                           | CI/CD Failure Remediation                           |
-| CircleCI                    | [CircleCI][CircleCI], [Pipeline Remediation][Pipeline]     | Configuration Validation, CI/CD Failure Remediation |
-| CloudFormation              | [Checkov][Checkov]                                         | Code Security                                       |
-| Cppcheck                    | [Cppcheck][Cppcheck]                                       | Code Quality                                        |
-| CSS                         | [Biome][Biome]                                             | Code Quality                                        |
-| Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                   | Code Quality, Code Security                         |
-| Environment Files (.env)    | [Dotenv Linter][DotenvLinter]                              | Code Quality                                        |
-| GitHub Actions              | [actionlint][actionlint], [Pipeline Remediation][Pipeline] | Code Quality, CI/CD Failure Remediation             |
-| GitLab Pipelines            | [Pipeline Remediation][Pipeline]                           | CI/CD Failure Remediation                           |
-| Go                          | [golangci-lint][golangci-lint]                             | Code Quality                                        |
-| Helm                        | [Checkov][Checkov]                                         | Code Security                                       |
-| HTML                        | [HTMLHint][HTMLHint]                                       | Code Quality                                        |
-| Javascript                  | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
-| JSON, JSONC                 | [Biome][Biome]                                             | Code Quality                                        |
-| JSX                         | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
-| Kotlin                      | [detekt][detekt]                                           | Code Quality                                        |
-| Kubernetes                  | [Checkov][Checkov]                                         | Code Security                                       |
-| Lua                         | [Luacheck][Luacheck]                                       | Code Quality                                        |
-| Makefile                    | [Checkmake][Checkmake]                                     | Code Quality                                        |
-| Markdown                    | [markdownlint][markdownlint], [LanguageTool][LanguageTool] | Code Quality, Grammar Checking                      |
-| PHP                         | [PHPStan][PHPStan], [PHPMD][PHPMD], [PHPCS][PHPCS]         | Code Quality                                        |
-| Plaintext                   | [LanguageTool][LanguageTool]                               | Grammar and Spell Checking                          |
-| Java                        | [PMD][PMD]                                                 | Code Quality                                        |
-| Protobuf                    | [Buf][Buf]                                                 | Code Quality                                        |
-| Python                      | [Ruff][Ruff], [Pylint][Pylint], [Flake8][Flake8]           | Code Quality                                        |
-| Jupyter Notebooks           | [Ruff][Ruff], [Pylint][Pylint], [Flake8][Flake8]           | Code Quality                                        |
-| Regal                       | [Regal][Regal]                                             | Code Quality                                        |
-| Ruby                        | [RuboCop][RuboCop], [Brakeman][Brakeman]                   | Code Quality, Code Security                         |
-| Rust                        | [Clippy][Clippy]                                           | Code Quality                                        |
-| Semgrep                     | [Semgrep][Semgrep]                                         | Code Security                                       |
-| Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   | Code Quality                                        |
-| Shopify                     | [Shopify CLI][ShopifyCLI]                                  | Code Quality                                        |
-| SQL                         | [SQLFluff][SQLFluff]                                       | Code Quality                                        |
-| Swift                       | [SwiftLint][SwiftLint]                                     | Code Quality                                        |
-| Terraform                   | [Checkov][Checkov]                                         | Code Security                                       |
-| TSX                         | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
-| Typescript                  | [Biome][Biome], [oxlint][oxlint]                           | Code Quality                                        |
-| YAML                        | [YAMLlint][YAMLlint]                                       | Code Quality                                        |
-| Prisma                      | [Prisma Lint][PrismaLint]                                  | Code Quality                                        |
+| Technology                  | Tools                                                                             | Category                                            |
+| :-------------------------- | :-------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| All                         | [Gitleaks][Gitleaks], [OSV-Scanner][OSVScanner], [Pipeline Remediation][Pipeline] | Code Security, CI/CD                                |
+| Azure DevOps Pipelines      | [Pipeline Remediation][Pipeline]                                                  | CI/CD Failure Remediation                           |
+| CircleCI                    | [CircleCI][CircleCI], [Pipeline Remediation][Pipeline]                            | Configuration Validation, CI/CD Failure Remediation |
+| CloudFormation              | [Checkov][Checkov]                                                                | Code Security                                       |
+| Cppcheck                    | [Cppcheck][Cppcheck]                                                              | Code Quality                                        |
+| CSS                         | [Biome][Biome]                                                                    | Code Quality                                        |
+| Docker                      | [Hadolint][Hadolint], [Checkov][Checkov]                                          | Code Quality, Code Security                         |
+| Environment Files (.env)    | [Dotenv Linter][DotenvLinter]                                                     | Code Quality                                        |
+| GitHub Actions              | [actionlint][actionlint], [Pipeline Remediation][Pipeline]                        | Code Quality, CI/CD Failure Remediation             |
+| GitLab Pipelines            | [Pipeline Remediation][Pipeline]                                                  | CI/CD Failure Remediation                           |
+| Go                          | [golangci-lint][golangci-lint]                                                    | Code Quality                                        |
+| Helm                        | [Checkov][Checkov]                                                                | Code Security                                       |
+| HTML                        | [HTMLHint][HTMLHint]                                                              | Code Quality                                        |
+| Javascript                  | [Biome][Biome], [oxlint][oxlint]                                                  | Code Quality                                        |
+| JSON, JSONC                 | [Biome][Biome]                                                                    | Code Quality                                        |
+| JSX                         | [Biome][Biome], [oxlint][oxlint]                                                  | Code Quality                                        |
+| Kotlin                      | [detekt][detekt]                                                                  | Code Quality                                        |
+| Kubernetes                  | [Checkov][Checkov]                                                                | Code Security                                       |
+| Lua                         | [Luacheck][Luacheck]                                                              | Code Quality                                        |
+| Makefile                    | [Checkmake][Checkmake]                                                            | Code Quality                                        |
+| Markdown                    | [markdownlint][markdownlint], [LanguageTool][LanguageTool]                        | Code Quality, Grammar Checking                      |
+| PHP                         | [PHPStan][PHPStan], [PHPMD][PHPMD], [PHPCS][PHPCS]                                | Code Quality                                        |
+| Plaintext                   | [LanguageTool][LanguageTool]                                                      | Grammar and Spell Checking                          |
+| Java                        | [PMD][PMD]                                                                        | Code Quality                                        |
+| Protobuf                    | [Buf][Buf]                                                                        | Code Quality                                        |
+| Python                      | [Ruff][Ruff], [Pylint][Pylint], [Flake8][Flake8]                                  | Code Quality                                        |
+| Jupyter Notebooks           | [Ruff][Ruff], [Pylint][Pylint], [Flake8][Flake8]                                  | Code Quality                                        |
+| Regal                       | [Regal][Regal]                                                                    | Code Quality                                        |
+| Ruby                        | [RuboCop][RuboCop], [Brakeman][Brakeman]                                          | Code Quality, Code Security                         |
+| Rust                        | [Clippy][Clippy]                                                                  | Code Quality                                        |
+| Semgrep                     | [Semgrep][Semgrep]                                                                | Code Security                                       |
+| Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                                          | Code Quality                                        |
+| Shopify                     | [Shopify CLI][ShopifyCLI]                                                         | Code Quality                                        |
+| SQL                         | [SQLFluff][SQLFluff]                                                              | Code Quality                                        |
+| Swift                       | [SwiftLint][SwiftLint]                                                            | Code Quality                                        |
+| Terraform                   | [Checkov][Checkov]                                                                | Code Security                                       |
+| TSX                         | [Biome][Biome], [oxlint][oxlint]                                                  | Code Quality                                        |
+| Typescript                  | [Biome][Biome], [oxlint][oxlint]                                                  | Code Quality                                        |
+| YAML                        | [YAMLlint][YAMLlint]                                                              | Code Quality                                        |
+| Prisma                      | [Prisma Lint][PrismaLint]                                                         | Code Quality                                        |
 
 [ShellCheck]: /tools/shellcheck.md
 [SQLFluff]: /tools/sqlfluff.md
@@ -88,3 +88,4 @@ For an overview of how CodeRabbit uses these tools when generating code reviews,
 [PHPMD]: /tools/phpmd.md
 [PHPCS]: /tools/phpcs.md
 [Flake8]: /tools/flake8.md
+[OSVScanner]: /tools/osv-scanner.md
