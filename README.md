@@ -3,13 +3,14 @@
     <img src="static/img/coderabbit_nav_logo.svg" alt="CodeRabbit Logo" width="200"/>
   </a>
 </p>
-======================
+
+---
+
 # CodeRabbit docs have moved over to Mintlify as a private repo. These docs are no longer mantained. 
 
+---
 
 
-
-=======================
 # CodeRabbit Documentation
 
 Welcome to the official docs for [**CodeRabbit**](https://coderabbit.ai), the code review dev tool that helps you ship quality code faster.
