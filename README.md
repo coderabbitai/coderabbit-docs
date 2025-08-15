@@ -6,7 +6,7 @@
 
 ---
 
-# CodeRabbit docs have moved over to Mintlify as a private repo. These docs are no longer mantained. 
+# CodeRabbit docs have moved over to Mintlify as a private repo. These docs are no longer maintained. 
 
 ---
 
